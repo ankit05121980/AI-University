@@ -99,12 +99,12 @@ First published 2026. First Edition. Document version 1.0.0.
 | 17 | Case Study: Finance at Scale | 11 | 2 | 1 | 4 |
 | 18 | Operating in Production | 10 | 1 | 1 | 4 |
 | 19 | Evaluation and Quality Assurance | 10 | 1 | 1 | 4 |
-| 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
-| 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
+| 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
+| 21 | Cost, Performance and Scaling | 11 | 2 | 1 | 4 |
 | 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
 | 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
-| 24 | Capstone Project | 10 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
+| 24 | Capstone Project | 11 | 2 | 1 | 4 |
+| 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
 
 ---
 
@@ -136,13 +136,15 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 24. Infrastructure - Operating in Production
 - Figure 25. Agent Architecture - Evaluation and Quality Assurance
 - Figure 26. Application Flow - Security, Privacy and Governance
-- Figure 27. RAG Architecture - Cost, Performance and Scaling
-- Figure 28. DevOps Pipeline - Integration and Interoperability
-- Figure 29. Deployment - Trends and Research Directions
-- Figure 30. Security Architecture - Trends and Research Directions
-- Figure 31. Security Architecture - Capstone Project
-- Figure 32. Network - Certification Preparation and Review
-- Figure 33. Class - Certification Preparation and Review
+- Figure 27. RAG Architecture - Security, Privacy and Governance
+- Figure 28. RAG Architecture - Cost, Performance and Scaling
+- Figure 29. DevOps Pipeline - Cost, Performance and Scaling
+- Figure 30. DevOps Pipeline - Integration and Interoperability
+- Figure 31. Deployment - Trends and Research Directions
+- Figure 32. Security Architecture - Trends and Research Directions
+- Figure 33. Security Architecture - Capstone Project
+- Figure 34. Network - Capstone Project
+- Figure 35. Network - Certification Preparation and Review
 
 ---
 
@@ -233,31 +235,19 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="6-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#64748b"/><rect x="0" y="30" width="840" height="16" fill="#64748b"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">RAG Architecture - Graphs, Triples and the Property Graph Model</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#64748b"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning and Inference</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#0f172a"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Embeddings</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#0f172a"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph Algorithms for Insight</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#1e293b"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Data Quality and Entity Reso…</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#94a3b8"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Graph Storage</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#334155"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graphs for Grounding LLMs</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#1e293b"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#94a3b8"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#334155"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#475569"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="6-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnb9880f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#64748b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnb9880f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnb9880f)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">RAG Architecture - Graphs, Triples and the Property Graph Model</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#64748b" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning and Inference</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Embeddings</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph Algorithms for Insight</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Data Quality and Entity Reso…</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Graph Storage</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#334155" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graphs for Grounding LLMs</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#334155" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#475569" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  RAG Architecture</text></svg>
 
 </div>
 
 **Figure 1. RAG Architecture - Graphs, Triples and the Property Graph Model** (svg). Figure: RAG Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
-```
+<div class="diagram-svg">
 
-**Figure 2. DevOps Pipeline - Graphs, Triples and the Property Graph Model** (mermaid). Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="6-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn66a618f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#334155"/><stop offset="1" stop-color="#475569"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn66a618f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn66a618f)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Graphs, Triples and the Property Graph Model</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#334155"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#334155" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#475569"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#475569" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Graph Algorithm…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#64748b"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#64748b" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Data Quality an…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#0f172a"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Graph S…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#1e293b"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e293b" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grou…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  DevOps Pipeline</text></svg>
+
+</div>
+
+**Figure 2. DevOps Pipeline - Graphs, Triples and the Property Graph Model** (svg). Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -361,67 +351,61 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Graphs, Triples and the Property Graph Model logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Graphs, Triples and the Property Graph Model component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Graphs, Triples and the Property Graph Model
+### Listing: Implementing a Graphs, Triples and the Property Graph Model component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class TriplesAndConfig:
+    """Configuration for the Graphs, Triples and the Property Graph Model component in a Knowledge Graphs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Graphs, Triples and the Property Graph Model."""
+class TriplesAnd:
+    """A minimal, production-shaped implementation of Graphs, Triples and the Property Graph Model."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: TriplesAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TriplesAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Graphs, Triples and the Property Graph Model goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Graphs, Triples and the Property Graph Model”?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
    - C. RDF triples versus labelled property graphs and when to use each.
-   - D. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Graphs, Triples and the Property Graph Model: RDF triples versus labelled property graphs and when to use each.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Ignoring provenance, making facts untrustworthy.
@@ -477,7 +461,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="roadmap" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#0d9488"/><rect x="0" y="30" width="840" height="16" fill="#0d9488"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Ontology and Schema Design</text><polygon points="28,204 206,204 224,234 206,264 28,264 46,234" fill="#0d9488"/><text x="126" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grou…</text><text x="126" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q1</text><polygon points="224,204 402,204 420,234 402,264 224,264 242,234" fill="#14b8a6"/><text x="322" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Governance and …</text><text x="322" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q2</text><polygon points="420,204 598,204 616,234 598,264 420,264 438,234" fill="#047857"/><text x="518" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Operating Knowl…</text><text x="518" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q3</text><polygon points="616,204 794,204 812,234 794,264 616,264 634,234" fill="#059669"/><text x="714" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Visualising Kno…</text><text x="714" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q4</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="roadmap" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bncdcea67" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bncdcea67)"/><rect x="0" y="32" width="840" height="16" fill="url(#bncdcea67)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Ontology and Schema Design</text><polygon points="28,204 206,204 224,234 206,264 28,264 46,234" fill="#0d9488"/><text x="126" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grou…</text><text x="126" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q1</text><polygon points="224,204 402,204 420,234 402,264 224,264 242,234" fill="#14b8a6"/><text x="322" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Governance and …</text><text x="322" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q2</text><polygon points="420,204 598,204 616,234 598,264 420,264 438,234" fill="#047857"/><text x="518" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Operating Knowl…</text><text x="518" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q3</text><polygon points="616,204 794,204 812,234 794,264 616,264 634,234" fill="#059669"/><text x="714" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Visualising Kno…</text><text x="714" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q4</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  DevOps Pipeline</text></svg>
 
 </div>
 
@@ -826,74 +810,68 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Entity Extraction and Linking logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Entity Extraction and Linking component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Entity Extraction and Linking
+### Listing: Implementing a Entity Extraction and Linking component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class EntityExtractionAndConfig:
+    """Configuration for the Entity Extraction and Linking component in a Knowledge Graphs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Entity Extraction and Linking."""
+class EntityExtractionAnd:
+    """A minimal, production-shaped implementation of Entity Extraction and Linking."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: EntityExtractionAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"EntityExtractionAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Entity Extraction and Linking goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Entity Extraction and Linking”?
-   - A. It applies exclusively to image data.
+   - A. It makes the system slower but has no other effect.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Populating the graph from structured and unstructured sources.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Entity Extraction and Linking: Populating the graph from structured and unstructured sources.
+   - C. It removes all security and governance requirements.
+   - D. Populating the graph from structured and unstructured sources.
+   - **Answer: D.** Entity Extraction and Linking: Populating the graph from structured and unstructured sources.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. Record provenance on every fact for trust and debugging.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Choose the model (RDF vs property graph) to fit query needs.
-   - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+   - D. Picking a graph engine that cannot scale to your traversal patterns.
+   - **Answer: B.** Best practice: Record provenance on every fact for trust and debugging.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. Neglecting entity resolution and creating duplicates.
    - B. It makes the system slower but has no other effect.
@@ -942,7 +920,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="6-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#475569"/><rect x="0" y="30" width="840" height="16" fill="#475569"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Graph Query Languages</text><circle cx="420.0" cy="238.0" r="150" fill="#475569"/><text x="420" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graph Algorithms for …</text><circle cx="420.0" cy="238.0" r="116" fill="#64748b"/><text x="420" y="140" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Data Quality and Enti…</text><circle cx="420.0" cy="238.0" r="82" fill="#0f172a"/><text x="420" y="174" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Graph Storage</text><circle cx="420.0" cy="238.0" r="48" fill="#1e293b"/><text x="420" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grounding …</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="6-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn4c63e9" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#64748b"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn4c63e9)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn4c63e9)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Graph Query Languages</text><circle cx="420.0" cy="238.0" r="150" fill="#475569"/><text x="420" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graph Algorithms for …</text><circle cx="420.0" cy="238.0" r="116" fill="#64748b"/><text x="420" y="140" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Data Quality and Enti…</text><circle cx="420.0" cy="238.0" r="82" fill="#0f172a"/><text x="420" y="174" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Graph Storage</text><circle cx="420.0" cy="238.0" r="48" fill="#1e293b"/><text x="420" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grounding …</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  Security Architecture</text></svg>
 
 </div>
 
@@ -1050,75 +1028,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Graph Query Languages component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
+Pipelines keep Graph Query Languages logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Graph Query Languages component
+### Listing: A composable processing pipeline for Graph Query Languages
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class GraphQueryLanguagesConfig:
-    """Configuration for the Graph Query Languages component in a Knowledge Graphs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class GraphQueryLanguages:
-    """A minimal, production-shaped implementation of Graph Query Languages."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Graph Query Languages."""
 
-    def __init__(self, config: GraphQueryLanguagesConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"GraphQueryLanguages failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Graph Query Languages goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Graph Query Languages”?
-   - A. It removes all security and governance requirements.
+   - A. It applies exclusively to image data.
    - B. It makes the system slower but has no other effect.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. Cypher, SPARQL and Gremlin for traversal and pattern matching.
    - **Answer: D.** Graph Query Languages: Cypher, SPARQL and Gremlin for traversal and pattern matching.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Ignoring provenance, making facts untrustworthy.
-   - B. It is only relevant to academic research, not production.
-   - C. Picking a graph engine that cannot scale to your traversal patterns.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+   - A. It removes all security and governance requirements.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
+   - C. Over-engineering the ontology before validating use cases.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Design the ontology with domain experts before ingesting at scale.
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. Neglecting entity resolution and creating duplicates.
-   - **Answer: D.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
-4. *(Discussion)* Walk through how you would design Graph Query Languages for an enterprise Knowledge Graphs workload.
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Over-engineering the ontology before validating use cases.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: C.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
+4. *(Discussion)* How would you test and monitor Graph Query Languages in production?
    - **Model answer:** A strong answer defines graph query languages (Cypher, SPARQL and Gremlin for traversal and pattern matching.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1140,9 +1124,9 @@ Reasoning and Inference can be characterised as rules, RDFS/OWL semantics and in
 
 To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, reasoning and inference is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. It is foundational: later capabilities in Knowledge Graphs are built directly on top of it.
 
-Reasoning and Inference cannot be understood in isolation from data quality and entity resolution. Recall that data quality and entity resolution concerns deduplication, validation and provenance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Reasoning and Inference cannot be understood in isolation from knowledge graph embeddings. Recall that knowledge graph embeddings concerns transE, RotatE and link prediction for completion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Reasoning and Inference cannot be understood in isolation from knowledge graph embeddings. Recall that knowledge graph embeddings concerns transE, RotatE and link prediction for completion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Reasoning and Inference cannot be understood in isolation from ontology and schema design. Recall that ontology and schema design concerns classes, properties, taxonomies and reusing standard vocabularies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Several established patterns apply directly to reasoning and inference. The first, embedding-based link prediction for completion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, canonical ontology with reused standard vocabularies, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -1195,7 +1179,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with data quality and entity resolution. Because data quality and entity resolution concerns deduplication, validation and provenance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with knowledge graph embeddings. Because knowledge graph embeddings concerns transE, RotatE and link prediction for completion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1209,7 +1193,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaling graph storage. Because scaling graph storage concerns partitioning, indexing and distributed graph engines, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with entity extraction and linking. Because entity extraction and linking concerns populating the graph from structured and unstructured sources, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1347,16 +1331,16 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Knowledge Graphs, which statement best describes “Reasoning and Inference”?
    - A. Rules, RDFS/OWL semantics and inferring implicit facts.
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Reasoning and Inference: Rules, RDFS/OWL semantics and inferring implicit facts.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Over-engineering the ontology before validating use cases.
+   - A. It applies exclusively to image data.
    - B. Ignoring provenance, making facts untrustworthy.
-   - C. Record provenance on every fact for trust and debugging.
+   - C. Design the ontology with domain experts before ingesting at scale.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Record provenance on every fact for trust and debugging.
+   - **Answer: C.** Best practice: Design the ontology with domain experts before ingesting at scale.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. It removes all security and governance requirements.
    - B. Picking a graph engine that cannot scale to your traversal patterns.
@@ -1876,50 +1860,19 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_v" data-pal="5-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#1d4ed8"/><rect x="0" y="30" width="840" height="16" fill="#1d4ed8"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Data Quality and Entity Resolution</text><rect x="270" y="70" width="300" height="52" rx="11" fill="#1d4ed8"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Data Quality and Entity Resolution</text><rect x="270" y="144" width="300" height="52" rx="11" fill="#2563eb"/><text x="420" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Graph Storage</text><line x1="420" y1="122" x2="420" y2="144" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="218" width="300" height="52" rx="11" fill="#3b82f6"/><text x="420" y="244" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graphs for Grounding LLMs</text><line x1="420" y1="196" x2="420" y2="218" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="292" width="300" height="52" rx="11" fill="#60a5fa"/><text x="420" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and Lineage</text><line x1="420" y1="270" x2="420" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="366" width="300" height="52" rx="11" fill="#1e40af"/><text x="420" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating Knowledge Graphs</text><line x1="420" y1="344" x2="420" y2="366" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_v" data-pal="5-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn3e2d2c" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d4ed8"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn3e2d2c)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn3e2d2c)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Data Quality and Entity Resolution</text><rect x="270" y="70" width="300" height="52" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Data Quality and Entity Resolution</text><rect x="270" y="144" width="300" height="52" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="420" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Graph Storage</text><line x1="420" y1="122" x2="420" y2="144" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="218" width="300" height="52" rx="11" fill="#3b82f6" filter="url(#sh)"/><text x="420" y="244" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graphs for Grounding LLMs</text><line x1="420" y1="196" x2="420" y2="218" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="292" width="300" height="52" rx="11" fill="#60a5fa" filter="url(#sh)"/><text x="420" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and Lineage</text><line x1="420" y1="270" x2="420" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="366" width="300" height="52" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="420" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating Knowledge Graphs</text><line x1="420" y1="344" x2="420" y2="366" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  Data Flow</text></svg>
 
 </div>
 
 **Figure 10. Data Flow - Data Quality and Entity Resolution** (svg). Figure: Data Flow view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Knowledge Graphs Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Graphs, Triples and the P…]
-    S1[Ontology and Schema Design]
-    S2[Entity Extraction and Lin…]
-    S3[Graph Query Languages]
-    S4[Reasoning and Inference]
-    S5[Knowledge Graph Embeddings]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
+<div class="diagram-svg">
 
-**Figure 11. Architecture - Data Quality and Entity Resolution** (mermaid). Figure: Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="9-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnb15f017" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnb15f017)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnb15f017)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Data Quality and Entity Resolution</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Visualising Knowledge Graphs</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Enterprise Knowledge Graph Architecture</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph Query Languages</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning and Inference</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#db2777" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Embeddings</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#ec4899" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph Algorithms for Insight</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#db2777" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#ec4899" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#f472b6" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  Architecture</text></svg>
+
+</div>
+
+**Figure 11. Architecture - Data Quality and Entity Resolution** (svg). Figure: Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2023,68 +1976,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Data Quality and Entity Resolution component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
+Pipelines keep Data Quality and Entity Resolution logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Data Quality and Entity Resolution component
+### Listing: A composable processing pipeline for Data Quality and Entity Resolution
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class DataQualityAndConfig:
-    """Configuration for the Data Quality and Entity Resolution component in a Knowledge Graphs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class DataQualityAnd:
-    """A minimal, production-shaped implementation of Data Quality and Entity Resolution."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Data Quality and Entity Resolution."""
 
-    def __init__(self, config: DataQualityAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"DataQualityAnd failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Data Quality and Entity Resolution goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Data Quality and Entity Resolution”?
-   - A. It applies exclusively to image data.
-   - B. Deduplication, validation and provenance.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Data Quality and Entity Resolution: Deduplication, validation and provenance.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. Deduplication, validation and provenance.
+   - **Answer: D.** Data Quality and Entity Resolution: Deduplication, validation and provenance.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Ignoring provenance, making facts untrustworthy.
-   - B. Choose the model (RDF vs property graph) to fit query needs.
+   - A. It makes the system slower but has no other effect.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. It guarantees deterministic output regardless of input.
    - B. Record provenance on every fact for trust and debugging.
@@ -2302,9 +2261,9 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Scaling Graph Storage”?
-   - A. It makes the system slower but has no other effect.
+   - A. It guarantees deterministic output regardless of input.
    - B. Partitioning, indexing and distributed graph engines.
-   - C. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Scaling Graph Storage: Partitioning, indexing and distributed graph engines.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
@@ -2547,8 +2506,8 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Graphs for Grounding LLMs”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
    - C. It is only relevant to academic research, not production.
    - D. Serving structured context to generative systems.
    - **Answer: D.** Graphs for Grounding LLMs: Serving structured context to generative systems.
@@ -2635,7 +2594,7 @@ _Source diagram (drawio); render with the appropriate tool._
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="timeline" data-pal="11-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#9f1239"/><rect x="0" y="30" width="840" height="16" fill="#9f1239"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Governance and Lineage</text><line x1="68" y1="230.0" x2="772" y2="230.0" stroke="#cbd5e1" stroke-width="3"/><circle cx="68" cy="230.0" r="9" fill="#9f1239"/><line x1="68" y1="230.0" x2="68" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="-2" y="138" width="140" height="52" rx="11" fill="#9f1239"/><text x="68" y="157" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Graph Storage</text><text x="68" y="173" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 1</text><circle cx="244" cy="230.0" r="9" fill="#4338ca"/><line x1="244" y1="230.0" x2="244" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="174" y="254" width="140" height="52" rx="11" fill="#4338ca"/><text x="244" y="273" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graphs for Grounding L…</text><text x="244" y="289" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 2</text><circle cx="420" cy="230.0" r="9" fill="#0f172a"/><line x1="420" y1="230.0" x2="420" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="350" y="138" width="140" height="52" rx="11" fill="#0f172a"/><text x="420" y="157" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and Lineage</text><text x="420" y="173" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 3</text><circle cx="596" cy="230.0" r="9" fill="#1e40af"/><line x1="596" y1="230.0" x2="596" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="526" y="254" width="140" height="52" rx="11" fill="#1e40af"/><text x="596" y="273" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating Knowledge Gr…</text><text x="596" y="289" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 4</text><circle cx="772" cy="230.0" r="9" fill="#0e7490"/><line x1="772" y1="230.0" x2="772" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="702" y="138" width="140" height="52" rx="11" fill="#0e7490"/><text x="772" y="157" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Visualising Knowledge …</text><text x="772" y="173" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 5</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="timeline" data-pal="11-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn562486a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f1239"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn562486a)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn562486a)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Governance and Lineage</text><line x1="68" y1="230.0" x2="772" y2="230.0" stroke="#cbd5e1" stroke-width="3"/><circle cx="68" cy="230.0" r="9" fill="#9f1239"/><line x1="68" y1="230.0" x2="68" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="-2" y="138" width="140" height="52" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="68" y="157" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Graph Storage</text><text x="68" y="173" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 1</text><circle cx="244" cy="230.0" r="9" fill="#4338ca"/><line x1="244" y1="230.0" x2="244" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="174" y="254" width="140" height="52" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="244" y="273" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graphs for Grounding L…</text><text x="244" y="289" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 2</text><circle cx="420" cy="230.0" r="9" fill="#0f172a"/><line x1="420" y1="230.0" x2="420" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="350" y="138" width="140" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="157" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and Lineage</text><text x="420" y="173" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 3</text><circle cx="596" cy="230.0" r="9" fill="#1e40af"/><line x1="596" y1="230.0" x2="596" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="526" y="254" width="140" height="52" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="596" y="273" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating Knowledge Gr…</text><text x="596" y="289" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 4</text><circle cx="772" cy="230.0" r="9" fill="#0e7490"/><line x1="772" y1="230.0" x2="772" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="702" y="138" width="140" height="52" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="772" y="157" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Visualising Knowledge …</text><text x="772" y="173" text-anchor="middle" font-size="8" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 5</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  Business Process</text></svg>
 
 </div>
 
@@ -2800,24 +2759,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Governance and Lineage”?
-   - A. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
    - B. Versioning, access control and auditability.
-   - C. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
    - D. It removes all security and governance requirements.
    - **Answer: B.** Governance and Lineage: Versioning, access control and auditability.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Picking a graph engine that cannot scale to your traversal patterns.
-   - B. Over-engineering the ontology before validating use cases.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+   - B. Record provenance on every fact for trust and debugging.
+   - C. It makes the system slower but has no other effect.
+   - D. Neglecting entity resolution and creating duplicates.
+   - **Answer: B.** Best practice: Record provenance on every fact for trust and debugging.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Choose the model (RDF vs property graph) to fit query needs.
-   - D. Over-engineering the ontology before validating use cases.
-   - **Answer: D.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
-4. *(Discussion)* What trade-offs would you weigh when implementing Governance and Lineage?
+   - A. It applies exclusively to image data.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - C. Design the ontology with domain experts before ingesting at scale.
+   - D. Choose the model (RDF vs property graph) to fit query needs.
+   - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
+4. *(Discussion)* How would you test and monitor Governance and Lineage in production?
    - **Model answer:** A strong answer defines governance and lineage (Versioning, access control and auditability.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2839,7 +2798,7 @@ Operating Knowledge Graphs refers to pipelines, monitoring and lifecycle managem
 
 To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, operating knowledge graphs is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Getting this right early prevents expensive rework once a Knowledge Graphs system reaches scale.
 
-Operating Knowledge Graphs cannot be understood in isolation from entity extraction and linking. Recall that entity extraction and linking concerns populating the graph from structured and unstructured sources. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Operating Knowledge Graphs cannot be understood in isolation from data quality and entity resolution. Recall that data quality and entity resolution concerns deduplication, validation and provenance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 Operating Knowledge Graphs cannot be understood in isolation from reasoning and inference. Recall that reasoning and inference concerns rules, RDFS/OWL semantics and inferring implicit facts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
@@ -2884,7 +2843,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with entity extraction and linking. Because entity extraction and linking concerns populating the graph from structured and unstructured sources, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with data quality and entity resolution. Because data quality and entity resolution concerns deduplication, validation and provenance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2898,7 +2857,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the enterprise knowledge graph architecture. Because the enterprise knowledge graph architecture concerns reference blueprint integrating sources, store and consumers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with knowledge graph embeddings. Because knowledge graph embeddings concerns transE, RotatE and link prediction for completion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3226,79 +3185,73 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Visualising Knowledge Graphs logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Visualising Knowledge Graphs component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Visualising Knowledge Graphs
+### Listing: Implementing a Visualising Knowledge Graphs component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class VisualisingKnowledgeGraphsConfig:
+    """Configuration for the Visualising Knowledge Graphs component in a Knowledge Graphs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Visualising Knowledge Graphs."""
+class VisualisingKnowledgeGraphs:
+    """A minimal, production-shaped implementation of Visualising Knowledge Graphs."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: VisualisingKnowledgeGraphsConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"VisualisingKnowledgeGraphs failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Visualising Knowledge Graphs goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Visualising Knowledge Graphs”?
-   - A. Effective exploration and analyst tooling.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Visualising Knowledge Graphs: Effective exploration and analyst tooling.
-2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Over-engineering the ontology before validating use cases.
-   - B. Design the ontology with domain experts before ingesting at scale.
-   - C. Neglecting entity resolution and creating duplicates.
+   - A. It removes all security and governance requirements.
+   - B. Effective exploration and analyst tooling.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Design the ontology with domain experts before ingesting at scale.
+   - **Answer: B.** Visualising Knowledge Graphs: Effective exploration and analyst tooling.
+2. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Record provenance on every fact for trust and debugging.
+   - D. Over-engineering the ontology before validating use cases.
+   - **Answer: C.** Best practice: Record provenance on every fact for trust and debugging.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. Ignoring provenance, making facts untrustworthy.
    - B. Design the ontology with domain experts before ingesting at scale.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Choose the model (RDF vs property graph) to fit query needs.
+   - C. Choose the model (RDF vs property graph) to fit query needs.
+   - D. It makes the system slower but has no other effect.
    - **Answer: A.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
 4. *(Discussion)* What trade-offs would you weigh when implementing Visualising Knowledge Graphs?
    - **Model answer:** A strong answer defines visualising knowledge graphs (Effective exploration and analyst tooling.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
@@ -3461,57 +3414,68 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Knowledge Graphs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven The Enterprise Knowledge Graph Architecture component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating The Enterprise Knowledge Graph Architecture with a regression gate
+### Listing: Implementing a The Enterprise Knowledge Graph Architecture component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class TheEnterpriseKnowledgeConfig:
+    """Configuration for the The Enterprise Knowledge Graph Architecture component in a Knowledge Graphs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score The Enterprise Knowledge Graph Architecture output against references with a simple exact-match metric.
+class TheEnterpriseKnowledge:
+    """A minimal, production-shaped implementation of The Enterprise Knowledge Graph Architecture."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: TheEnterpriseKnowledgeConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheEnterpriseKnowledge failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The Enterprise Knowledge Graph Architecture goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “The Enterprise Knowledge Graph Architecture”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It applies exclusively to image data.
    - B. It guarantees deterministic output regardless of input.
    - C. Reference blueprint integrating sources, store and consumers.
    - D. It removes all security and governance requirements.
    - **Answer: C.** The Enterprise Knowledge Graph Architecture: Reference blueprint integrating sources, store and consumers.
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Treat entity resolution as a first-class, monitored pipeline.
+   - A. Design the ontology with domain experts before ingesting at scale.
    - B. It is only relevant to academic research, not production.
    - C. Picking a graph engine that cannot scale to your traversal patterns.
-   - D. Over-engineering the ontology before validating use cases.
-   - **Answer: A.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Design the ontology with domain experts before ingesting at scale.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. Choose the model (RDF vs property graph) to fit query needs.
    - B. It guarantees deterministic output regardless of input.
@@ -4012,7 +3976,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="3-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#b45309"/><rect x="0" y="30" width="840" height="16" fill="#b45309"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Case Study: Finance at Scale</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#b45309"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Graph Algorithm…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#d97706"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Data Quality an…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#f59e0b"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Graph S…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#ea580c"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grou…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="3-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bne9225b7" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#d97706"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bne9225b7)"/><rect x="0" y="32" width="840" height="16" fill="url(#bne9225b7)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Case Study: Finance at Scale</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#b45309"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Graph Algorithm…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#d97706"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Data Quality an…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#f59e0b"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Graph S…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#ea580c"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grou…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  Capability Map</text></svg>
 
 </div>
 
@@ -4143,81 +4107,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Case Study: Finance at Scale logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Case Study: Finance at Scale component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Case Study: Finance at Scale
+### Listing: Implementing a Case Study: Finance at Scale component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CaseFinanceConfig:
+    """Configuration for the Case Study: Finance at Scale component in a Knowledge Graphs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Case Study: Finance at Scale."""
+class CaseFinance:
+    """A minimal, production-shaped implementation of Case Study: Finance at Scale."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CaseFinanceConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CaseFinance failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Case Study: Finance at Scale goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Case Study: Finance at Scale”?
-   - A. a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Case Study: Finance at Scale: a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
-2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Design the ontology with domain experts before ingesting at scale.
-   - B. Neglecting entity resolution and creating duplicates.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Design the ontology with domain experts before ingesting at scale.
-3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. It makes the system slower but has no other effect.
-   - B. Over-engineering the ontology before validating use cases.
+   - B. It is only relevant to academic research, not production.
+   - C. a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Case Study: Finance at Scale: a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
+2. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: B.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
-4. *(Discussion)* Walk through how you would design Case Study: Finance at Scale for an enterprise Knowledge Graphs workload.
+   - D. Design the ontology with domain experts before ingesting at scale.
+   - **Answer: D.** Best practice: Design the ontology with domain experts before ingesting at scale.
+3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. Record provenance on every fact for trust and debugging.
+   - B. It makes the system slower but has no other effect.
+   - C. Ignoring provenance, making facts untrustworthy.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
+4. *(Discussion)* Explain Case Study: Finance at Scale and why it matters in a production Knowledge Graphs system.
    - **Model answer:** A strong answer defines case study: finance at scale (a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4239,9 +4197,9 @@ Operating in Production can be characterised as the operational discipline requi
 
 To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Getting this right early prevents expensive rework once a Knowledge Graphs system reaches scale.
 
-Operating in Production cannot be understood in isolation from visualising knowledge graphs. Recall that visualising knowledge graphs concerns effective exploration and analyst tooling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from ontology and schema design. Recall that ontology and schema design concerns classes, properties, taxonomies and reusing standard vocabularies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Operating in Production cannot be understood in isolation from data quality and entity resolution. Recall that data quality and entity resolution concerns deduplication, validation and provenance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Operating in Production cannot be understood in isolation from graph query languages. Recall that graph query languages concerns cypher, SPARQL and Gremlin for traversal and pattern matching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Several established patterns apply directly to operating in production. The first, canonical ontology with reused standard vocabularies, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, embedding-based link prediction for completion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -4294,7 +4252,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with visualising knowledge graphs. Because visualising knowledge graphs concerns effective exploration and analyst tooling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ontology and schema design. Because ontology and schema design concerns classes, properties, taxonomies and reusing standard vocabularies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4308,7 +4266,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with ontology and schema design. Because ontology and schema design concerns classes, properties, taxonomies and reusing standard vocabularies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with governance and lineage. Because governance and lineage concerns versioning, access control and auditability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4439,11 +4397,11 @@ class OperatingInProduction:
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Operating in Production”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
+   - A. the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
    - D. It removes all security and governance requirements.
-   - **Answer: C.** Operating in Production: the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: A.** Operating in Production: the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Ignoring provenance, making facts untrustworthy.
    - B. It eliminates the need for any evaluation or monitoring.
@@ -4617,80 +4575,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Knowledge Graphs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Evaluation and Quality Assurance
+### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It applies exclusively to image data.
+   - A. It makes the system slower but has no other effect.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
-   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
+   - C. a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Ignoring provenance, making facts untrustworthy.
-   - B. It applies exclusively to image data.
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. It makes the system slower but has no other effect.
    - C. It removes all security and governance requirements.
-   - D. Design the ontology with domain experts before ingesting at scale.
-   - **Answer: D.** Best practice: Design the ontology with domain experts before ingesting at scale.
-3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Ignoring provenance, making facts untrustworthy.
    - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: C.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
+   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. Picking a graph engine that cannot scale to your traversal patterns.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: C.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
 4. *(Discussion)* How would you test and monitor Evaluation and Quality Assurance in production?
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
@@ -4703,23 +4644,23 @@ _This chapter examines security, privacy and governance within Knowledge Graphs.
 
 ## Introduction
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Security, Privacy and Governance is best understood as the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant. Neglecting it is one of the most common reasons Knowledge Graphs initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Knowledge Graphs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define Security, Privacy and Governance as the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. This concept recurs throughout the Knowledge Graphs lifecycle, from design to operations.
+To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Getting this right early prevents expensive rework once a Knowledge Graphs system reaches scale.
 
-Security, Privacy and Governance cannot be understood in isolation from visualising knowledge graphs. Recall that visualising knowledge graphs concerns effective exploration and analyst tooling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security, Privacy and Governance cannot be understood in isolation from reasoning and inference. Recall that reasoning and inference concerns rules, RDFS/OWL semantics and inferring implicit facts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Security, Privacy and Governance cannot be understood in isolation from operating knowledge graphs. Recall that operating knowledge graphs concerns pipelines, monitoring and lifecycle management. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security, Privacy and Governance cannot be understood in isolation from the enterprise knowledge graph architecture. Recall that the enterprise knowledge graph architecture concerns reference blueprint integrating sources, store and consumers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Several established patterns apply directly to security, privacy and governance. The first, provenance edges for full traceability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-resolution pipeline feeding a golden-record graph, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4729,40 +4670,71 @@ Concretely, the principal building blocks include graphs, triples and the proper
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+```plantuml
+@startuml
+title Application Flow - Security, Privacy and Governance
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 26. Application Flow - Security, Privacy and Governance** (mermaid). Figure: Application Flow view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 26. Application Flow - Security, Privacy and Governance** (plantuml). Figure: Application Flow view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Knowledge Graphs Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Graphs, Triples and the P…]
+    S1[Ontology and Schema Design]
+    S2[Entity Extraction and Lin…]
+    S3[Graph Query Languages]
+    S4[Reasoning and Inference]
+    S5[Knowledge Graph Embeddings]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
+
+**Figure 27. RAG Architecture - Security, Privacy and Governance** (mermaid). Figure: RAG Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into security, privacy and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
-In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with visualising knowledge graphs. Because visualising knowledge graphs concerns effective exploration and analyst tooling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Hogan et al. — Knowledge Graphs (2021) and Bordes et al. — TransE (2013). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -4772,9 +4744,23 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Hogan et al. — Knowledge Graphs (2021) and Bordes et al. — TransE (2013). These primary sources reward careful reading and ground the practical guidance above in established results.
 
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into security, privacy and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+
+In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with governance and lineage. Because governance and lineage concerns versioning, access control and auditability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Hogan et al. — Knowledge Graphs (2021) and Bordes et al. — TransE (2013). These primary sources reward careful reading and ground the practical guidance above in established results.
+
 ## Worked Example
 
-Consider a concrete scenario. A healthcare organisation needs integrating clinical, genomic and literature data. They decide to apply security, privacy and governance as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A healthcare organisation needs integrating clinical, genomic and literature data. They decide to apply security, privacy and governance as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4846,64 +4832,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Knowledge Graphs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Security, Privacy and Governance component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Security, Privacy and Governance with a regression gate
+### Listing: Implementing a Security, Privacy and Governance component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class PrivacyAndConfig:
+    """Configuration for the Security, Privacy and Governance component in a Knowledge Graphs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Security, Privacy and Governance output against references with a simple exact-match metric.
+class PrivacyAnd:
+    """A minimal, production-shaped implementation of Security, Privacy and Governance."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: PrivacyAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PrivacyAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Security, Privacy and Governance goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Security, Privacy and Governance”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant
    - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Neglecting entity resolution and creating duplicates.
-   - B. Over-engineering the ontology before validating use cases.
-   - C. Ignoring provenance, making facts untrustworthy.
-   - D. Design the ontology with domain experts before ingesting at scale.
-   - **Answer: D.** Best practice: Design the ontology with domain experts before ingesting at scale.
+   - A. It removes all security and governance requirements.
+   - B. Neglecting entity resolution and creating duplicates.
+   - C. It makes the system slower but has no other effect.
+   - D. Choose the model (RDF vs property graph) to fit query needs.
+   - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Choose the model (RDF vs property graph) to fit query needs.
-   - B. Over-engineering the ontology before validating use cases.
-   - C. Design the ontology with domain experts before ingesting at scale.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: B.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
-4. *(Discussion)* Explain Security, Privacy and Governance and why it matters in a production Knowledge Graphs system.
+   - A. Treat entity resolution as a first-class, monitored pipeline.
+   - B. Choose the model (RDF vs property graph) to fit query needs.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Neglecting entity resolution and creating duplicates.
+   - **Answer: D.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+4. *(Discussion)* Walk through how you would design Security, Privacy and Governance for an enterprise Knowledge Graphs workload.
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4915,33 +4912,33 @@ _This chapter examines cost, performance and scaling within Knowledge Graphs. It
 
 ## Introduction
 
-Cost, Performance and Scaling can be characterised as techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic. Neglecting it is one of the most common reasons Knowledge Graphs initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Knowledge Graphs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Cost, Performance and Scaling as techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Cost, Performance and Scaling addresses techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost.
+To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. This concept recurs throughout the Knowledge Graphs lifecycle, from design to operations.
 
-Cost, Performance and Scaling cannot be understood in isolation from the enterprise knowledge graph architecture. Recall that the enterprise knowledge graph architecture concerns reference blueprint integrating sources, store and consumers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Cost, Performance and Scaling cannot be understood in isolation from visualising knowledge graphs. Recall that visualising knowledge graphs concerns effective exploration and analyst tooling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Cost, Performance and Scaling cannot be understood in isolation from knowledge graph embeddings. Recall that knowledge graph embeddings concerns transE, RotatE and link prediction for completion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Cost, Performance and Scaling cannot be understood in isolation from graph algorithms for insight. Recall that graph algorithms for insight concerns centrality, community detection and pathfinding. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to cost, performance and scaling. The first, entity-resolution pipeline feeding a golden-record graph, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, provenance edges for full traceability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, provenance edges for full traceability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-resolution pipeline feeding a golden-record graph, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Cost, Performance and Scaling separates concerns into clearly bounded components with explicit contracts. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
+From an architectural standpoint, Cost, Performance and Scaling sits at the intersection of data, models and operations. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
 
 Concretely, the principal building blocks include graphs, triples and the property graph model, ontology and schema design, entity extraction and linking, graph query languages and reasoning and inference. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```plantuml
 @startuml
@@ -4960,23 +4957,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 27. RAG Architecture - Cost, Performance and Scaling** (plantuml). Figure: RAG Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. RAG Architecture - Cost, Performance and Scaling** (plantuml). Figure: RAG Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="9-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnfed362b" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9d174d"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnfed362b)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnfed362b)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Cost, Performance and Scaling</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Ontology and Schem…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#db2777" filter="url(#sh)"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Entity Extraction …</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#ec4899" filter="url(#sh)"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph Query Langua…</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#f472b6" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning and Infe…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Em…</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  DevOps Pipeline</text></svg>
+
+</div>
+
+**Figure 29. DevOps Pipeline - Cost, Performance and Scaling** (svg). Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
-
-In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with the enterprise knowledge graph architecture. Because the enterprise knowledge graph architecture concerns reference blueprint integrating sources, store and consumers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Hogan et al. — Knowledge Graphs (2021) and Bordes et al. — TransE (2013). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -4984,7 +4975,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with entity extraction and linking. Because entity extraction and linking concerns populating the graph from structured and unstructured sources, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with visualising knowledge graphs. Because visualising knowledge graphs concerns effective exploration and analyst tooling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Hogan et al. — Knowledge Graphs (2021) and Bordes et al. — TransE (2013). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+
+In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with graphs for grounding llms. Because graphs for grounding llms concerns serving structured context to generative systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4992,7 +4997,7 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A finance organisation needs fraud rings and beneficial-ownership analysis. They decide to apply cost, performance and scaling as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A retail organisation needs product knowledge graphs powering search and recommendations. They decide to apply cost, performance and scaling as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5064,64 +5069,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Knowledge Graphs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Cost, Performance and Scaling logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Cost, Performance and Scaling with a regression gate
+### Listing: A composable processing pipeline for Cost, Performance and Scaling
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Cost, Performance and Scaling output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Cost, Performance and Scaling."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Cost, Performance and Scaling”?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
+   - A. techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. It is only relevant to academic research, not production.
-   - B. Neglecting entity resolution and creating duplicates.
-   - C. Design the ontology with domain experts before ingesting at scale.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Design the ontology with domain experts before ingesting at scale.
-3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Record provenance on every fact for trust and debugging.
-   - B. Choose the model (RDF vs property graph) to fit query needs.
-   - C. It is only relevant to academic research, not production.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
+   - C. Neglecting entity resolution and creating duplicates.
    - D. Picking a graph engine that cannot scale to your traversal patterns.
-   - **Answer: D.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
-4. *(Discussion)* How does Cost, Performance and Scaling interact with security and governance requirements?
+   - **Answer: B.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Neglecting entity resolution and creating duplicates.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+4. *(Discussion)* Walk through how you would design Cost, Performance and Scaling for an enterprise Knowledge Graphs workload.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5133,23 +5155,23 @@ _This chapter examines integration and interoperability within Knowledge Graphs.
 
 ## Introduction
 
-Formally, Integration and Interoperability addresses patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+We define Integration and Interoperability as patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Knowledge Graphs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Integration and Interoperability concerns patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Integration and Interoperability refers to patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Getting this right early prevents expensive rework once a Knowledge Graphs system reaches scale.
+To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Understanding this matters because Knowledge Graphs systems succeed or fail on exactly these decisions.
 
-Integration and Interoperability cannot be understood in isolation from scaling graph storage. Recall that scaling graph storage concerns partitioning, indexing and distributed graph engines. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Integration and Interoperability cannot be understood in isolation from the enterprise knowledge graph architecture. Recall that the enterprise knowledge graph architecture concerns reference blueprint integrating sources, store and consumers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Integration and Interoperability cannot be understood in isolation from graphs, triples and the property graph model. Recall that graphs, triples and the property graph model concerns rDF triples versus labelled property graphs and when to use each. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration and Interoperability cannot be understood in isolation from graphs for grounding llms. Recall that graphs for grounding llms concerns serving structured context to generative systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to integration and interoperability. The first, embedding-based link prediction for completion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-resolution pipeline feeding a golden-record graph, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, embedding-based link prediction for completion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, canonical ontology with reused standard vocabularies, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5159,37 +5181,36 @@ Concretely, the principal building blocks include graphs, triples and the proper
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+```plantuml
+@startuml
+title DevOps Pipeline - Integration and Interoperability
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 28. DevOps Pipeline - Integration and Interoperability** (mermaid). Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 30. DevOps Pipeline - Integration and Interoperability** (plantuml). Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaling graph storage. Because scaling graph storage concerns partitioning, indexing and distributed graph engines, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the enterprise knowledge graph architecture. Because the enterprise knowledge graph architecture concerns reference blueprint integrating sources, store and consumers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5197,13 +5218,13 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with visualising knowledge graphs. Because visualising knowledge graphs concerns effective exploration and analyst tooling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with graphs, triples and the property graph model. Because graphs, triples and the property graph model concerns rDF triples versus labelled property graphs and when to use each, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5283,64 +5304,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Knowledge Graphs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Integration and Interoperability logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Integration and Interoperability with a regression gate
+### Listing: A composable processing pipeline for Integration and Interoperability
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Integration and Interoperability output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Integration and Interoperability."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Integration and Interoperability”?
-   - A. It makes the system slower but has no other effect.
-   - B. patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Integration and Interoperability: patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Integration and Interoperability: patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Picking a graph engine that cannot scale to your traversal patterns.
-   - B. Record provenance on every fact for trust and debugging.
-   - C. It makes the system slower but has no other effect.
-   - D. Neglecting entity resolution and creating duplicates.
-   - **Answer: B.** Best practice: Record provenance on every fact for trust and debugging.
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. It is only relevant to academic research, not production.
+   - C. Picking a graph engine that cannot scale to your traversal patterns.
+   - D. Choose the model (RDF vs property graph) to fit query needs.
+   - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Record provenance on every fact for trust and debugging.
-   - D. Ignoring provenance, making facts untrustworthy.
-   - **Answer: D.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
-4. *(Discussion)* Describe a failure mode of Integration and Interoperability and how you would mitigate it.
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. It removes all security and governance requirements.
+   - C. Choose the model (RDF vs property graph) to fit query needs.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+4. *(Discussion)* What trade-offs would you weigh when implementing Integration and Interoperability?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5352,33 +5390,33 @@ _This chapter examines trends and research directions within Knowledge Graphs. I
 
 ## Introduction
 
-Trends and Research Directions can be characterised as emerging trends, open problems and research directions shaping the future of Knowledge Graphs. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Knowledge Graphs. It is foundational: later capabilities in Knowledge Graphs are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Knowledge Graphs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Trends and Research Directions is best understood as emerging trends, open problems and research directions shaping the future of Knowledge Graphs. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Knowledge Graphs. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Understanding this matters because Knowledge Graphs systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. This concept recurs throughout the Knowledge Graphs lifecycle, from design to operations.
 
-Trends and Research Directions cannot be understood in isolation from graphs, triples and the property graph model. Recall that graphs, triples and the property graph model concerns rDF triples versus labelled property graphs and when to use each. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Trends and Research Directions cannot be understood in isolation from graphs for grounding llms. Recall that graphs for grounding llms concerns serving structured context to generative systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Trends and Research Directions cannot be understood in isolation from graph algorithms for insight. Recall that graph algorithms for insight concerns centrality, community detection and pathfinding. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to trends and research directions. The first, canonical ontology with reused standard vocabularies, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-resolution pipeline feeding a golden-record graph, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, entity-resolution pipeline feeding a golden-record graph, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, canonical ontology with reused standard vocabularies, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around trends and research directions are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
+A robust architecture for Trends and Research Directions is layered so each part can evolve independently without destabilising the whole. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
 
 Concretely, the principal building blocks include graphs, triples and the property graph model, ontology and schema design, entity extraction and linking, graph query languages and reasoning and inference. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```plantuml
 @startuml
@@ -5401,36 +5439,46 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 29. Deployment - Trends and Research Directions** (plantuml). Figure: Deployment view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 31. Deployment - Trends and Research Directions** (plantuml). Figure: Deployment view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```plantuml
-@startuml
-title Security Architecture - Trends and Research Directions
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Security Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Security Architecture - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Knowledge Graphs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Graphs, Triples and the…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Ontology and Schema Des…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Entity Extraction and L…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Graph Query Languages" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Reasoning and Inference" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 30. Security Architecture - Trends and Research Directions** (plantuml). Figure: Security Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Security Architecture - Trends and Research Directions** (drawio). Figure: Security Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with graphs, triples and the property graph model. Because graphs, triples and the property graph model concerns rDF triples versus labelled property graphs and when to use each, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with graphs for grounding llms. Because graphs for grounding llms concerns serving structured context to generative systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5440,11 +5488,11 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with graph algorithms for insight. Because graph algorithms for insight concerns centrality, community detection and pathfinding, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating knowledge graphs. Because operating knowledge graphs concerns pipelines, monitoring and lifecycle management, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5452,7 +5500,7 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A finance organisation needs fraud rings and beneficial-ownership analysis. They decide to apply trends and research directions as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise organisation needs 360-degree views linking customers, products and events. They decide to apply trends and research directions as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5525,24 +5573,24 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Trends and Research Directions”?
-   - A. emerging trends, open problems and research directions shaping the future of Knowledge Graphs
-   - B. It makes the system slower but has no other effect.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Knowledge Graphs
-2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
-   - D. Choose the model (RDF vs property graph) to fit query needs.
-   - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+   - D. emerging trends, open problems and research directions shaping the future of Knowledge Graphs
+   - **Answer: D.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Knowledge Graphs
+2. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Choose the model (RDF vs property graph) to fit query needs.
+   - C. It is only relevant to academic research, not production.
+   - D. Over-engineering the ontology before validating use cases.
+   - **Answer: B.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Neglecting entity resolution and creating duplicates.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Treat entity resolution as a first-class, monitored pipeline.
-   - D. Record provenance on every fact for trust and debugging.
-   - **Answer: A.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
-4. *(Discussion)* Explain Trends and Research Directions and why it matters in a production Knowledge Graphs system.
+   - A. It is only relevant to academic research, not production.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - C. Choose the model (RDF vs property graph) to fit query needs.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
+4. *(Discussion)* Walk through how you would design Trends and Research Directions for an enterprise Knowledge Graphs workload.
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Knowledge Graphs) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5554,82 +5602,74 @@ _This chapter examines capstone project within Knowledge Graphs. It covers a sub
 
 ## Introduction
 
-Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable. Neglecting it is one of the most common reasons Knowledge Graphs initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable. Neglecting it is one of the most common reasons Knowledge Graphs initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Knowledge Graphs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Capstone Project addresses a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Getting this right early prevents expensive rework once a Knowledge Graphs system reaches scale.
+To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Understanding this matters because Knowledge Graphs systems succeed or fail on exactly these decisions.
 
-Capstone Project cannot be understood in isolation from knowledge graph embeddings. Recall that knowledge graph embeddings concerns transE, RotatE and link prediction for completion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Capstone Project cannot be understood in isolation from reasoning and inference. Recall that reasoning and inference concerns rules, RDFS/OWL semantics and inferring implicit facts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Capstone Project cannot be understood in isolation from operating knowledge graphs. Recall that operating knowledge graphs concerns pipelines, monitoring and lifecycle management. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from graphs, triples and the property graph model. Recall that graphs, triples and the property graph model concerns rDF triples versus labelled property graphs and when to use each. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to capstone project. The first, provenance edges for full traceability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, embedding-based link prediction for completion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, provenance edges for full traceability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-resolution pipeline feeding a golden-record graph, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Capstone Project sits at the intersection of data, models and operations. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
+A robust architecture for Capstone Project is layered so each part can evolve independently without destabilising the whole. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
 
 Concretely, the principal building blocks include graphs, triples and the property graph model, ontology and schema design, entity extraction and linking, graph query languages and reasoning and inference. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Knowledge Graphs Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Graphs, Triples and the P…]
-    S1[Ontology and Schema Design]
-    S2[Entity Extraction and Lin…]
-    S3[Graph Query Languages]
-    S4[Reasoning and Inference]
-    S5[Knowledge Graph Embeddings]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="10-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8bcf77e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8bcf77e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8bcf77e)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Capstone Project</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#16a34a"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Graphs for Grou…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#22c55e"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Governance and …</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#4ade80"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Operating Knowl…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#14532d"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Visualising Kno…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Knowledge Graphs  •  Security Architecture</text></svg>
+
+</div>
+
+**Figure 33. Security Architecture - Capstone Project** (svg). Figure: Security Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Network - Capstone Project
+package "Knowledge Graphs Platform" {
+  component "Graphs, Triples and the…" as C0
+  component "Ontology and Schema Des…" as C1
+  component "Entity Extraction and L…" as C2
+  component "Graph Query Languages" as C3
+  component "Reasoning and Inference" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-**Figure 31. Security Architecture - Capstone Project** (mermaid). Figure: Security Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 34. Network - Capstone Project** (plantuml). Figure: Network view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with knowledge graph embeddings. Because knowledge graph embeddings concerns transE, RotatE and link prediction for completion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with reasoning and inference. Because reasoning and inference concerns rules, RDFS/OWL semantics and inferring implicit facts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5637,13 +5677,13 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with knowledge graph embeddings. Because knowledge graph embeddings concerns transE, RotatE and link prediction for completion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ontology and schema design. Because ontology and schema design concerns classes, properties, taxonomies and reusing standard vocabularies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5651,7 +5691,7 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A healthcare organisation needs integrating clinical, genomic and literature data. They decide to apply capstone project as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs product knowledge graphs powering search and recommendations. They decide to apply capstone project as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5780,24 +5820,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Capstone Project”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Record provenance on every fact for trust and debugging.
-   - B. Ignoring provenance, making facts untrustworthy.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Over-engineering the ontology before validating use cases.
-   - **Answer: A.** Best practice: Record provenance on every fact for trust and debugging.
-3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. It guarantees deterministic output regardless of input.
    - B. Picking a graph engine that cannot scale to your traversal patterns.
-   - C. Treat entity resolution as a first-class, monitored pipeline.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
-4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It applies exclusively to image data.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
+   - C. Over-engineering the ontology before validating use cases.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
+4. *(Discussion)* Walk through how you would design Capstone Project for an enterprise Knowledge Graphs workload.
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5809,33 +5849,33 @@ _This chapter examines certification preparation and review within Knowledge Gra
 
 ## Introduction
 
-Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of Knowledge Graphs. Neglecting it is one of the most common reasons Knowledge Graphs initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of Knowledge Graphs. Teams that master this consistently ship more reliable Knowledge Graphs systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Knowledge Graphs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of Knowledge Graphs. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Knowledge Graphs. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. Neglecting it is one of the most common reasons Knowledge Graphs initiatives stall in production.
+To place this in context, recall the broader picture: Knowledge graphs represent entities and their relationships as nodes and edges, enabling integration of heterogeneous data, semantic querying and reasoning. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Knowledge Graphs fall into place. This concept recurs throughout the Knowledge Graphs lifecycle, from design to operations.
 
-Certification Preparation and Review cannot be understood in isolation from governance and lineage. Recall that governance and lineage concerns versioning, access control and auditability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from graph query languages. Recall that graph query languages concerns cypher, SPARQL and Gremlin for traversal and pattern matching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Certification Preparation and Review cannot be understood in isolation from graphs for grounding llms. Recall that graphs for grounding llms concerns serving structured context to generative systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Certification Preparation and Review cannot be understood in isolation from data quality and entity resolution. Recall that data quality and entity resolution concerns deduplication, validation and provenance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to certification preparation and review. The first, embedding-based link prediction for completion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, canonical ontology with reused standard vocabularies, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, entity-resolution pipeline feeding a golden-record graph, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, canonical ontology with reused standard vocabularies, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Knowledge Graphs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Certification Preparation and Review separates concerns into clearly bounded components with explicit contracts. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
+A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. An enterprise knowledge graph ingests from databases, documents and APIs through extraction and entity-resolution pipelines into a graph store governed by an ontology. Query services expose traversal and reasoning to applications, while a governance layer tracks provenance, versions and access.
 
 Concretely, the principal building blocks include graphs, triples and the property graph model, ontology and schema design, entity extraction and linking, graph query languages and reasoning and inference. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Knowledge Graphs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```plantuml
 @startuml
@@ -5858,37 +5898,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 32. Network - Certification Preparation and Review** (plantuml). Figure: Network view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```mermaid
-classDiagram
-  class KGService {
-    +configure(config)
-    +process(request) Response
-    +evaluate(sample) Metrics
-  }
-  class Repository {
-    +get(id) Entity
-    +put(entity)
-  }
-  class Policy {
-    +authorise(ctx) bool
-  }
-  KGService --> Repository
-  KGService --> Policy
-```
-
-**Figure 33. Class - Certification Preparation and Review** (mermaid). Figure: Class view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 35. Network - Certification Preparation and Review** (plantuml). Figure: Network view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with governance and lineage. Because governance and lineage concerns versioning, access control and auditability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with graph query languages. Because graph query languages concerns cypher, SPARQL and Gremlin for traversal and pattern matching, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5896,13 +5916,13 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Neo4j, Amazon Neptune, RDFLib, Apache Jena. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with governance and lineage. Because governance and lineage concerns versioning, access control and auditability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with scaling graph storage. Because scaling graph storage concerns partitioning, indexing and distributed graph engines, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5910,7 +5930,7 @@ For deeper study, the literature offers authoritative treatments such as Hogan e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A finance organisation needs fraud rings and beneficial-ownership analysis. They decide to apply certification preparation and review as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise organisation needs 360-degree views linking customers, products and events. They decide to apply certification preparation and review as part of their Knowledge Graphs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5982,75 +6002,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Certification Preparation and Review component with retry semantics and typed interfaces — the shape we expect from production Knowledge Graphs code rather than a notebook prototype.
+Every change to a Knowledge Graphs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Certification Preparation and Review component
+### Listing: Evaluating Certification Preparation and Review with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class CertificationPreparationAndConfig:
-    """Configuration for the Certification Preparation and Review component in a Knowledge Graphs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class CertificationPreparationAnd:
-    """A minimal, production-shaped implementation of Certification Preparation and Review."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Certification Preparation and Review output against references with a simple exact-match metric.
 
-    def __init__(self, config: CertificationPreparationAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"CertificationPreparationAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Certification Preparation and Review goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Knowledge Graphs, which statement best describes “Certification Preparation and Review”?
-   - A. a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
+   - A. It removes all security and governance requirements.
+   - B. a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
 2. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Over-engineering the ontology before validating use cases.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Picking a graph engine that cannot scale to your traversal patterns.
-   - D. Choose the model (RDF vs property graph) to fit query needs.
-   - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. Treat entity resolution as a first-class, monitored pipeline.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
 3. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Design the ontology with domain experts before ingesting at scale.
-   - B. Ignoring provenance, making facts untrustworthy.
-   - C. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
+   - C. Picking a graph engine that cannot scale to your traversal patterns.
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
-4. *(Discussion)* How does Certification Preparation and Review interact with security and governance requirements?
+   - **Answer: C.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
+4. *(Discussion)* Walk through how you would design Certification Preparation and Review for an enterprise Knowledge Graphs workload.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Knowledge Graphs) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6092,7 +6101,7 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines ontology and schema design (Classes, properties, taxonomies and reusing standard vocabularies.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 3. How does Entity Extraction and Linking interact with security and governance requirements?
    - **Guidance:** A strong answer defines entity extraction and linking (Populating the graph from structured and unstructured sources.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-4. Walk through how you would design Graph Query Languages for an enterprise Knowledge Graphs workload.
+4. How would you test and monitor Graph Query Languages in production?
    - **Guidance:** A strong answer defines graph query languages (Cypher, SPARQL and Gremlin for traversal and pattern matching.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 5. Describe a failure mode of Reasoning and Inference and how you would mitigate it.
    - **Guidance:** A strong answer defines reasoning and inference (Rules, RDFS/OWL semantics and inferring implicit facts.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
@@ -6106,7 +6115,7 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines scaling graph storage (Partitioning, indexing and distributed graph engines.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 10. How would you test and monitor Graphs for Grounding LLMs in production?
    - **Guidance:** A strong answer defines graphs for grounding llms (Serving structured context to generative systems.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-11. What trade-offs would you weigh when implementing Governance and Lineage?
+11. How would you test and monitor Governance and Lineage in production?
    - **Guidance:** A strong answer defines governance and lineage (Versioning, access control and auditability.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 12. Describe a failure mode of Operating Knowledge Graphs and how you would mitigate it.
    - **Guidance:** A strong answer defines operating knowledge graphs (Pipelines, monitoring and lifecycle management.) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
@@ -6118,23 +6127,23 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Knowledge Graphs system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 16. How does Hands-On Lab: Building an End-to-End Knowledge Graphs System interact with security and governance requirements?
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end knowledge graphs system (a guided, build-along laboratory that constructs a functioning Knowledge Graphs system from first principles) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-17. Walk through how you would design Case Study: Finance at Scale for an enterprise Knowledge Graphs workload.
+17. Explain Case Study: Finance at Scale and why it matters in a production Knowledge Graphs system.
    - **Guidance:** A strong answer defines case study: finance at scale (a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 18. Describe a failure mode of Operating in Production and how you would mitigate it.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 19. How would you test and monitor Evaluation and Quality Assurance in production?
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-20. Explain Security, Privacy and Governance and why it matters in a production Knowledge Graphs system.
+20. Walk through how you would design Security, Privacy and Governance for an enterprise Knowledge Graphs workload.
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-21. How does Cost, Performance and Scaling interact with security and governance requirements?
+21. Walk through how you would design Cost, Performance and Scaling for an enterprise Knowledge Graphs workload.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-22. Describe a failure mode of Integration and Interoperability and how you would mitigate it.
+22. What trade-offs would you weigh when implementing Integration and Interoperability?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-23. Explain Trends and Research Directions and why it matters in a production Knowledge Graphs system.
+23. Walk through how you would design Trends and Research Directions for an enterprise Knowledge Graphs workload.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Knowledge Graphs) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-24. What trade-offs would you weigh when implementing Capstone Project?
+24. Walk through how you would design Capstone Project for an enterprise Knowledge Graphs workload.
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
-25. How does Certification Preparation and Review interact with security and governance requirements?
+25. Walk through how you would design Certification Preparation and Review for an enterprise Knowledge Graphs workload.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Knowledge Graphs) then connects it to architecture, evaluation, cost, security and operations for Knowledge Graphs, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6166,11 +6175,11 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It is only relevant to academic research, not production.
    - **Answer: A.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
 5. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. Record provenance on every fact for trust and debugging.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Choose the model (RDF vs property graph) to fit query needs.
-   - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+   - D. Picking a graph engine that cannot scale to your traversal patterns.
+   - **Answer: B.** Best practice: Record provenance on every fact for trust and debugging.
 6. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. Neglecting entity resolution and creating duplicates.
    - B. It makes the system slower but has no other effect.
@@ -6178,23 +6187,23 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It applies exclusively to image data.
    - **Answer: A.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
 7. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Ignoring provenance, making facts untrustworthy.
-   - B. It is only relevant to academic research, not production.
-   - C. Picking a graph engine that cannot scale to your traversal patterns.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+   - A. It removes all security and governance requirements.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
+   - C. Over-engineering the ontology before validating use cases.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
 8. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Design the ontology with domain experts before ingesting at scale.
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. Neglecting entity resolution and creating duplicates.
-   - **Answer: D.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Over-engineering the ontology before validating use cases.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: C.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
 9. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Over-engineering the ontology before validating use cases.
+   - A. It applies exclusively to image data.
    - B. Ignoring provenance, making facts untrustworthy.
-   - C. Record provenance on every fact for trust and debugging.
+   - C. Design the ontology with domain experts before ingesting at scale.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Record provenance on every fact for trust and debugging.
+   - **Answer: C.** Best practice: Design the ontology with domain experts before ingesting at scale.
 10. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. It removes all security and governance requirements.
    - B. Picking a graph engine that cannot scale to your traversal patterns.
@@ -6226,11 +6235,11 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It applies exclusively to image data.
    - **Answer: B.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
 15. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Ignoring provenance, making facts untrustworthy.
-   - B. Choose the model (RDF vs property graph) to fit query needs.
+   - A. It makes the system slower but has no other effect.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
 16. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. It guarantees deterministic output regardless of input.
    - B. Record provenance on every fact for trust and debugging.
@@ -6263,16 +6272,16 @@ Certification-style multiple-choice questions covering best practices and common
    - **Answer: C.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
 21. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Picking a graph engine that cannot scale to your traversal patterns.
-   - B. Over-engineering the ontology before validating use cases.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+   - B. Record provenance on every fact for trust and debugging.
+   - C. It makes the system slower but has no other effect.
+   - D. Neglecting entity resolution and creating duplicates.
+   - **Answer: B.** Best practice: Record provenance on every fact for trust and debugging.
 22. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Choose the model (RDF vs property graph) to fit query needs.
-   - D. Over-engineering the ontology before validating use cases.
-   - **Answer: D.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
+   - A. It applies exclusively to image data.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - C. Design the ontology with domain experts before ingesting at scale.
+   - D. Choose the model (RDF vs property graph) to fit query needs.
+   - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
 23. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Design the ontology with domain experts before ingesting at scale.
    - B. It guarantees deterministic output regardless of input.
@@ -6286,23 +6295,23 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
 25. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Over-engineering the ontology before validating use cases.
-   - B. Design the ontology with domain experts before ingesting at scale.
-   - C. Neglecting entity resolution and creating duplicates.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Design the ontology with domain experts before ingesting at scale.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Record provenance on every fact for trust and debugging.
+   - D. Over-engineering the ontology before validating use cases.
+   - **Answer: C.** Best practice: Record provenance on every fact for trust and debugging.
 26. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. Ignoring provenance, making facts untrustworthy.
    - B. Design the ontology with domain experts before ingesting at scale.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Choose the model (RDF vs property graph) to fit query needs.
+   - C. Choose the model (RDF vs property graph) to fit query needs.
+   - D. It makes the system slower but has no other effect.
    - **Answer: A.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
 27. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Treat entity resolution as a first-class, monitored pipeline.
+   - A. Design the ontology with domain experts before ingesting at scale.
    - B. It is only relevant to academic research, not production.
    - C. Picking a graph engine that cannot scale to your traversal patterns.
-   - D. Over-engineering the ontology before validating use cases.
-   - **Answer: A.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Design the ontology with domain experts before ingesting at scale.
 28. Which of the following is a common pitfall to avoid in Knowledge Graphs?
    - A. Choose the model (RDF vs property graph) to fit query needs.
    - B. It guarantees deterministic output regardless of input.
@@ -6334,17 +6343,17 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
 33. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Design the ontology with domain experts before ingesting at scale.
-   - B. Neglecting entity resolution and creating duplicates.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Design the ontology with domain experts before ingesting at scale.
-34. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It makes the system slower but has no other effect.
-   - B. Over-engineering the ontology before validating use cases.
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: B.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
+   - D. Design the ontology with domain experts before ingesting at scale.
+   - **Answer: D.** Best practice: Design the ontology with domain experts before ingesting at scale.
+34. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. Record provenance on every fact for trust and debugging.
+   - B. It makes the system slower but has no other effect.
+   - C. Ignoring provenance, making facts untrustworthy.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
 35. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Ignoring provenance, making facts untrustworthy.
    - B. It eliminates the need for any evaluation or monitoring.
@@ -6358,99 +6367,99 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Ignoring provenance, making facts untrustworthy.
    - **Answer: D.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
 37. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Ignoring provenance, making facts untrustworthy.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Design the ontology with domain experts before ingesting at scale.
-   - **Answer: D.** Best practice: Design the ontology with domain experts before ingesting at scale.
-38. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Ignoring provenance, making facts untrustworthy.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: C.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
-39. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. Neglecting entity resolution and creating duplicates.
-   - B. Over-engineering the ontology before validating use cases.
-   - C. Ignoring provenance, making facts untrustworthy.
-   - D. Design the ontology with domain experts before ingesting at scale.
-   - **Answer: D.** Best practice: Design the ontology with domain experts before ingesting at scale.
-40. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Choose the model (RDF vs property graph) to fit query needs.
-   - B. Over-engineering the ontology before validating use cases.
-   - C. Design the ontology with domain experts before ingesting at scale.
-   - D. Treat entity resolution as a first-class, monitored pipeline.
-   - **Answer: B.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
-41. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. It is only relevant to academic research, not production.
-   - B. Neglecting entity resolution and creating duplicates.
-   - C. Design the ontology with domain experts before ingesting at scale.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Design the ontology with domain experts before ingesting at scale.
-42. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Record provenance on every fact for trust and debugging.
-   - B. Choose the model (RDF vs property graph) to fit query needs.
-   - C. It is only relevant to academic research, not production.
-   - D. Picking a graph engine that cannot scale to your traversal patterns.
-   - **Answer: D.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
-43. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Picking a graph engine that cannot scale to your traversal patterns.
-   - B. Record provenance on every fact for trust and debugging.
-   - C. It makes the system slower but has no other effect.
-   - D. Neglecting entity resolution and creating duplicates.
-   - **Answer: B.** Best practice: Record provenance on every fact for trust and debugging.
-44. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. It removes all security and governance requirements.
    - B. It makes the system slower but has no other effect.
-   - C. Record provenance on every fact for trust and debugging.
-   - D. Ignoring provenance, making facts untrustworthy.
-   - **Answer: D.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
-45. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+38. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. Picking a graph engine that cannot scale to your traversal patterns.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: C.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
+39. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. It removes all security and governance requirements.
+   - B. Neglecting entity resolution and creating duplicates.
    - C. It makes the system slower but has no other effect.
    - D. Choose the model (RDF vs property graph) to fit query needs.
    - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
-46. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Neglecting entity resolution and creating duplicates.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Treat entity resolution as a first-class, monitored pipeline.
-   - D. Record provenance on every fact for trust and debugging.
-   - **Answer: A.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
-47. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Record provenance on every fact for trust and debugging.
-   - B. Ignoring provenance, making facts untrustworthy.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Over-engineering the ontology before validating use cases.
-   - **Answer: A.** Best practice: Record provenance on every fact for trust and debugging.
-48. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+40. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. Treat entity resolution as a first-class, monitored pipeline.
+   - B. Choose the model (RDF vs property graph) to fit query needs.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Neglecting entity resolution and creating duplicates.
+   - **Answer: D.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+41. Which of the following is a recommended best practice when working with Knowledge Graphs?
    - A. It guarantees deterministic output regardless of input.
-   - B. Picking a graph engine that cannot scale to your traversal patterns.
-   - C. Treat entity resolution as a first-class, monitored pipeline.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
-49. Which of the following is a recommended best practice when working with Knowledge Graphs?
-   - A. Over-engineering the ontology before validating use cases.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
+   - C. Neglecting entity resolution and creating duplicates.
+   - D. Picking a graph engine that cannot scale to your traversal patterns.
+   - **Answer: B.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+42. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Neglecting entity resolution and creating duplicates.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+43. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. It is only relevant to academic research, not production.
    - C. Picking a graph engine that cannot scale to your traversal patterns.
    - D. Choose the model (RDF vs property graph) to fit query needs.
    - **Answer: D.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
-50. Which of the following is a common pitfall to avoid in Knowledge Graphs?
-   - A. Design the ontology with domain experts before ingesting at scale.
-   - B. Ignoring provenance, making facts untrustworthy.
-   - C. It makes the system slower but has no other effect.
+44. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. Neglecting entity resolution and creating duplicates.
+   - B. It removes all security and governance requirements.
+   - C. Choose the model (RDF vs property graph) to fit query needs.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Neglecting entity resolution and creating duplicates.
+45. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Choose the model (RDF vs property graph) to fit query needs.
+   - C. It is only relevant to academic research, not production.
+   - D. Over-engineering the ontology before validating use cases.
+   - **Answer: B.** Best practice: Choose the model (RDF vs property graph) to fit query needs.
+46. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It is only relevant to academic research, not production.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - C. Choose the model (RDF vs property graph) to fit query needs.
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Ignoring provenance, making facts untrustworthy.
+   - **Answer: B.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
+47. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Picking a graph engine that cannot scale to your traversal patterns.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Treat entity resolution as a first-class, monitored pipeline.
+   - **Answer: D.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+48. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It applies exclusively to image data.
+   - B. Treat entity resolution as a first-class, monitored pipeline.
+   - C. Over-engineering the ontology before validating use cases.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Over-engineering the ontology before validating use cases.
+49. Which of the following is a recommended best practice when working with Knowledge Graphs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. Treat entity resolution as a first-class, monitored pipeline.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Treat entity resolution as a first-class, monitored pipeline.
+50. Which of the following is a common pitfall to avoid in Knowledge Graphs?
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
+   - C. Picking a graph engine that cannot scale to your traversal patterns.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Pitfall to avoid: Picking a graph engine that cannot scale to your traversal patterns.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Knowledge Graphs, which statement best describes “Graphs, Triples and the Property Graph Model”?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
    - C. RDF triples versus labelled property graphs and when to use each.
-   - D. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Graphs, Triples and the Property Graph Model: RDF triples versus labelled property graphs and when to use each.
 2. In the context of Knowledge Graphs, which statement best describes “Ontology and Schema Design”?
    - A. It is only relevant to academic research, not production.
@@ -6459,22 +6468,22 @@ Assessment items to verify conceptual understanding.
    - D. Classes, properties, taxonomies and reusing standard vocabularies.
    - **Answer: D.** Ontology and Schema Design: Classes, properties, taxonomies and reusing standard vocabularies.
 3. In the context of Knowledge Graphs, which statement best describes “Entity Extraction and Linking”?
-   - A. It applies exclusively to image data.
+   - A. It makes the system slower but has no other effect.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Populating the graph from structured and unstructured sources.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Entity Extraction and Linking: Populating the graph from structured and unstructured sources.
+   - C. It removes all security and governance requirements.
+   - D. Populating the graph from structured and unstructured sources.
+   - **Answer: D.** Entity Extraction and Linking: Populating the graph from structured and unstructured sources.
 4. In the context of Knowledge Graphs, which statement best describes “Graph Query Languages”?
-   - A. It removes all security and governance requirements.
+   - A. It applies exclusively to image data.
    - B. It makes the system slower but has no other effect.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. Cypher, SPARQL and Gremlin for traversal and pattern matching.
    - **Answer: D.** Graph Query Languages: Cypher, SPARQL and Gremlin for traversal and pattern matching.
 5. In the context of Knowledge Graphs, which statement best describes “Reasoning and Inference”?
    - A. Rules, RDFS/OWL semantics and inferring implicit facts.
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Reasoning and Inference: Rules, RDFS/OWL semantics and inferring implicit facts.
 6. In the context of Knowledge Graphs, which statement best describes “Knowledge Graph Embeddings”?
    - A. TransE, RotatE and link prediction for completion.
@@ -6489,27 +6498,27 @@ Assessment items to verify conceptual understanding.
    - D. It removes all security and governance requirements.
    - **Answer: A.** Graph Algorithms for Insight: Centrality, community detection and pathfinding.
 8. In the context of Knowledge Graphs, which statement best describes “Data Quality and Entity Resolution”?
-   - A. It applies exclusively to image data.
-   - B. Deduplication, validation and provenance.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Data Quality and Entity Resolution: Deduplication, validation and provenance.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. Deduplication, validation and provenance.
+   - **Answer: D.** Data Quality and Entity Resolution: Deduplication, validation and provenance.
 9. In the context of Knowledge Graphs, which statement best describes “Scaling Graph Storage”?
-   - A. It makes the system slower but has no other effect.
+   - A. It guarantees deterministic output regardless of input.
    - B. Partitioning, indexing and distributed graph engines.
-   - C. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Scaling Graph Storage: Partitioning, indexing and distributed graph engines.
 10. In the context of Knowledge Graphs, which statement best describes “Graphs for Grounding LLMs”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
    - C. It is only relevant to academic research, not production.
    - D. Serving structured context to generative systems.
    - **Answer: D.** Graphs for Grounding LLMs: Serving structured context to generative systems.
 11. In the context of Knowledge Graphs, which statement best describes “Governance and Lineage”?
-   - A. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
    - B. Versioning, access control and auditability.
-   - C. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
    - D. It removes all security and governance requirements.
    - **Answer: B.** Governance and Lineage: Versioning, access control and auditability.
 12. In the context of Knowledge Graphs, which statement best describes “Operating Knowledge Graphs”?
@@ -6519,13 +6528,13 @@ Assessment items to verify conceptual understanding.
    - D. It is only relevant to academic research, not production.
    - **Answer: C.** Operating Knowledge Graphs: Pipelines, monitoring and lifecycle management.
 13. In the context of Knowledge Graphs, which statement best describes “Visualising Knowledge Graphs”?
-   - A. Effective exploration and analyst tooling.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Visualising Knowledge Graphs: Effective exploration and analyst tooling.
+   - A. It removes all security and governance requirements.
+   - B. Effective exploration and analyst tooling.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Visualising Knowledge Graphs: Effective exploration and analyst tooling.
 14. In the context of Knowledge Graphs, which statement best describes “The Enterprise Knowledge Graph Architecture”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It applies exclusively to image data.
    - B. It guarantees deterministic output regardless of input.
    - C. Reference blueprint integrating sources, store and consumers.
    - D. It removes all security and governance requirements.
@@ -6543,59 +6552,59 @@ Assessment items to verify conceptual understanding.
    - D. It applies exclusively to image data.
    - **Answer: C.** Hands-On Lab: Building an End-to-End Knowledge Graphs System: a guided, build-along laboratory that constructs a functioning Knowledge Graphs system from first principles
 17. In the context of Knowledge Graphs, which statement best describes “Case Study: Finance at Scale”?
-   - A. a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
+   - A. It makes the system slower but has no other effect.
+   - B. It is only relevant to academic research, not production.
+   - C. a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
    - D. It removes all security and governance requirements.
-   - **Answer: A.** Case Study: Finance at Scale: a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
+   - **Answer: C.** Case Study: Finance at Scale: a detailed case study of deploying Knowledge Graphs in a demanding finance environment, including the decisions, trade-offs and outcomes
 18. In the context of Knowledge Graphs, which statement best describes “Operating in Production”?
+   - A. the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Operating in Production: the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
+19. In the context of Knowledge Graphs, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
+20. In the context of Knowledge Graphs, which statement best describes “Security, Privacy and Governance”?
    - A. It applies exclusively to image data.
    - B. It guarantees deterministic output regardless of input.
-   - C. the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Operating in Production: the operational discipline required to run a Knowledge Graphs system reliably, including monitoring, incident response and continuous improvement
-19. In the context of Knowledge Graphs, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
-   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Knowledge Graphs system before and after release
-20. In the context of Knowledge Graphs, which statement best describes “Security, Privacy and Governance”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant
    - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a Knowledge Graphs system trustworthy and compliant
 21. In the context of Knowledge Graphs, which statement best describes “Cost, Performance and Scaling”?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
-22. In the context of Knowledge Graphs, which statement best describes “Integration and Interoperability”?
-   - A. It makes the system slower but has no other effect.
-   - B. patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Integration and Interoperability: patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
-23. In the context of Knowledge Graphs, which statement best describes “Trends and Research Directions”?
-   - A. emerging trends, open problems and research directions shaping the future of Knowledge Graphs
+   - A. techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
    - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Knowledge Graphs system to production traffic
+22. In the context of Knowledge Graphs, which statement best describes “Integration and Interoperability”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Integration and Interoperability: patterns for integrating a Knowledge Graphs system with surrounding enterprise systems and data
+23. In the context of Knowledge Graphs, which statement best describes “Trends and Research Directions”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
+   - D. emerging trends, open problems and research directions shaping the future of Knowledge Graphs
+   - **Answer: D.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Knowledge Graphs
+24. In the context of Knowledge Graphs, which statement best describes “Capstone Project”?
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
+25. In the context of Knowledge Graphs, which statement best describes “Certification Preparation and Review”?
+   - A. It removes all security and governance requirements.
+   - B. a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
    - C. It guarantees deterministic output regardless of input.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Knowledge Graphs
-24. In the context of Knowledge Graphs, which statement best describes “Capstone Project”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Knowledge Graphs deliverable
-25. In the context of Knowledge Graphs, which statement best describes “Certification Preparation and Review”?
-   - A. a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Knowledge Graphs
 
 # References
 

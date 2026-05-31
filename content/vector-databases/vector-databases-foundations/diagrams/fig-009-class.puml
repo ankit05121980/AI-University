@@ -1,5 +1,5 @@
 @startuml
-title Class - Freshness, Upserts and Deletes
+title Class - Hybrid and Multi-Vector Retrieval
 class Service {
   +process(req)
   +evaluate(sample)

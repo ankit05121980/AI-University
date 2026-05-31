@@ -1,5 +1,5 @@
 @startuml
-title DevOps Pipeline - Evaluating Embedding Quality
+title DevOps Pipeline - Indexing for Approximate Nearest Neighbour Search
 class Service {
   +process(req)
   +evaluate(sample)

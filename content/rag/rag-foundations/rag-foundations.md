@@ -85,26 +85,26 @@ First published 2026. First Edition. Document version 1.0.0.
 | 3 | Embedding and Indexing Strategy | 10 | 1 | 1 | 4 |
 | 4 | Retrieval and Query Transformation | 10 | 1 | 1 | 4 |
 | 5 | Re-ranking and Context Selection | 11 | 2 | 1 | 4 |
-| 6 | Prompt Assembly and Citation | 11 | 2 | 1 | 4 |
+| 6 | Prompt Assembly and Citation | 10 | 1 | 1 | 4 |
 | 7 | Advanced RAG Patterns | 11 | 2 | 1 | 4 |
 | 8 | Evaluation of RAG Systems | 10 | 1 | 1 | 4 |
-| 9 | Handling Tables, Images and Code | 10 | 1 | 1 | 4 |
-| 10 | Caching and Cost Optimisation | 11 | 2 | 1 | 4 |
+| 9 | Handling Tables, Images and Code | 11 | 2 | 1 | 4 |
+| 10 | Caching and Cost Optimisation | 10 | 1 | 1 | 4 |
 | 11 | Security and Access Control in RAG | 10 | 1 | 1 | 4 |
-| 12 | Operating RAG in Production | 10 | 1 | 1 | 4 |
+| 12 | Operating RAG in Production | 11 | 2 | 1 | 4 |
 | 13 | Failure Modes and Debugging | 11 | 2 | 1 | 4 |
 | 14 | The End-to-End RAG Reference Architecture | 11 | 2 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 11 | 2 | 1 | 4 |
 | 16 | Hands-On Lab: Building an End-to-End RAG System | 11 | 1 | 1 | 4 |
 | 17 | Case Study: Enterprise at Scale | 10 | 1 | 1 | 4 |
 | 18 | Operating in Production | 10 | 1 | 1 | 4 |
-| 19 | Evaluation and Quality Assurance | 10 | 1 | 1 | 4 |
-| 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
-| 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
-| 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
-| 23 | Trends and Research Directions | 9 | 1 | 0 | 4 |
+| 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
+| 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
+| 21 | Cost, Performance and Scaling | 11 | 2 | 1 | 4 |
+| 22 | Integration and Interoperability | 11 | 2 | 1 | 4 |
+| 23 | Trends and Research Directions | 10 | 1 | 0 | 4 |
 | 24 | Capstone Project | 10 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
+| 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
 
 ---
 
@@ -117,15 +117,15 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 5. Knowledge Graph - Re-ranking and Context Selection
 - Figure 6. Network - Re-ranking and Context Selection
 - Figure 7. Network - Prompt Assembly and Citation
-- Figure 8. RAG Architecture - Prompt Assembly and Citation
-- Figure 9. RAG Architecture - Advanced RAG Patterns
-- Figure 10. Security Architecture - Advanced RAG Patterns
-- Figure 11. Security Architecture - Evaluation of RAG Systems
-- Figure 12. Component - Handling Tables, Images and Code
+- Figure 8. RAG Architecture - Advanced RAG Patterns
+- Figure 9. Security Architecture - Advanced RAG Patterns
+- Figure 10. Security Architecture - Evaluation of RAG Systems
+- Figure 11. Component - Handling Tables, Images and Code
+- Figure 12. Sequence - Handling Tables, Images and Code
 - Figure 13. Sequence - Caching and Cost Optimisation
-- Figure 14. DevOps Pipeline - Caching and Cost Optimisation
-- Figure 15. DevOps Pipeline - Security and Access Control in RAG
-- Figure 16. Deployment - Operating RAG in Production
+- Figure 14. DevOps Pipeline - Security and Access Control in RAG
+- Figure 15. Deployment - Operating RAG in Production
+- Figure 16. Infrastructure - Operating RAG in Production
 - Figure 17. Infrastructure - Failure Modes and Debugging
 - Figure 18. Business Process - Failure Modes and Debugging
 - Figure 19. Business Process - The End-to-End RAG Reference Architecture
@@ -136,13 +136,16 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 24. CI/CD Pipeline - Case Study: Enterprise at Scale
 - Figure 25. Architecture - Operating in Production
 - Figure 26. Cloud Architecture - Evaluation and Quality Assurance
-- Figure 27. Application Flow - Security, Privacy and Governance
-- Figure 28. Class - Cost, Performance and Scaling
-- Figure 29. Agent Architecture - Integration and Interoperability
-- Figure 30. Data Flow - Trends and Research Directions
-- Figure 31. Data Lineage - Capstone Project
-- Figure 32. Knowledge Graph - Certification Preparation and Review
-- Figure 33. Network - Certification Preparation and Review
+- Figure 27. Application Flow - Evaluation and Quality Assurance
+- Figure 28. Application Flow - Security, Privacy and Governance
+- Figure 29. Class - Security, Privacy and Governance
+- Figure 30. Class - Cost, Performance and Scaling
+- Figure 31. Agent Architecture - Cost, Performance and Scaling
+- Figure 32. Agent Architecture - Integration and Interoperability
+- Figure 33. Data Flow - Integration and Interoperability
+- Figure 34. Data Flow - Trends and Research Directions
+- Figure 35. Data Lineage - Capstone Project
+- Figure 36. Knowledge Graph - Certification Preparation and Review
 
 ---
 
@@ -352,75 +355,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Why RAG: Grounding and Freshness component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
+Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Why RAG: Grounding and Freshness component
+### Listing: Evaluating Why RAG: Grounding and Freshness with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class WhyGroundingConfig:
-    """Configuration for the Why RAG: Grounding and Freshness component in a RAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class WhyGrounding:
-    """A minimal, production-shaped implementation of Why RAG: Grounding and Freshness."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Why RAG: Grounding and Freshness output against references with a simple exact-match metric.
 
-    def __init__(self, config: WhyGroundingConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"WhyGrounding failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Why RAG: Grounding and Freshness goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Why RAG: Grounding and Freshness”?
-   - A. The limits of parametric knowledge and the case for retrieval.
-   - B. It makes the system slower but has no other effect.
+   - A. It guarantees deterministic output regardless of input.
+   - B. The limits of parametric knowledge and the case for retrieval.
    - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Why RAG: Grounding and Freshness: The limits of parametric knowledge and the case for retrieval.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Why RAG: Grounding and Freshness: The limits of parametric knowledge and the case for retrieval.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Naive fixed-size chunking that splits semantic units.
-   - B. Always cite sources and enable users to verify answers.
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Always cite sources and enable users to verify answers.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. It is only relevant to academic research, not production.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. Evaluate retrieval and generation separately to localise failures.
+   - **Answer: D.** Best practice: Evaluate retrieval and generation separately to localise failures.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - B. Always cite sources and enable users to verify answers.
    - C. It makes the system slower but has no other effect.
    - D. Naive fixed-size chunking that splits semantic units.
    - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* Describe a failure mode of Why RAG: Grounding and Freshness and how you would mitigate it.
+4. *(Discussion)* Walk through how you would design Why RAG: Grounding and Freshness for an enterprise RAG workload.
    - **Model answer:** A strong answer defines why rag: grounding and freshness (The limits of parametric knowledge and the case for retrieval.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -432,23 +424,23 @@ _This chapter examines document ingestion and chunking within RAG. It covers par
 
 ## Introduction
 
-Document Ingestion and Chunking can be characterised as parsing, semantic chunking, overlap and metadata extraction. Understanding this matters because RAG systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Document Ingestion and Chunking refers to parsing, semantic chunking, overlap and metadata extraction. This concept recurs throughout the RAG lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Document Ingestion and Chunking addresses parsing, semantic chunking, overlap and metadata extraction. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Document Ingestion and Chunking addresses parsing, semantic chunking, overlap and metadata extraction. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, document ingestion and chunking is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. This concept recurs throughout the RAG lifecycle, from design to operations.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, document ingestion and chunking is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Getting this right early prevents expensive rework once a RAG system reaches scale.
 
-Document Ingestion and Chunking cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Document Ingestion and Chunking cannot be understood in isolation from handling tables, images and code. Recall that handling tables, images and code concerns multimodal and structured-content retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Document Ingestion and Chunking cannot be understood in isolation from security and access control in rag. Recall that security and access control in rag concerns row-level permissions and preventing data leakage across tenants. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Document Ingestion and Chunking cannot be understood in isolation from re-ranking and context selection. Recall that re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to document ingestion and chunking. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to document ingestion and chunking. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around document ingestion and chunking are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around document ingestion and chunking are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -458,56 +450,46 @@ Concretely, the principal building blocks include why rag: grounding and freshne
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["RAG Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why RAG: Grounding and Fr…]
-    S1[Document Ingestion and Ch…]
-    S2[Embedding and Indexing St…]
-    S3[Retrieval and Query Trans…]
-    S4[Re-ranking and Context Se…]
-    S5[Prompt Assembly and Citat…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Agent Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Agent Architecture - Document Ingestion and Chunking" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="RAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Why RAG: Grounding and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Document Ingestion and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Embedding and Indexing …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Retrieval and Query Tra…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Re-ranking and Context …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 2. Agent Architecture - Document Ingestion and Chunking** (mermaid). Figure: Agent Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 2. Agent Architecture - Document Ingestion and Chunking** (drawio). Figure: Agent Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into document ingestion and chunking. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into document ingestion and chunking. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with handling tables, images and code. Because handling tables, images and code concerns multimodal and structured-content retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -515,13 +497,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into document ingestion and chunking. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into document ingestion and chunking. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with failure modes and debugging. Because failure modes and debugging concerns diagnosing retrieval versus generation failures, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -529,7 +511,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A legal organisation needs case and contract research with traceable sources. They decide to apply document ingestion and chunking as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply document ingestion and chunking as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -601,75 +583,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Document Ingestion and Chunking component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
+Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Document Ingestion and Chunking component
+### Listing: Evaluating Document Ingestion and Chunking with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class DocumentIngestionAndConfig:
-    """Configuration for the Document Ingestion and Chunking component in a RAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class DocumentIngestionAnd:
-    """A minimal, production-shaped implementation of Document Ingestion and Chunking."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Document Ingestion and Chunking output against references with a simple exact-match metric.
 
-    def __init__(self, config: DocumentIngestionAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"DocumentIngestionAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Document Ingestion and Chunking goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Document Ingestion and Chunking”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
    - C. Parsing, semantic chunking, overlap and metadata extraction.
-   - D. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: C.** Document Ingestion and Chunking: Parsing, semantic chunking, overlap and metadata extraction.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Evaluate retrieval and generation separately to localise failures.
-   - B. Stuffing too much context, increasing cost and diluting relevance.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: A.** Best practice: Evaluate retrieval and generation separately to localise failures.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Enforce access control at retrieval time, not just at the UI.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It is only relevant to academic research, not production.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Evaluate retrieval and generation separately to localise failures.
-   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* What trade-offs would you weigh when implementing Document Ingestion and Chunking?
+   - A. Evaluate retrieval and generation separately to localise failures.
+   - B. Measuring only end answer quality without diagnosing retrieval.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+4. *(Discussion)* Describe a failure mode of Document Ingestion and Chunking and how you would mitigate it.
    - **Model answer:** A strong answer defines document ingestion and chunking (Parsing, semantic chunking, overlap and metadata extraction.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -691,9 +662,9 @@ Formally, Embedding and Indexing Strategy addresses choosing models, dimensions 
 
 To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, embedding and indexing strategy is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
 
-Embedding and Indexing Strategy cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Embedding and Indexing Strategy cannot be understood in isolation from advanced rag patterns. Recall that advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Embedding and Indexing Strategy cannot be understood in isolation from the end-to-end rag reference architecture. Recall that the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Embedding and Indexing Strategy cannot be understood in isolation from caching and cost optimisation. Recall that caching and cost optimisation concerns semantic caching and retrieval reuse. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Several established patterns apply directly to embedding and indexing strategy. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -711,7 +682,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="2-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#059669"/><rect x="0" y="30" width="840" height="16" fill="#059669"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Embedding and Indexing Strategy</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#059669"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#059669" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Ac…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#10b981"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#10b981" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Operating RAG i…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#34d399"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#34d399" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Failure Modes a…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#0d9488"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0d9488" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The End-to-End …</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#14b8a6"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#14b8a6" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Why RAG: Ground…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="2-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bndf8eeb4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bndf8eeb4)"/><rect x="0" y="32" width="840" height="16" fill="url(#bndf8eeb4)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Embedding and Indexing Strategy</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#059669"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#059669" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Ac…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#10b981"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#10b981" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Operating RAG i…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#34d399"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#34d399" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Failure Modes a…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#0d9488"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0d9488" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The End-to-End …</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#14b8a6"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#14b8a6" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Why RAG: Ground…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Data Flow</text></svg>
 
 </div>
 
@@ -725,7 +696,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation of rag systems. Because evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style), changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with advanced rag patterns. Because advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -739,7 +710,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1077,24 +1048,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Retrieval and Query Transformation”?
-   - A. Query rewriting, HyDE, multi-query and hybrid search.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Retrieval and Query Transformation: Query rewriting, HyDE, multi-query and hybrid search.
-2. Which of the following is a recommended best practice when working with RAG?
    - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. Enforce access control at retrieval time, not just at the UI.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: C.** Best practice: Enforce access control at retrieval time, not just at the UI.
-3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Measuring only end answer quality without diagnosing retrieval.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always cite sources and enable users to verify answers.
-   - D. Evaluate retrieval and generation separately to localise failures.
-   - **Answer: A.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-4. *(Discussion)* Describe a failure mode of Retrieval and Query Transformation and how you would mitigate it.
+   - C. Query rewriting, HyDE, multi-query and hybrid search.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Retrieval and Query Transformation: Query rewriting, HyDE, multi-query and hybrid search.
+2. Which of the following is a recommended best practice when working with RAG?
+   - A. Ignoring permissions and leaking restricted documents.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It is only relevant to academic research, not production.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+3. Which of the following is a common pitfall to avoid in RAG?
+   - A. Always cite sources and enable users to verify answers.
+   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+4. *(Discussion)* How does Retrieval and Query Transformation interact with security and governance requirements?
    - **Model answer:** A strong answer defines retrieval and query transformation (Query rewriting, HyDE, multi-query and hybrid search.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1106,33 +1077,33 @@ _This chapter examines re-ranking and context selection within RAG. It covers cr
 
 ## Introduction
 
-Re-ranking and Context Selection refers to cross-encoders, maximal marginal relevance and context budgeting. This concept recurs throughout the RAG lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Re-ranking and Context Selection refers to cross-encoders, maximal marginal relevance and context budgeting. It is foundational: later capabilities in RAG are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Re-ranking and Context Selection addresses cross-encoders, maximal marginal relevance and context budgeting. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Re-ranking and Context Selection is best understood as cross-encoders, maximal marginal relevance and context budgeting. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, re-ranking and context selection is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, re-ranking and context selection is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. This concept recurs throughout the RAG lifecycle, from design to operations.
 
-Re-ranking and Context Selection cannot be understood in isolation from embedding and indexing strategy. Recall that embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Re-ranking and Context Selection cannot be understood in isolation from caching and cost optimisation. Recall that caching and cost optimisation concerns semantic caching and retrieval reuse. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Re-ranking and Context Selection cannot be understood in isolation from operating rag in production. Recall that operating rag in production concerns monitoring retrieval quality, drift and feedback loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Re-ranking and Context Selection cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to re-ranking and context selection. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to re-ranking and context selection. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around re-ranking and context selection are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around re-ranking and context selection are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Re-ranking and Context Selection separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+From an architectural standpoint, Re-ranking and Context Selection sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```mermaid
 graph LR
@@ -1148,44 +1119,36 @@ graph LR
 
 **Figure 5. Knowledge Graph - Re-ranking and Context Selection** (mermaid). Figure: Knowledge Graph view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```plantuml
-@startuml
-title Network - Re-ranking and Context Selection
-package "RAG Platform" {
-  component "Why RAG: Grounding and …" as C0
-  component "Document Ingestion and …" as C1
-  component "Embedding and Indexing …" as C2
-  component "Retrieval and Query Tra…" as C3
-  component "Re-ranking and Context …" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Network">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Network - Re-ranking and Context Selection" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="RAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Why RAG: Grounding and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Document Ingestion and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Embedding and Indexing …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Retrieval and Query Tra…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Re-ranking and Context …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 6. Network - Re-ranking and Context Selection** (plantuml). Figure: Network view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 6. Network - Re-ranking and Context Selection** (drawio). Figure: Network view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into re-ranking and context selection. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
-In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with embedding and indexing strategy. Because embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into re-ranking and context selection. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -1199,9 +1162,23 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
 
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into re-ranking and context selection. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with why rag: grounding and freshness. Because why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
 ## Worked Example
 
-Consider a concrete scenario. A legal organisation needs case and contract research with traceable sources. They decide to apply re-ranking and context selection as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A legal organisation needs case and contract research with traceable sources. They decide to apply re-ranking and context selection as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1273,75 +1250,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Re-ranking and Context Selection component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
+Pipelines keep Re-ranking and Context Selection logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Re-ranking and Context Selection component
+### Listing: A composable processing pipeline for Re-ranking and Context Selection
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class AndContextConfig:
-    """Configuration for the Re-ranking and Context Selection component in a RAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class AndContext:
-    """A minimal, production-shaped implementation of Re-ranking and Context Selection."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Re-ranking and Context Selection."""
 
-    def __init__(self, config: AndContextConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"AndContext failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Re-ranking and Context Selection goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Re-ranking and Context Selection”?
-   - A. Cross-encoders, maximal marginal relevance and context budgeting.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Re-ranking and Context Selection: Cross-encoders, maximal marginal relevance and context budgeting.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Cross-encoders, maximal marginal relevance and context budgeting.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Re-ranking and Context Selection: Cross-encoders, maximal marginal relevance and context budgeting.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Always cite sources and enable users to verify answers.
-   - **Answer: D.** Best practice: Always cite sources and enable users to verify answers.
+   - A. Ignoring permissions and leaking restricted documents.
+   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It applies exclusively to image data.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* What trade-offs would you weigh when implementing Re-ranking and Context Selection?
+   - A. Always cite sources and enable users to verify answers.
+   - B. It makes the system slower but has no other effect.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+4. *(Discussion)* Explain Re-ranking and Context Selection and why it matters in a production RAG system.
    - **Model answer:** A strong answer defines re-ranking and context selection (Cross-encoders, maximal marginal relevance and context budgeting.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1353,33 +1336,33 @@ _This chapter examines prompt assembly and citation within RAG. It covers ground
 
 ## Introduction
 
-We define Prompt Assembly and Citation as grounding instructions, source attribution and refusal on low confidence. Neglecting it is one of the most common reasons RAG initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Prompt Assembly and Citation refers to grounding instructions, source attribution and refusal on low confidence. Neglecting it is one of the most common reasons RAG initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Prompt Assembly and Citation concerns grounding instructions, source attribution and refusal on low confidence. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define Prompt Assembly and Citation as grounding instructions, source attribution and refusal on low confidence. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, prompt assembly and citation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Understanding this matters because RAG systems succeed or fail on exactly these decisions.
 
-Prompt Assembly and Citation cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Prompt Assembly and Citation cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Prompt Assembly and Citation cannot be understood in isolation from retrieval and query transformation. Recall that retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Prompt Assembly and Citation cannot be understood in isolation from operating rag in production. Recall that operating rag in production concerns monitoring retrieval quality, drift and feedback loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to prompt assembly and citation. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to prompt assembly and citation. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around prompt assembly and citation are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around prompt assembly and citation are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Prompt Assembly and Citation is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+The reference architecture for Prompt Assembly and Citation separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```xml
 <mxfile host="ai-university">
@@ -1410,23 +1393,15 @@ _Source diagram (drawio); render with the appropriate tool._
 
 **Figure 7. Network - Prompt Assembly and Citation** (drawio). Figure: Network view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="7-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#d946ef"/><rect x="0" y="30" width="840" height="16" fill="#d946ef"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">RAG Architecture - Prompt Assembly and Citation</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#d946ef"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Handling Tables, I…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#6b21a8"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Caching and Cost O…</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#7e22ce"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Acces…</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#9333ea"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating RAG in P…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#a21caf"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Failure Modes and …</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text></svg>
-
-</div>
-
-**Figure 8. RAG Architecture - Prompt Assembly and Citation** (svg). Figure: RAG Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into prompt assembly and citation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt assembly and citation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation of rag systems. Because evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style), changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1434,13 +1409,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into prompt assembly and citation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt assembly and citation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the end-to-end rag reference architecture. Because the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1448,7 +1423,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply prompt assembly and citation as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A legal organisation needs case and contract research with traceable sources. They decide to apply prompt assembly and citation as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1562,22 +1537,22 @@ if __name__ == "__main__":
 1. In the context of RAG, which statement best describes “Prompt Assembly and Citation”?
    - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Grounding instructions, source attribution and refusal on low confidence.
-   - **Answer: D.** Prompt Assembly and Citation: Grounding instructions, source attribution and refusal on low confidence.
+   - C. Grounding instructions, source attribution and refusal on low confidence.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Prompt Assembly and Citation: Grounding instructions, source attribution and refusal on low confidence.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Evaluate retrieval and generation separately to localise failures.
    - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: A.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* Walk through how you would design Prompt Assembly and Citation for an enterprise RAG workload.
+   - A. It removes all security and governance requirements.
+   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Measuring only end answer quality without diagnosing retrieval.
+   - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+4. *(Discussion)* Explain Prompt Assembly and Citation and why it matters in a production RAG system.
    - **Model answer:** A strong answer defines prompt assembly and citation (Grounding instructions, source attribution and refusal on low confidence.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1599,9 +1574,9 @@ At its core, Advanced RAG Patterns concerns parent-document, sentence-window, fu
 
 To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, advanced rag patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. It is foundational: later capabilities in RAG are built directly on top of it.
 
-Advanced RAG Patterns cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Advanced RAG Patterns cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Advanced RAG Patterns cannot be understood in isolation from re-ranking and context selection. Recall that re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Advanced RAG Patterns cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Several established patterns apply directly to advanced rag patterns. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -1634,36 +1609,26 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 9. RAG Architecture - Advanced RAG Patterns** (plantuml). Figure: RAG Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 8. RAG Architecture - Advanced RAG Patterns** (plantuml). Figure: RAG Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Security Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Security Architecture - Advanced RAG Patterns" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="RAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why RAG: Grounding and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Document Ingestion and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Embedding and Indexing …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Retrieval and Query Tra…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Re-ranking and Context …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Security Architecture - Advanced RAG Patterns
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 10. Security Architecture - Advanced RAG Patterns** (drawio). Figure: Security Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. Security Architecture - Advanced RAG Patterns** (plantuml). Figure: Security Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -1673,7 +1638,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation of rag systems. Because evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style), changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1767,51 +1732,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Advanced RAG Patterns component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
+Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Advanced RAG Patterns component
+### Listing: Evaluating Advanced RAG Patterns with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class AdvancedRagPatternsConfig:
-    """Configuration for the Advanced RAG Patterns component in a RAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class AdvancedRagPatterns:
-    """A minimal, production-shaped implementation of Advanced RAG Patterns."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Advanced RAG Patterns output against references with a simple exact-match metric.
 
-    def __init__(self, config: AdvancedRagPatternsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"AdvancedRagPatterns failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Advanced RAG Patterns goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -1877,11 +1831,11 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="7-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#a21caf"/><rect x="0" y="30" width="840" height="16" fill="#a21caf"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Evaluation of RAG Systems</text><circle cx="420.0" cy="238.0" r="150" fill="#a21caf"/><text x="420" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Assembly and C…</text><circle cx="420.0" cy="238.0" r="116" fill="#c026d3"/><text x="420" y="140" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Advanced RAG Patterns</text><circle cx="420.0" cy="238.0" r="82" fill="#d946ef"/><text x="420" y="174" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of RAG Sys…</text><circle cx="420.0" cy="238.0" r="48" fill="#6b21a8"/><text x="420" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Handling Tables, Imag…</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="7-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnab050fa" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a21caf"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnab050fa)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnab050fa)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Evaluation of RAG Systems</text><circle cx="420.0" cy="238.0" r="150" fill="#a21caf"/><text x="420" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Assembly and C…</text><circle cx="420.0" cy="238.0" r="116" fill="#c026d3"/><text x="420" y="140" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Advanced RAG Patterns</text><circle cx="420.0" cy="238.0" r="82" fill="#d946ef"/><text x="420" y="174" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of RAG Sys…</text><circle cx="420.0" cy="238.0" r="48" fill="#6b21a8"/><text x="420" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Handling Tables, Imag…</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Security Architecture</text></svg>
 
 </div>
 
-**Figure 11. Security Architecture - Evaluation of RAG Systems** (svg). Figure: Security Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. Security Architecture - Evaluation of RAG Systems** (svg). Figure: Security Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -1985,64 +1939,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Evaluation of RAG Systems component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Evaluation of RAG Systems with a regression gate
+### Listing: Implementing a Evaluation of RAG Systems component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class EvaluationOfRagConfig:
+    """Configuration for the Evaluation of RAG Systems component in a RAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Evaluation of RAG Systems output against references with a simple exact-match metric.
+class EvaluationOfRag:
+    """A minimal, production-shaped implementation of Evaluation of RAG Systems."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: EvaluationOfRagConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"EvaluationOfRag failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Evaluation of RAG Systems goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Evaluation of RAG Systems”?
-   - A. It applies exclusively to image data.
-   - B. Faithfulness, answer relevance, context precision/recall (RAGAS-style).
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Evaluation of RAG Systems: Faithfulness, answer relevance, context precision/recall (RAGAS-style).
-2. Which of the following is a recommended best practice when working with RAG?
-   - A. Ignoring permissions and leaking restricted documents.
-   - B. Evaluate retrieval and generation separately to localise failures.
-   - C. It removes all security and governance requirements.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: B.** Best practice: Evaluate retrieval and generation separately to localise failures.
-3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - A. It is only relevant to academic research, not production.
    - B. It removes all security and governance requirements.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-4. *(Discussion)* Walk through how you would design Evaluation of RAG Systems for an enterprise RAG workload.
+   - C. Faithfulness, answer relevance, context precision/recall (RAGAS-style).
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Evaluation of RAG Systems: Faithfulness, answer relevance, context precision/recall (RAGAS-style).
+2. Which of the following is a recommended best practice when working with RAG?
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Ignoring permissions and leaking restricted documents.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
+3. Which of the following is a common pitfall to avoid in RAG?
+   - A. It makes the system slower but has no other effect.
+   - B. Enforce access control at retrieval time, not just at the UI.
+   - C. Measuring only end answer quality without diagnosing retrieval.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+4. *(Discussion)* Describe a failure mode of Evaluation of RAG Systems and how you would mitigate it.
    - **Model answer:** A strong answer defines evaluation of rag systems (Faithfulness, answer relevance, context precision/recall (RAGAS-style).) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2054,33 +2019,33 @@ _This chapter examines handling tables, images and code within RAG. It covers mu
 
 ## Introduction
 
-Formally, Handling Tables, Images and Code addresses multimodal and structured-content retrieval. Getting this right early prevents expensive rework once a RAG system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Handling Tables, Images and Code can be characterised as multimodal and structured-content retrieval. Neglecting it is one of the most common reasons RAG initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Handling Tables, Images and Code can be characterised as multimodal and structured-content retrieval. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Handling Tables, Images and Code is best understood as multimodal and structured-content retrieval. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, handling tables, images and code is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Getting this right early prevents expensive rework once a RAG system reaches scale.
 
-Handling Tables, Images and Code cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Handling Tables, Images and Code cannot be understood in isolation from the end-to-end rag reference architecture. Recall that the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Handling Tables, Images and Code cannot be understood in isolation from re-ranking and context selection. Recall that re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Handling Tables, Images and Code cannot be understood in isolation from advanced rag patterns. Recall that advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to handling tables, images and code. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to handling tables, images and code. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, cross-encoder re-ranking of top-k candidates, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around handling tables, images and code are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around handling tables, images and code are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Handling Tables, Images and Code separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+A robust architecture for Handling Tables, Images and Code is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```plantuml
 @startuml
@@ -2103,17 +2068,37 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 12. Component - Handling Tables, Images and Code** (plantuml). Figure: Component view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 11. Component - Handling Tables, Images and Code** (plantuml). Figure: Component view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Sequence - Handling Tables, Images and Code
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 12. Sequence - Handling Tables, Images and Code** (plantuml). Figure: Sequence view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into handling tables, images and code. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into handling tables, images and code. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the end-to-end rag reference architecture. Because the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2121,13 +2106,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into handling tables, images and code. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into handling tables, images and code. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why rag: grounding and freshness. Because why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with embedding and indexing strategy. Because embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2135,7 +2120,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply handling tables, images and code as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply handling tables, images and code as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2258,24 +2243,24 @@ class HandlingImages:
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Handling Tables, Images and Code”?
-   - A. It is only relevant to academic research, not production.
-   - B. It removes all security and governance requirements.
-   - C. Multimodal and structured-content retrieval.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Handling Tables, Images and Code: Multimodal and structured-content retrieval.
+   - A. Multimodal and structured-content retrieval.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Handling Tables, Images and Code: Multimodal and structured-content retrieval.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. Enforce access control at retrieval time, not just at the UI.
-   - **Answer: D.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Evaluate retrieval and generation separately to localise failures.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. Ignoring permissions and leaking restricted documents.
-   - **Answer: D.** Pitfall to avoid: Ignoring permissions and leaking restricted documents.
-4. *(Discussion)* Walk through how you would design Handling Tables, Images and Code for an enterprise RAG workload.
+   - A. Stuffing too much context, increasing cost and diluting relevance.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+4. *(Discussion)* Describe a failure mode of Handling Tables, Images and Code and how you would mitigate it.
    - **Model answer:** A strong answer defines handling tables, images and code (Multimodal and structured-content retrieval.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2287,23 +2272,23 @@ _This chapter examines caching and cost optimisation within RAG. It covers seman
 
 ## Introduction
 
-In practical terms, Caching and Cost Optimisation is best understood as semantic caching and retrieval reuse. Getting this right early prevents expensive rework once a RAG system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Caching and Cost Optimisation can be characterised as semantic caching and retrieval reuse. Getting this right early prevents expensive rework once a RAG system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Caching and Cost Optimisation concerns semantic caching and retrieval reuse. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Caching and Cost Optimisation as semantic caching and retrieval reuse. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, caching and cost optimisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. It is foundational: later capabilities in RAG are built directly on top of it.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, caching and cost optimisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
 
-Caching and Cost Optimisation cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Caching and Cost Optimisation cannot be understood in isolation from retrieval and query transformation. Recall that retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Caching and Cost Optimisation cannot be understood in isolation from security and access control in rag. Recall that security and access control in rag concerns row-level permissions and preventing data leakage across tenants. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Caching and Cost Optimisation cannot be understood in isolation from failure modes and debugging. Recall that failure modes and debugging concerns diagnosing retrieval versus generation failures. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to caching and cost optimisation. The first, hybrid retrieval with reciprocal rank fusion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, cross-encoder re-ranking of top-k candidates, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to caching and cost optimisation. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around caching and cost optimisation are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around caching and cost optimisation are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2313,57 +2298,36 @@ Concretely, the principal building blocks include why rag: grounding and freshne
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
-
-```plantuml
-@startuml
-title Sequence - Caching and Cost Optimisation
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 13. Sequence - Caching and Cost Optimisation** (plantuml). Figure: Sequence view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+sequenceDiagram
+  autonumber
+  participant U as User
+  participant G as Gateway
+  participant P as Processor
+  participant D as Data Store
+  U->>G: Submit request
+  G->>G: Validate & authorise
+  G->>P: Dispatch task
+  P->>D: Retrieve context
+  D-->>P: Return records
+  P->>P: Process & reason
+  P-->>G: Result + metadata
+  G-->>U: Response (with provenance)
 ```
 
-**Figure 14. DevOps Pipeline - Caching and Cost Optimisation** (mermaid). Figure: DevOps Pipeline view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Sequence - Caching and Cost Optimisation** (mermaid). Figure: Sequence view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into caching and cost optimisation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into caching and cost optimisation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with retrieval and query transformation. Because retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2373,11 +2337,11 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 Having established the essentials, we now go deeper into caching and cost optimisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation of rag systems. Because evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style), changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2385,7 +2349,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply caching and cost optimisation as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply caching and cost optimisation as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2457,75 +2421,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Caching and Cost Optimisation component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
+Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Caching and Cost Optimisation component
+### Listing: Evaluating Caching and Cost Optimisation with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class CachingAndCostConfig:
-    """Configuration for the Caching and Cost Optimisation component in a RAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class CachingAndCost:
-    """A minimal, production-shaped implementation of Caching and Cost Optimisation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Caching and Cost Optimisation output against references with a simple exact-match metric.
 
-    def __init__(self, config: CachingAndCostConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"CachingAndCost failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Caching and Cost Optimisation goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Caching and Cost Optimisation”?
-   - A. It is only relevant to academic research, not production.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
    - D. Semantic caching and retrieval reuse.
    - **Answer: D.** Caching and Cost Optimisation: Semantic caching and retrieval reuse.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Ignoring permissions and leaking restricted documents.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. Enforce access control at retrieval time, not just at the UI.
-   - **Answer: D.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - A. Evaluate retrieval and generation separately to localise failures.
+   - B. It removes all security and governance requirements.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. Stuffing too much context, increasing cost and diluting relevance.
+   - **Answer: A.** Best practice: Evaluate retrieval and generation separately to localise failures.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* Walk through how you would design Caching and Cost Optimisation for an enterprise RAG workload.
+   - A. Naive fixed-size chunking that splits semantic units.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+4. *(Discussion)* Explain Caching and Cost Optimisation and why it matters in a production RAG system.
    - **Model answer:** A strong answer defines caching and cost optimisation (Semantic caching and retrieval reuse.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2537,23 +2490,23 @@ _This chapter examines security and access control in rag within RAG. It covers 
 
 ## Introduction
 
-We define Security and Access Control in RAG as row-level permissions and preventing data leakage across tenants. Understanding this matters because RAG systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Security and Access Control in RAG refers to row-level permissions and preventing data leakage across tenants. Teams that master this consistently ship more reliable RAG systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Security and Access Control in RAG as row-level permissions and preventing data leakage across tenants. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Security and Access Control in RAG refers to row-level permissions and preventing data leakage across tenants. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, security and access control in rag is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, security and access control in rag is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. It is foundational: later capabilities in RAG are built directly on top of it.
 
-Security and Access Control in RAG cannot be understood in isolation from failure modes and debugging. Recall that failure modes and debugging concerns diagnosing retrieval versus generation failures. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security and Access Control in RAG cannot be understood in isolation from re-ranking and context selection. Recall that re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Security and Access Control in RAG cannot be understood in isolation from caching and cost optimisation. Recall that caching and cost optimisation concerns semantic caching and retrieval reuse. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security and Access Control in RAG cannot be understood in isolation from operating rag in production. Recall that operating rag in production concerns monitoring retrieval quality, drift and feedback loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to security and access control in rag. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security and access control in rag. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security and access control in rag are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security and access control in rag are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2563,37 +2516,25 @@ Concretely, the principal building blocks include why rag: grounding and freshne
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
-```
+<div class="diagram-svg">
 
-**Figure 15. DevOps Pipeline - Security and Access Control in RAG** (mermaid). Figure: DevOps Pipeline view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="3-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn91dbfbf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn91dbfbf)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn91dbfbf)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Security and Access Control in RAG</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#ea580c"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#ea580c" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Assembly…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#f97316"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#f97316" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Advanced RAG Pa…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#fb923c"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#fb923c" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of R…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#b45309"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Handling Tables…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#d97706"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#d97706" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Caching and Cos…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  DevOps Pipeline</text></svg>
+
+</div>
+
+**Figure 14. DevOps Pipeline - Security and Access Control in RAG** (svg). Figure: DevOps Pipeline view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into security and access control in rag. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security and access control in rag. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with failure modes and debugging. Because failure modes and debugging concerns diagnosing retrieval versus generation failures, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2603,11 +2544,11 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 Having established the essentials, we now go deeper into security and access control in rag. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating rag in production. Because operating rag in production concerns monitoring retrieval quality, drift and feedback loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2615,7 +2556,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply security and access control in rag as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply security and access control in rag as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2727,21 +2668,21 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Security and Access Control in RAG”?
-   - A. Row-level permissions and preventing data leakage across tenants.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Security and Access Control in RAG: Row-level permissions and preventing data leakage across tenants.
-2. Which of the following is a recommended best practice when working with RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. Ignoring permissions and leaking restricted documents.
-   - C. It applies exclusively to image data.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: A.** Best practice: Enforce access control at retrieval time, not just at the UI.
-3. Which of the following is a common pitfall to avoid in RAG?
    - A. It guarantees deterministic output regardless of input.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - B. It is only relevant to academic research, not production.
+   - C. Row-level permissions and preventing data leakage across tenants.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Security and Access Control in RAG: Row-level permissions and preventing data leakage across tenants.
+2. Which of the following is a recommended best practice when working with RAG?
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. It removes all security and governance requirements.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Naive fixed-size chunking that splits semantic units.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
+3. Which of the following is a common pitfall to avoid in RAG?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Enforce access control at retrieval time, not just at the UI.
    - D. Measuring only end answer quality without diagnosing retrieval.
    - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 4. *(Discussion)* How would you test and monitor Security and Access Control in RAG in production?
@@ -2756,33 +2697,33 @@ _This chapter examines operating rag in production within RAG. It covers monitor
 
 ## Introduction
 
-At its core, Operating RAG in Production concerns monitoring retrieval quality, drift and feedback loops. It is foundational: later capabilities in RAG are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Operating RAG in Production can be characterised as monitoring retrieval quality, drift and feedback loops. It is foundational: later capabilities in RAG are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Operating RAG in Production can be characterised as monitoring retrieval quality, drift and feedback loops. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Operating RAG in Production addresses monitoring retrieval quality, drift and feedback loops. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
 To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, operating rag in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
 
-Operating RAG in Production cannot be understood in isolation from re-ranking and context selection. Recall that re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Operating RAG in Production cannot be understood in isolation from embedding and indexing strategy. Recall that embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Operating RAG in Production cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating RAG in Production cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Several established patterns apply directly to operating rag in production. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, cross-encoder re-ranking of top-k candidates, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating rag in production are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating rag in production are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Operating RAG in Production separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+A robust architecture for Operating RAG in Production is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```xml
 <mxfile host="ai-university">
@@ -2811,17 +2752,40 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 16. Deployment - Operating RAG in Production** (drawio). Figure: Deployment view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 15. Deployment - Operating RAG in Production** (drawio). Figure: Deployment view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Infrastructure - Operating RAG in Production
+package "RAG Platform" {
+  component "Why RAG: Grounding and …" as C0
+  component "Document Ingestion and …" as C1
+  component "Embedding and Indexing …" as C2
+  component "Retrieval and Query Tra…" as C3
+  component "Re-ranking and Context …" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 16. Infrastructure - Operating RAG in Production** (plantuml). Figure: Infrastructure view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating rag in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating rag in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with embedding and indexing strategy. Because embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2831,11 +2795,11 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 Having established the essentials, we now go deeper into operating rag in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation of rag systems. Because evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style), changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with advanced rag patterns. Because advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2843,7 +2807,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-Consider a concrete scenario. A enterprise organisation needs grounded internal Q&A over policies and wikis with citations. They decide to apply operating rag in production as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A legal organisation needs case and contract research with traceable sources. They decide to apply operating rag in production as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2973,23 +2937,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of RAG, which statement best describes “Operating RAG in Production”?
    - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Monitoring retrieval quality, drift and feedback loops.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Operating RAG in Production: Monitoring retrieval quality, drift and feedback loops.
+2. Which of the following is a recommended best practice when working with RAG?
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - B. It removes all security and governance requirements.
    - C. It makes the system slower but has no other effect.
-   - D. Monitoring retrieval quality, drift and feedback loops.
-   - **Answer: D.** Operating RAG in Production: Monitoring retrieval quality, drift and feedback loops.
-2. Which of the following is a recommended best practice when working with RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
    - A. Always cite sources and enable users to verify answers.
-   - B. Stuffing too much context, increasing cost and diluting relevance.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-4. *(Discussion)* Explain Operating RAG in Production and why it matters in a production RAG system.
+   - B. It removes all security and governance requirements.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Measuring only end answer quality without diagnosing retrieval.
+   - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+4. *(Discussion)* Walk through how you would design Operating RAG in Production for an enterprise RAG workload.
    - **Model answer:** A strong answer defines operating rag in production (Monitoring retrieval quality, drift and feedback loops.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3001,27 +2965,27 @@ _This chapter examines failure modes and debugging within RAG. It covers diagnos
 
 ## Introduction
 
-In practical terms, Failure Modes and Debugging is best understood as diagnosing retrieval versus generation failures. Teams that master this consistently ship more reliable RAG systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Failure Modes and Debugging refers to diagnosing retrieval versus generation failures. Teams that master this consistently ship more reliable RAG systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Failure Modes and Debugging concerns diagnosing retrieval versus generation failures. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Failure Modes and Debugging can be characterised as diagnosing retrieval versus generation failures. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, failure modes and debugging is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, failure modes and debugging is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
 
-Failure Modes and Debugging cannot be understood in isolation from why rag: grounding and freshness. Recall that why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Failure Modes and Debugging cannot be understood in isolation from the end-to-end rag reference architecture. Recall that the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Failure Modes and Debugging cannot be understood in isolation from handling tables, images and code. Recall that handling tables, images and code concerns multimodal and structured-content retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Failure Modes and Debugging cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to failure modes and debugging. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to failure modes and debugging. The first, hybrid retrieval with reciprocal rank fusion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around failure modes and debugging are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around failure modes and debugging are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Failure Modes and Debugging is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+From an architectural standpoint, Failure Modes and Debugging sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -3029,14 +2993,37 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
+```plantuml
+@startuml
+title Infrastructure - Failure Modes and Debugging
+package "RAG Platform" {
+  component "Why RAG: Grounding and …" as C0
+  component "Document Ingestion and …" as C1
+  component "Embedding and Indexing …" as C2
+  component "Retrieval and Query Tra…" as C3
+  component "Re-ranking and Context …" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 17. Infrastructure - Failure Modes and Debugging** (plantuml). Figure: Infrastructure view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
 ```xml
 <mxfile host="ai-university">
-  <diagram name="Infrastructure">
+  <diagram name="Business Process">
     <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Failure Modes and Debugging" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="title" value="Business Process - Failure Modes and Debugging" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
         <mxCell id="hub" value="RAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
         <mxCell id="n0" value="Why RAG: Grounding and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
@@ -3056,25 +3043,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 17. Infrastructure - Failure Modes and Debugging** (drawio). Figure: Infrastructure view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="2-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#059669"/><rect x="0" y="30" width="840" height="16" fill="#059669"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Failure Modes and Debugging</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#059669"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#059669" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Retrieval and Q…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#10b981"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#10b981" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Re-ranking and …</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#34d399"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#34d399" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Assembly…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#0d9488"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0d9488" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Advanced RAG Pa…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#14b8a6"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#14b8a6" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of R…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
-
-</div>
-
-**Figure 18. Business Process - Failure Modes and Debugging** (svg). Figure: Business Process view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 18. Business Process - Failure Modes and Debugging** (drawio). Figure: Business Process view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into failure modes and debugging. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into failure modes and debugging. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why rag: grounding and freshness. Because why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the end-to-end rag reference architecture. Because the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3084,11 +3063,11 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 Having established the essentials, we now go deeper into failure modes and debugging. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with embedding and indexing strategy. Because embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with re-ranking and context selection. Because re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3096,7 +3075,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-Consider a concrete scenario. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply failure modes and debugging as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A legal organisation needs case and contract research with traceable sources. They decide to apply failure modes and debugging as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3225,24 +3204,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Failure Modes and Debugging”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. Diagnosing retrieval versus generation failures.
-   - **Answer: D.** Failure Modes and Debugging: Diagnosing retrieval versus generation failures.
+   - A. It makes the system slower but has no other effect.
+   - B. It removes all security and governance requirements.
+   - C. Diagnosing retrieval versus generation failures.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Failure Modes and Debugging: Diagnosing retrieval versus generation failures.
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Naive fixed-size chunking that splits semantic units.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. Measuring only end answer quality without diagnosing retrieval.
-   - C. Enforce access control at retrieval time, not just at the UI.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - C. Always cite sources and enable users to verify answers.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Always cite sources and enable users to verify answers.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Evaluate retrieval and generation separately to localise failures.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It makes the system slower but has no other effect.
-   - D. Ignoring permissions and leaking restricted documents.
-   - **Answer: D.** Pitfall to avoid: Ignoring permissions and leaking restricted documents.
-4. *(Discussion)* Explain Failure Modes and Debugging and why it matters in a production RAG system.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Always cite sources and enable users to verify answers.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. Evaluate retrieval and generation separately to localise failures.
+   - **Answer: C.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+4. *(Discussion)* How would you test and monitor Failure Modes and Debugging in production?
    - **Model answer:** A strong answer defines failure modes and debugging (Diagnosing retrieval versus generation failures.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3254,23 +3233,23 @@ _This chapter examines the end-to-end rag reference architecture within RAG. It 
 
 ## Introduction
 
-At its core, The End-to-End RAG Reference Architecture concerns a production blueprint from ingestion to answer. Teams that master this consistently ship more reliable RAG systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+The End-to-End RAG Reference Architecture can be characterised as a production blueprint from ingestion to answer. Teams that master this consistently ship more reliable RAG systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, The End-to-End RAG Reference Architecture concerns a production blueprint from ingestion to answer. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+The End-to-End RAG Reference Architecture refers to a production blueprint from ingestion to answer. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, the end-to-end rag reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. This concept recurs throughout the RAG lifecycle, from design to operations.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, the end-to-end rag reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Getting this right early prevents expensive rework once a RAG system reaches scale.
 
-The End-to-End RAG Reference Architecture cannot be understood in isolation from why rag: grounding and freshness. Recall that why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+The End-to-End RAG Reference Architecture cannot be understood in isolation from why rag: grounding and freshness. Recall that why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-The End-to-End RAG Reference Architecture cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+The End-to-End RAG Reference Architecture cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to the end-to-end rag reference architecture. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the end-to-end rag reference architecture. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the end-to-end rag reference architecture are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the end-to-end rag reference architecture are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3282,28 +3261,22 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Business Process - The End-to-End RAG Reference Architecture
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 19. Business Process - The End-to-End RAG Reference Architecture** (plantuml). Figure: Business Process view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 19. Business Process - The End-to-End RAG Reference Architecture** (mermaid). Figure: Business Process view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#0d9488"/><rect x="0" y="30" width="840" height="16" fill="#0d9488"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - The End-to-End RAG Reference Architecture</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#0d9488"/><text x="228" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Assembly and Cit…</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#14b8a6"/><text x="388" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Advanced RAG Patterns</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#047857"/><text x="548" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of RAG Syste…</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#059669"/><text x="708" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Handling Tables, Images…</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#14b8a6"/><text x="228" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Access Con…</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#047857"/><text x="388" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating RAG in Produc…</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#059669"/><text x="548" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Failure Modes and Debug…</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#10b981"/><text x="708" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The End-to-End RAG Refe…</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#047857"/><text x="228" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Advanced RAG Patterns</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#059669"/><text x="388" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of RAG Syste…</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#10b981"/><text x="548" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Handling Tables, Images…</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#34d399"/><text x="708" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Caching and Cost Optimi…</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn962aa48" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn962aa48)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn962aa48)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - The End-to-End RAG Reference Architecture</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#0d9488" filter="url(#sh)"/><text x="228" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Assembly and Cit…</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#14b8a6" filter="url(#sh)"/><text x="388" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Advanced RAG Patterns</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#047857" filter="url(#sh)"/><text x="548" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of RAG Syste…</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#059669" filter="url(#sh)"/><text x="708" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Handling Tables, Images…</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#14b8a6" filter="url(#sh)"/><text x="228" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Access Con…</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#047857" filter="url(#sh)"/><text x="388" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating RAG in Produc…</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#059669" filter="url(#sh)"/><text x="548" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Failure Modes and Debug…</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#10b981" filter="url(#sh)"/><text x="708" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The End-to-End RAG Refe…</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#047857" filter="url(#sh)"/><text x="228" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Advanced RAG Patterns</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#059669" filter="url(#sh)"/><text x="388" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of RAG Syste…</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#10b981" filter="url(#sh)"/><text x="548" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Handling Tables, Images…</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#34d399" filter="url(#sh)"/><text x="708" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Caching and Cost Optimi…</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Operating Model</text></svg>
 
 </div>
 
@@ -3311,9 +3284,9 @@ _Source diagram (plantuml); render with the appropriate tool._
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the end-to-end rag reference architecture. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the end-to-end rag reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -3325,13 +3298,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into the end-to-end rag reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the end-to-end rag reference architecture. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with caching and cost optimisation. Because caching and cost optimisation concerns semantic caching and retrieval reuse, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3339,7 +3312,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A legal organisation needs case and contract research with traceable sources. They decide to apply the end-to-end rag reference architecture as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise organisation needs grounded internal Q&A over policies and wikis with citations. They decide to apply the end-to-end rag reference architecture as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3411,49 +3384,60 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven The End-to-End RAG Reference Architecture component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating The End-to-End RAG Reference Architecture with a regression gate
+### Listing: Implementing a The End-to-End RAG Reference Architecture component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class TheRagConfig:
+    """Configuration for the The End-to-End RAG Reference Architecture component in a RAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score The End-to-End RAG Reference Architecture output against references with a simple exact-match metric.
+class TheRag:
+    """A minimal, production-shaped implementation of The End-to-End RAG Reference Architecture."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: TheRagConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheRag failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The End-to-End RAG Reference Architecture goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “The End-to-End RAG Reference Architecture”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
    - B. A production blueprint from ingestion to answer.
-   - C. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** The End-to-End RAG Reference Architecture: A production blueprint from ingestion to answer.
 2. Which of the following is a recommended best practice when working with RAG?
@@ -3539,7 +3523,7 @@ _Source diagram (drawio); render with the appropriate tool._
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="1-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#38bdf8"/><rect x="0" y="30" width="840" height="16" fill="#38bdf8"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Putting It Together: A Reference Implementation</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#38bdf8"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Advanced RAG Pa…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#0284c7"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of R…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#075985"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Handling Tables…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0e7490"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Caching and Cos…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="6-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnf5eaa7e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e293b"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnf5eaa7e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnf5eaa7e)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Putting It Together: A Reference Implementation</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#0f172a"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Re-ranking …</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#1e293b"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Asse…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#94a3b8"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Advanced RA…</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#334155"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation …</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#475569"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Handling Ta…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#64748b"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Caching and…</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#0f172a"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Security an…</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Capability Map</text></svg>
 
 </div>
 
@@ -3647,57 +3631,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Putting It Together: A Reference Implementation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Putting It Together: A Reference Implementation
+### Listing: Evaluating Putting It Together: A Reference Implementation with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Putting It Together: A Reference Implementation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Putting It Together: A Reference Implementation output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -3763,7 +3730,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="9-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#9d174d"/><rect x="0" y="30" width="840" height="16" fill="#9d174d"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Hands-On Lab: Building an End-to-End RAG System</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#9d174d"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">The End-to-End …</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#db2777"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Why RAG: Ground…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#ec4899"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Document Ingest…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#f472b6"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Embedding and I…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="9-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn30ee205" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9d174d"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn30ee205)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn30ee205)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Hands-On Lab: Building an End-to-End RAG System</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#9d174d"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">The End-to-End …</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#db2777"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Why RAG: Ground…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#ec4899"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Document Ingest…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#f472b6"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Embedding and I…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Capability Map</text></svg>
 
 </div>
 
@@ -3922,23 +3889,23 @@ class Building:
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Hands-On Lab: Building an End-to-End RAG System”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. a guided, build-along laboratory that constructs a functioning RAG system from first principles
-   - C. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. a guided, build-along laboratory that constructs a functioning RAG system from first principles
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Hands-On Lab: Building an End-to-End RAG System: a guided, build-along laboratory that constructs a functioning RAG system from first principles
+   - **Answer: C.** Hands-On Lab: Building an End-to-End RAG System: a guided, build-along laboratory that constructs a functioning RAG system from first principles
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It applies exclusively to image data.
-   - B. Always cite sources and enable users to verify answers.
-   - C. Naive fixed-size chunking that splits semantic units.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: B.** Best practice: Always cite sources and enable users to verify answers.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Naive fixed-size chunking that splits semantic units.
+   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - C. Measuring only end answer quality without diagnosing retrieval.
+   - A. It applies exclusively to image data.
+   - B. Naive fixed-size chunking that splits semantic units.
+   - C. It guarantees deterministic output regardless of input.
    - D. Always cite sources and enable users to verify answers.
-   - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
 4. *(Discussion)* How does Hands-On Lab: Building an End-to-End RAG System interact with security and governance requirements?
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end rag system (a guided, build-along laboratory that constructs a functioning RAG system from first principles) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
@@ -3951,51 +3918,62 @@ _This chapter examines case study: enterprise at scale within RAG. It covers a d
 
 ## Introduction
 
-Case Study: Enterprise at Scale can be characterised as a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes. Getting this right early prevents expensive rework once a RAG system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Case Study: Enterprise at Scale as a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes. This concept recurs throughout the RAG lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Case Study: Enterprise at Scale addresses a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Case Study: Enterprise at Scale as a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, case study: enterprise at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Getting this right early prevents expensive rework once a RAG system reaches scale.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, case study: enterprise at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
 
-Case Study: Enterprise at Scale cannot be understood in isolation from retrieval and query transformation. Recall that retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Case Study: Enterprise at Scale cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Case Study: Enterprise at Scale cannot be understood in isolation from advanced rag patterns. Recall that advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Case Study: Enterprise at Scale cannot be understood in isolation from handling tables, images and code. Recall that handling tables, images and code concerns multimodal and structured-content retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to case study: enterprise at scale. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: enterprise at scale. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: enterprise at scale are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: enterprise at scale are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Case Study: Enterprise at Scale is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+The reference architecture for Case Study: Enterprise at Scale separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title CI/CD Pipeline - Case Study: Enterprise at Scale
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="9-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#e11d48"/><rect x="0" y="30" width="840" height="16" fill="#e11d48"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Case Study: Enterprise at Scale</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#e11d48"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#e11d48" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Caching and Cos…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#9d174d"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#9d174d" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Ac…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#db2777"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#db2777" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Operating RAG i…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#ec4899"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#ec4899" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Failure Modes a…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#f472b6"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#f472b6" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The End-to-End …</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
-
-**Figure 24. CI/CD Pipeline - Case Study: Enterprise at Scale** (svg). Figure: CI/CD Pipeline view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. CI/CD Pipeline - Case Study: Enterprise at Scale** (plantuml). Figure: CI/CD Pipeline view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: enterprise at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: enterprise at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with retrieval and query transformation. Because retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4003,13 +3981,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into case study: enterprise at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: enterprise at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with security and access control in rag. Because security and access control in rag concerns row-level permissions and preventing data leakage across tenants, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with advanced rag patterns. Because advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4017,7 +3995,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply case study: enterprise at scale as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply case study: enterprise at scale as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4146,24 +4124,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Case Study: Enterprise at Scale”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
+   - A. It removes all security and governance requirements.
+   - B. a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
+   - C. It guarantees deterministic output regardless of input.
    - D. It applies exclusively to image data.
-   - **Answer: C.** Case Study: Enterprise at Scale: a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
+   - **Answer: B.** Case Study: Enterprise at Scale: a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - A. It is only relevant to academic research, not production.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. It makes the system slower but has no other effect.
+   - D. Stuffing too much context, increasing cost and diluting relevance.
+   - **Answer: B.** Best practice: Evaluate retrieval and generation separately to localise failures.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It removes all security and governance requirements.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Enforce access control at retrieval time, not just at the UI.
    - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. It is only relevant to academic research, not production.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-4. *(Discussion)* What trade-offs would you weigh when implementing Case Study: Enterprise at Scale?
+4. *(Discussion)* Describe a failure mode of Case Study: Enterprise at Scale and how you would mitigate it.
    - **Model answer:** A strong answer defines case study: enterprise at scale (a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4175,72 +4153,62 @@ _This chapter examines operating in production within RAG. It covers the operati
 
 ## Introduction
 
-We define Operating in Production as the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement. Getting this right early prevents expensive rework once a RAG system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Operating in Production concerns the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement. It is foundational: later capabilities in RAG are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Operating in Production can be characterised as the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Operating in Production addresses the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. This concept recurs throughout the RAG lifecycle, from design to operations.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
 
-Operating in Production cannot be understood in isolation from failure modes and debugging. Recall that failure modes and debugging concerns diagnosing retrieval versus generation failures. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Operating in Production cannot be understood in isolation from handling tables, images and code. Recall that handling tables, images and code concerns multimodal and structured-content retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Operating in Production cannot be understood in isolation from re-ranking and context selection. Recall that re-ranking and context selection concerns cross-encoders, maximal marginal relevance and context budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from failure modes and debugging. Recall that failure modes and debugging concerns diagnosing retrieval versus generation failures. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to operating in production. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, hybrid retrieval with reciprocal rank fusion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating in production are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating in production are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Operating in Production sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+The reference architecture for Operating in Production separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Architecture - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="RAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why RAG: Grounding and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Document Ingestion and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Embedding and Indexing …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Retrieval and Query Tra…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Re-ranking and Context …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Architecture - Operating in Production
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 25. Architecture - Operating in Production** (drawio). Figure: Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 25. Architecture - Operating in Production** (plantuml). Figure: Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with failure modes and debugging. Because failure modes and debugging concerns diagnosing retrieval versus generation failures, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with handling tables, images and code. Because handling tables, images and code concerns multimodal and structured-content retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4250,11 +4218,11 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why rag: grounding and freshness. Because why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with advanced rag patterns. Because advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4334,81 +4302,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Operating in Production component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Operating in Production
+### Listing: Implementing a Operating in Production component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class OperatingInProductionConfig:
+    """Configuration for the Operating in Production component in a RAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Operating in Production."""
+class OperatingInProduction:
+    """A minimal, production-shaped implementation of Operating in Production."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: OperatingInProductionConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"OperatingInProduction failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Operating in Production goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Operating in Production”?
-   - A. the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Operating in Production: the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Operating in Production: the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It makes the system slower but has no other effect.
+   - A. Always cite sources and enable users to verify answers.
    - B. It guarantees deterministic output regardless of input.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. It applies exclusively to image data.
+   - D. Naive fixed-size chunking that splits semantic units.
+   - **Answer: A.** Best practice: Always cite sources and enable users to verify answers.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It applies exclusively to image data.
+   - A. It is only relevant to academic research, not production.
    - B. Evaluate retrieval and generation separately to localise failures.
-   - C. Enforce access control at retrieval time, not just at the UI.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-4. *(Discussion)* Walk through how you would design Operating in Production for an enterprise RAG workload.
+   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - D. Naive fixed-size chunking that splits semantic units.
+   - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+4. *(Discussion)* How does Operating in Production interact with security and governance requirements?
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4420,23 +4382,23 @@ _This chapter examines evaluation and quality assurance within RAG. It covers a 
 
 ## Introduction
 
-We define Evaluation and Quality Assurance as a rigorous approach to measuring and assuring the quality of a RAG system before and after release. Getting this right early prevents expensive rework once a RAG system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a RAG system before and after release. Teams that master this consistently ship more reliable RAG systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a RAG system before and after release. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Evaluation and Quality Assurance is best understood as a rigorous approach to measuring and assuring the quality of a RAG system before and after release. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
-
-Evaluation and Quality Assurance cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. It is foundational: later capabilities in RAG are built directly on top of it.
 
 Evaluation and Quality Assurance cannot be understood in isolation from the end-to-end rag reference architecture. Recall that the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Evaluation and Quality Assurance cannot be understood in isolation from advanced rag patterns. Recall that advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Several established patterns apply directly to evaluation and quality assurance. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4446,7 +4408,7 @@ Concretely, the principal building blocks include why rag: grounding and freshne
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -4477,15 +4439,34 @@ _Source diagram (drawio); render with the appropriate tool._
 
 **Figure 26. Cloud Architecture - Evaluation and Quality Assurance** (drawio). Figure: Cloud Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
+```plantuml
+@startuml
+title Application Flow - Evaluation and Quality Assurance
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 27. Application Flow - Evaluation and Quality Assurance** (plantuml). Figure: Application Flow view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the end-to-end rag reference architecture. Because the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4493,7 +4474,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
@@ -4507,7 +4488,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A legal organisation needs case and contract research with traceable sources. They decide to apply evaluation and quality assurance as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise organisation needs grounded internal Q&A over policies and wikis with citations. They decide to apply evaluation and quality assurance as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4579,75 +4560,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluation and Quality Assurance component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
+Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluation and Quality Assurance component
+### Listing: A composable processing pipeline for Evaluation and Quality Assurance
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class EvaluationAndQualityConfig:
-    """Configuration for the Evaluation and Quality Assurance component in a RAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class EvaluationAndQuality:
-    """A minimal, production-shaped implementation of Evaluation and Quality Assurance."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
 
-    def __init__(self, config: EvaluationAndQualityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluationAndQuality failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluation and Quality Assurance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. a rigorous approach to measuring and assuring the quality of a RAG system before and after release
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a RAG system before and after release
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
+   - D. a rigorous approach to measuring and assuring the quality of a RAG system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a RAG system before and after release
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Stuffing too much context, increasing cost and diluting relevance.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Enforce access control at retrieval time, not just at the UI.
-   - **Answer: D.** Best practice: Enforce access control at retrieval time, not just at the UI.
-3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Naive fixed-size chunking that splits semantic units.
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - B. It applies exclusively to image data.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: A.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* Walk through how you would design Evaluation and Quality Assurance for an enterprise RAG workload.
+   - D. Naive fixed-size chunking that splits semantic units.
+   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+3. Which of the following is a common pitfall to avoid in RAG?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Stuffing too much context, increasing cost and diluting relevance.
+   - **Answer: D.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+4. *(Discussion)* What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a RAG system before and after release) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4659,62 +4646,63 @@ _This chapter examines security, privacy and governance within RAG. It covers th
 
 ## Introduction
 
-In practical terms, Security, Privacy and Governance is best understood as the security, privacy and governance controls that make a RAG system trustworthy and compliant. Understanding this matters because RAG systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a RAG system trustworthy and compliant. Getting this right early prevents expensive rework once a RAG system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a RAG system trustworthy and compliant. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Security, Privacy and Governance addresses the security, privacy and governance controls that make a RAG system trustworthy and compliant. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
 
-Security, Privacy and Governance cannot be understood in isolation from the end-to-end rag reference architecture. Recall that the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security, Privacy and Governance cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Security, Privacy and Governance cannot be understood in isolation from advanced rag patterns. Recall that advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Security, Privacy and Governance cannot be understood in isolation from operating rag in production. Recall that operating rag in production concerns monitoring retrieval quality, drift and feedback loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to security, privacy and governance. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="9-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8b15542" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8b15542)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8b15542)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Security, Privacy and Governance</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#f472b6" filter="url(#sh)"/><text x="420" y="108" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of RAG Syst…</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="544" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Handling Tables, Image…</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="496" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Caching and Cost Optim…</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="344" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Access Co…</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#db2777" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating RAG in Produ…</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Application Flow</text></svg>
+
+</div>
+
+**Figure 28. Application Flow - Security, Privacy and Governance** (svg). Figure: Application Flow view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+classDiagram
+  class RService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  RService --> Repository
+  RService --> Policy
 ```
 
-**Figure 27. Application Flow - Security, Privacy and Governance** (mermaid). Figure: Application Flow view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Class - Security, Privacy and Governance** (mermaid). Figure: Class view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
-
-In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with the end-to-end rag reference architecture. Because the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -4722,7 +4710,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating rag in production. Because operating rag in production concerns monitoring retrieval quality, drift and feedback loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into security, privacy and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+
+In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with handling tables, images and code. Because handling tables, images and code concerns multimodal and structured-content retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4730,7 +4732,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-Consider a concrete scenario. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply security, privacy and governance as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply security, privacy and governance as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4802,81 +4804,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Security, Privacy and Governance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Security, Privacy and Governance component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Security, Privacy and Governance
+### Listing: Implementing a Security, Privacy and Governance component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class PrivacyAndConfig:
+    """Configuration for the Security, Privacy and Governance component in a RAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Security, Privacy and Governance."""
+class PrivacyAnd:
+    """A minimal, production-shaped implementation of Security, Privacy and Governance."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: PrivacyAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PrivacyAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Security, Privacy and Governance goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a RAG system trustworthy and compliant
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a RAG system trustworthy and compliant
+   - A. It makes the system slower but has no other effect.
+   - B. the security, privacy and governance controls that make a RAG system trustworthy and compliant
+   - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a RAG system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always cite sources and enable users to verify answers.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Always cite sources and enable users to verify answers.
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - C. Ignoring permissions and leaking restricted documents.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Stuffing too much context, increasing cost and diluting relevance.
+   - A. Enforce access control at retrieval time, not just at the UI.
    - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
-   - D. Always cite sources and enable users to verify answers.
-   - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-4. *(Discussion)* Describe a failure mode of Security, Privacy and Governance and how you would mitigate it.
+   - C. Stuffing too much context, increasing cost and diluting relevance.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+4. *(Discussion)* How does Security, Privacy and Governance interact with security and governance requirements?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a RAG system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4888,72 +4884,67 @@ _This chapter examines cost, performance and scaling within RAG. It covers techn
 
 ## Introduction
 
-In practical terms, Cost, Performance and Scaling is best understood as techniques for controlling cost and latency while scaling a RAG system to production traffic. Teams that master this consistently ship more reliable RAG systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Cost, Performance and Scaling can be characterised as techniques for controlling cost and latency while scaling a RAG system to production traffic. Teams that master this consistently ship more reliable RAG systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a RAG system to production traffic. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a RAG system to production traffic. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
 
-Cost, Performance and Scaling cannot be understood in isolation from security and access control in rag. Recall that security and access control in rag concerns row-level permissions and preventing data leakage across tenants. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Performance and Scaling cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Cost, Performance and Scaling cannot be understood in isolation from why rag: grounding and freshness. Recall that why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from evaluation of rag systems. Recall that evaluation of rag systems concerns faithfulness, answer relevance, context precision/recall (RAGAS-style). The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to cost, performance and scaling. The first, hybrid retrieval with reciprocal rank fusion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, cross-encoder re-ranking of top-k candidates, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Cost, Performance and Scaling sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+The reference architecture for Cost, Performance and Scaling separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title Class - Cost, Performance and Scaling
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+classDiagram
+  class RService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  RService --> Repository
+  RService --> Policy
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+**Figure 30. Class - Cost, Performance and Scaling** (mermaid). Figure: Class view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 28. Class - Cost, Performance and Scaling** (plantuml). Figure: Class view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="4-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc0ed2c0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc0ed2c0)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc0ed2c0)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Agent Architecture - Cost, Performance and Scaling</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">RAG</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="420" y="88" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why RAG: Grounding and F…</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#db2777" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Document Ingestion and C…</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="654" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Embedding and Indexing S…</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#be123c" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Retrieval and Query Tran…</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Re-ranking and Context S…</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="186" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Assembly and Cita…</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Agent Architecture</text></svg>
+
+</div>
+
+**Figure 31. Agent Architecture - Cost, Performance and Scaling** (svg). Figure: Agent Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with security and access control in rag. Because security and access control in rag concerns row-level permissions and preventing data leakage across tenants, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -4963,9 +4954,23 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
 
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+
+In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with the end-to-end rag reference architecture. Because the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Lewis et al. — Retrieval-Augmented Generation (2020) and Gao et al. — Precise Zero-Shot Dense Retrieval (HyDE, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A legal organisation needs case and contract research with traceable sources. They decide to apply cost, performance and scaling as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A enterprise organisation needs grounded internal Q&A over policies and wikis with citations. They decide to apply cost, performance and scaling as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5037,64 +5042,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Cost, Performance and Scaling component with retry semantics and typed interfaces — the shape we expect from production RAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Cost, Performance and Scaling with a regression gate
+### Listing: Implementing a Cost, Performance and Scaling component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class PerformanceAndConfig:
+    """Configuration for the Cost, Performance and Scaling component in a RAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Cost, Performance and Scaling output against references with a simple exact-match metric.
+class PerformanceAnd:
+    """A minimal, production-shaped implementation of Cost, Performance and Scaling."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: PerformanceAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PerformanceAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Cost, Performance and Scaling goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Cost, Performance and Scaling”?
-   - A. techniques for controlling cost and latency while scaling a RAG system to production traffic
-   - B. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
+   - B. techniques for controlling cost and latency while scaling a RAG system to production traffic
    - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a RAG system to production traffic
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a RAG system to production traffic
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - B. Ignoring permissions and leaking restricted documents.
+   - A. Stuffing too much context, increasing cost and diluting relevance.
+   - B. Naive fixed-size chunking that splits semantic units.
    - C. It makes the system slower but has no other effect.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - C. It makes the system slower but has no other effect.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* Walk through how you would design Cost, Performance and Scaling for an enterprise RAG workload.
+   - A. It removes all security and governance requirements.
+   - B. Ignoring permissions and leaking restricted documents.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Ignoring permissions and leaking restricted documents.
+4. *(Discussion)* Explain Cost, Performance and Scaling and why it matters in a production RAG system.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a RAG system to production traffic) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5106,23 +5122,23 @@ _This chapter examines integration and interoperability within RAG. It covers pa
 
 ## Introduction
 
-Formally, Integration and Interoperability addresses patterns for integrating a RAG system with surrounding enterprise systems and data. Neglecting it is one of the most common reasons RAG initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Integration and Interoperability addresses patterns for integrating a RAG system with surrounding enterprise systems and data. This concept recurs throughout the RAG lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Integration and Interoperability can be characterised as patterns for integrating a RAG system with surrounding enterprise systems and data. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Integration and Interoperability can be characterised as patterns for integrating a RAG system with surrounding enterprise systems and data. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. It is foundational: later capabilities in RAG are built directly on top of it.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. This concept recurs throughout the RAG lifecycle, from design to operations.
 
-Integration and Interoperability cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Integration and Interoperability cannot be understood in isolation from caching and cost optimisation. Recall that caching and cost optimisation concerns semantic caching and retrieval reuse. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Integration and Interoperability cannot be understood in isolation from embedding and indexing strategy. Recall that embedding and indexing strategy concerns choosing models, dimensions and index types for the corpus. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to integration and interoperability. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration and interoperability are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration and interoperability are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5132,36 +5148,64 @@ Concretely, the principal building blocks include why rag: grounding and freshne
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Agent Architecture - Integration and Interoperability
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["RAG Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Why RAG: Grounding and Fr…]
+    S1[Document Ingestion and Ch…]
+    S2[Embedding and Indexing St…]
+    S3[Retrieval and Query Trans…]
+    S4[Re-ranking and Context Se…]
+    S5[Prompt Assembly and Citat…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+**Figure 32. Agent Architecture - Integration and Interoperability** (mermaid). Figure: Agent Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 29. Agent Architecture - Integration and Interoperability** (plantuml). Figure: Agent Architecture view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="4-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn7fc4bf0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn7fc4bf0)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn7fc4bf0)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Integration and Interoperability</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating RAG in P…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Failure Modes and …</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">The End-to-End RAG…</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#db2777" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why RAG: Grounding…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Document Ingestion…</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">RAG  •  Data Flow</text></svg>
+
+</div>
+
+**Figure 33. Data Flow - Integration and Interoperability** (svg). Figure: Data Flow view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with caching and cost optimisation. Because caching and cost optimisation concerns semantic caching and retrieval reuse, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5171,11 +5215,11 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating rag in production. Because operating rag in production concerns monitoring retrieval quality, drift and feedback loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with failure modes and debugging. Because failure modes and debugging concerns diagnosing retrieval versus generation failures, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5183,7 +5227,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A legal organisation needs case and contract research with traceable sources. They decide to apply integration and interoperability as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A enterprise organisation needs grounded internal Q&A over policies and wikis with citations. They decide to apply integration and interoperability as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5255,64 +5299,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Integration and Interoperability logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Integration and Interoperability with a regression gate
+### Listing: A composable processing pipeline for Integration and Interoperability
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Integration and Interoperability output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Integration and Interoperability."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Integration and Interoperability”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. patterns for integrating a RAG system with surrounding enterprise systems and data
    - **Answer: D.** Integration and Interoperability: patterns for integrating a RAG system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. Ignoring permissions and leaking restricted documents.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - A. It is only relevant to academic research, not production.
+   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Ignoring permissions and leaking restricted documents.
+   - **Answer: B.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. Stuffing too much context, increasing cost and diluting relevance.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-4. *(Discussion)* What trade-offs would you weigh when implementing Integration and Interoperability?
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. It applies exclusively to image data.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Enforce access control at retrieval time, not just at the UI.
+   - **Answer: A.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+4. *(Discussion)* Walk through how you would design Integration and Interoperability for an enterprise RAG workload.
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a RAG system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5324,62 +5385,56 @@ _This chapter examines trends and research directions within RAG. It covers emer
 
 ## Introduction
 
-We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of RAG. It is foundational: later capabilities in RAG are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Trends and Research Directions can be characterised as emerging trends, open problems and research directions shaping the future of RAG. Getting this right early prevents expensive rework once a RAG system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of RAG. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Trends and Research Directions can be characterised as emerging trends, open problems and research directions shaping the future of RAG. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
 
-Trends and Research Directions cannot be understood in isolation from prompt assembly and citation. Recall that prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Trends and Research Directions cannot be understood in isolation from failure modes and debugging. Recall that failure modes and debugging concerns diagnosing retrieval versus generation failures. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Trends and Research Directions cannot be understood in isolation from failure modes and debugging. Recall that failure modes and debugging concerns diagnosing retrieval versus generation failures. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Trends and Research Directions cannot be understood in isolation from handling tables, images and code. Recall that handling tables, images and code concerns multimodal and structured-content retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to trends and research directions. The first, hybrid retrieval with reciprocal rank fusion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around trends and research directions are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Trends and Research Directions separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Data Flow - Trends and Research Directions
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 30. Data Flow - Trends and Research Directions** (plantuml). Figure: Data Flow view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 34. Data Flow - Trends and Research Directions** (mermaid). Figure: Data Flow view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with failure modes and debugging. Because failure modes and debugging concerns diagnosing retrieval versus generation failures, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5387,13 +5442,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with advanced rag patterns. Because advanced rag patterns concerns parent-document, sentence-window, fusion and agentic retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating rag in production. Because operating rag in production concerns monitoring retrieval quality, drift and feedback loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5401,7 +5456,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply trends and research directions as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply trends and research directions as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5475,23 +5530,23 @@ Key takeaways from this chapter:
 
 1. In the context of RAG, which statement best describes “Trends and Research Directions”?
    - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
    - C. emerging trends, open problems and research directions shaping the future of RAG
-   - D. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of RAG
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
    - C. Evaluate retrieval and generation separately to localise failures.
-   - D. Naive fixed-size chunking that splits semantic units.
+   - D. It is only relevant to academic research, not production.
    - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It applies exclusively to image data.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. Always cite sources and enable users to verify answers.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-4. *(Discussion)* What trade-offs would you weigh when implementing Trends and Research Directions?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. Stuffing too much context, increasing cost and diluting relevance.
+   - D. Enforce access control at retrieval time, not just at the UI.
+   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+4. *(Discussion)* How would you test and monitor Trends and Research Directions in production?
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of RAG) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5503,72 +5558,62 @@ _This chapter examines capstone project within RAG. It covers a substantial caps
 
 ## Introduction
 
-At its core, Capstone Project concerns a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable. This concept recurs throughout the RAG lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable. Understanding this matters because RAG systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Teams that master this consistently ship more reliable RAG systems at lower cost.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. It is foundational: later capabilities in RAG are built directly on top of it.
 
-Capstone Project cannot be understood in isolation from why rag: grounding and freshness. Recall that why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Capstone Project cannot be understood in isolation from the end-to-end rag reference architecture. Recall that the end-to-end rag reference architecture concerns a production blueprint from ingestion to answer. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Capstone Project cannot be understood in isolation from handling tables, images and code. Recall that handling tables, images and code concerns multimodal and structured-content retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to capstone project. The first, refuse-or-clarify when retrieval confidence is low, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, hybrid retrieval with reciprocal rank fusion, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, parent-document retrieval for precise chunks with broad context, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Capstone Project sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+The reference architecture for Capstone Project separates concerns into clearly bounded components with explicit contracts. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Data Lineage">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Data Lineage - Capstone Project" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="RAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why RAG: Grounding and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Document Ingestion and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Embedding and Indexing …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Retrieval and Query Tra…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Re-ranking and Context …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Data Lineage - Capstone Project
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 31. Data Lineage - Capstone Project** (drawio). Figure: Data Lineage view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 35. Data Lineage - Capstone Project** (plantuml). Figure: Data Lineage view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why rag: grounding and freshness. Because why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with document ingestion and chunking. Because document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5576,13 +5621,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt assembly and citation. Because prompt assembly and citation concerns grounding instructions, source attribution and refusal on low confidence, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with handling tables, images and code. Because handling tables, images and code concerns multimodal and structured-content retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5590,7 +5635,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-Consider a concrete scenario. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply capstone project as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A healthcare organisation needs clinical guideline assistants with provenance. They decide to apply capstone project as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5662,64 +5707,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a RAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Capstone Project logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Capstone Project with a regression gate
+### Listing: A composable processing pipeline for Capstone Project
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Capstone Project output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Capstone Project."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Capstone Project”?
-   - A. It makes the system slower but has no other effect.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
+   - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Enforce access control at retrieval time, not just at the UI.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Stuffing too much context, increasing cost and diluting relevance.
-   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - D. Always cite sources and enable users to verify answers.
+   - **Answer: D.** Best practice: Always cite sources and enable users to verify answers.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
+   - A. Naive fixed-size chunking that splits semantic units.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+4. *(Discussion)* How does Capstone Project interact with security and governance requirements?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5731,33 +5793,33 @@ _This chapter examines certification preparation and review within RAG. It cover
 
 ## Introduction
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of RAG. Understanding this matters because RAG systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of RAG. This concept recurs throughout the RAG lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own RAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of RAG. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Certification Preparation and Review concerns a structured review and certification-style preparation covering the full breadth of RAG. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Getting this right early prevents expensive rework once a RAG system reaches scale.
+To place this in context, recall the broader picture: Retrieval-augmented generation grounds a language model in external knowledge by retrieving relevant context at query time and conditioning generation on it. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of RAG fall into place. Neglecting it is one of the most common reasons RAG initiatives stall in production.
 
-Certification Preparation and Review cannot be understood in isolation from operating rag in production. Recall that operating rag in production concerns monitoring retrieval quality, drift and feedback loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from retrieval and query transformation. Recall that retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Certification Preparation and Review cannot be understood in isolation from document ingestion and chunking. Recall that document ingestion and chunking concerns parsing, semantic chunking, overlap and metadata extraction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Certification Preparation and Review cannot be understood in isolation from why rag: grounding and freshness. Recall that why rag: grounding and freshness concerns the limits of parametric knowledge and the case for retrieval. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to certification preparation and review. The first, cross-encoder re-ranking of top-k candidates, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid retrieval with reciprocal rank fusion, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, parent-document retrieval for precise chunks with broad context, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, refuse-or-clarify when retrieval confidence is low, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production RAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
+From an architectural standpoint, Certification Preparation and Review sits at the intersection of data, models and operations. A RAG system has an offline ingestion pipeline (parse → chunk → embed → index) and an online query pipeline (query transform → hybrid retrieve → re-rank → assemble prompt → generate → cite). Access control filters retrieval by user permissions, and an evaluation service continuously scores faithfulness and relevance on sampled traffic.
 
 Concretely, the principal building blocks include why rag: grounding and freshness, document ingestion and chunking, embedding and indexing strategy, retrieval and query transformation and re-ranking and context selection. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the RAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```mermaid
 graph LR
@@ -5771,40 +5833,17 @@ graph LR
   C1 --- C2
 ```
 
-**Figure 32. Knowledge Graph - Certification Preparation and Review** (mermaid). Figure: Knowledge Graph view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Network - Certification Preparation and Review
-package "RAG Platform" {
-  component "Why RAG: Grounding and …" as C0
-  component "Document Ingestion and …" as C1
-  component "Embedding and Indexing …" as C2
-  component "Retrieval and Query Tra…" as C3
-  component "Re-ranking and Context …" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 33. Network - Certification Preparation and Review** (plantuml). Figure: Network view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 36. Knowledge Graph - Certification Preparation and Review** (mermaid). Figure: Knowledge Graph view for RAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating rag in production. Because operating rag in production concerns monitoring retrieval quality, drift and feedback loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with retrieval and query transformation. Because retrieval and query transformation concerns query rewriting, HyDE, multi-query and hybrid search, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5812,13 +5851,13 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangChain, LlamaIndex, Haystack, RAGAS. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with failure modes and debugging. Because failure modes and debugging concerns diagnosing retrieval versus generation failures, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with handling tables, images and code. Because handling tables, images and code concerns multimodal and structured-content retrieval, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5826,7 +5865,7 @@ For deeper study, the literature offers authoritative treatments such as Lewis e
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A legal organisation needs case and contract research with traceable sources. They decide to apply certification preparation and review as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A support organisation needs deflection bots grounded in current knowledge bases. They decide to apply certification preparation and review as part of their RAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5955,24 +5994,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of RAG, which statement best describes “Certification Preparation and Review”?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. a structured review and certification-style preparation covering the full breadth of RAG
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. a structured review and certification-style preparation covering the full breadth of RAG
+   - C. It applies exclusively to image data.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of RAG
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of RAG
 2. Which of the following is a recommended best practice when working with RAG?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Enforce access control at retrieval time, not just at the UI.
+   - C. It is only relevant to academic research, not production.
+   - D. Ignoring permissions and leaking restricted documents.
+   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
 3. Which of the following is a common pitfall to avoid in RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. Stuffing too much context, increasing cost and diluting relevance.
-   - **Answer: D.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-4. *(Discussion)* How would you test and monitor Certification Preparation and Review in production?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Stuffing too much context, increasing cost and diluting relevance.
+   - D. Evaluate retrieval and generation separately to localise failures.
+   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+4. *(Discussion)* Describe a failure mode of Certification Preparation and Review and how you would mitigate it.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of RAG) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6008,31 +6047,31 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 A consolidated bank of discussion-style interview questions drawn from across the book, suitable for preparation and technical screening.
 
-1. Describe a failure mode of Why RAG: Grounding and Freshness and how you would mitigate it.
+1. Walk through how you would design Why RAG: Grounding and Freshness for an enterprise RAG workload.
    - **Guidance:** A strong answer defines why rag: grounding and freshness (The limits of parametric knowledge and the case for retrieval.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-2. What trade-offs would you weigh when implementing Document Ingestion and Chunking?
+2. Describe a failure mode of Document Ingestion and Chunking and how you would mitigate it.
    - **Guidance:** A strong answer defines document ingestion and chunking (Parsing, semantic chunking, overlap and metadata extraction.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 3. What trade-offs would you weigh when implementing Embedding and Indexing Strategy?
    - **Guidance:** A strong answer defines embedding and indexing strategy (Choosing models, dimensions and index types for the corpus.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-4. Describe a failure mode of Retrieval and Query Transformation and how you would mitigate it.
+4. How does Retrieval and Query Transformation interact with security and governance requirements?
    - **Guidance:** A strong answer defines retrieval and query transformation (Query rewriting, HyDE, multi-query and hybrid search.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-5. What trade-offs would you weigh when implementing Re-ranking and Context Selection?
+5. Explain Re-ranking and Context Selection and why it matters in a production RAG system.
    - **Guidance:** A strong answer defines re-ranking and context selection (Cross-encoders, maximal marginal relevance and context budgeting.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-6. Walk through how you would design Prompt Assembly and Citation for an enterprise RAG workload.
+6. Explain Prompt Assembly and Citation and why it matters in a production RAG system.
    - **Guidance:** A strong answer defines prompt assembly and citation (Grounding instructions, source attribution and refusal on low confidence.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 7. Walk through how you would design Advanced RAG Patterns for an enterprise RAG workload.
    - **Guidance:** A strong answer defines advanced rag patterns (Parent-document, sentence-window, fusion and agentic retrieval.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-8. Walk through how you would design Evaluation of RAG Systems for an enterprise RAG workload.
+8. Describe a failure mode of Evaluation of RAG Systems and how you would mitigate it.
    - **Guidance:** A strong answer defines evaluation of rag systems (Faithfulness, answer relevance, context precision/recall (RAGAS-style).) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-9. Walk through how you would design Handling Tables, Images and Code for an enterprise RAG workload.
+9. Describe a failure mode of Handling Tables, Images and Code and how you would mitigate it.
    - **Guidance:** A strong answer defines handling tables, images and code (Multimodal and structured-content retrieval.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-10. Walk through how you would design Caching and Cost Optimisation for an enterprise RAG workload.
+10. Explain Caching and Cost Optimisation and why it matters in a production RAG system.
    - **Guidance:** A strong answer defines caching and cost optimisation (Semantic caching and retrieval reuse.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 11. How would you test and monitor Security and Access Control in RAG in production?
    - **Guidance:** A strong answer defines security and access control in rag (Row-level permissions and preventing data leakage across tenants.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-12. Explain Operating RAG in Production and why it matters in a production RAG system.
+12. Walk through how you would design Operating RAG in Production for an enterprise RAG workload.
    - **Guidance:** A strong answer defines operating rag in production (Monitoring retrieval quality, drift and feedback loops.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-13. Explain Failure Modes and Debugging and why it matters in a production RAG system.
+13. How would you test and monitor Failure Modes and Debugging in production?
    - **Guidance:** A strong answer defines failure modes and debugging (Diagnosing retrieval versus generation failures.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 14. How does The End-to-End RAG Reference Architecture interact with security and governance requirements?
    - **Guidance:** A strong answer defines the end-to-end rag reference architecture (A production blueprint from ingestion to answer.) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
@@ -6040,23 +6079,23 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a RAG system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 16. How does Hands-On Lab: Building an End-to-End RAG System interact with security and governance requirements?
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end rag system (a guided, build-along laboratory that constructs a functioning RAG system from first principles) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-17. What trade-offs would you weigh when implementing Case Study: Enterprise at Scale?
+17. Describe a failure mode of Case Study: Enterprise at Scale and how you would mitigate it.
    - **Guidance:** A strong answer defines case study: enterprise at scale (a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-18. Walk through how you would design Operating in Production for an enterprise RAG workload.
+18. How does Operating in Production interact with security and governance requirements?
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-19. Walk through how you would design Evaluation and Quality Assurance for an enterprise RAG workload.
+19. What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a RAG system before and after release) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-20. Describe a failure mode of Security, Privacy and Governance and how you would mitigate it.
+20. How does Security, Privacy and Governance interact with security and governance requirements?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a RAG system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-21. Walk through how you would design Cost, Performance and Scaling for an enterprise RAG workload.
+21. Explain Cost, Performance and Scaling and why it matters in a production RAG system.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a RAG system to production traffic) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-22. What trade-offs would you weigh when implementing Integration and Interoperability?
+22. Walk through how you would design Integration and Interoperability for an enterprise RAG workload.
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a RAG system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-23. What trade-offs would you weigh when implementing Trends and Research Directions?
+23. How would you test and monitor Trends and Research Directions in production?
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of RAG) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-24. What trade-offs would you weigh when implementing Capstone Project?
+24. How does Capstone Project interact with security and governance requirements?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
-25. How would you test and monitor Certification Preparation and Review in production?
+25. Describe a failure mode of Certification Preparation and Review and how you would mitigate it.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of RAG) then connects it to architecture, evaluation, cost, security and operations for RAG, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6064,29 +6103,29 @@ A consolidated bank of discussion-style interview questions drawn from across th
 Certification-style multiple-choice questions covering best practices and common pitfalls.
 
 1. Which of the following is a recommended best practice when working with RAG?
-   - A. Naive fixed-size chunking that splits semantic units.
-   - B. Always cite sources and enable users to verify answers.
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Always cite sources and enable users to verify answers.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. It is only relevant to academic research, not production.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. Evaluate retrieval and generation separately to localise failures.
+   - **Answer: D.** Best practice: Evaluate retrieval and generation separately to localise failures.
 2. Which of the following is a common pitfall to avoid in RAG?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - B. Always cite sources and enable users to verify answers.
    - C. It makes the system slower but has no other effect.
    - D. Naive fixed-size chunking that splits semantic units.
    - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
 3. Which of the following is a recommended best practice when working with RAG?
-   - A. Evaluate retrieval and generation separately to localise failures.
-   - B. Stuffing too much context, increasing cost and diluting relevance.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: A.** Best practice: Evaluate retrieval and generation separately to localise failures.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Enforce access control at retrieval time, not just at the UI.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
 4. Which of the following is a common pitfall to avoid in RAG?
-   - A. It is only relevant to academic research, not production.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Evaluate retrieval and generation separately to localise failures.
-   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+   - A. Evaluate retrieval and generation separately to localise failures.
+   - B. Measuring only end answer quality without diagnosing retrieval.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 5. Which of the following is a recommended best practice when working with RAG?
    - A. Ignoring permissions and leaking restricted documents.
    - B. Stuffing too much context, increasing cost and diluting relevance.
@@ -6100,41 +6139,41 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
 7. Which of the following is a recommended best practice when working with RAG?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. Enforce access control at retrieval time, not just at the UI.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: C.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - A. Ignoring permissions and leaking restricted documents.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It is only relevant to academic research, not production.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 8. Which of the following is a common pitfall to avoid in RAG?
-   - A. Measuring only end answer quality without diagnosing retrieval.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always cite sources and enable users to verify answers.
-   - D. Evaluate retrieval and generation separately to localise failures.
-   - **Answer: A.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+   - A. Always cite sources and enable users to verify answers.
+   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
 9. Which of the following is a recommended best practice when working with RAG?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Always cite sources and enable users to verify answers.
-   - **Answer: D.** Best practice: Always cite sources and enable users to verify answers.
+   - A. Ignoring permissions and leaking restricted documents.
+   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 10. Which of the following is a common pitfall to avoid in RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It applies exclusively to image data.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+   - A. Always cite sources and enable users to verify answers.
+   - B. It makes the system slower but has no other effect.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
 11. Which of the following is a recommended best practice when working with RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Evaluate retrieval and generation separately to localise failures.
    - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: A.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
 12. Which of the following is a common pitfall to avoid in RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+   - A. It removes all security and governance requirements.
+   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Measuring only end answer quality without diagnosing retrieval.
+   - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 13. Which of the following is a recommended best practice when working with RAG?
    - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - B. It is only relevant to academic research, not production.
@@ -6148,77 +6187,77 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Stuffing too much context, increasing cost and diluting relevance.
    - **Answer: D.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
 15. Which of the following is a recommended best practice when working with RAG?
-   - A. Ignoring permissions and leaking restricted documents.
-   - B. Evaluate retrieval and generation separately to localise failures.
-   - C. It removes all security and governance requirements.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: B.** Best practice: Evaluate retrieval and generation separately to localise failures.
-16. Which of the following is a common pitfall to avoid in RAG?
-   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - B. It removes all security and governance requirements.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-17. Which of the following is a recommended best practice when working with RAG?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. Enforce access control at retrieval time, not just at the UI.
-   - **Answer: D.** Best practice: Enforce access control at retrieval time, not just at the UI.
-18. Which of the following is a common pitfall to avoid in RAG?
-   - A. Evaluate retrieval and generation separately to localise failures.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. Ignoring permissions and leaking restricted documents.
-   - **Answer: D.** Pitfall to avoid: Ignoring permissions and leaking restricted documents.
-19. Which of the following is a recommended best practice when working with RAG?
-   - A. Ignoring permissions and leaking restricted documents.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. Enforce access control at retrieval time, not just at the UI.
-   - **Answer: D.** Best practice: Enforce access control at retrieval time, not just at the UI.
-20. Which of the following is a common pitfall to avoid in RAG?
-   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-21. Which of the following is a recommended best practice when working with RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
+   - A. Measuring only end answer quality without diagnosing retrieval.
    - B. Ignoring permissions and leaking restricted documents.
-   - C. It applies exclusively to image data.
-   - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: A.** Best practice: Enforce access control at retrieval time, not just at the UI.
-22. Which of the following is a common pitfall to avoid in RAG?
-   - A. It guarantees deterministic output regardless of input.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
+16. Which of the following is a common pitfall to avoid in RAG?
+   - A. It makes the system slower but has no other effect.
    - B. Enforce access control at retrieval time, not just at the UI.
-   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. Measuring only end answer quality without diagnosing retrieval.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+17. Which of the following is a recommended best practice when working with RAG?
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+18. Which of the following is a common pitfall to avoid in RAG?
+   - A. Stuffing too much context, increasing cost and diluting relevance.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+19. Which of the following is a recommended best practice when working with RAG?
+   - A. Evaluate retrieval and generation separately to localise failures.
+   - B. It removes all security and governance requirements.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. Stuffing too much context, increasing cost and diluting relevance.
+   - **Answer: A.** Best practice: Evaluate retrieval and generation separately to localise failures.
+20. Which of the following is a common pitfall to avoid in RAG?
+   - A. Naive fixed-size chunking that splits semantic units.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+21. Which of the following is a recommended best practice when working with RAG?
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. It removes all security and governance requirements.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Naive fixed-size chunking that splits semantic units.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
+22. Which of the following is a common pitfall to avoid in RAG?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Enforce access control at retrieval time, not just at the UI.
    - D. Measuring only end answer quality without diagnosing retrieval.
    - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 23. Which of the following is a recommended best practice when working with RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
 24. Which of the following is a common pitfall to avoid in RAG?
    - A. Always cite sources and enable users to verify answers.
-   - B. Stuffing too much context, increasing cost and diluting relevance.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+   - B. It removes all security and governance requirements.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Measuring only end answer quality without diagnosing retrieval.
+   - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 25. Which of the following is a recommended best practice when working with RAG?
-   - A. Naive fixed-size chunking that splits semantic units.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. Measuring only end answer quality without diagnosing retrieval.
-   - C. Enforce access control at retrieval time, not just at the UI.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Enforce access control at retrieval time, not just at the UI.
+   - C. Always cite sources and enable users to verify answers.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Always cite sources and enable users to verify answers.
 26. Which of the following is a common pitfall to avoid in RAG?
-   - A. Evaluate retrieval and generation separately to localise failures.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It makes the system slower but has no other effect.
-   - D. Ignoring permissions and leaking restricted documents.
-   - **Answer: D.** Pitfall to avoid: Ignoring permissions and leaking restricted documents.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Always cite sources and enable users to verify answers.
+   - C. Naive fixed-size chunking that splits semantic units.
+   - D. Evaluate retrieval and generation separately to localise failures.
+   - **Answer: C.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
 27. Which of the following is a recommended best practice when working with RAG?
    - A. It is only relevant to academic research, not production.
    - B. It guarantees deterministic output regardless of input.
@@ -6244,141 +6283,141 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Measuring only end answer quality without diagnosing retrieval.
    - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 31. Which of the following is a recommended best practice when working with RAG?
-   - A. It applies exclusively to image data.
-   - B. Always cite sources and enable users to verify answers.
-   - C. Naive fixed-size chunking that splits semantic units.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: B.** Best practice: Always cite sources and enable users to verify answers.
-32. Which of the following is a common pitfall to avoid in RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Always cite sources and enable users to verify answers.
-   - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-33. Which of the following is a recommended best practice when working with RAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
-34. Which of the following is a common pitfall to avoid in RAG?
-   - A. Enforce access control at retrieval time, not just at the UI.
-   - B. It removes all security and governance requirements.
-   - C. Measuring only end answer quality without diagnosing retrieval.
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. Naive fixed-size chunking that splits semantic units.
+   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+32. Which of the following is a common pitfall to avoid in RAG?
+   - A. It applies exclusively to image data.
+   - B. Naive fixed-size chunking that splits semantic units.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Always cite sources and enable users to verify answers.
+   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+33. Which of the following is a recommended best practice when working with RAG?
+   - A. It is only relevant to academic research, not production.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. It makes the system slower but has no other effect.
+   - D. Stuffing too much context, increasing cost and diluting relevance.
+   - **Answer: B.** Best practice: Evaluate retrieval and generation separately to localise failures.
+34. Which of the following is a common pitfall to avoid in RAG?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Enforce access control at retrieval time, not just at the UI.
+   - C. Measuring only end answer quality without diagnosing retrieval.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
 35. Which of the following is a recommended best practice when working with RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
-36. Which of the following is a common pitfall to avoid in RAG?
-   - A. It applies exclusively to image data.
-   - B. Evaluate retrieval and generation separately to localise failures.
-   - C. Enforce access control at retrieval time, not just at the UI.
-   - D. Measuring only end answer quality without diagnosing retrieval.
-   - **Answer: D.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-37. Which of the following is a recommended best practice when working with RAG?
-   - A. Stuffing too much context, increasing cost and diluting relevance.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Enforce access control at retrieval time, not just at the UI.
-   - **Answer: D.** Best practice: Enforce access control at retrieval time, not just at the UI.
-38. Which of the following is a common pitfall to avoid in RAG?
-   - A. Naive fixed-size chunking that splits semantic units.
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: A.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-39. Which of the following is a recommended best practice when working with RAG?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always cite sources and enable users to verify answers.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Always cite sources and enable users to verify answers.
-40. Which of the following is a common pitfall to avoid in RAG?
-   - A. Stuffing too much context, increasing cost and diluting relevance.
+   - A. Always cite sources and enable users to verify answers.
    - B. It guarantees deterministic output regardless of input.
    - C. It applies exclusively to image data.
-   - D. Always cite sources and enable users to verify answers.
-   - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-41. Which of the following is a recommended best practice when working with RAG?
-   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - B. Ignoring permissions and leaking restricted documents.
-   - C. It makes the system slower but has no other effect.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
-42. Which of the following is a common pitfall to avoid in RAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - C. It makes the system slower but has no other effect.
+   - D. Naive fixed-size chunking that splits semantic units.
+   - **Answer: A.** Best practice: Always cite sources and enable users to verify answers.
+36. Which of the following is a common pitfall to avoid in RAG?
+   - A. It is only relevant to academic research, not production.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. Tune chunking to the corpus; measure its effect on retrieval metrics.
    - D. Naive fixed-size chunking that splits semantic units.
    - **Answer: D.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-43. Which of the following is a recommended best practice when working with RAG?
-   - A. Ignoring permissions and leaking restricted documents.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
-44. Which of the following is a common pitfall to avoid in RAG?
-   - A. Stuffing too much context, increasing cost and diluting relevance.
-   - B. Enforce access control at retrieval time, not just at the UI.
+37. Which of the following is a recommended best practice when working with RAG?
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - B. It applies exclusively to image data.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: A.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
-45. Which of the following is a recommended best practice when working with RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Stuffing too much context, increasing cost and diluting relevance.
-   - C. Evaluate retrieval and generation separately to localise failures.
    - D. Naive fixed-size chunking that splits semantic units.
-   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
-46. Which of the following is a common pitfall to avoid in RAG?
-   - A. It applies exclusively to image data.
-   - B. Naive fixed-size chunking that splits semantic units.
-   - C. Always cite sources and enable users to verify answers.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
-47. Which of the following is a recommended best practice when working with RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Enforce access control at retrieval time, not just at the UI.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. Stuffing too much context, increasing cost and diluting relevance.
-   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
-48. Which of the following is a common pitfall to avoid in RAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - C. Measuring only end answer quality without diagnosing retrieval.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
-49. Which of the following is a recommended best practice when working with RAG?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. Stuffing too much context, increasing cost and diluting relevance.
-   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
-   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
-50. Which of the following is a common pitfall to avoid in RAG?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+38. Which of the following is a common pitfall to avoid in RAG?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Evaluate retrieval and generation separately to localise failures.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Stuffing too much context, increasing cost and diluting relevance.
    - **Answer: D.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+39. Which of the following is a recommended best practice when working with RAG?
+   - A. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - B. Stuffing too much context, increasing cost and diluting relevance.
+   - C. Ignoring permissions and leaking restricted documents.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+40. Which of the following is a common pitfall to avoid in RAG?
+   - A. Enforce access control at retrieval time, not just at the UI.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Stuffing too much context, increasing cost and diluting relevance.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+41. Which of the following is a recommended best practice when working with RAG?
+   - A. Stuffing too much context, increasing cost and diluting relevance.
+   - B. Naive fixed-size chunking that splits semantic units.
+   - C. It makes the system slower but has no other effect.
+   - D. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - **Answer: D.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+42. Which of the following is a common pitfall to avoid in RAG?
+   - A. It removes all security and governance requirements.
+   - B. Ignoring permissions and leaking restricted documents.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Ignoring permissions and leaking restricted documents.
+43. Which of the following is a recommended best practice when working with RAG?
+   - A. It is only relevant to academic research, not production.
+   - B. Tune chunking to the corpus; measure its effect on retrieval metrics.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Ignoring permissions and leaking restricted documents.
+   - **Answer: B.** Best practice: Tune chunking to the corpus; measure its effect on retrieval metrics.
+44. Which of the following is a common pitfall to avoid in RAG?
+   - A. Measuring only end answer quality without diagnosing retrieval.
+   - B. It applies exclusively to image data.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. Enforce access control at retrieval time, not just at the UI.
+   - **Answer: A.** Pitfall to avoid: Measuring only end answer quality without diagnosing retrieval.
+45. Which of the following is a recommended best practice when working with RAG?
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Evaluate retrieval and generation separately to localise failures.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Evaluate retrieval and generation separately to localise failures.
+46. Which of the following is a common pitfall to avoid in RAG?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. Stuffing too much context, increasing cost and diluting relevance.
+   - D. Enforce access control at retrieval time, not just at the UI.
+   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
+47. Which of the following is a recommended best practice when working with RAG?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Measuring only end answer quality without diagnosing retrieval.
+   - D. Always cite sources and enable users to verify answers.
+   - **Answer: D.** Best practice: Always cite sources and enable users to verify answers.
+48. Which of the following is a common pitfall to avoid in RAG?
+   - A. Naive fixed-size chunking that splits semantic units.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Naive fixed-size chunking that splits semantic units.
+49. Which of the following is a recommended best practice when working with RAG?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Enforce access control at retrieval time, not just at the UI.
+   - C. It is only relevant to academic research, not production.
+   - D. Ignoring permissions and leaking restricted documents.
+   - **Answer: B.** Best practice: Enforce access control at retrieval time, not just at the UI.
+50. Which of the following is a common pitfall to avoid in RAG?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Stuffing too much context, increasing cost and diluting relevance.
+   - D. Evaluate retrieval and generation separately to localise failures.
+   - **Answer: C.** Pitfall to avoid: Stuffing too much context, increasing cost and diluting relevance.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of RAG, which statement best describes “Why RAG: Grounding and Freshness”?
-   - A. The limits of parametric knowledge and the case for retrieval.
-   - B. It makes the system slower but has no other effect.
+   - A. It guarantees deterministic output regardless of input.
+   - B. The limits of parametric knowledge and the case for retrieval.
    - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Why RAG: Grounding and Freshness: The limits of parametric knowledge and the case for retrieval.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Why RAG: Grounding and Freshness: The limits of parametric knowledge and the case for retrieval.
 2. In the context of RAG, which statement best describes “Document Ingestion and Chunking”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
    - C. Parsing, semantic chunking, overlap and metadata extraction.
-   - D. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: C.** Document Ingestion and Chunking: Parsing, semantic chunking, overlap and metadata extraction.
 3. In the context of RAG, which statement best describes “Embedding and Indexing Strategy”?
    - A. It removes all security and governance requirements.
@@ -6387,23 +6426,23 @@ Assessment items to verify conceptual understanding.
    - D. It applies exclusively to image data.
    - **Answer: B.** Embedding and Indexing Strategy: Choosing models, dimensions and index types for the corpus.
 4. In the context of RAG, which statement best describes “Retrieval and Query Transformation”?
-   - A. Query rewriting, HyDE, multi-query and hybrid search.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Retrieval and Query Transformation: Query rewriting, HyDE, multi-query and hybrid search.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Query rewriting, HyDE, multi-query and hybrid search.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Retrieval and Query Transformation: Query rewriting, HyDE, multi-query and hybrid search.
 5. In the context of RAG, which statement best describes “Re-ranking and Context Selection”?
-   - A. Cross-encoders, maximal marginal relevance and context budgeting.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Re-ranking and Context Selection: Cross-encoders, maximal marginal relevance and context budgeting.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Cross-encoders, maximal marginal relevance and context budgeting.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Re-ranking and Context Selection: Cross-encoders, maximal marginal relevance and context budgeting.
 6. In the context of RAG, which statement best describes “Prompt Assembly and Citation”?
    - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Grounding instructions, source attribution and refusal on low confidence.
-   - **Answer: D.** Prompt Assembly and Citation: Grounding instructions, source attribution and refusal on low confidence.
+   - C. Grounding instructions, source attribution and refusal on low confidence.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Prompt Assembly and Citation: Grounding instructions, source attribution and refusal on low confidence.
 7. In the context of RAG, which statement best describes “Advanced RAG Patterns”?
    - A. It guarantees deterministic output regardless of input.
    - B. It eliminates the need for any evaluation or monitoring.
@@ -6411,45 +6450,45 @@ Assessment items to verify conceptual understanding.
    - D. It applies exclusively to image data.
    - **Answer: C.** Advanced RAG Patterns: Parent-document, sentence-window, fusion and agentic retrieval.
 8. In the context of RAG, which statement best describes “Evaluation of RAG Systems”?
-   - A. It applies exclusively to image data.
-   - B. Faithfulness, answer relevance, context precision/recall (RAGAS-style).
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Evaluation of RAG Systems: Faithfulness, answer relevance, context precision/recall (RAGAS-style).
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Faithfulness, answer relevance, context precision/recall (RAGAS-style).
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Evaluation of RAG Systems: Faithfulness, answer relevance, context precision/recall (RAGAS-style).
 9. In the context of RAG, which statement best describes “Handling Tables, Images and Code”?
-   - A. It is only relevant to academic research, not production.
-   - B. It removes all security and governance requirements.
-   - C. Multimodal and structured-content retrieval.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Handling Tables, Images and Code: Multimodal and structured-content retrieval.
+   - A. Multimodal and structured-content retrieval.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Handling Tables, Images and Code: Multimodal and structured-content retrieval.
 10. In the context of RAG, which statement best describes “Caching and Cost Optimisation”?
-   - A. It is only relevant to academic research, not production.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
    - D. Semantic caching and retrieval reuse.
    - **Answer: D.** Caching and Cost Optimisation: Semantic caching and retrieval reuse.
 11. In the context of RAG, which statement best describes “Security and Access Control in RAG”?
-   - A. Row-level permissions and preventing data leakage across tenants.
+   - A. It guarantees deterministic output regardless of input.
    - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Security and Access Control in RAG: Row-level permissions and preventing data leakage across tenants.
+   - C. Row-level permissions and preventing data leakage across tenants.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Security and Access Control in RAG: Row-level permissions and preventing data leakage across tenants.
 12. In the context of RAG, which statement best describes “Operating RAG in Production”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It makes the system slower but has no other effect.
-   - D. Monitoring retrieval quality, drift and feedback loops.
-   - **Answer: D.** Operating RAG in Production: Monitoring retrieval quality, drift and feedback loops.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Monitoring retrieval quality, drift and feedback loops.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Operating RAG in Production: Monitoring retrieval quality, drift and feedback loops.
 13. In the context of RAG, which statement best describes “Failure Modes and Debugging”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. Diagnosing retrieval versus generation failures.
-   - **Answer: D.** Failure Modes and Debugging: Diagnosing retrieval versus generation failures.
+   - A. It makes the system slower but has no other effect.
+   - B. It removes all security and governance requirements.
+   - C. Diagnosing retrieval versus generation failures.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Failure Modes and Debugging: Diagnosing retrieval versus generation failures.
 14. In the context of RAG, which statement best describes “The End-to-End RAG Reference Architecture”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
    - B. A production blueprint from ingestion to answer.
-   - C. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** The End-to-End RAG Reference Architecture: A production blueprint from ingestion to answer.
 15. In the context of RAG, which statement best describes “Putting It Together: A Reference Implementation”?
@@ -6459,65 +6498,65 @@ Assessment items to verify conceptual understanding.
    - D. It applies exclusively to image data.
    - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a RAG system into a cohesive, working whole
 16. In the context of RAG, which statement best describes “Hands-On Lab: Building an End-to-End RAG System”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. a guided, build-along laboratory that constructs a functioning RAG system from first principles
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Hands-On Lab: Building an End-to-End RAG System: a guided, build-along laboratory that constructs a functioning RAG system from first principles
-17. In the context of RAG, which statement best describes “Case Study: Enterprise at Scale”?
-   - A. It makes the system slower but has no other effect.
+   - A. It removes all security and governance requirements.
    - B. It is only relevant to academic research, not production.
-   - C. a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
+   - C. a guided, build-along laboratory that constructs a functioning RAG system from first principles
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Hands-On Lab: Building an End-to-End RAG System: a guided, build-along laboratory that constructs a functioning RAG system from first principles
+17. In the context of RAG, which statement best describes “Case Study: Enterprise at Scale”?
+   - A. It removes all security and governance requirements.
+   - B. a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
+   - C. It guarantees deterministic output regardless of input.
    - D. It applies exclusively to image data.
-   - **Answer: C.** Case Study: Enterprise at Scale: a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
+   - **Answer: B.** Case Study: Enterprise at Scale: a detailed case study of deploying RAG in a demanding enterprise environment, including the decisions, trade-offs and outcomes
 18. In the context of RAG, which statement best describes “Operating in Production”?
-   - A. the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Operating in Production: the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
+19. In the context of RAG, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
+   - D. a rigorous approach to measuring and assuring the quality of a RAG system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a RAG system before and after release
+20. In the context of RAG, which statement best describes “Security, Privacy and Governance”?
+   - A. It makes the system slower but has no other effect.
+   - B. the security, privacy and governance controls that make a RAG system trustworthy and compliant
    - C. It guarantees deterministic output regardless of input.
    - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Operating in Production: the operational discipline required to run a RAG system reliably, including monitoring, incident response and continuous improvement
-19. In the context of RAG, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. a rigorous approach to measuring and assuring the quality of a RAG system before and after release
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a RAG system before and after release
-20. In the context of RAG, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a RAG system trustworthy and compliant
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a RAG system trustworthy and compliant
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a RAG system trustworthy and compliant
 21. In the context of RAG, which statement best describes “Cost, Performance and Scaling”?
-   - A. techniques for controlling cost and latency while scaling a RAG system to production traffic
-   - B. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
+   - B. techniques for controlling cost and latency while scaling a RAG system to production traffic
    - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a RAG system to production traffic
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a RAG system to production traffic
 22. In the context of RAG, which statement best describes “Integration and Interoperability”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. patterns for integrating a RAG system with surrounding enterprise systems and data
    - **Answer: D.** Integration and Interoperability: patterns for integrating a RAG system with surrounding enterprise systems and data
 23. In the context of RAG, which statement best describes “Trends and Research Directions”?
    - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
    - C. emerging trends, open problems and research directions shaping the future of RAG
-   - D. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of RAG
 24. In the context of RAG, which statement best describes “Capstone Project”?
-   - A. It makes the system slower but has no other effect.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
+   - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade RAG deliverable
 25. In the context of RAG, which statement best describes “Certification Preparation and Review”?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. a structured review and certification-style preparation covering the full breadth of RAG
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. a structured review and certification-style preparation covering the full breadth of RAG
+   - C. It applies exclusively to image data.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of RAG
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of RAG
 
 # References
 

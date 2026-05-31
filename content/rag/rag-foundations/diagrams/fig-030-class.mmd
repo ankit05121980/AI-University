@@ -1,0 +1,15 @@
+classDiagram
+  class RService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  RService --> Repository
+  RService --> Policy

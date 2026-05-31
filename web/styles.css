@@ -401,3 +401,56 @@ a.figure:hover { transform: translateY(-3px); }
 .toast.show { opacity: 1; transform: none; }
 
 @media (max-width: 900px) { .reader-bar { top: 60px; } .chap-nav { bottom: 14px; } }
+
+/* ============ v4: fonts, scroll fix, chapter reader ============ */
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; }
+
+/* kill any horizontal scroll & make diagrams fit */
+html, body { max-width: 100%; overflow-x: hidden; }
+.main, .view, .reader, #reader-wrap, .reader-body { min-width: 0; }
+.reader > * { min-width: 0; }
+.reader-body { overflow-wrap: anywhere; }
+.reader-body .figure { max-width: 100%; overflow: hidden; margin: 20px 0; }
+.reader-body .figure svg { max-width: 100% !important; width: 100%; height: auto; display: block; margin: 0 auto; }
+.reader-body pre { max-width: 100%; }
+
+/* refined reading typography (serif body, sans headings) */
+.reader-body { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
+.reader-body p, .reader-body li { font-family: 'Newsreader', Georgia, serif; font-size: 1em; }
+.reader-body h1, .reader-body h2, .reader-body h3 { font-family: 'Inter', sans-serif; }
+.reader-body h2 { border-left: 4px solid var(--accent); padding-left: 12px; }
+.reader-body p.dropcap::first-letter { font-size: 3.2em; font-weight: 800; float: left; line-height: .82; margin: 6px 12px 0 0; color: var(--accent); }
+
+/* chapter hero */
+.ch-hero { background: linear-gradient(135deg, var(--accent-soft), var(--surface)); border: 1px solid var(--border);
+  border-radius: 18px; padding: 24px 26px; margin-bottom: 24px; animation: fadeUp .3s ease both; }
+.ch-kicker { font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.ch-hero h1 { margin: 8px 0 10px; border: none; padding: 0; font-size: 1.95rem; font-family: 'Inter', sans-serif; }
+.ch-meta { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: .85rem; font-family: 'Inter', sans-serif; }
+.ch-summary { color: var(--muted); margin: 12px 0; }
+.ch-hero .chip { font-family: 'Inter', sans-serif; }
+
+/* best-practice / pitfall cards */
+.tips { display: flex; flex-direction: column; gap: 10px; margin: 12px 0; }
+.tip { display: flex; gap: 12px; padding: 13px 15px; border-radius: 13px; border: 1px solid var(--border);
+  background: var(--surface); box-shadow: var(--shadow); font-family: 'Inter', sans-serif; align-items: flex-start; }
+.tip .tip-ic { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-weight: 800;
+  flex-shrink: 0; color: #fff; font-size: .9rem; }
+.tip.ok { border-left: 4px solid #16a34a; } .tip.ok .tip-ic { background: #16a34a; }
+.tip.warn { border-left: 4px solid #d97706; } .tip.warn .tip-ic { background: #d97706; }
+
+/* takeaways callout */
+.callout { background: linear-gradient(135deg, var(--accent-soft), var(--surface)); border: 1px solid var(--border);
+  border-left: 5px solid var(--accent); border-radius: 14px; padding: 16px 20px; margin: 16px 0; font-family: 'Inter', sans-serif; }
+.callout-h { font-weight: 800; color: var(--accent); margin-bottom: 8px; }
+.callout ul { margin: 0; }
+
+/* figure caption */
+.reader-body figure.figure { border: 1px solid var(--border); border-radius: 16px; padding: 14px; background: var(--panel, #f8fafc); }
+[data-theme="dark"] .reader-body figure.figure { background: var(--surface-2); }
+.reader-body figcaption.cap { text-align: center; margin-top: 10px; }
+
+/* chapter pager */
+.ch-pager { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 30px 0 8px;
+  padding-top: 18px; border-top: 1px solid var(--border); font-family: 'Inter', sans-serif; }
+.qbox { font-family: 'Inter', sans-serif; }

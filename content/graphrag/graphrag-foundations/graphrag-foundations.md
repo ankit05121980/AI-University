@@ -82,8 +82,8 @@ First published 2026. First Edition. Document version 1.0.0.
 |---|---------|-----------:|---------:|-----:|----------:|
 | 1 | Limits of Vector-Only RAG | 11 | 2 | 1 | 4 |
 | 2 | Knowledge Graph Construction from Text | 10 | 1 | 1 | 4 |
-| 3 | Entity Resolution and Deduplication | 10 | 1 | 1 | 4 |
-| 4 | Community Detection and Summarisation | 11 | 2 | 1 | 4 |
+| 3 | Entity Resolution and Deduplication | 11 | 2 | 1 | 4 |
+| 4 | Community Detection and Summarisation | 10 | 1 | 1 | 4 |
 | 5 | Local versus Global Search | 11 | 2 | 1 | 4 |
 | 6 | Graph + Vector Hybrid Retrieval | 10 | 1 | 1 | 4 |
 | 7 | Query Routing in GraphRAG | 10 | 1 | 1 | 4 |
@@ -114,8 +114,8 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 2. Security Architecture - Limits of Vector-Only RAG
 - Figure 3. Security Architecture - Knowledge Graph Construction from Text
 - Figure 4. DevOps Pipeline - Entity Resolution and Deduplication
-- Figure 5. Application Flow - Community Detection and Summarisation
-- Figure 6. Knowledge Graph - Community Detection and Summarisation
+- Figure 5. Application Flow - Entity Resolution and Deduplication
+- Figure 6. Application Flow - Community Detection and Summarisation
 - Figure 7. Knowledge Graph - Local versus Global Search
 - Figure 8. Architecture - Local versus Global Search
 - Figure 9. Architecture - Graph + Vector Hybrid Retrieval
@@ -273,34 +273,44 @@ flowchart TB
 
 **Figure 1. Component - Limits of Vector-Only RAG** (mermaid). Figure: Component view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Security Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Security Architecture - Limits of Vector-Only RAG" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["GraphRAG Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Limits of Vector-Only RAG]
+    S1[Knowledge Graph Construct…]
+    S2[Entity Resolution and Ded…]
+    S3[Community Detection and S…]
+    S4[Local versus Global Search]
+    S5[Graph + Vector Hybrid Ret…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 2. Security Architecture - Limits of Vector-Only RAG** (drawio). Figure: Security Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Security Architecture - Limits of Vector-Only RAG** (mermaid). Figure: Security Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -404,51 +414,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Limits of Vector-Only RAG component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
+Pipelines keep Limits of Vector-Only RAG logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Limits of Vector-Only RAG component
+### Listing: A composable processing pipeline for Limits of Vector-Only RAG
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class LimitsOfConfig:
-    """Configuration for the Limits of Vector-Only RAG component in a GraphRAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class LimitsOf:
-    """A minimal, production-shaped implementation of Limits of Vector-Only RAG."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Limits of Vector-Only RAG."""
 
-    def __init__(self, config: LimitsOfConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"LimitsOf failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Limits of Vector-Only RAG goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -456,23 +472,23 @@ class LimitsOf:
 
 1. In the context of GraphRAG, which statement best describes “Limits of Vector-Only RAG”?
    - A. It is only relevant to academic research, not production.
-   - B. Why local similarity fails on global, multi-hop and aggregative questions.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Limits of Vector-Only RAG: Why local similarity fails on global, multi-hop and aggregative questions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Why local similarity fails on global, multi-hop and aggregative questions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Limits of Vector-Only RAG: Why local similarity fails on global, multi-hop and aggregative questions.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Stale graphs after corpus updates.
-   - C. Skipping entity resolution and fragmenting the graph.
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. It is only relevant to academic research, not production.
+   - C. Stale graphs after corpus updates.
    - D. Invest in entity resolution; graph quality dominates answer quality.
    - **Answer: D.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Skipping entity resolution and fragmenting the graph.
-   - B. It removes all security and governance requirements.
-   - C. Invest in entity resolution; graph quality dominates answer quality.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-4. *(Discussion)* Describe a failure mode of Limits of Vector-Only RAG and how you would mitigate it.
+   - A. It is only relevant to academic research, not production.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+4. *(Discussion)* Walk through how you would design Limits of Vector-Only RAG for an enterprise GraphRAG workload.
    - **Model answer:** A strong answer defines limits of vector-only rag (Why local similarity fails on global, multi-hop and aggregative questions.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -484,37 +500,37 @@ _This chapter examines knowledge graph construction from text within GraphRAG. I
 
 ## Introduction
 
-Knowledge Graph Construction from Text can be characterised as lLM-driven entity and relationship extraction and schema design. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+At its core, Knowledge Graph Construction from Text concerns lLM-driven entity and relationship extraction and schema design. Teams that master this consistently ship more reliable GraphRAG systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Knowledge Graph Construction from Text is best understood as lLM-driven entity and relationship extraction and schema design. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Knowledge Graph Construction from Text refers to lLM-driven entity and relationship extraction and schema design. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, knowledge graph construction from text is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, knowledge graph construction from text is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Getting this right early prevents expensive rework once a GraphRAG system reaches scale.
 
-Knowledge Graph Construction from Text cannot be understood in isolation from local versus global search. Recall that local versus global search concerns entity-centric retrieval versus community-level synthesis. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Knowledge Graph Construction from Text cannot be understood in isolation from local versus global search. Recall that local versus global search concerns entity-centric retrieval versus community-level synthesis. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Knowledge Graph Construction from Text cannot be understood in isolation from security and provenance. Recall that security and provenance concerns source attribution through graph edges. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Knowledge Graph Construction from Text cannot be understood in isolation from incremental graph updates. Recall that incremental graph updates concerns keeping the graph fresh as the corpus changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to knowledge graph construction from text. The first, entity-neighbourhood expansion for local questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hierarchical community summaries for scalable synthesis, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to knowledge graph construction from text. The first, entity-neighbourhood expansion for local questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, map-reduce community summarisation for global questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around knowledge graph construction from text are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around knowledge graph construction from text are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Knowledge Graph Construction from Text sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+The reference architecture for Knowledge Graph Construction from Text separates concerns into clearly bounded components with explicit contracts. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="7-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#d946ef"/><rect x="0" y="30" width="840" height="16" fill="#d946ef"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Knowledge Graph Construction from Text</text><circle cx="420.0" cy="238.0" r="150" fill="#d946ef"/><text x="420" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resolution and…</text><circle cx="420.0" cy="238.0" r="116" fill="#6b21a8"/><text x="420" y="140" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Community Detection a…</text><circle cx="420.0" cy="238.0" r="82" fill="#7e22ce"/><text x="420" y="174" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Local versus Global S…</text><circle cx="420.0" cy="238.0" r="48" fill="#9333ea"/><text x="420" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Graph + Vector Hybrid…</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="0-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn4eb025e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn4eb025e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn4eb025e)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Knowledge Graph Construction from Text</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#8b5cf6"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Query Routing i…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#a78bfa"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Hop Reaso…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#c4b5fd"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of G…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#4338ca"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Cost and Indexi…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Security Architecture</text></svg>
 
 </div>
 
@@ -522,9 +538,9 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into knowledge graph construction from text. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into knowledge graph construction from text. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -536,13 +552,13 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into knowledge graph construction from text. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into knowledge graph construction from text. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and indexing trade-offs. Because cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -550,7 +566,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A enterprise organisation needs whole-corpus thematic questions over documentation. They decide to apply knowledge graph construction from text as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A research organisation needs literature synthesis across thousands of papers. They decide to apply knowledge graph construction from text as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -622,81 +638,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Knowledge Graph Construction from Text logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Knowledge Graph Construction from Text component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Knowledge Graph Construction from Text
+### Listing: Implementing a Knowledge Graph Construction from Text component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class KnowledgeGraphConstructionConfig:
+    """Configuration for the Knowledge Graph Construction from Text component in a GraphRAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Knowledge Graph Construction from Text."""
+class KnowledgeGraphConstruction:
+    """A minimal, production-shaped implementation of Knowledge Graph Construction from Text."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: KnowledgeGraphConstructionConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"KnowledgeGraphConstruction failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Knowledge Graph Construction from Text goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Knowledge Graph Construction from Text”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
    - C. LLM-driven entity and relationship extraction and schema design.
-   - D. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Knowledge Graph Construction from Text: LLM-driven entity and relationship extraction and schema design.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Skipping entity resolution and fragmenting the graph.
-   - B. Stale graphs after corpus updates.
-   - C. Route global questions to community summaries, not raw chunks.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Route global questions to community summaries, not raw chunks.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: D.** Best practice: Cache community summaries to amortise extraction cost.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
    - A. It applies exclusively to image data.
-   - B. Track provenance through edges for citation.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-4. *(Discussion)* How does Knowledge Graph Construction from Text interact with security and governance requirements?
+   - B. Cache community summaries to amortise extraction cost.
+   - C. Stale graphs after corpus updates.
+   - D. Route global questions to community summaries, not raw chunks.
+   - **Answer: C.** Pitfall to avoid: Stale graphs after corpus updates.
+4. *(Discussion)* Walk through how you would design Knowledge Graph Construction from Text for an enterprise GraphRAG workload.
    - **Model answer:** A strong answer defines knowledge graph construction from text (LLM-driven entity and relationship extraction and schema design.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -708,33 +718,33 @@ _This chapter examines entity resolution and deduplication within GraphRAG. It c
 
 ## Introduction
 
-In practical terms, Entity Resolution and Deduplication is best understood as merging coreferent entities into a clean graph. This concept recurs throughout the GraphRAG lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Entity Resolution and Deduplication is best understood as merging coreferent entities into a clean graph. This concept recurs throughout the GraphRAG lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Entity Resolution and Deduplication addresses merging coreferent entities into a clean graph. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Entity Resolution and Deduplication refers to merging coreferent entities into a clean graph. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, entity resolution and deduplication is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Teams that master this consistently ship more reliable GraphRAG systems at lower cost.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, entity resolution and deduplication is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Getting this right early prevents expensive rework once a GraphRAG system reaches scale.
 
-Entity Resolution and Deduplication cannot be understood in isolation from local versus global search. Recall that local versus global search concerns entity-centric retrieval versus community-level synthesis. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Entity Resolution and Deduplication cannot be understood in isolation from knowledge graph construction from text. Recall that knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Entity Resolution and Deduplication cannot be understood in isolation from security and provenance. Recall that security and provenance concerns source attribution through graph edges. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Entity Resolution and Deduplication cannot be understood in isolation from multi-hop reasoning over graphs. Recall that multi-hop reasoning over graphs concerns traversing relationships to answer connected questions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to entity resolution and deduplication. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid graph traversal + vector similarity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to entity resolution and deduplication. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-neighbourhood expansion for local questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around entity resolution and deduplication are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around entity resolution and deduplication are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Entity Resolution and Deduplication sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+A robust architecture for Entity Resolution and Deduplication is layered so each part can evolve independently without destabilising the whole. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```xml
 <mxfile host="ai-university">
@@ -765,15 +775,28 @@ _Source diagram (drawio); render with the appropriate tool._
 
 **Figure 4. DevOps Pipeline - Entity Resolution and Deduplication** (drawio). Figure: DevOps Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
+
+**Figure 5. Application Flow - Entity Resolution and Deduplication** (mermaid). Figure: Application Flow view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into entity resolution and deduplication. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into entity resolution and deduplication. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with local versus global search. Because local versus global search concerns entity-centric retrieval versus community-level synthesis, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with knowledge graph construction from text. Because knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -781,9 +804,9 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into entity resolution and deduplication. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into entity resolution and deduplication. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -795,7 +818,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A research organisation needs literature synthesis across thousands of papers. They decide to apply entity resolution and deduplication as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise organisation needs whole-corpus thematic questions over documentation. They decide to apply entity resolution and deduplication as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -867,81 +890,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Entity Resolution and Deduplication logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a GraphRAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Entity Resolution and Deduplication
+### Listing: Evaluating Entity Resolution and Deduplication with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Entity Resolution and Deduplication."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Entity Resolution and Deduplication output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Entity Resolution and Deduplication”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It makes the system slower but has no other effect.
    - B. Merging coreferent entities into a clean graph.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Entity Resolution and Deduplication: Merging coreferent entities into a clean graph.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. Skipping entity resolution and fragmenting the graph.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
-3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It is only relevant to academic research, not production.
+   - A. Cache community summaries to amortise extraction cost.
    - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. Invest in entity resolution; graph quality dominates answer quality.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
-4. *(Discussion)* Explain Entity Resolution and Deduplication and why it matters in a production GraphRAG system.
+   - C. It applies exclusively to image data.
+   - D. Stale graphs after corpus updates.
+   - **Answer: A.** Best practice: Cache community summaries to amortise extraction cost.
+3. Which of the following is a common pitfall to avoid in GraphRAG?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: C.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
+4. *(Discussion)* Walk through how you would design Entity Resolution and Deduplication for an enterprise GraphRAG workload.
    - **Model answer:** A strong answer defines entity resolution and deduplication (Merging coreferent entities into a clean graph.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -953,80 +959,56 @@ _This chapter examines community detection and summarisation within GraphRAG. It
 
 ## Introduction
 
-In practical terms, Community Detection and Summarisation is best understood as hierarchical clustering (e.g. Leiden) and map-reduce summaries. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Community Detection and Summarisation addresses hierarchical clustering (e.g. Leiden) and map-reduce summaries. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Community Detection and Summarisation addresses hierarchical clustering (e.g. Leiden) and map-reduce summaries. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Community Detection and Summarisation as hierarchical clustering (e.g. Leiden) and map-reduce summaries. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, community detection and summarisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, community detection and summarisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Getting this right early prevents expensive rework once a GraphRAG system reaches scale.
 
-Community Detection and Summarisation cannot be understood in isolation from graph + vector hybrid retrieval. Recall that graph + vector hybrid retrieval concerns combining structural traversal with semantic similarity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Community Detection and Summarisation cannot be understood in isolation from the graphrag reference architecture. Recall that the graphrag reference architecture concerns indexing and query pipelines end to end. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Community Detection and Summarisation cannot be understood in isolation from limits of vector-only rag. Recall that limits of vector-only rag concerns why local similarity fails on global, multi-hop and aggregative questions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Community Detection and Summarisation cannot be understood in isolation from cost and indexing trade-offs. Recall that cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to community detection and summarisation. The first, hybrid graph traversal + vector similarity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-neighbourhood expansion for local questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to community detection and summarisation. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-neighbourhood expansion for local questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around community detection and summarisation are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around community detection and summarisation are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Community Detection and Summarisation sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+A robust architecture for Community Detection and Summarisation is layered so each part can evolve independently without destabilising the whole. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Application Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Application Flow - Community Detection and Summarisation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 5. Application Flow - Community Detection and Summarisation** (drawio). Figure: Application Flow view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="0-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#c4b5fd"/><rect x="0" y="30" width="840" height="16" fill="#c4b5fd"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Community Detection and Summarisation</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#c4b5fd"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Community D…</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#4338ca"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Local versu…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#6d28d9"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Graph + Vec…</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#7c3aed"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Query Routi…</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#8b5cf6"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Hop R…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#a78bfa"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation …</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#c4b5fd"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Cost and In…</text></svg>
-
-</div>
-
-**Figure 6. Knowledge Graph - Community Detection and Summarisation** (svg). Figure: Knowledge Graph view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 6. Application Flow - Community Detection and Summarisation** (mermaid). Figure: Application Flow view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into community detection and summarisation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into community detection and summarisation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with graph + vector hybrid retrieval. Because graph + vector hybrid retrieval concerns combining structural traversal with semantic similarity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1036,11 +1018,11 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 Having established the essentials, we now go deeper into community detection and summarisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation of graphrag. Because evaluation of graphrag concerns comprehensiveness, diversity and groundedness metrics, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and indexing trade-offs. Because cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1048,7 +1030,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A enterprise organisation needs whole-corpus thematic questions over documentation. They decide to apply community detection and summarisation as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A research organisation needs literature synthesis across thousands of papers. They decide to apply community detection and summarisation as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1120,81 +1102,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Community Detection and Summarisation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a GraphRAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Community Detection and Summarisation
+### Listing: Evaluating Community Detection and Summarisation with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Community Detection and Summarisation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Community Detection and Summarisation output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Community Detection and Summarisation”?
-   - A. It applies exclusively to image data.
+   - A. It guarantees deterministic output regardless of input.
    - B. Hierarchical clustering (e.g. Leiden) and map-reduce summaries.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: B.** Community Detection and Summarisation: Hierarchical clustering (e.g. Leiden) and map-reduce summaries.
 2. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Skipping entity resolution and fragmenting the graph.
-   - B. Track provenance through edges for citation.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Invest in entity resolution; graph quality dominates answer quality.
-   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-4. *(Discussion)* How does Community Detection and Summarisation interact with security and governance requirements?
+   - A. Route global questions to community summaries, not raw chunks.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. Cache community summaries to amortise extraction cost.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+4. *(Discussion)* How would you test and monitor Community Detection and Summarisation in production?
    - **Model answer:** A strong answer defines community detection and summarisation (Hierarchical clustering (e.g. Leiden) and map-reduce summaries.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1206,27 +1171,27 @@ _This chapter examines local versus global search within GraphRAG. It covers ent
 
 ## Introduction
 
-Local versus Global Search refers to entity-centric retrieval versus community-level synthesis. It is foundational: later capabilities in GraphRAG are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Formally, Local versus Global Search addresses entity-centric retrieval versus community-level synthesis. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Local versus Global Search addresses entity-centric retrieval versus community-level synthesis. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+At its core, Local versus Global Search concerns entity-centric retrieval versus community-level synthesis. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, local versus global search is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Teams that master this consistently ship more reliable GraphRAG systems at lower cost.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, local versus global search is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production.
 
-Local versus Global Search cannot be understood in isolation from limits of vector-only rag. Recall that limits of vector-only rag concerns why local similarity fails on global, multi-hop and aggregative questions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Local versus Global Search cannot be understood in isolation from limits of vector-only rag. Recall that limits of vector-only rag concerns why local similarity fails on global, multi-hop and aggregative questions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Local versus Global Search cannot be understood in isolation from security and provenance. Recall that security and provenance concerns source attribution through graph edges. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Local versus Global Search cannot be understood in isolation from the graphrag reference architecture. Recall that the graphrag reference architecture concerns indexing and query pipelines end to end. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to local versus global search. The first, entity-neighbourhood expansion for local questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hierarchical community summaries for scalable synthesis, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to local versus global search. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, map-reduce community summarisation for global questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around local versus global search are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around local versus global search are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Local versus Global Search is layered so each part can evolve independently without destabilising the whole. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+The reference architecture for Local versus Global Search separates concerns into clearly bounded components with explicit contracts. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1234,38 +1199,54 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="9-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#f472b6"/><rect x="0" y="30" width="840" height="16" fill="#f472b6"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Local versus Global Search</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#f472b6"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of V…</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#fb7185"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge G…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#e11d48"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Reso…</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#9d174d"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Community D…</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#db2777"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Local versu…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#ec4899"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Graph + Vec…</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#f472b6"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Query Routi…</text></svg>
-
-</div>
-
-**Figure 7. Knowledge Graph - Local versus Global Search** (svg). Figure: Knowledge Graph view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Architecture - Local versus Global Search
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+graph LR
+  D(("GraphRAG"))
+  D --- C0[Limits of Vector-Only…]
+  D --- C1[Knowledge Graph Const…]
+  D --- C2[Entity Resolution and…]
+  D --- C3[Community Detection a…]
+  D --- C4[Local versus Global S…]
+  C0 --- C1
+  C1 --- C2
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+**Figure 7. Knowledge Graph - Local versus Global Search** (mermaid). Figure: Knowledge Graph view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 8. Architecture - Local versus Global Search** (plantuml). Figure: Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```xml
+<mxfile host="ai-university">
+  <diagram name="Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Architecture - Local versus Global Search" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 8. Architecture - Local versus Global Search** (drawio). Figure: Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into local versus global search. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into local versus global search. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1279,11 +1260,11 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 Having established the essentials, we now go deeper into local versus global search. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with limits of vector-only rag. Because limits of vector-only rag concerns why local similarity fails on global, multi-hop and aggregative questions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with community detection and summarisation. Because community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1291,7 +1272,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply local versus global search as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply local versus global search as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1363,81 +1344,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Local versus Global Search logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Local versus Global Search component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Local versus Global Search
+### Listing: Implementing a Local versus Global Search component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class LocalVersusGlobalConfig:
+    """Configuration for the Local versus Global Search component in a GraphRAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Local versus Global Search."""
+class LocalVersusGlobal:
+    """A minimal, production-shaped implementation of Local versus Global Search."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: LocalVersusGlobalConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"LocalVersusGlobal failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Local versus Global Search goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Local versus Global Search”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. Entity-centric retrieval versus community-level synthesis.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Local versus Global Search: Entity-centric retrieval versus community-level synthesis.
-2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. It applies exclusively to image data.
-   - C. Unbounded extraction cost on huge corpora.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
-3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Invest in entity resolution; graph quality dominates answer quality.
+   - A. It removes all security and governance requirements.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Route global questions to community summaries, not raw chunks.
-   - D. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - **Answer: D.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
-4. *(Discussion)* Describe a failure mode of Local versus Global Search and how you would mitigate it.
+   - C. It is only relevant to academic research, not production.
+   - D. Entity-centric retrieval versus community-level synthesis.
+   - **Answer: D.** Local versus Global Search: Entity-centric retrieval versus community-level synthesis.
+2. Which of the following is a recommended best practice when working with GraphRAG?
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It is only relevant to academic research, not production.
+   - D. Track provenance through edges for citation.
+   - **Answer: D.** Best practice: Track provenance through edges for citation.
+3. Which of the following is a common pitfall to avoid in GraphRAG?
+   - A. It removes all security and governance requirements.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Stale graphs after corpus updates.
+   - **Answer: D.** Pitfall to avoid: Stale graphs after corpus updates.
+4. *(Discussion)* How would you test and monitor Local versus Global Search in production?
    - **Model answer:** A strong answer defines local versus global search (Entity-centric retrieval versus community-level synthesis.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1449,62 +1424,82 @@ _This chapter examines graph + vector hybrid retrieval within GraphRAG. It cover
 
 ## Introduction
 
-We define Graph + Vector Hybrid Retrieval as combining structural traversal with semantic similarity. This concept recurs throughout the GraphRAG lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Graph + Vector Hybrid Retrieval addresses combining structural traversal with semantic similarity. Getting this right early prevents expensive rework once a GraphRAG system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Graph + Vector Hybrid Retrieval is best understood as combining structural traversal with semantic similarity. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Graph + Vector Hybrid Retrieval can be characterised as combining structural traversal with semantic similarity. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, graph + vector hybrid retrieval is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, graph + vector hybrid retrieval is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Teams that master this consistently ship more reliable GraphRAG systems at lower cost.
 
-Graph + Vector Hybrid Retrieval cannot be understood in isolation from the graphrag reference architecture. Recall that the graphrag reference architecture concerns indexing and query pipelines end to end. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Graph + Vector Hybrid Retrieval cannot be understood in isolation from security and provenance. Recall that security and provenance concerns source attribution through graph edges. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Graph + Vector Hybrid Retrieval cannot be understood in isolation from operating graphrag. Recall that operating graphrag concerns pipelines, storage and monitoring. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Graph + Vector Hybrid Retrieval cannot be understood in isolation from knowledge graph construction from text. Recall that knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to graph + vector hybrid retrieval. The first, map-reduce community summarisation for global questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hierarchical community summaries for scalable synthesis, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to graph + vector hybrid retrieval. The first, map-reduce community summarisation for global questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid graph traversal + vector similarity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around graph + vector hybrid retrieval are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around graph + vector hybrid retrieval are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Graph + Vector Hybrid Retrieval is layered so each part can evolve independently without destabilising the whole. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+From an architectural standpoint, Graph + Vector Hybrid Retrieval sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```plantuml
-@startuml
-title Architecture - Graph + Vector Hybrid Retrieval
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["GraphRAG Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Limits of Vector-Only RAG]
+    S1[Knowledge Graph Construct…]
+    S2[Entity Resolution and Ded…]
+    S3[Community Detection and S…]
+    S4[Local versus Global Search]
+    S5[Graph + Vector Hybrid Ret…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 9. Architecture - Graph + Vector Hybrid Retrieval** (plantuml). Figure: Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. Architecture - Graph + Vector Hybrid Retrieval** (mermaid). Figure: Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into graph + vector hybrid retrieval. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into graph + vector hybrid retrieval. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with security and provenance. Because security and provenance concerns source attribution through graph edges, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1512,7 +1507,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into graph + vector hybrid retrieval. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into graph + vector hybrid retrieval. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
@@ -1526,7 +1521,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply graph + vector hybrid retrieval as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply graph + vector hybrid retrieval as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1598,64 +1593,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a GraphRAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Graph + Vector Hybrid Retrieval logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Graph + Vector Hybrid Retrieval with a regression gate
+### Listing: A composable processing pipeline for Graph + Vector Hybrid Retrieval
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Graph + Vector Hybrid Retrieval output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Graph + Vector Hybrid Retrieval."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Graph + Vector Hybrid Retrieval”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Combining structural traversal with semantic similarity.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Graph + Vector Hybrid Retrieval: Combining structural traversal with semantic similarity.
+   - A. Combining structural traversal with semantic similarity.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Graph + Vector Hybrid Retrieval: Combining structural traversal with semantic similarity.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Invest in entity resolution; graph quality dominates answer quality.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. Stale graphs after corpus updates.
-   - **Answer: B.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
+   - A. Stale graphs after corpus updates.
+   - B. It removes all security and governance requirements.
+   - C. Invest in entity resolution; graph quality dominates answer quality.
+   - D. Unbounded extraction cost on huge corpora.
+   - **Answer: C.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It guarantees deterministic output regardless of input.
+   - A. Route global questions to community summaries, not raw chunks.
    - B. It makes the system slower but has no other effect.
    - C. Skipping entity resolution and fragmenting the graph.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: C.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-4. *(Discussion)* How does Graph + Vector Hybrid Retrieval interact with security and governance requirements?
+4. *(Discussion)* Walk through how you would design Graph + Vector Hybrid Retrieval for an enterprise GraphRAG workload.
    - **Model answer:** A strong answer defines graph + vector hybrid retrieval (Combining structural traversal with semantic similarity.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1667,66 +1679,72 @@ _This chapter examines query routing in graphrag within GraphRAG. It covers choo
 
 ## Introduction
 
-At its core, Query Routing in GraphRAG concerns choosing local, global or hybrid strategies per question. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Query Routing in GraphRAG concerns choosing local, global or hybrid strategies per question. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Query Routing in GraphRAG as choosing local, global or hybrid strategies per question. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Query Routing in GraphRAG concerns choosing local, global or hybrid strategies per question. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, query routing in graphrag is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Getting this right early prevents expensive rework once a GraphRAG system reaches scale.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, query routing in graphrag is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. This concept recurs throughout the GraphRAG lifecycle, from design to operations.
 
-Query Routing in GraphRAG cannot be understood in isolation from entity resolution and deduplication. Recall that entity resolution and deduplication concerns merging coreferent entities into a clean graph. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Query Routing in GraphRAG cannot be understood in isolation from cost and indexing trade-offs. Recall that cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Query Routing in GraphRAG cannot be understood in isolation from incremental graph updates. Recall that incremental graph updates concerns keeping the graph fresh as the corpus changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to query routing in graphrag. The first, map-reduce community summarisation for global questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hierarchical community summaries for scalable synthesis, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to query routing in graphrag. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid graph traversal + vector similarity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around query routing in graphrag are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around query routing in graphrag are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Query Routing in GraphRAG sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+A robust architecture for Query Routing in GraphRAG is layered so each part can evolve independently without destabilising the whole. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Infrastructure - Query Routing in GraphRAG
-package "GraphRAG Platform" {
-  component "Limits of Vector-Only R…" as C0
-  component "Knowledge Graph Constru…" as C1
-  component "Entity Resolution and D…" as C2
-  component "Community Detection and…" as C3
-  component "Local versus Global Sea…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Infrastructure">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Infrastructure - Query Routing in GraphRAG" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 10. Infrastructure - Query Routing in GraphRAG** (plantuml). Figure: Infrastructure view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. Infrastructure - Query Routing in GraphRAG** (drawio). Figure: Infrastructure view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into query routing in graphrag. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into query routing in graphrag. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with entity resolution and deduplication. Because entity resolution and deduplication concerns merging coreferent entities into a clean graph, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and indexing trade-offs. Because cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1734,9 +1752,9 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into query routing in graphrag. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into query routing in graphrag. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1748,7 +1766,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-Consider a concrete scenario. A compliance organisation needs tracing relationships across regulatory filings. They decide to apply query routing in graphrag as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs literature synthesis across thousands of papers. They decide to apply query routing in graphrag as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1820,81 +1838,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Query Routing in GraphRAG logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Query Routing in GraphRAG component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Query Routing in GraphRAG
+### Listing: Implementing a Query Routing in GraphRAG component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class QueryRoutingInConfig:
+    """Configuration for the Query Routing in GraphRAG component in a GraphRAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Query Routing in GraphRAG."""
+class QueryRoutingIn:
+    """A minimal, production-shaped implementation of Query Routing in GraphRAG."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: QueryRoutingInConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"QueryRoutingIn failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Query Routing in GraphRAG goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Query Routing in GraphRAG”?
-   - A. Choosing local, global or hybrid strategies per question.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Query Routing in GraphRAG: Choosing local, global or hybrid strategies per question.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. Choosing local, global or hybrid strategies per question.
+   - **Answer: D.** Query Routing in GraphRAG: Choosing local, global or hybrid strategies per question.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Stale graphs after corpus updates.
-   - B. Track provenance through edges for citation.
+   - A. It applies exclusively to image data.
+   - B. Invest in entity resolution; graph quality dominates answer quality.
    - C. Unbounded extraction cost on huge corpora.
-   - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: B.** Best practice: Track provenance through edges for citation.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It is only relevant to academic research, not production.
-   - B. Skipping entity resolution and fragmenting the graph.
+   - A. It removes all security and governance requirements.
+   - B. Unbounded extraction cost on huge corpora.
    - C. It guarantees deterministic output regardless of input.
-   - D. Track provenance through edges for citation.
-   - **Answer: B.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-4. *(Discussion)* Explain Query Routing in GraphRAG and why it matters in a production GraphRAG system.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+4. *(Discussion)* How would you test and monitor Query Routing in GraphRAG in production?
    - **Model answer:** A strong answer defines query routing in graphrag (Choosing local, global or hybrid strategies per question.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1906,62 +1918,46 @@ _This chapter examines multi-hop reasoning over graphs within GraphRAG. It cover
 
 ## Introduction
 
-Multi-Hop Reasoning over Graphs refers to traversing relationships to answer connected questions. Teams that master this consistently ship more reliable GraphRAG systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+In practical terms, Multi-Hop Reasoning over Graphs is best understood as traversing relationships to answer connected questions. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Multi-Hop Reasoning over Graphs as traversing relationships to answer connected questions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Multi-Hop Reasoning over Graphs is best understood as traversing relationships to answer connected questions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, multi-hop reasoning over graphs is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production.
 
-Multi-Hop Reasoning over Graphs cannot be understood in isolation from community detection and summarisation. Recall that community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Multi-Hop Reasoning over Graphs cannot be understood in isolation from the graphrag reference architecture. Recall that the graphrag reference architecture concerns indexing and query pipelines end to end. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Multi-Hop Reasoning over Graphs cannot be understood in isolation from local versus global search. Recall that local versus global search concerns entity-centric retrieval versus community-level synthesis. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Multi-Hop Reasoning over Graphs cannot be understood in isolation from limits of vector-only rag. Recall that limits of vector-only rag concerns why local similarity fails on global, multi-hop and aggregative questions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to multi-hop reasoning over graphs. The first, map-reduce community summarisation for global questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hierarchical community summaries for scalable synthesis, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to multi-hop reasoning over graphs. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-neighbourhood expansion for local questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around multi-hop reasoning over graphs are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around multi-hop reasoning over graphs are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Multi-Hop Reasoning over Graphs separates concerns into clearly bounded components with explicit contracts. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+From an architectural standpoint, Multi-Hop Reasoning over Graphs sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Business Process">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Business Process - Multi-Hop Reasoning over Graphs" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 11. Business Process - Multi-Hop Reasoning over Graphs** (drawio). Figure: Business Process view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 11. Business Process - Multi-Hop Reasoning over Graphs** (mermaid). Figure: Business Process view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```xml
 <mxfile host="ai-university">
@@ -1996,11 +1992,11 @@ _Source diagram (drawio); render with the appropriate tool._
 
 Having established the essentials, we now go deeper into multi-hop reasoning over graphs. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with community detection and summarisation. Because community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2014,7 +2010,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating graphrag. Because operating graphrag concerns pipelines, storage and monitoring, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2022,7 +2018,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply multi-hop reasoning over graphs as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A compliance organisation needs tracing relationships across regulatory filings. They decide to apply multi-hop reasoning over graphs as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2094,74 +2090,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Multi-Hop Reasoning over Graphs component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
+Pipelines keep Multi-Hop Reasoning over Graphs logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Multi-Hop Reasoning over Graphs component
+### Listing: A composable processing pipeline for Multi-Hop Reasoning over Graphs
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class ReasoningOverConfig:
-    """Configuration for the Multi-Hop Reasoning over Graphs component in a GraphRAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class ReasoningOver:
-    """A minimal, production-shaped implementation of Multi-Hop Reasoning over Graphs."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Multi-Hop Reasoning over Graphs."""
 
-    def __init__(self, config: ReasoningOverConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ReasoningOver failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Multi-Hop Reasoning over Graphs goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Multi-Hop Reasoning over Graphs”?
-   - A. Traversing relationships to answer connected questions.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Multi-Hop Reasoning over Graphs: Traversing relationships to answer connected questions.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. Traversing relationships to answer connected questions.
+   - **Answer: D.** Multi-Hop Reasoning over Graphs: Traversing relationships to answer connected questions.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Route global questions to community summaries, not raw chunks.
-   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Route global questions to community summaries, not raw chunks.
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It removes all security and governance requirements.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: D.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It is only relevant to academic research, not production.
-   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. Track provenance through edges for citation.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. Track provenance through edges for citation.
+   - C. Route global questions to community summaries, not raw chunks.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
 4. *(Discussion)* Describe a failure mode of Multi-Hop Reasoning over Graphs and how you would mitigate it.
    - **Model answer:** A strong answer defines multi-hop reasoning over graphs (Traversing relationships to answer connected questions.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
@@ -2174,72 +2176,51 @@ _This chapter examines evaluation of graphrag within GraphRAG. It covers compreh
 
 ## Introduction
 
-Evaluation of GraphRAG refers to comprehensiveness, diversity and groundedness metrics. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+We define Evaluation of GraphRAG as comprehensiveness, diversity and groundedness metrics. Getting this right early prevents expensive rework once a GraphRAG system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Evaluation of GraphRAG is best understood as comprehensiveness, diversity and groundedness metrics. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Evaluation of GraphRAG addresses comprehensiveness, diversity and groundedness metrics. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, evaluation of graphrag is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, evaluation of graphrag is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Neglecting it is one of the most common reasons GraphRAG initiatives stall in production.
+
+Evaluation of GraphRAG cannot be understood in isolation from cost and indexing trade-offs. Recall that cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 Evaluation of GraphRAG cannot be understood in isolation from community detection and summarisation. Recall that community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Evaluation of GraphRAG cannot be understood in isolation from entity resolution and deduplication. Recall that entity resolution and deduplication concerns merging coreferent entities into a clean graph. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Several established patterns apply directly to evaluation of graphrag. The first, hybrid graph traversal + vector similarity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hierarchical community summaries for scalable synthesis, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Several established patterns apply directly to evaluation of graphrag. The first, entity-neighbourhood expansion for local questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid graph traversal + vector similarity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
-
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation of graphrag are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation of graphrag are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Evaluation of GraphRAG sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+The reference architecture for Evaluation of GraphRAG separates concerns into clearly bounded components with explicit contracts. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Evaluation of GraphRAG" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="7-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn12c5b4a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7e22ce"/><stop offset="1" stop-color="#9333ea"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn12c5b4a)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn12c5b4a)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Evaluation of GraphRAG</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#7e22ce"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of Vecto…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#9333ea"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#a21caf"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resoluti…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#c026d3"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Community Detec…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Operating Model</text></svg>
 
-**Figure 13. Operating Model - Evaluation of GraphRAG** (drawio). Figure: Operating Model view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 13. Operating Model - Evaluation of GraphRAG** (svg). Figure: Operating Model view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation of graphrag. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation of graphrag. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with community detection and summarisation. Because community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and indexing trade-offs. Because cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2247,13 +2228,13 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation of graphrag. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation of graphrag. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating graphrag. Because operating graphrag concerns pipelines, storage and monitoring, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with limits of vector-only rag. Because limits of vector-only rag concerns why local similarity fails on global, multi-hop and aggregative questions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2261,7 +2242,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply evaluation of graphrag as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply evaluation of graphrag as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2333,68 +2314,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Evaluation of GraphRAG logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a GraphRAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Evaluation of GraphRAG
+### Listing: Evaluating Evaluation of GraphRAG with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Evaluation of GraphRAG."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation of GraphRAG output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Evaluation of GraphRAG”?
-   - A. It makes the system slower but has no other effect.
-   - B. Comprehensiveness, diversity and groundedness metrics.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Evaluation of GraphRAG: Comprehensiveness, diversity and groundedness metrics.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Comprehensiveness, diversity and groundedness metrics.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Evaluation of GraphRAG: Comprehensiveness, diversity and groundedness metrics.
 2. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Applying GraphRAG where simple RAG suffices, inflating cost.
    - B. Unbounded extraction cost on huge corpora.
@@ -3133,24 +3097,24 @@ class OperatingGraphrag:
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Operating GraphRAG”?
-   - A. Pipelines, storage and monitoring.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
+   - B. Pipelines, storage and monitoring.
    - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Operating GraphRAG: Pipelines, storage and monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Operating GraphRAG: Pipelines, storage and monitoring.
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - B. Unbounded extraction cost on huge corpora.
-   - C. Route global questions to community summaries, not raw chunks.
-   - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: C.** Best practice: Route global questions to community summaries, not raw chunks.
+   - A. Stale graphs after corpus updates.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Unbounded extraction cost on huge corpora.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: D.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
    - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Stale graphs after corpus updates.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Stale graphs after corpus updates.
-4. *(Discussion)* How would you test and monitor Operating GraphRAG in production?
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+4. *(Discussion)* Explain Operating GraphRAG and why it matters in a production GraphRAG system.
    - **Model answer:** A strong answer defines operating graphrag (Pipelines, storage and monitoring.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3172,9 +3136,9 @@ We define Security and Provenance as source attribution through graph edges. The
 
 To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, security and provenance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions.
 
-Security and Provenance cannot be understood in isolation from incremental graph updates. Recall that incremental graph updates concerns keeping the graph fresh as the corpus changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security and Provenance cannot be understood in isolation from knowledge graph construction from text. Recall that knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Security and Provenance cannot be understood in isolation from query routing in graphrag. Recall that query routing in graphrag concerns choosing local, global or hybrid strategies per question. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security and Provenance cannot be understood in isolation from community detection and summarisation. Recall that community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 Several established patterns apply directly to security and provenance. The first, map-reduce community summarisation for global questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-neighbourhood expansion for local questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -3218,7 +3182,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with incremental graph updates. Because incremental graph updates concerns keeping the graph fresh as the corpus changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with knowledge graph construction from text. Because knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3232,7 +3196,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation of graphrag. Because evaluation of graphrag concerns comprehensiveness, diversity and groundedness metrics, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3371,7 +3335,7 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 1. In the context of GraphRAG, which statement best describes “Security and Provenance”?
    - A. It guarantees deterministic output regardless of input.
    - B. Source attribution through graph edges.
-   - C. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Security and Provenance: Source attribution through graph edges.
 2. Which of the following is a recommended best practice when working with GraphRAG?
@@ -3455,34 +3419,24 @@ _Source diagram (drawio); render with the appropriate tool._
 
 **Figure 19. Cloud Architecture - The GraphRAG Reference Architecture** (drawio). Figure: Cloud Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Data Lineage">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Data Lineage - The GraphRAG Reference Architecture" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Data Lineage - The GraphRAG Reference Architecture
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 20. Data Lineage - The GraphRAG Reference Architecture** (drawio). Figure: Data Lineage view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 20. Data Lineage - The GraphRAG Reference Architecture** (plantuml). Figure: Data Lineage view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -3586,67 +3540,61 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep The GraphRAG Reference Architecture logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven The GraphRAG Reference Architecture component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for The GraphRAG Reference Architecture
+### Listing: Implementing a The GraphRAG Reference Architecture component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class TheGraphragReferenceConfig:
+    """Configuration for the The GraphRAG Reference Architecture component in a GraphRAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for The GraphRAG Reference Architecture."""
+class TheGraphragReference:
+    """A minimal, production-shaped implementation of The GraphRAG Reference Architecture."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: TheGraphragReferenceConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheGraphragReference failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The GraphRAG Reference Architecture goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “The GraphRAG Reference Architecture”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It is only relevant to academic research, not production.
    - B. Indexing and query pipelines end to end.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** The GraphRAG Reference Architecture: Indexing and query pipelines end to end.
 2. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Track provenance through edges for citation.
@@ -4100,10 +4048,10 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Hands-On Lab: Building an End-to-End GraphRAG System”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It makes the system slower but has no other effect.
    - B. a guided, build-along laboratory that constructs a functioning GraphRAG system from first principles
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Hands-On Lab: Building an End-to-End GraphRAG System: a guided, build-along laboratory that constructs a functioning GraphRAG system from first principles
 2. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Track provenance through edges for citation.
@@ -4159,7 +4107,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_v" data-pal="7-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#7e22ce"/><rect x="0" y="30" width="840" height="16" fill="#7e22ce"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Case Study: Research at Scale</text><rect x="270" y="70" width="300" height="52" rx="11" fill="#7e22ce"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph + Vector Hybrid Retrieval</text><rect x="270" y="144" width="300" height="52" rx="11" fill="#9333ea"/><text x="420" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Query Routing in GraphRAG</text><line x1="420" y1="122" x2="420" y2="144" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="218" width="300" height="52" rx="11" fill="#a21caf"/><text x="420" y="244" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Hop Reasoning over Graphs</text><line x1="420" y1="196" x2="420" y2="218" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="292" width="300" height="52" rx="11" fill="#c026d3"/><text x="420" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of GraphRAG</text><line x1="420" y1="270" x2="420" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="366" width="300" height="52" rx="11" fill="#d946ef"/><text x="420" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Indexing Trade-offs</text><line x1="420" y1="344" x2="420" y2="366" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_v" data-pal="7-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8b7e058" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7e22ce"/><stop offset="1" stop-color="#9333ea"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8b7e058)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8b7e058)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Case Study: Research at Scale</text><rect x="270" y="70" width="300" height="52" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph + Vector Hybrid Retrieval</text><rect x="270" y="144" width="300" height="52" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="420" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Query Routing in GraphRAG</text><line x1="420" y1="122" x2="420" y2="144" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="218" width="300" height="52" rx="11" fill="#a21caf" filter="url(#sh)"/><text x="420" y="244" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Hop Reasoning over Graphs</text><line x1="420" y1="196" x2="420" y2="218" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="292" width="300" height="52" rx="11" fill="#c026d3" filter="url(#sh)"/><text x="420" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of GraphRAG</text><line x1="420" y1="270" x2="420" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="366" width="300" height="52" rx="11" fill="#d946ef" filter="url(#sh)"/><text x="420" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Indexing Trade-offs</text><line x1="420" y1="344" x2="420" y2="366" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Data Flow</text></svg>
 
 </div>
 
@@ -4354,9 +4302,9 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of GraphRAG, which statement best describes “Case Study: Research at Scale”?
    - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
    - C. a detailed case study of deploying GraphRAG in a demanding research environment, including the decisions, trade-offs and outcomes
-   - D. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Case Study: Research at Scale: a detailed case study of deploying GraphRAG in a demanding research environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Route global questions to community summaries, not raw chunks.
@@ -4667,31 +4615,40 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="2-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#059669"/><rect x="0" y="30" width="840" height="16" fill="#059669"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Evaluation and Quality Assurance</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#059669"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of Vecto…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#10b981"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#34d399"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resoluti…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0d9488"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Community Detec…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="2-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn173bea4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn173bea4)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn173bea4)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Evaluation and Quality Assurance</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#059669"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of Vecto…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#10b981"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#34d399"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resoluti…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0d9488"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Community Detec…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Capability Map</text></svg>
 
 </div>
 
 **Figure 26. Capability Map - Evaluation and Quality Assurance** (svg). Figure: Capability Map view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+```xml
+<mxfile host="ai-university">
+  <diagram name="CI/CD Pipeline">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CI/CD Pipeline - Evaluation and Quality Assurance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 27. CI/CD Pipeline - Evaluation and Quality Assurance** (mermaid). Figure: CI/CD Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 27. CI/CD Pipeline - Evaluation and Quality Assurance** (drawio). Figure: CI/CD Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -4795,75 +4752,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluation and Quality Assurance component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
+Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluation and Quality Assurance component
+### Listing: A composable processing pipeline for Evaluation and Quality Assurance
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class EvaluationAndQualityConfig:
-    """Configuration for the Evaluation and Quality Assurance component in a GraphRAG system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class EvaluationAndQuality:
-    """A minimal, production-shaped implementation of Evaluation and Quality Assurance."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
 
-    def __init__(self, config: EvaluationAndQualityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluationAndQuality failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluation and Quality Assurance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
-   - B. a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
+   - A. a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - B. Track provenance through edges for citation.
-   - C. Unbounded extraction cost on huge corpora.
+   - A. Unbounded extraction cost on huge corpora.
+   - B. Route global questions to community summaries, not raw chunks.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Stale graphs after corpus updates.
-   - **Answer: B.** Best practice: Track provenance through edges for citation.
+   - **Answer: B.** Best practice: Route global questions to community summaries, not raw chunks.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It removes all security and governance requirements.
-   - B. Cache community summaries to amortise extraction cost.
-   - C. Track provenance through edges for citation.
-   - D. Unbounded extraction cost on huge corpora.
-   - **Answer: D.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
-4. *(Discussion)* How would you test and monitor Evaluation and Quality Assurance in production?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - C. It removes all security and governance requirements.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
+4. *(Discussion)* Explain Evaluation and Quality Assurance and why it matters in a production GraphRAG system.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4875,57 +4838,64 @@ _This chapter examines security, privacy and governance within GraphRAG. It cove
 
 ## Introduction
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant. Understanding this matters because GraphRAG systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant. This concept recurs throughout the GraphRAG lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Security, Privacy and Governance refers to the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. It is foundational: later capabilities in GraphRAG are built directly on top of it.
 
-Security, Privacy and Governance cannot be understood in isolation from operating graphrag. Recall that operating graphrag concerns pipelines, storage and monitoring. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Security, Privacy and Governance cannot be understood in isolation from multi-hop reasoning over graphs. Recall that multi-hop reasoning over graphs concerns traversing relationships to answer connected questions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Security, Privacy and Governance cannot be understood in isolation from local versus global search. Recall that local versus global search concerns entity-centric retrieval versus community-level synthesis. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security, Privacy and Governance cannot be understood in isolation from local versus global search. Recall that local versus global search concerns entity-centric retrieval versus community-level synthesis. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Several established patterns apply directly to security, privacy and governance. The first, hierarchical community summaries for scalable synthesis, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid graph traversal + vector similarity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+From an architectural standpoint, Security, Privacy and Governance sits at the intersection of data, models and operations. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="CI/CD Pipeline">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CI/CD Pipeline - Security, Privacy and Governance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="GraphRAG" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Limits of Vector-Only R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Knowledge Graph Constru…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Entity Resolution and D…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Community Detection and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Local versus Global Sea…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="0-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#8b5cf6"/><rect x="0" y="30" width="840" height="16" fill="#8b5cf6"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Security, Privacy and Governance</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#8b5cf6"/><text x="420" y="108" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Limits of Vector-Only …</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#a78bfa"/><text x="544" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Constr…</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#c4b5fd"/><text x="496" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Entity Resolution and …</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#4338ca"/><text x="344" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Community Detection an…</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#6d28d9"/><text x="296" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Local versus Global Se…</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
-
-**Figure 28. CI/CD Pipeline - Security, Privacy and Governance** (svg). Figure: CI/CD Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. CI/CD Pipeline - Security, Privacy and Governance** (drawio). Figure: CI/CD Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with operating graphrag. Because operating graphrag concerns pipelines, storage and monitoring, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Edge et al. — From Local to Global: Graph RAG (Microsoft, 2024) and Traag et al. — Leiden community detection (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -4933,7 +4903,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with incremental graph updates. Because incremental graph updates concerns keeping the graph fresh as the corpus changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-hop reasoning over graphs. Because multi-hop reasoning over graphs concerns traversing relationships to answer connected questions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Edge et al. — From Local to Global: Graph RAG (Microsoft, 2024) and Traag et al. — Leiden community detection (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with entity resolution and deduplication. Because entity resolution and deduplication concerns merging coreferent entities into a clean graph, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4941,7 +4925,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-Consider a concrete scenario. A research organisation needs literature synthesis across thousands of papers. They decide to apply security, privacy and governance as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A intelligence organisation needs connecting entities across heterogeneous reports. They decide to apply security, privacy and governance as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5053,23 +5037,23 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Security, Privacy and Governance”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
+   - A. It guarantees deterministic output regardless of input.
+   - B. the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Route global questions to community summaries, not raw chunks.
-   - B. It removes all security and governance requirements.
+   - A. It makes the system slower but has no other effect.
+   - B. Route global questions to community summaries, not raw chunks.
    - C. It is only relevant to academic research, not production.
-   - D. Unbounded extraction cost on huge corpora.
-   - **Answer: A.** Best practice: Route global questions to community summaries, not raw chunks.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Route global questions to community summaries, not raw chunks.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
    - A. It makes the system slower but has no other effect.
-   - B. Skipping entity resolution and fragmenting the graph.
+   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Track provenance through edges for citation.
-   - **Answer: B.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
 4. *(Discussion)* What trade-offs would you weigh when implementing Security, Privacy and Governance?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
@@ -5361,30 +5345,19 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="1-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#075985"/><rect x="0" y="30" width="840" height="16" fill="#075985"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Integration and Interoperability</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#075985"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#0e7490"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resoluti…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#0891b2"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Community Detec…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0ea5e9"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Local versus Gl…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="1-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn5084b8e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#075985"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn5084b8e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn5084b8e)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Integration and Interoperability</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#075985"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#0e7490"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resoluti…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#0891b2"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Community Detec…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0ea5e9"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Local versus Gl…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Security Architecture</text></svg>
 
 </div>
 
 **Figure 30. Security Architecture - Integration and Interoperability** (svg). Figure: Security Architecture view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```plantuml
-@startuml
-title DevOps Pipeline - Integration and Interoperability
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+<div class="diagram-svg">
 
-_Source diagram (plantuml); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="0-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn2ed08ab" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn2ed08ab)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn2ed08ab)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Integration and Interoperability</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#6d28d9"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#6d28d9" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Pr…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#7c3aed"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#7c3aed" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The GraphRAG Re…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#8b5cf6"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#8b5cf6" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of Vecto…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#a78bfa"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Knowledge Graph…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#c4b5fd"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#c4b5fd" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Entity Resoluti…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  DevOps Pipeline</text></svg>
 
-**Figure 31. DevOps Pipeline - Integration and Interoperability** (plantuml). Figure: DevOps Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 31. DevOps Pipeline - Integration and Interoperability** (svg). Figure: DevOps Pipeline view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -5539,24 +5512,24 @@ class IntegrationAndInteroperability:
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Integration and Interoperability”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
    - D. patterns for integrating a GraphRAG system with surrounding enterprise systems and data
    - **Answer: D.** Integration and Interoperability: patterns for integrating a GraphRAG system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Unbounded extraction cost on huge corpora.
-   - B. It is only relevant to academic research, not production.
-   - C. Track provenance through edges for citation.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Route global questions to community summaries, not raw chunks.
    - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: C.** Best practice: Track provenance through edges for citation.
+   - **Answer: C.** Best practice: Route global questions to community summaries, not raw chunks.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Route global questions to community summaries, not raw chunks.
+   - A. Skipping entity resolution and fragmenting the graph.
    - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Unbounded extraction cost on huge corpora.
-   - **Answer: D.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
-4. *(Discussion)* How would you test and monitor Integration and Interoperability in production?
+   - C. Route global questions to community summaries, not raw chunks.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+4. *(Discussion)* Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a GraphRAG system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5580,7 +5553,7 @@ To place this in context, recall the broader picture: GraphRAG augments retrieva
 
 Trends and Research Directions cannot be understood in isolation from entity resolution and deduplication. Recall that entity resolution and deduplication concerns merging coreferent entities into a clean graph. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Trends and Research Directions cannot be understood in isolation from incremental graph updates. Recall that incremental graph updates concerns keeping the graph fresh as the corpus changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Trends and Research Directions cannot be understood in isolation from operating graphrag. Recall that operating graphrag concerns pipelines, storage and monitoring. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Several established patterns apply directly to trends and research directions. The first, hybrid graph traversal + vector similarity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, entity-neighbourhood expansion for local questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -5627,7 +5600,7 @@ _Source diagram (drawio); render with the appropriate tool._
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#0e7490"/><rect x="0" y="30" width="840" height="16" fill="#0e7490"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Trends and Research Directions</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#0e7490"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Limits of Vector-O…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#b45309"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Co…</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#9f1239"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Entity Resolution …</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#4338ca"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Community Detectio…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#0f172a"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Local versus Globa…</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn22917cc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn22917cc)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn22917cc)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Trends and Research Directions</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Limits of Vector-O…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#b45309" filter="url(#sh)"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Knowledge Graph Co…</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Entity Resolution …</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Community Detectio…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Local versus Globa…</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Application Flow</text></svg>
 
 </div>
 
@@ -5655,7 +5628,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the graphrag reference architecture. Because the graphrag reference architecture concerns indexing and query pipelines end to end, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with graph + vector hybrid retrieval. Because graph + vector hybrid retrieval concerns combining structural traversal with semantic similarity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5736,7 +5709,7 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Trends and Research Directions”?
-   - A. It applies exclusively to image data.
+   - A. It makes the system slower but has no other effect.
    - B. emerging trends, open problems and research directions shaping the future of GraphRAG
    - C. It is only relevant to academic research, not production.
    - D. It guarantees deterministic output regardless of input.
@@ -5795,19 +5768,25 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="5-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#2563eb"/><rect x="0" y="30" width="840" height="16" fill="#2563eb"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Capstone Project</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#2563eb"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#2563eb" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Incremental Gra…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#3b82f6"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#3b82f6" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Operating Graph…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#60a5fa"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#60a5fa" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Pr…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#1e40af"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e40af" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The GraphRAG Re…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#1e3a8a"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e3a8a" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of Vecto…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="5-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn66cae4f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn66cae4f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn66cae4f)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Capstone Project</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#2563eb"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#2563eb" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Incremental Gra…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#3b82f6"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#3b82f6" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Operating Graph…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#60a5fa"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#60a5fa" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Pr…</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#1e40af"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e40af" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The GraphRAG Re…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#1e3a8a"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e3a8a" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Limits of Vecto…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Application Flow</text></svg>
 
 </div>
 
 **Figure 34. Application Flow - Capstone Project** (svg). Figure: Application Flow view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-<div class="diagram-svg">
+```mermaid
+graph LR
+  D(("GraphRAG"))
+  D --- C0[Limits of Vector-Only…]
+  D --- C1[Knowledge Graph Const…]
+  D --- C2[Entity Resolution and…]
+  D --- C3[Community Detection a…]
+  D --- C4[Local versus Global S…]
+  C0 --- C1
+  C1 --- C2
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="9-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#f472b6"/><rect x="0" y="30" width="840" height="16" fill="#f472b6"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Capstone Project</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">GraphRAG</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#f472b6"/><text x="420" y="88" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of GraphRAG</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#fb7185"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Indexing Trade-…</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#e11d48"/><text x="654" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Incremental Graph Updates</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#9d174d"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating GraphRAG</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#db2777"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Provenance</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#ec4899"/><text x="186" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The GraphRAG Reference A…</text></svg>
-
-</div>
-
-**Figure 35. Knowledge Graph - Capstone Project** (svg). Figure: Knowledge Graph view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 35. Knowledge Graph - Capstone Project** (mermaid). Figure: Knowledge Graph view for GraphRAG. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -5911,64 +5890,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a GraphRAG system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Capstone Project component with retry semantics and typed interfaces — the shape we expect from production GraphRAG code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Capstone Project with a regression gate
+### Listing: Implementing a Capstone Project component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class CapstoneProjectConfig:
+    """Configuration for the Capstone Project component in a GraphRAG system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Capstone Project output against references with a simple exact-match metric.
+class CapstoneProject:
+    """A minimal, production-shaped implementation of Capstone Project."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: CapstoneProjectConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CapstoneProject failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Capstone Project goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Capstone Project”?
-   - A. It is only relevant to academic research, not production.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
-2. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Cache community summaries to amortise extraction cost.
-   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. It removes all security and governance requirements.
-   - D. Stale graphs after corpus updates.
-   - **Answer: A.** Best practice: Cache community summaries to amortise extraction cost.
-3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It guarantees deterministic output regardless of input.
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
    - B. It is only relevant to academic research, not production.
-   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - D. Cache community summaries to amortise extraction cost.
-   - **Answer: C.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
-4. *(Discussion)* How does Capstone Project interact with security and governance requirements?
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
+2. Which of the following is a recommended best practice when working with GraphRAG?
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Invest in entity resolution; graph quality dominates answer quality.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
+3. Which of the following is a common pitfall to avoid in GraphRAG?
+   - A. Unbounded extraction cost on huge corpora.
+   - B. It removes all security and governance requirements.
+   - C. Cache community summaries to amortise extraction cost.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: A.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+4. *(Discussion)* How would you test and monitor Capstone Project in production?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5980,37 +5970,37 @@ _This chapter examines certification preparation and review within GraphRAG. It 
 
 ## Introduction
 
-Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of GraphRAG. Teams that master this consistently ship more reliable GraphRAG systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of GraphRAG. Getting this right early prevents expensive rework once a GraphRAG system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own GraphRAG work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of GraphRAG. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of GraphRAG. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. This concept recurs throughout the GraphRAG lifecycle, from design to operations.
+To place this in context, recall the broader picture: GraphRAG augments retrieval-augmented generation with a knowledge graph constructed from a corpus, enabling multi-hop reasoning, community summarisation and global questions that flat vector retrieval cannot answer. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of GraphRAG fall into place. It is foundational: later capabilities in GraphRAG are built directly on top of it.
 
-Certification Preparation and Review cannot be understood in isolation from knowledge graph construction from text. Recall that knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Certification Preparation and Review cannot be understood in isolation from graph + vector hybrid retrieval. Recall that graph + vector hybrid retrieval concerns combining structural traversal with semantic similarity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Certification Preparation and Review cannot be understood in isolation from cost and indexing trade-offs. Recall that cost and indexing trade-offs concerns the build cost of graph extraction versus query-time value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Certification Preparation and Review cannot be understood in isolation from incremental graph updates. Recall that incremental graph updates concerns keeping the graph fresh as the corpus changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to certification preparation and review. The first, entity-neighbourhood expansion for local questions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid graph traversal + vector similarity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, hybrid graph traversal + vector similarity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, map-reduce community summarisation for global questions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around certification preparation and review are invisible; in a production GraphRAG system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Certification Preparation and Review separates concerns into clearly bounded components with explicit contracts. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
+A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. GraphRAG indexing extracts entities and relations from chunks, resolves duplicates, builds a graph, detects communities and pre-summarises them. At query time a router selects local search (entity neighbourhoods + linked text) or global search (map-reduce over community summaries), then synthesises a cited answer.
 
 Concretely, the principal building blocks include limits of vector-only rag, knowledge graph construction from text, entity resolution and deduplication, community detection and summarisation and local versus global search. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the GraphRAG system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="mindmap" data-pal="11-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#b45309"/><rect x="0" y="30" width="840" height="16" fill="#b45309"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Certification Preparation and Review</text><rect x="330" y="210" width="180" height="52" rx="11" fill="#0f172a"/><text x="420" y="236" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff" dominant-baseline="middle">GraphRAG</text><path d="M330,236 C250,236 250,126 248,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="104" width="156" height="44" rx="11" fill="#b45309"/><text x="170" y="126" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Hop Reasoning over…</text><path d="M330,236 C250,236 250,236 248,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="214" width="156" height="44" rx="11" fill="#9f1239"/><text x="170" y="236" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of GraphRAG</text><path d="M330,236 C250,236 250,346 248,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="324" width="156" height="44" rx="11" fill="#4338ca"/><text x="170" y="346" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Indexing Trade-…</text><path d="M510,236 C590,236 590,126 592,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="104" width="156" height="44" rx="11" fill="#0f172a"/><text x="670" y="126" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Incremental Graph Updates</text><path d="M510,236 C590,236 590,236 592,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="214" width="156" height="44" rx="11" fill="#1e40af"/><text x="670" y="236" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating GraphRAG</text><path d="M510,236 C590,236 590,346 592,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="324" width="156" height="44" rx="11" fill="#0e7490"/><text x="670" y="346" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Provenance</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="11-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bna0098b0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f1239"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bna0098b0)"/><rect x="0" y="32" width="840" height="16" fill="url(#bna0098b0)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Certification Preparation and Review</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">GraphRAG</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="420" y="88" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Entity Resolution and De…</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Community Detection and …</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="654" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Local versus Global Sear…</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Graph + Vector Hybrid Re…</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Query Routing in GraphRAG</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#b45309" filter="url(#sh)"/><text x="186" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Hop Reasoning over…</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">GraphRAG  •  Knowledge Graph</text></svg>
 
 </div>
 
@@ -6018,13 +6008,13 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with knowledge graph construction from text. Because knowledge graph construction from text concerns lLM-driven entity and relationship extraction and schema design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with graph + vector hybrid retrieval. Because graph + vector hybrid retrieval concerns combining structural traversal with semantic similarity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6032,13 +6022,13 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Microsoft GraphRAG, Neo4j, LlamaIndex, NetworkX. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with community detection and summarisation. Because community detection and summarisation concerns hierarchical clustering (e.g. Leiden) and map-reduce summaries, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with graph + vector hybrid retrieval. Because graph + vector hybrid retrieval concerns combining structural traversal with semantic similarity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6046,7 +6036,7 @@ For deeper study, the literature offers authoritative treatments such as Edge et
 
 ## Worked Example
 
-Consider a concrete scenario. A enterprise organisation needs whole-corpus thematic questions over documentation. They decide to apply certification preparation and review as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A research organisation needs literature synthesis across thousands of papers. They decide to apply certification preparation and review as part of their GraphRAG solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -6158,24 +6148,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of GraphRAG, which statement best describes “Certification Preparation and Review”?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. a structured review and certification-style preparation covering the full breadth of GraphRAG
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of GraphRAG
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. a structured review and certification-style preparation covering the full breadth of GraphRAG
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of GraphRAG
 2. Which of the following is a recommended best practice when working with GraphRAG?
    - A. It is only relevant to academic research, not production.
    - B. Unbounded extraction cost on huge corpora.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. Track provenance through edges for citation.
-   - **Answer: D.** Best practice: Track provenance through edges for citation.
+   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - D. Route global questions to community summaries, not raw chunks.
+   - **Answer: D.** Best practice: Route global questions to community summaries, not raw chunks.
 3. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Cache community summaries to amortise extraction cost.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: D.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-4. *(Discussion)* How does Certification Preparation and Review interact with security and governance requirements?
+   - A. Invest in entity resolution; graph quality dominates answer quality.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Unbounded extraction cost on huge corpora.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: C.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+4. *(Discussion)* Walk through how you would design Certification Preparation and Review for an enterprise GraphRAG workload.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of GraphRAG) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6211,19 +6201,19 @@ if __name__ == "__main__":
 
 A consolidated bank of discussion-style interview questions drawn from across the book, suitable for preparation and technical screening.
 
-1. Describe a failure mode of Limits of Vector-Only RAG and how you would mitigate it.
+1. Walk through how you would design Limits of Vector-Only RAG for an enterprise GraphRAG workload.
    - **Guidance:** A strong answer defines limits of vector-only rag (Why local similarity fails on global, multi-hop and aggregative questions.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-2. How does Knowledge Graph Construction from Text interact with security and governance requirements?
+2. Walk through how you would design Knowledge Graph Construction from Text for an enterprise GraphRAG workload.
    - **Guidance:** A strong answer defines knowledge graph construction from text (LLM-driven entity and relationship extraction and schema design.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-3. Explain Entity Resolution and Deduplication and why it matters in a production GraphRAG system.
+3. Walk through how you would design Entity Resolution and Deduplication for an enterprise GraphRAG workload.
    - **Guidance:** A strong answer defines entity resolution and deduplication (Merging coreferent entities into a clean graph.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-4. How does Community Detection and Summarisation interact with security and governance requirements?
+4. How would you test and monitor Community Detection and Summarisation in production?
    - **Guidance:** A strong answer defines community detection and summarisation (Hierarchical clustering (e.g. Leiden) and map-reduce summaries.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-5. Describe a failure mode of Local versus Global Search and how you would mitigate it.
+5. How would you test and monitor Local versus Global Search in production?
    - **Guidance:** A strong answer defines local versus global search (Entity-centric retrieval versus community-level synthesis.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-6. How does Graph + Vector Hybrid Retrieval interact with security and governance requirements?
+6. Walk through how you would design Graph + Vector Hybrid Retrieval for an enterprise GraphRAG workload.
    - **Guidance:** A strong answer defines graph + vector hybrid retrieval (Combining structural traversal with semantic similarity.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-7. Explain Query Routing in GraphRAG and why it matters in a production GraphRAG system.
+7. How would you test and monitor Query Routing in GraphRAG in production?
    - **Guidance:** A strong answer defines query routing in graphrag (Choosing local, global or hybrid strategies per question.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 8. Describe a failure mode of Multi-Hop Reasoning over Graphs and how you would mitigate it.
    - **Guidance:** A strong answer defines multi-hop reasoning over graphs (Traversing relationships to answer connected questions.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
@@ -6233,7 +6223,7 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines cost and indexing trade-offs (The build cost of graph extraction versus query-time value.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 11. How does Incremental Graph Updates interact with security and governance requirements?
    - **Guidance:** A strong answer defines incremental graph updates (Keeping the graph fresh as the corpus changes.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-12. How would you test and monitor Operating GraphRAG in production?
+12. Explain Operating GraphRAG and why it matters in a production GraphRAG system.
    - **Guidance:** A strong answer defines operating graphrag (Pipelines, storage and monitoring.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 13. How would you test and monitor Security and Provenance in production?
    - **Guidance:** A strong answer defines security and provenance (Source attribution through graph edges.) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
@@ -6247,19 +6237,19 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines case study: research at scale (a detailed case study of deploying GraphRAG in a demanding research environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 18. What trade-offs would you weigh when implementing Operating in Production?
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a GraphRAG system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-19. How would you test and monitor Evaluation and Quality Assurance in production?
+19. Explain Evaluation and Quality Assurance and why it matters in a production GraphRAG system.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 20. What trade-offs would you weigh when implementing Security, Privacy and Governance?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 21. How does Cost, Performance and Scaling interact with security and governance requirements?
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a GraphRAG system to production traffic) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-22. How would you test and monitor Integration and Interoperability in production?
+22. Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a GraphRAG system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 23. Describe a failure mode of Trends and Research Directions and how you would mitigate it.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of GraphRAG) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-24. How does Capstone Project interact with security and governance requirements?
+24. How would you test and monitor Capstone Project in production?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
-25. How does Certification Preparation and Review interact with security and governance requirements?
+25. Walk through how you would design Certification Preparation and Review for an enterprise GraphRAG workload.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of GraphRAG) then connects it to architecture, evaluation, cost, security and operations for GraphRAG, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6267,101 +6257,101 @@ A consolidated bank of discussion-style interview questions drawn from across th
 Certification-style multiple-choice questions covering best practices and common pitfalls.
 
 1. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. It makes the system slower but has no other effect.
-   - B. Stale graphs after corpus updates.
-   - C. Skipping entity resolution and fragmenting the graph.
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. It is only relevant to academic research, not production.
+   - C. Stale graphs after corpus updates.
    - D. Invest in entity resolution; graph quality dominates answer quality.
    - **Answer: D.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 2. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Skipping entity resolution and fragmenting the graph.
-   - B. It removes all security and governance requirements.
-   - C. Invest in entity resolution; graph quality dominates answer quality.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+   - A. It is only relevant to academic research, not production.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
 3. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Skipping entity resolution and fragmenting the graph.
-   - B. Stale graphs after corpus updates.
-   - C. Route global questions to community summaries, not raw chunks.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Route global questions to community summaries, not raw chunks.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: D.** Best practice: Cache community summaries to amortise extraction cost.
 4. Which of the following is a common pitfall to avoid in GraphRAG?
    - A. It applies exclusively to image data.
-   - B. Track provenance through edges for citation.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+   - B. Cache community summaries to amortise extraction cost.
+   - C. Stale graphs after corpus updates.
+   - D. Route global questions to community summaries, not raw chunks.
+   - **Answer: C.** Pitfall to avoid: Stale graphs after corpus updates.
 5. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. Skipping entity resolution and fragmenting the graph.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
-6. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It is only relevant to academic research, not production.
+   - A. Cache community summaries to amortise extraction cost.
    - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. Invest in entity resolution; graph quality dominates answer quality.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
+   - C. It applies exclusively to image data.
+   - D. Stale graphs after corpus updates.
+   - **Answer: A.** Best practice: Cache community summaries to amortise extraction cost.
+6. Which of the following is a common pitfall to avoid in GraphRAG?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: C.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
 7. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 8. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Skipping entity resolution and fragmenting the graph.
-   - B. Track provenance through edges for citation.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Invest in entity resolution; graph quality dominates answer quality.
-   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+   - A. Route global questions to community summaries, not raw chunks.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. Cache community summaries to amortise extraction cost.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
 9. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. It applies exclusively to image data.
-   - C. Unbounded extraction cost on huge corpora.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It is only relevant to academic research, not production.
+   - D. Track provenance through edges for citation.
+   - **Answer: D.** Best practice: Track provenance through edges for citation.
 10. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Invest in entity resolution; graph quality dominates answer quality.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Route global questions to community summaries, not raw chunks.
-   - D. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - **Answer: D.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
-11. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Invest in entity resolution; graph quality dominates answer quality.
-   - C. Skipping entity resolution and fragmenting the graph.
+   - A. It removes all security and governance requirements.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Stale graphs after corpus updates.
-   - **Answer: B.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: D.** Pitfall to avoid: Stale graphs after corpus updates.
+11. Which of the following is a recommended best practice when working with GraphRAG?
+   - A. Stale graphs after corpus updates.
+   - B. It removes all security and governance requirements.
+   - C. Invest in entity resolution; graph quality dominates answer quality.
+   - D. Unbounded extraction cost on huge corpora.
+   - **Answer: C.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 12. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It guarantees deterministic output regardless of input.
+   - A. Route global questions to community summaries, not raw chunks.
    - B. It makes the system slower but has no other effect.
    - C. Skipping entity resolution and fragmenting the graph.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: C.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
 13. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Stale graphs after corpus updates.
-   - B. Track provenance through edges for citation.
+   - A. It applies exclusively to image data.
+   - B. Invest in entity resolution; graph quality dominates answer quality.
    - C. Unbounded extraction cost on huge corpora.
-   - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: B.** Best practice: Track provenance through edges for citation.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 14. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It is only relevant to academic research, not production.
-   - B. Skipping entity resolution and fragmenting the graph.
+   - A. It removes all security and governance requirements.
+   - B. Unbounded extraction cost on huge corpora.
    - C. It guarantees deterministic output regardless of input.
-   - D. Track provenance through edges for citation.
-   - **Answer: B.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
-15. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Route global questions to community summaries, not raw chunks.
-   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Route global questions to community summaries, not raw chunks.
-16. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It is only relevant to academic research, not production.
-   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. Track provenance through edges for citation.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+15. Which of the following is a recommended best practice when working with GraphRAG?
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It removes all security and governance requirements.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: D.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
+16. Which of the following is a common pitfall to avoid in GraphRAG?
+   - A. Skipping entity resolution and fragmenting the graph.
+   - B. Track provenance through edges for citation.
+   - C. Route global questions to community summaries, not raw chunks.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
 17. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Applying GraphRAG where simple RAG suffices, inflating cost.
    - B. Unbounded extraction cost on huge corpora.
@@ -6399,17 +6389,17 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Skipping entity resolution and fragmenting the graph.
    - **Answer: D.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
 23. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - B. Unbounded extraction cost on huge corpora.
-   - C. Route global questions to community summaries, not raw chunks.
-   - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: C.** Best practice: Route global questions to community summaries, not raw chunks.
+   - A. Stale graphs after corpus updates.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Unbounded extraction cost on huge corpora.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: D.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 24. Which of the following is a common pitfall to avoid in GraphRAG?
    - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Stale graphs after corpus updates.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Stale graphs after corpus updates.
+   - B. Unbounded extraction cost on huge corpora.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: B.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
 25. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Invest in entity resolution; graph quality dominates answer quality.
    - B. Skipping entity resolution and fragmenting the graph.
@@ -6483,29 +6473,29 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Stale graphs after corpus updates.
    - **Answer: D.** Pitfall to avoid: Stale graphs after corpus updates.
 37. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - B. Track provenance through edges for citation.
-   - C. Unbounded extraction cost on huge corpora.
+   - A. Unbounded extraction cost on huge corpora.
+   - B. Route global questions to community summaries, not raw chunks.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Stale graphs after corpus updates.
-   - **Answer: B.** Best practice: Track provenance through edges for citation.
+   - **Answer: B.** Best practice: Route global questions to community summaries, not raw chunks.
 38. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It removes all security and governance requirements.
-   - B. Cache community summaries to amortise extraction cost.
-   - C. Track provenance through edges for citation.
-   - D. Unbounded extraction cost on huge corpora.
-   - **Answer: D.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - C. It removes all security and governance requirements.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
 39. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Route global questions to community summaries, not raw chunks.
-   - B. It removes all security and governance requirements.
+   - A. It makes the system slower but has no other effect.
+   - B. Route global questions to community summaries, not raw chunks.
    - C. It is only relevant to academic research, not production.
-   - D. Unbounded extraction cost on huge corpora.
-   - **Answer: A.** Best practice: Route global questions to community summaries, not raw chunks.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Route global questions to community summaries, not raw chunks.
 40. Which of the following is a common pitfall to avoid in GraphRAG?
    - A. It makes the system slower but has no other effect.
-   - B. Skipping entity resolution and fragmenting the graph.
+   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Track provenance through edges for citation.
-   - **Answer: B.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: B.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
 41. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Unbounded extraction cost on huge corpora.
    - B. Route global questions to community summaries, not raw chunks.
@@ -6519,17 +6509,17 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Track provenance through edges for citation.
    - **Answer: A.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
 43. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Unbounded extraction cost on huge corpora.
-   - B. It is only relevant to academic research, not production.
-   - C. Track provenance through edges for citation.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Route global questions to community summaries, not raw chunks.
    - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: C.** Best practice: Track provenance through edges for citation.
+   - **Answer: C.** Best practice: Route global questions to community summaries, not raw chunks.
 44. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Route global questions to community summaries, not raw chunks.
+   - A. Skipping entity resolution and fragmenting the graph.
    - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Unbounded extraction cost on huge corpora.
-   - **Answer: D.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
+   - C. Route global questions to community summaries, not raw chunks.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
 45. Which of the following is a recommended best practice when working with GraphRAG?
    - A. Skipping entity resolution and fragmenting the graph.
    - B. Stale graphs after corpus updates.
@@ -6543,29 +6533,29 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It applies exclusively to image data.
    - **Answer: A.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
 47. Which of the following is a recommended best practice when working with GraphRAG?
-   - A. Cache community summaries to amortise extraction cost.
-   - B. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - C. It removes all security and governance requirements.
-   - D. Stale graphs after corpus updates.
-   - **Answer: A.** Best practice: Cache community summaries to amortise extraction cost.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Invest in entity resolution; graph quality dominates answer quality.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Invest in entity resolution; graph quality dominates answer quality.
 48. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
-   - D. Cache community summaries to amortise extraction cost.
-   - **Answer: C.** Pitfall to avoid: Applying GraphRAG where simple RAG suffices, inflating cost.
+   - A. Unbounded extraction cost on huge corpora.
+   - B. It removes all security and governance requirements.
+   - C. Cache community summaries to amortise extraction cost.
+   - D. Invest in entity resolution; graph quality dominates answer quality.
+   - **Answer: A.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
 49. Which of the following is a recommended best practice when working with GraphRAG?
    - A. It is only relevant to academic research, not production.
    - B. Unbounded extraction cost on huge corpora.
-   - C. Skipping entity resolution and fragmenting the graph.
-   - D. Track provenance through edges for citation.
-   - **Answer: D.** Best practice: Track provenance through edges for citation.
+   - C. Applying GraphRAG where simple RAG suffices, inflating cost.
+   - D. Route global questions to community summaries, not raw chunks.
+   - **Answer: D.** Best practice: Route global questions to community summaries, not raw chunks.
 50. Which of the following is a common pitfall to avoid in GraphRAG?
-   - A. Cache community summaries to amortise extraction cost.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Skipping entity resolution and fragmenting the graph.
-   - **Answer: D.** Pitfall to avoid: Skipping entity resolution and fragmenting the graph.
+   - A. Invest in entity resolution; graph quality dominates answer quality.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Unbounded extraction cost on huge corpora.
+   - D. Cache community summaries to amortise extraction cost.
+   - **Answer: C.** Pitfall to avoid: Unbounded extraction cost on huge corpora.
 
 # Assessment Exercises
 
@@ -6573,58 +6563,58 @@ Assessment items to verify conceptual understanding.
 
 1. In the context of GraphRAG, which statement best describes “Limits of Vector-Only RAG”?
    - A. It is only relevant to academic research, not production.
-   - B. Why local similarity fails on global, multi-hop and aggregative questions.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Limits of Vector-Only RAG: Why local similarity fails on global, multi-hop and aggregative questions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Why local similarity fails on global, multi-hop and aggregative questions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Limits of Vector-Only RAG: Why local similarity fails on global, multi-hop and aggregative questions.
 2. In the context of GraphRAG, which statement best describes “Knowledge Graph Construction from Text”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
    - C. LLM-driven entity and relationship extraction and schema design.
-   - D. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Knowledge Graph Construction from Text: LLM-driven entity and relationship extraction and schema design.
 3. In the context of GraphRAG, which statement best describes “Entity Resolution and Deduplication”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It makes the system slower but has no other effect.
    - B. Merging coreferent entities into a clean graph.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Entity Resolution and Deduplication: Merging coreferent entities into a clean graph.
 4. In the context of GraphRAG, which statement best describes “Community Detection and Summarisation”?
-   - A. It applies exclusively to image data.
+   - A. It guarantees deterministic output regardless of input.
    - B. Hierarchical clustering (e.g. Leiden) and map-reduce summaries.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: B.** Community Detection and Summarisation: Hierarchical clustering (e.g. Leiden) and map-reduce summaries.
 5. In the context of GraphRAG, which statement best describes “Local versus Global Search”?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
+   - D. Entity-centric retrieval versus community-level synthesis.
+   - **Answer: D.** Local versus Global Search: Entity-centric retrieval versus community-level synthesis.
+6. In the context of GraphRAG, which statement best describes “Graph + Vector Hybrid Retrieval”?
+   - A. Combining structural traversal with semantic similarity.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Graph + Vector Hybrid Retrieval: Combining structural traversal with semantic similarity.
+7. In the context of GraphRAG, which statement best describes “Query Routing in GraphRAG”?
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. Choosing local, global or hybrid strategies per question.
+   - **Answer: D.** Query Routing in GraphRAG: Choosing local, global or hybrid strategies per question.
+8. In the context of GraphRAG, which statement best describes “Multi-Hop Reasoning over Graphs”?
    - A. It guarantees deterministic output regardless of input.
    - B. It is only relevant to academic research, not production.
-   - C. Entity-centric retrieval versus community-level synthesis.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Local versus Global Search: Entity-centric retrieval versus community-level synthesis.
-6. In the context of GraphRAG, which statement best describes “Graph + Vector Hybrid Retrieval”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Combining structural traversal with semantic similarity.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Graph + Vector Hybrid Retrieval: Combining structural traversal with semantic similarity.
-7. In the context of GraphRAG, which statement best describes “Query Routing in GraphRAG”?
-   - A. Choosing local, global or hybrid strategies per question.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Query Routing in GraphRAG: Choosing local, global or hybrid strategies per question.
-8. In the context of GraphRAG, which statement best describes “Multi-Hop Reasoning over Graphs”?
-   - A. Traversing relationships to answer connected questions.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Multi-Hop Reasoning over Graphs: Traversing relationships to answer connected questions.
+   - C. It removes all security and governance requirements.
+   - D. Traversing relationships to answer connected questions.
+   - **Answer: D.** Multi-Hop Reasoning over Graphs: Traversing relationships to answer connected questions.
 9. In the context of GraphRAG, which statement best describes “Evaluation of GraphRAG”?
-   - A. It makes the system slower but has no other effect.
-   - B. Comprehensiveness, diversity and groundedness metrics.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Evaluation of GraphRAG: Comprehensiveness, diversity and groundedness metrics.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Comprehensiveness, diversity and groundedness metrics.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Evaluation of GraphRAG: Comprehensiveness, diversity and groundedness metrics.
 10. In the context of GraphRAG, which statement best describes “Cost and Indexing Trade-offs”?
    - A. It applies exclusively to image data.
    - B. The build cost of graph extraction versus query-time value.
@@ -6638,22 +6628,22 @@ Assessment items to verify conceptual understanding.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Incremental Graph Updates: Keeping the graph fresh as the corpus changes.
 12. In the context of GraphRAG, which statement best describes “Operating GraphRAG”?
-   - A. Pipelines, storage and monitoring.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
+   - B. Pipelines, storage and monitoring.
    - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Operating GraphRAG: Pipelines, storage and monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Operating GraphRAG: Pipelines, storage and monitoring.
 13. In the context of GraphRAG, which statement best describes “Security and Provenance”?
    - A. It guarantees deterministic output regardless of input.
    - B. Source attribution through graph edges.
-   - C. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Security and Provenance: Source attribution through graph edges.
 14. In the context of GraphRAG, which statement best describes “The GraphRAG Reference Architecture”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It is only relevant to academic research, not production.
    - B. Indexing and query pipelines end to end.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** The GraphRAG Reference Architecture: Indexing and query pipelines end to end.
 15. In the context of GraphRAG, which statement best describes “Putting It Together: A Reference Implementation”?
    - A. It makes the system slower but has no other effect.
@@ -6662,16 +6652,16 @@ Assessment items to verify conceptual understanding.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a GraphRAG system into a cohesive, working whole
 16. In the context of GraphRAG, which statement best describes “Hands-On Lab: Building an End-to-End GraphRAG System”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It makes the system slower but has no other effect.
    - B. a guided, build-along laboratory that constructs a functioning GraphRAG system from first principles
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Hands-On Lab: Building an End-to-End GraphRAG System: a guided, build-along laboratory that constructs a functioning GraphRAG system from first principles
 17. In the context of GraphRAG, which statement best describes “Case Study: Research at Scale”?
    - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
    - C. a detailed case study of deploying GraphRAG in a demanding research environment, including the decisions, trade-offs and outcomes
-   - D. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Case Study: Research at Scale: a detailed case study of deploying GraphRAG in a demanding research environment, including the decisions, trade-offs and outcomes
 18. In the context of GraphRAG, which statement best describes “Operating in Production”?
    - A. the operational discipline required to run a GraphRAG system reliably, including monitoring, incident response and continuous improvement
@@ -6680,17 +6670,17 @@ Assessment items to verify conceptual understanding.
    - D. It makes the system slower but has no other effect.
    - **Answer: A.** Operating in Production: the operational discipline required to run a GraphRAG system reliably, including monitoring, incident response and continuous improvement
 19. In the context of GraphRAG, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
-   - B. a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
+   - A. a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a GraphRAG system before and after release
 20. In the context of GraphRAG, which statement best describes “Security, Privacy and Governance”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
+   - A. It guarantees deterministic output regardless of input.
+   - B. the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a GraphRAG system trustworthy and compliant
 21. In the context of GraphRAG, which statement best describes “Cost, Performance and Scaling”?
    - A. It removes all security and governance requirements.
    - B. It guarantees deterministic output regardless of input.
@@ -6698,29 +6688,29 @@ Assessment items to verify conceptual understanding.
    - D. techniques for controlling cost and latency while scaling a GraphRAG system to production traffic
    - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a GraphRAG system to production traffic
 22. In the context of GraphRAG, which statement best describes “Integration and Interoperability”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
    - D. patterns for integrating a GraphRAG system with surrounding enterprise systems and data
    - **Answer: D.** Integration and Interoperability: patterns for integrating a GraphRAG system with surrounding enterprise systems and data
 23. In the context of GraphRAG, which statement best describes “Trends and Research Directions”?
-   - A. It applies exclusively to image data.
+   - A. It makes the system slower but has no other effect.
    - B. emerging trends, open problems and research directions shaping the future of GraphRAG
    - C. It is only relevant to academic research, not production.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of GraphRAG
 24. In the context of GraphRAG, which statement best describes “Capstone Project”?
-   - A. It is only relevant to academic research, not production.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
+25. In the context of GraphRAG, which statement best describes “Certification Preparation and Review”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. a structured review and certification-style preparation covering the full breadth of GraphRAG
    - C. It guarantees deterministic output regardless of input.
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade GraphRAG deliverable
-25. In the context of GraphRAG, which statement best describes “Certification Preparation and Review”?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. a structured review and certification-style preparation covering the full breadth of GraphRAG
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of GraphRAG
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of GraphRAG
 
 # References
 

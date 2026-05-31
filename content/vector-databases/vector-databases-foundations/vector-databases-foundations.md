@@ -82,29 +82,29 @@ First published 2026. First Edition. Document version 1.0.0.
 |---|---------|-----------:|---------:|-----:|----------:|
 | 1 | The Case for Purpose-Built Vector Stores | 10 | 1 | 1 | 4 |
 | 2 | ANN Indexing Algorithms | 11 | 2 | 1 | 4 |
-| 3 | Distance Metrics and Quantisation | 11 | 2 | 1 | 4 |
+| 3 | Distance Metrics and Quantisation | 10 | 1 | 1 | 4 |
 | 4 | Metadata Filtering and Hybrid Queries | 10 | 1 | 1 | 4 |
 | 5 | Sharding, Replication and Scaling | 10 | 1 | 1 | 4 |
 | 6 | Freshness, Upserts and Deletes | 11 | 2 | 1 | 4 |
 | 7 | Hybrid and Multi-Vector Retrieval | 10 | 1 | 1 | 4 |
 | 8 | Benchmarking Vector Databases | 10 | 1 | 1 | 4 |
-| 9 | Security and Multi-Tenancy | 10 | 1 | 1 | 4 |
+| 9 | Security and Multi-Tenancy | 11 | 2 | 1 | 4 |
 | 10 | Cost and Capacity Planning | 11 | 2 | 1 | 4 |
 | 11 | Operating in Production | 11 | 2 | 1 | 4 |
-| 12 | Choosing a Vector Database | 11 | 2 | 1 | 4 |
+| 12 | Choosing a Vector Database | 10 | 1 | 1 | 4 |
 | 13 | Integration with the RAG Pipeline | 10 | 1 | 1 | 4 |
 | 14 | Reference Architecture and Patterns | 10 | 1 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 10 | 1 | 1 | 4 |
-| 16 | Hands-On Lab: Building an End-to-End Vector Databases System | 11 | 2 | 1 | 4 |
+| 16 | Hands-On Lab: Building an End-to-End Vector Databases System | 11 | 1 | 1 | 4 |
 | 17 | Case Study: Knowledge at Scale | 10 | 1 | 1 | 4 |
-| 18 | Operating in Production | 11 | 2 | 1 | 4 |
+| 18 | Operating in Production | 10 | 1 | 1 | 4 |
 | 19 | Evaluation and Quality Assurance | 10 | 1 | 1 | 4 |
-| 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
+| 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 11 | 2 | 1 | 4 |
-| 23 | Trends and Research Directions | 9 | 1 | 0 | 4 |
+| 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
 | 24 | Capstone Project | 10 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
+| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
 
 ---
 
@@ -114,36 +114,36 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 2. Deployment - ANN Indexing Algorithms
 - Figure 3. Infrastructure - ANN Indexing Algorithms
 - Figure 4. Infrastructure - Distance Metrics and Quantisation
-- Figure 5. Sequence - Distance Metrics and Quantisation
-- Figure 6. Sequence - Metadata Filtering and Hybrid Queries
-- Figure 7. DevOps Pipeline - Sharding, Replication and Scaling
-- Figure 8. Security Architecture - Freshness, Upserts and Deletes
-- Figure 9. Class - Freshness, Upserts and Deletes
-- Figure 10. Class - Hybrid and Multi-Vector Retrieval
-- Figure 11. Architecture - Benchmarking Vector Databases
-- Figure 12. Data Lineage - Security and Multi-Tenancy
+- Figure 5. Sequence - Metadata Filtering and Hybrid Queries
+- Figure 6. DevOps Pipeline - Sharding, Replication and Scaling
+- Figure 7. Security Architecture - Freshness, Upserts and Deletes
+- Figure 8. Class - Freshness, Upserts and Deletes
+- Figure 9. Class - Hybrid and Multi-Vector Retrieval
+- Figure 10. Architecture - Benchmarking Vector Databases
+- Figure 11. Data Lineage - Security and Multi-Tenancy
+- Figure 12. Capability Map - Security and Multi-Tenancy
 - Figure 13. Capability Map - Cost and Capacity Planning
 - Figure 14. Data Flow - Cost and Capacity Planning
 - Figure 15. Data Flow - Operating in Production
 - Figure 16. Business Process - Operating in Production
 - Figure 17. Business Process - Choosing a Vector Database
-- Figure 18. Agent Architecture - Choosing a Vector Database
-- Figure 19. Agent Architecture - Integration with the RAG Pipeline
-- Figure 20. CI/CD Pipeline - Reference Architecture and Patterns
-- Figure 21. Application Flow - Putting It Together: A Reference Implementation
-- Figure 22. Network - Hands-On Lab: Building an End-to-End Vector Databases System
-- Figure 23. Knowledge Graph - Hands-On Lab: Building an End-to-End Vector Databases System
-- Figure 24. Knowledge Graph - Case Study: Knowledge at Scale
-- Figure 25. Component - Operating in Production
-- Figure 26. Operating Model - Operating in Production
-- Figure 27. Operating Model - Evaluation and Quality Assurance
-- Figure 28. Cloud Architecture - Security, Privacy and Governance
-- Figure 29. RAG Architecture - Cost, Performance and Scaling
-- Figure 30. Deployment - Integration and Interoperability
-- Figure 31. Infrastructure - Integration and Interoperability
-- Figure 32. Infrastructure - Trends and Research Directions
-- Figure 33. Sequence - Capstone Project
-- Figure 34. DevOps Pipeline - Certification Preparation and Review
+- Figure 18. Agent Architecture - Integration with the RAG Pipeline
+- Figure 19. CI/CD Pipeline - Reference Architecture and Patterns
+- Figure 20. Application Flow - Putting It Together: A Reference Implementation
+- Figure 21. Network - Hands-On Lab: Building an End-to-End Vector Databases System
+- Figure 22. Knowledge Graph - Case Study: Knowledge at Scale
+- Figure 23. Component - Operating in Production
+- Figure 24. Operating Model - Evaluation and Quality Assurance
+- Figure 25. Cloud Architecture - Security, Privacy and Governance
+- Figure 26. RAG Architecture - Security, Privacy and Governance
+- Figure 27. RAG Architecture - Cost, Performance and Scaling
+- Figure 28. Deployment - Integration and Interoperability
+- Figure 29. Infrastructure - Integration and Interoperability
+- Figure 30. Infrastructure - Trends and Research Directions
+- Figure 31. Sequence - Trends and Research Directions
+- Figure 32. Sequence - Capstone Project
+- Figure 33. DevOps Pipeline - Certification Preparation and Review
+- Figure 34. Security Architecture - Certification Preparation and Review
 
 ---
 
@@ -421,23 +421,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Vector Databases, which statement best describes “The Case for Purpose-Built Vector Stores”?
    - A. Why ANN, filtering and freshness demand specialised systems.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
    - **Answer: A.** The Case for Purpose-Built Vector Stores: Why ANN, filtering and freshness demand specialised systems.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Isolate tenants by namespace and enforce access control.
+   - A. Assuming exact search; ANN trades recall for speed.
+   - B. Plan re-indexing strategy before you need it.
+   - C. No plan for embedding-model upgrades and re-indexing.
    - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
+   - **Answer: B.** Best practice: Plan re-indexing strategy before you need it.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. It guarantees deterministic output regardless of input.
    - B. Plan re-indexing strategy before you need it.
-   - C. Post-filtering that silently drops recall on selective queries.
+   - C. Underestimating memory for in-RAM HNSW at scale.
    - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: C.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-4. *(Discussion)* Walk through how you would design The Case for Purpose-Built Vector Stores for an enterprise Vector Databases workload.
+   - **Answer: C.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+4. *(Discussion)* Describe a failure mode of The Case for Purpose-Built Vector Stores and how you would mitigate it.
    - **Model answer:** A strong answer defines the case for purpose-built vector stores (Why ANN, filtering and freshness demand specialised systems.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -506,34 +506,28 @@ _Source diagram (drawio); render with the appropriate tool._
 
 **Figure 2. Deployment - ANN Indexing Algorithms** (drawio). Figure: Deployment view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Infrastructure">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - ANN Indexing Algorithms" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Infrastructure - ANN Indexing Algorithms
+package "Vector Databases Platform" {
+  component "The Case for Purpose-Bu…" as C0
+  component "ANN Indexing Algorithms" as C1
+  component "Distance Metrics and Qu…" as C2
+  component "Metadata Filtering and …" as C3
+  component "Sharding, Replication a…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 3. Infrastructure - ANN Indexing Algorithms** (drawio). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 3. Infrastructure - ANN Indexing Algorithms** (plantuml). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -557,7 +551,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with freshness, upserts and deletes. Because freshness, upserts and deletes concerns handling streaming updates without full re-indexing, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with integration with the rag pipeline. Because integration with the rag pipeline concerns where the vector store sits and how it is queried, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -637,75 +631,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven ANN Indexing Algorithms component with retry semantics and typed interfaces — the shape we expect from production Vector Databases code rather than a notebook prototype.
+Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a ANN Indexing Algorithms component
+### Listing: Evaluating ANN Indexing Algorithms with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class AnnIndexingAlgorithmsConfig:
-    """Configuration for the ANN Indexing Algorithms component in a Vector Databases system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class AnnIndexingAlgorithms:
-    """A minimal, production-shaped implementation of ANN Indexing Algorithms."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score ANN Indexing Algorithms output against references with a simple exact-match metric.
 
-    def __init__(self, config: AnnIndexingAlgorithmsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"AnnIndexingAlgorithms failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for ANN Indexing Algorithms goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “ANN Indexing Algorithms”?
-   - A. HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** ANN Indexing Algorithms: HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
+   - A. It guarantees deterministic output regardless of input.
+   - B. HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** ANN Indexing Algorithms: HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. Isolate tenants by namespace and enforce access control.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* Describe a failure mode of ANN Indexing Algorithms and how you would mitigate it.
+   - B. It makes the system slower but has no other effect.
+   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. No plan for embedding-model upgrades and re-indexing.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+4. *(Discussion)* How would you test and monitor ANN Indexing Algorithms in production?
    - **Model answer:** A strong answer defines ann indexing algorithms (HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -717,78 +700,78 @@ _This chapter examines distance metrics and quantisation within Vector Databases
 
 ## Introduction
 
-At its core, Distance Metrics and Quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. It is foundational: later capabilities in Vector Databases are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Distance Metrics and Quantisation refers to cosine/dot/L2 and scalar/product quantisation trade-offs. Getting this right early prevents expensive rework once a Vector Databases system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Distance Metrics and Quantisation addresses cosine/dot/L2 and scalar/product quantisation trade-offs. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+In practical terms, Distance Metrics and Quantisation is best understood as cosine/dot/L2 and scalar/product quantisation trade-offs. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, distance metrics and quantisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. It is foundational: later capabilities in Vector Databases are built directly on top of it.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, distance metrics and quantisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
 
-Distance Metrics and Quantisation cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Distance Metrics and Quantisation cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Distance Metrics and Quantisation cannot be understood in isolation from ann indexing algorithms. Recall that ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Distance Metrics and Quantisation cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to distance metrics and quantisation. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to distance metrics and quantisation. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around distance metrics and quantisation are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around distance metrics and quantisation are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Distance Metrics and Quantisation separates concerns into clearly bounded components with explicit contracts. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+A robust architecture for Distance Metrics and Quantisation is layered so each part can evolve independently without destabilising the whole. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title Infrastructure - Distance Metrics and Quantisation
-package "Vector Databases Platform" {
-  component "The Case for Purpose-Bu…" as C0
-  component "ANN Indexing Algorithms" as C1
-  component "Distance Metrics and Qu…" as C2
-  component "Metadata Filtering and …" as C3
-  component "Sharding, Replication a…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Infrastructure">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Infrastructure - Distance Metrics and Quantisation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 4. Infrastructure - Distance Metrics and Quantisation** (plantuml). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Sequence - Distance Metrics and Quantisation
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 5. Sequence - Distance Metrics and Quantisation** (plantuml). Figure: Sequence view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 4. Infrastructure - Distance Metrics and Quantisation** (drawio). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
+
+Having established the essentials, we now go deeper into distance metrics and quantisation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+
+In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with choosing a vector database. Because choosing a vector database concerns managed versus self-hosted and integration considerations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Malkov & Yashunin — HNSW (2016) and Johnson et al. — Billion-scale similarity search with GPUs / FAISS (2017). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
 
 Having established the essentials, we now go deeper into distance metrics and quantisation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -802,23 +785,9 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Malkov & Yashunin — HNSW (2016) and Johnson et al. — Billion-scale similarity search with GPUs / FAISS (2017). These primary sources reward careful reading and ground the practical guidance above in established results.
 
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into distance metrics and quantisation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
-
-In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Malkov & Yashunin — HNSW (2016) and Johnson et al. — Billion-scale similarity search with GPUs / FAISS (2017). These primary sources reward careful reading and ground the practical guidance above in established results.
-
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply distance metrics and quantisation as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A media organisation needs visual similarity search across large catalogues. They decide to apply distance metrics and quantisation as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -941,24 +910,24 @@ class DistanceMetricsAnd:
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Distance Metrics and Quantisation”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Cosine/dot/L2 and scalar/product quantisation trade-offs.
-   - **Answer: D.** Distance Metrics and Quantisation: Cosine/dot/L2 and scalar/product quantisation trade-offs.
+   - A. Cosine/dot/L2 and scalar/product quantisation trade-offs.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Distance Metrics and Quantisation: Cosine/dot/L2 and scalar/product quantisation trade-offs.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - B. Post-filtering that silently drops recall on selective queries.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* What trade-offs would you weigh when implementing Distance Metrics and Quantisation?
+   - B. It makes the system slower but has no other effect.
+   - C. Isolate tenants by namespace and enforce access control.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Plan re-indexing strategy before you need it.
+   - B. Isolate tenants by namespace and enforce access control.
+   - C. It applies exclusively to image data.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* Walk through how you would design Distance Metrics and Quantisation for an enterprise Vector Databases workload.
    - **Model answer:** A strong answer defines distance metrics and quantisation (Cosine/dot/L2 and scalar/product quantisation trade-offs.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -970,23 +939,23 @@ _This chapter examines metadata filtering and hybrid queries within Vector Datab
 
 ## Introduction
 
-We define Metadata Filtering and Hybrid Queries as pre- versus post-filtering and combining structured predicates with vectors. This concept recurs throughout the Vector Databases lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Metadata Filtering and Hybrid Queries refers to pre- versus post-filtering and combining structured predicates with vectors. Teams that master this consistently ship more reliable Vector Databases systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Metadata Filtering and Hybrid Queries concerns pre- versus post-filtering and combining structured predicates with vectors. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Metadata Filtering and Hybrid Queries can be characterised as pre- versus post-filtering and combining structured predicates with vectors. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, metadata filtering and hybrid queries is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, metadata filtering and hybrid queries is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
 
-Metadata Filtering and Hybrid Queries cannot be understood in isolation from hybrid and multi-vector retrieval. Recall that hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Metadata Filtering and Hybrid Queries cannot be understood in isolation from freshness, upserts and deletes. Recall that freshness, upserts and deletes concerns handling streaming updates without full re-indexing. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Metadata Filtering and Hybrid Queries cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Metadata Filtering and Hybrid Queries cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to metadata filtering and hybrid queries. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to metadata filtering and hybrid queries. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around metadata filtering and hybrid queries are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around metadata filtering and hybrid queries are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -996,36 +965,37 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant U as User
-  participant G as Gateway
-  participant P as Processor
-  participant D as Data Store
-  U->>G: Submit request
-  G->>G: Validate & authorise
-  G->>P: Dispatch task
-  P->>D: Retrieve context
-  D-->>P: Return records
-  P->>P: Process & reason
-  P-->>G: Result + metadata
-  G-->>U: Response (with provenance)
+```plantuml
+@startuml
+title Sequence - Metadata Filtering and Hybrid Queries
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
 ```
 
-**Figure 6. Sequence - Metadata Filtering and Hybrid Queries** (mermaid). Figure: Sequence view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 5. Sequence - Metadata Filtering and Hybrid Queries** (plantuml). Figure: Sequence view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into metadata filtering and hybrid queries. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into metadata filtering and hybrid queries. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with hybrid and multi-vector retrieval. Because hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with freshness, upserts and deletes. Because freshness, upserts and deletes concerns handling streaming updates without full re-indexing, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1033,13 +1003,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into metadata filtering and hybrid queries. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into metadata filtering and hybrid queries. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with integration with the rag pipeline. Because integration with the rag pipeline concerns where the vector store sits and how it is queried, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1047,7 +1017,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply metadata filtering and hybrid queries as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply metadata filtering and hybrid queries as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1119,40 +1089,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Metadata Filtering and Hybrid Queries component with retry semantics and typed interfaces — the shape we expect from production Vector Databases code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Metadata Filtering and Hybrid Queries with a regression gate
+### Listing: Implementing a Metadata Filtering and Hybrid Queries component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class MetadataFilteringAndConfig:
+    """Configuration for the Metadata Filtering and Hybrid Queries component in a Vector Databases system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Metadata Filtering and Hybrid Queries output against references with a simple exact-match metric.
+class MetadataFilteringAnd:
+    """A minimal, production-shaped implementation of Metadata Filtering and Hybrid Queries."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: MetadataFilteringAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"MetadataFilteringAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Metadata Filtering and Hybrid Queries goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
@@ -1160,23 +1141,23 @@ if __name__ == "__main__":
 
 1. In the context of Vector Databases, which statement best describes “Metadata Filtering and Hybrid Queries”?
    - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
    - D. Pre- versus post-filtering and combining structured predicates with vectors.
    - **Answer: D.** Metadata Filtering and Hybrid Queries: Pre- versus post-filtering and combining structured predicates with vectors.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. No plan for embedding-model upgrades and re-indexing.
-   - **Answer: D.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-4. *(Discussion)* What trade-offs would you weigh when implementing Metadata Filtering and Hybrid Queries?
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: D.** Best practice: Isolate tenants by namespace and enforce access control.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. Plan re-indexing strategy before you need it.
+   - C. It is only relevant to academic research, not production.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* Walk through how you would design Metadata Filtering and Hybrid Queries for an enterprise Vector Databases workload.
    - **Model answer:** A strong answer defines metadata filtering and hybrid queries (Pre- versus post-filtering and combining structured predicates with vectors.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1188,23 +1169,23 @@ _This chapter examines sharding, replication and scaling within Vector Databases
 
 ## Introduction
 
-Formally, Sharding, Replication and Scaling addresses horizontal scaling, consistency models and high availability. It is foundational: later capabilities in Vector Databases are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+At its core, Sharding, Replication and Scaling concerns horizontal scaling, consistency models and high availability. This concept recurs throughout the Vector Databases lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Sharding, Replication and Scaling is best understood as horizontal scaling, consistency models and high availability. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Sharding, Replication and Scaling refers to horizontal scaling, consistency models and high availability. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, sharding, replication and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, sharding, replication and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. It is foundational: later capabilities in Vector Databases are built directly on top of it.
 
-Sharding, Replication and Scaling cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Sharding, Replication and Scaling cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Sharding, Replication and Scaling cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Sharding, Replication and Scaling cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to sharding, replication and scaling. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to sharding, replication and scaling. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around sharding, replication and scaling are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around sharding, replication and scaling are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1214,46 +1195,25 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="DevOps Pipeline">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="DevOps Pipeline - Sharding, Replication and Scaling" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="7-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn26333be" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7e22ce"/><stop offset="1" stop-color="#9333ea"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn26333be)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn26333be)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Sharding, Replication and Scaling</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="420" y="108" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Integration with the R…</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="544" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reference Architecture…</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#a21caf" filter="url(#sh)"/><text x="496" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Case for Purpose-B…</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#c026d3" filter="url(#sh)"/><text x="344" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">ANN Indexing Algorithms</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#d946ef" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Distance Metrics and Q…</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Vector Databases  •  DevOps Pipeline</text></svg>
 
-**Figure 7. DevOps Pipeline - Sharding, Replication and Scaling** (drawio). Figure: DevOps Pipeline view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 6. DevOps Pipeline - Sharding, Replication and Scaling** (svg). Figure: DevOps Pipeline view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into sharding, replication and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1261,13 +1221,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into sharding, replication and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into sharding, replication and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with hybrid and multi-vector retrieval. Because hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with distance metrics and quantisation. Because distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1275,7 +1235,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A media organisation needs visual similarity search across large catalogues. They decide to apply sharding, replication and scaling as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A media organisation needs visual similarity search across large catalogues. They decide to apply sharding, replication and scaling as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1398,24 +1358,24 @@ class ReplicationAnd:
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Sharding, Replication and Scaling”?
-   - A. Horizontal scaling, consistency models and high availability.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Sharding, Replication and Scaling: Horizontal scaling, consistency models and high availability.
-2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Benchmark recall and p99 latency on your real data, not synthetic.
-   - B. It is only relevant to academic research, not production.
-   - C. Underestimating memory for in-RAM HNSW at scale.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
+   - A. It makes the system slower but has no other effect.
+   - B. Horizontal scaling, consistency models and high availability.
    - C. It guarantees deterministic output regardless of input.
-   - D. No plan for embedding-model upgrades and re-indexing.
-   - **Answer: D.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-4. *(Discussion)* What trade-offs would you weigh when implementing Sharding, Replication and Scaling?
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Sharding, Replication and Scaling: Horizontal scaling, consistency models and high availability.
+2. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. No plan for embedding-model upgrades and re-indexing.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Isolate tenants by namespace and enforce access control.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Underestimating memory for in-RAM HNSW at scale.
+   - B. It is only relevant to academic research, not production.
+   - C. Isolate tenants by namespace and enforce access control.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+4. *(Discussion)* How would you test and monitor Sharding, Replication and Scaling in production?
    - **Model answer:** A strong answer defines sharding, replication and scaling (Horizontal scaling, consistency models and high availability.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1427,81 +1387,92 @@ _This chapter examines freshness, upserts and deletes within Vector Databases. I
 
 ## Introduction
 
-Freshness, Upserts and Deletes refers to handling streaming updates without full re-indexing. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+At its core, Freshness, Upserts and Deletes concerns handling streaming updates without full re-indexing. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Freshness, Upserts and Deletes can be characterised as handling streaming updates without full re-indexing. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Freshness, Upserts and Deletes as handling streaming updates without full re-indexing. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, freshness, upserts and deletes is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
 
-Freshness, Upserts and Deletes cannot be understood in isolation from ann indexing algorithms. Recall that ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Freshness, Upserts and Deletes cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Freshness, Upserts and Deletes cannot be understood in isolation from hybrid and multi-vector retrieval. Recall that hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Freshness, Upserts and Deletes cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to freshness, upserts and deletes. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to freshness, upserts and deletes. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around freshness, upserts and deletes are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around freshness, upserts and deletes are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Freshness, Upserts and Deletes is layered so each part can evolve independently without destabilising the whole. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+From an architectural standpoint, Freshness, Upserts and Deletes sits at the intersection of data, models and operations. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Security Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Security Architecture - Freshness, Upserts and Deletes" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Vector Databases Platform"]
+    GW[Gateway / Orchestrator]
+    S0[The Case for Purpose-Buil…]
+    S1[ANN Indexing Algorithms]
+    S2[Distance Metrics and Quan…]
+    S3[Metadata Filtering and Hy…]
+    S4[Sharding, Replication and…]
+    S5[Freshness, Upserts and De…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+**Figure 7. Security Architecture - Freshness, Upserts and Deletes** (mermaid). Figure: Security Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 8. Security Architecture - Freshness, Upserts and Deletes** (drawio). Figure: Security Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Class - Freshness, Upserts and Deletes
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+classDiagram
+  class VDService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  VDService --> Repository
+  VDService --> Policy
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 9. Class - Freshness, Upserts and Deletes** (plantuml). Figure: Class view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 8. Class - Freshness, Upserts and Deletes** (mermaid). Figure: Class view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -1511,7 +1482,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the case for purpose-built vector stores. Because the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1521,7 +1492,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 Having established the essentials, we now go deeper into freshness, upserts and deletes. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1533,7 +1504,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A media organisation needs visual similarity search across large catalogues. They decide to apply freshness, upserts and deletes as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A media organisation needs visual similarity search across large catalogues. They decide to apply freshness, upserts and deletes as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1605,64 +1576,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Freshness, Upserts and Deletes logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Freshness, Upserts and Deletes with a regression gate
+### Listing: A composable processing pipeline for Freshness, Upserts and Deletes
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Freshness, Upserts and Deletes output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Freshness, Upserts and Deletes."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Freshness, Upserts and Deletes”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Handling streaming updates without full re-indexing.
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Freshness, Upserts and Deletes: Handling streaming updates without full re-indexing.
-2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. Isolate tenants by namespace and enforce access control.
+   - A. Handling streaming updates without full re-indexing.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
+   - **Answer: A.** Freshness, Upserts and Deletes: Handling streaming updates without full re-indexing.
+2. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Assuming exact search; ANN trades recall for speed.
+   - B. Isolate tenants by namespace and enforce access control.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* Describe a failure mode of Freshness, Upserts and Deletes and how you would mitigate it.
+   - A. Plan re-indexing strategy before you need it.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Assuming exact search; ANN trades recall for speed.
+   - **Answer: D.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+4. *(Discussion)* Walk through how you would design Freshness, Upserts and Deletes for an enterprise Vector Databases workload.
    - **Model answer:** A strong answer defines freshness, upserts and deletes (Handling streaming updates without full re-indexing.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1674,23 +1662,23 @@ _This chapter examines hybrid and multi-vector retrieval within Vector Databases
 
 ## Introduction
 
-At its core, Hybrid and Multi-Vector Retrieval concerns late-interaction (ColBERT) and sparse+dense fusion. It is foundational: later capabilities in Vector Databases are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Hybrid and Multi-Vector Retrieval is best understood as late-interaction (ColBERT) and sparse+dense fusion. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Hybrid and Multi-Vector Retrieval as late-interaction (ColBERT) and sparse+dense fusion. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Hybrid and Multi-Vector Retrieval refers to late-interaction (ColBERT) and sparse+dense fusion. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, hybrid and multi-vector retrieval is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, hybrid and multi-vector retrieval is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. This concept recurs throughout the Vector Databases lifecycle, from design to operations.
 
-Hybrid and Multi-Vector Retrieval cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hybrid and Multi-Vector Retrieval cannot be understood in isolation from ann indexing algorithms. Recall that ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Hybrid and Multi-Vector Retrieval cannot be understood in isolation from distance metrics and quantisation. Recall that distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Hybrid and Multi-Vector Retrieval cannot be understood in isolation from security and multi-tenancy. Recall that security and multi-tenancy concerns namespace isolation, access control and encryption. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to hybrid and multi-vector retrieval. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hybrid and multi-vector retrieval. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hybrid and multi-vector retrieval are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hybrid and multi-vector retrieval are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1700,7 +1688,7 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```plantuml
 @startuml
@@ -1719,17 +1707,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 10. Class - Hybrid and Multi-Vector Retrieval** (plantuml). Figure: Class view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. Class - Hybrid and Multi-Vector Retrieval** (plantuml). Figure: Class view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hybrid and multi-vector retrieval. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hybrid and multi-vector retrieval. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1743,7 +1731,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with choosing a vector database. Because choosing a vector database concerns managed versus self-hosted and integration considerations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with integration with the rag pipeline. Because integration with the rag pipeline concerns where the vector store sits and how it is queried, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1751,7 +1739,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply hybrid and multi-vector retrieval as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply hybrid and multi-vector retrieval as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1823,81 +1811,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Hybrid and Multi-Vector Retrieval logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Hybrid and Multi-Vector Retrieval component with retry semantics and typed interfaces — the shape we expect from production Vector Databases code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Hybrid and Multi-Vector Retrieval
+### Listing: Implementing a Hybrid and Multi-Vector Retrieval component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class HybridAndConfig:
+    """Configuration for the Hybrid and Multi-Vector Retrieval component in a Vector Databases system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Hybrid and Multi-Vector Retrieval."""
+class HybridAnd:
+    """A minimal, production-shaped implementation of Hybrid and Multi-Vector Retrieval."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: HybridAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"HybridAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Hybrid and Multi-Vector Retrieval goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Hybrid and Multi-Vector Retrieval”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Late-interaction (ColBERT) and sparse+dense fusion.
-   - **Answer: D.** Hybrid and Multi-Vector Retrieval: Late-interaction (ColBERT) and sparse+dense fusion.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Late-interaction (ColBERT) and sparse+dense fusion.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Hybrid and Multi-Vector Retrieval: Late-interaction (ColBERT) and sparse+dense fusion.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. Plan re-indexing strategy before you need it.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: C.** Best practice: Plan re-indexing strategy before you need it.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Assuming exact search; ANN trades recall for speed.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. Isolate tenants by namespace and enforce access control.
+   - C. It removes all security and governance requirements.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-4. *(Discussion)* What trade-offs would you weigh when implementing Hybrid and Multi-Vector Retrieval?
+   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It makes the system slower but has no other effect.
+   - B. Benchmark recall and p99 latency on your real data, not synthetic.
+   - C. Assuming exact search; ANN trades recall for speed.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+4. *(Discussion)* Describe a failure mode of Hybrid and Multi-Vector Retrieval and how you would mitigate it.
    - **Model answer:** A strong answer defines hybrid and multi-vector retrieval (Late-interaction (ColBERT) and sparse+dense fusion.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1909,51 +1891,82 @@ _This chapter examines benchmarking vector databases within Vector Databases. It
 
 ## Introduction
 
-Benchmarking Vector Databases can be characterised as recall, QPS, p99 latency and cost per million vectors. It is foundational: later capabilities in Vector Databases are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Benchmarking Vector Databases addresses recall, QPS, p99 latency and cost per million vectors. Getting this right early prevents expensive rework once a Vector Databases system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Benchmarking Vector Databases is best understood as recall, QPS, p99 latency and cost per million vectors. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Benchmarking Vector Databases can be characterised as recall, QPS, p99 latency and cost per million vectors. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, benchmarking vector databases is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, benchmarking vector databases is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
 
-Benchmarking Vector Databases cannot be understood in isolation from freshness, upserts and deletes. Recall that freshness, upserts and deletes concerns handling streaming updates without full re-indexing. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Benchmarking Vector Databases cannot be understood in isolation from ann indexing algorithms. Recall that ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Benchmarking Vector Databases cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Benchmarking Vector Databases cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to benchmarking vector databases. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to benchmarking vector databases. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around benchmarking vector databases are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around benchmarking vector databases are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Benchmarking Vector Databases sits at the intersection of data, models and operations. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+The reference architecture for Benchmarking Vector Databases separates concerns into clearly bounded components with explicit contracts. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-<div class="diagram-svg">
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Vector Databases Platform"]
+    GW[Gateway / Orchestrator]
+    S0[The Case for Purpose-Buil…]
+    S1[ANN Indexing Algorithms]
+    S2[Distance Metrics and Quan…]
+    S3[Metadata Filtering and Hy…]
+    S4[Sharding, Replication and…]
+    S5[Freshness, Upserts and De…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="6-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#1e293b"/><rect x="0" y="30" width="840" height="16" fill="#1e293b"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Benchmarking Vector Databases</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#1e293b"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#1e293b"/><text x="128" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Benchmarking …</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#94a3b8"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#94a3b8"/><text x="274" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Security and …</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#334155"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#334155"/><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Cost and Capa…</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#475569"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#475569"/><text x="566" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Operating in …</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#64748b"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#64748b"/><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Choosing a Ve…</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/></svg>
-
-</div>
-
-**Figure 11. Architecture - Benchmarking Vector Databases** (svg). Figure: Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. Architecture - Benchmarking Vector Databases** (mermaid). Figure: Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into benchmarking vector databases. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into benchmarking vector databases. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with freshness, upserts and deletes. Because freshness, upserts and deletes concerns handling streaming updates without full re-indexing, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1961,13 +1974,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into benchmarking vector databases. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into benchmarking vector databases. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with security and multi-tenancy. Because security and multi-tenancy concerns namespace isolation, access control and encryption, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1975,7 +1988,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply benchmarking vector databases as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A media organisation needs visual similarity search across large catalogues. They decide to apply benchmarking vector databases as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2047,64 +2060,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Benchmarking Vector Databases logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Benchmarking Vector Databases with a regression gate
+### Listing: A composable processing pipeline for Benchmarking Vector Databases
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Benchmarking Vector Databases output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Benchmarking Vector Databases."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Benchmarking Vector Databases”?
-   - A. It removes all security and governance requirements.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. Recall, QPS, p99 latency and cost per million vectors.
-   - C. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Benchmarking Vector Databases: Recall, QPS, p99 latency and cost per million vectors.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. No plan for embedding-model upgrades and re-indexing.
-   - B. It makes the system slower but has no other effect.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+   - A. Benchmark recall and p99 latency on your real data, not synthetic.
+   - B. It removes all security and governance requirements.
+   - C. Underestimating memory for in-RAM HNSW at scale.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* Walk through how you would design Benchmarking Vector Databases for an enterprise Vector Databases workload.
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. It makes the system slower but has no other effect.
+   - C. Plan re-indexing strategy before you need it.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* How does Benchmarking Vector Databases interact with security and governance requirements?
    - **Model answer:** A strong answer defines benchmarking vector databases (Recall, QPS, p99 latency and cost per million vectors.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2116,23 +2146,23 @@ _This chapter examines security and multi-tenancy within Vector Databases. It co
 
 ## Introduction
 
-Formally, Security and Multi-Tenancy addresses namespace isolation, access control and encryption. Getting this right early prevents expensive rework once a Vector Databases system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Security and Multi-Tenancy refers to namespace isolation, access control and encryption. Getting this right early prevents expensive rework once a Vector Databases system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Security and Multi-Tenancy is best understood as namespace isolation, access control and encryption. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Security and Multi-Tenancy can be characterised as namespace isolation, access control and encryption. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, security and multi-tenancy is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, security and multi-tenancy is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. This concept recurs throughout the Vector Databases lifecycle, from design to operations.
 
-Security and Multi-Tenancy cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security and Multi-Tenancy cannot be understood in isolation from hybrid and multi-vector retrieval. Recall that hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Security and Multi-Tenancy cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Security and Multi-Tenancy cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to security and multi-tenancy. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security and multi-tenancy. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security and multi-tenancy are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security and multi-tenancy are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2142,15 +2172,34 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="tree" data-pal="10-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#14532d"/><rect x="0" y="30" width="840" height="16" fill="#14532d"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Lineage - Security and Multi-Tenancy</text><rect x="330" y="70" width="180" height="48" rx="11" fill="#0f172a"/><text x="420" y="94" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vector Databases</text><path d="M420,118 C420,170 108,160 108,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="30" y="210" width="156" height="46" rx="11" fill="#14532d"/><text x="108" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Case for Purpose-Bui…</text><line x1="108" y1="256" x2="108" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="38" y="296" width="140" height="40" rx="11" fill="#f8fafc"/><text x="108" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Metadata Filter…</text><path d="M420,118 C420,170 316,160 316,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="238" y="210" width="156" height="46" rx="11" fill="#166534"/><text x="316" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">ANN Indexing Algorithms</text><line x1="316" y1="256" x2="316" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="246" y="296" width="140" height="40" rx="11" fill="#f8fafc"/><text x="316" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">ANN Indexing Al…</text><path d="M420,118 C420,170 524,160 524,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="446" y="210" width="156" height="46" rx="11" fill="#15803d"/><text x="524" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Distance Metrics and Qua…</text><line x1="524" y1="256" x2="524" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="454" y="296" width="140" height="40" rx="11" fill="#f8fafc"/><text x="524" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Sharding, Repli…</text><path d="M420,118 C420,170 732,160 732,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="654" y="210" width="156" height="46" rx="11" fill="#16a34a"/><text x="732" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Metadata Filtering and H…</text><line x1="732" y1="256" x2="732" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="662" y="296" width="140" height="40" rx="11" fill="#f8fafc"/><text x="732" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Benchmarking Ve…</text></svg>
+**Figure 11. Data Lineage - Security and Multi-Tenancy** (mermaid). Figure: Data Lineage view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-</div>
+```mermaid
+graph LR
+  D(("Vector Databases"))
+  D --- C0[The Case for Purpose-…]
+  D --- C1[ANN Indexing Algorith…]
+  D --- C2[Distance Metrics and …]
+  D --- C3[Metadata Filtering an…]
+  D --- C4[Sharding, Replication…]
+  C0 --- C1
+  C1 --- C2
+```
 
-**Figure 12. Data Lineage - Security and Multi-Tenancy** (svg). Figure: Data Lineage view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. Capability Map - Security and Multi-Tenancy** (mermaid). Figure: Capability Map view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2160,7 +2209,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hybrid and multi-vector retrieval. Because hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2168,13 +2217,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security and multi-tenancy. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security and multi-tenancy. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with distance metrics and quantisation. Because distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating in production. Because operating in production concerns backups, monitoring, re-indexing and disaster recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2182,7 +2231,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply security and multi-tenancy as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply security and multi-tenancy as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2254,75 +2303,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Security and Multi-Tenancy component with retry semantics and typed interfaces — the shape we expect from production Vector Databases code rather than a notebook prototype.
+Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Security and Multi-Tenancy component
+### Listing: Evaluating Security and Multi-Tenancy with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class SecurityAndConfig:
-    """Configuration for the Security and Multi-Tenancy component in a Vector Databases system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class SecurityAnd:
-    """A minimal, production-shaped implementation of Security and Multi-Tenancy."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Security and Multi-Tenancy output against references with a simple exact-match metric.
 
-    def __init__(self, config: SecurityAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"SecurityAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Security and Multi-Tenancy goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Security and Multi-Tenancy”?
-   - A. It is only relevant to academic research, not production.
+   - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. Namespace isolation, access control and encryption.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Security and Multi-Tenancy: Namespace isolation, access control and encryption.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Namespace isolation, access control and encryption.
+   - **Answer: D.** Security and Multi-Tenancy: Namespace isolation, access control and encryption.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. No plan for embedding-model upgrades and re-indexing.
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
    - C. Plan re-indexing strategy before you need it.
-   - D. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Best practice: Plan re-indexing strategy before you need it.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Post-filtering that silently drops recall on selective queries.
-   - C. It applies exclusively to image data.
-   - D. Isolate tenants by namespace and enforce access control.
-   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-4. *(Discussion)* Describe a failure mode of Security and Multi-Tenancy and how you would mitigate it.
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+4. *(Discussion)* How does Security and Multi-Tenancy interact with security and governance requirements?
    - **Model answer:** A strong answer defines security and multi-tenancy (Namespace isolation, access control and encryption.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2334,64 +2372,70 @@ _This chapter examines cost and capacity planning within Vector Databases. It co
 
 ## Introduction
 
-Cost and Capacity Planning can be characterised as memory versus disk indexes and right-sizing infrastructure. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Cost and Capacity Planning can be characterised as memory versus disk indexes and right-sizing infrastructure. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Cost and Capacity Planning is best understood as memory versus disk indexes and right-sizing infrastructure. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Cost and Capacity Planning is best understood as memory versus disk indexes and right-sizing infrastructure. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, cost and capacity planning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
 
-Cost and Capacity Planning cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost and Capacity Planning cannot be understood in isolation from ann indexing algorithms. Recall that ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Cost and Capacity Planning cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost and Capacity Planning cannot be understood in isolation from integration with the rag pipeline. Recall that integration with the rag pipeline concerns where the vector store sits and how it is queried. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 Several established patterns apply directly to cost and capacity planning. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around cost and capacity planning are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost and capacity planning are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Cost and Capacity Planning sits at the intersection of data, models and operations. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+A robust architecture for Cost and Capacity Planning is layered so each part can evolve independently without destabilising the whole. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="1-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#075985"/><rect x="0" y="30" width="840" height="16" fill="#075985"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Cost and Capacity Planning</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#075985"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Reference Archi…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#0e7490"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">The Case for Pu…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#0891b2"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">ANN Indexing Al…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0ea5e9"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Distance Metric…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="10-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn48c907c" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#166534"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn48c907c)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn48c907c)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Cost and Capacity Planning</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#166534"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Metadata Fi…</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#15803d"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Sharding, R…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#16a34a"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Freshness, …</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#22c55e"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Hybrid and …</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#4ade80"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Benchmarkin…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#14532d"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Security an…</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#166534"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Cost and Ca…</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Vector Databases  •  Capability Map</text></svg>
 
 </div>
 
 **Figure 13. Capability Map - Cost and Capacity Planning** (svg). Figure: Capability Map view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+```plantuml
+@startuml
+title Data Flow - Cost and Capacity Planning
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 14. Data Flow - Cost and Capacity Planning** (mermaid). Figure: Data Flow view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 14. Data Flow - Cost and Capacity Planning** (plantuml). Figure: Data Flow view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost and capacity planning. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost and capacity planning. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with choosing a vector database. Because choosing a vector database concerns managed versus self-hosted and integration considerations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2399,13 +2443,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost and capacity planning. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost and capacity planning. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating in production. Because operating in production concerns backups, monitoring, re-indexing and disaster recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with metadata filtering and hybrid queries. Because metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2413,7 +2457,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply cost and capacity planning as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply cost and capacity planning as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2485,81 +2529,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Cost and Capacity Planning logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Cost and Capacity Planning
+### Listing: Evaluating Cost and Capacity Planning with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Cost and Capacity Planning."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Cost and Capacity Planning output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Cost and Capacity Planning”?
-   - A. It removes all security and governance requirements.
-   - B. Memory versus disk indexes and right-sizing infrastructure.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Cost and Capacity Planning: Memory versus disk indexes and right-sizing infrastructure.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. Memory versus disk indexes and right-sizing infrastructure.
+   - **Answer: D.** Cost and Capacity Planning: Memory versus disk indexes and right-sizing infrastructure.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Underestimating memory for in-RAM HNSW at scale.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: D.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It makes the system slower but has no other effect.
-   - B. No plan for embedding-model upgrades and re-indexing.
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. Post-filtering that silently drops recall on selective queries.
    - C. Plan re-indexing strategy before you need it.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-4. *(Discussion)* Explain Cost and Capacity Planning and why it matters in a production Vector Databases system.
+   - D. Benchmark recall and p99 latency on your real data, not synthetic.
+   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* How does Cost and Capacity Planning interact with security and governance requirements?
    - **Model answer:** A strong answer defines cost and capacity planning (Memory versus disk indexes and right-sizing infrastructure.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2571,23 +2598,23 @@ _This chapter examines operating in production within Vector Databases. It cover
 
 ## Introduction
 
-Operating in Production can be characterised as backups, monitoring, re-indexing and disaster recovery. Teams that master this consistently ship more reliable Vector Databases systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Operating in Production is best understood as backups, monitoring, re-indexing and disaster recovery. It is foundational: later capabilities in Vector Databases are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Operating in Production concerns backups, monitoring, re-indexing and disaster recovery. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Operating in Production can be characterised as backups, monitoring, re-indexing and disaster recovery. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. This concept recurs throughout the Vector Databases lifecycle, from design to operations.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
 
-Operating in Production cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Operating in Production cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Operating in Production cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to operating in production. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating in production are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2597,75 +2624,49 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Data Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Data Flow - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Data Flow - Operating in Production
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 15. Data Flow - Operating in Production** (drawio). Figure: Data Flow view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 15. Data Flow - Operating in Production** (plantuml). Figure: Data Flow view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Business Process">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Business Process - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 16. Business Process - Operating in Production** (drawio). Figure: Business Process view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 16. Business Process - Operating in Production** (mermaid). Figure: Business Process view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the case for purpose-built vector stores. Because the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2673,13 +2674,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with security and multi-tenancy. Because security and multi-tenancy concerns namespace isolation, access control and encryption, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with distance metrics and quantisation. Because distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2687,7 +2688,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply operating in production as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A media organisation needs visual similarity search across large catalogues. They decide to apply operating in production as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2759,63 +2760,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Operating in Production with a regression gate
+### Listing: A composable processing pipeline for Operating in Production
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Operating in Production output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Operating in Production."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Operating in Production”?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Backups, monitoring, re-indexing and disaster recovery.
-   - **Answer: D.** Operating in Production: Backups, monitoring, re-indexing and disaster recovery.
-2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. It removes all security and governance requirements.
-   - B. Isolate tenants by namespace and enforce access control.
-   - C. Assuming exact search; ANN trades recall for speed.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Backups, monitoring, re-indexing and disaster recovery.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Operating in Production: Backups, monitoring, re-indexing and disaster recovery.
+2. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. No plan for embedding-model upgrades and re-indexing.
+   - B. It is only relevant to academic research, not production.
+   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - D. Assuming exact search; ANN trades recall for speed.
+   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It applies exclusively to image data.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Plan re-indexing strategy before you need it.
+   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
 4. *(Discussion)* Explain Operating in Production and why it matters in a production Vector Databases system.
    - **Model answer:** A strong answer defines operating in production (Backups, monitoring, re-indexing and disaster recovery.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
@@ -2828,70 +2846,56 @@ _This chapter examines choosing a vector database within Vector Databases. It co
 
 ## Introduction
 
-At its core, Choosing a Vector Database concerns managed versus self-hosted and integration considerations. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Formally, Choosing a Vector Database addresses managed versus self-hosted and integration considerations. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Choosing a Vector Database addresses managed versus self-hosted and integration considerations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Choosing a Vector Database concerns managed versus self-hosted and integration considerations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, choosing a vector database is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, choosing a vector database is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
 
-Choosing a Vector Database cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Choosing a Vector Database cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Choosing a Vector Database cannot be understood in isolation from distance metrics and quantisation. Recall that distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Choosing a Vector Database cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to choosing a vector database. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to choosing a vector database. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around choosing a vector database are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around choosing a vector database are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Choosing a Vector Database sits at the intersection of data, models and operations. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+The reference architecture for Choosing a Vector Database separates concerns into clearly bounded components with explicit contracts. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="funnel" data-pal="9-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#e11d48"/><rect x="0" y="30" width="840" height="16" fill="#e11d48"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Choosing a Vector Database</text><polygon points="190,70 650,70 624,122 216,122" fill="#e11d48"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Sharding, Replication and Scaling</text><polygon points="227,134 613,134 587,186 253,186" fill="#9d174d"/><text x="420" y="160" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Freshness, Upserts and Deletes</text><polygon points="264,198 576,198 550,250 290,250" fill="#db2777"/><text x="420" y="224" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Hybrid and Multi-Vector Retrieval</text><polygon points="300,262 540,262 514,314 326,314" fill="#ec4899"/><text x="420" y="288" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Benchmarking Vector Databases</text><polygon points="337,326 503,326 477,378 363,378" fill="#f472b6"/><text x="420" y="352" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Security and Multi-Tenancy</text></svg>
-
-</div>
-
-**Figure 17. Business Process - Choosing a Vector Database** (svg). Figure: Business Process view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Agent Architecture - Choosing a Vector Database
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 18. Agent Architecture - Choosing a Vector Database** (plantuml). Figure: Agent Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 17. Business Process - Choosing a Vector Database** (mermaid). Figure: Business Process view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into choosing a vector database. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into choosing a vector database. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with sharding, replication and scaling. Because sharding, replication and scaling concerns horizontal scaling, consistency models and high availability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2899,13 +2903,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into choosing a vector database. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into choosing a vector database. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with metadata filtering and hybrid queries. Because metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2913,7 +2917,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply choosing a vector database as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply choosing a vector database as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2985,63 +2989,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Choosing a Vector Database logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Choosing a Vector Database with a regression gate
+### Listing: A composable processing pipeline for Choosing a Vector Database
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Choosing a Vector Database output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Choosing a Vector Database."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Choosing a Vector Database”?
-   - A. It makes the system slower but has no other effect.
-   - B. Managed versus self-hosted and integration considerations.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Choosing a Vector Database: Managed versus self-hosted and integration considerations.
+   - A. Managed versus self-hosted and integration considerations.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Choosing a Vector Database: Managed versus self-hosted and integration considerations.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+   - A. Plan re-indexing strategy before you need it.
+   - B. No plan for embedding-model upgrades and re-indexing.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Plan re-indexing strategy before you need it.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. Post-filtering that silently drops recall on selective queries.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. Benchmark recall and p99 latency on your real data, not synthetic.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
 4. *(Discussion)* How does Choosing a Vector Database interact with security and governance requirements?
    - **Model answer:** A strong answer defines choosing a vector database (Managed versus self-hosted and integration considerations.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
@@ -3054,23 +3075,23 @@ _This chapter examines integration with the rag pipeline within Vector Databases
 
 ## Introduction
 
-Integration with the RAG Pipeline refers to where the vector store sits and how it is queried. This concept recurs throughout the Vector Databases lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+At its core, Integration with the RAG Pipeline concerns where the vector store sits and how it is queried. This concept recurs throughout the Vector Databases lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Integration with the RAG Pipeline is best understood as where the vector store sits and how it is queried. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Integration with the RAG Pipeline addresses where the vector store sits and how it is queried. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, integration with the rag pipeline is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, integration with the rag pipeline is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
 
-Integration with the RAG Pipeline cannot be understood in isolation from freshness, upserts and deletes. Recall that freshness, upserts and deletes concerns handling streaming updates without full re-indexing. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration with the RAG Pipeline cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Integration with the RAG Pipeline cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Integration with the RAG Pipeline cannot be understood in isolation from operating in production. Recall that operating in production concerns backups, monitoring, re-indexing and disaster recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to integration with the rag pipeline. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration with the rag pipeline. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration with the rag pipeline are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration with the rag pipeline are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3080,46 +3101,26 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Vector Databases Platform"]
-    GW[Gateway / Orchestrator]
-    S0[The Case for Purpose-Buil…]
-    S1[ANN Indexing Algorithms]
-    S2[Distance Metrics and Quan…]
-    S3[Metadata Filtering and Hy…]
-    S4[Sharding, Replication and…]
-    S5[Freshness, Upserts and De…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```plantuml
+@startuml
+title Agent Architecture - Integration with the RAG Pipeline
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 19. Agent Architecture - Integration with the RAG Pipeline** (mermaid). Figure: Agent Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 18. Agent Architecture - Integration with the RAG Pipeline** (plantuml). Figure: Agent Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -3129,7 +3130,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with freshness, upserts and deletes. Because freshness, upserts and deletes concerns handling streaming updates without full re-indexing, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3137,13 +3138,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration with the rag pipeline. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration with the rag pipeline. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with hybrid and multi-vector retrieval. Because hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with security and multi-tenancy. Because security and multi-tenancy concerns namespace isolation, access control and encryption, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3151,7 +3152,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A recommendations organisation needs real-time candidate generation from user vectors. They decide to apply integration with the rag pipeline as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A recommendations organisation needs real-time candidate generation from user vectors. They decide to apply integration with the rag pipeline as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3223,64 +3224,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Integration with the RAG Pipeline logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Integration with the RAG Pipeline with a regression gate
+### Listing: A composable processing pipeline for Integration with the RAG Pipeline
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Integration with the RAG Pipeline output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Integration with the RAG Pipeline."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Integration with the RAG Pipeline”?
-   - A. Where the vector store sits and how it is queried.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Integration with the RAG Pipeline: Where the vector store sits and how it is queried.
-2. Which of the following is a recommended best practice when working with Vector Databases?
    - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. Assuming exact search; ANN trades recall for speed.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+   - C. Where the vector store sits and how it is queried.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Integration with the RAG Pipeline: Where the vector store sits and how it is queried.
+2. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. No plan for embedding-model upgrades and re-indexing.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: D.** Best practice: Isolate tenants by namespace and enforce access control.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
    - B. Assuming exact search; ANN trades recall for speed.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-4. *(Discussion)* How would you test and monitor Integration with the RAG Pipeline in production?
+4. *(Discussion)* How does Integration with the RAG Pipeline interact with security and governance requirements?
    - **Model answer:** A strong answer defines integration with the rag pipeline (Where the vector store sits and how it is queried.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3292,23 +3310,23 @@ _This chapter examines reference architecture and patterns within Vector Databas
 
 ## Introduction
 
-At its core, Reference Architecture and Patterns concerns a production-grade deployment blueprint. Teams that master this consistently ship more reliable Vector Databases systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Reference Architecture and Patterns refers to a production-grade deployment blueprint. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Reference Architecture and Patterns refers to a production-grade deployment blueprint. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Reference Architecture and Patterns as a production-grade deployment blueprint. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, reference architecture and patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, reference architecture and patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. It is foundational: later capabilities in Vector Databases are built directly on top of it.
 
-Reference Architecture and Patterns cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Reference Architecture and Patterns cannot be understood in isolation from integration with the rag pipeline. Recall that integration with the rag pipeline concerns where the vector store sits and how it is queried. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Reference Architecture and Patterns cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Reference Architecture and Patterns cannot be understood in isolation from security and multi-tenancy. Recall that security and multi-tenancy concerns namespace isolation, access control and encryption. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to reference architecture and patterns. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to reference architecture and patterns. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around reference architecture and patterns are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around reference architecture and patterns are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3318,37 +3336,25 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
-```
+<div class="diagram-svg">
 
-**Figure 20. CI/CD Pipeline - Reference Architecture and Patterns** (mermaid). Figure: CI/CD Pipeline view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="7-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn5c27af3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b21a8"/><stop offset="1" stop-color="#7e22ce"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn5c27af3)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn5c27af3)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Reference Architecture and Patterns</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#6b21a8" filter="url(#sh)"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">ANN Indexing Algor…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Distance Metrics a…</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Metadata Filtering…</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#a21caf" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Sharding, Replicat…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#c026d3" filter="url(#sh)"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Freshness, Upserts…</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Vector Databases  •  CI/CD Pipeline</text></svg>
+
+</div>
+
+**Figure 19. CI/CD Pipeline - Reference Architecture and Patterns** (svg). Figure: CI/CD Pipeline view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into reference architecture and patterns. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into reference architecture and patterns. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with metadata filtering and hybrid queries. Because metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with integration with the rag pipeline. Because integration with the rag pipeline concerns where the vector store sits and how it is queried, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3358,11 +3364,11 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 Having established the essentials, we now go deeper into reference architecture and patterns. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with security and multi-tenancy. Because security and multi-tenancy concerns namespace isolation, access control and encryption, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3370,7 +3376,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply reference architecture and patterns as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A recommendations organisation needs real-time candidate generation from user vectors. They decide to apply reference architecture and patterns as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3442,81 +3448,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Reference Architecture and Patterns logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Reference Architecture and Patterns component with retry semantics and typed interfaces — the shape we expect from production Vector Databases code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Reference Architecture and Patterns
+### Listing: Implementing a Reference Architecture and Patterns component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class ReferenceArchitectureAndConfig:
+    """Configuration for the Reference Architecture and Patterns component in a Vector Databases system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Reference Architecture and Patterns."""
+class ReferenceArchitectureAnd:
+    """A minimal, production-shaped implementation of Reference Architecture and Patterns."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: ReferenceArchitectureAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"ReferenceArchitectureAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Reference Architecture and Patterns goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Reference Architecture and Patterns”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. A production-grade deployment blueprint.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Reference Architecture and Patterns: A production-grade deployment blueprint.
+   - A. A production-grade deployment blueprint.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Reference Architecture and Patterns: A production-grade deployment blueprint.
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Post-filtering that silently drops recall on selective queries.
-   - B. It applies exclusively to image data.
-   - C. Plan re-indexing strategy before you need it.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Plan re-indexing strategy before you need it.
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. Underestimating memory for in-RAM HNSW at scale.
+   - **Answer: A.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-4. *(Discussion)* Describe a failure mode of Reference Architecture and Patterns and how you would mitigate it.
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. It removes all security and governance requirements.
+   - C. Plan re-indexing strategy before you need it.
+   - D. Assuming exact search; ANN trades recall for speed.
+   - **Answer: D.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+4. *(Discussion)* How does Reference Architecture and Patterns interact with security and governance requirements?
    - **Model answer:** A strong answer defines reference architecture and patterns (A production-grade deployment blueprint.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3528,62 +3528,56 @@ _This chapter examines putting it together: a reference implementation within Ve
 
 ## Introduction
 
-Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Putting It Together: A Reference Implementation refers to an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole. It is foundational: later capabilities in Vector Databases are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Putting It Together: A Reference Implementation as an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Putting It Together: A Reference Implementation refers to an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. This concept recurs throughout the Vector Databases lifecycle, from design to operations.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Putting It Together: A Reference Implementation cannot be understood in isolation from distance metrics and quantisation. Recall that distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Putting It Together: A Reference Implementation cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Putting It Together: A Reference Implementation separates concerns into clearly bounded components with explicit contracts. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+A robust architecture for Putting It Together: A Reference Implementation is layered so each part can evolve independently without destabilising the whole. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title Application Flow - Putting It Together: A Reference Implementation
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 21. Application Flow - Putting It Together: A Reference Implementation** (plantuml). Figure: Application Flow view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 20. Application Flow - Putting It Together: A Reference Implementation** (mermaid). Figure: Application Flow view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with metadata filtering and hybrid queries. Because metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with distance metrics and quantisation. Because distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3593,11 +3587,11 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with security and multi-tenancy. Because security and multi-tenancy concerns namespace isolation, access control and encryption, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating in production. Because operating in production concerns backups, monitoring, re-indexing and disaster recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3605,7 +3599,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply putting it together: a reference implementation as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A media organisation needs visual similarity search across large catalogues. They decide to apply putting it together: a reference implementation as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3717,24 +3711,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It applies exclusively to image data.
-   - B. an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
+   - D. an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Plan re-indexing strategy before you need it.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Plan re-indexing strategy before you need it.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
    - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
    - C. It guarantees deterministic output regardless of input.
-   - D. Assuming exact search; ANN trades recall for speed.
-   - **Answer: D.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-4. *(Discussion)* Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* How does Putting It Together: A Reference Implementation interact with security and governance requirements?
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3746,23 +3740,23 @@ _This chapter examines hands-on lab: building an end-to-end vector databases sys
 
 ## Introduction
 
-We define Hands-On Lab: Building an End-to-End Vector Databases System as a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles. This concept recurs throughout the Vector Databases lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Hands-On Lab: Building an End-to-End Vector Databases System can be characterised as a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Hands-On Lab: Building an End-to-End Vector Databases System refers to a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Hands-On Lab: Building an End-to-End Vector Databases System as a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, hands-on lab: building an end-to-end vector databases system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, hands-on lab: building an end-to-end vector databases system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
 
-Hands-On Lab: Building an End-to-End Vector Databases System cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End Vector Databases System cannot be understood in isolation from ann indexing algorithms. Recall that ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Hands-On Lab: Building an End-to-End Vector Databases System cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Hands-On Lab: Building an End-to-End Vector Databases System cannot be understood in isolation from hybrid and multi-vector retrieval. Recall that hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end vector databases system. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end vector databases system. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around hands-on lab: building an end-to-end vector databases system are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hands-on lab: building an end-to-end vector databases system are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3772,7 +3766,7 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```plantuml
 @startuml
@@ -3795,25 +3789,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 22. Network - Hands-On Lab: Building an End-to-End Vector Databases System** (plantuml). Figure: Network view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="10-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#166534"/><rect x="0" y="30" width="840" height="16" fill="#166534"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Hands-On Lab: Building an End-to-End Vector D…</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Vector Databa…</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#166534"/><text x="420" y="88" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Freshness, Upserts and D…</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#15803d"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hybrid and Multi-Vector …</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#16a34a"/><text x="654" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Benchmarking Vector Data…</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#22c55e"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Multi-Tenan…</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#4ade80"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Capacity Planni…</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#14532d"/><text x="186" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating in Production</text></svg>
-
-</div>
-
-**Figure 23. Knowledge Graph - Hands-On Lab: Building an End-to-End Vector Databases System** (svg). Figure: Knowledge Graph view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 21. Network - Hands-On Lab: Building an End-to-End Vector Databases System** (plantuml). Figure: Network view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end vector databases system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end vector databases system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3821,13 +3807,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end vector databases system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end vector databases system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3959,23 +3945,23 @@ class Building:
 
 1. In the context of Vector Databases, which statement best describes “Hands-On Lab: Building an End-to-End Vector Databases System”?
    - A. a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Hands-On Lab: Building an End-to-End Vector Databases System: a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Post-filtering that silently drops recall on selective queries.
+   - A. Underestimating memory for in-RAM HNSW at scale.
    - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. No plan for embedding-model upgrades and re-indexing.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. Post-filtering that silently drops recall on selective queries.
+   - D. No plan for embedding-model upgrades and re-indexing.
    - **Answer: B.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. Isolate tenants by namespace and enforce access control.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* How does Hands-On Lab: Building an End-to-End Vector Databases System interact with security and governance requirements?
+   - A. It applies exclusively to image data.
+   - B. No plan for embedding-model upgrades and re-indexing.
+   - C. Plan re-indexing strategy before you need it.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+4. *(Discussion)* Describe a failure mode of Hands-On Lab: Building an End-to-End Vector Databases System and how you would mitigate it.
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end vector databases system (a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3987,23 +3973,23 @@ _This chapter examines case study: knowledge at scale within Vector Databases. I
 
 ## Introduction
 
-Case Study: Knowledge at Scale can be characterised as a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes. Getting this right early prevents expensive rework once a Vector Databases system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Case Study: Knowledge at Scale can be characterised as a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes. This concept recurs throughout the Vector Databases lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Case Study: Knowledge at Scale concerns a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Case Study: Knowledge at Scale addresses a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, case study: knowledge at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, case study: knowledge at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. This concept recurs throughout the Vector Databases lifecycle, from design to operations.
 
-Case Study: Knowledge at Scale cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Case Study: Knowledge at Scale cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Case Study: Knowledge at Scale cannot be understood in isolation from distance metrics and quantisation. Recall that distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Case Study: Knowledge at Scale cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to case study: knowledge at scale. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: knowledge at scale. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around case study: knowledge at scale are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: knowledge at scale are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4013,31 +3999,25 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-graph LR
-  D(("Vector Databases"))
-  D --- C0[The Case for Purpose-…]
-  D --- C1[ANN Indexing Algorith…]
-  D --- C2[Distance Metrics and …]
-  D --- C3[Metadata Filtering an…]
-  D --- C4[Sharding, Replication…]
-  C0 --- C1
-  C1 --- C2
-```
+<div class="diagram-svg">
 
-**Figure 24. Knowledge Graph - Case Study: Knowledge at Scale** (mermaid). Figure: Knowledge Graph view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="3-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc4982fa" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#d97706"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc4982fa)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc4982fa)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Case Study: Knowledge at Scale</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#b45309"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Integration…</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#d97706"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Reference A…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#f59e0b"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">The Case fo…</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#ea580c"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">ANN Indexin…</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#f97316"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Distance Me…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#fb923c"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Metadata Fi…</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#b45309"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Sharding, R…</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Vector Databases  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 22. Knowledge Graph - Case Study: Knowledge at Scale** (svg). Figure: Knowledge Graph view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: knowledge at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: knowledge at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the case for purpose-built vector stores. Because the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4051,7 +4031,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with distance metrics and quantisation. Because distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4059,7 +4039,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A recommendations organisation needs real-time candidate generation from user vectors. They decide to apply case study: knowledge at scale as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply case study: knowledge at scale as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4131,40 +4111,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Case Study: Knowledge at Scale logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Case Study: Knowledge at Scale with a regression gate
+### Listing: A composable processing pipeline for Case Study: Knowledge at Scale
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Case Study: Knowledge at Scale output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Case Study: Knowledge at Scale."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -4173,22 +4170,22 @@ if __name__ == "__main__":
 1. In the context of Vector Databases, which statement best describes “Case Study: Knowledge at Scale”?
    - A. a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes
    - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Case Study: Knowledge at Scale: a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - A. It is only relevant to academic research, not production.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Benchmark recall and p99 latency on your real data, not synthetic.
+   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. It applies exclusively to image data.
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* Walk through how you would design Case Study: Knowledge at Scale for an enterprise Vector Databases workload.
+   - D. Plan re-indexing strategy before you need it.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* Describe a failure mode of Case Study: Knowledge at Scale and how you would mitigate it.
    - **Model answer:** A strong answer defines case study: knowledge at scale (a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4200,23 +4197,23 @@ _This chapter examines operating in production within Vector Databases. It cover
 
 ## Introduction
 
-At its core, Operating in Production concerns the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement. Teams that master this consistently ship more reliable Vector Databases systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Operating in Production concerns the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Operating in Production as the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Operating in Production as the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
 
-Operating in Production cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Operating in Production cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from distance metrics and quantisation. Recall that distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to operating in production. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating in production are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating in production are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4226,7 +4223,7 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```plantuml
 @startuml
@@ -4249,46 +4246,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 25. Component - Operating in Production** (plantuml). Figure: Component view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 26. Operating Model - Operating in Production** (drawio). Figure: Operating Model view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 23. Component - Operating in Production** (plantuml). Figure: Component view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with sharding, replication and scaling. Because sharding, replication and scaling concerns horizontal scaling, consistency models and high availability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4296,13 +4264,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the case for purpose-built vector stores. Because the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4310,7 +4278,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A recommendations organisation needs real-time candidate generation from user vectors. They decide to apply operating in production as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A security organisation needs anomaly and similarity detection on event embeddings. They decide to apply operating in production as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4382,64 +4350,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Operating in Production with a regression gate
+### Listing: A composable processing pipeline for Operating in Production
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Operating in Production output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Operating in Production."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Operating in Production”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Operating in Production: the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: D.** Operating in Production: the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Isolate tenants by namespace and enforce access control.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. Isolate tenants by namespace and enforce access control.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Isolate tenants by namespace and enforce access control.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. It applies exclusively to image data.
-   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-4. *(Discussion)* How does Operating in Production interact with security and governance requirements?
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* Walk through how you would design Operating in Production for an enterprise Vector Databases workload.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4451,23 +4436,23 @@ _This chapter examines evaluation and quality assurance within Vector Databases.
 
 ## Introduction
 
-Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+We define Evaluation and Quality Assurance as a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. It is foundational: later capabilities in Vector Databases are built directly on top of it.
 
-Evaluation and Quality Assurance cannot be understood in isolation from integration with the rag pipeline. Recall that integration with the rag pipeline concerns where the vector store sits and how it is queried. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Evaluation and Quality Assurance cannot be understood in isolation from hybrid and multi-vector retrieval. Recall that hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Evaluation and Quality Assurance cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Quality Assurance cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4477,36 +4462,15 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Evaluation and Quality Assurance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Vector Databases" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The Case for Purpose-Bu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="ANN Indexing Algorithms" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Distance Metrics and Qu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Metadata Filtering and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Sharding, Replication a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="9-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn2e2e0ec" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn2e2e0ec)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn2e2e0ec)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Evaluation and Quality Assurance</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#f472b6" filter="url(#sh)"/><text x="228" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security and Multi-Tena…</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="388" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Capacity Plann…</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="548" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating in Production</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="708" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Choosing a Vector Datab…</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="228" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reference Architecture …</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="388" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Case for Purpose-Bu…</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="548" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">ANN Indexing Algorithms</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#db2777" filter="url(#sh)"/><text x="708" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Distance Metrics and Qu…</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="228" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">ANN Indexing Algorithms</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="388" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Distance Metrics and Qu…</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#db2777" filter="url(#sh)"/><text x="548" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Metadata Filtering and …</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#ec4899" filter="url(#sh)"/><text x="708" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Sharding, Replication a…</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Vector Databases  •  Operating Model</text></svg>
 
-**Figure 27. Operating Model - Evaluation and Quality Assurance** (drawio). Figure: Operating Model view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 24. Operating Model - Evaluation and Quality Assurance** (svg). Figure: Operating Model view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -4516,7 +4480,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with integration with the rag pipeline. Because integration with the rag pipeline concerns where the vector store sits and how it is queried, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hybrid and multi-vector retrieval. Because hybrid and multi-vector retrieval concerns late-interaction (ColBERT) and sparse+dense fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4524,13 +4488,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with ann indexing algorithms. Because ann indexing algorithms concerns hNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4538,7 +4502,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A media organisation needs visual similarity search across large catalogues. They decide to apply evaluation and quality assurance as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply evaluation and quality assurance as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4610,80 +4574,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Evaluation and Quality Assurance
+### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
+   - D. a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
+2. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Benchmark recall and p99 latency on your real data, not synthetic.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It applies exclusively to image data.
+   - D. No plan for embedding-model upgrades and re-indexing.
+   - **Answer: A.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It guarantees deterministic output regardless of input.
+   - B. No plan for embedding-model upgrades and re-indexing.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
-2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Post-filtering that silently drops recall on selective queries.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. Assuming exact search; ANN trades recall for speed.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
 4. *(Discussion)* Describe a failure mode of Evaluation and Quality Assurance and how you would mitigate it.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
@@ -4696,37 +4643,76 @@ _This chapter examines security, privacy and governance within Vector Databases.
 
 ## Introduction
 
-Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant. Teams that master this consistently ship more reliable Vector Databases systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant. Getting this right early prevents expensive rework once a Vector Databases system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Getting this right early prevents expensive rework once a Vector Databases system reaches scale.
 
-Security, Privacy and Governance cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from distance metrics and quantisation. Recall that distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Security, Privacy and Governance cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from metadata filtering and hybrid queries. Recall that metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to security, privacy and governance. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, namespace-per-tenant isolation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Vector Databases Platform"]
+    GW[Gateway / Orchestrator]
+    S0[The Case for Purpose-Buil…]
+    S1[ANN Indexing Algorithms]
+    S2[Distance Metrics and Quan…]
+    S3[Metadata Filtering and Hy…]
+    S4[Sharding, Replication and…]
+    S5[Freshness, Upserts and De…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
+
+**Figure 25. Cloud Architecture - Security, Privacy and Governance** (mermaid). Figure: Cloud Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
-title Cloud Architecture - Security, Privacy and Governance
+title RAG Architecture - Security, Privacy and Governance
 class Service {
   +process(req)
   +evaluate(sample)
@@ -4741,7 +4727,7 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 28. Cloud Architecture - Security, Privacy and Governance** (plantuml). Figure: Cloud Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 26. RAG Architecture - Security, Privacy and Governance** (plantuml). Figure: RAG Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -4751,7 +4737,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with distance metrics and quantisation. Because distance metrics and quantisation concerns cosine/dot/L2 and scalar/product quantisation trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4759,13 +4745,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the case for purpose-built vector stores. Because the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating in production. Because operating in production concerns backups, monitoring, re-indexing and disaster recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4773,7 +4759,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-Consider a concrete scenario. A media organisation needs visual similarity search across large catalogues. They decide to apply security, privacy and governance as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A media organisation needs visual similarity search across large catalogues. They decide to apply security, privacy and governance as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4845,64 +4831,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Security, Privacy and Governance component with retry semantics and typed interfaces — the shape we expect from production Vector Databases code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Security, Privacy and Governance with a regression gate
+### Listing: Implementing a Security, Privacy and Governance component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class PrivacyAndConfig:
+    """Configuration for the Security, Privacy and Governance component in a Vector Databases system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Security, Privacy and Governance output against references with a simple exact-match metric.
+class PrivacyAnd:
+    """A minimal, production-shaped implementation of Security, Privacy and Governance."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: PrivacyAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PrivacyAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Security, Privacy and Governance goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
+   - A. It is only relevant to academic research, not production.
    - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
+   - C. the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
+   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. No plan for embedding-model upgrades and re-indexing.
-   - B. Isolate tenants by namespace and enforce access control.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
-3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Benchmark recall and p99 latency on your real data, not synthetic.
    - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* Explain Security, Privacy and Governance and why it matters in a production Vector Databases system.
+   - **Answer: C.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+3. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Benchmark recall and p99 latency on your real data, not synthetic.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+4. *(Discussion)* How would you test and monitor Security, Privacy and Governance in production?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4926,7 +4923,7 @@ To place this in context, recall the broader picture: Vector databases store emb
 
 Cost, Performance and Scaling cannot be understood in isolation from the case for purpose-built vector stores. Recall that the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Cost, Performance and Scaling cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Cost, Performance and Scaling cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Several established patterns apply directly to cost, performance and scaling. The first, periodic compaction and re-indexing for freshness, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -4959,7 +4956,7 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 29. RAG Architecture - Cost, Performance and Scaling** (plantuml). Figure: RAG Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. RAG Architecture - Cost, Performance and Scaling** (plantuml). Figure: RAG Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -4983,7 +4980,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the case for purpose-built vector stores. Because the case for purpose-built vector stores concerns why ANN, filtering and freshness demand specialised systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5120,9 +5117,9 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Cost, Performance and Scaling”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
    - D. techniques for controlling cost and latency while scaling a Vector Databases system to production traffic
    - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Vector Databases system to production traffic
 2. Which of the following is a recommended best practice when working with Vector Databases?
@@ -5204,7 +5201,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 30. Deployment - Integration and Interoperability** (drawio). Figure: Deployment view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. Deployment - Integration and Interoperability** (drawio). Figure: Deployment view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
@@ -5227,7 +5224,7 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 31. Infrastructure - Integration and Interoperability** (plantuml). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Infrastructure - Integration and Interoperability** (plantuml). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -5331,81 +5328,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Integration and Interoperability logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Vector Databases system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Integration and Interoperability
+### Listing: Evaluating Integration and Interoperability with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Integration and Interoperability."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Integration and Interoperability output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Integration and Interoperability”?
-   - A. patterns for integrating a Vector Databases system with surrounding enterprise systems and data
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Integration and Interoperability: patterns for integrating a Vector Databases system with surrounding enterprise systems and data
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. patterns for integrating a Vector Databases system with surrounding enterprise systems and data
+   - **Answer: D.** Integration and Interoperability: patterns for integrating a Vector Databases system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It makes the system slower but has no other effect.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. It is only relevant to academic research, not production.
-   - D. Assuming exact search; ANN trades recall for speed.
-   - **Answer: B.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+   - A. No plan for embedding-model upgrades and re-indexing.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: D.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Benchmark recall and p99 latency on your real data, not synthetic.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Plan re-indexing strategy before you need it.
-   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-4. *(Discussion)* What trade-offs would you weigh when implementing Integration and Interoperability?
+   - A. It removes all security and governance requirements.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+4. *(Discussion)* Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Vector Databases system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5417,33 +5397,33 @@ _This chapter examines trends and research directions within Vector Databases. I
 
 ## Introduction
 
-At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Vector Databases. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of Vector Databases. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Vector Databases. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Trends and Research Directions addresses emerging trends, open problems and research directions shaping the future of Vector Databases. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
 
-Trends and Research Directions cannot be understood in isolation from sharding, replication and scaling. Recall that sharding, replication and scaling concerns horizontal scaling, consistency models and high availability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Trends and Research Directions cannot be understood in isolation from reference architecture and patterns. Recall that reference architecture and patterns concerns a production-grade deployment blueprint. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Trends and Research Directions cannot be understood in isolation from security and multi-tenancy. Recall that security and multi-tenancy concerns namespace isolation, access control and encryption. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Trends and Research Directions cannot be understood in isolation from security and multi-tenancy. Recall that security and multi-tenancy concerns namespace isolation, access control and encryption. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to trends and research directions. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around trends and research directions are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Trends and Research Directions separates concerns into clearly bounded components with explicit contracts. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```plantuml
 @startuml
@@ -5466,17 +5446,37 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 32. Infrastructure - Trends and Research Directions** (plantuml). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. Infrastructure - Trends and Research Directions** (plantuml). Figure: Infrastructure view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Sequence - Trends and Research Directions
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 31. Sequence - Trends and Research Directions** (plantuml). Figure: Sequence view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with sharding, replication and scaling. Because sharding, replication and scaling concerns horizontal scaling, consistency models and high availability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with reference architecture and patterns. Because reference architecture and patterns concerns a production-grade deployment blueprint, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5484,7 +5484,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
@@ -5571,24 +5571,24 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Trends and Research Directions”?
-   - A. emerging trends, open problems and research directions shaping the future of Vector Databases
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. emerging trends, open problems and research directions shaping the future of Vector Databases
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Vector Databases
+   - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Vector Databases
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It is only relevant to academic research, not production.
+   - A. Post-filtering that silently drops recall on selective queries.
    - B. It makes the system slower but has no other effect.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. It is only relevant to academic research, not production.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: D.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
+   - A. No plan for embedding-model upgrades and re-indexing.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-4. *(Discussion)* Explain Trends and Research Directions and why it matters in a production Vector Databases system.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+4. *(Discussion)* How would you test and monitor Trends and Research Directions in production?
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Vector Databases) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5600,33 +5600,33 @@ _This chapter examines capstone project within Vector Databases. It covers a sub
 
 ## Introduction
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable. This concept recurs throughout the Vector Databases lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Capstone Project concerns a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. It is foundational: later capabilities in Vector Databases are built directly on top of it.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Understanding this matters because Vector Databases systems succeed or fail on exactly these decisions.
 
-Capstone Project cannot be understood in isolation from security and multi-tenancy. Recall that security and multi-tenancy concerns namespace isolation, access control and encryption. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Capstone Project cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Capstone Project cannot be understood in isolation from choosing a vector database. Recall that choosing a vector database concerns managed versus self-hosted and integration considerations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Capstone Project cannot be understood in isolation from operating in production. Recall that operating in production concerns backups, monitoring, re-indexing and disaster recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to capstone project. The first, pre-filter on selective metadata, post-filter otherwise, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, disk-based indexes for billion-scale corpora, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Capstone Project is layered so each part can evolve independently without destabilising the whole. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
+From an architectural standpoint, Capstone Project sits at the intersection of data, models and operations. A vector database deployment partitions collections into shards, each holding an ANN index in memory or on SSD, replicated for availability. A query coordinator fans out filtered ANN searches, merges results and applies metadata predicates. An ingestion path handles upserts and deletes with background index maintenance.
 
 Concretely, the principal building blocks include the case for purpose-built vector stores, ann indexing algorithms, distance metrics and quantisation, metadata filtering and hybrid queries and sharding, replication and scaling. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```mermaid
 sequenceDiagram
@@ -5645,17 +5645,17 @@ sequenceDiagram
   G-->>U: Response (with provenance)
 ```
 
-**Figure 33. Sequence - Capstone Project** (mermaid). Figure: Sequence view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Sequence - Capstone Project** (mermaid). Figure: Sequence view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with security and multi-tenancy. Because security and multi-tenancy concerns namespace isolation, access control and encryption, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5665,11 +5665,11 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with choosing a vector database. Because choosing a vector database concerns managed versus self-hosted and integration considerations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with metadata filtering and hybrid queries. Because metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5677,7 +5677,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply capstone project as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A recommendations organisation needs real-time candidate generation from user vectors. They decide to apply capstone project as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5807,23 +5807,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Vector Databases, which statement best describes “Capstone Project”?
    - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable
 2. Which of the following is a recommended best practice when working with Vector Databases?
    - A. It removes all security and governance requirements.
-   - B. Plan re-indexing strategy before you need it.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Plan re-indexing strategy before you need it.
+   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. It applies exclusively to image data.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: B.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-4. *(Discussion)* How does Capstone Project interact with security and governance requirements?
+   - A. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
+   - D. No plan for embedding-model upgrades and re-indexing.
+   - **Answer: D.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+4. *(Discussion)* Walk through how you would design Capstone Project for an enterprise Vector Databases workload.
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5835,21 +5835,21 @@ _This chapter examines certification preparation and review within Vector Databa
 
 ## Introduction
 
-At its core, Certification Preparation and Review concerns a structured review and certification-style preparation covering the full breadth of Vector Databases. Teams that master this consistently ship more reliable Vector Databases systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of Vector Databases. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Vector Databases work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of Vector Databases. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of Vector Databases. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Neglecting it is one of the most common reasons Vector Databases initiatives stall in production.
+To place this in context, recall the broader picture: Vector databases store embeddings alongside metadata and provide fast approximate nearest-neighbour search, filtering and hybrid retrieval. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Vector Databases fall into place. Teams that master this consistently ship more reliable Vector Databases systems at lower cost.
+
+Certification Preparation and Review cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Certification Preparation and Review cannot be understood in isolation from benchmarking vector databases. Recall that benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Certification Preparation and Review cannot be understood in isolation from security and multi-tenancy. Recall that security and multi-tenancy concerns namespace isolation, access control and encryption. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
-
-Several established patterns apply directly to certification preparation and review. The first, namespace-per-tenant isolation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-filter on selective metadata, post-filter otherwise, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, disk-based indexes for billion-scale corpora, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, periodic compaction and re-indexing for freshness, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Vector Databases system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
@@ -5861,7 +5861,7 @@ Concretely, the principal building blocks include the case for purpose-built vec
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Vector Databases system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```xml
 <mxfile host="ai-university">
@@ -5890,17 +5890,36 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 34. DevOps Pipeline - Certification Preparation and Review** (drawio). Figure: DevOps Pipeline view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 33. DevOps Pipeline - Certification Preparation and Review** (drawio). Figure: DevOps Pipeline view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Security Architecture - Certification Preparation and Review
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 34. Security Architecture - Certification Preparation and Review** (plantuml). Figure: Security Architecture view for Vector Databases. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns memory versus disk indexes and right-sizing infrastructure, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5908,13 +5927,13 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including Pinecone, Weaviate, Qdrant, Milvus. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with benchmarking vector databases. Because benchmarking vector databases concerns recall, QPS, p99 latency and cost per million vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with metadata filtering and hybrid queries. Because metadata filtering and hybrid queries concerns pre- versus post-filtering and combining structured predicates with vectors, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5922,7 +5941,7 @@ For deeper study, the literature offers authoritative treatments such as Malkov 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply certification preparation and review as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A knowledge organisation needs powering RAG over millions of enterprise documents. They decide to apply certification preparation and review as part of their Vector Databases solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -6045,24 +6064,24 @@ class CertificationPreparationAnd:
 ## Review Questions
 
 1. In the context of Vector Databases, which statement best describes “Certification Preparation and Review”?
-   - A. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
    - B. a structured review and certification-style preparation covering the full breadth of Vector Databases
-   - C. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Vector Databases
 2. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Assuming exact search; ANN trades recall for speed.
-   - B. It removes all security and governance requirements.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Assuming exact search; ANN trades recall for speed.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 3. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-4. *(Discussion)* How does Certification Preparation and Review interact with security and governance requirements?
+   - A. Underestimating memory for in-RAM HNSW at scale.
+   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. Benchmark recall and p99 latency on your real data, not synthetic.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+4. *(Discussion)* What trade-offs would you weigh when implementing Certification Preparation and Review?
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Vector Databases) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6098,55 +6117,55 @@ class CertificationPreparationAnd:
 
 A consolidated bank of discussion-style interview questions drawn from across the book, suitable for preparation and technical screening.
 
-1. Walk through how you would design The Case for Purpose-Built Vector Stores for an enterprise Vector Databases workload.
+1. Describe a failure mode of The Case for Purpose-Built Vector Stores and how you would mitigate it.
    - **Guidance:** A strong answer defines the case for purpose-built vector stores (Why ANN, filtering and freshness demand specialised systems.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-2. Describe a failure mode of ANN Indexing Algorithms and how you would mitigate it.
+2. How would you test and monitor ANN Indexing Algorithms in production?
    - **Guidance:** A strong answer defines ann indexing algorithms (HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-3. What trade-offs would you weigh when implementing Distance Metrics and Quantisation?
+3. Walk through how you would design Distance Metrics and Quantisation for an enterprise Vector Databases workload.
    - **Guidance:** A strong answer defines distance metrics and quantisation (Cosine/dot/L2 and scalar/product quantisation trade-offs.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-4. What trade-offs would you weigh when implementing Metadata Filtering and Hybrid Queries?
+4. Walk through how you would design Metadata Filtering and Hybrid Queries for an enterprise Vector Databases workload.
    - **Guidance:** A strong answer defines metadata filtering and hybrid queries (Pre- versus post-filtering and combining structured predicates with vectors.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-5. What trade-offs would you weigh when implementing Sharding, Replication and Scaling?
+5. How would you test and monitor Sharding, Replication and Scaling in production?
    - **Guidance:** A strong answer defines sharding, replication and scaling (Horizontal scaling, consistency models and high availability.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-6. Describe a failure mode of Freshness, Upserts and Deletes and how you would mitigate it.
+6. Walk through how you would design Freshness, Upserts and Deletes for an enterprise Vector Databases workload.
    - **Guidance:** A strong answer defines freshness, upserts and deletes (Handling streaming updates without full re-indexing.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-7. What trade-offs would you weigh when implementing Hybrid and Multi-Vector Retrieval?
+7. Describe a failure mode of Hybrid and Multi-Vector Retrieval and how you would mitigate it.
    - **Guidance:** A strong answer defines hybrid and multi-vector retrieval (Late-interaction (ColBERT) and sparse+dense fusion.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-8. Walk through how you would design Benchmarking Vector Databases for an enterprise Vector Databases workload.
+8. How does Benchmarking Vector Databases interact with security and governance requirements?
    - **Guidance:** A strong answer defines benchmarking vector databases (Recall, QPS, p99 latency and cost per million vectors.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-9. Describe a failure mode of Security and Multi-Tenancy and how you would mitigate it.
+9. How does Security and Multi-Tenancy interact with security and governance requirements?
    - **Guidance:** A strong answer defines security and multi-tenancy (Namespace isolation, access control and encryption.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-10. Explain Cost and Capacity Planning and why it matters in a production Vector Databases system.
+10. How does Cost and Capacity Planning interact with security and governance requirements?
    - **Guidance:** A strong answer defines cost and capacity planning (Memory versus disk indexes and right-sizing infrastructure.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 11. Explain Operating in Production and why it matters in a production Vector Databases system.
    - **Guidance:** A strong answer defines operating in production (Backups, monitoring, re-indexing and disaster recovery.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 12. How does Choosing a Vector Database interact with security and governance requirements?
    - **Guidance:** A strong answer defines choosing a vector database (Managed versus self-hosted and integration considerations.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-13. How would you test and monitor Integration with the RAG Pipeline in production?
+13. How does Integration with the RAG Pipeline interact with security and governance requirements?
    - **Guidance:** A strong answer defines integration with the rag pipeline (Where the vector store sits and how it is queried.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-14. Describe a failure mode of Reference Architecture and Patterns and how you would mitigate it.
+14. How does Reference Architecture and Patterns interact with security and governance requirements?
    - **Guidance:** A strong answer defines reference architecture and patterns (A production-grade deployment blueprint.) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-15. Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
+15. How does Putting It Together: A Reference Implementation interact with security and governance requirements?
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-16. How does Hands-On Lab: Building an End-to-End Vector Databases System interact with security and governance requirements?
+16. Describe a failure mode of Hands-On Lab: Building an End-to-End Vector Databases System and how you would mitigate it.
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end vector databases system (a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-17. Walk through how you would design Case Study: Knowledge at Scale for an enterprise Vector Databases workload.
+17. Describe a failure mode of Case Study: Knowledge at Scale and how you would mitigate it.
    - **Guidance:** A strong answer defines case study: knowledge at scale (a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-18. How does Operating in Production interact with security and governance requirements?
+18. Walk through how you would design Operating in Production for an enterprise Vector Databases workload.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 19. Describe a failure mode of Evaluation and Quality Assurance and how you would mitigate it.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-20. Explain Security, Privacy and Governance and why it matters in a production Vector Databases system.
+20. How would you test and monitor Security, Privacy and Governance in production?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 21. How does Cost, Performance and Scaling interact with security and governance requirements?
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Vector Databases system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-22. What trade-offs would you weigh when implementing Integration and Interoperability?
+22. Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Vector Databases system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-23. Explain Trends and Research Directions and why it matters in a production Vector Databases system.
+23. How would you test and monitor Trends and Research Directions in production?
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Vector Databases) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-24. How does Capstone Project interact with security and governance requirements?
+24. Walk through how you would design Capstone Project for an enterprise Vector Databases workload.
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
-25. How does Certification Preparation and Review interact with security and governance requirements?
+25. What trade-offs would you weigh when implementing Certification Preparation and Review?
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Vector Databases) then connects it to architecture, evaluation, cost, security and operations for Vector Databases, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6154,245 +6173,245 @@ A consolidated bank of discussion-style interview questions drawn from across th
 Certification-style multiple-choice questions covering best practices and common pitfalls.
 
 1. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Isolate tenants by namespace and enforce access control.
+   - A. Assuming exact search; ANN trades recall for speed.
+   - B. Plan re-indexing strategy before you need it.
+   - C. No plan for embedding-model upgrades and re-indexing.
    - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
+   - **Answer: B.** Best practice: Plan re-indexing strategy before you need it.
 2. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. It guarantees deterministic output regardless of input.
    - B. Plan re-indexing strategy before you need it.
-   - C. Post-filtering that silently drops recall on selective queries.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: C.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-3. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
-4. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. Isolate tenants by namespace and enforce access control.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-5. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - B. Post-filtering that silently drops recall on selective queries.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-6. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-7. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
-8. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. No plan for embedding-model upgrades and re-indexing.
-   - **Answer: D.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-9. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Benchmark recall and p99 latency on your real data, not synthetic.
-   - B. It is only relevant to academic research, not production.
    - C. Underestimating memory for in-RAM HNSW at scale.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
-10. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
+   - D. Benchmark recall and p99 latency on your real data, not synthetic.
+   - **Answer: C.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+3. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Underestimating memory for in-RAM HNSW at scale.
    - B. It makes the system slower but has no other effect.
-   - C. It guarantees deterministic output regardless of input.
-   - D. No plan for embedding-model upgrades and re-indexing.
-   - **Answer: D.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-11. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. No plan for embedding-model upgrades and re-indexing.
+   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+4. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. No plan for embedding-model upgrades and re-indexing.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+5. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Underestimating memory for in-RAM HNSW at scale.
+   - B. It makes the system slower but has no other effect.
    - C. Isolate tenants by namespace and enforce access control.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
-12. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-13. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. Plan re-indexing strategy before you need it.
+6. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Plan re-indexing strategy before you need it.
+   - B. Isolate tenants by namespace and enforce access control.
+   - C. It applies exclusively to image data.
    - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: C.** Best practice: Plan re-indexing strategy before you need it.
-14. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Assuming exact search; ANN trades recall for speed.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
+   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+7. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-15. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. No plan for embedding-model upgrades and re-indexing.
-   - B. It makes the system slower but has no other effect.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
-16. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It makes the system slower but has no other effect.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: D.** Best practice: Isolate tenants by namespace and enforce access control.
+8. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. Plan re-indexing strategy before you need it.
+   - C. It is only relevant to academic research, not production.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+9. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Isolate tenants by namespace and enforce access control.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-17. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. Plan re-indexing strategy before you need it.
+   - C. No plan for embedding-model upgrades and re-indexing.
    - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Isolate tenants by namespace and enforce access control.
+10. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Underestimating memory for in-RAM HNSW at scale.
+   - B. It is only relevant to academic research, not production.
+   - C. Isolate tenants by namespace and enforce access control.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+11. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Assuming exact search; ANN trades recall for speed.
+   - B. Isolate tenants by namespace and enforce access control.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
+12. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Plan re-indexing strategy before you need it.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Assuming exact search; ANN trades recall for speed.
+   - **Answer: D.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+13. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. Isolate tenants by namespace and enforce access control.
+   - C. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
+14. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It makes the system slower but has no other effect.
+   - B. Benchmark recall and p99 latency on your real data, not synthetic.
+   - C. Assuming exact search; ANN trades recall for speed.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+15. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Benchmark recall and p99 latency on your real data, not synthetic.
+   - B. It removes all security and governance requirements.
+   - C. Underestimating memory for in-RAM HNSW at scale.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+16. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. It makes the system slower but has no other effect.
+   - C. Plan re-indexing strategy before you need it.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+17. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. Plan re-indexing strategy before you need it.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Best practice: Plan re-indexing strategy before you need it.
 18. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Post-filtering that silently drops recall on selective queries.
-   - C. It applies exclusively to image data.
-   - D. Isolate tenants by namespace and enforce access control.
-   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-19. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Underestimating memory for in-RAM HNSW at scale.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-20. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It makes the system slower but has no other effect.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. Plan re-indexing strategy before you need it.
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. It applies exclusively to image data.
-   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+19. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: D.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+20. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. Plan re-indexing strategy before you need it.
+   - D. Benchmark recall and p99 latency on your real data, not synthetic.
+   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
 21. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
+   - A. No plan for embedding-model upgrades and re-indexing.
+   - B. It is only relevant to academic research, not production.
+   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - D. Assuming exact search; ANN trades recall for speed.
+   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+22. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It applies exclusively to image data.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Plan re-indexing strategy before you need it.
+   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+23. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Plan re-indexing strategy before you need it.
+   - B. No plan for embedding-model upgrades and re-indexing.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Plan re-indexing strategy before you need it.
+24. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Post-filtering that silently drops recall on selective queries.
+   - B. Benchmark recall and p99 latency on your real data, not synthetic.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+25. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. No plan for embedding-model upgrades and re-indexing.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: D.** Best practice: Isolate tenants by namespace and enforce access control.
+26. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It applies exclusively to image data.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+27. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. Underestimating memory for in-RAM HNSW at scale.
+   - **Answer: A.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+28. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Isolate tenants by namespace and enforce access control.
+   - B. It removes all security and governance requirements.
+   - C. Plan re-indexing strategy before you need it.
+   - D. Assuming exact search; ANN trades recall for speed.
+   - **Answer: D.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
+29. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It removes all security and governance requirements.
    - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
    - C. It guarantees deterministic output regardless of input.
    - D. It applies exclusively to image data.
    - **Answer: B.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-22. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. Isolate tenants by namespace and enforce access control.
-   - C. Assuming exact search; ANN trades recall for speed.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-23. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
-24. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. Post-filtering that silently drops recall on selective queries.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-25. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. Assuming exact search; ANN trades recall for speed.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
-26. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It makes the system slower but has no other effect.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-27. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Post-filtering that silently drops recall on selective queries.
-   - B. It applies exclusively to image data.
-   - C. Plan re-indexing strategy before you need it.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Plan re-indexing strategy before you need it.
-28. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
-29. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Plan re-indexing strategy before you need it.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Plan re-indexing strategy before you need it.
 30. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It is only relevant to academic research, not production.
-   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Assuming exact search; ANN trades recall for speed.
-   - **Answer: D.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-31. Which of the following is a recommended best practice when working with Vector Databases?
    - A. Post-filtering that silently drops recall on selective queries.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+31. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Underestimating memory for in-RAM HNSW at scale.
    - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. No plan for embedding-model upgrades and re-indexing.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. Post-filtering that silently drops recall on selective queries.
+   - D. No plan for embedding-model upgrades and re-indexing.
    - **Answer: B.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
 32. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - C. Benchmark recall and p99 latency on your real data, not synthetic.
-   - D. Isolate tenants by namespace and enforce access control.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-33. Which of the following is a recommended best practice when working with Vector Databases?
    - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-34. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
-35. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Underestimating memory for in-RAM HNSW at scale.
-   - B. Isolate tenants by namespace and enforce access control.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
-36. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Isolate tenants by namespace and enforce access control.
    - B. No plan for embedding-model upgrades and re-indexing.
-   - C. It applies exclusively to image data.
-   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. Plan re-indexing strategy before you need it.
+   - D. It is only relevant to academic research, not production.
    - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
-37. Which of the following is a recommended best practice when working with Vector Databases?
+33. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It is only relevant to academic research, not production.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Benchmark recall and p99 latency on your real data, not synthetic.
+   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+34. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. Post-filtering that silently drops recall on selective queries.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-38. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It applies exclusively to image data.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. Assuming exact search; ANN trades recall for speed.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-39. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. No plan for embedding-model upgrades and re-indexing.
-   - B. Isolate tenants by namespace and enforce access control.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Isolate tenants by namespace and enforce access control.
-40. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - B. It is only relevant to academic research, not production.
+   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
    - C. It eliminates the need for any evaluation or monitoring.
+   - D. Plan re-indexing strategy before you need it.
+   - **Answer: A.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+35. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. Isolate tenants by namespace and enforce access control.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Isolate tenants by namespace and enforce access control.
+36. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+37. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Benchmark recall and p99 latency on your real data, not synthetic.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It applies exclusively to image data.
+   - D. No plan for embedding-model upgrades and re-indexing.
+   - **Answer: A.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+38. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. It guarantees deterministic output regardless of input.
+   - B. No plan for embedding-model upgrades and re-indexing.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+39. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Benchmark recall and p99 latency on your real data, not synthetic.
    - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+   - **Answer: C.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+40. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Benchmark recall and p99 latency on your real data, not synthetic.
+   - B. Assuming exact search; ANN trades recall for speed.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
 41. Which of the following is a recommended best practice when working with Vector Databases?
    - A. It makes the system slower but has no other effect.
    - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
@@ -6406,53 +6425,53 @@ Certification-style multiple-choice questions covering best practices and common
    - D. It makes the system slower but has no other effect.
    - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
 43. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It makes the system slower but has no other effect.
-   - B. Benchmark recall and p99 latency on your real data, not synthetic.
-   - C. It is only relevant to academic research, not production.
-   - D. Assuming exact search; ANN trades recall for speed.
-   - **Answer: B.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
+   - A. No plan for embedding-model upgrades and re-indexing.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: D.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 44. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. Benchmark recall and p99 latency on your real data, not synthetic.
-   - B. No plan for embedding-model upgrades and re-indexing.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Plan re-indexing strategy before you need it.
-   - **Answer: B.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+   - A. It removes all security and governance requirements.
+   - B. Post-filtering that silently drops recall on selective queries.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Isolate tenants by namespace and enforce access control.
+   - **Answer: B.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
 45. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. It is only relevant to academic research, not production.
+   - A. Post-filtering that silently drops recall on selective queries.
    - B. It makes the system slower but has no other effect.
-   - C. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. It is only relevant to academic research, not production.
+   - D. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - **Answer: D.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 46. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
+   - A. No plan for embedding-model upgrades and re-indexing.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
-   - D. Post-filtering that silently drops recall on selective queries.
-   - **Answer: D.** Pitfall to avoid: Post-filtering that silently drops recall on selective queries.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
 47. Which of the following is a recommended best practice when working with Vector Databases?
    - A. It removes all security and governance requirements.
-   - B. Plan re-indexing strategy before you need it.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Plan re-indexing strategy before you need it.
+   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. It applies exclusively to image data.
+   - D. Post-filtering that silently drops recall on selective queries.
+   - **Answer: B.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
 48. Which of the following is a common pitfall to avoid in Vector Databases?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Assuming exact search; ANN trades recall for speed.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Assuming exact search; ANN trades recall for speed.
-49. Which of the following is a recommended best practice when working with Vector Databases?
-   - A. Assuming exact search; ANN trades recall for speed.
-   - B. It removes all security and governance requirements.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Benchmark recall and p99 latency on your real data, not synthetic.
-   - **Answer: D.** Best practice: Benchmark recall and p99 latency on your real data, not synthetic.
-50. Which of the following is a common pitfall to avoid in Vector Databases?
    - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Isolate tenants by namespace and enforce access control.
-   - D. Underestimating memory for in-RAM HNSW at scale.
-   - **Answer: D.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
+   - D. No plan for embedding-model upgrades and re-indexing.
+   - **Answer: D.** Pitfall to avoid: No plan for embedding-model upgrades and re-indexing.
+49. Which of the following is a recommended best practice when working with Vector Databases?
+   - A. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Assuming exact search; ANN trades recall for speed.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Best practice: Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+50. Which of the following is a common pitfall to avoid in Vector Databases?
+   - A. Underestimating memory for in-RAM HNSW at scale.
+   - B. Choose HNSW for low latency, IVF/PQ for memory-constrained scale.
+   - C. Benchmark recall and p99 latency on your real data, not synthetic.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Underestimating memory for in-RAM HNSW at scale.
 
 # Assessment Exercises
 
@@ -6460,152 +6479,152 @@ Assessment items to verify conceptual understanding.
 
 1. In the context of Vector Databases, which statement best describes “The Case for Purpose-Built Vector Stores”?
    - A. Why ANN, filtering and freshness demand specialised systems.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
    - **Answer: A.** The Case for Purpose-Built Vector Stores: Why ANN, filtering and freshness demand specialised systems.
 2. In the context of Vector Databases, which statement best describes “ANN Indexing Algorithms”?
-   - A. HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** ANN Indexing Algorithms: HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
-3. In the context of Vector Databases, which statement best describes “Distance Metrics and Quantisation”?
    - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Cosine/dot/L2 and scalar/product quantisation trade-offs.
-   - **Answer: D.** Distance Metrics and Quantisation: Cosine/dot/L2 and scalar/product quantisation trade-offs.
+   - B. HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** ANN Indexing Algorithms: HNSW graphs, IVF, PQ and DiskANN and their recall/latency/memory profiles.
+3. In the context of Vector Databases, which statement best describes “Distance Metrics and Quantisation”?
+   - A. Cosine/dot/L2 and scalar/product quantisation trade-offs.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Distance Metrics and Quantisation: Cosine/dot/L2 and scalar/product quantisation trade-offs.
 4. In the context of Vector Databases, which statement best describes “Metadata Filtering and Hybrid Queries”?
    - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
    - D. Pre- versus post-filtering and combining structured predicates with vectors.
    - **Answer: D.** Metadata Filtering and Hybrid Queries: Pre- versus post-filtering and combining structured predicates with vectors.
 5. In the context of Vector Databases, which statement best describes “Sharding, Replication and Scaling”?
-   - A. Horizontal scaling, consistency models and high availability.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Sharding, Replication and Scaling: Horizontal scaling, consistency models and high availability.
+   - A. It makes the system slower but has no other effect.
+   - B. Horizontal scaling, consistency models and high availability.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Sharding, Replication and Scaling: Horizontal scaling, consistency models and high availability.
 6. In the context of Vector Databases, which statement best describes “Freshness, Upserts and Deletes”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Handling streaming updates without full re-indexing.
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Freshness, Upserts and Deletes: Handling streaming updates without full re-indexing.
-7. In the context of Vector Databases, which statement best describes “Hybrid and Multi-Vector Retrieval”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Late-interaction (ColBERT) and sparse+dense fusion.
-   - **Answer: D.** Hybrid and Multi-Vector Retrieval: Late-interaction (ColBERT) and sparse+dense fusion.
-8. In the context of Vector Databases, which statement best describes “Benchmarking Vector Databases”?
-   - A. It removes all security and governance requirements.
-   - B. Recall, QPS, p99 latency and cost per million vectors.
+   - A. Handling streaming updates without full re-indexing.
+   - B. It guarantees deterministic output regardless of input.
    - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Freshness, Upserts and Deletes: Handling streaming updates without full re-indexing.
+7. In the context of Vector Databases, which statement best describes “Hybrid and Multi-Vector Retrieval”?
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Late-interaction (ColBERT) and sparse+dense fusion.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Hybrid and Multi-Vector Retrieval: Late-interaction (ColBERT) and sparse+dense fusion.
+8. In the context of Vector Databases, which statement best describes “Benchmarking Vector Databases”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Recall, QPS, p99 latency and cost per million vectors.
+   - C. It removes all security and governance requirements.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Benchmarking Vector Databases: Recall, QPS, p99 latency and cost per million vectors.
 9. In the context of Vector Databases, which statement best describes “Security and Multi-Tenancy”?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. Namespace isolation, access control and encryption.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Security and Multi-Tenancy: Namespace isolation, access control and encryption.
-10. In the context of Vector Databases, which statement best describes “Cost and Capacity Planning”?
-   - A. It removes all security and governance requirements.
-   - B. Memory versus disk indexes and right-sizing infrastructure.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Cost and Capacity Planning: Memory versus disk indexes and right-sizing infrastructure.
-11. In the context of Vector Databases, which statement best describes “Operating in Production”?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Backups, monitoring, re-indexing and disaster recovery.
-   - **Answer: D.** Operating in Production: Backups, monitoring, re-indexing and disaster recovery.
-12. In the context of Vector Databases, which statement best describes “Choosing a Vector Database”?
-   - A. It makes the system slower but has no other effect.
-   - B. Managed versus self-hosted and integration considerations.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Choosing a Vector Database: Managed versus self-hosted and integration considerations.
-13. In the context of Vector Databases, which statement best describes “Integration with the RAG Pipeline”?
-   - A. Where the vector store sits and how it is queried.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Integration with the RAG Pipeline: Where the vector store sits and how it is queried.
-14. In the context of Vector Databases, which statement best describes “Reference Architecture and Patterns”?
    - A. It guarantees deterministic output regardless of input.
-   - B. A production-grade deployment blueprint.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Reference Architecture and Patterns: A production-grade deployment blueprint.
-15. In the context of Vector Databases, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It applies exclusively to image data.
-   - B. an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
+   - B. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Namespace isolation, access control and encryption.
+   - **Answer: D.** Security and Multi-Tenancy: Namespace isolation, access control and encryption.
+10. In the context of Vector Databases, which statement best describes “Cost and Capacity Planning”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. Memory versus disk indexes and right-sizing infrastructure.
+   - **Answer: D.** Cost and Capacity Planning: Memory versus disk indexes and right-sizing infrastructure.
+11. In the context of Vector Databases, which statement best describes “Operating in Production”?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Backups, monitoring, re-indexing and disaster recovery.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Operating in Production: Backups, monitoring, re-indexing and disaster recovery.
+12. In the context of Vector Databases, which statement best describes “Choosing a Vector Database”?
+   - A. Managed versus self-hosted and integration considerations.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Choosing a Vector Database: Managed versus self-hosted and integration considerations.
+13. In the context of Vector Databases, which statement best describes “Integration with the RAG Pipeline”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. Where the vector store sits and how it is queried.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
+   - **Answer: C.** Integration with the RAG Pipeline: Where the vector store sits and how it is queried.
+14. In the context of Vector Databases, which statement best describes “Reference Architecture and Patterns”?
+   - A. A production-grade deployment blueprint.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Reference Architecture and Patterns: A production-grade deployment blueprint.
+15. In the context of Vector Databases, which statement best describes “Putting It Together: A Reference Implementation”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Vector Databases system into a cohesive, working whole
 16. In the context of Vector Databases, which statement best describes “Hands-On Lab: Building an End-to-End Vector Databases System”?
    - A. a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Hands-On Lab: Building an End-to-End Vector Databases System: a guided, build-along laboratory that constructs a functioning Vector Databases system from first principles
 17. In the context of Vector Databases, which statement best describes “Case Study: Knowledge at Scale”?
    - A. a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes
    - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Case Study: Knowledge at Scale: a detailed case study of deploying Vector Databases in a demanding knowledge environment, including the decisions, trade-offs and outcomes
 18. In the context of Vector Databases, which statement best describes “Operating in Production”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Operating in Production: the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
-19. In the context of Vector Databases, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
-   - B. It guarantees deterministic output regardless of input.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
-20. In the context of Vector Databases, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
-   - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
-21. In the context of Vector Databases, which statement best describes “Cost, Performance and Scaling”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
+   - D. the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: D.** Operating in Production: the operational discipline required to run a Vector Databases system reliably, including monitoring, incident response and continuous improvement
+19. In the context of Vector Databases, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
+   - D. a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Vector Databases system before and after release
+20. In the context of Vector Databases, which statement best describes “Security, Privacy and Governance”?
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a Vector Databases system trustworthy and compliant
+21. In the context of Vector Databases, which statement best describes “Cost, Performance and Scaling”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
    - D. techniques for controlling cost and latency while scaling a Vector Databases system to production traffic
    - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Vector Databases system to production traffic
 22. In the context of Vector Databases, which statement best describes “Integration and Interoperability”?
-   - A. patterns for integrating a Vector Databases system with surrounding enterprise systems and data
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Integration and Interoperability: patterns for integrating a Vector Databases system with surrounding enterprise systems and data
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. patterns for integrating a Vector Databases system with surrounding enterprise systems and data
+   - **Answer: D.** Integration and Interoperability: patterns for integrating a Vector Databases system with surrounding enterprise systems and data
 23. In the context of Vector Databases, which statement best describes “Trends and Research Directions”?
-   - A. emerging trends, open problems and research directions shaping the future of Vector Databases
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. emerging trends, open problems and research directions shaping the future of Vector Databases
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Vector Databases
+   - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Vector Databases
 24. In the context of Vector Databases, which statement best describes “Capstone Project”?
    - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Vector Databases deliverable
 25. In the context of Vector Databases, which statement best describes “Certification Preparation and Review”?
-   - A. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
    - B. a structured review and certification-style preparation covering the full breadth of Vector Databases
-   - C. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Vector Databases
 

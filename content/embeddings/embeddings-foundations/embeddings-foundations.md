@@ -85,25 +85,25 @@ First published 2026. First Edition. Document version 1.0.0.
 | 3 | Contrastive Representation Learning | 10 | 1 | 1 | 4 |
 | 4 | Similarity Metrics and Normalisation | 10 | 1 | 1 | 4 |
 | 5 | Multimodal and Cross-Encoder Embeddings | 11 | 2 | 1 | 4 |
-| 6 | Dimensionality, Compression and Quantisation | 10 | 1 | 1 | 4 |
+| 6 | Dimensionality, Compression and Quantisation | 11 | 2 | 1 | 4 |
 | 7 | Indexing for Approximate Nearest Neighbour Search | 11 | 2 | 1 | 4 |
-| 8 | Evaluating Embedding Quality | 11 | 2 | 1 | 4 |
-| 9 | Domain Adaptation and Fine-Tuning | 11 | 2 | 1 | 4 |
+| 8 | Evaluating Embedding Quality | 10 | 1 | 1 | 4 |
+| 9 | Domain Adaptation and Fine-Tuning | 10 | 1 | 1 | 4 |
 | 10 | Embedding Drift and Re-Indexing | 11 | 2 | 1 | 4 |
 | 11 | Hybrid Search | 10 | 1 | 1 | 4 |
 | 12 | Operating an Embedding Service | 10 | 1 | 1 | 4 |
 | 13 | Privacy and Embedding Inversion | 10 | 1 | 1 | 4 |
 | 14 | The Retrieval Stack Reference Architecture | 10 | 1 | 1 | 4 |
-| 15 | Putting It Together: A Reference Implementation | 11 | 2 | 1 | 4 |
+| 15 | Putting It Together: A Reference Implementation | 10 | 1 | 1 | 4 |
 | 16 | Hands-On Lab: Building an End-to-End Embeddings System | 10 | 1 | 1 | 4 |
 | 17 | Case Study: Search at Scale | 10 | 1 | 1 | 4 |
 | 18 | Operating in Production | 10 | 1 | 1 | 4 |
-| 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
+| 19 | Evaluation and Quality Assurance | 10 | 1 | 1 | 4 |
 | 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
-| 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
-| 24 | Capstone Project | 11 | 2 | 1 | 4 |
+| 23 | Trends and Research Directions | 9 | 1 | 0 | 4 |
+| 24 | Capstone Project | 10 | 1 | 1 | 4 |
 | 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
 
 ---
@@ -118,34 +118,29 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 6. Operating Model - Multimodal and Cross-Encoder Embeddings
 - Figure 7. Sequence - Multimodal and Cross-Encoder Embeddings
 - Figure 8. Sequence - Dimensionality, Compression and Quantisation
-- Figure 9. Network - Indexing for Approximate Nearest Neighbour Search
-- Figure 10. DevOps Pipeline - Indexing for Approximate Nearest Neighbour Search
-- Figure 11. DevOps Pipeline - Evaluating Embedding Quality
-- Figure 12. Application Flow - Evaluating Embedding Quality
+- Figure 9. Network - Dimensionality, Compression and Quantisation
+- Figure 10. Network - Indexing for Approximate Nearest Neighbour Search
+- Figure 11. DevOps Pipeline - Indexing for Approximate Nearest Neighbour Search
+- Figure 12. DevOps Pipeline - Evaluating Embedding Quality
 - Figure 13. Application Flow - Domain Adaptation and Fine-Tuning
-- Figure 14. Infrastructure - Domain Adaptation and Fine-Tuning
-- Figure 15. Infrastructure - Embedding Drift and Re-Indexing
-- Figure 16. Agent Architecture - Embedding Drift and Re-Indexing
-- Figure 17. Agent Architecture - Hybrid Search
-- Figure 18. Knowledge Graph - Operating an Embedding Service
-- Figure 19. Deployment - Privacy and Embedding Inversion
-- Figure 20. RAG Architecture - The Retrieval Stack Reference Architecture
-- Figure 21. Architecture - Putting It Together: A Reference Implementation
-- Figure 22. Business Process - Putting It Together: A Reference Implementation
-- Figure 23. Business Process - Hands-On Lab: Building an End-to-End Embeddings System
-- Figure 24. Class - Case Study: Search at Scale
-- Figure 25. Security Architecture - Operating in Production
-- Figure 26. Component - Evaluation and Quality Assurance
-- Figure 27. Data Flow - Evaluation and Quality Assurance
-- Figure 28. Data Flow - Security, Privacy and Governance
-- Figure 29. CI/CD Pipeline - Security, Privacy and Governance
-- Figure 30. CI/CD Pipeline - Cost, Performance and Scaling
-- Figure 31. Cloud Architecture - Integration and Interoperability
-- Figure 32. Data Lineage - Trends and Research Directions
-- Figure 33. Capability Map - Trends and Research Directions
-- Figure 34. Capability Map - Capstone Project
-- Figure 35. Operating Model - Capstone Project
-- Figure 36. Operating Model - Certification Preparation and Review
+- Figure 14. Infrastructure - Embedding Drift and Re-Indexing
+- Figure 15. Agent Architecture - Embedding Drift and Re-Indexing
+- Figure 16. Agent Architecture - Hybrid Search
+- Figure 17. Knowledge Graph - Operating an Embedding Service
+- Figure 18. Deployment - Privacy and Embedding Inversion
+- Figure 19. RAG Architecture - The Retrieval Stack Reference Architecture
+- Figure 20. Architecture - Putting It Together: A Reference Implementation
+- Figure 21. Business Process - Hands-On Lab: Building an End-to-End Embeddings System
+- Figure 22. Class - Case Study: Search at Scale
+- Figure 23. Security Architecture - Operating in Production
+- Figure 24. Component - Evaluation and Quality Assurance
+- Figure 25. Data Flow - Security, Privacy and Governance
+- Figure 26. CI/CD Pipeline - Security, Privacy and Governance
+- Figure 27. CI/CD Pipeline - Cost, Performance and Scaling
+- Figure 28. Cloud Architecture - Integration and Interoperability
+- Figure 29. Data Lineage - Trends and Research Directions
+- Figure 30. Capability Map - Capstone Project
+- Figure 31. Operating Model - Certification Preparation and Review
 
 ---
 
@@ -356,68 +351,62 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep From One-Hot to Distributed Representations logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven From One-Hot to Distributed Representations component with retry semantics and typed interfaces — the shape we expect from production Embeddings code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for From One-Hot to Distributed Representations
+### Listing: Implementing a From One-Hot to Distributed Representations component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class FromToConfig:
+    """Configuration for the From One-Hot to Distributed Representations component in a Embeddings system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for From One-Hot to Distributed Representations."""
+class FromTo:
+    """A minimal, production-shaped implementation of From One-Hot to Distributed Representations."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: FromToConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"FromTo failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for From One-Hot to Distributed Representations goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “From One-Hot to Distributed Representations”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Why dense vectors generalise where sparse encodings cannot.
-   - **Answer: D.** From One-Hot to Distributed Representations: Why dense vectors generalise where sparse encodings cannot.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Why dense vectors generalise where sparse encodings cannot.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** From One-Hot to Distributed Representations: Why dense vectors generalise where sparse encodings cannot.
 2. Which of the following is a recommended best practice when working with Embeddings?
    - A. Over-chunking or under-chunking documents before embedding.
    - B. It guarantees deterministic output regardless of input.
@@ -1058,64 +1047,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Similarity Metrics and Normalisation component with retry semantics and typed interfaces — the shape we expect from production Embeddings code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Similarity Metrics and Normalisation with a regression gate
+### Listing: Implementing a Similarity Metrics and Normalisation component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class SimilarityMetricsAndConfig:
+    """Configuration for the Similarity Metrics and Normalisation component in a Embeddings system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Similarity Metrics and Normalisation output against references with a simple exact-match metric.
+class SimilarityMetricsAnd:
+    """A minimal, production-shaped implementation of Similarity Metrics and Normalisation."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: SimilarityMetricsAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"SimilarityMetricsAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Similarity Metrics and Normalisation goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Similarity Metrics and Normalisation”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Cosine, dot product and Euclidean distance and when each applies.
    - **Answer: D.** Similarity Metrics and Normalisation: Cosine, dot product and Euclidean distance and when each applies.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. Over-chunking or under-chunking documents before embedding.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. Pin embedding model versions and re-index atomically on change.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Pin embedding model versions and re-index atomically on change.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Over-chunking or under-chunking documents before embedding.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* How does Similarity Metrics and Normalisation interact with security and governance requirements?
+   - A. Use hybrid search to recover exact-match and rare-term queries.
+   - B. It removes all security and governance requirements.
+   - C. Ignoring drift after upgrading the embedding model.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
+4. *(Discussion)* Explain Similarity Metrics and Normalisation and why it matters in a production Embeddings system.
    - **Model answer:** A strong answer defines similarity metrics and normalisation (Cosine, dot product and Euclidean distance and when each applies.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1127,70 +1127,71 @@ _This chapter examines multimodal and cross-encoder embeddings within Embeddings
 
 ## Introduction
 
-We define Multimodal and Cross-Encoder Embeddings as cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. Teams that master this consistently ship more reliable Embeddings systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Formally, Multimodal and Cross-Encoder Embeddings addresses cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Multimodal and Cross-Encoder Embeddings can be characterised as cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Multimodal and Cross-Encoder Embeddings addresses cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, multimodal and cross-encoder embeddings is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. This concept recurs throughout the Embeddings lifecycle, from design to operations.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, multimodal and cross-encoder embeddings is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Teams that master this consistently ship more reliable Embeddings systems at lower cost.
 
-Multimodal and Cross-Encoder Embeddings cannot be understood in isolation from word, sentence and document embeddings. Recall that word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Multimodal and Cross-Encoder Embeddings cannot be understood in isolation from contrastive representation learning. Recall that contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Multimodal and Cross-Encoder Embeddings cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Multimodal and Cross-Encoder Embeddings cannot be understood in isolation from the retrieval stack reference architecture. Recall that the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to multimodal and cross-encoder embeddings. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to multimodal and cross-encoder embeddings. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around multimodal and cross-encoder embeddings are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around multimodal and cross-encoder embeddings are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Multimodal and Cross-Encoder Embeddings is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, Multimodal and Cross-Encoder Embeddings sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="3-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#f59e0b"/><rect x="0" y="30" width="840" height="16" fill="#f59e0b"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Multimodal and Cross-Encoder Embeddings</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#f59e0b"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Contrastive Rep…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#ea580c"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Similarity Metr…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#f97316"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Multimodal and …</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#fb923c"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Dimensionality,…</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="3-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn702e1b2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn702e1b2)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn702e1b2)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Multimodal and Cross-Encoder Embeddings</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Retrieval Stack Reference Architecture</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#f97316" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">From One-Hot to Distributed Representations</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#f97316" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Similarity Metrics and Norma…</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multimodal and Cross-Encoder…</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Dimensionality, Compression …</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#d97706" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Indexing for Approximate Nea…</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#d97706" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#f59e0b" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Embeddings  •  Operating Model</text></svg>
 
 </div>
 
 **Figure 6. Operating Model - Multimodal and Cross-Encoder Embeddings** (svg). Figure: Operating Model view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant U as User
-  participant G as Gateway
-  participant P as Processor
-  participant D as Data Store
-  U->>G: Submit request
-  G->>G: Validate & authorise
-  G->>P: Dispatch task
-  P->>D: Retrieve context
-  D-->>P: Return records
-  P->>P: Process & reason
-  P-->>G: Result + metadata
-  G-->>U: Response (with provenance)
+```plantuml
+@startuml
+title Sequence - Multimodal and Cross-Encoder Embeddings
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
 ```
 
-**Figure 7. Sequence - Multimodal and Cross-Encoder Embeddings** (mermaid). Figure: Sequence view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 7. Sequence - Multimodal and Cross-Encoder Embeddings** (plantuml). Figure: Sequence view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into multimodal and cross-encoder embeddings. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into multimodal and cross-encoder embeddings. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with word, sentence and document embeddings. Because word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1198,13 +1199,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into multimodal and cross-encoder embeddings. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into multimodal and cross-encoder embeddings. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with domain adaptation and fine-tuning. Because domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1212,7 +1213,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply multimodal and cross-encoder embeddings as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply multimodal and cross-encoder embeddings as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1284,81 +1285,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Multimodal and Cross-Encoder Embeddings logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Multimodal and Cross-Encoder Embeddings
+### Listing: Evaluating Multimodal and Cross-Encoder Embeddings with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Multimodal and Cross-Encoder Embeddings."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Multimodal and Cross-Encoder Embeddings output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Multimodal and Cross-Encoder Embeddings”?
-   - A. CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Multimodal and Cross-Encoder Embeddings: CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
-2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Best practice: Pin embedding model versions and re-index atomically on change.
-3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring drift after upgrading the embedding model.
+   - A. It removes all security and governance requirements.
+   - B. CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
    - C. It guarantees deterministic output regardless of input.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: B.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* How would you test and monitor Multimodal and Cross-Encoder Embeddings in production?
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Multimodal and Cross-Encoder Embeddings: CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - **Answer: D.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* Walk through how you would design Multimodal and Cross-Encoder Embeddings for an enterprise Embeddings workload.
    - **Model answer:** A strong answer defines multimodal and cross-encoder embeddings (CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1370,63 +1354,85 @@ _This chapter examines dimensionality, compression and quantisation within Embed
 
 ## Introduction
 
-Formally, Dimensionality, Compression and Quantisation addresses matryoshka embeddings, PCA and product quantisation for cost control. This concept recurs throughout the Embeddings lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Dimensionality, Compression and Quantisation refers to matryoshka embeddings, PCA and product quantisation for cost control. This concept recurs throughout the Embeddings lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Dimensionality, Compression and Quantisation as matryoshka embeddings, PCA and product quantisation for cost control. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Dimensionality, Compression and Quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, dimensionality, compression and quantisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, dimensionality, compression and quantisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
 
-Dimensionality, Compression and Quantisation cannot be understood in isolation from contrastive representation learning. Recall that contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Dimensionality, Compression and Quantisation cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Dimensionality, Compression and Quantisation cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Dimensionality, Compression and Quantisation cannot be understood in isolation from the retrieval stack reference architecture. Recall that the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to dimensionality, compression and quantisation. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to dimensionality, compression and quantisation. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around dimensionality, compression and quantisation are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Dimensionality, Compression and Quantisation is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, Dimensionality, Compression and Quantisation sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant U as User
+  participant G as Gateway
+  participant P as Processor
+  participant D as Data Store
+  U->>G: Submit request
+  G->>G: Validate & authorise
+  G->>P: Dispatch task
+  P->>D: Retrieve context
+  D-->>P: Return records
+  P->>P: Process & reason
+  P-->>G: Result + metadata
+  G-->>U: Response (with provenance)
+```
+
+**Figure 8. Sequence - Dimensionality, Compression and Quantisation** (mermaid). Figure: Sequence view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
-title Sequence - Dimensionality, Compression and Quantisation
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
+title Network - Dimensionality, Compression and Quantisation
+package "Embeddings Platform" {
+  component "From One-Hot to Distrib…" as C0
+  component "Word, Sentence and Docu…" as C1
+  component "Contrastive Representat…" as C2
+  component "Similarity Metrics and …" as C3
+  component "Multimodal and Cross-En…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
 @enduml
 ```
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 8. Sequence - Dimensionality, Compression and Quantisation** (plantuml). Figure: Sequence view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. Network - Dimensionality, Compression and Quantisation** (plantuml). Figure: Network view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into dimensionality, compression and quantisation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into dimensionality, compression and quantisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1434,13 +1440,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into dimensionality, compression and quantisation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into dimensionality, compression and quantisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal and cross-encoder embeddings. Because multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with embedding drift and re-indexing. Because embedding drift and re-indexing concerns detecting model changes and managing versioned vector stores, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1448,7 +1454,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply dimensionality, compression and quantisation as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply dimensionality, compression and quantisation as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1520,64 +1526,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Dimensionality, Compression and Quantisation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Dimensionality, Compression and Quantisation with a regression gate
+### Listing: A composable processing pipeline for Dimensionality, Compression and Quantisation
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Dimensionality, Compression and Quantisation output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Dimensionality, Compression and Quantisation."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Dimensionality, Compression and Quantisation”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Matryoshka embeddings, PCA and product quantisation for cost control.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Dimensionality, Compression and Quantisation: Matryoshka embeddings, PCA and product quantisation for cost control.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Matryoshka embeddings, PCA and product quantisation for cost control.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Dimensionality, Compression and Quantisation: Matryoshka embeddings, PCA and product quantisation for cost control.
 2. Which of the following is a recommended best practice when working with Embeddings?
    - A. Normalise vectors and pick the distance metric the model was trained for.
    - B. Mixing vectors from different model versions in one index.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. Mixing vectors from different model versions in one index.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
-4. *(Discussion)* How does Dimensionality, Compression and Quantisation interact with security and governance requirements?
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It applies exclusively to image data.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* What trade-offs would you weigh when implementing Dimensionality, Compression and Quantisation?
    - **Model answer:** A strong answer defines dimensionality, compression and quantisation (Matryoshka embeddings, PCA and product quantisation for cost control.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1595,80 +1618,85 @@ This chapter builds intuition first, then formalises the ideas, derives an archi
 
 ## Theory and Foundations
 
-We define Indexing for Approximate Nearest Neighbour Search as hNSW, IVF and the recall/latency frontier. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Indexing for Approximate Nearest Neighbour Search refers to hNSW, IVF and the recall/latency frontier. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, indexing for approximate nearest neighbour search is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, indexing for approximate nearest neighbour search is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
 
-Indexing for Approximate Nearest Neighbour Search cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Indexing for Approximate Nearest Neighbour Search cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Indexing for Approximate Nearest Neighbour Search cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Indexing for Approximate Nearest Neighbour Search cannot be understood in isolation from dimensionality, compression and quantisation. Recall that dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to indexing for approximate nearest neighbour search. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to indexing for approximate nearest neighbour search. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around indexing for approximate nearest neighbour search are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around indexing for approximate nearest neighbour search are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Indexing for Approximate Nearest Neighbour Search separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+A robust architecture for Indexing for Approximate Nearest Neighbour Search is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Network">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Network - Indexing for Approximate Nearest Neighbour Search" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 10. Network - Indexing for Approximate Nearest Neighbour Search** (drawio). Figure: Network view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
-title Network - Indexing for Approximate Nearest Neighbour Search
-package "Embeddings Platform" {
-  component "From One-Hot to Distrib…" as C0
-  component "Word, Sentence and Docu…" as C1
-  component "Contrastive Representat…" as C2
-  component "Similarity Metrics and …" as C3
-  component "Multimodal and Cross-En…" as C4
+title DevOps Pipeline - Indexing for Approximate Nearest Neighbour Search
+class Service {
+  +process(req)
+  +evaluate(sample)
 }
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
 @enduml
 ```
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 9. Network - Indexing for Approximate Nearest Neighbour Search** (plantuml). Figure: Network view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
-```
-
-**Figure 10. DevOps Pipeline - Indexing for Approximate Nearest Neighbour Search** (mermaid). Figure: DevOps Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 11. DevOps Pipeline - Indexing for Approximate Nearest Neighbour Search** (plantuml). Figure: DevOps Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into indexing for approximate nearest neighbour search. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into indexing for approximate nearest neighbour search. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating an embedding service. Because operating an embedding service concerns batching, caching, versioning and cost at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hybrid search. Because hybrid search concerns combining lexical (BM25) and dense retrieval with fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1678,11 +1706,11 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 Having established the essentials, we now go deeper into indexing for approximate nearest neighbour search. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with word, sentence and document embeddings. Because word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1690,7 +1718,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply indexing for approximate nearest neighbour search as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply indexing for approximate nearest neighbour search as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1762,75 +1790,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Indexing for Approximate Nearest Neighbour Search component with retry semantics and typed interfaces — the shape we expect from production Embeddings code rather than a notebook prototype.
+Pipelines keep Indexing for Approximate Nearest Neighbour Search logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Indexing for Approximate Nearest Neighbour Search component
+### Listing: A composable processing pipeline for Indexing for Approximate Nearest Neighbour Search
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class IndexingForApproximateConfig:
-    """Configuration for the Indexing for Approximate Nearest Neighbour Search component in a Embeddings system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class IndexingForApproximate:
-    """A minimal, production-shaped implementation of Indexing for Approximate Nearest Neighbour Search."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Indexing for Approximate Nearest Neighbour Search."""
 
-    def __init__(self, config: IndexingForApproximateConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"IndexingForApproximate failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Indexing for Approximate Nearest Neighbour Search goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Indexing for Approximate Nearest Neighbour Search”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. HNSW, IVF and the recall/latency frontier.
-   - **Answer: D.** Indexing for Approximate Nearest Neighbour Search: HNSW, IVF and the recall/latency frontier.
+   - A. It makes the system slower but has no other effect.
+   - B. HNSW, IVF and the recall/latency frontier.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Indexing for Approximate Nearest Neighbour Search: HNSW, IVF and the recall/latency frontier.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Mixing vectors from different model versions in one index.
-   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: C.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - A. It applies exclusively to image data.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. It applies exclusively to image data.
-   - C. Mixing vectors from different model versions in one index.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
-4. *(Discussion)* What trade-offs would you weigh when implementing Indexing for Approximate Nearest Neighbour Search?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. Ignoring drift after upgrading the embedding model.
+   - D. Normalise vectors and pick the distance metric the model was trained for.
+   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
+4. *(Discussion)* Explain Indexing for Approximate Nearest Neighbour Search and why it matters in a production Embeddings system.
    - **Model answer:** A strong answer defines indexing for approximate nearest neighbour search (HNSW, IVF and the recall/latency frontier.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1842,27 +1876,27 @@ _This chapter examines evaluating embedding quality within Embeddings. It covers
 
 ## Introduction
 
-Formally, Evaluating Embedding Quality addresses retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Formally, Evaluating Embedding Quality addresses retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. Teams that master this consistently ship more reliable Embeddings systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Evaluating Embedding Quality is best understood as retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Evaluating Embedding Quality addresses retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, evaluating embedding quality is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, evaluating embedding quality is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
 
-Evaluating Embedding Quality cannot be understood in isolation from contrastive representation learning. Recall that contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Evaluating Embedding Quality cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Evaluating Embedding Quality cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluating Embedding Quality cannot be understood in isolation from word, sentence and document embeddings. Recall that word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to evaluating embedding quality. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluating embedding quality. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluating embedding quality are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluating embedding quality are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Evaluating Embedding Quality separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+A robust architecture for Evaluating Embedding Quality is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1870,63 +1904,35 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title DevOps Pipeline - Evaluating Embedding Quality
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 11. DevOps Pipeline - Evaluating Embedding Quality** (plantuml). Figure: DevOps Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Application Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Application Flow - Evaluating Embedding Quality" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 12. Application Flow - Evaluating Embedding Quality** (drawio). Figure: Application Flow view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. DevOps Pipeline - Evaluating Embedding Quality** (mermaid). Figure: DevOps Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into evaluating embedding quality. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with domain adaptation and fine-tuning. Because domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1934,13 +1940,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluating embedding quality. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluating embedding quality. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with embedding drift and re-indexing. Because embedding drift and re-indexing concerns detecting model changes and managing versioned vector stores, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with word, sentence and document embeddings. Because word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1948,7 +1954,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply evaluating embedding quality as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply evaluating embedding quality as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2071,24 +2077,24 @@ class EvaluatingEmbeddingQuality:
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Evaluating Embedding Quality”?
-   - A. It applies exclusively to image data.
-   - B. Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Evaluating Embedding Quality: Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
+   - A. Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Evaluating Embedding Quality: Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Pin embedding model versions and re-index atomically on change.
-   - B. It removes all security and governance requirements.
-   - C. Choosing the wrong similarity metric for the embedding model.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Pin embedding model versions and re-index atomically on change.
+   - A. It makes the system slower but has no other effect.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Mixing vectors from different model versions in one index.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Ignoring drift after upgrading the embedding model.
-   - B. It makes the system slower but has no other effect.
-   - C. Use hybrid search to recover exact-match and rare-term queries.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: A.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* How does Evaluating Embedding Quality interact with security and governance requirements?
+   - A. Mixing vectors from different model versions in one index.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+4. *(Discussion)* Describe a failure mode of Evaluating Embedding Quality and how you would mitigate it.
    - **Model answer:** A strong answer defines evaluating embedding quality (Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2100,33 +2106,33 @@ _This chapter examines domain adaptation and fine-tuning within Embeddings. It c
 
 ## Introduction
 
-Domain Adaptation and Fine-Tuning refers to adapting general embeddings to specialised corpora. Getting this right early prevents expensive rework once a Embeddings system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Domain Adaptation and Fine-Tuning is best understood as adapting general embeddings to specialised corpora. This concept recurs throughout the Embeddings lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Domain Adaptation and Fine-Tuning as adapting general embeddings to specialised corpora. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Domain Adaptation and Fine-Tuning addresses adapting general embeddings to specialised corpora. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, domain adaptation and fine-tuning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, domain adaptation and fine-tuning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Getting this right early prevents expensive rework once a Embeddings system reaches scale.
 
-Domain Adaptation and Fine-Tuning cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Domain Adaptation and Fine-Tuning cannot be understood in isolation from contrastive representation learning. Recall that contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Domain Adaptation and Fine-Tuning cannot be understood in isolation from dimensionality, compression and quantisation. Recall that dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Domain Adaptation and Fine-Tuning cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to domain adaptation and fine-tuning. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to domain adaptation and fine-tuning. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around domain adaptation and fine-tuning are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around domain adaptation and fine-tuning are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Domain Adaptation and Fine-Tuning separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+A robust architecture for Domain Adaptation and Fine-Tuning is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```plantuml
 @startuml
@@ -2147,44 +2153,15 @@ _Source diagram (plantuml); render with the appropriate tool._
 
 **Figure 13. Application Flow - Domain Adaptation and Fine-Tuning** (plantuml). Figure: Application Flow view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Infrastructure">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Domain Adaptation and Fine-Tuning" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 14. Infrastructure - Domain Adaptation and Fine-Tuning** (drawio). Figure: Infrastructure view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into domain adaptation and fine-tuning. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into domain adaptation and fine-tuning. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from one-hot to distributed representations. Because from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2192,13 +2169,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into domain adaptation and fine-tuning. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into domain adaptation and fine-tuning. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with hybrid search. Because hybrid search concerns combining lexical (BM25) and dense retrieval with fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the retrieval stack reference architecture. Because the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2206,7 +2183,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply domain adaptation and fine-tuning as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A compliance organisation needs near-duplicate detection across document repositories. They decide to apply domain adaptation and fine-tuning as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2402,15 +2379,36 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 15. Infrastructure - Embedding Drift and Re-Indexing** (drawio). Figure: Infrastructure view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 14. Infrastructure - Embedding Drift and Re-Indexing** (drawio). Figure: Infrastructure view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="Agent Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Agent Architecture - Embedding Drift and Re-Indexing" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="11-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#0f172a"/><rect x="0" y="30" width="840" height="16" fill="#0f172a"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Agent Architecture - Embedding Drift and Re-Indexing</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#0f172a"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a" dominant-baseline="middle">1</text><text x="104" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Domain Adaptati…</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#1e40af"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e40af" dominant-baseline="middle">2</text><text x="266" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Embedding Drift…</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#0e7490"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0e7490" dominant-baseline="middle">3</text><text x="428" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Hybrid Search</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#b45309"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309" dominant-baseline="middle">4</text><text x="590" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Operating an Em…</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#9f1239"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#9f1239" dominant-baseline="middle">5</text><text x="752" y="250" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Privacy and Emb…</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
-
-**Figure 16. Agent Architecture - Embedding Drift and Re-Indexing** (svg). Figure: Agent Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 15. Agent Architecture - Embedding Drift and Re-Indexing** (drawio). Figure: Agent Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2572,23 +2570,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Embeddings, which statement best describes “Embedding Drift and Re-Indexing”?
    - A. It applies exclusively to image data.
-   - B. Detecting model changes and managing versioned vector stores.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Embedding Drift and Re-Indexing: Detecting model changes and managing versioned vector stores.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Detecting model changes and managing versioned vector stores.
+   - **Answer: D.** Embedding Drift and Re-Indexing: Detecting model changes and managing versioned vector stores.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It is only relevant to academic research, not production.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It applies exclusively to image data.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. Use hybrid search to recover exact-match and rare-term queries.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. Over-chunking or under-chunking documents before embedding.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* Walk through how you would design Embedding Drift and Re-Indexing for an enterprise Embeddings workload.
+   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Mixing vectors from different model versions in one index.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+4. *(Discussion)* Explain Embedding Drift and Re-Indexing and why it matters in a production Embeddings system.
    - **Model answer:** A strong answer defines embedding drift and re-indexing (Detecting model changes and managing versioned vector stores.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2600,23 +2598,23 @@ _This chapter examines hybrid search within Embeddings. It covers combining lexi
 
 ## Introduction
 
-In practical terms, Hybrid Search is best understood as combining lexical (BM25) and dense retrieval with fusion. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Hybrid Search refers to combining lexical (BM25) and dense retrieval with fusion. This concept recurs throughout the Embeddings lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Hybrid Search as combining lexical (BM25) and dense retrieval with fusion. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Hybrid Search is best understood as combining lexical (BM25) and dense retrieval with fusion. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, hybrid search is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, hybrid search is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Teams that master this consistently ship more reliable Embeddings systems at lower cost.
 
-Hybrid Search cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hybrid Search cannot be understood in isolation from word, sentence and document embeddings. Recall that word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Hybrid Search cannot be understood in isolation from dimensionality, compression and quantisation. Recall that dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Hybrid Search cannot be understood in isolation from evaluating embedding quality. Recall that evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to hybrid search. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hybrid search. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hybrid search are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around hybrid search are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2626,62 +2624,38 @@ Concretely, the principal building blocks include from one-hot to distributed re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Embeddings Platform"]
-    GW[Gateway / Orchestrator]
-    S0[From One-Hot to Distribut…]
-    S1[Word, Sentence and Docume…]
-    S2[Contrastive Representatio…]
-    S3[Similarity Metrics and No…]
-    S4[Multimodal and Cross-Enco…]
-    S5[Dimensionality, Compressi…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Agent Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Agent Architecture - Hybrid Search" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 17. Agent Architecture - Hybrid Search** (mermaid). Figure: Agent Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 16. Agent Architecture - Hybrid Search** (drawio). Figure: Agent Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into hybrid search. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
-In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with from one-hot to distributed representations. Because from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Mikolov et al. — Word2Vec (2013) and Reimers & Gurevych — Sentence-BERT (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into hybrid search. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -2689,7 +2663,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with word, sentence and document embeddings. Because word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Mikolov et al. — Word2Vec (2013) and Reimers & Gurevych — Sentence-BERT (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into hybrid search. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+
+In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2697,7 +2685,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply hybrid search as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply hybrid search as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2769,81 +2757,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Hybrid Search logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Hybrid Search
+### Listing: Evaluating Hybrid Search with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Hybrid Search."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Hybrid Search output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Hybrid Search”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Combining lexical (BM25) and dense retrieval with fusion.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Hybrid Search: Combining lexical (BM25) and dense retrieval with fusion.
-2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Over-chunking or under-chunking documents before embedding.
+   - A. Combining lexical (BM25) and dense retrieval with fusion.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* How would you test and monitor Hybrid Search in production?
+   - **Answer: A.** Hybrid Search: Combining lexical (BM25) and dense retrieval with fusion.
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It applies exclusively to image data.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It makes the system slower but has no other effect.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. Normalise vectors and pick the distance metric the model was trained for.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: B.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* Describe a failure mode of Hybrid Search and how you would mitigate it.
    - **Model answer:** A strong answer defines hybrid search (Combining lexical (BM25) and dense retrieval with fusion.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2855,27 +2826,27 @@ _This chapter examines operating an embedding service within Embeddings. It cove
 
 ## Introduction
 
-In practical terms, Operating an Embedding Service is best understood as batching, caching, versioning and cost at scale. This concept recurs throughout the Embeddings lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Operating an Embedding Service can be characterised as batching, caching, versioning and cost at scale. Neglecting it is one of the most common reasons Embeddings initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Operating an Embedding Service is best understood as batching, caching, versioning and cost at scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Operating an Embedding Service concerns batching, caching, versioning and cost at scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, operating an embedding service is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Neglecting it is one of the most common reasons Embeddings initiatives stall in production.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, operating an embedding service is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
 
-Operating an Embedding Service cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Operating an Embedding Service cannot be understood in isolation from embedding drift and re-indexing. Recall that embedding drift and re-indexing concerns detecting model changes and managing versioned vector stores. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Operating an Embedding Service cannot be understood in isolation from the retrieval stack reference architecture. Recall that the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Operating an Embedding Service cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to operating an embedding service. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating an embedding service. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating an embedding service are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating an embedding service are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Operating an Embedding Service separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, Operating an Embedding Service sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -2883,23 +2854,29 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```mermaid
+graph LR
+  D(("Embeddings"))
+  D --- C0[From One-Hot to Distr…]
+  D --- C1[Word, Sentence and Do…]
+  D --- C2[Contrastive Represent…]
+  D --- C3[Similarity Metrics an…]
+  D --- C4[Multimodal and Cross-…]
+  C0 --- C1
+  C1 --- C2
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#0d9488"/><rect x="0" y="30" width="840" height="16" fill="#0d9488"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Operating an Embedding Service</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Embeddings</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#0d9488"/><text x="420" y="88" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Embedding Qua…</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#14b8a6"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Domain Adaptation and Fi…</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#047857"/><text x="654" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Embedding Drift and Re-I…</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#059669"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hybrid Search</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#10b981"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating an Embedding S…</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#34d399"/><text x="186" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Privacy and Embedding In…</text></svg>
-
-</div>
-
-**Figure 18. Knowledge Graph - Operating an Embedding Service** (svg). Figure: Knowledge Graph view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 17. Knowledge Graph - Operating an Embedding Service** (mermaid). Figure: Knowledge Graph view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating an embedding service. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating an embedding service. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with indexing for approximate nearest neighbour search. Because indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with embedding drift and re-indexing. Because embedding drift and re-indexing concerns detecting model changes and managing versioned vector stores, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2907,13 +2884,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating an embedding service. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating an embedding service. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal and cross-encoder embeddings. Because multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2921,7 +2898,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply operating an embedding service as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply operating an embedding service as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2993,64 +2970,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Operating an Embedding Service logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Operating an Embedding Service with a regression gate
+### Listing: A composable processing pipeline for Operating an Embedding Service
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Operating an Embedding Service output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Operating an Embedding Service."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Operating an Embedding Service”?
-   - A. Batching, caching, versioning and cost at scale.
-   - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Operating an Embedding Service: Batching, caching, versioning and cost at scale.
+   - A. It removes all security and governance requirements.
+   - B. Batching, caching, versioning and cost at scale.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Operating an Embedding Service: Batching, caching, versioning and cost at scale.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It makes the system slower but has no other effect.
-   - D. Mixing vectors from different model versions in one index.
-   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
+   - A. It makes the system slower but has no other effect.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
-   - D. Pin embedding model versions and re-index atomically on change.
-   - **Answer: B.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* How does Operating an Embedding Service interact with security and governance requirements?
+   - A. Pin embedding model versions and re-index atomically on change.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. Mixing vectors from different model versions in one index.
+   - **Answer: D.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+4. *(Discussion)* Describe a failure mode of Operating an Embedding Service and how you would mitigate it.
    - **Model answer:** A strong answer defines operating an embedding service (Batching, caching, versioning and cost at scale.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3062,33 +3056,33 @@ _This chapter examines privacy and embedding inversion within Embeddings. It cov
 
 ## Introduction
 
-In practical terms, Privacy and Embedding Inversion is best understood as what embeddings leak and how to mitigate it. Neglecting it is one of the most common reasons Embeddings initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Privacy and Embedding Inversion refers to what embeddings leak and how to mitigate it. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Privacy and Embedding Inversion can be characterised as what embeddings leak and how to mitigate it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Privacy and Embedding Inversion addresses what embeddings leak and how to mitigate it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, privacy and embedding inversion is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
 
-Privacy and Embedding Inversion cannot be understood in isolation from dimensionality, compression and quantisation. Recall that dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Privacy and Embedding Inversion cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Privacy and Embedding Inversion cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Privacy and Embedding Inversion cannot be understood in isolation from contrastive representation learning. Recall that contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to privacy and embedding inversion. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to privacy and embedding inversion. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around privacy and embedding inversion are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around privacy and embedding inversion are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Privacy and Embedding Inversion is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, Privacy and Embedding Inversion sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```plantuml
 @startuml
@@ -3111,17 +3105,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 19. Deployment - Privacy and Embedding Inversion** (plantuml). Figure: Deployment view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 18. Deployment - Privacy and Embedding Inversion** (plantuml). Figure: Deployment view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into privacy and embedding inversion. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with dimensionality, compression and quantisation. Because dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with domain adaptation and fine-tuning. Because domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3129,13 +3123,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into privacy and embedding inversion. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into privacy and embedding inversion. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with indexing for approximate nearest neighbour search. Because indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3143,7 +3137,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply privacy and embedding inversion as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply privacy and embedding inversion as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3266,24 +3260,24 @@ class PrivacyAndEmbedding:
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Privacy and Embedding Inversion”?
-   - A. It is only relevant to academic research, not production.
-   - B. What embeddings leak and how to mitigate it.
-   - C. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. What embeddings leak and how to mitigate it.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Privacy and Embedding Inversion: What embeddings leak and how to mitigate it.
+   - **Answer: C.** Privacy and Embedding Inversion: What embeddings leak and how to mitigate it.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Pin embedding model versions and re-index atomically on change.
-   - D. Choosing the wrong similarity metric for the embedding model.
-   - **Answer: C.** Best practice: Pin embedding model versions and re-index atomically on change.
-3. Which of the following is a common pitfall to avoid in Embeddings?
    - A. It is only relevant to academic research, not production.
    - B. It guarantees deterministic output regardless of input.
-   - C. Pin embedding model versions and re-index atomically on change.
-   - D. Mixing vectors from different model versions in one index.
-   - **Answer: D.** Pitfall to avoid: Mixing vectors from different model versions in one index.
-4. *(Discussion)* Walk through how you would design Privacy and Embedding Inversion for an enterprise Embeddings workload.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. Normalise vectors and pick the distance metric the model was trained for.
+   - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* How does Privacy and Embedding Inversion interact with security and governance requirements?
    - **Model answer:** A strong answer defines privacy and embedding inversion (What embeddings leak and how to mitigate it.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3295,54 +3289,78 @@ _This chapter examines the retrieval stack reference architecture within Embeddi
 
 ## Introduction
 
-We define The Retrieval Stack Reference Architecture as embedding service, vector index and re-ranking as a pipeline. This concept recurs throughout the Embeddings lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, The Retrieval Stack Reference Architecture concerns embedding service, vector index and re-ranking as a pipeline. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-The Retrieval Stack Reference Architecture can be characterised as embedding service, vector index and re-ranking as a pipeline. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+The Retrieval Stack Reference Architecture refers to embedding service, vector index and re-ranking as a pipeline. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, the retrieval stack reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, the retrieval stack reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. This concept recurs throughout the Embeddings lifecycle, from design to operations.
 
-The Retrieval Stack Reference Architecture cannot be understood in isolation from evaluating embedding quality. Recall that evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+The Retrieval Stack Reference Architecture cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-The Retrieval Stack Reference Architecture cannot be understood in isolation from privacy and embedding inversion. Recall that privacy and embedding inversion concerns what embeddings leak and how to mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+The Retrieval Stack Reference Architecture cannot be understood in isolation from evaluating embedding quality. Recall that evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to the retrieval stack reference architecture. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the retrieval stack reference architecture. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around the retrieval stack reference architecture are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around the retrieval stack reference architecture are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for The Retrieval Stack Reference Architecture separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, The Retrieval Stack Reference Architecture sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```plantuml
-@startuml
-title RAG Architecture - The Retrieval Stack Reference Architecture
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="RAG Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="RAG Architecture - The Retrieval Stack Reference Architectu…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 20. RAG Architecture - The Retrieval Stack Reference Architecture** (plantuml). Figure: RAG Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 19. RAG Architecture - The Retrieval Stack Reference Architecture** (drawio). Figure: RAG Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
+
+Having established the essentials, we now go deeper into the retrieval stack reference architecture. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with from one-hot to distributed representations. Because from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Mikolov et al. — Word2Vec (2013) and Reimers & Gurevych — Sentence-BERT (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
 
 Having established the essentials, we now go deeper into the retrieval stack reference architecture. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -3356,23 +3374,9 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Mikolov et al. — Word2Vec (2013) and Reimers & Gurevych — Sentence-BERT (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
 
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into the retrieval stack reference architecture. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
-
-In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Mikolov et al. — Word2Vec (2013) and Reimers & Gurevych — Sentence-BERT (2019). These primary sources reward careful reading and ground the practical guidance above in established results.
-
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply the retrieval stack reference architecture as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A compliance organisation needs near-duplicate detection across document repositories. They decide to apply the retrieval stack reference architecture as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3484,24 +3488,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “The Retrieval Stack Reference Architecture”?
-   - A. It is only relevant to academic research, not production.
-   - B. Embedding service, vector index and re-ranking as a pipeline.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** The Retrieval Stack Reference Architecture: Embedding service, vector index and re-ranking as a pipeline.
+   - A. Embedding service, vector index and re-ranking as a pipeline.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** The Retrieval Stack Reference Architecture: Embedding service, vector index and re-ranking as a pipeline.
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
-3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - A. Over-chunking or under-chunking documents before embedding.
    - B. It removes all security and governance requirements.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* How does The Retrieval Stack Reference Architecture interact with security and governance requirements?
+   - C. Pin embedding model versions and re-index atomically on change.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Pin embedding model versions and re-index atomically on change.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It is only relevant to academic research, not production.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: B.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* How would you test and monitor The Retrieval Stack Reference Architecture in production?
    - **Model answer:** A strong answer defines the retrieval stack reference architecture (Embedding service, vector index and re-ranking as a pipeline.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3513,23 +3517,23 @@ _This chapter examines putting it together: a reference implementation within Em
 
 ## Introduction
 
-Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole. Getting this right early prevents expensive rework once a Embeddings system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole. This concept recurs throughout the Embeddings lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Putting It Together: A Reference Implementation refers to an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Getting this right early prevents expensive rework once a Embeddings system reaches scale.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from the retrieval stack reference architecture. Recall that the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from multimodal and cross-encoder embeddings. Recall that multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3539,7 +3543,7 @@ Concretely, the principal building blocks include from one-hot to distributed re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```plantuml
 @startuml
@@ -3558,19 +3562,11 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 21. Architecture - Putting It Together: A Reference Implementation** (plantuml). Figure: Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="10-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#14532d"/><rect x="0" y="30" width="840" height="16" fill="#14532d"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Putting It Together: A Reference Implementat…</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#14532d"/><text x="104" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Indexing for Appro…</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#166534"/><text x="262" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Embeddi…</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#15803d"/><text x="420" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Domain Adaptation …</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#16a34a"/><text x="578" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Embedding Drift an…</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#22c55e"/><text x="736" y="230" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hybrid Search</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text></svg>
-
-</div>
-
-**Figure 22. Business Process - Putting It Together: A Reference Implementation** (svg). Figure: Business Process view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 20. Architecture - Putting It Together: A Reference Implementation** (plantuml). Figure: Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
@@ -3584,13 +3580,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from one-hot to distributed representations. Because from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3598,7 +3594,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply putting it together: a reference implementation as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply putting it together: a reference implementation as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3670,81 +3666,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Putting It Together: A Reference Implementation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Putting It Together: A Reference Implementation
+### Listing: Evaluating Putting It Together: A Reference Implementation with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Putting It Together: A Reference Implementation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Putting It Together: A Reference Implementation output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. It removes all security and governance requirements.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - B. Mixing vectors from different model versions in one index.
+   - C. Over-chunking or under-chunking documents before embedding.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 3. Which of the following is a common pitfall to avoid in Embeddings?
    - A. It makes the system slower but has no other effect.
    - B. Ignoring drift after upgrading the embedding model.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* What trade-offs would you weigh when implementing Putting It Together: A Reference Implementation?
+4. *(Discussion)* How would you test and monitor Putting It Together: A Reference Implementation in production?
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3756,33 +3735,33 @@ _This chapter examines hands-on lab: building an end-to-end embeddings system wi
 
 ## Introduction
 
-Formally, Hands-On Lab: Building an End-to-End Embeddings System addresses a guided, build-along laboratory that constructs a functioning Embeddings system from first principles. This concept recurs throughout the Embeddings lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Hands-On Lab: Building an End-to-End Embeddings System concerns a guided, build-along laboratory that constructs a functioning Embeddings system from first principles. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Hands-On Lab: Building an End-to-End Embeddings System concerns a guided, build-along laboratory that constructs a functioning Embeddings system from first principles. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Hands-On Lab: Building an End-to-End Embeddings System concerns a guided, build-along laboratory that constructs a functioning Embeddings system from first principles. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, hands-on lab: building an end-to-end embeddings system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, hands-on lab: building an end-to-end embeddings system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Getting this right early prevents expensive rework once a Embeddings system reaches scale.
 
-Hands-On Lab: Building an End-to-End Embeddings System cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Hands-On Lab: Building an End-to-End Embeddings System cannot be understood in isolation from the retrieval stack reference architecture. Recall that the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Hands-On Lab: Building an End-to-End Embeddings System cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Hands-On Lab: Building an End-to-End Embeddings System cannot be understood in isolation from dimensionality, compression and quantisation. Recall that dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end embeddings system. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end embeddings system. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end embeddings system are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end embeddings system are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Hands-On Lab: Building an End-to-End Embeddings System is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+The reference architecture for Hands-On Lab: Building an End-to-End Embeddings System separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```plantuml
 @startuml
@@ -3801,17 +3780,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 23. Business Process - Hands-On Lab: Building an End-to-End Embeddings System** (plantuml). Figure: Business Process view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 21. Business Process - Hands-On Lab: Building an End-to-End Embeddings System** (plantuml). Figure: Business Process view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end embeddings system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end embeddings system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the retrieval stack reference architecture. Because the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3825,7 +3804,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal and cross-encoder embeddings. Because multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3833,7 +3812,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-Consider a concrete scenario. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply hands-on lab: building an end-to-end embeddings system as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply hands-on lab: building an end-to-end embeddings system as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3905,81 +3884,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Hands-On Lab: Building an End-to-End Embeddings System logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Hands-On Lab: Building an End-to-End Embeddings System component with retry semantics and typed interfaces — the shape we expect from production Embeddings code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Hands-On Lab: Building an End-to-End Embeddings System
+### Listing: Implementing a Hands-On Lab: Building an End-to-End Embeddings System component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class BuildingConfig:
+    """Configuration for the Hands-On Lab: Building an End-to-End Embeddings System component in a Embeddings system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Hands-On Lab: Building an End-to-End Embeddings System."""
+class Building:
+    """A minimal, production-shaped implementation of Hands-On Lab: Building an End-to-End Embeddings System."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: BuildingConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"Building failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Hands-On Lab: Building an End-to-End Embeddings System goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Hands-On Lab: Building an End-to-End Embeddings System”?
-   - A. It removes all security and governance requirements.
+   - A. a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
    - B. It is only relevant to academic research, not production.
-   - C. a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Hands-On Lab: Building an End-to-End Embeddings System: a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
-2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. Ignoring drift after upgrading the embedding model.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Hands-On Lab: Building an End-to-End Embeddings System: a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It makes the system slower but has no other effect.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Ignoring drift after upgrading the embedding model.
+   - D. Over-chunking or under-chunking documents before embedding.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - B. Over-chunking or under-chunking documents before embedding.
-   - C. It makes the system slower but has no other effect.
-   - D. Use hybrid search to recover exact-match and rare-term queries.
-   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* Walk through how you would design Hands-On Lab: Building an End-to-End Embeddings System for an enterprise Embeddings workload.
+   - A. It makes the system slower but has no other effect.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. Pin embedding model versions and re-index atomically on change.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* How does Hands-On Lab: Building an End-to-End Embeddings System interact with security and governance requirements?
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end embeddings system (a guided, build-along laboratory that constructs a functioning Embeddings system from first principles) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3991,63 +3964,62 @@ _This chapter examines case study: search at scale within Embeddings. It covers 
 
 ## Introduction
 
-Case Study: Search at Scale can be characterised as a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes. It is foundational: later capabilities in Embeddings are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+At its core, Case Study: Search at Scale concerns a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes. Neglecting it is one of the most common reasons Embeddings initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Case Study: Search at Scale can be characterised as a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+In practical terms, Case Study: Search at Scale is best understood as a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, case study: search at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, case study: search at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. This concept recurs throughout the Embeddings lifecycle, from design to operations.
 
-Case Study: Search at Scale cannot be understood in isolation from evaluating embedding quality. Recall that evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Case Study: Search at Scale cannot be understood in isolation from the retrieval stack reference architecture. Recall that the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 Case Study: Search at Scale cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to case study: search at scale. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: search at scale. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around case study: search at scale are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: search at scale are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Case Study: Search at Scale is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+The reference architecture for Case Study: Search at Scale separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-classDiagram
-  class EService {
-    +configure(config)
-    +process(request) Response
-    +evaluate(sample) Metrics
-  }
-  class Repository {
-    +get(id) Entity
-    +put(entity)
-  }
-  class Policy {
-    +authorise(ctx) bool
-  }
-  EService --> Repository
-  EService --> Policy
+```plantuml
+@startuml
+title Class - Case Study: Search at Scale
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 24. Class - Case Study: Search at Scale** (mermaid). Figure: Class view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 22. Class - Case Study: Search at Scale** (plantuml). Figure: Class view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: search at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: search at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the retrieval stack reference architecture. Because the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4055,13 +4027,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into case study: search at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: search at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal and cross-encoder embeddings. Because multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4198,24 +4170,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Case Study: Search at Scale”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Case Study: Search at Scale: a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
+   - C. It makes the system slower but has no other effect.
+   - D. a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
+   - **Answer: D.** Case Study: Search at Scale: a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. Over-chunking or under-chunking documents before embedding.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. Ignoring drift after upgrading the embedding model.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Pin embedding model versions and re-index atomically on change.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: D.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* Walk through how you would design Case Study: Search at Scale for an enterprise Embeddings workload.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Use hybrid search to recover exact-match and rare-term queries.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* Explain Case Study: Search at Scale and why it matters in a production Embeddings system.
    - **Model answer:** A strong answer defines case study: search at scale (a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4227,82 +4199,51 @@ _This chapter examines operating in production within Embeddings. It covers the 
 
 ## Introduction
 
-Operating in Production refers to the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Operating in Production refers to the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement. It is foundational: later capabilities in Embeddings are built directly on top of it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Operating in Production refers to the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Operating in Production addresses the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions.
 
-Operating in Production cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Operating in Production cannot be understood in isolation from multimodal and cross-encoder embeddings. Recall that multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Operating in Production cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Operating in Production cannot be understood in isolation from privacy and embedding inversion. Recall that privacy and embedding inversion concerns what embeddings leak and how to mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to operating in production. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating in production are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating in production are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Operating in Production separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, Operating in Production sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Embeddings Platform"]
-    GW[Gateway / Orchestrator]
-    S0[From One-Hot to Distribut…]
-    S1[Word, Sentence and Docume…]
-    S2[Contrastive Representatio…]
-    S3[Similarity Metrics and No…]
-    S4[Multimodal and Cross-Enco…]
-    S5[Dimensionality, Compressi…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
+<div class="diagram-svg">
 
-**Figure 25. Security Architecture - Operating in Production** (mermaid). Figure: Security Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="1-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnfa948eb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0891b2"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnfa948eb)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnfa948eb)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Operating in Production</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#0891b2"/><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluating Embe…</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#0ea5e9"/><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Domain Adaptati…</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#38bdf8"/><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Embedding Drift…</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#0284c7"/><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Hybrid Search</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Embeddings  •  Security Architecture</text></svg>
+
+</div>
+
+**Figure 23. Security Architecture - Operating in Production** (svg). Figure: Security Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating an embedding service. Because operating an embedding service concerns batching, caching, versioning and cost at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal and cross-encoder embeddings. Because multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4310,13 +4251,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4324,7 +4265,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply operating in production as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply operating in production as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4447,24 +4388,24 @@ class OperatingInProduction:
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Operating in Production”?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Operating in Production: the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
-2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. It makes the system slower but has no other effect.
+   - A. the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
+   - B. It is only relevant to academic research, not production.
    - C. It guarantees deterministic output regardless of input.
-   - D. Choosing the wrong similarity metric for the embedding model.
-   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Operating in Production: the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It applies exclusively to image data.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. It removes all security and governance requirements.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
+   - A. It removes all security and governance requirements.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Mixing vectors from different model versions in one index.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* Explain Operating in Production and why it matters in a production Embeddings system.
+   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+4. *(Discussion)* What trade-offs would you weigh when implementing Operating in Production?
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4476,85 +4417,82 @@ _This chapter examines evaluation and quality assurance within Embeddings. It co
 
 ## Introduction
 
-Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release. Getting this right early prevents expensive rework once a Embeddings system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+In practical terms, Evaluation and Quality Assurance is best understood as a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release. It is foundational: later capabilities in Embeddings are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Evaluation and Quality Assurance is best understood as a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Teams that master this consistently ship more reliable Embeddings systems at lower cost.
 
-Evaluation and Quality Assurance cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Evaluation and Quality Assurance cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Evaluation and Quality Assurance cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Quality Assurance cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Evaluation and Quality Assurance separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Component - Evaluation and Quality Assurance
-package "Embeddings Platform" {
-  component "From One-Hot to Distrib…" as C0
-  component "Word, Sentence and Docu…" as C1
-  component "Contrastive Representat…" as C2
-  component "Similarity Metrics and …" as C3
-  component "Multimodal and Cross-En…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Embeddings Platform"]
+    GW[Gateway / Orchestrator]
+    S0[From One-Hot to Distribut…]
+    S1[Word, Sentence and Docume…]
+    S2[Contrastive Representatio…]
+    S3[Similarity Metrics and No…]
+    S4[Multimodal and Cross-Enco…]
+    S5[Dimensionality, Compressi…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 26. Component - Evaluation and Quality Assurance** (plantuml). Figure: Component view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Data Flow - Evaluation and Quality Assurance
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 27. Data Flow - Evaluation and Quality Assurance** (plantuml). Figure: Data Flow view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. Component - Evaluation and Quality Assurance** (mermaid). Figure: Component view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating an embedding service. Because operating an embedding service concerns batching, caching, versioning and cost at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hybrid search. Because hybrid search concerns combining lexical (BM25) and dense retrieval with fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4562,13 +4500,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with dimensionality, compression and quantisation. Because dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with privacy and embedding inversion. Because privacy and embedding inversion concerns what embeddings leak and how to mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4648,64 +4586,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
+### Listing: A composable processing pipeline for Evaluation and Quality Assurance
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
-2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It guarantees deterministic output regardless of input.
+   - A. a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
    - B. It removes all security and governance requirements.
-   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Mixing vectors from different model versions in one index.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: D.** Best practice: Pin embedding model versions and re-index atomically on change.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It applies exclusively to image data.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
+   - A. Mixing vectors from different model versions in one index.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+4. *(Discussion)* Walk through how you would design Evaluation and Quality Assurance for an enterprise Embeddings workload.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4717,27 +4672,27 @@ _This chapter examines security, privacy and governance within Embeddings. It co
 
 ## Introduction
 
-Security, Privacy and Governance refers to the security, privacy and governance controls that make a Embeddings system trustworthy and compliant. Neglecting it is one of the most common reasons Embeddings initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Embeddings system trustworthy and compliant. Getting this right early prevents expensive rework once a Embeddings system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Security, Privacy and Governance is best understood as the security, privacy and governance controls that make a Embeddings system trustworthy and compliant. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Embeddings system trustworthy and compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Getting this right early prevents expensive rework once a Embeddings system reaches scale.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Neglecting it is one of the most common reasons Embeddings initiatives stall in production.
 
-Security, Privacy and Governance cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security, Privacy and Governance cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Security, Privacy and Governance cannot be understood in isolation from word, sentence and document embeddings. Recall that word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to security, privacy and governance. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4745,52 +4700,48 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_v" data-pal="10-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#4ade80"/><rect x="0" y="30" width="840" height="16" fill="#4ade80"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Security, Privacy and Governance</text><rect x="270" y="70" width="300" height="52" rx="11" fill="#4ade80"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Dimensionality, Compression and Quantisation</text><rect x="270" y="144" width="300" height="52" rx="11" fill="#14532d"/><text x="420" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Indexing for Approximate Nearest Neighbour S…</text><line x1="420" y1="122" x2="420" y2="144" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="218" width="300" height="52" rx="11" fill="#166534"/><text x="420" y="244" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Embedding Quality</text><line x1="420" y1="196" x2="420" y2="218" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="292" width="300" height="52" rx="11" fill="#15803d"/><text x="420" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Domain Adaptation and Fine-Tuning</text><line x1="420" y1="270" x2="420" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="366" width="300" height="52" rx="11" fill="#16a34a"/><text x="420" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Embedding Drift and Re-Indexing</text><line x1="420" y1="344" x2="420" y2="366" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/></svg>
-
-</div>
-
-**Figure 28. Data Flow - Security, Privacy and Governance** (svg). Figure: Data Flow view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="CI/CD Pipeline">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="CI/CD Pipeline - Security, Privacy and Governance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+**Figure 25. Data Flow - Security, Privacy and Governance** (mermaid). Figure: Data Flow view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 29. CI/CD Pipeline - Security, Privacy and Governance** (drawio). Figure: CI/CD Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```mermaid
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0
+```
+
+**Figure 26. CI/CD Pipeline - Security, Privacy and Governance** (mermaid). Figure: CI/CD Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with indexing for approximate nearest neighbour search. Because indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with domain adaptation and fine-tuning. Because domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4800,11 +4751,11 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with word, sentence and document embeddings. Because word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating an embedding service. Because operating an embedding service concerns batching, caching, versioning and cost at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4812,7 +4763,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply security, privacy and governance as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply security, privacy and governance as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4884,81 +4835,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Security, Privacy and Governance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Security, Privacy and Governance component with retry semantics and typed interfaces — the shape we expect from production Embeddings code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Security, Privacy and Governance
+### Listing: Implementing a Security, Privacy and Governance component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class PrivacyAndConfig:
+    """Configuration for the Security, Privacy and Governance component in a Embeddings system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Security, Privacy and Governance."""
+class PrivacyAnd:
+    """A minimal, production-shaped implementation of Security, Privacy and Governance."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: PrivacyAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PrivacyAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Security, Privacy and Governance goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
-2. Which of the following is a recommended best practice when working with Embeddings?
    - A. It applies exclusively to image data.
+   - B. the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
+   - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Mixing vectors from different model versions in one index.
    - B. Choosing the wrong similarity metric for the embedding model.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
    - D. Normalise vectors and pick the distance metric the model was trained for.
    - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Pin embedding model versions and re-index atomically on change.
-   - B. It makes the system slower but has no other effect.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. Use hybrid search to recover exact-match and rare-term queries.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* What trade-offs would you weigh when implementing Security, Privacy and Governance?
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. Use hybrid search to recover exact-match and rare-term queries.
+   - C. Normalise vectors and pick the distance metric the model was trained for.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* Explain Security, Privacy and Governance and why it matters in a production Embeddings system.
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Embeddings system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4970,23 +4915,23 @@ _This chapter examines cost, performance and scaling within Embeddings. It cover
 
 ## Introduction
 
-At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Embeddings system to production traffic. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Embeddings system to production traffic. This concept recurs throughout the Embeddings lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Embeddings system to production traffic. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Cost, Performance and Scaling as techniques for controlling cost and latency while scaling a Embeddings system to production traffic. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Neglecting it is one of the most common reasons Embeddings initiatives stall in production.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
 
-Cost, Performance and Scaling cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Cost, Performance and Scaling cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Cost, Performance and Scaling cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to cost, performance and scaling. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, hybrid lexical + dense fusion (reciprocal rank fusion), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4996,7 +4941,7 @@ Concretely, the principal building blocks include from one-hot to distributed re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -5025,17 +4970,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 30. CI/CD Pipeline - Cost, Performance and Scaling** (drawio). Figure: CI/CD Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. CI/CD Pipeline - Cost, Performance and Scaling** (drawio). Figure: CI/CD Pipeline view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with domain adaptation and fine-tuning. Because domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5043,13 +4988,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with privacy and embedding inversion. Because privacy and embedding inversion concerns what embeddings leak and how to mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with contrastive representation learning. Because contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5057,7 +5002,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply cost, performance and scaling as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply cost, performance and scaling as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5169,24 +5114,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Cost, Performance and Scaling”?
-   - A. techniques for controlling cost and latency while scaling a Embeddings system to production traffic
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Embeddings system to production traffic
+   - A. It applies exclusively to image data.
+   - B. techniques for controlling cost and latency while scaling a Embeddings system to production traffic
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Embeddings system to production traffic
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Over-chunking or under-chunking documents before embedding.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-3. Which of the following is a common pitfall to avoid in Embeddings?
    - A. Over-chunking or under-chunking documents before embedding.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* What trade-offs would you weigh when implementing Cost, Performance and Scaling?
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Ignoring drift after upgrading the embedding model.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Use hybrid search to recover exact-match and rare-term queries.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* Explain Cost, Performance and Scaling and why it matters in a production Embeddings system.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Embeddings system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5198,23 +5143,23 @@ _This chapter examines integration and interoperability within Embeddings. It co
 
 ## Introduction
 
-Integration and Interoperability can be characterised as patterns for integrating a Embeddings system with surrounding enterprise systems and data. Teams that master this consistently ship more reliable Embeddings systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Formally, Integration and Interoperability addresses patterns for integrating a Embeddings system with surrounding enterprise systems and data. It is foundational: later capabilities in Embeddings are built directly on top of it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Integration and Interoperability can be characterised as patterns for integrating a Embeddings system with surrounding enterprise systems and data. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Integration and Interoperability is best understood as patterns for integrating a Embeddings system with surrounding enterprise systems and data. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. This concept recurs throughout the Embeddings lifecycle, from design to operations.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
 
-Integration and Interoperability cannot be understood in isolation from multimodal and cross-encoder embeddings. Recall that multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Integration and Interoperability cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Integration and Interoperability cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Integration and Interoperability cannot be understood in isolation from domain adaptation and fine-tuning. Recall that domain adaptation and fine-tuning concerns adapting general embeddings to specialised corpora. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to integration and interoperability. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5224,25 +5169,56 @@ Concretely, the principal building blocks include from one-hot to distributed re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Embeddings Platform"]
+    GW[Gateway / Orchestrator]
+    S0[From One-Hot to Distribut…]
+    S1[Word, Sentence and Docume…]
+    S2[Contrastive Representatio…]
+    S3[Similarity Metrics and No…]
+    S4[Multimodal and Cross-Enco…]
+    S5[Dimensionality, Compressi…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="2-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#059669"/><rect x="0" y="30" width="840" height="16" fill="#059669"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Cloud Architecture - Integration and Interoperability</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#059669"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Embedding Quality</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#10b981"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Domain Adaptation and Fine-Tuning</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#10b981"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Domain Adaptation and Fine-T…</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#34d399"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Embedding Drift and Re-Index…</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#0d9488"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hybrid Search</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#14b8a6"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating an Embedding Servi…</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#34d399"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#0d9488"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#14b8a6"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#047857"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text></svg>
-
-</div>
-
-**Figure 31. Cloud Architecture - Integration and Interoperability** (svg). Figure: Cloud Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. Cloud Architecture - Integration and Interoperability** (mermaid). Figure: Cloud Architecture view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal and cross-encoder embeddings. Because multimodal and cross-encoder embeddings concerns cLIP-style joint spaces and the bi-encoder/cross-encoder trade-off, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with operating an embedding service. Because operating an embedding service concerns batching, caching, versioning and cost at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5250,9 +5226,9 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5264,7 +5240,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A compliance organisation needs near-duplicate detection across document repositories. They decide to apply integration and interoperability as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A e-commerce organisation needs visual and textual product similarity and recommendation. They decide to apply integration and interoperability as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5376,24 +5352,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Integration and Interoperability”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. patterns for integrating a Embeddings system with surrounding enterprise systems and data
+   - A. It guarantees deterministic output regardless of input.
+   - B. patterns for integrating a Embeddings system with surrounding enterprise systems and data
+   - C. It makes the system slower but has no other effect.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Integration and Interoperability: patterns for integrating a Embeddings system with surrounding enterprise systems and data
+   - **Answer: B.** Integration and Interoperability: patterns for integrating a Embeddings system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It makes the system slower but has no other effect.
-   - B. Use hybrid search to recover exact-match and rare-term queries.
-   - C. It is only relevant to academic research, not production.
+   - A. Use hybrid search to recover exact-match and rare-term queries.
+   - B. It applies exclusively to image data.
+   - C. Choosing the wrong similarity metric for the embedding model.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. It removes all security and governance requirements.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Over-chunking or under-chunking documents before embedding.
    - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - **Answer: A.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* Explain Integration and Interoperability and why it matters in a production Embeddings system.
+   - **Answer: C.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
+4. *(Discussion)* How does Integration and Interoperability interact with security and governance requirements?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Embeddings system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5405,80 +5381,62 @@ _This chapter examines trends and research directions within Embeddings. It cove
 
 ## Introduction
 
-We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of Embeddings. It is foundational: later capabilities in Embeddings are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Trends and Research Directions can be characterised as emerging trends, open problems and research directions shaping the future of Embeddings. It is foundational: later capabilities in Embeddings are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Embeddings. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Embeddings. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. This concept recurs throughout the Embeddings lifecycle, from design to operations.
-
-Trends and Research Directions cannot be understood in isolation from operating an embedding service. Recall that operating an embedding service concerns batching, caching, versioning and cost at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Teams that master this consistently ship more reliable Embeddings systems at lower cost.
 
 Trends and Research Directions cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to trends and research directions. The first, versioned indexes with blue/green re-embedding, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Trends and Research Directions cannot be understood in isolation from contrastive representation learning. Recall that contrastive representation learning concerns infoNCE, positive/negative mining and the geometry of good embeddings. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+
+Several established patterns apply directly to trends and research directions. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, matryoshka embeddings for adaptive dimensionality, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
+A robust architecture for Trends and Research Directions is layered so each part can evolve independently without destabilising the whole. An embedding platform exposes a versioned embedding service that batches and caches encode requests, writes vectors to an ANN index (HNSW/IVF) with stored metadata, and supports hybrid retrieval that fuses lexical and dense scores before an optional cross-encoder re-ranks the top candidates.
 
 Concretely, the principal building blocks include from one-hot to distributed representations, word, sentence and document embeddings, contrastive representation learning, similarity metrics and normalisation and multimodal and cross-encoder embeddings. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Data Lineage">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Data Lineage - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Data Lineage - Trends and Research Directions
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 32. Data Lineage - Trends and Research Directions** (drawio). Figure: Data Lineage view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="8-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#14b8a6"/><rect x="0" y="30" width="840" height="16" fill="#14b8a6"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Trends and Research Directions</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#14b8a6"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Operating a…</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#2dd4bf"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Privacy and…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#65a30d"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">The Retriev…</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#84cc16"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">From One-Ho…</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#0d9488"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Word, Sente…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#0f766e"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Contrastive…</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#14b8a6"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Similarity …</text></svg>
-
-</div>
-
-**Figure 33. Capability Map - Trends and Research Directions** (svg). Figure: Capability Map view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Data Lineage - Trends and Research Directions** (plantuml). Figure: Data Lineage view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with operating an embedding service. Because operating an embedding service concerns batching, caching, versioning and cost at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hybrid search. Because hybrid search concerns combining lexical (BM25) and dense retrieval with fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5486,13 +5444,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5500,7 +5458,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A compliance organisation needs near-duplicate detection across document repositories. They decide to apply trends and research directions as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A search organisation needs semantic search across heterogeneous enterprise content. They decide to apply trends and research directions as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5574,23 +5532,23 @@ Key takeaways from this chapter:
 
 1. In the context of Embeddings, which statement best describes “Trends and Research Directions”?
    - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. emerging trends, open problems and research directions shaping the future of Embeddings
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Embeddings
-2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It removes all security and governance requirements.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It applies exclusively to image data.
-   - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - **Answer: D.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
-3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. Ignoring drift after upgrading the embedding model.
+   - B. emerging trends, open problems and research directions shaping the future of Embeddings
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-4. *(Discussion)* Walk through how you would design Trends and Research Directions for an enterprise Embeddings workload.
+   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Embeddings
+2. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Ignoring drift after upgrading the embedding model.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Normalise vectors and pick the distance metric the model was trained for.
+   - B. It removes all security and governance requirements.
+   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+4. *(Discussion)* What trade-offs would you weigh when implementing Trends and Research Directions?
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Embeddings) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5602,23 +5560,23 @@ _This chapter examines capstone project within Embeddings. It covers a substanti
 
 ## Introduction
 
-Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable. Understanding this matters because Embeddings systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable. It is foundational: later capabilities in Embeddings are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Getting this right early prevents expensive rework once a Embeddings system reaches scale.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. It is foundational: later capabilities in Embeddings are built directly on top of it.
 
-Capstone Project cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Capstone Project cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Capstone Project cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from from one-hot to distributed representations. Recall that from one-hot to distributed representations concerns why dense vectors generalise where sparse encodings cannot. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to capstone project. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, hybrid lexical + dense fusion (reciprocal rank fusion), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, bi-encoder retrieval followed by cross-encoder re-ranking, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5628,50 +5586,27 @@ Concretely, the principal building blocks include from one-hot to distributed re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="11-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="46" rx="14" fill="#9f1239"/><rect x="0" y="30" width="840" height="16" fill="#9f1239"/><text x="420" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Capstone Project</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#9f1239"/><text x="420" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Privacy and…</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#4338ca"/><text x="330" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">The Retriev…</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#0f172a"/><text x="510" y="238" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">From One-Ho…</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#1e40af"/><text x="375" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Word, Sente…</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#0e7490"/><text x="465" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Contrastive…</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#b45309"/><text x="375" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Similarity …</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#9f1239"/><text x="465" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff" dominant-baseline="middle">Multimodal …</text></svg>
-
-</div>
-
-**Figure 34. Capability Map - Capstone Project** (svg). Figure: Capability Map view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Capstone Project" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+graph LR
+  D(("Embeddings"))
+  D --- C0[From One-Hot to Distr…]
+  D --- C1[Word, Sentence and Do…]
+  D --- C2[Contrastive Represent…]
+  D --- C3[Similarity Metrics an…]
+  D --- C4[Multimodal and Cross-…]
+  C0 --- C1
+  C1 --- C2
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 35. Operating Model - Capstone Project** (drawio). Figure: Operating Model view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. Capability Map - Capstone Project** (mermaid). Figure: Capability Map view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5685,11 +5620,11 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating embedding quality. Because evaluating embedding quality concerns retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with embedding drift and re-indexing. Because embedding drift and re-indexing concerns detecting model changes and managing versioned vector stores, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5697,7 +5632,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply capstone project as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply capstone project as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5809,24 +5744,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Capstone Project”?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It makes the system slower but has no other effect.
-   - D. a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
-   - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Pin embedding model versions and re-index atomically on change.
-   - B. Choosing the wrong similarity metric for the embedding model.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Pin embedding model versions and re-index atomically on change.
-3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It removes all security and governance requirements.
+   - A. Choosing the wrong similarity metric for the embedding model.
    - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Mixing vectors from different model versions in one index.
-   - **Answer: D.** Pitfall to avoid: Mixing vectors from different model versions in one index.
-4. *(Discussion)* Describe a failure mode of Capstone Project and how you would mitigate it.
+   - C. Over-chunking or under-chunking documents before embedding.
+   - D. Normalise vectors and pick the distance metric the model was trained for.
+   - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+3. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It is only relevant to academic research, not production.
+   - B. Over-chunking or under-chunking documents before embedding.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
+4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5838,23 +5773,23 @@ _This chapter examines certification preparation and review within Embeddings. I
 
 ## Introduction
 
-Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Embeddings. This concept recurs throughout the Embeddings lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of Embeddings. Teams that master this consistently ship more reliable Embeddings systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Embeddings work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Embeddings. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of Embeddings. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Teams that master this consistently ship more reliable Embeddings systems at lower cost.
+To place this in context, recall the broader picture: Embeddings map discrete objects—words, sentences, images, users, products—into continuous vector spaces where geometric proximity encodes semantic similarity. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Embeddings fall into place. Getting this right early prevents expensive rework once a Embeddings system reaches scale.
 
-Certification Preparation and Review cannot be understood in isolation from similarity metrics and normalisation. Recall that similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from hybrid search. Recall that hybrid search concerns combining lexical (BM25) and dense retrieval with fusion. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Certification Preparation and Review cannot be understood in isolation from indexing for approximate nearest neighbour search. Recall that indexing for approximate nearest neighbour search concerns hNSW, IVF and the recall/latency frontier. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Certification Preparation and Review cannot be understood in isolation from dimensionality, compression and quantisation. Recall that dimensionality, compression and quantisation concerns matryoshka embeddings, PCA and product quantisation for cost control. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to certification preparation and review. The first, matryoshka embeddings for adaptive dimensionality, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, bi-encoder retrieval followed by cross-encoder re-ranking, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, versioned indexes with blue/green re-embedding, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Embeddings system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5866,44 +5801,23 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Embeddings system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Embeddings" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From One-Hot to Distrib…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Word, Sentence and Docu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Contrastive Representat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Similarity Metrics and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Multimodal and Cross-En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="grid_matrix" data-pal="4-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn40d179e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#db2777"/><stop offset="1" stop-color="#9f1239"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn40d179e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn40d179e)"/><text x="420" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Certification Preparation and Review</text><text x="276" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Plan</text><text x="430" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Build</text><text x="582" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Run</text><text x="736" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Improve</text><text x="188" y="125" text-anchor="end" font-size="10.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Domain Adaptation and…</text><rect x="203" y="93" width="147" height="64" rx="8" fill="#db2777"/><rect x="203" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#9f1239"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#be123c"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#e11d48"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><text x="188" y="195" text-anchor="end" font-size="10.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Embedding Drift and R…</text><rect x="203" y="163" width="147" height="64" rx="8" fill="#9f1239"/><rect x="203" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#be123c"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#e11d48"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#f43f5e"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><text x="188" y="265" text-anchor="end" font-size="10.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Hybrid Search</text><rect x="203" y="233" width="147" height="64" rx="8" fill="#be123c"/><rect x="203" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#e11d48"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#f43f5e"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#fb7185"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><text x="188" y="335" text-anchor="end" font-size="10.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Operating an Embeddin…</text><rect x="203" y="303" width="147" height="64" rx="8" fill="#e11d48"/><rect x="203" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#f43f5e"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#fb7185"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#db2777"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Embeddings  •  Operating Model</text></svg>
 
-**Figure 36. Operating Model - Certification Preparation and Review** (drawio). Figure: Operating Model view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 31. Operating Model - Certification Preparation and Review** (svg). Figure: Operating Model view for Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with similarity metrics and normalisation. Because similarity metrics and normalisation concerns cosine, dot product and Euclidean distance and when each applies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hybrid search. Because hybrid search concerns combining lexical (BM25) and dense retrieval with fusion, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5911,13 +5825,13 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including sentence-transformers, OpenAI embeddings, FAISS, Cohere. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with word, sentence and document embeddings. Because word, sentence and document embeddings concerns word2Vec, GloVe, sentence transformers and pooling strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the retrieval stack reference architecture. Because the retrieval stack reference architecture concerns embedding service, vector index and re-ranking as a pipeline, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5925,7 +5839,7 @@ For deeper study, the literature offers authoritative treatments such as Mikolov
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A support organisation needs deduplicating and routing tickets by semantic similarity. They decide to apply certification preparation and review as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A compliance organisation needs near-duplicate detection across document repositories. They decide to apply certification preparation and review as part of their Embeddings solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5997,81 +5911,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Certification Preparation and Review logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Embeddings system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Certification Preparation and Review
+### Listing: Evaluating Certification Preparation and Review with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Certification Preparation and Review."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Certification Preparation and Review output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Embeddings, which statement best describes “Certification Preparation and Review”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It applies exclusively to image data.
    - B. a structured review and certification-style preparation covering the full breadth of Embeddings
    - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Embeddings
 2. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Mixing vectors from different model versions in one index.
-   - B. Normalise vectors and pick the distance metric the model was trained for.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Over-chunking or under-chunking documents before embedding.
+   - C. Pin embedding model versions and re-index atomically on change.
+   - D. Mixing vectors from different model versions in one index.
+   - **Answer: C.** Best practice: Pin embedding model versions and re-index atomically on change.
 3. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: D.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-4. *(Discussion)* Walk through how you would design Certification Preparation and Review for an enterprise Embeddings workload.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Over-chunking or under-chunking documents before embedding.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
+4. *(Discussion)* Describe a failure mode of Certification Preparation and Review and how you would mitigate it.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Embeddings) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6113,49 +6010,49 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines word, sentence and document embeddings (Word2Vec, GloVe, sentence transformers and pooling strategies.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 3. How does Contrastive Representation Learning interact with security and governance requirements?
    - **Guidance:** A strong answer defines contrastive representation learning (InfoNCE, positive/negative mining and the geometry of good embeddings.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-4. How does Similarity Metrics and Normalisation interact with security and governance requirements?
+4. Explain Similarity Metrics and Normalisation and why it matters in a production Embeddings system.
    - **Guidance:** A strong answer defines similarity metrics and normalisation (Cosine, dot product and Euclidean distance and when each applies.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-5. How would you test and monitor Multimodal and Cross-Encoder Embeddings in production?
+5. Walk through how you would design Multimodal and Cross-Encoder Embeddings for an enterprise Embeddings workload.
    - **Guidance:** A strong answer defines multimodal and cross-encoder embeddings (CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-6. How does Dimensionality, Compression and Quantisation interact with security and governance requirements?
+6. What trade-offs would you weigh when implementing Dimensionality, Compression and Quantisation?
    - **Guidance:** A strong answer defines dimensionality, compression and quantisation (Matryoshka embeddings, PCA and product quantisation for cost control.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-7. What trade-offs would you weigh when implementing Indexing for Approximate Nearest Neighbour Search?
+7. Explain Indexing for Approximate Nearest Neighbour Search and why it matters in a production Embeddings system.
    - **Guidance:** A strong answer defines indexing for approximate nearest neighbour search (HNSW, IVF and the recall/latency frontier.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-8. How does Evaluating Embedding Quality interact with security and governance requirements?
+8. Describe a failure mode of Evaluating Embedding Quality and how you would mitigate it.
    - **Guidance:** A strong answer defines evaluating embedding quality (Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 9. How would you test and monitor Domain Adaptation and Fine-Tuning in production?
    - **Guidance:** A strong answer defines domain adaptation and fine-tuning (Adapting general embeddings to specialised corpora.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-10. Walk through how you would design Embedding Drift and Re-Indexing for an enterprise Embeddings workload.
+10. Explain Embedding Drift and Re-Indexing and why it matters in a production Embeddings system.
    - **Guidance:** A strong answer defines embedding drift and re-indexing (Detecting model changes and managing versioned vector stores.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-11. How would you test and monitor Hybrid Search in production?
+11. Describe a failure mode of Hybrid Search and how you would mitigate it.
    - **Guidance:** A strong answer defines hybrid search (Combining lexical (BM25) and dense retrieval with fusion.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-12. How does Operating an Embedding Service interact with security and governance requirements?
+12. Describe a failure mode of Operating an Embedding Service and how you would mitigate it.
    - **Guidance:** A strong answer defines operating an embedding service (Batching, caching, versioning and cost at scale.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-13. Walk through how you would design Privacy and Embedding Inversion for an enterprise Embeddings workload.
+13. How does Privacy and Embedding Inversion interact with security and governance requirements?
    - **Guidance:** A strong answer defines privacy and embedding inversion (What embeddings leak and how to mitigate it.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-14. How does The Retrieval Stack Reference Architecture interact with security and governance requirements?
+14. How would you test and monitor The Retrieval Stack Reference Architecture in production?
    - **Guidance:** A strong answer defines the retrieval stack reference architecture (Embedding service, vector index and re-ranking as a pipeline.) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-15. What trade-offs would you weigh when implementing Putting It Together: A Reference Implementation?
+15. How would you test and monitor Putting It Together: A Reference Implementation in production?
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-16. Walk through how you would design Hands-On Lab: Building an End-to-End Embeddings System for an enterprise Embeddings workload.
+16. How does Hands-On Lab: Building an End-to-End Embeddings System interact with security and governance requirements?
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end embeddings system (a guided, build-along laboratory that constructs a functioning Embeddings system from first principles) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-17. Walk through how you would design Case Study: Search at Scale for an enterprise Embeddings workload.
+17. Explain Case Study: Search at Scale and why it matters in a production Embeddings system.
    - **Guidance:** A strong answer defines case study: search at scale (a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-18. Explain Operating in Production and why it matters in a production Embeddings system.
+18. What trade-offs would you weigh when implementing Operating in Production?
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-19. What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
+19. Walk through how you would design Evaluation and Quality Assurance for an enterprise Embeddings workload.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-20. What trade-offs would you weigh when implementing Security, Privacy and Governance?
+20. Explain Security, Privacy and Governance and why it matters in a production Embeddings system.
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Embeddings system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-21. What trade-offs would you weigh when implementing Cost, Performance and Scaling?
+21. Explain Cost, Performance and Scaling and why it matters in a production Embeddings system.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Embeddings system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-22. Explain Integration and Interoperability and why it matters in a production Embeddings system.
+22. How does Integration and Interoperability interact with security and governance requirements?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Embeddings system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-23. Walk through how you would design Trends and Research Directions for an enterprise Embeddings workload.
+23. What trade-offs would you weigh when implementing Trends and Research Directions?
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Embeddings) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-24. Describe a failure mode of Capstone Project and how you would mitigate it.
+24. What trade-offs would you weigh when implementing Capstone Project?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
-25. Walk through how you would design Certification Preparation and Review for an enterprise Embeddings workload.
+25. Describe a failure mode of Certification Preparation and Review and how you would mitigate it.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Embeddings) then connects it to architecture, evaluation, cost, security and operations for Embeddings, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6199,65 +6096,65 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Pin embedding model versions and re-index atomically on change.
    - **Answer: A.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
 7. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. Over-chunking or under-chunking documents before embedding.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. Pin embedding model versions and re-index atomically on change.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Pin embedding model versions and re-index atomically on change.
 8. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Over-chunking or under-chunking documents before embedding.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
+   - A. Use hybrid search to recover exact-match and rare-term queries.
+   - B. It removes all security and governance requirements.
+   - C. Ignoring drift after upgrading the embedding model.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
 9. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Best practice: Pin embedding model versions and re-index atomically on change.
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - **Answer: D.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 10. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring drift after upgrading the embedding model.
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. It removes all security and governance requirements.
    - C. It guarantees deterministic output regardless of input.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: B.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
 11. Which of the following is a recommended best practice when working with Embeddings?
    - A. Normalise vectors and pick the distance metric the model was trained for.
    - B. Mixing vectors from different model versions in one index.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 12. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. Mixing vectors from different model versions in one index.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It applies exclusively to image data.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
 13. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Mixing vectors from different model versions in one index.
-   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: C.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - A. It applies exclusively to image data.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 14. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. It applies exclusively to image data.
-   - C. Mixing vectors from different model versions in one index.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
-15. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Pin embedding model versions and re-index atomically on change.
-   - B. It removes all security and governance requirements.
-   - C. Choosing the wrong similarity metric for the embedding model.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Pin embedding model versions and re-index atomically on change.
-16. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Ignoring drift after upgrading the embedding model.
-   - B. It makes the system slower but has no other effect.
-   - C. Use hybrid search to recover exact-match and rare-term queries.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. Ignoring drift after upgrading the embedding model.
    - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: A.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
+   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
+15. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It makes the system slower but has no other effect.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Mixing vectors from different model versions in one index.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+16. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Mixing vectors from different model versions in one index.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Mixing vectors from different model versions in one index.
 17. Which of the following is a recommended best practice when working with Embeddings?
    - A. Pin embedding model versions and re-index atomically on change.
    - B. Over-chunking or under-chunking documents before embedding.
@@ -6271,208 +6168,208 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Choosing the wrong similarity metric for the embedding model.
    - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
 19. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It is only relevant to academic research, not production.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It applies exclusively to image data.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
-   - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-20. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-21. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-22. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Over-chunking or under-chunking documents before embedding.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-23. Which of the following is a recommended best practice when working with Embeddings?
    - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It makes the system slower but has no other effect.
-   - D. Mixing vectors from different model versions in one index.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. Over-chunking or under-chunking documents before embedding.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
-24. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
-   - D. Pin embedding model versions and re-index atomically on change.
-   - **Answer: B.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-25. Which of the following is a recommended best practice when working with Embeddings?
+20. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Mixing vectors from different model versions in one index.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+21. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It applies exclusively to image data.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+22. Which of the following is a common pitfall to avoid in Embeddings?
    - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Pin embedding model versions and re-index atomically on change.
-   - D. Choosing the wrong similarity metric for the embedding model.
-   - **Answer: C.** Best practice: Pin embedding model versions and re-index atomically on change.
-26. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Pin embedding model versions and re-index atomically on change.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. Normalise vectors and pick the distance metric the model was trained for.
+   - D. Use hybrid search to recover exact-match and rare-term queries.
+   - **Answer: B.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+23. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It makes the system slower but has no other effect.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+24. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Pin embedding model versions and re-index atomically on change.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
    - D. Mixing vectors from different model versions in one index.
    - **Answer: D.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+25. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. Normalise vectors and pick the distance metric the model was trained for.
+   - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+26. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
 27. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
-28. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - B. It removes all security and governance requirements.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-29. Which of the following is a recommended best practice when working with Embeddings?
    - A. Over-chunking or under-chunking documents before embedding.
    - B. It removes all security and governance requirements.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - C. Pin embedding model versions and re-index atomically on change.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Pin embedding model versions and re-index atomically on change.
+28. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It is only relevant to academic research, not production.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: B.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+29. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - B. Mixing vectors from different model versions in one index.
+   - C. Over-chunking or under-chunking documents before embedding.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
 30. Which of the following is a common pitfall to avoid in Embeddings?
    - A. It makes the system slower but has no other effect.
    - B. Ignoring drift after upgrading the embedding model.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Normalise vectors and pick the distance metric the model was trained for.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
 31. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-32. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - B. Over-chunking or under-chunking documents before embedding.
-   - C. It makes the system slower but has no other effect.
-   - D. Use hybrid search to recover exact-match and rare-term queries.
-   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-33. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Normalise vectors and pick the distance metric the model was trained for.
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-34. Which of the following is a common pitfall to avoid in Embeddings?
    - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Pin embedding model versions and re-index atomically on change.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: D.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-35. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Use hybrid search to recover exact-match and rare-term queries.
-   - B. It makes the system slower but has no other effect.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Choosing the wrong similarity metric for the embedding model.
-   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
-36. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. It removes all security and governance requirements.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-37. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
-38. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It applies exclusively to image data.
-   - B. Pin embedding model versions and re-index atomically on change.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
    - C. Ignoring drift after upgrading the embedding model.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-39. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It applies exclusively to image data.
+   - D. Over-chunking or under-chunking documents before embedding.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+32. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It makes the system slower but has no other effect.
    - B. Choosing the wrong similarity metric for the embedding model.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - C. Pin embedding model versions and re-index atomically on change.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+33. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Over-chunking or under-chunking documents before embedding.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. Ignoring drift after upgrading the embedding model.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+34. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Use hybrid search to recover exact-match and rare-term queries.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+35. Which of the following is a recommended best practice when working with Embeddings?
+   - A. It applies exclusively to image data.
+   - B. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+36. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It removes all security and governance requirements.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. Mixing vectors from different model versions in one index.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+37. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Mixing vectors from different model versions in one index.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: D.** Best practice: Pin embedding model versions and re-index atomically on change.
+38. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Mixing vectors from different model versions in one index.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+39. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Mixing vectors from different model versions in one index.
+   - B. Choosing the wrong similarity metric for the embedding model.
+   - C. It removes all security and governance requirements.
    - D. Normalise vectors and pick the distance metric the model was trained for.
    - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
 40. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Pin embedding model versions and re-index atomically on change.
-   - B. It makes the system slower but has no other effect.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. Use hybrid search to recover exact-match and rare-term queries.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. Use hybrid search to recover exact-match and rare-term queries.
+   - C. Normalise vectors and pick the distance metric the model was trained for.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
 41. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. Over-chunking or under-chunking documents before embedding.
+   - B. Normalise vectors and pick the distance metric the model was trained for.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Ignoring drift after upgrading the embedding model.
+   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+42. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Use hybrid search to recover exact-match and rare-term queries.
+   - D. Pin embedding model versions and re-index atomically on change.
+   - **Answer: A.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+43. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Use hybrid search to recover exact-match and rare-term queries.
+   - B. It applies exclusively to image data.
+   - C. Choosing the wrong similarity metric for the embedding model.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
+44. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Over-chunking or under-chunking documents before embedding.
+   - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - **Answer: C.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
+45. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Ignoring drift after upgrading the embedding model.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
+46. Which of the following is a common pitfall to avoid in Embeddings?
+   - A. Normalise vectors and pick the distance metric the model was trained for.
+   - B. It removes all security and governance requirements.
+   - C. Evaluate retrieval with recall@k and nDCG on a labelled set.
+   - D. Choosing the wrong similarity metric for the embedding model.
+   - **Answer: D.** Pitfall to avoid: Choosing the wrong similarity metric for the embedding model.
+47. Which of the following is a recommended best practice when working with Embeddings?
+   - A. Choosing the wrong similarity metric for the embedding model.
+   - B. It applies exclusively to image data.
    - C. Over-chunking or under-chunking documents before embedding.
    - D. Normalise vectors and pick the distance metric the model was trained for.
    - **Answer: D.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
-42. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-43. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It makes the system slower but has no other effect.
-   - B. Use hybrid search to recover exact-match and rare-term queries.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Use hybrid search to recover exact-match and rare-term queries.
-44. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Over-chunking or under-chunking documents before embedding.
-   - B. It removes all security and governance requirements.
-   - C. Normalise vectors and pick the distance metric the model was trained for.
-   - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - **Answer: A.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
-45. Which of the following is a recommended best practice when working with Embeddings?
-   - A. It removes all security and governance requirements.
-   - B. Ignoring drift after upgrading the embedding model.
-   - C. It applies exclusively to image data.
-   - D. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - **Answer: D.** Best practice: Evaluate retrieval with recall@k and nDCG on a labelled set.
-46. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Pin embedding model versions and re-index atomically on change.
-   - C. Ignoring drift after upgrading the embedding model.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Ignoring drift after upgrading the embedding model.
-47. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Pin embedding model versions and re-index atomically on change.
-   - B. Choosing the wrong similarity metric for the embedding model.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Pin embedding model versions and re-index atomically on change.
 48. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Mixing vectors from different model versions in one index.
-   - **Answer: D.** Pitfall to avoid: Mixing vectors from different model versions in one index.
+   - A. It is only relevant to academic research, not production.
+   - B. Over-chunking or under-chunking documents before embedding.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
 49. Which of the following is a recommended best practice when working with Embeddings?
-   - A. Mixing vectors from different model versions in one index.
-   - B. Normalise vectors and pick the distance metric the model was trained for.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Normalise vectors and pick the distance metric the model was trained for.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Over-chunking or under-chunking documents before embedding.
+   - C. Pin embedding model versions and re-index atomically on change.
+   - D. Mixing vectors from different model versions in one index.
+   - **Answer: C.** Best practice: Pin embedding model versions and re-index atomically on change.
 50. Which of the following is a common pitfall to avoid in Embeddings?
-   - A. Evaluate retrieval with recall@k and nDCG on a labelled set.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Over-chunking or under-chunking documents before embedding.
-   - **Answer: D.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Over-chunking or under-chunking documents before embedding.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Over-chunking or under-chunking documents before embedding.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Embeddings, which statement best describes “From One-Hot to Distributed Representations”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Why dense vectors generalise where sparse encodings cannot.
-   - **Answer: D.** From One-Hot to Distributed Representations: Why dense vectors generalise where sparse encodings cannot.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Why dense vectors generalise where sparse encodings cannot.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** From One-Hot to Distributed Representations: Why dense vectors generalise where sparse encodings cannot.
 2. In the context of Embeddings, which statement best describes “Word, Sentence and Document Embeddings”?
    - A. It applies exclusively to image data.
    - B. It removes all security and governance requirements.
@@ -6486,35 +6383,35 @@ Assessment items to verify conceptual understanding.
    - D. It is only relevant to academic research, not production.
    - **Answer: C.** Contrastive Representation Learning: InfoNCE, positive/negative mining and the geometry of good embeddings.
 4. In the context of Embeddings, which statement best describes “Similarity Metrics and Normalisation”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Cosine, dot product and Euclidean distance and when each applies.
    - **Answer: D.** Similarity Metrics and Normalisation: Cosine, dot product and Euclidean distance and when each applies.
 5. In the context of Embeddings, which statement best describes “Multimodal and Cross-Encoder Embeddings”?
-   - A. CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Multimodal and Cross-Encoder Embeddings: CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
-6. In the context of Embeddings, which statement best describes “Dimensionality, Compression and Quantisation”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Matryoshka embeddings, PCA and product quantisation for cost control.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Dimensionality, Compression and Quantisation: Matryoshka embeddings, PCA and product quantisation for cost control.
-7. In the context of Embeddings, which statement best describes “Indexing for Approximate Nearest Neighbour Search”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. HNSW, IVF and the recall/latency frontier.
-   - **Answer: D.** Indexing for Approximate Nearest Neighbour Search: HNSW, IVF and the recall/latency frontier.
-8. In the context of Embeddings, which statement best describes “Evaluating Embedding Quality”?
-   - A. It applies exclusively to image data.
-   - B. Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
+   - A. It removes all security and governance requirements.
+   - B. CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
    - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Multimodal and Cross-Encoder Embeddings: CLIP-style joint spaces and the bi-encoder/cross-encoder trade-off.
+6. In the context of Embeddings, which statement best describes “Dimensionality, Compression and Quantisation”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Matryoshka embeddings, PCA and product quantisation for cost control.
+   - C. It removes all security and governance requirements.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Evaluating Embedding Quality: Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
+   - **Answer: B.** Dimensionality, Compression and Quantisation: Matryoshka embeddings, PCA and product quantisation for cost control.
+7. In the context of Embeddings, which statement best describes “Indexing for Approximate Nearest Neighbour Search”?
+   - A. It makes the system slower but has no other effect.
+   - B. HNSW, IVF and the recall/latency frontier.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Indexing for Approximate Nearest Neighbour Search: HNSW, IVF and the recall/latency frontier.
+8. In the context of Embeddings, which statement best describes “Evaluating Embedding Quality”?
+   - A. Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Evaluating Embedding Quality: Retrieval metrics (recall@k, MRR, nDCG) and benchmark suites like MTEB.
 9. In the context of Embeddings, which statement best describes “Domain Adaptation and Fine-Tuning”?
    - A. It applies exclusively to image data.
    - B. It removes all security and governance requirements.
@@ -6523,99 +6420,99 @@ Assessment items to verify conceptual understanding.
    - **Answer: C.** Domain Adaptation and Fine-Tuning: Adapting general embeddings to specialised corpora.
 10. In the context of Embeddings, which statement best describes “Embedding Drift and Re-Indexing”?
    - A. It applies exclusively to image data.
-   - B. Detecting model changes and managing versioned vector stores.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Embedding Drift and Re-Indexing: Detecting model changes and managing versioned vector stores.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Detecting model changes and managing versioned vector stores.
+   - **Answer: D.** Embedding Drift and Re-Indexing: Detecting model changes and managing versioned vector stores.
 11. In the context of Embeddings, which statement best describes “Hybrid Search”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Combining lexical (BM25) and dense retrieval with fusion.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Hybrid Search: Combining lexical (BM25) and dense retrieval with fusion.
+   - A. Combining lexical (BM25) and dense retrieval with fusion.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Hybrid Search: Combining lexical (BM25) and dense retrieval with fusion.
 12. In the context of Embeddings, which statement best describes “Operating an Embedding Service”?
-   - A. Batching, caching, versioning and cost at scale.
+   - A. It removes all security and governance requirements.
+   - B. Batching, caching, versioning and cost at scale.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Operating an Embedding Service: Batching, caching, versioning and cost at scale.
+13. In the context of Embeddings, which statement best describes “Privacy and Embedding Inversion”?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. What embeddings leak and how to mitigate it.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Privacy and Embedding Inversion: What embeddings leak and how to mitigate it.
+14. In the context of Embeddings, which statement best describes “The Retrieval Stack Reference Architecture”?
+   - A. Embedding service, vector index and re-ranking as a pipeline.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** The Retrieval Stack Reference Architecture: Embedding service, vector index and re-ranking as a pipeline.
+15. In the context of Embeddings, which statement best describes “Putting It Together: A Reference Implementation”?
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
+16. In the context of Embeddings, which statement best describes “Hands-On Lab: Building an End-to-End Embeddings System”?
+   - A. a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
    - B. It is only relevant to academic research, not production.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Operating an Embedding Service: Batching, caching, versioning and cost at scale.
-13. In the context of Embeddings, which statement best describes “Privacy and Embedding Inversion”?
-   - A. It is only relevant to academic research, not production.
-   - B. What embeddings leak and how to mitigate it.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Privacy and Embedding Inversion: What embeddings leak and how to mitigate it.
-14. In the context of Embeddings, which statement best describes “The Retrieval Stack Reference Architecture”?
-   - A. It is only relevant to academic research, not production.
-   - B. Embedding service, vector index and re-ranking as a pipeline.
-   - C. It guarantees deterministic output regardless of input.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** The Retrieval Stack Reference Architecture: Embedding service, vector index and re-ranking as a pipeline.
-15. In the context of Embeddings, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Embeddings system into a cohesive, working whole
-16. In the context of Embeddings, which statement best describes “Hands-On Lab: Building an End-to-End Embeddings System”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Hands-On Lab: Building an End-to-End Embeddings System: a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
+   - **Answer: A.** Hands-On Lab: Building an End-to-End Embeddings System: a guided, build-along laboratory that constructs a functioning Embeddings system from first principles
 17. In the context of Embeddings, which statement best describes “Case Study: Search at Scale”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Case Study: Search at Scale: a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
-18. In the context of Embeddings, which statement best describes “Operating in Production”?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Operating in Production: the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
-19. In the context of Embeddings, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
-20. In the context of Embeddings, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
-21. In the context of Embeddings, which statement best describes “Cost, Performance and Scaling”?
-   - A. techniques for controlling cost and latency while scaling a Embeddings system to production traffic
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Embeddings system to production traffic
-22. In the context of Embeddings, which statement best describes “Integration and Interoperability”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. patterns for integrating a Embeddings system with surrounding enterprise systems and data
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Integration and Interoperability: patterns for integrating a Embeddings system with surrounding enterprise systems and data
-23. In the context of Embeddings, which statement best describes “Trends and Research Directions”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. emerging trends, open problems and research directions shaping the future of Embeddings
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Embeddings
-24. In the context of Embeddings, which statement best describes “Capstone Project”?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
    - C. It makes the system slower but has no other effect.
-   - D. a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
-   - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
-25. In the context of Embeddings, which statement best describes “Certification Preparation and Review”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. a structured review and certification-style preparation covering the full breadth of Embeddings
+   - D. a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
+   - **Answer: D.** Case Study: Search at Scale: a detailed case study of deploying Embeddings in a demanding search environment, including the decisions, trade-offs and outcomes
+18. In the context of Embeddings, which statement best describes “Operating in Production”?
+   - A. the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Operating in Production: the operational discipline required to run a Embeddings system reliably, including monitoring, incident response and continuous improvement
+19. In the context of Embeddings, which statement best describes “Evaluation and Quality Assurance”?
+   - A. a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Embeddings system before and after release
+20. In the context of Embeddings, which statement best describes “Security, Privacy and Governance”?
+   - A. It applies exclusively to image data.
+   - B. the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
+   - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a Embeddings system trustworthy and compliant
+21. In the context of Embeddings, which statement best describes “Cost, Performance and Scaling”?
+   - A. It applies exclusively to image data.
+   - B. techniques for controlling cost and latency while scaling a Embeddings system to production traffic
    - C. It makes the system slower but has no other effect.
    - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Embeddings system to production traffic
+22. In the context of Embeddings, which statement best describes “Integration and Interoperability”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. patterns for integrating a Embeddings system with surrounding enterprise systems and data
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Integration and Interoperability: patterns for integrating a Embeddings system with surrounding enterprise systems and data
+23. In the context of Embeddings, which statement best describes “Trends and Research Directions”?
+   - A. It applies exclusively to image data.
+   - B. emerging trends, open problems and research directions shaping the future of Embeddings
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Embeddings
+24. In the context of Embeddings, which statement best describes “Capstone Project”?
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Embeddings deliverable
+25. In the context of Embeddings, which statement best describes “Certification Preparation and Review”?
+   - A. It applies exclusively to image data.
+   - B. a structured review and certification-style preparation covering the full breadth of Embeddings
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Embeddings
 
 # References

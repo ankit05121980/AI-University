@@ -1,5 +1,5 @@
 @startuml
-title Network - Indexing for Approximate Nearest Neighbour Search
+title Network - Dimensionality, Compression and Quantisation
 package "Embeddings Platform" {
   component "From One-Hot to Distrib…" as C0
   component "Word, Sentence and Docu…" as C1

@@ -294,7 +294,7 @@
     wireFavButtons(view());
   };
 
-  // ---- Immersive reader ----
+  // ---- Immersive chapter reader ----
   let readerCtx = null;
   routes.read = async (id) => {
     await Promise.all([load("library", `${DATA}/library.json`), loadPublished()]);
@@ -309,38 +309,67 @@
 
   function diagramHtml(d) {
     const svg = d.render_svg || (d.fmt === "svg" ? d.source : "");
-    if (svg) return `<div class="figure">${svg}<div class="cap">${esc(d.caption)}</div></div>`;
-    return `<div class="figure"><pre class="fallback">${esc(d.source)}</pre><div class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</div></div>`;
+    if (svg) return `<figure class="figure">${svg}<figcaption class="cap">${esc(d.caption)}</figcaption></figure>`;
+    return `<figure class="figure"><pre class="fallback">${esc(d.source)}</pre><figcaption class="cap">${esc(d.fmt)} source</figcaption></figure>`;
   }
-  function chapterWords(c) {
-    let w = (c.sections || []).reduce((n, s) => n + (s.body ? s.body.split(/\s+/).length : 0), 0);
-    w += (c.code_samples || []).reduce((n, cs) => n + cs.code.split(/\s+/).length, 0);
-    return w;
-  }
+  function chapterWords(c) { let w = (c.sections || []).reduce((n, s) => n + (s.body ? s.body.split(/\s+/).length : 0), 0); w += (c.code_samples || []).reduce((n, cs) => n + cs.code.split(/\s+/).length, 0); return w; }
 
+  function dropcap(html) { return html.replace("<p>", "<p class='dropcap'>"); }
+  function tipCards(body, cls, icon) {
+    const lines = body.split("\n"); let lead = ""; const cards = [];
+    for (const ln of lines) { const m = ln.match(/^\s*-\s+(.*)/); if (m) cards.push(m[1]); else if (ln.trim()) lead += `<p>${mdInline(ln)}</p>`; }
+    return lead + `<div class="tips">` + cards.map(c => `<div class="tip ${cls}"><span class="tip-ic">${icon}</span><div>${mdInline(c)}</div></div>`).join("") + `</div>`;
+  }
+  function calloutList(body) {
+    const items = []; for (const ln of body.split("\n")) { const m = ln.match(/^\s*-\s+(.*)/); if (m) items.push(m[1]); }
+    return `<div class="callout"><div class="callout-h">★ Key takeaways</div><ul>${items.map(i => `<li>${mdInline(i)}</li>`).join("")}</ul></div>`;
+  }
+  function sectionBlock(heading, body) {
+    const h = heading.toLowerCase();
+    if (h.includes("best practice")) return `<h2>${esc(heading)}</h2>${tipCards(body, "ok", "✓")}`;
+    if (h.includes("pitfall")) return `<h2>${esc(heading)}</h2>${tipCards(body, "warn", "⚠")}`;
+    if (h.includes("takeaway")) return `${calloutList(body)}`;
+    if (h.startsWith("introduction") || h === "introduction") return `<h2>${esc(heading)}</h2>${dropcap(mdToHtml(body))}`;
+    return `<h2>${esc(heading)}</h2>${mdToHtml(body)}`;
+  }
+  function quizBox(q, i) {
+    if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans show">💡 ${esc(q.explanation)}</div></div>`;
+    return `<div class="qbox" data-ans="${q.answer_index}"><b>${i + 1}. ${esc(q.question)}</b><div class="opts">${q.options.map((o, j) => `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join("")}</div><div class="ans hidden">${esc(q.explanation)}</div></div>`;
+  }
+  function chapterHtml(c, n, total) {
+    const mins = Math.max(1, Math.round(chapterWords(c) / 220));
+    const topics = (c.sections || []).map(s => s.heading).filter(hd => !/introduction|review|walkthrough|takeaway|check your/i.test(hd)).slice(0, 5);
+    const diagrams = c.diagrams || [];
+    const hasArch = (c.sections || []).some(s => /^Architecture/.test(s.heading));
+    let sec = "";
+    (c.sections || []).forEach(s => {
+      sec += sectionBlock(s.heading, s.body);
+      if (/^Introduction/.test(s.heading) && diagrams[0]) sec += diagramHtml(diagrams[0]);
+      if (/^Architecture/.test(s.heading) && diagrams.length > 1) sec += diagrams.slice(1).map(diagramHtml).join("");
+    });
+    if (!hasArch && diagrams.length > 1) sec += diagrams.slice(1).map(diagramHtml).join("");
+    const code = (c.code_samples || []).map(cs => `<h3>Listing: ${esc(cs.title)}</h3><pre><code>${esc(cs.code)}</code></pre>`).join("");
+    const quiz = (c.questions || []).length ? `<h2>Check your understanding</h2>${(c.questions || []).map(quizBox).join("")}` : "";
+    return `
+      <div class="ch-hero">
+        <div class="ch-kicker">Chapter ${n} of ${total}</div>
+        <h1>${esc(c.title)}</h1>
+        <div class="ch-meta"><span>📖 ~${mins} min read</span><span>🖼 ${diagrams.length} infographics</span><span>❓ ${(c.questions || []).length} questions</span></div>
+        <p class="ch-summary">${esc(c.summary)}</p>
+        ${topics.length ? `<div class="chip-row">${topics.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
+      </div>
+      ${sec}${code}${quiz}
+      <div class="ch-pager">
+        <button class="btn" id="pg-prev" ${n <= 1 ? "disabled" : ""}>‹ Previous</button>
+        <span class="tag">Chapter ${n} / ${total}</span>
+        <button class="btn primary" id="pg-next">${n >= total ? "Finish ✓" : "Next chapter ›"}</button>
+      </div>`;
+  }
   function renderReader(b, content, id) {
-    const total = content.chapters.length;
-    const prefs = readerPrefs.get();
-    const toc = content.chapters.map(c => `<a href="#ch-${c.number}" data-ch="${c.number}">${c.number}. ${esc(c.title)}</a>`).join("");
-    const body = content.chapters.map(c => {
-      const mins = Math.max(1, Math.round(chapterWords(c) / 220));
-      let html = `<h1 id="ch-${c.number}">Chapter ${c.number}. ${esc(c.title)}</h1>
-        <div class="ch-meta"><span>📖 ~${mins} min</span><span>${(c.diagrams || []).length} diagrams</span><span>${(c.questions || []).length} questions</span></div>
-        <p class="cap">${esc(c.summary)}</p>`;
-      for (const s of c.sections) {
-        html += `<h2>${esc(s.heading)}</h2>${mdToHtml(s.body)}`;
-        if (s.heading.startsWith("Architecture")) html += (c.diagrams || []).map(diagramHtml).join("");
-      }
-      for (const cs of (c.code_samples || [])) html += `<h3>Listing: ${esc(cs.title)}</h3><pre><code>${esc(cs.code)}</code></pre>`;
-      html += `<h2>Check your understanding</h2>` + (c.questions || []).map((q, i) => {
-        if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans show">💡 ${esc(q.explanation)}</div></div>`;
-        return `<div class="qbox" data-ans="${q.answer_index}"><b>${i + 1}. ${esc(q.question)}</b>
-          <div class="opts">${q.options.map((o, j) => `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join("")}</div>
-          <div class="ans hidden">${esc(q.explanation)}</div></div>`;
-      }).join("");
-      return `<section class="rch" data-ch="${c.number}">${html}</section>`;
-    }).join("");
-
+    const total = content.chapters.length; const prefs = readerPrefs.get();
+    const saved = progress.get(id); const startCh = Math.min(total, Math.max(1, saved.ch || 1));
+    readerCtx = { id, b, content, total, current: startCh };
+    const toc = content.chapters.map(c => `<a data-ch="${c.number}">${c.number}. ${esc(c.title)}</a>`).join("");
     view().innerHTML = `
       <div class="reader-bar">
         <a class="btn ghost" href="#book/${id}">‹ Details</a>
@@ -350,81 +379,49 @@
           <button class="btn icon" id="font-up" title="Larger text">A+</button>
           <button class="btn icon" id="width-tg" title="Toggle width">⇔</button>
           <button class="btn icon" id="bookmark-btn" title="Bookmark chapter">⚑</button>
-          <span class="rb-ring" id="rb-ring">${ring(0, 34)}</span>
+          <span class="rb-ring" id="rb-ring"></span>
         </div>
       </div>
       <div class="reader ${prefs.wide ? "wide" : ""}" id="reader-wrap">
-        <nav class="reader-toc">${toc}</nav>
-        <article class="reader-body" id="reader-body" style="--rfs:${prefs.scale}rem">${body}</article>
-      </div>
-      <div class="chap-nav" id="chap-nav">
-        <button class="btn" id="cn-prev">‹ Prev</button>
-        <span id="cn-label" class="tag">Chapter 1 / ${total}</span>
-        <button class="btn" id="cn-next">Next ›</button>
+        <nav class="reader-toc" id="reader-toc">${toc}</nav>
+        <article class="reader-body" id="reader-body" style="--rfs:${prefs.scale}rem"></article>
       </div>`;
-
-    progress.set(b.id, Math.max(1, progress.get(b.id).ch || 1), total);
-    readerCtx = { id, total, current: 1, finishedToast: false };
-
-    // interactive quizzes
-    $$(".qbox[data-ans]", view()).forEach(box => {
-      const correct = +box.dataset.ans;
-      $$(".opt", box).forEach(opt => opt.onclick = () => {
-        if (box.classList.contains("answered")) return;
-        box.classList.add("answered");
-        const j = +opt.dataset.j;
-        $$(".opt", box).forEach(o => { const oj = +o.dataset.j; if (oj === correct) o.classList.add("correct"); else if (oj === j) o.classList.add("wrong"); o.disabled = true; });
-        $(".ans", box).classList.remove("hidden");
-        toast(j === correct ? "Correct! ✓" : "Not quite — see the explanation");
-      });
-    });
-
-    // reader preferences
     const applyFont = () => { $("#reader-body").style.setProperty("--rfs", prefs.scale.toFixed(2) + "rem"); readerPrefs.set(prefs); };
     $("#font-dn").onclick = () => { prefs.scale = Math.max(0.9, prefs.scale - 0.08); applyFont(); };
     $("#font-up").onclick = () => { prefs.scale = Math.min(1.5, prefs.scale + 0.08); applyFont(); };
     $("#width-tg").onclick = () => { prefs.wide = !prefs.wide; $("#reader-wrap").classList.toggle("wide", prefs.wide); readerPrefs.set(prefs); };
-    $("#bookmark-btn").onclick = () => { const c = content.chapters[readerCtx.current - 1]; marks.add({ id: b.id, ch: readerCtx.current, title: b.title, chapter: c.title }); toast("⚑ Bookmarked Chapter " + readerCtx.current); };
-
-    // chapter navigation
-    const goCh = (n) => { n = Math.min(total, Math.max(1, n)); const el = $(`#ch-${n}`); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); };
-    $("#cn-prev").onclick = () => goCh(readerCtx.current - 1);
-    $("#cn-next").onclick = () => goCh(readerCtx.current + 1);
-
-    // scroll spy → progress + chapter label + ring
-    const tocLinks = $$(".reader-toc a", view()), sections = $$(".rch", view());
-    const obs = new IntersectionObserver((entries) => entries.forEach(en => {
-      if (en.isIntersecting) {
-        readerCtx.current = +en.target.dataset.ch;
-        tocLinks.forEach(a => a.classList.toggle("active", +a.dataset.ch === readerCtx.current));
-        $("#cn-label").textContent = `Chapter ${readerCtx.current} / ${total}`;
-        const pct = Math.round((readerCtx.current / total) * 100);
-        $("#rb-ring").innerHTML = ring(pct, 34);
-        progress.set(b.id, readerCtx.current, total);
-        updateProgressPill();
-        if (readerCtx.current === total && !readerCtx.finishedToast) { readerCtx.finishedToast = true; toast("🎉 You reached the final chapter — great work!"); }
-      }
-    }), { rootMargin: "-12% 0px -78% 0px" });
-    sections.forEach(s => obs.observe(s));
-    window.scrollTo(0, 0);
+    $("#bookmark-btn").onclick = () => { const c = content.chapters[readerCtx.current - 1]; marks.add({ id, ch: readerCtx.current, title: b.title, chapter: c.title }); toast("⚑ Bookmarked Chapter " + readerCtx.current); };
+    $$("#reader-toc a").forEach(a => a.onclick = () => showChapter(+a.dataset.ch));
+    showChapter(startCh);
   }
-
+  function showChapter(n) {
+    const ctx = readerCtx; if (!ctx) return; n = Math.min(ctx.total, Math.max(1, n)); ctx.current = n;
+    const c = ctx.content.chapters[n - 1]; const host = $("#reader-body");
+    host.innerHTML = chapterHtml(c, n, ctx.total);
+    host.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: "ease" });
+    $$("#reader-toc a").forEach(a => a.classList.toggle("active", +a.dataset.ch === n));
+    const act = $(`#reader-toc a[data-ch="${n}"]`); if (act) act.scrollIntoView({ block: "nearest" });
+    const pct = Math.round(n / ctx.total * 100); $("#rb-ring").innerHTML = ring(pct, 34);
+    progress.set(ctx.id, n, ctx.total); updateProgressPill();
+    $$(".qbox[data-ans]", host).forEach(box => { const correct = +box.dataset.ans; $$(".opt", box).forEach(opt => opt.onclick = () => { if (box.classList.contains("answered")) return; box.classList.add("answered"); const j = +opt.dataset.j; $$(".opt", box).forEach(o => { const oj = +o.dataset.j; if (oj === correct) o.classList.add("correct"); else if (oj === j) o.classList.add("wrong"); o.disabled = true; }); $(".ans", box).classList.remove("hidden"); toast(j === correct ? "Correct! ✓" : "See the explanation"); }); });
+    $("#pg-prev").onclick = () => showChapter(n - 1);
+    $("#pg-next").onclick = () => { if (n >= ctx.total) toast("🎉 You finished the book — great work!"); else showChapter(n + 1); };
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   function renderOutlinePreview(b) {
     return loadOutline(b.id).then(outline => {
       const body = outline.chapters.map(c => `<section><h1>Chapter ${c.number}. ${esc(c.title)}</h1><p class="cap">${esc(c.summary)}</p><ul>${c.sections.map(s => `<li>${esc(s)}</li>`).join("")}</ul></section>`).join("");
       view().innerHTML = `
         <div class="btn-row" style="margin-bottom:14px"><a class="btn ghost" href="#book/${b.id}">‹ Details</a></div>
-        <div class="section-block"><b>Outline preview.</b> Start the app server (<code>python serve.py</code>) to read the full text and diagrams of this and every book online.</div>
+        <div class="section-block"><b>Outline preview.</b> Start the app server (<code>python serve.py</code>) to read the full text and infographics of this and every book online.</div>
         <article class="reader-body" style="--rfs:1.06rem">${body}</article>`;
     });
   }
-
-  // keyboard chapter nav
   document.addEventListener("keydown", e => {
-    if (!location.hash.startsWith("#read/") || /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
-    if (!readerCtx) return;
-    if (e.key === "ArrowRight") { e.preventDefault(); const el = $(`#ch-${Math.min(readerCtx.total, readerCtx.current + 1)}`); el && el.scrollIntoView({ behavior: "smooth" }); }
-    if (e.key === "ArrowLeft") { e.preventDefault(); const el = $(`#ch-${Math.max(1, readerCtx.current - 1)}`); el && el.scrollIntoView({ behavior: "smooth" }); }
+    if (!location.hash.startsWith("#read/") || !readerCtx) return;
+    if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); showChapter(readerCtx.current + 1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); showChapter(readerCtx.current - 1); }
   });
 
   // ---- Ask Anything ----

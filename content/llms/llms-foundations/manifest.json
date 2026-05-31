@@ -26,9 +26,9 @@
   "description": "Architecture, training and serving of large language models — a foundational guide for newcomers building a rigorous base.",
   "isbn": "978-8-23271-394-3",
   "published": "2026",
-  "estimated_pages": 282,
-  "word_count": 65595,
-  "diagram_count": 31,
+  "estimated_pages": 283,
+  "word_count": 65683,
+  "diagram_count": 32,
   "code_count": 24,
   "question_count": 100,
   "chapter_count": 25,
@@ -56,8 +56,8 @@
       "chapter": 2,
       "title": "Component - Tokenisation and Vocabulary",
       "kind": "Component",
-      "fmt": "mermaid",
-      "file": "fig-002-component.mmd",
+      "fmt": "plantuml",
+      "file": "fig-002-component.puml",
       "caption": "Figure: Component view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -65,81 +65,81 @@
       "chapter": 3,
       "title": "DevOps Pipeline - The Transformer Backbone of LLMs",
       "kind": "DevOps Pipeline",
-      "fmt": "plantuml",
-      "file": "fig-003-devops-pipeline.puml",
+      "fmt": "drawio",
+      "file": "fig-003-devops-pipeline.drawio",
       "caption": "Figure: DevOps Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 4,
-      "chapter": 3,
-      "title": "Business Process - The Transformer Backbone of LLMs",
+      "chapter": 4,
+      "title": "Business Process - Pre-training Objectives and Data",
       "kind": "Business Process",
-      "fmt": "svg",
-      "file": "fig-004-business-process.svg",
+      "fmt": "plantuml",
+      "file": "fig-004-business-process.puml",
       "caption": "Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 5,
-      "chapter": 4,
-      "title": "Business Process - Pre-training Objectives and Data",
-      "kind": "Business Process",
-      "fmt": "svg",
-      "file": "fig-005-business-process.svg",
-      "caption": "Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 6,
-      "chapter": 4,
-      "title": "Operating Model - Pre-training Objectives and Data",
-      "kind": "Operating Model",
-      "fmt": "drawio",
-      "file": "fig-006-operating-model.drawio",
-      "caption": "Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 7,
       "chapter": 5,
       "title": "Operating Model - Scaling Laws and Emergent Abilities",
       "kind": "Operating Model",
-      "fmt": "drawio",
-      "file": "fig-007-operating-model.drawio",
+      "fmt": "svg",
+      "file": "fig-005-operating-model.svg",
       "caption": "Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 8,
-      "chapter": 6,
-      "title": "CI/CD Pipeline - Instruction Tuning and Alignment",
+      "figure": 6,
+      "chapter": 5,
+      "title": "CI/CD Pipeline - Scaling Laws and Emergent Abilities",
       "kind": "CI/CD Pipeline",
-      "fmt": "plantuml",
-      "file": "fig-008-ci-cd-pipeline.puml",
+      "fmt": "drawio",
+      "file": "fig-006-ci-cd-pipeline.drawio",
       "caption": "Figure: CI/CD Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 9,
+      "figure": 7,
+      "chapter": 6,
+      "title": "CI/CD Pipeline - Instruction Tuning and Alignment",
+      "kind": "CI/CD Pipeline",
+      "fmt": "svg",
+      "file": "fig-007-ci-cd-pipeline.svg",
+      "caption": "Figure: CI/CD Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 8,
       "chapter": 7,
       "title": "Architecture - Context Windows and Long-Context Techniques",
       "kind": "Architecture",
-      "fmt": "svg",
-      "file": "fig-009-architecture.svg",
+      "fmt": "plantuml",
+      "file": "fig-008-architecture.puml",
       "caption": "Figure: Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 10,
+      "figure": 9,
       "chapter": 8,
       "title": "Security Architecture - Inference Optimisation",
       "kind": "Security Architecture",
-      "fmt": "drawio",
-      "file": "fig-010-security-architecture.drawio",
+      "fmt": "plantuml",
+      "file": "fig-009-security-architecture.puml",
       "caption": "Figure: Security Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 11,
+      "figure": 10,
       "chapter": 9,
       "title": "Data Lineage - Serving LLMs at Scale",
       "kind": "Data Lineage",
       "fmt": "plantuml",
-      "file": "fig-011-data-lineage.puml",
+      "file": "fig-010-data-lineage.puml",
       "caption": "Figure: Data Lineage view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 11,
+      "chapter": 9,
+      "title": "Sequence - Serving LLMs at Scale",
+      "kind": "Sequence",
+      "fmt": "plantuml",
+      "file": "fig-011-sequence.puml",
+      "caption": "Figure: Sequence view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 12,
@@ -155,14 +155,14 @@
       "chapter": 11,
       "title": "Cloud Architecture - Hallucination and Factuality",
       "kind": "Cloud Architecture",
-      "fmt": "mermaid",
-      "file": "fig-013-cloud-architecture.mmd",
+      "fmt": "plantuml",
+      "file": "fig-013-cloud-architecture.puml",
       "caption": "Figure: Cloud Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 14,
-      "chapter": 12,
-      "title": "Agent Architecture - Cost and Capacity Planning",
+      "chapter": 11,
+      "title": "Agent Architecture - Hallucination and Factuality",
       "kind": "Agent Architecture",
       "fmt": "mermaid",
       "file": "fig-014-agent-architecture.mmd",
@@ -170,39 +170,39 @@
     },
     {
       "figure": 15,
-      "chapter": 13,
-      "title": "RAG Architecture - Safety and Alignment in Production",
-      "kind": "RAG Architecture",
-      "fmt": "drawio",
-      "file": "fig-015-rag-architecture.drawio",
-      "caption": "Figure: RAG Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 12,
+      "title": "Agent Architecture - Cost and Capacity Planning",
+      "kind": "Agent Architecture",
+      "fmt": "svg",
+      "file": "fig-015-agent-architecture.svg",
+      "caption": "Figure: Agent Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 16,
-      "chapter": 14,
-      "title": "Data Flow - The LLM Platform Reference Architecture",
-      "kind": "Data Flow",
-      "fmt": "mermaid",
-      "file": "fig-016-data-flow.mmd",
-      "caption": "Figure: Data Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 13,
+      "title": "RAG Architecture - Safety and Alignment in Production",
+      "kind": "RAG Architecture",
+      "fmt": "plantuml",
+      "file": "fig-016-rag-architecture.puml",
+      "caption": "Figure: RAG Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 17,
-      "chapter": 15,
-      "title": "Application Flow - Putting It Together: A Reference Implementation",
-      "kind": "Application Flow",
-      "fmt": "mermaid",
-      "file": "fig-017-application-flow.mmd",
-      "caption": "Figure: Application Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 14,
+      "title": "Data Flow - The LLM Platform Reference Architecture",
+      "kind": "Data Flow",
+      "fmt": "plantuml",
+      "file": "fig-017-data-flow.puml",
+      "caption": "Figure: Data Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 18,
       "chapter": 15,
-      "title": "Infrastructure - Putting It Together: A Reference Implementation",
-      "kind": "Infrastructure",
+      "title": "Application Flow - Putting It Together: A Reference Implementation",
+      "kind": "Application Flow",
       "fmt": "drawio",
-      "file": "fig-018-infrastructure.drawio",
-      "caption": "Figure: Infrastructure view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "file": "fig-018-application-flow.drawio",
+      "caption": "Figure: Application Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 19,
@@ -233,8 +233,8 @@
     },
     {
       "figure": 22,
-      "chapter": 19,
-      "title": "Class - Evaluation and Quality Assurance",
+      "chapter": 18,
+      "title": "Class - Operating in Production",
       "kind": "Class",
       "fmt": "mermaid",
       "file": "fig-022-class.mmd",
@@ -242,84 +242,93 @@
     },
     {
       "figure": 23,
+      "chapter": 19,
+      "title": "Class - Evaluation and Quality Assurance",
+      "kind": "Class",
+      "fmt": "mermaid",
+      "file": "fig-023-class.mmd",
+      "caption": "Figure: Class view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 24,
+      "chapter": 19,
+      "title": "Knowledge Graph - Evaluation and Quality Assurance",
+      "kind": "Knowledge Graph",
+      "fmt": "svg",
+      "file": "fig-024-knowledge-graph.svg",
+      "caption": "Figure: Knowledge Graph view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 25,
       "chapter": 20,
       "title": "Knowledge Graph - Security, Privacy and Governance",
       "kind": "Knowledge Graph",
       "fmt": "mermaid",
-      "file": "fig-023-knowledge-graph.mmd",
+      "file": "fig-025-knowledge-graph.mmd",
       "caption": "Figure: Knowledge Graph view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 24,
+      "figure": 26,
+      "chapter": 20,
+      "title": "Network - Security, Privacy and Governance",
+      "kind": "Network",
+      "fmt": "drawio",
+      "file": "fig-026-network.drawio",
+      "caption": "Figure: Network view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 27,
       "chapter": 21,
       "title": "Network - Cost, Performance and Scaling",
       "kind": "Network",
       "fmt": "drawio",
-      "file": "fig-024-network.drawio",
+      "file": "fig-027-network.drawio",
       "caption": "Figure: Network view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 25,
-      "chapter": 22,
-      "title": "Component - Integration and Interoperability",
+      "figure": 28,
+      "chapter": 21,
+      "title": "Component - Cost, Performance and Scaling",
       "kind": "Component",
       "fmt": "mermaid",
-      "file": "fig-025-component.mmd",
+      "file": "fig-028-component.mmd",
       "caption": "Figure: Component view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 26,
-      "chapter": 23,
-      "title": "DevOps Pipeline - Trends and Research Directions",
-      "kind": "DevOps Pipeline",
-      "fmt": "mermaid",
-      "file": "fig-026-devops-pipeline.mmd",
-      "caption": "Figure: DevOps Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 27,
-      "chapter": 23,
-      "title": "Business Process - Trends and Research Directions",
-      "kind": "Business Process",
-      "fmt": "mermaid",
-      "file": "fig-027-business-process.mmd",
-      "caption": "Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 28,
-      "chapter": 24,
-      "title": "Business Process - Capstone Project",
-      "kind": "Business Process",
-      "fmt": "svg",
-      "file": "fig-028-business-process.svg",
-      "caption": "Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
       "figure": 29,
-      "chapter": 24,
-      "title": "Operating Model - Capstone Project",
-      "kind": "Operating Model",
-      "fmt": "svg",
-      "file": "fig-029-operating-model.svg",
-      "caption": "Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 22,
+      "title": "Component - Integration and Interoperability",
+      "kind": "Component",
+      "fmt": "plantuml",
+      "file": "fig-029-component.puml",
+      "caption": "Figure: Component view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 30,
-      "chapter": 25,
-      "title": "Operating Model - Certification Preparation and Review",
-      "kind": "Operating Model",
-      "fmt": "svg",
-      "file": "fig-030-operating-model.svg",
-      "caption": "Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 23,
+      "title": "DevOps Pipeline - Trends and Research Directions",
+      "kind": "DevOps Pipeline",
+      "fmt": "drawio",
+      "file": "fig-030-devops-pipeline.drawio",
+      "caption": "Figure: DevOps Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 31,
+      "chapter": 24,
+      "title": "Business Process - Capstone Project",
+      "kind": "Business Process",
+      "fmt": "plantuml",
+      "file": "fig-031-business-process.puml",
+      "caption": "Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 32,
       "chapter": 25,
-      "title": "CI/CD Pipeline - Certification Preparation and Review",
-      "kind": "CI/CD Pipeline",
-      "fmt": "svg",
-      "file": "fig-031-ci-cd-pipeline.svg",
-      "caption": "Figure: CI/CD Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Operating Model - Certification Preparation and Review",
+      "kind": "Operating Model",
+      "fmt": "drawio",
+      "file": "fig-032-operating-model.drawio",
+      "caption": "Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     }
   ]
 }

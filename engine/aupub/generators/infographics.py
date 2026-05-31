@@ -48,6 +48,8 @@ _DEFS = (
     '<path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker>'
     '<marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">'
     '<path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker>'
+    '<filter id="sh" x="-20%" y="-20%" width="140%" height="140%">'
+    '<feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter>'
     '</defs>'
 )
 
@@ -90,7 +92,7 @@ def _vals(rng, n, lo=35, hi=100):
 
 
 def _box(x, y, w, h, fill, label, fg="#ffffff", fs=12, rx=11, sub=None):
-    out = [_rect(x, y, w, h, fill, rx)]
+    out = [f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" rx="{rx}" fill="{fill}" filter="url(#sh)"/>']
     label = _short(label, max(6, int(w / (fs * 0.55))))
     if sub:
         out.append(_txt(x + w / 2, y + h / 2 - 7, label, fs, fg))
@@ -519,13 +521,18 @@ def render_infographic(domain: dict, kind: str, title: str, rng: random.Random) 
     shift = rng.randrange(len(pal))
     pal = pal[shift:] + pal[:shift]
     inner = tpl(domain, title, pal, rng)
+    uid = format(rng.getrandbits(28), "x")
+    grad = (f'<defs><linearGradient id="bn{uid}" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{pal[0]}"/>'
+            f'<stop offset="1" stop-color="{pal[1 % len(pal)]}"/></linearGradient></defs>')
+    footer = _txt(PAD, H - 14, _short(domain["name"] + "  \u2022  " + kind, 60), 9.5, MUTED, "start", "500")
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
         f'data-tpl="{TEMPLATE_NAMES[ti]}" data-pal="{pi}-{shift}" '
         f'viewBox="0 0 {W} {H}" font-family="Inter, Segoe UI, Arial, sans-serif">'
-        f'{_DEFS}<rect width="{W}" height="{H}" rx="14" fill="{BG}"/>'
-        f'<rect x="0" y="0" width="{W}" height="46" rx="14" fill="{pal[0]}"/>'
-        f'<rect x="0" y="30" width="{W}" height="16" fill="{pal[0]}"/>'
-        f'{_txt(W/2, 24, _short(title, 64), 15, "#ffffff", weight="700")}'
-        f'{inner}</svg>'
+        f'{_DEFS}{grad}<rect width="{W}" height="{H}" rx="14" fill="{BG}"/>'
+        f'<rect x="0" y="0" width="{W}" height="48" rx="14" fill="url(#bn{uid})"/>'
+        f'<rect x="0" y="32" width="{W}" height="16" fill="url(#bn{uid})"/>'
+        f'{_txt(W/2, 25, _short(title, 64), 15, "#ffffff", weight="700")}'
+        f'{inner}{footer}</svg>'
     )

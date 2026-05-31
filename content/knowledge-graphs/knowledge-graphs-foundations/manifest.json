@@ -24,9 +24,9 @@
   "description": "Modelling, storing and reasoning over connected data — a foundational guide for newcomers building a rigorous base.",
   "isbn": "978-0-57595-662-9",
   "published": "2026",
-  "estimated_pages": 278,
-  "word_count": 64063,
-  "diagram_count": 33,
+  "estimated_pages": 279,
+  "word_count": 64054,
+  "diagram_count": 35,
   "code_count": 24,
   "question_count": 100,
   "chapter_count": 25,
@@ -54,8 +54,8 @@
       "chapter": 1,
       "title": "DevOps Pipeline - Graphs, Triples and the Property Graph Model",
       "kind": "DevOps Pipeline",
-      "fmt": "mermaid",
-      "file": "fig-002-devops-pipeline.mmd",
+      "fmt": "svg",
+      "file": "fig-002-devops-pipeline.svg",
       "caption": "Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -135,8 +135,8 @@
       "chapter": 8,
       "title": "Architecture - Data Quality and Entity Resolution",
       "kind": "Architecture",
-      "fmt": "mermaid",
-      "file": "fig-011-architecture.mmd",
+      "fmt": "svg",
+      "file": "fig-011-architecture.svg",
       "caption": "Figure: Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -270,72 +270,90 @@
       "chapter": 20,
       "title": "Application Flow - Security, Privacy and Governance",
       "kind": "Application Flow",
-      "fmt": "mermaid",
-      "file": "fig-026-application-flow.mmd",
+      "fmt": "plantuml",
+      "file": "fig-026-application-flow.puml",
       "caption": "Figure: Application Flow view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 27,
-      "chapter": 21,
-      "title": "RAG Architecture - Cost, Performance and Scaling",
+      "chapter": 20,
+      "title": "RAG Architecture - Security, Privacy and Governance",
       "kind": "RAG Architecture",
-      "fmt": "plantuml",
-      "file": "fig-027-rag-architecture.puml",
+      "fmt": "mermaid",
+      "file": "fig-027-rag-architecture.mmd",
       "caption": "Figure: RAG Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 28,
-      "chapter": 22,
-      "title": "DevOps Pipeline - Integration and Interoperability",
-      "kind": "DevOps Pipeline",
-      "fmt": "mermaid",
-      "file": "fig-028-devops-pipeline.mmd",
-      "caption": "Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 21,
+      "title": "RAG Architecture - Cost, Performance and Scaling",
+      "kind": "RAG Architecture",
+      "fmt": "plantuml",
+      "file": "fig-028-rag-architecture.puml",
+      "caption": "Figure: RAG Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 29,
+      "chapter": 21,
+      "title": "DevOps Pipeline - Cost, Performance and Scaling",
+      "kind": "DevOps Pipeline",
+      "fmt": "svg",
+      "file": "fig-029-devops-pipeline.svg",
+      "caption": "Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 30,
+      "chapter": 22,
+      "title": "DevOps Pipeline - Integration and Interoperability",
+      "kind": "DevOps Pipeline",
+      "fmt": "plantuml",
+      "file": "fig-030-devops-pipeline.puml",
+      "caption": "Figure: DevOps Pipeline view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 31,
       "chapter": 23,
       "title": "Deployment - Trends and Research Directions",
       "kind": "Deployment",
       "fmt": "plantuml",
-      "file": "fig-029-deployment.puml",
+      "file": "fig-031-deployment.puml",
       "caption": "Figure: Deployment view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 30,
+      "figure": 32,
       "chapter": 23,
       "title": "Security Architecture - Trends and Research Directions",
       "kind": "Security Architecture",
-      "fmt": "plantuml",
-      "file": "fig-030-security-architecture.puml",
+      "fmt": "drawio",
+      "file": "fig-032-security-architecture.drawio",
       "caption": "Figure: Security Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 31,
+      "figure": 33,
       "chapter": 24,
       "title": "Security Architecture - Capstone Project",
       "kind": "Security Architecture",
-      "fmt": "mermaid",
-      "file": "fig-031-security-architecture.mmd",
+      "fmt": "svg",
+      "file": "fig-033-security-architecture.svg",
       "caption": "Figure: Security Architecture view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 32,
+      "figure": 34,
+      "chapter": 24,
+      "title": "Network - Capstone Project",
+      "kind": "Network",
+      "fmt": "plantuml",
+      "file": "fig-034-network.puml",
+      "caption": "Figure: Network view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 35,
       "chapter": 25,
       "title": "Network - Certification Preparation and Review",
       "kind": "Network",
       "fmt": "plantuml",
-      "file": "fig-032-network.puml",
+      "file": "fig-035-network.puml",
       "caption": "Figure: Network view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 33,
-      "chapter": 25,
-      "title": "Class - Certification Preparation and Review",
-      "kind": "Class",
-      "fmt": "mermaid",
-      "file": "fig-033-class.mmd",
-      "caption": "Figure: Class view for Knowledge Graphs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     }
   ]
 }

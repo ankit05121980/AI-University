@@ -1,0 +1,12 @@
+@startuml
+title Business Process - Hands-On Lab: Building an End-to-End Embeddings System
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

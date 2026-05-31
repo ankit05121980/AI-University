@@ -1,0 +1,12 @@
+@startuml
+title Data Lineage - The GraphRAG Reference Architecture
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

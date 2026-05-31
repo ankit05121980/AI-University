@@ -336,6 +336,41 @@
     if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans show">💡 ${esc(q.explanation)}</div></div>`;
     return `<div class="qbox" data-ans="${q.answer_index}"><b>${i + 1}. ${esc(q.question)}</b><div class="opts">${q.options.map((o, j) => `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join("")}</div><div class="ans hidden">${esc(q.explanation)}</div></div>`;
   }
+  function explainerHtml(c) {
+    const steps = ["Problem", "Approach", "Design", "Build", "Evaluate", "Operate"];
+    const yt = "https://www.youtube.com/results?search_query=" + encodeURIComponent(c.title + " explained");
+    return `<div class="explainer">
+      <div class="exp-head"><span class="exp-badge">\u25B6 Animated walkthrough</span>
+        <a class="btn ghost" href="${yt}" target="_blank" rel="noopener">Watch real-world videos \u2197</a></div>
+      ${explainerSVG(steps, c.title)}
+      <div class="exp-cap">A looping, real-world walkthrough of how teams take \u201C${esc(c.title)}\u201D from problem to production. Use the link above for hands-on video tutorials.</div>
+    </div>`;
+  }
+  function explainerSVG(steps, scenario) {
+    const N = steps.length, slot = 1.5, total = (N * slot).toFixed(1);
+    const VW = 820, VH = 210, pad = 26;
+    const bw = (VW - 2 * pad - (N - 1) * 14) / N, y = 78, bh = 60;
+    const xs = []; for (let i = 0; i < N; i++) xs.push(pad + i * (bw + 14));
+    let boxes = "", labels = "", conns = "";
+    for (let i = 0; i < N; i++) {
+      const x = xs[i];
+      boxes += `<rect x="${x.toFixed(0)}" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>`;
+      labels += `<text x="${(x + bw / 2).toFixed(0)}" y="${y + bh / 2 - 4}" text-anchor="middle" font-size="13" font-weight="800" fill="#1e293b">${esc(steps[i])}</text>`;
+      labels += `<text x="${(x + bw / 2).toFixed(0)}" y="${y + bh / 2 + 15}" text-anchor="middle" font-size="9.5" fill="#64748b">step ${i + 1}</text>`;
+      if (i < N - 1) conns += `<line x1="${(x + bw).toFixed(0)}" y1="${y + bh / 2}" x2="${(x + bw + 14).toFixed(0)}" y2="${y + bh / 2}" stroke="#cbd5e1" stroke-width="2"/>`;
+    }
+    const kt = []; for (let i = 0; i <= N; i++) kt.push((i / N).toFixed(3));
+    const vals = xs.map(x => `${x.toFixed(0)} 0`).concat([`${xs[0].toFixed(0)} 0`]).join(";");
+    const hl = `<rect x="0" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="#4338ca" fill-opacity="0.16" stroke="#4338ca" stroke-width="3">
+      <animateTransform attributeName="transform" type="translate" dur="${total}s" repeatCount="indefinite" calcMode="discrete" keyTimes="${kt.join(";")}" values="${vals}"/></rect>`;
+    const prog = `<rect x="${pad}" y="${VH - 24}" width="0" height="6" rx="3" fill="#4338ca"><animate attributeName="width" dur="${total}s" repeatCount="indefinite" values="0;${VW - 2 * pad}"/></rect>`;
+    return `<svg viewBox="0 0 ${VW} ${VH}" class="exp-svg" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <rect width="${VW}" height="${VH}" rx="14" fill="#ffffff"/>
+      <text x="${pad}" y="42" font-size="13" font-weight="700" fill="#0f172a">Real-world walkthrough</text>
+      <circle cx="${VW - pad - 8}" cy="38" r="6" fill="#dc2626"><animate attributeName="opacity" dur="1.4s" repeatCount="indefinite" values="1;0.2;1"/></circle>
+      <rect x="${pad}" y="${VH - 24}" width="${VW - 2 * pad}" height="6" rx="3" fill="#e2e8f0"/>
+      ${conns}${boxes}${hl}${labels}${prog}</svg>`;
+  }
   function chapterHtml(c, n, total) {
     const mins = Math.max(1, Math.round(chapterWords(c) / 220));
     const topics = (c.sections || []).map(s => s.heading).filter(hd => !/introduction|review|walkthrough|takeaway|check your/i.test(hd)).slice(0, 5);
@@ -358,6 +393,7 @@
         <p class="ch-summary">${esc(c.summary)}</p>
         ${topics.length ? `<div class="chip-row">${topics.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
       </div>
+      ${explainerHtml(c)}
       ${sec}${code}${quiz}
       <div class="ch-pager">
         <button class="btn" id="pg-prev" ${n <= 1 ? "disabled" : ""}>‹ Previous</button>
@@ -406,7 +442,7 @@
     $$(".qbox[data-ans]", host).forEach(box => { const correct = +box.dataset.ans; $$(".opt", box).forEach(opt => opt.onclick = () => { if (box.classList.contains("answered")) return; box.classList.add("answered"); const j = +opt.dataset.j; $$(".opt", box).forEach(o => { const oj = +o.dataset.j; if (oj === correct) o.classList.add("correct"); else if (oj === j) o.classList.add("wrong"); o.disabled = true; }); $(".ans", box).classList.remove("hidden"); toast(j === correct ? "Correct! ✓" : "See the explanation"); }); });
     $("#pg-prev").onclick = () => showChapter(n - 1);
     $("#pg-next").onclick = () => { if (n >= ctx.total) toast("🎉 You finished the book — great work!"); else showChapter(n + 1); };
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo(0, 0); document.documentElement.scrollTop = 0; document.body.scrollTop = 0;
   }
   function renderOutlinePreview(b) {
     return loadOutline(b.id).then(outline => {

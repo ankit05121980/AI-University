@@ -66,6 +66,27 @@ def _txt(x, y, s, fs=12, fill=INK, anchor="middle", weight="600"):
             f'font-weight="{weight}" fill="{fill}" dominant-baseline="middle">{escape(str(s))}</text>')
 
 
+def _wrap(s, cpl, maxlines):
+    words = str(s).split()
+    lines, cur = [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if len(t) <= cpl or not cur:
+            cur = t
+        else:
+            lines.append(cur); cur = w
+            if len(lines) >= maxlines:
+                cur = ""; break
+    if cur and len(lines) < maxlines:
+        lines.append(cur)
+    return lines or [str(s)]
+
+
+def _mtext(cx, cy, lines, fs, fill, weight="600"):
+    n = len(lines); lh = fs * 1.15; y0 = cy - (n - 1) * lh / 2
+    return "".join(_txt(cx, y0 + i * lh, ln, fs, fill, "middle", weight) for i, ln in enumerate(lines))
+
+
 def _rect(x, y, w, h, fill, rx=10, stroke="none", sw=0):
     st = f' stroke="{stroke}" stroke-width="{sw}"' if stroke != "none" else ""
     return f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" rx="{rx}" fill="{fill}"{st}/>'
@@ -93,12 +114,20 @@ def _vals(rng, n, lo=35, hi=100):
 
 def _box(x, y, w, h, fill, label, fg="#ffffff", fs=12, rx=11, sub=None):
     out = [f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" rx="{rx}" fill="{fill}" filter="url(#sh)"/>']
-    label = _short(label, max(6, int(w / (fs * 0.55))))
+    cpl = max(6, int((w - 12) / (fs * 0.54)))
+    maxlines = 3 if h >= 56 else 2
+    lines = _wrap(label, cpl, maxlines)
+    # shrink font a touch if it overflowed the line budget
+    if sum(len(l) for l in lines) < len(str(label)) and fs > 9:
+        fs2 = fs - 1.5
+        cpl = max(6, int((w - 10) / (fs2 * 0.54)))
+        lines = _wrap(label, cpl, maxlines + 1)
+        fs = fs2
     if sub:
-        out.append(_txt(x + w / 2, y + h / 2 - 7, label, fs, fg))
-        out.append(_txt(x + w / 2, y + h / 2 + 9, _short(sub, 22), fs - 3, fg, weight="500"))
+        out.append(_mtext(x + w / 2, y + h / 2 - 8, lines, fs, fg))
+        out.append(_txt(x + w / 2, y + h / 2 + 11, _short(sub, 24), fs - 2, fg, weight="500"))
     else:
-        out.append(_txt(x + w / 2, y + h / 2, label, fs, fg))
+        out.append(_mtext(x + w / 2, y + h / 2, lines, fs, fg))
     return "".join(out)
 
 
@@ -172,7 +201,7 @@ def t_radial(domain, title, pal, rng):
     ls = _labels(domain, 6, rng); out = []
     cx, cy = W / 2, H / 2 + 8
     out.append(f'<circle cx="{cx}" cy="{cy}" r="52" fill="{INK}"/>')
-    out.append(_txt(cx, cy, _short(domain["name"], 14), 12, "#fff"))
+    out.append(_mtext(cx, cy, _wrap(domain["name"], 13, 2), 12, "#fff"))
     n = len(ls)
     for i, l in enumerate(ls):
         ang = 2 * math.pi * i / n - math.pi / 2
@@ -185,7 +214,7 @@ def t_radial(domain, title, pal, rng):
 def t_mindmap(domain, title, pal, rng):
     ls = _labels(domain, 6, rng); out = []
     cx, cy = W / 2, H / 2 + 6
-    out.append(_box(cx - 90, cy - 26, 180, 52, INK, _short(domain["name"], 18), fs=13))
+    out.append(_box(cx - 90, cy - 26, 180, 52, INK, domain["name"], fs=13))
     left = ls[:3]; right = ls[3:6]
     for side, items in ((-1, left), (1, right)):
         for i, l in enumerate(items):
@@ -203,7 +232,7 @@ def t_funnel(domain, title, pal, rng):
         w = topw * (1 - i * 0.16)
         x = (W - w) / 2
         out.append(f'<polygon points="{x:.0f},{y:.0f} {x+w:.0f},{y:.0f} {x+w-26:.0f},{y+h:.0f} {x+26:.0f},{y+h:.0f}" fill="{pal[i % len(pal)]}"/>')
-        out.append(_txt(W / 2, y + h / 2, l, 12, "#fff"))
+        out.append(_mtext(W / 2, y + h / 2, _wrap(l, max(10, int((w - 40) / 6.5)), 2), 12, "#fff"))
         y += h + gap
     return "".join(out)
 
@@ -215,7 +244,7 @@ def t_pyramid(domain, title, pal, rng):
         w = baseW * (1 - i / n)
         x = (W - w) / 2
         out.append(f'<polygon points="{W/2:.0f},{y-h:.0f} {x:.0f},{y:.0f} {x+w:.0f},{y:.0f}" fill="{pal[i % len(pal)]}"/>' if i == n - 1 else _rect(x, y - h, w, h - 6, pal[i % len(pal)], 4))
-        out.append(_txt(W / 2, y - h / 2, l, 12, "#fff"))
+        out.append(_mtext(W / 2, y - h / 2, _wrap(l, 26, 2), 12, "#fff"))
         y -= h
     return "".join(out)
 
@@ -238,7 +267,7 @@ def t_donut(domain, title, pal, rng):
     lx, ly = 470, cy - 90
     for i, (l, v) in enumerate(zip(ls, vals)):
         out.append(_rect(lx, ly + i * 36, 16, 16, pal[i % len(pal)], 4))
-        out.append(_txt(lx + 26, ly + i * 36 + 8, f"{_short(l, 28)}  ({round(100*v/tot)}%)", 12, INK, "start", "500"))
+        out.append(_txt(lx + 26, ly + i * 36 + 8, f"{_short(l, 52)}  ({round(100*v/tot)}%)", 11, INK, "start", "500"))
     return "".join(out)
 
 
@@ -251,7 +280,7 @@ def t_bars(domain, title, pal, rng):
         bh = maxh * v / 100; x = x0 + i * (bw + gap)
         out.append(_rect(x, base - bh, bw, bh, pal[i % len(pal)], 8))
         out.append(_txt(x + bw / 2, base - bh - 12, f"{v}", 11, INK))
-        out.append(_txt(x + bw / 2, base + 16, _short(l, 12), 9.5, MUTED, weight="500"))
+        out.append(_mtext(x + bw / 2, base + 18, _wrap(l, 11, 2), 9, MUTED, "500"))
     return "".join(out)
 
 
@@ -261,7 +290,7 @@ def t_matrix(domain, title, pal, rng):
     quads = [(cx - s, cy - s), (cx, cy - s), (cx - s, cy), (cx, cy)]
     for i, (qx, qy) in enumerate(quads):
         out.append(_rect(qx + 3, qy + 3, s - 6, s - 6, pal[i % len(pal)], 12))
-        out.append(_txt(qx + s / 2, qy + s / 2, _short(ls[i], 16), 12, "#fff"))
+        out.append(_mtext(qx + s / 2, qy + s / 2, _wrap(ls[i], 16, 3), 12, "#fff"))
     out.append(_txt(cx, cy - s - 12, "High impact", 10, MUTED, weight="600"))
     out.append(_txt(cx, cy + s + 16, "Low impact", 10, MUTED, weight="600"))
     out.append(f'<text x="{cx-s-12}" y="{cy}" text-anchor="middle" font-size="10" fill="{MUTED}" transform="rotate(-90 {cx-s-12} {cy})">Low effort</text>')
@@ -293,7 +322,7 @@ def t_steps(domain, title, pal, rng):
         out.append(_rect(x, y, bw, 70, c, 12))
         out.append(f'<circle cx="{x+24:.0f}" cy="{y+24:.0f}" r="15" fill="#ffffff"/>')
         out.append(_txt(x + 24, y + 24, str(i + 1), 13, c))
-        out.append(_txt(x + bw / 2 + 8, y + 50, _short(l, 16), 10.5, "#fff"))
+        out.append(_mtext(x + bw / 2, y + 48, _wrap(l, 18, 2), 10.5, "#fff"))
         if i:
             out.append(_arrow(x - gap, y + 35, x, y + 35))
     return "".join(out)
@@ -305,7 +334,7 @@ def t_concentric(domain, title, pal, rng):
     for i in range(len(ls)):
         r = 150 - i * 34
         out.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{pal[i % len(pal)]}"/>')
-        out.append(_txt(cx, cy - r + 18, _short(ls[i], 22), 11, "#fff"))
+        out.append(_mtext(cx, cy - r + 22, _wrap(ls[i], 30, 2), 11, "#fff"))
     return "".join(out)
 
 
@@ -320,7 +349,7 @@ def t_honeycomb(domain, title, pal, rng):
     for i, (ox, oy) in enumerate(positions[:len(ls)]):
         x = cx + ox; y = cy + oy
         out.append(f'<polygon points="{hexp(x, y)}" fill="{pal[i % len(pal)]}"/>')
-        out.append(_txt(x, y, _short(ls[i], 12), 10, "#fff"))
+        out.append(_mtext(x, y, _wrap(ls[i], 11, 2), 9.5, "#fff"))
     return "".join(out)
 
 
@@ -334,7 +363,7 @@ def t_pillars(domain, title, pal, rng):
         out.append(_rect(x - 8, base - ph - 14, bw + 16, 18, c, 6))
         for s in c.split():
             pass
-        out.append(_txt(x + bw / 2, base - ph / 2, _short(l, 14), 11, "#fff"))
+        out.append(_mtext(x + bw / 2, base - ph / 2, _wrap(l, 16, 3), 11, "#fff"))
     out.append(f'<rect x="{x0-20}" y="{base}" width="{total+40}" height="12" rx="4" fill="{INK}"/>')
     return "".join(out)
 
@@ -345,7 +374,7 @@ def t_ladder(domain, title, pal, rng):
     for i, l in enumerate(ls):
         y = base - (i + 1) * sh
         out.append(_rect(x, y, sw, sh - 6, pal[i % len(pal)], 8))
-        out.append(_txt(x + sw / 2, y + (sh - 6) / 2, _short(l, 18), 11, "#fff"))
+        out.append(_mtext(x + sw / 2, y + (sh - 6) / 2, _wrap(l, 22, 2), 11, "#fff"))
         x += sw - 20
     out.append(_txt(W - 150, 80, "maturity \u2197", 12, MUTED, weight="600"))
     return "".join(out)
@@ -392,7 +421,7 @@ def t_kpi(domain, title, pal, rng):
         out.append(_rect(x, 90, cw, 150, PANEL, 14, "#e2e8f0", 1))
         out.append(_rect(x, 90, cw, 8, c, 0))
         out.append(_txt(x + cw / 2, 150, f"{vals[i]}%", 30, c, weight="800"))
-        out.append(_txt(x + cw / 2, 200, _short(ls[i], 18), 11, MUTED, weight="600"))
+        out.append(_mtext(x + cw / 2, 198, _wrap(ls[i], 22, 2), 11, MUTED, "600"))
     return "".join(out)
 
 
@@ -404,12 +433,12 @@ def t_venn(domain, title, pal, rng):
         out.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{r}" fill="{pal[i % len(pal)]}" fill-opacity="0.55"/>')
     labelpos = [(cx - 110, cy - 70), (cx + 110, cy - 70), (cx, cy + 130)]
     for i, (x, y) in enumerate(labelpos):
-        out.append(_txt(x, y, _short(ls[i], 18), 12, INK))
+        out.append(_mtext(x, y, _wrap(ls[i], 20, 2), 12, INK))
     return "".join(out)
 
 
 def t_tree(domain, title, pal, rng):
-    root = _short(domain["name"], 18); kids = _labels(domain, 4, rng); out = []
+    root = domain["name"]; kids = _labels(domain, 4, rng); out = []
     cx = W / 2
     out.append(_box(cx - 90, 70, 180, 48, INK, root, fs=12))
     n = len(kids); span = W - 2 * PAD - 160
@@ -420,7 +449,7 @@ def t_tree(domain, title, pal, rng):
         out.append(_box(x - 78, y, 156, 46, pal[i % len(pal)], k, fs=11))
         leaf = _labels(domain, 1, rng)[0]
         out.append(f'<line x1="{x:.0f}" y1="{y+46}" x2="{x:.0f}" y2="{y+86}" stroke="#cbd5e1" stroke-width="1.6"/>')
-        out.append(_box(x - 70, y + 86, 140, 40, PANEL, _short(leaf, 16), fg=INK, fs=10))
+        out.append(_box(x - 70, y + 86, 140, 40, PANEL, leaf, fg=INK, fs=10))
     return "".join(out)
 
 
@@ -438,7 +467,7 @@ def t_gauge(domain, title, pal, rng):
     out.append(f'<circle cx="{cx}" cy="{cy}" r="9" fill="{INK}"/>')
     out.append(_txt(cx, cy - 40, f"{val}%", 26, INK, weight="800"))
     lbl = _labels(domain, 1, rng)[0]
-    out.append(_txt(cx, cy + 30, _short(lbl, 30), 12, MUTED, weight="600"))
+    out.append(_mtext(cx, cy + 30, _wrap(lbl, 46, 2), 12, MUTED, "600"))
     return "".join(out)
 
 
@@ -448,7 +477,7 @@ def t_roadmap(domain, title, pal, rng):
     for i, l in enumerate(ls):
         x = PAD + i * seg; c = pal[i % len(pal)]
         out.append(f'<polygon points="{x:.0f},{y:.0f} {x+seg-18:.0f},{y:.0f} {x+seg:.0f},{y+30:.0f} {x+seg-18:.0f},{y+60:.0f} {x:.0f},{y+60:.0f} {x+18:.0f},{y+30:.0f}" fill="{c}"/>')
-        out.append(_txt(x + seg / 2, y + 30, _short(l, 16), 11, "#fff"))
+        out.append(_mtext(x + seg / 2, y + 30, _wrap(l, 22, 2), 11, "#fff"))
         out.append(_txt(x + seg / 2, y - 14, f"Q{i+1}", 11, MUTED, weight="700"))
     return "".join(out)
 
@@ -459,7 +488,9 @@ def t_grid_matrix(domain, title, pal, rng):
     for ci, c in enumerate(cols):
         out.append(_txt(gx + ci * cw + cw / 2, gy - 12, c, 10.5, MUTED, weight="700"))
     for ri, rlab in enumerate(rows):
-        out.append(_txt(gx - 12, gy + ri * ch + ch / 2, _short(rlab, 22), 10.5, INK, "end", "600"))
+        _rl = _wrap(rlab, 26, 2)
+        for _li, _ln in enumerate(_rl):
+            out.append(_txt(gx - 12, gy + ri * ch + ch / 2 + (_li - (len(_rl) - 1) / 2) * 12, _ln, 10, INK, "end", "600"))
         for ci in range(len(cols)):
             v = rng.randint(0, 5)
             c = pal[(ri + ci) % len(pal)]
@@ -525,7 +556,7 @@ def render_infographic(domain: dict, kind: str, title: str, rng: random.Random) 
     grad = (f'<defs><linearGradient id="bn{uid}" x1="0" y1="0" x2="1" y2="0">'
             f'<stop offset="0" stop-color="{pal[0]}"/>'
             f'<stop offset="1" stop-color="{pal[1 % len(pal)]}"/></linearGradient></defs>')
-    footer = _txt(PAD, H - 14, _short(domain["name"] + "  \u2022  " + kind, 60), 9.5, MUTED, "start", "500")
+    footer = _txt(PAD, H - 14, _short(domain["name"] + "  \u2022  " + kind, 80), 9.5, MUTED, "start", "500")
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
         f'data-tpl="{TEMPLATE_NAMES[ti]}" data-pal="{pi}-{shift}" '
@@ -533,6 +564,6 @@ def render_infographic(domain: dict, kind: str, title: str, rng: random.Random) 
         f'{_DEFS}{grad}<rect width="{W}" height="{H}" rx="14" fill="{BG}"/>'
         f'<rect x="0" y="0" width="{W}" height="48" rx="14" fill="url(#bn{uid})"/>'
         f'<rect x="0" y="32" width="{W}" height="16" fill="url(#bn{uid})"/>'
-        f'{_txt(W/2, 25, _short(title, 64), 15, "#ffffff", weight="700")}'
+        f'{_txt(W/2, 25, _short(title, 92), 14.5, "#ffffff", weight="700")}'
         f'{inner}{footer}</svg>'
     )

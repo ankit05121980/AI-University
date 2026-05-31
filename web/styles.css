@@ -454,3 +454,12 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .ch-pager { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 30px 0 8px;
   padding-top: 18px; border-top: 1px solid var(--border); font-family: 'Inter', sans-serif; }
 .qbox { font-family: 'Inter', sans-serif; }
+
+/* ============ v5: chapter explainer "video" ============ */
+.explainer { background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 14px 16px; margin: 0 0 24px; box-shadow: var(--shadow); animation: fadeUp .3s ease both; }
+.exp-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.exp-badge { background: var(--accent-soft); color: var(--accent); font-weight: 800; font-size: .78rem;
+  padding: 6px 13px; border-radius: 999px; font-family: 'Inter', sans-serif; }
+.exp-svg { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--border); }
+.exp-cap { color: var(--muted); font-size: .82rem; margin-top: 8px; font-family: 'Inter', sans-serif; }

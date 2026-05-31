@@ -51,7 +51,13 @@ in the committed demo measure **254–263 physical A4 pages**.
 >   categories) in `content/`, with all five formats, diagram sources and
 >   structured content.
 >
-> Any book — or the entire catalog — can be fully published on demand with a
+> The included **app server (`python serve.py`) renders any of the 528 books on
+> demand** — full text, diagrams, and downloads (PDF/DOCX/PPTX/HTML/Markdown) —
+> so **every** title is fully readable online and downloadable without
+> committing the multi-gigabyte corpus. The committed demo simply lets the
+> portal also work behind a plain static file server.
+>
+> Any book — or the entire catalog — can also be pre-published to disk with a
 > single command (see below).
 
 ---
@@ -126,6 +132,13 @@ python serve.py
 # open http://localhost:8000/web/
 ```
 
+`serve.py` is a small app server. With it running, **all 528 books are fully
+readable online (with rendered diagrams) and downloadable in every format**,
+generated on demand by the engine, and the **Ask Anything** feature answers
+questions from across the whole corpus. (Served behind a plain static server
+instead, the portal still works but only the pre-rendered demo books are
+fully available.)
+
 ---
 
 ## The portal
@@ -140,6 +153,9 @@ Open `http://localhost:8000/web/` after running `serve.py`. Features:
   rendered, self-contained SVG diagrams (no external renderer / works offline),
   syntax-highlighted code, inline assessments and a sticky table of contents;
   non-published titles show a full outline preview.
+- **Ask Anything** — ask a natural-language question and get a synthesised
+  answer drawn from across the entire corpus, with citations to the exact books
+  and chapters to read next.
 - **Search** — instant full-text search across titles, chapters and topics.
 - **Diagram Browser** — explore the 20 diagram types and four source formats.
 - **Download Center** — download PDF, DOCX, PPTX, HTML and Markdown.

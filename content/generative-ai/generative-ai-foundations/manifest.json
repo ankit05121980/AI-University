@@ -25,9 +25,9 @@
   "description": "Designing, deploying and governing systems that create content — a foundational guide for newcomers building a rigorous base.",
   "isbn": "978-6-59384-156-5",
   "published": "2026",
-  "estimated_pages": 288,
-  "word_count": 66003,
-  "diagram_count": 38,
+  "estimated_pages": 286,
+  "word_count": 66047,
+  "diagram_count": 35,
   "code_count": 24,
   "question_count": 100,
   "chapter_count": 25,
@@ -73,8 +73,8 @@
       "chapter": 3,
       "title": "Application Flow - Diffusion Models for Images and Audio",
       "kind": "Application Flow",
-      "fmt": "svg",
-      "file": "fig-004-application-flow.svg",
+      "fmt": "drawio",
+      "file": "fig-004-application-flow.drawio",
       "caption": "Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -82,8 +82,8 @@
       "chapter": 4,
       "title": "Application Flow - Multimodal Generation",
       "kind": "Application Flow",
-      "fmt": "plantuml",
-      "file": "fig-005-application-flow.puml",
+      "fmt": "mermaid",
+      "file": "fig-005-application-flow.mmd",
       "caption": "Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -91,32 +91,32 @@
       "chapter": 5,
       "title": "Knowledge Graph - Grounding with Enterprise Data",
       "kind": "Knowledge Graph",
-      "fmt": "svg",
-      "file": "fig-006-knowledge-graph.svg",
+      "fmt": "mermaid",
+      "file": "fig-006-knowledge-graph.mmd",
       "caption": "Figure: Knowledge Graph view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 7,
-      "chapter": 6,
-      "title": "Operating Model - Controllability and Structured Output",
+      "chapter": 5,
+      "title": "Operating Model - Grounding with Enterprise Data",
       "kind": "Operating Model",
-      "fmt": "svg",
-      "file": "fig-007-operating-model.svg",
+      "fmt": "drawio",
+      "file": "fig-007-operating-model.drawio",
       "caption": "Figure: Operating Model view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 8,
       "chapter": 6,
-      "title": "Cloud Architecture - Controllability and Structured Output",
-      "kind": "Cloud Architecture",
-      "fmt": "mermaid",
-      "file": "fig-008-cloud-architecture.mmd",
-      "caption": "Figure: Cloud Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Operating Model - Controllability and Structured Output",
+      "kind": "Operating Model",
+      "fmt": "svg",
+      "file": "fig-008-operating-model.svg",
+      "caption": "Figure: Operating Model view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 9,
-      "chapter": 7,
-      "title": "Cloud Architecture - Evaluation of Generative Systems",
+      "chapter": 6,
+      "title": "Cloud Architecture - Controllability and Structured Output",
       "kind": "Cloud Architecture",
       "fmt": "drawio",
       "file": "fig-009-cloud-architecture.drawio",
@@ -125,16 +125,16 @@
     {
       "figure": 10,
       "chapter": 7,
-      "title": "Infrastructure - Evaluation of Generative Systems",
-      "kind": "Infrastructure",
-      "fmt": "drawio",
-      "file": "fig-010-infrastructure.drawio",
-      "caption": "Figure: Infrastructure view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Cloud Architecture - Evaluation of Generative Systems",
+      "kind": "Cloud Architecture",
+      "fmt": "plantuml",
+      "file": "fig-010-cloud-architecture.puml",
+      "caption": "Figure: Cloud Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 11,
-      "chapter": 8,
-      "title": "Infrastructure - Safety, Guardrails and Content Moderation",
+      "chapter": 7,
+      "title": "Infrastructure - Evaluation of Generative Systems",
       "kind": "Infrastructure",
       "fmt": "plantuml",
       "file": "fig-011-infrastructure.puml",
@@ -143,64 +143,64 @@
     {
       "figure": 12,
       "chapter": 8,
-      "title": "Data Lineage - Safety, Guardrails and Content Moderation",
-      "kind": "Data Lineage",
+      "title": "Infrastructure - Safety, Guardrails and Content Moderation",
+      "kind": "Infrastructure",
       "fmt": "plantuml",
-      "file": "fig-012-data-lineage.puml",
-      "caption": "Figure: Data Lineage view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "file": "fig-012-infrastructure.puml",
+      "caption": "Figure: Infrastructure view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 13,
       "chapter": 9,
       "title": "Data Lineage - Cost, Latency and Throughput Engineering",
       "kind": "Data Lineage",
-      "fmt": "plantuml",
-      "file": "fig-013-data-lineage.puml",
+      "fmt": "mermaid",
+      "file": "fig-013-data-lineage.mmd",
       "caption": "Figure: Data Lineage view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 14,
-      "chapter": 10,
-      "title": "CI/CD Pipeline - Synthetic Data Generation",
+      "chapter": 9,
+      "title": "CI/CD Pipeline - Cost, Latency and Throughput Engineering",
       "kind": "CI/CD Pipeline",
-      "fmt": "svg",
-      "file": "fig-014-ci-cd-pipeline.svg",
+      "fmt": "mermaid",
+      "file": "fig-014-ci-cd-pipeline.mmd",
       "caption": "Figure: CI/CD Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 15,
+      "chapter": 10,
+      "title": "CI/CD Pipeline - Synthetic Data Generation",
+      "kind": "CI/CD Pipeline",
+      "fmt": "mermaid",
+      "file": "fig-015-ci-cd-pipeline.mmd",
+      "caption": "Figure: CI/CD Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 16,
       "chapter": 11,
       "title": "Architecture - Enterprise Use-Case Patterns",
       "kind": "Architecture",
       "fmt": "plantuml",
-      "file": "fig-015-architecture.puml",
+      "file": "fig-016-architecture.puml",
       "caption": "Figure: Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 16,
-      "chapter": 12,
-      "title": "Component - Productionising Generative Applications",
-      "kind": "Component",
-      "fmt": "plantuml",
-      "file": "fig-016-component.puml",
-      "caption": "Figure: Component view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 17,
       "chapter": 12,
-      "title": "Security Architecture - Productionising Generative Applications",
-      "kind": "Security Architecture",
-      "fmt": "drawio",
-      "file": "fig-017-security-architecture.drawio",
-      "caption": "Figure: Security Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Component - Productionising Generative Applications",
+      "kind": "Component",
+      "fmt": "plantuml",
+      "file": "fig-017-component.puml",
+      "caption": "Figure: Component view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 18,
       "chapter": 13,
       "title": "Security Architecture - Governance and Intellectual Property",
       "kind": "Security Architecture",
-      "fmt": "mermaid",
-      "file": "fig-018-security-architecture.mmd",
+      "fmt": "plantuml",
+      "file": "fig-018-security-architecture.puml",
       "caption": "Figure: Security Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -217,8 +217,8 @@
       "chapter": 14,
       "title": "Capability Map - The GenAI Reference Architecture",
       "kind": "Capability Map",
-      "fmt": "svg",
-      "file": "fig-020-capability-map.svg",
+      "fmt": "mermaid",
+      "file": "fig-020-capability-map.mmd",
       "caption": "Figure: Capability Map view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -235,8 +235,8 @@
       "chapter": 16,
       "title": "Data Flow - Hands-On Lab: Building an End-to-End Generative AI System",
       "kind": "Data Flow",
-      "fmt": "svg",
-      "file": "fig-022-data-flow.svg",
+      "fmt": "drawio",
+      "file": "fig-022-data-flow.drawio",
       "caption": "Figure: Data Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -244,8 +244,8 @@
       "chapter": 16,
       "title": "Network - Hands-On Lab: Building an End-to-End Generative AI System",
       "kind": "Network",
-      "fmt": "plantuml",
-      "file": "fig-023-network.puml",
+      "fmt": "drawio",
+      "file": "fig-023-network.drawio",
       "caption": "Figure: Network view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -259,71 +259,71 @@
     },
     {
       "figure": 25,
-      "chapter": 18,
-      "title": "Deployment - Operating in Production",
+      "chapter": 17,
+      "title": "Deployment - Case Study: Legal at Scale",
       "kind": "Deployment",
-      "fmt": "drawio",
-      "file": "fig-025-deployment.drawio",
+      "fmt": "plantuml",
+      "file": "fig-025-deployment.puml",
       "caption": "Figure: Deployment view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 26,
-      "chapter": 19,
-      "title": "RAG Architecture - Evaluation and Quality Assurance",
-      "kind": "RAG Architecture",
-      "fmt": "svg",
-      "file": "fig-026-rag-architecture.svg",
-      "caption": "Figure: RAG Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "chapter": 18,
+      "title": "Deployment - Operating in Production",
+      "kind": "Deployment",
+      "fmt": "plantuml",
+      "file": "fig-026-deployment.puml",
+      "caption": "Figure: Deployment view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 27,
       "chapter": 19,
-      "title": "DevOps Pipeline - Evaluation and Quality Assurance",
-      "kind": "DevOps Pipeline",
-      "fmt": "plantuml",
-      "file": "fig-027-devops-pipeline.puml",
-      "caption": "Figure: DevOps Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "RAG Architecture - Evaluation and Quality Assurance",
+      "kind": "RAG Architecture",
+      "fmt": "mermaid",
+      "file": "fig-027-rag-architecture.mmd",
+      "caption": "Figure: RAG Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 28,
       "chapter": 20,
       "title": "DevOps Pipeline - Security, Privacy and Governance",
       "kind": "DevOps Pipeline",
-      "fmt": "plantuml",
-      "file": "fig-028-devops-pipeline.puml",
+      "fmt": "svg",
+      "file": "fig-028-devops-pipeline.svg",
       "caption": "Figure: DevOps Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 29,
-      "chapter": 21,
-      "title": "Agent Architecture - Cost, Performance and Scaling",
+      "chapter": 20,
+      "title": "Agent Architecture - Security, Privacy and Governance",
       "kind": "Agent Architecture",
-      "fmt": "drawio",
-      "file": "fig-029-agent-architecture.drawio",
+      "fmt": "mermaid",
+      "file": "fig-029-agent-architecture.mmd",
       "caption": "Figure: Agent Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 30,
       "chapter": 21,
-      "title": "Sequence - Cost, Performance and Scaling",
-      "kind": "Sequence",
-      "fmt": "plantuml",
-      "file": "fig-030-sequence.puml",
-      "caption": "Figure: Sequence view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Agent Architecture - Cost, Performance and Scaling",
+      "kind": "Agent Architecture",
+      "fmt": "drawio",
+      "file": "fig-030-agent-architecture.drawio",
+      "caption": "Figure: Agent Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 31,
       "chapter": 22,
       "title": "Sequence - Integration and Interoperability",
       "kind": "Sequence",
-      "fmt": "mermaid",
-      "file": "fig-031-sequence.mmd",
+      "fmt": "plantuml",
+      "file": "fig-031-sequence.puml",
       "caption": "Figure: Sequence view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 32,
-      "chapter": 22,
-      "title": "Business Process - Integration and Interoperability",
+      "chapter": 23,
+      "title": "Business Process - Trends and Research Directions",
       "kind": "Business Process",
       "fmt": "drawio",
       "file": "fig-032-business-process.drawio",
@@ -331,57 +331,30 @@
     },
     {
       "figure": 33,
-      "chapter": 23,
-      "title": "Business Process - Trends and Research Directions",
-      "kind": "Business Process",
-      "fmt": "svg",
-      "file": "fig-033-business-process.svg",
-      "caption": "Figure: Business Process view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 34,
-      "chapter": 23,
-      "title": "Application Flow - Trends and Research Directions",
-      "kind": "Application Flow",
-      "fmt": "mermaid",
-      "file": "fig-034-application-flow.mmd",
-      "caption": "Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 35,
       "chapter": 24,
       "title": "Application Flow - Capstone Project",
       "kind": "Application Flow",
-      "fmt": "drawio",
-      "file": "fig-035-application-flow.drawio",
+      "fmt": "mermaid",
+      "file": "fig-033-application-flow.mmd",
       "caption": "Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 36,
+      "figure": 34,
       "chapter": 24,
       "title": "Knowledge Graph - Capstone Project",
       "kind": "Knowledge Graph",
       "fmt": "svg",
-      "file": "fig-036-knowledge-graph.svg",
+      "file": "fig-034-knowledge-graph.svg",
       "caption": "Figure: Knowledge Graph view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 37,
+      "figure": 35,
       "chapter": 25,
       "title": "Knowledge Graph - Certification Preparation and Review",
       "kind": "Knowledge Graph",
       "fmt": "svg",
-      "file": "fig-037-knowledge-graph.svg",
+      "file": "fig-035-knowledge-graph.svg",
       "caption": "Figure: Knowledge Graph view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 38,
-      "chapter": 25,
-      "title": "Operating Model - Certification Preparation and Review",
-      "kind": "Operating Model",
-      "fmt": "drawio",
-      "file": "fig-038-operating-model.drawio",
-      "caption": "Figure: Operating Model view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     }
   ]
 }

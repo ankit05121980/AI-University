@@ -1,0 +1,15 @@
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0

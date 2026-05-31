@@ -1,0 +1,12 @@
+@startuml
+title Data Lineage - Retrieval and Query Transformation
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

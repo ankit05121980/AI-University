@@ -1,0 +1,12 @@
+@startuml
+title Architecture - Graph + Vector Hybrid Retrieval
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

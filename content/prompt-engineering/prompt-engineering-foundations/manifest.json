@@ -24,8 +24,8 @@
   "description": "Engineering reliable behaviour from foundation models — a foundational guide for newcomers building a rigorous base.",
   "isbn": "978-1-14477-466-8",
   "published": "2026",
-  "estimated_pages": 283,
-  "word_count": 65371,
+  "estimated_pages": 282,
+  "word_count": 65356,
   "diagram_count": 33,
   "code_count": 24,
   "question_count": 100,
@@ -60,8 +60,8 @@
     },
     {
       "figure": 3,
-      "chapter": 3,
-      "title": "Knowledge Graph - Chain-of-Thought and Reasoning Prompts",
+      "chapter": 2,
+      "title": "Knowledge Graph - Zero-, One- and Few-Shot Prompting",
       "kind": "Knowledge Graph",
       "fmt": "svg",
       "file": "fig-003-knowledge-graph.svg",
@@ -69,56 +69,56 @@
     },
     {
       "figure": 4,
+      "chapter": 3,
+      "title": "Knowledge Graph - Chain-of-Thought and Reasoning Prompts",
+      "kind": "Knowledge Graph",
+      "fmt": "svg",
+      "file": "fig-004-knowledge-graph.svg",
+      "caption": "Figure: Knowledge Graph view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 5,
+      "chapter": 3,
+      "title": "Capability Map - Chain-of-Thought and Reasoning Prompts",
+      "kind": "Capability Map",
+      "fmt": "svg",
+      "file": "fig-005-capability-map.svg",
+      "caption": "Figure: Capability Map view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 6,
       "chapter": 4,
       "title": "Capability Map - Structured Output and Schema Enforcement",
       "kind": "Capability Map",
       "fmt": "svg",
-      "file": "fig-004-capability-map.svg",
+      "file": "fig-006-capability-map.svg",
       "caption": "Figure: Capability Map view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 5,
+      "figure": 7,
       "chapter": 5,
       "title": "Architecture - Retrieval-Augmented Prompting",
       "kind": "Architecture",
-      "fmt": "svg",
-      "file": "fig-005-architecture.svg",
-      "caption": "Figure: Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 6,
-      "chapter": 5,
-      "title": "Data Flow - Retrieval-Augmented Prompting",
-      "kind": "Data Flow",
-      "fmt": "plantuml",
-      "file": "fig-006-data-flow.puml",
-      "caption": "Figure: Data Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 7,
-      "chapter": 6,
-      "title": "Data Flow - Tool Use and Function Calling",
-      "kind": "Data Flow",
       "fmt": "drawio",
-      "file": "fig-007-data-flow.drawio",
-      "caption": "Figure: Data Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "file": "fig-007-architecture.drawio",
+      "caption": "Figure: Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 8,
       "chapter": 6,
-      "title": "CI/CD Pipeline - Tool Use and Function Calling",
-      "kind": "CI/CD Pipeline",
-      "fmt": "plantuml",
-      "file": "fig-008-ci-cd-pipeline.puml",
-      "caption": "Figure: CI/CD Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Data Flow - Tool Use and Function Calling",
+      "kind": "Data Flow",
+      "fmt": "drawio",
+      "file": "fig-008-data-flow.drawio",
+      "caption": "Figure: Data Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 9,
       "chapter": 7,
       "title": "CI/CD Pipeline - Prompt Templates and Composition",
       "kind": "CI/CD Pipeline",
-      "fmt": "svg",
-      "file": "fig-009-ci-cd-pipeline.svg",
+      "fmt": "plantuml",
+      "file": "fig-009-ci-cd-pipeline.puml",
       "caption": "Figure: CI/CD Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -126,41 +126,41 @@
       "chapter": 8,
       "title": "Agent Architecture - Decoding Parameters and Sampling",
       "kind": "Agent Architecture",
-      "fmt": "mermaid",
-      "file": "fig-010-agent-architecture.mmd",
+      "fmt": "svg",
+      "file": "fig-010-agent-architecture.svg",
       "caption": "Figure: Agent Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 11,
-      "chapter": 8,
-      "title": "Application Flow - Decoding Parameters and Sampling",
+      "chapter": 9,
+      "title": "Application Flow - Prompt Evaluation and Regression Testing",
       "kind": "Application Flow",
-      "fmt": "plantuml",
-      "file": "fig-011-application-flow.puml",
+      "fmt": "drawio",
+      "file": "fig-011-application-flow.drawio",
       "caption": "Figure: Application Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 12,
-      "chapter": 9,
-      "title": "Application Flow - Prompt Evaluation and Regression Testing",
-      "kind": "Application Flow",
+      "chapter": 10,
+      "title": "RAG Architecture - Defending Against Prompt Injection",
+      "kind": "RAG Architecture",
       "fmt": "plantuml",
-      "file": "fig-012-application-flow.puml",
-      "caption": "Figure: Application Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "file": "fig-012-rag-architecture.puml",
+      "caption": "Figure: RAG Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 13,
       "chapter": 10,
-      "title": "RAG Architecture - Defending Against Prompt Injection",
-      "kind": "RAG Architecture",
-      "fmt": "mermaid",
-      "file": "fig-013-rag-architecture.mmd",
-      "caption": "Figure: RAG Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Network - Defending Against Prompt Injection",
+      "kind": "Network",
+      "fmt": "plantuml",
+      "file": "fig-013-network.puml",
+      "caption": "Figure: Network view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 14,
-      "chapter": 10,
-      "title": "Network - Defending Against Prompt Injection",
+      "chapter": 11,
+      "title": "Network - Multi-Step and Agentic Prompting",
       "kind": "Network",
       "fmt": "plantuml",
       "file": "fig-014-network.puml",
@@ -169,25 +169,25 @@
     {
       "figure": 15,
       "chapter": 11,
-      "title": "Network - Multi-Step and Agentic Prompting",
-      "kind": "Network",
-      "fmt": "plantuml",
-      "file": "fig-015-network.puml",
-      "caption": "Figure: Network view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Security Architecture - Multi-Step and Agentic Prompting",
+      "kind": "Security Architecture",
+      "fmt": "svg",
+      "file": "fig-015-security-architecture.svg",
+      "caption": "Figure: Security Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 16,
       "chapter": 12,
       "title": "Security Architecture - Prompt Management and Versioning",
       "kind": "Security Architecture",
-      "fmt": "svg",
-      "file": "fig-016-security-architecture.svg",
+      "fmt": "mermaid",
+      "file": "fig-016-security-architecture.mmd",
       "caption": "Figure: Security Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 17,
-      "chapter": 12,
-      "title": "Component - Prompt Management and Versioning",
+      "chapter": 13,
+      "title": "Component - Cost-Aware Prompt Design",
       "kind": "Component",
       "fmt": "mermaid",
       "file": "fig-017-component.mmd",
@@ -195,102 +195,102 @@
     },
     {
       "figure": 18,
-      "chapter": 13,
-      "title": "Component - Cost-Aware Prompt Design",
-      "kind": "Component",
-      "fmt": "plantuml",
-      "file": "fig-018-component.puml",
-      "caption": "Figure: Component view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 19,
       "chapter": 14,
       "title": "Sequence - Patterns, Anti-Patterns and a Style Guide",
       "kind": "Sequence",
-      "fmt": "plantuml",
-      "file": "fig-019-sequence.puml",
+      "fmt": "mermaid",
+      "file": "fig-018-sequence.mmd",
       "caption": "Figure: Sequence view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 20,
-      "chapter": 14,
-      "title": "Deployment - Patterns, Anti-Patterns and a Style Guide",
-      "kind": "Deployment",
-      "fmt": "plantuml",
-      "file": "fig-020-deployment.puml",
-      "caption": "Figure: Deployment view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 21,
+      "figure": 19,
       "chapter": 15,
       "title": "Deployment - Putting It Together: A Reference Implementation",
       "kind": "Deployment",
       "fmt": "plantuml",
-      "file": "fig-021-deployment.puml",
+      "file": "fig-019-deployment.puml",
       "caption": "Figure: Deployment view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 22,
+      "figure": 20,
       "chapter": 16,
       "title": "Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System",
       "kind": "Infrastructure",
       "fmt": "plantuml",
-      "file": "fig-022-infrastructure.puml",
+      "file": "fig-020-infrastructure.puml",
       "caption": "Figure: Infrastructure view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 23,
-      "chapter": 16,
-      "title": "Data Lineage - Hands-On Lab: Building an End-to-End Prompt Engineering System",
-      "kind": "Data Lineage",
-      "fmt": "plantuml",
-      "file": "fig-023-data-lineage.puml",
-      "caption": "Figure: Data Lineage view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
-    },
-    {
-      "figure": 24,
+      "figure": 21,
       "chapter": 17,
       "title": "Data Lineage - Case Study: Support at Scale",
       "kind": "Data Lineage",
-      "fmt": "mermaid",
-      "file": "fig-024-data-lineage.mmd",
+      "fmt": "plantuml",
+      "file": "fig-021-data-lineage.puml",
       "caption": "Figure: Data Lineage view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 25,
+      "figure": 22,
       "chapter": 17,
       "title": "Cloud Architecture - Case Study: Support at Scale",
       "kind": "Cloud Architecture",
       "fmt": "plantuml",
-      "file": "fig-025-cloud-architecture.puml",
+      "file": "fig-022-cloud-architecture.puml",
       "caption": "Figure: Cloud Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 26,
+      "figure": 23,
       "chapter": 18,
       "title": "Cloud Architecture - Operating in Production",
       "kind": "Cloud Architecture",
       "fmt": "mermaid",
-      "file": "fig-026-cloud-architecture.mmd",
+      "file": "fig-023-cloud-architecture.mmd",
       "caption": "Figure: Cloud Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
-      "figure": 27,
+      "figure": 24,
+      "chapter": 18,
+      "title": "Operating Model - Operating in Production",
+      "kind": "Operating Model",
+      "fmt": "svg",
+      "file": "fig-024-operating-model.svg",
+      "caption": "Figure: Operating Model view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 25,
       "chapter": 19,
       "title": "Operating Model - Evaluation and Quality Assurance",
       "kind": "Operating Model",
-      "fmt": "svg",
-      "file": "fig-027-operating-model.svg",
+      "fmt": "drawio",
+      "file": "fig-025-operating-model.drawio",
       "caption": "Figure: Operating Model view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 26,
+      "chapter": 19,
+      "title": "Business Process - Evaluation and Quality Assurance",
+      "kind": "Business Process",
+      "fmt": "svg",
+      "file": "fig-026-business-process.svg",
+      "caption": "Figure: Business Process view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+    },
+    {
+      "figure": 27,
+      "chapter": 20,
+      "title": "Business Process - Security, Privacy and Governance",
+      "kind": "Business Process",
+      "fmt": "drawio",
+      "file": "fig-027-business-process.drawio",
+      "caption": "Figure: Business Process view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 28,
       "chapter": 20,
-      "title": "Business Process - Security, Privacy and Governance",
-      "kind": "Business Process",
-      "fmt": "mermaid",
-      "file": "fig-028-business-process.mmd",
-      "caption": "Figure: Business Process view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
+      "title": "Class - Security, Privacy and Governance",
+      "kind": "Class",
+      "fmt": "plantuml",
+      "file": "fig-028-class.puml",
+      "caption": "Figure: Class view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
       "figure": 29,
@@ -306,8 +306,8 @@
       "chapter": 22,
       "title": "DevOps Pipeline - Integration and Interoperability",
       "kind": "DevOps Pipeline",
-      "fmt": "drawio",
-      "file": "fig-030-devops-pipeline.drawio",
+      "fmt": "plantuml",
+      "file": "fig-030-devops-pipeline.puml",
       "caption": "Figure: DevOps Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -315,8 +315,8 @@
       "chapter": 23,
       "title": "Knowledge Graph - Trends and Research Directions",
       "kind": "Knowledge Graph",
-      "fmt": "svg",
-      "file": "fig-031-knowledge-graph.svg",
+      "fmt": "mermaid",
+      "file": "fig-031-knowledge-graph.mmd",
       "caption": "Figure: Knowledge Graph view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     },
     {
@@ -333,8 +333,8 @@
       "chapter": 25,
       "title": "Architecture - Certification Preparation and Review",
       "kind": "Architecture",
-      "fmt": "mermaid",
-      "file": "fig-033-architecture.mmd",
+      "fmt": "drawio",
+      "file": "fig-033-architecture.drawio",
       "caption": "Figure: Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section."
     }
   ]

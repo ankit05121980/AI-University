@@ -523,7 +523,7 @@
     else { for (const id of (state.published || []).slice(0, 3).map(p => p.id)) { try { const c = await getJSON(`${CONTENT}/${state.publishedMap[id].artifacts.content}`); c.chapters.forEach(ch => ch.diagrams.forEach(d => samples.push({ ...d, id }))); } catch {} } }
     const gallery = samples.filter(d => d.render_svg).slice(0, 9).map(d => `<a class="figure" href="#read/${d.id}">${d.render_svg}<div class="cap">${esc(d.kind)} (${esc(d.fmt)})</div></a>`).join("");
     view().innerHTML = `
-      <div class="page-head"><h1>Diagram Browser</h1><p>The library contains ${fmt(state.stats.diagrams)} professional diagrams in Mermaid, PlantUML, SVG and Draw.io across ${kinds.length} diagram types.</p></div>
+      <div class="page-head"><h1>Diagram Browser</h1><p>The library contains ${fmt(state.stats.diagrams)} professional diagrams across ${kinds.length} diagram types, rendered with 25 infographic templates and 12 curated colour palettes — over 200 distinct visual patterns — and exported as Mermaid, PlantUML, SVG and Draw.io.</p></div>
       <div class="section-block"><h2>Diagram types</h2><div class="chip-row">${kinds.map(k => `<span class="tag">${esc(k)}</span>`).join("")}</div></div>
       <div class="section-block"><h2>Source formats</h2><div class="chip-row">${fmts.map(f => `<span class="tag level">${esc(f)}</span>`).join("")}</div></div>
       ${gallery ? `<h2 class="sec-h">Live rendered examples</h2><div class="cards">${gallery}</div>` : ""}`;

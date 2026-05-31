@@ -15,6 +15,7 @@ import random
 from xml.sax.saxutils import escape
 
 from ..models import Diagram
+from .infographics import render_infographic
 
 DIAGRAM_KINDS = [
     "Architecture", "Application Flow", "Business Process", "Data Flow",
@@ -167,8 +168,8 @@ def _drawio(domain: dict, kind: str, title: str, rng: random.Random) -> str:
 
 
 def _svg_source(domain: dict, kind: str, title: str, rng: random.Random) -> str:
-    # The "svg" *source* format is simply the rendered SVG itself.
-    return render_diagram_svg(domain, kind, title, rng)
+    # The "svg" *source* format is simply the rendered infographic itself.
+    return render_infographic(domain, kind, title, rng)
 
 
 _FORMAT_DISPATCH = {"mermaid": _mermaid, "plantuml": _plantuml,
@@ -375,7 +376,7 @@ def make_diagram(domain: dict, kind: str, title: str, rng: random.Random,
     if fmt is None:
         fmt = rng.choice(_KIND_FORMATS.get(kind, ["mermaid", "svg", "plantuml", "drawio"]))
     source = _FORMAT_DISPATCH[fmt](domain, kind, title, rng)
-    render_svg = source if fmt == "svg" else render_diagram_svg(domain, kind, title, rng)
+    render_svg = source if fmt == "svg" else render_infographic(domain, kind, title, rng)
     caption = (
         f"Figure: {kind} view for {domain['name']}. "
         f"This diagram illustrates the principal components and their interactions "

@@ -160,6 +160,11 @@ Open `http://localhost:8000/web/` after running `serve.py`. Features:
 - **Ask Anything** — ask a natural-language question and get a synthesised
   answer drawn from across the entire corpus, with citations to the exact books
   and chapters to read next.
+- **Diagram Studio** — type a prompt or paste text (a process, architecture,
+  comparison, cycle, timeline or list) and the platform builds a professional
+  diagram by parsing the context; choose from 24 diagram types and 12 colour
+  palettes. Book diagrams are also generated per-chapter, centred on each
+  chapter's topic, so they differ from chapter to chapter.
 - **Search** — instant full-text search across titles, chapters and topics.
 - **Diagram Browser** — explore the 20 diagram types and four source formats.
 - **Learning Paths & Certification Paths** — curated multi-book tracks.

@@ -1,11 +1,11 @@
 @startuml
 title Deployment - Case Study: Legal at Scale
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
-  component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
+package "Case Study: Legal at Scale Platform" {
+  component "Case Study: Legal at Sc…" as C0
+  component "Controllability and Str…" as C1
+  component "Generative Modelling Fo…" as C2
+  component "Productionising Generat…" as C3
+  component "Multimodal Generation" as C4
 }
 database "Storage" as DB
 C0 --> DB

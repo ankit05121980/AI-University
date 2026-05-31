@@ -1,0 +1,12 @@
+@startuml
+title Application Flow - Residual Connections and Normalisation
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

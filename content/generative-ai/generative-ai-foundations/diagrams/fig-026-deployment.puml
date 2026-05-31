@@ -1,11 +1,11 @@
 @startuml
 title Deployment - Operating in Production
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
-  component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
+package "Operating in Production Platform" {
+  component "Operating in Production" as C0
+  component "Multimodal Generation" as C1
+  component "Synthetic Data Generati…" as C2
+  component "Enterprise Use-Case Pat…" as C3
+  component "Large Language Models a…" as C4
 }
 database "Storage" as DB
 C0 --> DB

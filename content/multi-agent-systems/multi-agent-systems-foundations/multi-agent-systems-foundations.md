@@ -86,24 +86,24 @@ First published 2026. First Edition. Document version 1.0.0.
 | 4 | Orchestration and Routing | 10 | 1 | 1 | 4 |
 | 5 | Shared Memory and State | 11 | 2 | 1 | 4 |
 | 6 | Debate and Consensus | 10 | 1 | 1 | 4 |
-| 7 | Conflict Resolution | 11 | 2 | 1 | 4 |
-| 8 | Tool and Resource Contention | 10 | 1 | 1 | 4 |
+| 7 | Conflict Resolution | 10 | 1 | 1 | 4 |
+| 8 | Tool and Resource Contention | 11 | 2 | 1 | 4 |
 | 9 | Emergent Behaviour and Risk | 10 | 1 | 1 | 4 |
-| 10 | Evaluating Multi-Agent Systems | 10 | 1 | 1 | 4 |
-| 11 | Cost Control at Team Scale | 10 | 1 | 1 | 4 |
+| 10 | Evaluating Multi-Agent Systems | 11 | 2 | 1 | 4 |
+| 11 | Cost Control at Team Scale | 11 | 2 | 1 | 4 |
 | 12 | Frameworks and Patterns | 10 | 1 | 1 | 4 |
 | 13 | Observability Across Agents | 10 | 1 | 1 | 4 |
 | 14 | The Multi-Agent Reference Architecture | 11 | 2 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 11 | 2 | 1 | 4 |
 | 16 | Hands-On Lab: Building an End-to-End Multi-Agent Systems System | 10 | 1 | 1 | 4 |
-| 17 | Case Study: Software at Scale | 10 | 1 | 1 | 4 |
+| 17 | Case Study: Software at Scale | 11 | 2 | 1 | 4 |
 | 18 | Operating in Production | 10 | 1 | 1 | 4 |
 | 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
 | 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
-| 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
+| 22 | Integration and Interoperability | 11 | 2 | 1 | 4 |
 | 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
-| 24 | Capstone Project | 11 | 2 | 1 | 4 |
+| 24 | Capstone Project | 10 | 1 | 1 | 4 |
 | 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
 
 ---
@@ -119,30 +119,33 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 7. RAG Architecture - Shared Memory and State
 - Figure 8. RAG Architecture - Debate and Consensus
 - Figure 9. DevOps Pipeline - Conflict Resolution
-- Figure 10. CI/CD Pipeline - Conflict Resolution
-- Figure 11. CI/CD Pipeline - Tool and Resource Contention
+- Figure 10. CI/CD Pipeline - Tool and Resource Contention
+- Figure 11. Knowledge Graph - Tool and Resource Contention
 - Figure 12. Knowledge Graph - Emergent Behaviour and Risk
 - Figure 13. Operating Model - Evaluating Multi-Agent Systems
-- Figure 14. Data Flow - Cost Control at Team Scale
-- Figure 15. Capability Map - Frameworks and Patterns
-- Figure 16. Cloud Architecture - Observability Across Agents
-- Figure 17. Sequence - The Multi-Agent Reference Architecture
-- Figure 18. Business Process - The Multi-Agent Reference Architecture
-- Figure 19. Business Process - Putting It Together: A Reference Implementation
-- Figure 20. Class - Putting It Together: A Reference Implementation
-- Figure 21. Class - Hands-On Lab: Building an End-to-End Multi-Agent Systems System
-- Figure 22. Data Lineage - Case Study: Software at Scale
-- Figure 23. Network - Operating in Production
-- Figure 24. Agent Architecture - Evaluation and Quality Assurance
-- Figure 25. Deployment - Evaluation and Quality Assurance
-- Figure 26. Deployment - Security, Privacy and Governance
-- Figure 27. Architecture - Cost, Performance and Scaling
-- Figure 28. Infrastructure - Integration and Interoperability
-- Figure 29. Application Flow - Trends and Research Directions
-- Figure 30. Component - Trends and Research Directions
-- Figure 31. Component - Capstone Project
-- Figure 32. Security Architecture - Capstone Project
-- Figure 33. Security Architecture - Certification Preparation and Review
+- Figure 14. Data Flow - Evaluating Multi-Agent Systems
+- Figure 15. Data Flow - Cost Control at Team Scale
+- Figure 16. Capability Map - Cost Control at Team Scale
+- Figure 17. Capability Map - Frameworks and Patterns
+- Figure 18. Cloud Architecture - Observability Across Agents
+- Figure 19. Sequence - The Multi-Agent Reference Architecture
+- Figure 20. Business Process - The Multi-Agent Reference Architecture
+- Figure 21. Business Process - Putting It Together: A Reference Implementation
+- Figure 22. Class - Putting It Together: A Reference Implementation
+- Figure 23. Class - Hands-On Lab: Building an End-to-End Multi-Agent Systems System
+- Figure 24. Data Lineage - Case Study: Software at Scale
+- Figure 25. Network - Case Study: Software at Scale
+- Figure 26. Network - Operating in Production
+- Figure 27. Agent Architecture - Evaluation and Quality Assurance
+- Figure 28. Deployment - Evaluation and Quality Assurance
+- Figure 29. Deployment - Security, Privacy and Governance
+- Figure 30. Architecture - Cost, Performance and Scaling
+- Figure 31. Infrastructure - Integration and Interoperability
+- Figure 32. Application Flow - Integration and Interoperability
+- Figure 33. Application Flow - Trends and Research Directions
+- Figure 34. Component - Trends and Research Directions
+- Figure 35. Component - Capstone Project
+- Figure 36. Security Architecture - Certification Preparation and Review
 
 ---
 
@@ -233,11 +236,11 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="7-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnbf74ec6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c026d3"/><stop offset="1" stop-color="#d946ef"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnbf74ec6)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnbf74ec6)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Why Multiple Agents</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#c026d3" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Communication Protocols</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#d946ef" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Orchestration and Routing</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#d946ef" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Communication Protocols</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#6b21a8" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Orchestration and Routing</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Shared Memory and State</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Debate and Consensus</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#6b21a8" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#a21caf" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Agent Systems  •  Architecture</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="7-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bne8116fd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c026d3"/><stop offset="1" stop-color="#d946ef"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bne8116fd)"/><rect x="0" y="32" width="840" height="16" fill="url(#bne8116fd)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Why Multiple Agents</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#c026d3" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Multiple Agents</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#d946ef" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Frameworks and Patterns</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#d946ef" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Multiple Agents</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#6b21a8" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Frameworks and Patterns</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool and Resource Contention</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Conflict Resolution</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#6b21a8" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#a21caf" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Why Multiple Agents  •  Architecture</text></svg>
 
 </div>
 
-**Figure 1. Architecture - Why Multiple Agents** (svg). Figure: Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. Architecture - Why Multiple Agents** (svg). Figure: Architecture view for Why Multiple Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -341,80 +344,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Why Multiple Agents logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Why Multiple Agents component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Why Multiple Agents
+### Listing: Implementing a Why Multiple Agents component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class WhyMultipleAgentsConfig:
+    """Configuration for the Why Multiple Agents component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Why Multiple Agents."""
+class WhyMultipleAgents:
+    """A minimal, production-shaped implementation of Why Multiple Agents."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: WhyMultipleAgentsConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"WhyMultipleAgents failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Why Multiple Agents goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Why Multiple Agents”?
-   - A. Specialisation, parallelism and separation of concerns.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Specialisation, parallelism and separation of concerns.
    - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Why Multiple Agents: Specialisation, parallelism and separation of concerns.
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Give each agent a narrow, well-specified role.
-   - C. Combinatorial cost growth across many agents.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Give each agent a narrow, well-specified role.
+   - **Answer: B.** Why Multiple Agents: Specialisation, parallelism and separation of concerns.
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Combinatorial cost growth across many agents.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. Use structured messages and explicit handoff contracts.
-   - C. Agents talking in circles without convergence.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
+   - A. It makes the system slower but has no other effect.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Emergent failures that are hard to reproduce.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: C.** Pitfall to avoid: Emergent failures that are hard to reproduce.
 4. *(Discussion)* Walk through how you would design Why Multiple Agents for an enterprise Multi-Agent Systems workload.
    - **Model answer:** A strong answer defines why multiple agents (Specialisation, parallelism and separation of concerns.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -427,23 +424,23 @@ _This chapter examines agent roles and topologies within Multi-Agent Systems. It
 
 ## Introduction
 
-Agent Roles and Topologies can be characterised as hierarchical, sequential, network and market-based organisations. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Agent Roles and Topologies addresses hierarchical, sequential, network and market-based organisations. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Agent Roles and Topologies is best understood as hierarchical, sequential, network and market-based organisations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Agent Roles and Topologies concerns hierarchical, sequential, network and market-based organisations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, agent roles and topologies is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
 
-Agent Roles and Topologies cannot be understood in isolation from conflict resolution. Recall that conflict resolution concerns handling disagreement and contradictory actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Agent Roles and Topologies cannot be understood in isolation from communication protocols. Recall that communication protocols concerns message passing, shared blackboards and structured handoffs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Agent Roles and Topologies cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Agent Roles and Topologies cannot be understood in isolation from the multi-agent reference architecture. Recall that the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to agent roles and topologies. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to agent roles and topologies. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around agent roles and topologies are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around agent roles and topologies are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -455,44 +452,38 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Infrastructure">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Agent Roles and Topologies" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Infrastructure - Agent Roles and Topologies
+package "Agent Roles and Topologies Platform" {
+  component "Agent Roles and Topolog…" as C0
+  component "Communication Protocols" as C1
+  component "The Multi-Agent Referen…" as C2
+  component "Conflict Resolution" as C3
+  component "Frameworks and Patterns" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 2. Infrastructure - Agent Roles and Topologies** (drawio). Figure: Infrastructure view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Infrastructure - Agent Roles and Topologies** (plantuml). Figure: Infrastructure view for Agent Roles and Topologies. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into agent roles and topologies. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into agent roles and topologies. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with conflict resolution. Because conflict resolution concerns handling disagreement and contradictory actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -500,13 +491,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into agent roles and topologies. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into agent roles and topologies. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the multi-agent reference architecture. Because the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -514,7 +505,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply agent roles and topologies as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply agent roles and topologies as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -586,81 +577,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Agent Roles and Topologies logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Agent Roles and Topologies
+### Listing: Evaluating Agent Roles and Topologies with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Agent Roles and Topologies."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Agent Roles and Topologies output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Agent Roles and Topologies”?
-   - A. It makes the system slower but has no other effect.
-   - B. Hierarchical, sequential, network and market-based organisations.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Agent Roles and Topologies: Hierarchical, sequential, network and market-based organisations.
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
+   - A. It guarantees deterministic output regardless of input.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. Emergent failures that are hard to reproduce.
+   - C. Hierarchical, sequential, network and market-based organisations.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Agent Roles and Topologies: Hierarchical, sequential, network and market-based organisations.
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. It makes the system slower but has no other effect.
    - C. Trace cross-agent interactions for debugging.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: B.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-4. *(Discussion)* Explain Agent Roles and Topologies and why it matters in a production Multi-Agent Systems system.
+   - D. Agents talking in circles without convergence.
+   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Use structured messages and explicit handoff contracts.
+   - B. It removes all security and governance requirements.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+4. *(Discussion)* How would you test and monitor Agent Roles and Topologies in production?
    - **Model answer:** A strong answer defines agent roles and topologies (Hierarchical, sequential, network and market-based organisations.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -672,21 +646,21 @@ _This chapter examines communication protocols within Multi-Agent Systems. It co
 
 ## Introduction
 
-Communication Protocols can be characterised as message passing, shared blackboards and structured handoffs. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Communication Protocols can be characterised as message passing, shared blackboards and structured handoffs. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Communication Protocols addresses message passing, shared blackboards and structured handoffs. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Communication Protocols addresses message passing, shared blackboards and structured handoffs. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, communication protocols is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, communication protocols is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
 
-Communication Protocols cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Communication Protocols cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Communication Protocols cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Communication Protocols cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to communication protocols. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to communication protocols. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around communication protocols are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
@@ -698,69 +672,75 @@ Concretely, the principal building blocks include why multiple agents, agent rol
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Application Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Application Flow - Communication Protocols" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 3. Application Flow - Communication Protocols** (drawio). Figure: Application Flow view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```plantuml
 @startuml
-title Component - Communication Protocols
-package "Multi-Agent Systems Platform" {
-  component "Why Multiple Agents" as C0
-  component "Agent Roles and Topolog…" as C1
-  component "Communication Protocols" as C2
-  component "Orchestration and Routi…" as C3
-  component "Shared Memory and State" as C4
+title Application Flow - Communication Protocols
+class Service {
+  +process(req)
+  +evaluate(sample)
 }
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
 @enduml
 ```
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 4. Component - Communication Protocols** (plantuml). Figure: Component view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 3. Application Flow - Communication Protocols** (plantuml). Figure: Application Flow view for Communication Protocols. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Communication Protocols Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Communication Protocols]
+    S1[Emergent Behaviour and Ri…]
+    S2[Debate and Consensus]
+    S3[Agent Roles and Topologies]
+    S4[Cost Control at Team Scale]
+    S5[The Multi-Agent Reference…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
+
+**Figure 4. Component - Communication Protocols** (mermaid). Figure: Component view for Communication Protocols. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into communication protocols. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into communication protocols. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with emergent behaviour and risk. Because emergent behaviour and risk concerns unintended dynamics and how to contain them, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -768,13 +748,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into communication protocols. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into communication protocols. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost control at team scale. Because cost control at team scale concerns budgeting across many concurrent agents, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with conflict resolution. Because conflict resolution concerns handling disagreement and contradictory actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -782,7 +762,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply communication protocols as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply communication protocols as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -854,81 +834,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Communication Protocols logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Communication Protocols component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Communication Protocols
+### Listing: Implementing a Communication Protocols component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CommunicationProtocolsConfig:
+    """Configuration for the Communication Protocols component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Communication Protocols."""
+class CommunicationProtocols:
+    """A minimal, production-shaped implementation of Communication Protocols."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CommunicationProtocolsConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CommunicationProtocols failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Communication Protocols goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Communication Protocols”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Message passing, shared blackboards and structured handoffs.
-   - **Answer: D.** Communication Protocols: Message passing, shared blackboards and structured handoffs.
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
+   - C. Message passing, shared blackboards and structured handoffs.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Communication Protocols: Message passing, shared blackboards and structured handoffs.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Use structured messages and explicit handoff contracts.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Emergent failures that are hard to reproduce.
-   - **Answer: A.** Best practice: Use structured messages and explicit handoff contracts.
+   - A. Agents talking in circles without convergence.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Trace cross-agent interactions for debugging.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It removes all security and governance requirements.
-   - B. Trace cross-agent interactions for debugging.
-   - C. It makes the system slower but has no other effect.
-   - D. Agents talking in circles without convergence.
-   - **Answer: D.** Pitfall to avoid: Agents talking in circles without convergence.
-4. *(Discussion)* Walk through how you would design Communication Protocols for an enterprise Multi-Agent Systems workload.
+   - A. Emergent failures that are hard to reproduce.
+   - B. It makes the system slower but has no other effect.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+4. *(Discussion)* Explain Communication Protocols and why it matters in a production Multi-Agent Systems system.
    - **Model answer:** A strong answer defines communication protocols (Message passing, shared blackboards and structured handoffs.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -940,33 +914,33 @@ _This chapter examines orchestration and routing within Multi-Agent Systems. It 
 
 ## Introduction
 
-In practical terms, Orchestration and Routing is best understood as supervisors, routers and dynamic task allocation. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Orchestration and Routing refers to supervisors, routers and dynamic task allocation. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Orchestration and Routing addresses supervisors, routers and dynamic task allocation. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Orchestration and Routing refers to supervisors, routers and dynamic task allocation. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, orchestration and routing is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, orchestration and routing is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
 
-Orchestration and Routing cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Orchestration and Routing cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Orchestration and Routing cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Orchestration and Routing cannot be understood in isolation from observability across agents. Recall that observability across agents concerns tracing distributed agent interactions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to orchestration and routing. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to orchestration and routing. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around orchestration and routing are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around orchestration and routing are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Orchestration and Routing separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+From an architectural standpoint, Orchestration and Routing sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```mermaid
 flowchart TB
@@ -974,14 +948,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["Multi-Agent Systems Platform"]
+  subgraph Platform["Orchestration and Routing Platform"]
     GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
-    S2[Communication Protocols]
-    S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
+    S0[Orchestration and Routing]
+    S1[Cost Control at Team Scale]
+    S2[Observability Across Agen…]
+    S3[The Multi-Agent Reference…]
+    S4[Emergent Behaviour and Ri…]
+    S5[Communication Protocols]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -1005,17 +979,17 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 5. Component - Orchestration and Routing** (mermaid). Figure: Component view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 5. Component - Orchestration and Routing** (mermaid). Figure: Component view for Orchestration and Routing. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into orchestration and routing. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into orchestration and routing. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost control at team scale. Because cost control at team scale concerns budgeting across many concurrent agents, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1025,11 +999,11 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 Having established the essentials, we now go deeper into orchestration and routing. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1037,7 +1011,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-Consider a concrete scenario. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply orchestration and routing as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply orchestration and routing as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1109,64 +1083,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Orchestration and Routing component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Orchestration and Routing with a regression gate
+### Listing: Implementing a Orchestration and Routing component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class OrchestrationAndRoutingConfig:
+    """Configuration for the Orchestration and Routing component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Orchestration and Routing output against references with a simple exact-match metric.
+class OrchestrationAndRouting:
+    """A minimal, production-shaped implementation of Orchestration and Routing."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: OrchestrationAndRoutingConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"OrchestrationAndRouting failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Orchestration and Routing goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Orchestration and Routing”?
-   - A. Supervisors, routers and dynamic task allocation.
+   - A. It removes all security and governance requirements.
    - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Orchestration and Routing: Supervisors, routers and dynamic task allocation.
+   - C. Supervisors, routers and dynamic task allocation.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Orchestration and Routing: Supervisors, routers and dynamic task allocation.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
-   - B. Combinatorial cost growth across many agents.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
+   - A. It makes the system slower but has no other effect.
+   - B. Use structured messages and explicit handoff contracts.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Use structured messages and explicit handoff contracts.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Agents talking in circles without convergence.
-   - C. Trace cross-agent interactions for debugging.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
-4. *(Discussion)* Walk through how you would design Orchestration and Routing for an enterprise Multi-Agent Systems workload.
+   - A. Emergent failures that are hard to reproduce.
+   - B. Use structured messages and explicit handoff contracts.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+4. *(Discussion)* Explain Orchestration and Routing and why it matters in a production Multi-Agent Systems system.
    - **Model answer:** A strong answer defines orchestration and routing (Supervisors, routers and dynamic task allocation.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1178,52 +1163,41 @@ _This chapter examines shared memory and state within Multi-Agent Systems. It co
 
 ## Introduction
 
-We define Shared Memory and State as coordinating context across agents safely. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Shared Memory and State refers to coordinating context across agents safely. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Shared Memory and State refers to coordinating context across agents safely. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Shared Memory and State is best understood as coordinating context across agents safely. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, shared memory and state is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale.
 
-Shared Memory and State cannot be understood in isolation from observability across agents. Recall that observability across agents concerns tracing distributed agent interactions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Shared Memory and State cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Shared Memory and State cannot be understood in isolation from the multi-agent reference architecture. Recall that the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Shared Memory and State cannot be understood in isolation from communication protocols. Recall that communication protocols concerns message passing, shared blackboards and structured handoffs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to shared memory and state. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to shared memory and state. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around shared memory and state are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around shared memory and state are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Shared Memory and State sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+A robust architecture for Shared Memory and State is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Security Architecture - Shared Memory and State
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+<div class="diagram-svg">
 
-_Source diagram (plantuml); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="4-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn1fce392" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn1fce392)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn1fce392)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Shared Memory and State</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#e11d48"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#e11d48"/><text x="128" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Shared Memory</text><text x="128" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and State</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#f43f5e"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#f43f5e"/><text x="274" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Why Multiple</text><text x="274" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Agents</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#fb7185"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#fb7185"/><text x="420" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Communication</text><text x="420" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Protocols</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#db2777"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#db2777"/><text x="566" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Emergent</text><text x="566" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Behaviour and</text><text x="566" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Risk</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#9f1239"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#9f1239"/><text x="712" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Conflict</text><text x="712" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Resolution</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Shared Memory and State  •  Security Architecture</text></svg>
 
-**Figure 6. Security Architecture - Shared Memory and State** (plantuml). Figure: Security Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 6. Security Architecture - Shared Memory and State** (svg). Figure: Security Architecture view for Shared Memory and State. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```mermaid
 flowchart TB
@@ -1231,14 +1205,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["Multi-Agent Systems Platform"]
+  subgraph Platform["Shared Memory and State Platform"]
     GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
+    S0[Shared Memory and State]
+    S1[Why Multiple Agents]
     S2[Communication Protocols]
-    S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
+    S3[Emergent Behaviour and Ri…]
+    S4[Conflict Resolution]
+    S5[Frameworks and Patterns]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -1262,17 +1236,17 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 7. RAG Architecture - Shared Memory and State** (mermaid). Figure: RAG Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 7. RAG Architecture - Shared Memory and State** (mermaid). Figure: RAG Architecture view for Shared Memory and State. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into shared memory and state. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into shared memory and state. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1280,13 +1254,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into shared memory and state. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into shared memory and state. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1294,7 +1268,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply shared memory and state as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply shared memory and state as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1417,23 +1391,23 @@ class SharedMemoryAnd:
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Shared Memory and State”?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Coordinating context across agents safely.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Shared Memory and State: Coordinating context across agents safely.
+   - A. It makes the system slower but has no other effect.
+   - B. Coordinating context across agents safely.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Shared Memory and State: Coordinating context across agents safely.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Combinatorial cost growth across many agents.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Emergent failures that are hard to reproduce.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - A. Trace cross-agent interactions for debugging.
    - B. Give each agent a narrow, well-specified role.
-   - C. Agents talking in circles without convergence.
-   - D. Trace cross-agent interactions for debugging.
-   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
+   - C. Emergent failures that are hard to reproduce.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: C.** Pitfall to avoid: Emergent failures that are hard to reproduce.
 4. *(Discussion)* Explain Shared Memory and State and why it matters in a production Multi-Agent Systems system.
    - **Model answer:** A strong answer defines shared memory and state (Coordinating context across agents safely.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -1446,33 +1420,33 @@ _This chapter examines debate and consensus within Multi-Agent Systems. It cover
 
 ## Introduction
 
-We define Debate and Consensus as multi-agent debate, voting and critique for quality. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Debate and Consensus addresses multi-agent debate, voting and critique for quality. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Debate and Consensus can be characterised as multi-agent debate, voting and critique for quality. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Debate and Consensus as multi-agent debate, voting and critique for quality. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, debate and consensus is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, debate and consensus is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
 
-Debate and Consensus cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Debate and Consensus cannot be understood in isolation from observability across agents. Recall that observability across agents concerns tracing distributed agent interactions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Debate and Consensus cannot be understood in isolation from the multi-agent reference architecture. Recall that the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Debate and Consensus cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to debate and consensus. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to debate and consensus. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around debate and consensus are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around debate and consensus are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Debate and Consensus is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+From an architectural standpoint, Debate and Consensus sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```plantuml
 @startuml
@@ -1491,17 +1465,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 8. RAG Architecture - Debate and Consensus** (plantuml). Figure: RAG Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 8. RAG Architecture - Debate and Consensus** (plantuml). Figure: RAG Architecture view for Debate and Consensus. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into debate and consensus. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into debate and consensus. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1515,7 +1489,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1523,7 +1497,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply debate and consensus as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply debate and consensus as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1595,81 +1569,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Debate and Consensus logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Debate and Consensus
+### Listing: Evaluating Debate and Consensus with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Debate and Consensus."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Debate and Consensus output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Debate and Consensus”?
-   - A. Multi-agent debate, voting and critique for quality.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Debate and Consensus: Multi-agent debate, voting and critique for quality.
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. Multi-agent debate, voting and critique for quality.
+   - **Answer: D.** Debate and Consensus: Multi-agent debate, voting and critique for quality.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It applies exclusively to image data.
-   - B. Trace cross-agent interactions for debugging.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Trace cross-agent interactions for debugging.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Agents talking in circles without convergence.
-   - B. Give each agent a narrow, well-specified role.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Agents talking in circles without convergence.
    - D. Use structured messages and explicit handoff contracts.
-   - **Answer: A.** Pitfall to avoid: Agents talking in circles without convergence.
-4. *(Discussion)* Walk through how you would design Debate and Consensus for an enterprise Multi-Agent Systems workload.
+   - **Answer: D.** Best practice: Use structured messages and explicit handoff contracts.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Trace cross-agent interactions for debugging.
+   - B. It removes all security and governance requirements.
+   - C. Give each agent a narrow, well-specified role.
+   - D. Unclear ownership leading to duplicated or conflicting actions.
+   - **Answer: D.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+4. *(Discussion)* How does Debate and Consensus interact with security and governance requirements?
    - **Model answer:** A strong answer defines debate and consensus (Multi-agent debate, voting and critique for quality.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1681,23 +1638,23 @@ _This chapter examines conflict resolution within Multi-Agent Systems. It covers
 
 ## Introduction
 
-Formally, Conflict Resolution addresses handling disagreement and contradictory actions. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Conflict Resolution refers to handling disagreement and contradictory actions. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Conflict Resolution is best understood as handling disagreement and contradictory actions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Conflict Resolution refers to handling disagreement and contradictory actions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, conflict resolution is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, conflict resolution is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
 
-Conflict Resolution cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Conflict Resolution cannot be understood in isolation from shared memory and state. Recall that shared memory and state concerns coordinating context across agents safely. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Conflict Resolution cannot be understood in isolation from evaluating multi-agent systems. Recall that evaluating multi-agent systems concerns end-to-end task success and per-agent contribution. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Conflict Resolution cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to conflict resolution. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to conflict resolution. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around conflict resolution are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around conflict resolution are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1707,44 +1664,37 @@ Concretely, the principal building blocks include why multiple agents, agent rol
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title DevOps Pipeline - Conflict Resolution
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 9. DevOps Pipeline - Conflict Resolution** (plantuml). Figure: DevOps Pipeline view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="5-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc2632e9" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#1e40af"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc2632e9)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc2632e9)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Conflict Resolution</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#60a5fa" filter="url(#sh)"/><text x="420" y="108" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost Control at Team Scale</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="544" y="198" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Frameworks and Patterns</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#1e3a8a" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability Across</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agents</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Multi-Agent Reference</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Multiple Agents</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Agent Systems  •  CI/CD Pipeline</text></svg>
-
-</div>
-
-**Figure 10. CI/CD Pipeline - Conflict Resolution** (svg). Figure: CI/CD Pipeline view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. DevOps Pipeline - Conflict Resolution** (mermaid). Figure: DevOps Pipeline view for Conflict Resolution. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into conflict resolution. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with frameworks and patterns. Because frameworks and patterns concerns comparing orchestration frameworks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1758,7 +1708,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the multi-agent reference architecture. Because the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1766,7 +1716,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply conflict resolution as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply conflict resolution as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1838,75 +1788,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Conflict Resolution component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
+Pipelines keep Conflict Resolution logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Conflict Resolution component
+### Listing: A composable processing pipeline for Conflict Resolution
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class ConflictResolutionConfig:
-    """Configuration for the Conflict Resolution component in a Multi-Agent Systems system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class ConflictResolution:
-    """A minimal, production-shaped implementation of Conflict Resolution."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Conflict Resolution."""
 
-    def __init__(self, config: ConflictResolutionConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ConflictResolution failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Conflict Resolution goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Conflict Resolution”?
-   - A. Handling disagreement and contradictory actions.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Conflict Resolution: Handling disagreement and contradictory actions.
+   - A. It applies exclusively to image data.
+   - B. Handling disagreement and contradictory actions.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Conflict Resolution: Handling disagreement and contradictory actions.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. Give each agent a narrow, well-specified role.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Give each agent a narrow, well-specified role.
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. It makes the system slower but has no other effect.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. Combinatorial cost growth across many agents.
+   - **Answer: A.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Combinatorial cost growth across many agents.
-4. *(Discussion)* What trade-offs would you weigh when implementing Conflict Resolution?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+4. *(Discussion)* How would you test and monitor Conflict Resolution in production?
    - **Model answer:** A strong answer defines conflict resolution (Handling disagreement and contradictory actions.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1918,23 +1874,23 @@ _This chapter examines tool and resource contention within Multi-Agent Systems. 
 
 ## Introduction
 
-We define Tool and Resource Contention as coordinating access to shared external systems. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Tool and Resource Contention can be characterised as coordinating access to shared external systems. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Tool and Resource Contention can be characterised as coordinating access to shared external systems. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Tool and Resource Contention concerns coordinating access to shared external systems. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, tool and resource contention is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, tool and resource contention is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
 
-Tool and Resource Contention cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Tool and Resource Contention cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Tool and Resource Contention cannot be understood in isolation from conflict resolution. Recall that conflict resolution concerns handling disagreement and contradictory actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Tool and Resource Contention cannot be understood in isolation from observability across agents. Recall that observability across agents concerns tracing distributed agent interactions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to tool and resource contention. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to tool and resource contention. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around tool and resource contention are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around tool and resource contention are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1946,25 +1902,21 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
-```
+<div class="diagram-svg">
 
-**Figure 11. CI/CD Pipeline - Tool and Resource Contention** (mermaid). Figure: CI/CD Pipeline view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="3-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnea70b10" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#d97706"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnea70b10)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnea70b10)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Tool and Resource Contention</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#b45309" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool and Resource</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Contention</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#d97706" filter="url(#sh)"/><text x="544" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Multiple Agents</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#f59e0b" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability Across</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agents</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="344" y="343" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Roles and Topologies</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#f97316" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Shared Memory and State</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Tool and Resource Contention  •  CI/CD Pipeline</text></svg>
+
+</div>
+
+**Figure 10. CI/CD Pipeline - Tool and Resource Contention** (svg). Figure: CI/CD Pipeline view for Tool and Resource Contention. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="5-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn7887a59" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn7887a59)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn7887a59)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Tool and Resource Contention</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Tool and</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Resource</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="420" y="88" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool and Resource Contention</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#1e3a8a" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Multiple Agents</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="654" y="313" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability Across Agents</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Roles and Topologies</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#3b82f6" filter="url(#sh)"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Shared Memory and State</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#60a5fa" filter="url(#sh)"/><text x="186" y="163" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Emergent Behaviour and Risk</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Tool and Resource Contention  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 11. Knowledge Graph - Tool and Resource Contention** (svg). Figure: Knowledge Graph view for Tool and Resource Contention. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -1982,13 +1934,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into tool and resource contention. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into tool and resource contention. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost control at team scale. Because cost control at team scale concerns budgeting across many concurrent agents, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1996,7 +1948,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply tool and resource contention as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply tool and resource contention as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2068,75 +2020,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Tool and Resource Contention component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Tool and Resource Contention component
+### Listing: Evaluating Tool and Resource Contention with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class ToolAndResourceConfig:
-    """Configuration for the Tool and Resource Contention component in a Multi-Agent Systems system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class ToolAndResource:
-    """A minimal, production-shaped implementation of Tool and Resource Contention."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Tool and Resource Contention output against references with a simple exact-match metric.
 
-    def __init__(self, config: ToolAndResourceConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ToolAndResource failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Tool and Resource Contention goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Tool and Resource Contention”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It applies exclusively to image data.
    - B. Coordinating access to shared external systems.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Tool and Resource Contention: Coordinating access to shared external systems.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. It removes all security and governance requirements.
-   - D. Emergent failures that are hard to reproduce.
-   - **Answer: B.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
    - A. Give each agent a narrow, well-specified role.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. Combinatorial cost growth across many agents.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
-4. *(Discussion)* How does Tool and Resource Contention interact with security and governance requirements?
+   - B. It applies exclusively to image data.
+   - C. Emergent failures that are hard to reproduce.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Agents talking in circles without convergence.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
+4. *(Discussion)* Describe a failure mode of Tool and Resource Contention and how you would mitigate it.
    - **Model answer:** A strong answer defines tool and resource contention (Coordinating access to shared external systems.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2148,51 +2089,57 @@ _This chapter examines emergent behaviour and risk within Multi-Agent Systems. I
 
 ## Introduction
 
-In practical terms, Emergent Behaviour and Risk is best understood as unintended dynamics and how to contain them. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+In practical terms, Emergent Behaviour and Risk is best understood as unintended dynamics and how to contain them. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Emergent Behaviour and Risk is best understood as unintended dynamics and how to contain them. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Emergent Behaviour and Risk addresses unintended dynamics and how to contain them. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, emergent behaviour and risk is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, emergent behaviour and risk is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
 
-Emergent Behaviour and Risk cannot be understood in isolation from shared memory and state. Recall that shared memory and state concerns coordinating context across agents safely. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Emergent Behaviour and Risk cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Emergent Behaviour and Risk cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Emergent Behaviour and Risk cannot be understood in isolation from evaluating multi-agent systems. Recall that evaluating multi-agent systems concerns end-to-end task success and per-agent contribution. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to emergent behaviour and risk. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to emergent behaviour and risk. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around emergent behaviour and risk are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around emergent behaviour and risk are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Emergent Behaviour and Risk is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+The reference architecture for Emergent Behaviour and Risk separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-<div class="diagram-svg">
+```mermaid
+graph LR
+  D(("Emergent Behaviour …"))
+  D --- C0[Emergent Behaviour an…]
+  D --- C1[Agent Roles and Topol…]
+  D --- C2[Evaluating Multi-Agen…]
+  D --- C3[Observability Across …]
+  D --- C4[Shared Memory and Sta…]
+  C0 --- C1
+  C1 --- C2
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="1-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc6e023e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#0284c7"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc6e023e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc6e023e)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Emergent Behaviour and Risk</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#38bdf8"/><text x="420" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Orchestration</text><text x="420" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Routing</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#0284c7"/><text x="330" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Shared</text><text x="330" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Memory and</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#075985"/><text x="510" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Debate and</text><text x="510" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Consensus</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#0e7490"/><text x="375" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Conflict</text><text x="375" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Resolution</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#0891b2"/><text x="465" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Tool and</text><text x="465" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Resource</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#0ea5e9"/><text x="375" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Emergent</text><text x="375" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Behaviour</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#38bdf8"/><text x="465" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluating</text><text x="465" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Agent</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Agent Systems  •  Knowledge Graph</text></svg>
-
-</div>
-
-**Figure 12. Knowledge Graph - Emergent Behaviour and Risk** (svg). Figure: Knowledge Graph view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. Knowledge Graph - Emergent Behaviour and Risk** (mermaid). Figure: Knowledge Graph view for Emergent Behaviour and Risk. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into emergent behaviour and risk. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into emergent behaviour and risk. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2200,13 +2147,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into emergent behaviour and risk. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into emergent behaviour and risk. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the multi-agent reference architecture. Because the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2214,7 +2161,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply emergent behaviour and risk as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply emergent behaviour and risk as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2286,63 +2233,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Emergent Behaviour and Risk logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Emergent Behaviour and Risk with a regression gate
+### Listing: A composable processing pipeline for Emergent Behaviour and Risk
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Emergent Behaviour and Risk output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Emergent Behaviour and Risk."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Emergent Behaviour and Risk”?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
    - D. Unintended dynamics and how to contain them.
    - **Answer: D.** Emergent Behaviour and Risk: Unintended dynamics and how to contain them.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
+   - A. Emergent failures that are hard to reproduce.
    - B. It is only relevant to academic research, not production.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. It makes the system slower but has no other effect.
    - C. It guarantees deterministic output regardless of input.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: D.** Best practice: Trace cross-agent interactions for debugging.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It is only relevant to academic research, not production.
+   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Unclear ownership leading to duplicated or conflicting actions.
+   - **Answer: D.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
 4. *(Discussion)* Describe a failure mode of Emergent Behaviour and Risk and how you would mitigate it.
    - **Model answer:** A strong answer defines emergent behaviour and risk (Unintended dynamics and how to contain them.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -2355,27 +2319,27 @@ _This chapter examines evaluating multi-agent systems within Multi-Agent Systems
 
 ## Introduction
 
-Evaluating Multi-Agent Systems refers to end-to-end task success and per-agent contribution. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Evaluating Multi-Agent Systems refers to end-to-end task success and per-agent contribution. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Evaluating Multi-Agent Systems concerns end-to-end task success and per-agent contribution. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Evaluating Multi-Agent Systems can be characterised as end-to-end task success and per-agent contribution. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, evaluating multi-agent systems is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, evaluating multi-agent systems is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
 
-Evaluating Multi-Agent Systems cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluating Multi-Agent Systems cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Evaluating Multi-Agent Systems cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Evaluating Multi-Agent Systems cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to evaluating multi-agent systems. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluating multi-agent systems. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluating multi-agent systems are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluating multi-agent systems are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Evaluating Multi-Agent Systems separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+A robust architecture for Evaluating Multi-Agent Systems is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -2391,16 +2355,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Operating Model - Evaluating Multi-Agent Systems" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluating Multi-Agen…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluating Multi-Agent …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Cost Control at Team Sc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -2410,7 +2374,36 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 13. Operating Model - Evaluating Multi-Agent Systems** (drawio). Figure: Operating Model view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Operating Model - Evaluating Multi-Agent Systems** (drawio). Figure: Operating Model view for Evaluating Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Flow">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Flow - Evaluating Multi-Agent Systems" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluating Multi-Agen…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluating Multi-Agent …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Cost Control at Team Sc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 14. Data Flow - Evaluating Multi-Agent Systems** (drawio). Figure: Data Flow view for Evaluating Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2420,7 +2413,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with debate and consensus. Because debate and consensus concerns multi-agent debate, voting and critique for quality, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2428,13 +2421,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluating multi-agent systems. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluating multi-agent systems. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with conflict resolution. Because conflict resolution concerns handling disagreement and contradictory actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2442,7 +2435,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply evaluating multi-agent systems as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply evaluating multi-agent systems as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2514,74 +2507,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluating Multi-Agent Systems component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluating Multi-Agent Systems component
+### Listing: Evaluating Evaluating Multi-Agent Systems with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class EvaluatingSystemsConfig:
-    """Configuration for the Evaluating Multi-Agent Systems component in a Multi-Agent Systems system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class EvaluatingSystems:
-    """A minimal, production-shaped implementation of Evaluating Multi-Agent Systems."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluating Multi-Agent Systems output against references with a simple exact-match metric.
 
-    def __init__(self, config: EvaluatingSystemsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluatingSystems failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluating Multi-Agent Systems goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Evaluating Multi-Agent Systems”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It removes all security and governance requirements.
    - B. It is only relevant to academic research, not production.
    - C. End-to-end task success and per-agent contribution.
-   - D. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: C.** Evaluating Multi-Agent Systems: End-to-end task success and per-agent contribution.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Use structured messages and explicit handoff contracts.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Use structured messages and explicit handoff contracts.
-   - B. Agents talking in circles without convergence.
-   - C. Trace cross-agent interactions for debugging.
+   - A. Combinatorial cost growth across many agents.
+   - B. Use structured messages and explicit handoff contracts.
+   - C. It applies exclusively to image data.
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
+   - **Answer: B.** Best practice: Use structured messages and explicit handoff contracts.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It removes all security and governance requirements.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. It makes the system slower but has no other effect.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: B.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
 4. *(Discussion)* What trade-offs would you weigh when implementing Evaluating Multi-Agent Systems?
    - **Model answer:** A strong answer defines evaluating multi-agent systems (End-to-end task success and per-agent contribution.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -2594,27 +2576,27 @@ _This chapter examines cost control at team scale within Multi-Agent Systems. It
 
 ## Introduction
 
-We define Cost Control at Team Scale as budgeting across many concurrent agents. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+We define Cost Control at Team Scale as budgeting across many concurrent agents. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Cost Control at Team Scale concerns budgeting across many concurrent agents. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Cost Control at Team Scale as budgeting across many concurrent agents. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, cost control at team scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, cost control at team scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
 
-Cost Control at Team Scale cannot be understood in isolation from observability across agents. Recall that observability across agents concerns tracing distributed agent interactions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Cost Control at Team Scale cannot be understood in isolation from tool and resource contention. Recall that tool and resource contention concerns coordinating access to shared external systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Cost Control at Team Scale cannot be understood in isolation from evaluating multi-agent systems. Recall that evaluating multi-agent systems concerns end-to-end task success and per-agent contribution. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Cost Control at Team Scale cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to cost control at team scale. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost control at team scale. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost control at team scale are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost control at team scale are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Cost Control at Team Scale is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+The reference architecture for Cost Control at Team Scale separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -2622,34 +2604,58 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title Data Flow - Cost Control at Team Scale
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Flow">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Flow - Cost Control at Team Scale" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Cost Control at Team …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Cost Control at Team Sc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Tool and Resource Conte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Frameworks and Patterns" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Debate and Consensus" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 14. Data Flow - Cost Control at Team Scale** (plantuml). Figure: Data Flow view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 15. Data Flow - Cost Control at Team Scale** (drawio). Figure: Data Flow view for Cost Control at Team Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+graph LR
+  D(("Cost Control at Tea…"))
+  D --- C0[Cost Control at Team …]
+  D --- C1[Tool and Resource Con…]
+  D --- C2[Frameworks and Patter…]
+  D --- C3[Debate and Consensus]
+  D --- C4[Orchestration and Rou…]
+  C0 --- C1
+  C1 --- C2
+```
+
+**Figure 16. Capability Map - Cost Control at Team Scale** (mermaid). Figure: Capability Map view for Cost Control at Team Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into cost control at team scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2657,13 +2663,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost control at team scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost control at team scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with frameworks and patterns. Because frameworks and patterns concerns comparing orchestration frameworks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2671,7 +2677,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply cost control at team scale as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply cost control at team scale as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2783,24 +2789,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Cost Control at Team Scale”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. Budgeting across many concurrent agents.
-   - **Answer: D.** Cost Control at Team Scale: Budgeting across many concurrent agents.
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
+   - A. Budgeting across many concurrent agents.
    - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Combinatorial cost growth across many agents.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Cost Control at Team Scale: Budgeting across many concurrent agents.
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. Agents talking in circles without convergence.
+   - C. Combinatorial cost growth across many agents.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. It removes all security and governance requirements.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-4. *(Discussion)* What trade-offs would you weigh when implementing Cost Control at Team Scale?
+   - A. It removes all security and governance requirements.
+   - B. Emergent failures that are hard to reproduce.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - **Answer: B.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+4. *(Discussion)* Walk through how you would design Cost Control at Team Scale for an enterprise Multi-Agent Systems workload.
    - **Model answer:** A strong answer defines cost control at team scale (Budgeting across many concurrent agents.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2812,41 +2818,47 @@ _This chapter examines frameworks and patterns within Multi-Agent Systems. It co
 
 ## Introduction
 
-In practical terms, Frameworks and Patterns is best understood as comparing orchestration frameworks. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Frameworks and Patterns addresses comparing orchestration frameworks. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Frameworks and Patterns refers to comparing orchestration frameworks. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Frameworks and Patterns concerns comparing orchestration frameworks. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, frameworks and patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, frameworks and patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
 
-Frameworks and Patterns cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Frameworks and Patterns cannot be understood in isolation from shared memory and state. Recall that shared memory and state concerns coordinating context across agents safely. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Frameworks and Patterns cannot be understood in isolation from conflict resolution. Recall that conflict resolution concerns handling disagreement and contradictory actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Frameworks and Patterns cannot be understood in isolation from communication protocols. Recall that communication protocols concerns message passing, shared blackboards and structured handoffs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to frameworks and patterns. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to frameworks and patterns. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around frameworks and patterns are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around frameworks and patterns are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Frameworks and Patterns sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+The reference architecture for Frameworks and Patterns separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-<div class="diagram-svg">
+```mermaid
+graph LR
+  D(("Frameworks and Patt…"))
+  D --- C0[Frameworks and Patter…]
+  D --- C1[Shared Memory and Sta…]
+  D --- C2[Communication Protoco…]
+  D --- C3[Observability Across …]
+  D --- C4[Orchestration and Rou…]
+  C0 --- C1
+  C1 --- C2
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="7-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn82e02a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9333ea"/><stop offset="1" stop-color="#a21caf"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn82e02a)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn82e02a)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Frameworks and Patterns</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#9333ea"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#9333ea"/><text x="128" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Frameworks and</text><text x="128" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Patterns</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#a21caf"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#a21caf"/><text x="274" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Observability</text><text x="274" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Across Agents</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#c026d3"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#c026d3"/><text x="420" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">The Multi-Agent</text><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Reference</text><text x="420" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Architecture</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#d946ef"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#d946ef"/><text x="566" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Why Multiple</text><text x="566" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Agents</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#6b21a8"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#6b21a8"/><text x="712" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Agent Roles and</text><text x="712" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Topologies</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Agent Systems  •  Capability Map</text></svg>
-
-</div>
-
-**Figure 15. Capability Map - Frameworks and Patterns** (svg). Figure: Capability Map view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 17. Capability Map - Frameworks and Patterns** (mermaid). Figure: Capability Map view for Frameworks and Patterns. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2856,7 +2868,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with emergent behaviour and risk. Because emergent behaviour and risk concerns unintended dynamics and how to contain them, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2866,7 +2878,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 Having established the essentials, we now go deeper into frameworks and patterns. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -2878,7 +2890,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply frameworks and patterns as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply frameworks and patterns as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2950,81 +2962,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Frameworks and Patterns logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Frameworks and Patterns
+### Listing: Evaluating Frameworks and Patterns with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Frameworks and Patterns."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Frameworks and Patterns output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Frameworks and Patterns”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. Comparing orchestration frameworks.
-   - D. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: C.** Frameworks and Patterns: Comparing orchestration frameworks.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
+   - A. Give each agent a narrow, well-specified role.
    - B. Agents talking in circles without convergence.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
+   - C. It makes the system slower but has no other effect.
+   - D. Emergent failures that are hard to reproduce.
+   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - B. It removes all security and governance requirements.
-   - C. Agents talking in circles without convergence.
-   - D. Use structured messages and explicit handoff contracts.
-   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
-4. *(Discussion)* What trade-offs would you weigh when implementing Frameworks and Patterns?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+4. *(Discussion)* How would you test and monitor Frameworks and Patterns in production?
    - **Model answer:** A strong answer defines frameworks and patterns (Comparing orchestration frameworks.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3036,23 +3031,23 @@ _This chapter examines observability across agents within Multi-Agent Systems. I
 
 ## Introduction
 
-Observability Across Agents refers to tracing distributed agent interactions. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+At its core, Observability Across Agents concerns tracing distributed agent interactions. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Observability Across Agents addresses tracing distributed agent interactions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Observability Across Agents concerns tracing distributed agent interactions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, observability across agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
 
-Observability Across Agents cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Observability Across Agents cannot be understood in isolation from evaluating multi-agent systems. Recall that evaluating multi-agent systems concerns end-to-end task success and per-agent contribution. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Observability Across Agents cannot be understood in isolation from shared memory and state. Recall that shared memory and state concerns coordinating context across agents safely. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Observability Across Agents cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to observability across agents. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to observability across agents. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around observability across agents are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around observability across agents are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3062,56 +3057,46 @@ Concretely, the principal building blocks include why multiple agents, agent rol
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Multi-Agent Systems Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
-    S2[Communication Protocols]
-    S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Cloud Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Cloud Architecture - Observability Across Agents" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Observability Across …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Observability Across Ag…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Evaluating Multi-Agent …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Cost Control at Team Sc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="The Multi-Agent Referen…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 16. Cloud Architecture - Observability Across Agents** (mermaid). Figure: Cloud Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 18. Cloud Architecture - Observability Across Agents** (drawio). Figure: Cloud Architecture view for Observability Across Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into observability across agents. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into observability across agents. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3119,13 +3104,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into observability across agents. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into observability across agents. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3133,7 +3118,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply observability across agents as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply observability across agents as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3205,74 +3190,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Observability Across Agents component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Observability Across Agents component
+### Listing: Evaluating Observability Across Agents with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class ObservabilityAcrossAgentsConfig:
-    """Configuration for the Observability Across Agents component in a Multi-Agent Systems system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class ObservabilityAcrossAgents:
-    """A minimal, production-shaped implementation of Observability Across Agents."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Observability Across Agents output against references with a simple exact-match metric.
 
-    def __init__(self, config: ObservabilityAcrossAgentsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ObservabilityAcrossAgents failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Observability Across Agents goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Observability Across Agents”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Tracing distributed agent interactions.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Observability Across Agents: Tracing distributed agent interactions.
+   - A. It is only relevant to academic research, not production.
+   - B. Tracing distributed agent interactions.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Observability Across Agents: Tracing distributed agent interactions.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. Combinatorial cost growth across many agents.
+   - C. It is only relevant to academic research, not production.
+   - D. Agents talking in circles without convergence.
+   - **Answer: A.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Trace cross-agent interactions for debugging.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+   - A. Trace cross-agent interactions for debugging.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Agents talking in circles without convergence.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
 4. *(Discussion)* Describe a failure mode of Observability Across Agents and how you would mitigate it.
    - **Model answer:** A strong answer defines observability across agents (Tracing distributed agent interactions.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -3285,23 +3259,23 @@ _This chapter examines the multi-agent reference architecture within Multi-Agent
 
 ## Introduction
 
-In practical terms, The Multi-Agent Reference Architecture is best understood as supervisor, workers, shared memory and guardrails. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+We define The Multi-Agent Reference Architecture as supervisor, workers, shared memory and guardrails. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-The Multi-Agent Reference Architecture can be characterised as supervisor, workers, shared memory and guardrails. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+The Multi-Agent Reference Architecture refers to supervisor, workers, shared memory and guardrails. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, the multi-agent reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, the multi-agent reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations.
 
-The Multi-Agent Reference Architecture cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+The Multi-Agent Reference Architecture cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-The Multi-Agent Reference Architecture cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+The Multi-Agent Reference Architecture cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to the multi-agent reference architecture. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the multi-agent reference architecture. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around the multi-agent reference architecture are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around the multi-agent reference architecture are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3313,48 +3287,42 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```plantuml
-@startuml
-title Sequence - The Multi-Agent Reference Architecture
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 17. Sequence - The Multi-Agent Reference Architecture** (plantuml). Figure: Sequence view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
 ```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+sequenceDiagram
+  autonumber
+  participant U as User
+  participant G as Gateway
+  participant P as Processor
+  participant D as Data Store
+  U->>G: Submit request
+  G->>G: Validate & authorise
+  G->>P: Dispatch task
+  P->>D: Retrieve context
+  D-->>P: Return records
+  P->>P: Process & reason
+  P-->>G: Result + metadata
+  G-->>U: Response (with provenance)
 ```
 
-**Figure 18. Business Process - The Multi-Agent Reference Architecture** (mermaid). Figure: Business Process view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 19. Sequence - The Multi-Agent Reference Architecture** (mermaid). Figure: Sequence view for The Multi-Agent Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="timeline" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc7d51a4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc7d51a4)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc7d51a4)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - The Multi-Agent Reference Architecture</text><line x1="68" y1="230.0" x2="772" y2="230.0" stroke="#cbd5e1" stroke-width="3"/><circle cx="68" cy="230.0" r="9" fill="#0e7490"/><line x1="68" y1="230.0" x2="68" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="-2" y="138" width="140" height="52" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="68" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Multi-Agent Reference</text><text x="68" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><text x="68" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 1</text><circle cx="244" cy="230.0" r="9" fill="#b45309"/><line x1="244" y1="230.0" x2="244" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="174" y="254" width="140" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="244" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Roles and</text><text x="244" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Topologies</text><text x="244" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 2</text><circle cx="420" cy="230.0" r="9" fill="#9f1239"/><line x1="420" y1="230.0" x2="420" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="350" y="138" width="140" height="52" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="420" y="156" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Debate and Consensus</text><text x="420" y="175" text-anchor="middle" font-size="9" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 3</text><circle cx="596" cy="230.0" r="9" fill="#4338ca"/><line x1="596" y1="230.0" x2="596" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="526" y="254" width="140" height="52" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="596" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Emergent Behaviour and</text><text x="596" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Risk</text><text x="596" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 4</text><circle cx="772" cy="230.0" r="9" fill="#0f172a"/><line x1="772" y1="230.0" x2="772" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="702" y="138" width="140" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="772" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Multi-Agent</text><text x="772" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Systems</text><text x="772" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 5</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">The Multi-Agent Reference Architecture  •  Business Process</text></svg>
+
+</div>
+
+**Figure 20. Business Process - The Multi-Agent Reference Architecture** (svg). Figure: Business Process view for The Multi-Agent Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the multi-agent reference architecture. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the multi-agent reference architecture. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with debate and consensus. Because debate and consensus concerns multi-agent debate, voting and critique for quality, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3364,11 +3332,11 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 Having established the essentials, we now go deeper into the multi-agent reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why multiple agents. Because why multiple agents concerns specialisation, parallelism and separation of concerns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent roles and topologies. Because agent roles and topologies concerns hierarchical, sequential, network and market-based organisations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3376,7 +3344,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply the multi-agent reference architecture as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply the multi-agent reference architecture as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3488,24 +3456,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “The Multi-Agent Reference Architecture”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It guarantees deterministic output regardless of input.
    - B. Supervisor, workers, shared memory and guardrails.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: B.** The Multi-Agent Reference Architecture: Supervisor, workers, shared memory and guardrails.
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. Use structured messages and explicit handoff contracts.
-   - C. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Agents talking in circles without convergence.
+   - C. Trace cross-agent interactions for debugging.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Use structured messages and explicit handoff contracts.
+   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. Give each agent a narrow, well-specified role.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-4. *(Discussion)* Walk through how you would design The Multi-Agent Reference Architecture for an enterprise Multi-Agent Systems workload.
+   - A. It is only relevant to academic research, not production.
+   - B. Agents talking in circles without convergence.
+   - C. It makes the system slower but has no other effect.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
+4. *(Discussion)* How does The Multi-Agent Reference Architecture interact with security and governance requirements?
    - **Model answer:** A strong answer defines the multi-agent reference architecture (Supervisor, workers, shared memory and guardrails.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3517,23 +3485,23 @@ _This chapter examines putting it together: a reference implementation within Mu
 
 ## Introduction
 
-Putting It Together: A Reference Implementation refers to an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Putting It Together: A Reference Implementation can be characterised as an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Putting It Together: A Reference Implementation concerns an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Putting It Together: A Reference Implementation can be characterised as an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Putting It Together: A Reference Implementation cannot be understood in isolation from observability across agents. Recall that observability across agents concerns tracing distributed agent interactions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from communication protocols. Recall that communication protocols concerns message passing, shared blackboards and structured handoffs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Putting It Together: A Reference Implementation cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3543,44 +3511,66 @@ Concretely, the principal building blocks include why multiple agents, agent rol
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="timeline" data-pal="0-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnfe1606b" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnfe1606b)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnfe1606b)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Putting It Together: A Reference Implementation</text><line x1="68" y1="230.0" x2="772" y2="230.0" stroke="#cbd5e1" stroke-width="3"/><circle cx="68" cy="230.0" r="9" fill="#7c3aed"/><line x1="68" y1="230.0" x2="68" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="-2" y="138" width="140" height="52" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="68" y="156" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Debate and Consensus</text><text x="68" y="175" text-anchor="middle" font-size="9" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 1</text><circle cx="244" cy="230.0" r="9" fill="#8b5cf6"/><line x1="244" y1="230.0" x2="244" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="174" y="254" width="140" height="52" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="244" y="272" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Conflict Resolution</text><text x="244" y="291" text-anchor="middle" font-size="9" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 2</text><circle cx="420" cy="230.0" r="9" fill="#a78bfa"/><line x1="420" y1="230.0" x2="420" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="350" y="138" width="140" height="52" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="420" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool and Resource</text><text x="420" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Contention</text><text x="420" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 3</text><circle cx="596" cy="230.0" r="9" fill="#c4b5fd"/><line x1="596" y1="230.0" x2="596" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="526" y="254" width="140" height="52" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="596" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Emergent Behaviour and</text><text x="596" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Risk</text><text x="596" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 4</text><circle cx="772" cy="230.0" r="9" fill="#4338ca"/><line x1="772" y1="230.0" x2="772" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="702" y="138" width="140" height="52" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="772" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Multi-Agent</text><text x="772" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Systems</text><text x="772" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 5</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Agent Systems  •  Business Process</text></svg>
-
-</div>
-
-**Figure 19. Business Process - Putting It Together: A Reference Implementation** (svg). Figure: Business Process view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Class - Putting It Together: A Reference Implementation
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Business Process">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Business Process - Putting It Together: A Reference Impleme…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Putting It Together: …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Putting It Together: A …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Observability Across Ag…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Emergent Behaviour and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Debate and Consensus" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Tool and Resource Conte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 20. Class - Putting It Together: A Reference Implementation** (plantuml). Figure: Class view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 21. Business Process - Putting It Together: A Reference Implementation** (drawio). Figure: Business Process view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+classDiagram
+  class PITAService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  PITAService --> Repository
+  PITAService --> Policy
+```
+
+**Figure 22. Class - Putting It Together: A Reference Implementation** (mermaid). Figure: Class view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability across agents. Because observability across agents concerns tracing distributed agent interactions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3588,13 +3578,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3674,64 +3664,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Putting It Together: A Reference Implementation component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Putting It Together: A Reference Implementation with a regression gate
+### Listing: Implementing a Putting It Together: A Reference Implementation component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class PuttingItConfig:
+    """Configuration for the Putting It Together: A Reference Implementation component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Putting It Together: A Reference Implementation output against references with a simple exact-match metric.
+class PuttingIt:
+    """A minimal, production-shaped implementation of Putting It Together: A Reference Implementation."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: PuttingItConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PuttingIt failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Putting It Together: A Reference Implementation goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
-   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
+   - A. It is only relevant to academic research, not production.
+   - B. an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
+   - A. It applies exclusively to image data.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. It makes the system slower but has no other effect.
+   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - **Answer: D.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It makes the system slower but has no other effect.
-   - B. Combinatorial cost growth across many agents.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: B.** Pitfall to avoid: Combinatorial cost growth across many agents.
-4. *(Discussion)* Walk through how you would design Putting It Together: A Reference Implementation for an enterprise Multi-Agent Systems workload.
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. Agents talking in circles without convergence.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
+4. *(Discussion)* What trade-offs would you weigh when implementing Putting It Together: A Reference Implementation?
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3743,27 +3744,27 @@ _This chapter examines hands-on lab: building an end-to-end multi-agent systems 
 
 ## Introduction
 
-Hands-On Lab: Building an End-to-End Multi-Agent Systems System can be characterised as a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Hands-On Lab: Building an End-to-End Multi-Agent Systems System is best understood as a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Hands-On Lab: Building an End-to-End Multi-Agent Systems System as a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Hands-On Lab: Building an End-to-End Multi-Agent Systems System concerns a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, hands-on lab: building an end-to-end multi-agent systems system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations.
 
-Hands-On Lab: Building an End-to-End Multi-Agent Systems System cannot be understood in isolation from tool and resource contention. Recall that tool and resource contention concerns coordinating access to shared external systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End Multi-Agent Systems System cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Hands-On Lab: Building an End-to-End Multi-Agent Systems System cannot be understood in isolation from conflict resolution. Recall that conflict resolution concerns handling disagreement and contradictory actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Hands-On Lab: Building an End-to-End Multi-Agent Systems System cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end multi-agent systems system. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end multi-agent systems system. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around hands-on lab: building an end-to-end multi-agent systems system are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end multi-agent systems system are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Hands-On Lab: Building an End-to-End Multi-Agent Systems System sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+A robust architecture for Hands-On Lab: Building an End-to-End Multi-Agent Systems System is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -3771,35 +3772,34 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-classDiagram
-  class MSService {
-    +configure(config)
-    +process(request) Response
-    +evaluate(sample) Metrics
-  }
-  class Repository {
-    +get(id) Entity
-    +put(entity)
-  }
-  class Policy {
-    +authorise(ctx) bool
-  }
-  MSService --> Repository
-  MSService --> Policy
+```plantuml
+@startuml
+title Class - Hands-On Lab: Building an End-to-End Multi-Agent Systems System
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 21. Class - Hands-On Lab: Building an End-to-End Multi-Agent Systems System** (mermaid). Figure: Class view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 23. Class - Hands-On Lab: Building an End-to-End Multi-Agent Systems System** (plantuml). Figure: Class view for Hands-On Lab: Building an End-to-End Multi-Agent Systems System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into hands-on lab: building an end-to-end multi-agent systems system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost control at team scale. Because cost control at team scale concerns budgeting across many concurrent agents, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3807,13 +3807,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end multi-agent systems system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end multi-agent systems system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3893,81 +3893,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Hands-On Lab: Building an End-to-End Multi-Agent Systems System logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Hands-On Lab: Building an End-to-End Multi-Agent Systems System component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Hands-On Lab: Building an End-to-End Multi-Agent Systems System
+### Listing: Implementing a Hands-On Lab: Building an End-to-End Multi-Agent Systems System component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class BuildingConfig:
+    """Configuration for the Hands-On Lab: Building an End-to-End Multi-Agent Systems System component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Hands-On Lab: Building an End-to-End Multi-Agent Systems System."""
+class Building:
+    """A minimal, production-shaped implementation of Hands-On Lab: Building an End-to-End Multi-Agent Systems System."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: BuildingConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"Building failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Hands-On Lab: Building an End-to-End Multi-Agent Systems System goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Hands-On Lab: Building an End-to-End Multi-Agent Systems System”?
-   - A. It is only relevant to academic research, not production.
-   - B. a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
-   - C. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Hands-On Lab: Building an End-to-End Multi-Agent Systems System: a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
+   - **Answer: C.** Hands-On Lab: Building an End-to-End Multi-Agent Systems System: a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. Trace cross-agent interactions for debugging.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
+   - A. Combinatorial cost growth across many agents.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. Agents talking in circles without convergence.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: D.** Best practice: Trace cross-agent interactions for debugging.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Agents talking in circles without convergence.
-   - C. It makes the system slower but has no other effect.
+   - A. Trace cross-agent interactions for debugging.
+   - B. It makes the system slower but has no other effect.
+   - C. Combinatorial cost growth across many agents.
    - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
-4. *(Discussion)* Walk through how you would design Hands-On Lab: Building an End-to-End Multi-Agent Systems System for an enterprise Multi-Agent Systems workload.
+   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
+4. *(Discussion)* Describe a failure mode of Hands-On Lab: Building an End-to-End Multi-Agent Systems System and how you would mitigate it.
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end multi-agent systems system (a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3979,57 +3973,93 @@ _This chapter examines case study: software at scale within Multi-Agent Systems.
 
 ## Introduction
 
-Formally, Case Study: Software at Scale addresses a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Case Study: Software at Scale addresses a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Case Study: Software at Scale is best understood as a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Case Study: Software at Scale concerns a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, case study: software at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, case study: software at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
 
-Case Study: Software at Scale cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Case Study: Software at Scale cannot be understood in isolation from tool and resource contention. Recall that tool and resource contention concerns coordinating access to shared external systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Case Study: Software at Scale cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Case Study: Software at Scale cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to case study: software at scale. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: software at scale. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around case study: software at scale are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around case study: software at scale are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Case Study: Software at Scale separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+From an architectural standpoint, Case Study: Software at Scale sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Lineage">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Lineage - Case Study: Software at Scale" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Case Study: Software …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Case Study: Software at…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Tool and Resource Conte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Conflict Resolution" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="2-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bne3ea1f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bne3ea1f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bne3ea1f)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Lineage - Case Study: Software at Scale</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#34d399" filter="url(#sh)"/><text x="104" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Roles and</text><text x="104" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Topologies</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#0d9488" filter="url(#sh)"/><text x="262" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Communication</text><text x="262" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Protocols</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#14b8a6" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Orchestration and</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Routing</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#047857" filter="url(#sh)"/><text x="578" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Shared Memory and</text><text x="578" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">State</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#059669" filter="url(#sh)"/><text x="736" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Debate and Consensus</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Agent Systems  •  Data Lineage</text></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
+**Figure 24. Data Lineage - Case Study: Software at Scale** (drawio). Figure: Data Lineage view for Case Study: Software at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 22. Data Lineage - Case Study: Software at Scale** (svg). Figure: Data Lineage view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```xml
+<mxfile host="ai-university">
+  <diagram name="Network">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Network - Case Study: Software at Scale" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Case Study: Software …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Case Study: Software at…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Tool and Resource Conte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Conflict Resolution" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 25. Network - Case Study: Software at Scale** (drawio). Figure: Network view for Case Study: Software at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into case study: software at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
-
-In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Wu et al. — AutoGen (2023) and Du et al. — Improving Factuality via Multi-Agent Debate (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into case study: software at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -4037,7 +4067,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Wu et al. — AutoGen (2023) and Du et al. — Improving Factuality via Multi-Agent Debate (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into case study: software at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+
+In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4045,7 +4089,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply case study: software at scale as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply case study: software at scale as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4168,24 +4212,24 @@ class CaseSoftware:
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Case Study: Software at Scale”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It removes all security and governance requirements.
    - B. a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes
-   - C. It removes all security and governance requirements.
-   - D. It applies exclusively to image data.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Case Study: Software at Scale: a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+   - A. Trace cross-agent interactions for debugging.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-4. *(Discussion)* How does Case Study: Software at Scale interact with security and governance requirements?
+   - A. It is only relevant to academic research, not production.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Give each agent a narrow, well-specified role.
+   - **Answer: B.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+4. *(Discussion)* What trade-offs would you weigh when implementing Case Study: Software at Scale?
    - **Model answer:** A strong answer defines case study: software at scale (a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4197,23 +4241,23 @@ _This chapter examines operating in production within Multi-Agent Systems. It co
 
 ## Introduction
 
-We define Operating in Production as the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Operating in Production can be characterised as the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Operating in Production addresses the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Operating in Production is best understood as the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
 
-Operating in Production cannot be understood in isolation from tool and resource contention. Recall that tool and resource contention concerns coordinating access to shared external systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Operating in Production cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Operating in Production cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Operating in Production cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to operating in production. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating in production are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4223,7 +4267,7 @@ Concretely, the principal building blocks include why multiple agents, agent rol
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```xml
 <mxfile host="ai-university">
@@ -4233,16 +4277,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Network - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Operating in Producti…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Operating in Production" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Frameworks and Patterns" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Conflict Resolution" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Debate and Consensus" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -4252,17 +4296,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 23. Network - Operating in Production** (drawio). Figure: Network view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 26. Network - Operating in Production** (drawio). Figure: Network view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4270,13 +4314,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with conflict resolution. Because conflict resolution concerns handling disagreement and contradictory actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4284,7 +4328,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply operating in production as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply operating in production as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4356,40 +4400,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Operating in Production with a regression gate
+### Listing: A composable processing pipeline for Operating in Production
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Operating in Production output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Operating in Production."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -4397,22 +4458,22 @@ if __name__ == "__main__":
 
 1. In the context of Multi-Agent Systems, which statement best describes “Operating in Production”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Operating in Production: the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
+   - B. It makes the system slower but has no other effect.
+   - C. the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Operating in Production: the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: D.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
    - B. Combinatorial cost growth across many agents.
-   - C. Use structured messages and explicit handoff contracts.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Combinatorial cost growth across many agents.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Agents talking in circles without convergence.
+   - D. Give each agent a narrow, well-specified role.
+   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
 4. *(Discussion)* Walk through how you would design Operating in Production for an enterprise Multi-Agent Systems workload.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -4425,27 +4486,27 @@ _This chapter examines evaluation and quality assurance within Multi-Agent Syste
 
 ## Introduction
 
-Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Evaluation and Quality Assurance addresses a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
 
-Evaluation and Quality Assurance cannot be understood in isolation from tool and resource contention. Recall that tool and resource contention concerns coordinating access to shared external systems. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Evaluation and Quality Assurance cannot be understood in isolation from shared memory and state. Recall that shared memory and state concerns coordinating context across agents safely. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Evaluation and Quality Assurance cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Evaluation and Quality Assurance cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, debate-and-judge for high-stakes decisions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+The reference architecture for Evaluation and Quality Assurance separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4459,14 +4520,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["Multi-Agent Systems Platform"]
+  subgraph Platform["Evaluation and Quality Assura… Platform"]
     GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
-    S2[Communication Protocols]
+    S0[Evaluation and Quality As…]
+    S1[Shared Memory and State]
+    S2[Why Multiple Agents]
     S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
+    S4[Emergent Behaviour and Ri…]
+    S5[Cost Control at Team Scale]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -4490,40 +4551,46 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 24. Agent Architecture - Evaluation and Quality Assurance** (mermaid). Figure: Agent Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. Agent Architecture - Evaluation and Quality Assurance** (mermaid). Figure: Agent Architecture view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```plantuml
-@startuml
-title Deployment - Evaluation and Quality Assurance
-package "Multi-Agent Systems Platform" {
-  component "Why Multiple Agents" as C0
-  component "Agent Roles and Topolog…" as C1
-  component "Communication Protocols" as C2
-  component "Orchestration and Routi…" as C3
-  component "Shared Memory and State" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Deployment">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Deployment - Evaluation and Quality Assurance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluation and Qualit…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluation and Quality …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Emergent Behaviour and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 25. Deployment - Evaluation and Quality Assurance** (plantuml). Figure: Deployment view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. Deployment - Evaluation and Quality Assurance** (drawio). Figure: Deployment view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool and resource contention. Because tool and resource contention concerns coordinating access to shared external systems, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4531,9 +4598,9 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -4545,7 +4612,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply evaluation and quality assurance as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply evaluation and quality assurance as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4668,24 +4735,24 @@ class EvaluationAndQuality:
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
+   - A. It makes the system slower but has no other effect.
    - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
+   - C. It removes all security and governance requirements.
+   - D. a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Unclear ownership leading to duplicated or conflicting actions.
-   - C. Emergent failures that are hard to reproduce.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Agents talking in circles without convergence.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It applies exclusively to image data.
-   - B. Give each agent a narrow, well-specified role.
-   - C. Combinatorial cost growth across many agents.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
-4. *(Discussion)* Walk through how you would design Evaluation and Quality Assurance for an enterprise Multi-Agent Systems workload.
+   - A. Use structured messages and explicit handoff contracts.
+   - B. It makes the system slower but has no other effect.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+4. *(Discussion)* What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4697,23 +4764,23 @@ _This chapter examines security, privacy and governance within Multi-Agent Syste
 
 ## Introduction
 
-Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Neglecting it is one of the most common reasons Multi-Agent Systems initiatives stall in production.
 
-Security, Privacy and Governance cannot be understood in isolation from evaluating multi-agent systems. Recall that evaluating multi-agent systems concerns end-to-end task success and per-agent contribution. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Security, Privacy and Governance cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security, Privacy and Governance cannot be understood in isolation from agent roles and topologies. Recall that agent roles and topologies concerns hierarchical, sequential, network and market-based organisations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Several established patterns apply directly to security, privacy and governance. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4723,46 +4790,40 @@ Concretely, the principal building blocks include why multiple agents, agent rol
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Deployment">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Deployment - Security, Privacy and Governance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Deployment - Security, Privacy and Governance
+package "Security, Privacy and Governance Platform" {
+  component "Security, Privacy and G…" as C0
+  component "Orchestration and Routi…" as C1
+  component "Agent Roles and Topolog…" as C2
+  component "The Multi-Agent Referen…" as C3
+  component "Tool and Resource Conte…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 26. Deployment - Security, Privacy and Governance** (drawio). Figure: Deployment view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Deployment - Security, Privacy and Governance** (plantuml). Figure: Deployment view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4770,13 +4831,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost control at team scale. Because cost control at team scale concerns budgeting across many concurrent agents, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4784,7 +4845,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply security, privacy and governance as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply security, privacy and governance as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4856,81 +4917,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Security, Privacy and Governance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Security, Privacy and Governance
+### Listing: Evaluating Security, Privacy and Governance with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Security, Privacy and Governance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Security, Privacy and Governance output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Use structured messages and explicit handoff contracts.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Combinatorial cost growth across many agents.
+   - A. It applies exclusively to image data.
+   - B. the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
+   - C. It removes all security and governance requirements.
    - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
-4. *(Discussion)* How does Security, Privacy and Governance interact with security and governance requirements?
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It makes the system slower but has no other effect.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Best practice: Give each agent a narrow, well-specified role.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Agents talking in circles without convergence.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Use structured messages and explicit handoff contracts.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Agents talking in circles without convergence.
+4. *(Discussion)* How would you test and monitor Security, Privacy and Governance in production?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4942,23 +4986,23 @@ _This chapter examines cost, performance and scaling within Multi-Agent Systems.
 
 ## Introduction
 
-Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Cost, Performance and Scaling can be characterised as techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Cost, Performance and Scaling addresses techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
 
-Cost, Performance and Scaling cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Cost, Performance and Scaling cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Cost, Performance and Scaling cannot be understood in isolation from communication protocols. Recall that communication protocols concerns message passing, shared blackboards and structured handoffs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Cost, Performance and Scaling cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to cost, performance and scaling. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4970,54 +5014,23 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Multi-Agent Systems Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
-    S2[Communication Protocols]
-    S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
+<div class="diagram-svg">
 
-**Figure 27. Architecture - Cost, Performance and Scaling** (mermaid). Figure: Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="5-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bne457999" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d4ed8"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bne457999)"/><rect x="0" y="32" width="840" height="16" fill="url(#bne457999)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Cost, Performance and Scaling</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Cost,</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Performance</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Performance and</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Debate and Consensus</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#3b82f6" filter="url(#sh)"/><text x="654" y="313" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost Control at Team Scale</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#60a5fa" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool and Resource Contention</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="186" y="313" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Communication Protocols</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#1e3a8a" filter="url(#sh)"/><text x="186" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Multi-Agent</text><text x="186" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Systems</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Cost, Performance and Scaling  •  Architecture</text></svg>
+
+</div>
+
+**Figure 30. Architecture - Cost, Performance and Scaling** (svg). Figure: Architecture view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost control at team scale. Because cost control at team scale concerns budgeting across many concurrent agents, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with debate and consensus. Because debate and consensus concerns multi-agent debate, voting and critique for quality, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5025,13 +5038,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with shared memory and state. Because shared memory and state concerns coordinating context across agents safely, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5039,7 +5052,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-Consider a concrete scenario. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply cost, performance and scaling as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply cost, performance and scaling as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5111,63 +5124,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Cost, Performance and Scaling component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Cost, Performance and Scaling with a regression gate
+### Listing: Implementing a Cost, Performance and Scaling component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class PerformanceAndConfig:
+    """Configuration for the Cost, Performance and Scaling component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Cost, Performance and Scaling output against references with a simple exact-match metric.
+class PerformanceAnd:
+    """A minimal, production-shaped implementation of Cost, Performance and Scaling."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: PerformanceAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PerformanceAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Cost, Performance and Scaling goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Cost, Performance and Scaling”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Unclear ownership leading to duplicated or conflicting actions.
-   - C. Trace cross-agent interactions for debugging.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
    - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. Combinatorial cost growth across many agents.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
+   - B. techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: D.** Best practice: Trace cross-agent interactions for debugging.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Agents talking in circles without convergence.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Trace cross-agent interactions for debugging.
+   - D. Give each agent a narrow, well-specified role.
+   - **Answer: A.** Pitfall to avoid: Agents talking in circles without convergence.
 4. *(Discussion)* What trade-offs would you weigh when implementing Cost, Performance and Scaling?
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
@@ -5180,52 +5204,75 @@ _This chapter examines integration and interoperability within Multi-Agent Syste
 
 ## Introduction
 
-Formally, Integration and Interoperability addresses patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Integration and Interoperability as patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Integration and Interoperability concerns patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Integration and Interoperability can be characterised as patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Teams that master this consistently ship more reliable Multi-Agent Systems systems at lower cost.
 
-Integration and Interoperability cannot be understood in isolation from the multi-agent reference architecture. Recall that the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
 Integration and Interoperability cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to integration and interoperability. The first, supervisor–worker hierarchy, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Integration and Interoperability cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Several established patterns apply directly to integration and interoperability. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Integration and Interoperability is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+From an architectural standpoint, Integration and Interoperability sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+
+```plantuml
+@startuml
+title Infrastructure - Integration and Interoperability
+package "Integration and Interoperability Platform" {
+  component "Integration and Interop…" as C0
+  component "Debate and Consensus" as C1
+  component "Why Multiple Agents" as C2
+  component "Shared Memory and State" as C3
+  component "The Multi-Agent Referen…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 31. Infrastructure - Integration and Interoperability** (plantuml). Figure: Infrastructure view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```xml
 <mxfile host="ai-university">
-  <diagram name="Infrastructure">
+  <diagram name="Application Flow">
     <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Integration and Interoperability" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="title" value="Application Flow - Integration and Interoperability" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Integration and Inter…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Integration and Interop…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Debate and Consensus" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The Multi-Agent Referen…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5235,17 +5282,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 28. Infrastructure - Integration and Interoperability** (drawio). Figure: Infrastructure view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Application Flow - Integration and Interoperability** (drawio). Figure: Application Flow view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the multi-agent reference architecture. Because the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with debate and consensus. Because debate and consensus concerns multi-agent debate, voting and critique for quality, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5253,9 +5300,9 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5267,7 +5314,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply integration and interoperability as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply integration and interoperability as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5339,75 +5386,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Integration and Interoperability component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
+Pipelines keep Integration and Interoperability logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Integration and Interoperability component
+### Listing: A composable processing pipeline for Integration and Interoperability
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class IntegrationAndInteroperabilityConfig:
-    """Configuration for the Integration and Interoperability component in a Multi-Agent Systems system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class IntegrationAndInteroperability:
-    """A minimal, production-shaped implementation of Integration and Interoperability."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Integration and Interoperability."""
 
-    def __init__(self, config: IntegrationAndInteroperabilityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"IntegrationAndInteroperability failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Integration and Interoperability goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Integration and Interoperability”?
-   - A. It is only relevant to academic research, not production.
+   - A. It guarantees deterministic output regardless of input.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
-   - **Answer: D.** Integration and Interoperability: patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
+   - C. patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Integration and Interoperability: patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It applies exclusively to image data.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. Trace cross-agent interactions for debugging.
+   - A. Give each agent a narrow, well-specified role.
+   - B. It guarantees deterministic output regardless of input.
    - C. It removes all security and governance requirements.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-4. *(Discussion)* Describe a failure mode of Integration and Interoperability and how you would mitigate it.
+   - D. Agents talking in circles without convergence.
+   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Combinatorial cost growth across many agents.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Combinatorial cost growth across many agents.
+4. *(Discussion)* How does Integration and Interoperability interact with security and governance requirements?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5419,95 +5472,95 @@ _This chapter examines trends and research directions within Multi-Agent Systems
 
 ## Introduction
 
-At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Multi-Agent Systems. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Multi-Agent Systems. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Trends and Research Directions is best understood as emerging trends, open problems and research directions shaping the future of Multi-Agent Systems. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Trends and Research Directions is best understood as emerging trends, open problems and research directions shaping the future of Multi-Agent Systems. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. It is foundational: later capabilities in Multi-Agent Systems are built directly on top of it.
 
-Trends and Research Directions cannot be understood in isolation from communication protocols. Recall that communication protocols concerns message passing, shared blackboards and structured handoffs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Trends and Research Directions cannot be understood in isolation from frameworks and patterns. Recall that frameworks and patterns concerns comparing orchestration frameworks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Trends and Research Directions cannot be understood in isolation from the multi-agent reference architecture. Recall that the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Trends and Research Directions cannot be understood in isolation from debate and consensus. Recall that debate and consensus concerns multi-agent debate, voting and critique for quality. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to trends and research directions. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Trends and Research Directions is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Application Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Application Flow - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Multi-Agent Systems" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Multiple Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Agent Roles and Topolog…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Communication Protocols" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Orchestration and Routi…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+**Figure 33. Application Flow - Trends and Research Directions** (mermaid). Figure: Application Flow view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 29. Application Flow - Trends and Research Directions** (drawio). Figure: Application Flow view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Component - Trends and Research Directions
-package "Multi-Agent Systems Platform" {
-  component "Why Multiple Agents" as C0
-  component "Agent Roles and Topolog…" as C1
-  component "Communication Protocols" as C2
-  component "Orchestration and Routi…" as C3
-  component "Shared Memory and State" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Trends and Research Directions Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Trends and Research Direc…]
+    S1[Frameworks and Patterns]
+    S2[Debate and Consensus]
+    S3[Orchestration and Routing]
+    S4[Agent Roles and Topologies]
+    S5[Tool and Resource Content…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 30. Component - Trends and Research Directions** (plantuml). Figure: Component view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 34. Component - Trends and Research Directions** (mermaid). Figure: Component view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with frameworks and patterns. Because frameworks and patterns concerns comparing orchestration frameworks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5515,13 +5568,13 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with communication protocols. Because communication protocols concerns message passing, shared blackboards and structured handoffs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with frameworks and patterns. Because frameworks and patterns concerns comparing orchestration frameworks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5529,7 +5582,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply trends and research directions as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A simulation organisation needs agent-based modelling of markets and organisations. They decide to apply trends and research directions as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5602,24 +5655,24 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Trends and Research Directions”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
-   - C. It applies exclusively to image data.
+   - A. emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
 2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
    - A. Emergent failures that are hard to reproduce.
-   - B. Agents talking in circles without convergence.
-   - C. Trace cross-agent interactions for debugging.
-   - D. Combinatorial cost growth across many agents.
-   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. Give each agent a narrow, well-specified role.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Give each agent a narrow, well-specified role.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Emergent failures that are hard to reproduce.
-   - C. It applies exclusively to image data.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: B.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-4. *(Discussion)* Explain Trends and Research Directions and why it matters in a production Multi-Agent Systems system.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Trace cross-agent interactions for debugging.
+   - D. Agents talking in circles without convergence.
+   - **Answer: D.** Pitfall to avoid: Agents talking in circles without convergence.
+4. *(Discussion)* Walk through how you would design Trends and Research Directions for an enterprise Multi-Agent Systems workload.
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Multi-Agent Systems) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5631,101 +5684,66 @@ _This chapter examines capstone project within Multi-Agent Systems. It covers a 
 
 ## Introduction
 
-Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Capstone Project concerns a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale.
+To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. Understanding this matters because Multi-Agent Systems systems succeed or fail on exactly these decisions.
 
-Capstone Project cannot be understood in isolation from the multi-agent reference architecture. Recall that the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Capstone Project cannot be understood in isolation from orchestration and routing. Recall that orchestration and routing concerns supervisors, routers and dynamic task allocation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Capstone Project cannot be understood in isolation from why multiple agents. Recall that why multiple agents concerns specialisation, parallelism and separation of concerns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from cost control at team scale. Recall that cost control at team scale concerns budgeting across many concurrent agents. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to capstone project. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, supervisor–worker hierarchy, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, blackboard for shared coordination state, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, sequential pipeline of specialised agents, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Capstone Project sits at the intersection of data, models and operations. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+A robust architecture for Capstone Project is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Multi-Agent Systems Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
-    S2[Communication Protocols]
-    S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
-
-**Figure 31. Component - Capstone Project** (mermaid). Figure: Component view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```plantuml
 @startuml
-title Security Architecture - Capstone Project
-class Service {
-  +process(req)
-  +evaluate(sample)
+title Component - Capstone Project
+package "Capstone Project Platform" {
+  component "Capstone Project" as C0
+  component "Orchestration and Routi…" as C1
+  component "Cost Control at Team Sc…" as C2
+  component "Emergent Behaviour and …" as C3
+  component "Shared Memory and State" as C4
 }
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
 @enduml
 ```
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 32. Security Architecture - Capstone Project** (plantuml). Figure: Security Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 35. Component - Capstone Project** (plantuml). Figure: Component view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the multi-agent reference architecture. Because the multi-agent reference architecture concerns supervisor, workers, shared memory and guardrails, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with orchestration and routing. Because orchestration and routing concerns supervisors, routers and dynamic task allocation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5739,7 +5757,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with conflict resolution. Because conflict resolution concerns handling disagreement and contradictory actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5747,7 +5765,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply capstone project as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A research organisation needs specialised retrieval, analysis and writing agents. They decide to apply capstone project as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5870,24 +5888,24 @@ class CapstoneProject:
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Capstone Project”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Agents talking in circles without convergence.
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
    - B. It guarantees deterministic output regardless of input.
-   - C. Give each agent a narrow, well-specified role.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Give each agent a narrow, well-specified role.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - C. Combinatorial cost growth across many agents.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
 3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. Trace cross-agent interactions for debugging.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: D.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-4. *(Discussion)* Explain Capstone Project and why it matters in a production Multi-Agent Systems system.
+   - C. Agents talking in circles without convergence.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
+4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5899,82 +5917,72 @@ _This chapter examines certification preparation and review within Multi-Agent S
 
 ## Introduction
 
-Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Certification Preparation and Review concerns a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems. Getting this right early prevents expensive rework once a Multi-Agent Systems system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Multi-Agent Systems work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Multi-agent systems decompose complex goals across specialised agents that communicate, coordinate and sometimes debate to produce better outcomes than a single agent. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Multi-Agent Systems fall into place. This concept recurs throughout the Multi-Agent Systems lifecycle, from design to operations.
 
-Certification Preparation and Review cannot be understood in isolation from conflict resolution. Recall that conflict resolution concerns handling disagreement and contradictory actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Certification Preparation and Review cannot be understood in isolation from evaluating multi-agent systems. Recall that evaluating multi-agent systems concerns end-to-end task success and per-agent contribution. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Certification Preparation and Review cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Certification Preparation and Review cannot be understood in isolation from emergent behaviour and risk. Recall that emergent behaviour and risk concerns unintended dynamics and how to contain them. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to certification preparation and review. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blackboard for shared coordination state, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, sequential pipeline of specialised agents, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, debate-and-judge for high-stakes decisions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Multi-Agent Systems system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
+The reference architecture for Certification Preparation and Review separates concerns into clearly bounded components with explicit contracts. A multi-agent platform uses a supervisor/orchestrator that routes subtasks to specialised worker agents, a shared state store for coordination, a message bus for structured communication, and global guardrails enforcing budgets and permissions. Distributed tracing stitches together cross-agent trajectories.
 
 Concretely, the principal building blocks include why multiple agents, agent roles and topologies, communication protocols, orchestration and routing and shared memory and state. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Multi-Agent Systems system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Multi-Agent Systems Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Multiple Agents]
-    S1[Agent Roles and Topologies]
-    S2[Communication Protocols]
-    S3[Orchestration and Routing]
-    S4[Shared Memory and State]
-    S5[Debate and Consensus]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Security Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Security Architecture - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Certification Prepara…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Certification Preparati…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Evaluating Multi-Agent …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Emergent Behaviour and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Shared Memory and State" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Tool and Resource Conte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 33. Security Architecture - Certification Preparation and Review** (mermaid). Figure: Security Architecture view for Multi-Agent Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 36. Security Architecture - Certification Preparation and Review** (drawio). Figure: Security Architecture view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with conflict resolution. Because conflict resolution concerns handling disagreement and contradictory actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating multi-agent systems. Because evaluating multi-agent systems concerns end-to-end task success and per-agent contribution, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5982,9 +5990,9 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including AutoGen, CrewAI, LangGraph, MetaGPT. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5996,7 +6004,7 @@ For deeper study, the literature offers authoritative treatments such as Wu et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A software organisation needs planner, coder, reviewer and tester agents collaborating. They decide to apply certification preparation and review as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs coordinated agents across monitoring and remediation. They decide to apply certification preparation and review as part of their Multi-Agent Systems solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -6068,64 +6076,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Multi-Agent Systems system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Certification Preparation and Review component with retry semantics and typed interfaces — the shape we expect from production Multi-Agent Systems code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Certification Preparation and Review with a regression gate
+### Listing: Implementing a Certification Preparation and Review component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class CertificationPreparationAndConfig:
+    """Configuration for the Certification Preparation and Review component in a Multi-Agent Systems system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Certification Preparation and Review output against references with a simple exact-match metric.
+class CertificationPreparationAnd:
+    """A minimal, production-shaped implementation of Certification Preparation and Review."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: CertificationPreparationAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CertificationPreparationAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Certification Preparation and Review goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Multi-Agent Systems, which statement best describes “Certification Preparation and Review”?
-   - A. a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
-   - B. It makes the system slower but has no other effect.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
-2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
    - A. It is only relevant to academic research, not production.
-   - B. Agents talking in circles without convergence.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: C.** Best practice: Use structured messages and explicit handoff contracts.
-3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Use structured messages and explicit handoff contracts.
+   - C. a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
+2. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. It makes the system slower but has no other effect.
+   - C. Emergent failures that are hard to reproduce.
    - D. Give each agent a narrow, well-specified role.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-4. *(Discussion)* Explain Certification Preparation and Review and why it matters in a production Multi-Agent Systems system.
+   - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
+3. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Emergent failures that are hard to reproduce.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Trace cross-agent interactions for debugging.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+4. *(Discussion)* Describe a failure mode of Certification Preparation and Review and how you would mitigate it.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6163,53 +6182,53 @@ A consolidated bank of discussion-style interview questions drawn from across th
 
 1. Walk through how you would design Why Multiple Agents for an enterprise Multi-Agent Systems workload.
    - **Guidance:** A strong answer defines why multiple agents (Specialisation, parallelism and separation of concerns.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-2. Explain Agent Roles and Topologies and why it matters in a production Multi-Agent Systems system.
+2. How would you test and monitor Agent Roles and Topologies in production?
    - **Guidance:** A strong answer defines agent roles and topologies (Hierarchical, sequential, network and market-based organisations.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-3. Walk through how you would design Communication Protocols for an enterprise Multi-Agent Systems workload.
+3. Explain Communication Protocols and why it matters in a production Multi-Agent Systems system.
    - **Guidance:** A strong answer defines communication protocols (Message passing, shared blackboards and structured handoffs.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-4. Walk through how you would design Orchestration and Routing for an enterprise Multi-Agent Systems workload.
+4. Explain Orchestration and Routing and why it matters in a production Multi-Agent Systems system.
    - **Guidance:** A strong answer defines orchestration and routing (Supervisors, routers and dynamic task allocation.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 5. Explain Shared Memory and State and why it matters in a production Multi-Agent Systems system.
    - **Guidance:** A strong answer defines shared memory and state (Coordinating context across agents safely.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-6. Walk through how you would design Debate and Consensus for an enterprise Multi-Agent Systems workload.
+6. How does Debate and Consensus interact with security and governance requirements?
    - **Guidance:** A strong answer defines debate and consensus (Multi-agent debate, voting and critique for quality.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-7. What trade-offs would you weigh when implementing Conflict Resolution?
+7. How would you test and monitor Conflict Resolution in production?
    - **Guidance:** A strong answer defines conflict resolution (Handling disagreement and contradictory actions.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-8. How does Tool and Resource Contention interact with security and governance requirements?
+8. Describe a failure mode of Tool and Resource Contention and how you would mitigate it.
    - **Guidance:** A strong answer defines tool and resource contention (Coordinating access to shared external systems.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 9. Describe a failure mode of Emergent Behaviour and Risk and how you would mitigate it.
    - **Guidance:** A strong answer defines emergent behaviour and risk (Unintended dynamics and how to contain them.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 10. What trade-offs would you weigh when implementing Evaluating Multi-Agent Systems?
    - **Guidance:** A strong answer defines evaluating multi-agent systems (End-to-end task success and per-agent contribution.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-11. What trade-offs would you weigh when implementing Cost Control at Team Scale?
+11. Walk through how you would design Cost Control at Team Scale for an enterprise Multi-Agent Systems workload.
    - **Guidance:** A strong answer defines cost control at team scale (Budgeting across many concurrent agents.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-12. What trade-offs would you weigh when implementing Frameworks and Patterns?
+12. How would you test and monitor Frameworks and Patterns in production?
    - **Guidance:** A strong answer defines frameworks and patterns (Comparing orchestration frameworks.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 13. Describe a failure mode of Observability Across Agents and how you would mitigate it.
    - **Guidance:** A strong answer defines observability across agents (Tracing distributed agent interactions.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-14. Walk through how you would design The Multi-Agent Reference Architecture for an enterprise Multi-Agent Systems workload.
+14. How does The Multi-Agent Reference Architecture interact with security and governance requirements?
    - **Guidance:** A strong answer defines the multi-agent reference architecture (Supervisor, workers, shared memory and guardrails.) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-15. Walk through how you would design Putting It Together: A Reference Implementation for an enterprise Multi-Agent Systems workload.
+15. What trade-offs would you weigh when implementing Putting It Together: A Reference Implementation?
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-16. Walk through how you would design Hands-On Lab: Building an End-to-End Multi-Agent Systems System for an enterprise Multi-Agent Systems workload.
+16. Describe a failure mode of Hands-On Lab: Building an End-to-End Multi-Agent Systems System and how you would mitigate it.
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end multi-agent systems system (a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-17. How does Case Study: Software at Scale interact with security and governance requirements?
+17. What trade-offs would you weigh when implementing Case Study: Software at Scale?
    - **Guidance:** A strong answer defines case study: software at scale (a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 18. Walk through how you would design Operating in Production for an enterprise Multi-Agent Systems workload.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-19. Walk through how you would design Evaluation and Quality Assurance for an enterprise Multi-Agent Systems workload.
+19. What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-20. How does Security, Privacy and Governance interact with security and governance requirements?
+20. How would you test and monitor Security, Privacy and Governance in production?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 21. What trade-offs would you weigh when implementing Cost, Performance and Scaling?
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-22. Describe a failure mode of Integration and Interoperability and how you would mitigate it.
+22. How does Integration and Interoperability interact with security and governance requirements?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-23. Explain Trends and Research Directions and why it matters in a production Multi-Agent Systems system.
+23. Walk through how you would design Trends and Research Directions for an enterprise Multi-Agent Systems workload.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Multi-Agent Systems) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-24. Explain Capstone Project and why it matters in a production Multi-Agent Systems system.
+24. What trade-offs would you weigh when implementing Capstone Project?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
-25. Explain Certification Preparation and Review and why it matters in a production Multi-Agent Systems system.
+25. Describe a failure mode of Certification Preparation and Review and how you would mitigate it.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems) then connects it to architecture, evaluation, cost, security and operations for Multi-Agent Systems, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6217,460 +6236,460 @@ A consolidated bank of discussion-style interview questions drawn from across th
 Certification-style multiple-choice questions covering best practices and common pitfalls.
 
 1. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Give each agent a narrow, well-specified role.
-   - C. Combinatorial cost growth across many agents.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Give each agent a narrow, well-specified role.
-2. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. Use structured messages and explicit handoff contracts.
-   - C. Agents talking in circles without convergence.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
-3. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
    - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. It removes all security and governance requirements.
+   - D. Combinatorial cost growth across many agents.
    - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-4. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. Emergent failures that are hard to reproduce.
+2. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It makes the system slower but has no other effect.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Emergent failures that are hard to reproduce.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: C.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+3. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. It makes the system slower but has no other effect.
    - C. Trace cross-agent interactions for debugging.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: B.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-5. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Use structured messages and explicit handoff contracts.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Emergent failures that are hard to reproduce.
-   - **Answer: A.** Best practice: Use structured messages and explicit handoff contracts.
-6. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It removes all security and governance requirements.
-   - B. Trace cross-agent interactions for debugging.
-   - C. It makes the system slower but has no other effect.
    - D. Agents talking in circles without convergence.
-   - **Answer: D.** Pitfall to avoid: Agents talking in circles without convergence.
+   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
+4. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Use structured messages and explicit handoff contracts.
+   - B. It removes all security and governance requirements.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+5. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Agents talking in circles without convergence.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Trace cross-agent interactions for debugging.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
+6. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Emergent failures that are hard to reproduce.
+   - B. It makes the system slower but has no other effect.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
 7. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It makes the system slower but has no other effect.
+   - B. Use structured messages and explicit handoff contracts.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Use structured messages and explicit handoff contracts.
+8. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Emergent failures that are hard to reproduce.
+   - B. Use structured messages and explicit handoff contracts.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+9. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Emergent failures that are hard to reproduce.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+10. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
    - A. Trace cross-agent interactions for debugging.
-   - B. Combinatorial cost growth across many agents.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Emergent failures that are hard to reproduce.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: C.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+11. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Agents talking in circles without convergence.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: D.** Best practice: Use structured messages and explicit handoff contracts.
+12. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Trace cross-agent interactions for debugging.
+   - B. It removes all security and governance requirements.
+   - C. Give each agent a narrow, well-specified role.
+   - D. Unclear ownership leading to duplicated or conflicting actions.
+   - **Answer: D.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+13. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. It makes the system slower but has no other effect.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. Combinatorial cost growth across many agents.
+   - **Answer: A.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+14. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Give each agent a narrow, well-specified role.
    - C. Unclear ownership leading to duplicated or conflicting actions.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
-8. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Agents talking in circles without convergence.
-   - C. Trace cross-agent interactions for debugging.
+   - **Answer: C.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+15. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Give each agent a narrow, well-specified role.
+   - B. It applies exclusively to image data.
+   - C. Emergent failures that are hard to reproduce.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
-9. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Combinatorial cost growth across many agents.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
-10. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - B. Give each agent a narrow, well-specified role.
+   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
+16. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
    - C. Agents talking in circles without convergence.
    - D. Trace cross-agent interactions for debugging.
    - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
-11. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It applies exclusively to image data.
-   - B. Trace cross-agent interactions for debugging.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Trace cross-agent interactions for debugging.
-12. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Agents talking in circles without convergence.
-   - B. Give each agent a narrow, well-specified role.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Use structured messages and explicit handoff contracts.
-   - **Answer: A.** Pitfall to avoid: Agents talking in circles without convergence.
-13. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. Give each agent a narrow, well-specified role.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Give each agent a narrow, well-specified role.
-14. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Combinatorial cost growth across many agents.
-15. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. It removes all security and governance requirements.
-   - D. Emergent failures that are hard to reproduce.
-   - **Answer: B.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-16. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. Combinatorial cost growth across many agents.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
 17. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Combinatorial cost growth across many agents.
+   - A. Emergent failures that are hard to reproduce.
    - B. It is only relevant to academic research, not production.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: D.** Best practice: Trace cross-agent interactions for debugging.
 18. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. It makes the system slower but has no other effect.
+   - A. It is only relevant to academic research, not production.
+   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Unclear ownership leading to duplicated or conflicting actions.
+   - **Answer: D.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+19. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Combinatorial cost growth across many agents.
+   - B. Use structured messages and explicit handoff contracts.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Use structured messages and explicit handoff contracts.
+20. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It removes all security and governance requirements.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. It makes the system slower but has no other effect.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: B.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+21. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. Agents talking in circles without convergence.
+   - C. Combinatorial cost growth across many agents.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+22. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It removes all security and governance requirements.
+   - B. Emergent failures that are hard to reproduce.
    - C. It guarantees deterministic output regardless of input.
    - D. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - **Answer: B.** Pitfall to avoid: Emergent failures that are hard to reproduce.
+23. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Give each agent a narrow, well-specified role.
+   - B. Agents talking in circles without convergence.
+   - C. It makes the system slower but has no other effect.
+   - D. Emergent failures that are hard to reproduce.
+   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
+24. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-19. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+25. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. Combinatorial cost growth across many agents.
+   - C. It is only relevant to academic research, not production.
+   - D. Agents talking in circles without convergence.
+   - **Answer: A.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+26. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Trace cross-agent interactions for debugging.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Agents talking in circles without convergence.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
+27. Which of the following is a recommended best practice when working with Multi-Agent Systems?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Use structured messages and explicit handoff contracts.
-20. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Use structured messages and explicit handoff contracts.
    - B. Agents talking in circles without convergence.
    - C. Trace cross-agent interactions for debugging.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
-21. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Combinatorial cost growth across many agents.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
-22. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. It removes all security and governance requirements.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-23. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
+28. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It is only relevant to academic research, not production.
    - B. Agents talking in circles without convergence.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
-24. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - C. It makes the system slower but has no other effect.
+   - D. Use structured messages and explicit handoff contracts.
+   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
+29. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It applies exclusively to image data.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. It makes the system slower but has no other effect.
+   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - **Answer: D.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+30. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
    - A. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - B. Agents talking in circles without convergence.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
+31. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Combinatorial cost growth across many agents.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. Agents talking in circles without convergence.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: D.** Best practice: Trace cross-agent interactions for debugging.
+32. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Trace cross-agent interactions for debugging.
+   - B. It makes the system slower but has no other effect.
+   - C. Combinatorial cost growth across many agents.
+   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
+33. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Trace cross-agent interactions for debugging.
    - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
+34. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It is only relevant to academic research, not production.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Give each agent a narrow, well-specified role.
+   - **Answer: B.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+35. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It applies exclusively to image data.
+   - B. Combinatorial cost growth across many agents.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+36. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Agents talking in circles without convergence.
+   - D. Give each agent a narrow, well-specified role.
+   - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
+37. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - D. Agents talking in circles without convergence.
+   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+38. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Use structured messages and explicit handoff contracts.
+   - B. It makes the system slower but has no other effect.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+39. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It makes the system slower but has no other effect.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Unclear ownership leading to duplicated or conflicting actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Best practice: Give each agent a narrow, well-specified role.
+40. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Agents talking in circles without convergence.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Use structured messages and explicit handoff contracts.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Agents talking in circles without convergence.
+41. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Trace cross-agent interactions for debugging.
+   - **Answer: D.** Best practice: Trace cross-agent interactions for debugging.
+42. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Agents talking in circles without convergence.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Trace cross-agent interactions for debugging.
+   - D. Give each agent a narrow, well-specified role.
+   - **Answer: A.** Pitfall to avoid: Agents talking in circles without convergence.
+43. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Give each agent a narrow, well-specified role.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. Agents talking in circles without convergence.
+   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
+44. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. Combinatorial cost growth across many agents.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Combinatorial cost growth across many agents.
+45. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Emergent failures that are hard to reproduce.
+   - B. Unclear ownership leading to duplicated or conflicting actions.
+   - C. Give each agent a narrow, well-specified role.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Give each agent a narrow, well-specified role.
+46. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Trace cross-agent interactions for debugging.
+   - D. Agents talking in circles without convergence.
+   - **Answer: D.** Pitfall to avoid: Agents talking in circles without convergence.
+47. Which of the following is a recommended best practice when working with Multi-Agent Systems?
+   - A. Unclear ownership leading to duplicated or conflicting actions.
+   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
+   - C. Combinatorial cost growth across many agents.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
+48. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Trace cross-agent interactions for debugging.
    - C. Agents talking in circles without convergence.
    - D. Use structured messages and explicit handoff contracts.
    - **Answer: C.** Pitfall to avoid: Agents talking in circles without convergence.
-25. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Give each agent a narrow, well-specified role.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Give each agent a narrow, well-specified role.
-26. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
+49. Which of the following is a recommended best practice when working with Multi-Agent Systems?
    - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Trace cross-agent interactions for debugging.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-27. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. Use structured messages and explicit handoff contracts.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Use structured messages and explicit handoff contracts.
-28. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. Give each agent a narrow, well-specified role.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-29. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Trace cross-agent interactions for debugging.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Trace cross-agent interactions for debugging.
-30. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It makes the system slower but has no other effect.
-   - B. Combinatorial cost growth across many agents.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: B.** Pitfall to avoid: Combinatorial cost growth across many agents.
-31. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
    - B. It makes the system slower but has no other effect.
-   - C. Trace cross-agent interactions for debugging.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
-32. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Agents talking in circles without convergence.
-   - C. It makes the system slower but has no other effect.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: B.** Pitfall to avoid: Agents talking in circles without convergence.
-33. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: C.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-34. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-35. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: D.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-36. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It makes the system slower but has no other effect.
-   - B. Combinatorial cost growth across many agents.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Combinatorial cost growth across many agents.
-37. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Unclear ownership leading to duplicated or conflicting actions.
    - C. Emergent failures that are hard to reproduce.
    - D. Give each agent a narrow, well-specified role.
    - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
-38. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It applies exclusively to image data.
-   - B. Give each agent a narrow, well-specified role.
-   - C. Combinatorial cost growth across many agents.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
-39. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Best practice: Enforce global budgets to prevent multiplicative cost blow-ups.
-40. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Use structured messages and explicit handoff contracts.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Combinatorial cost growth across many agents.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
-41. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Unclear ownership leading to duplicated or conflicting actions.
-   - C. Trace cross-agent interactions for debugging.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
-42. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. Combinatorial cost growth across many agents.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: C.** Pitfall to avoid: Combinatorial cost growth across many agents.
-43. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It applies exclusively to image data.
-   - C. Unclear ownership leading to duplicated or conflicting actions.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: D.** Best practice: Give each agent a narrow, well-specified role.
-44. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. Trace cross-agent interactions for debugging.
-   - C. It removes all security and governance requirements.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-45. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Emergent failures that are hard to reproduce.
-   - B. Agents talking in circles without convergence.
-   - C. Trace cross-agent interactions for debugging.
-   - D. Combinatorial cost growth across many agents.
-   - **Answer: C.** Best practice: Trace cross-agent interactions for debugging.
-46. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Emergent failures that are hard to reproduce.
-   - C. It applies exclusively to image data.
-   - D. Enforce global budgets to prevent multiplicative cost blow-ups.
-   - **Answer: B.** Pitfall to avoid: Emergent failures that are hard to reproduce.
-47. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. Agents talking in circles without convergence.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Give each agent a narrow, well-specified role.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Give each agent a narrow, well-specified role.
-48. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Trace cross-agent interactions for debugging.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: D.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
-49. Which of the following is a recommended best practice when working with Multi-Agent Systems?
-   - A. It is only relevant to academic research, not production.
-   - B. Agents talking in circles without convergence.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. Unclear ownership leading to duplicated or conflicting actions.
-   - **Answer: C.** Best practice: Use structured messages and explicit handoff contracts.
 50. Which of the following is a common pitfall to avoid in Multi-Agent Systems?
-   - A. Unclear ownership leading to duplicated or conflicting actions.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Use structured messages and explicit handoff contracts.
-   - D. Give each agent a narrow, well-specified role.
-   - **Answer: A.** Pitfall to avoid: Unclear ownership leading to duplicated or conflicting actions.
+   - A. Emergent failures that are hard to reproduce.
+   - B. Give each agent a narrow, well-specified role.
+   - C. Trace cross-agent interactions for debugging.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Emergent failures that are hard to reproduce.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Multi-Agent Systems, which statement best describes “Why Multiple Agents”?
-   - A. Specialisation, parallelism and separation of concerns.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Specialisation, parallelism and separation of concerns.
    - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Why Multiple Agents: Specialisation, parallelism and separation of concerns.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Why Multiple Agents: Specialisation, parallelism and separation of concerns.
 2. In the context of Multi-Agent Systems, which statement best describes “Agent Roles and Topologies”?
-   - A. It makes the system slower but has no other effect.
-   - B. Hierarchical, sequential, network and market-based organisations.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Hierarchical, sequential, network and market-based organisations.
    - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Agent Roles and Topologies: Hierarchical, sequential, network and market-based organisations.
+   - **Answer: C.** Agent Roles and Topologies: Hierarchical, sequential, network and market-based organisations.
 3. In the context of Multi-Agent Systems, which statement best describes “Communication Protocols”?
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
+   - C. Message passing, shared blackboards and structured handoffs.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Communication Protocols: Message passing, shared blackboards and structured handoffs.
+4. In the context of Multi-Agent Systems, which statement best describes “Orchestration and Routing”?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Supervisors, routers and dynamic task allocation.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Orchestration and Routing: Supervisors, routers and dynamic task allocation.
+5. In the context of Multi-Agent Systems, which statement best describes “Shared Memory and State”?
    - A. It makes the system slower but has no other effect.
+   - B. Coordinating context across agents safely.
+   - C. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Shared Memory and State: Coordinating context across agents safely.
+6. In the context of Multi-Agent Systems, which statement best describes “Debate and Consensus”?
+   - A. It is only relevant to academic research, not production.
    - B. It applies exclusively to image data.
    - C. It removes all security and governance requirements.
-   - D. Message passing, shared blackboards and structured handoffs.
-   - **Answer: D.** Communication Protocols: Message passing, shared blackboards and structured handoffs.
-4. In the context of Multi-Agent Systems, which statement best describes “Orchestration and Routing”?
-   - A. Supervisors, routers and dynamic task allocation.
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Orchestration and Routing: Supervisors, routers and dynamic task allocation.
-5. In the context of Multi-Agent Systems, which statement best describes “Shared Memory and State”?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Coordinating context across agents safely.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Shared Memory and State: Coordinating context across agents safely.
-6. In the context of Multi-Agent Systems, which statement best describes “Debate and Consensus”?
-   - A. Multi-agent debate, voting and critique for quality.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Debate and Consensus: Multi-agent debate, voting and critique for quality.
+   - D. Multi-agent debate, voting and critique for quality.
+   - **Answer: D.** Debate and Consensus: Multi-agent debate, voting and critique for quality.
 7. In the context of Multi-Agent Systems, which statement best describes “Conflict Resolution”?
-   - A. Handling disagreement and contradictory actions.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Conflict Resolution: Handling disagreement and contradictory actions.
+   - A. It applies exclusively to image data.
+   - B. Handling disagreement and contradictory actions.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Conflict Resolution: Handling disagreement and contradictory actions.
 8. In the context of Multi-Agent Systems, which statement best describes “Tool and Resource Contention”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It applies exclusively to image data.
    - B. Coordinating access to shared external systems.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Tool and Resource Contention: Coordinating access to shared external systems.
 9. In the context of Multi-Agent Systems, which statement best describes “Emergent Behaviour and Risk”?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
    - D. Unintended dynamics and how to contain them.
    - **Answer: D.** Emergent Behaviour and Risk: Unintended dynamics and how to contain them.
 10. In the context of Multi-Agent Systems, which statement best describes “Evaluating Multi-Agent Systems”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It removes all security and governance requirements.
    - B. It is only relevant to academic research, not production.
    - C. End-to-end task success and per-agent contribution.
-   - D. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: C.** Evaluating Multi-Agent Systems: End-to-end task success and per-agent contribution.
 11. In the context of Multi-Agent Systems, which statement best describes “Cost Control at Team Scale”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. Budgeting across many concurrent agents.
-   - **Answer: D.** Cost Control at Team Scale: Budgeting across many concurrent agents.
-12. In the context of Multi-Agent Systems, which statement best describes “Frameworks and Patterns”?
-   - A. It makes the system slower but has no other effect.
+   - A. Budgeting across many concurrent agents.
    - B. It is only relevant to academic research, not production.
-   - C. Comparing orchestration frameworks.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Frameworks and Patterns: Comparing orchestration frameworks.
-13. In the context of Multi-Agent Systems, which statement best describes “Observability Across Agents”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Tracing distributed agent interactions.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Observability Across Agents: Tracing distributed agent interactions.
-14. In the context of Multi-Agent Systems, which statement best describes “The Multi-Agent Reference Architecture”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Supervisor, workers, shared memory and guardrails.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** The Multi-Agent Reference Architecture: Supervisor, workers, shared memory and guardrails.
-15. In the context of Multi-Agent Systems, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
-   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
-16. In the context of Multi-Agent Systems, which statement best describes “Hands-On Lab: Building an End-to-End Multi-Agent Systems System”?
-   - A. It is only relevant to academic research, not production.
-   - B. a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Hands-On Lab: Building an End-to-End Multi-Agent Systems System: a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
-17. In the context of Multi-Agent Systems, which statement best describes “Case Study: Software at Scale”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes
    - C. It removes all security and governance requirements.
    - D. It applies exclusively to image data.
+   - **Answer: A.** Cost Control at Team Scale: Budgeting across many concurrent agents.
+12. In the context of Multi-Agent Systems, which statement best describes “Frameworks and Patterns”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Comparing orchestration frameworks.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Frameworks and Patterns: Comparing orchestration frameworks.
+13. In the context of Multi-Agent Systems, which statement best describes “Observability Across Agents”?
+   - A. It is only relevant to academic research, not production.
+   - B. Tracing distributed agent interactions.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Observability Across Agents: Tracing distributed agent interactions.
+14. In the context of Multi-Agent Systems, which statement best describes “The Multi-Agent Reference Architecture”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Supervisor, workers, shared memory and guardrails.
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** The Multi-Agent Reference Architecture: Supervisor, workers, shared memory and guardrails.
+15. In the context of Multi-Agent Systems, which statement best describes “Putting It Together: A Reference Implementation”?
+   - A. It is only relevant to academic research, not production.
+   - B. an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Multi-Agent Systems system into a cohesive, working whole
+16. In the context of Multi-Agent Systems, which statement best describes “Hands-On Lab: Building an End-to-End Multi-Agent Systems System”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Hands-On Lab: Building an End-to-End Multi-Agent Systems System: a guided, build-along laboratory that constructs a functioning Multi-Agent Systems system from first principles
+17. In the context of Multi-Agent Systems, which statement best describes “Case Study: Software at Scale”?
+   - A. It removes all security and governance requirements.
+   - B. a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Case Study: Software at Scale: a detailed case study of deploying Multi-Agent Systems in a demanding software environment, including the decisions, trade-offs and outcomes
 18. In the context of Multi-Agent Systems, which statement best describes “Operating in Production”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Operating in Production: the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
-19. In the context of Multi-Agent Systems, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
    - D. It removes all security and governance requirements.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
+   - **Answer: C.** Operating in Production: the operational discipline required to run a Multi-Agent Systems system reliably, including monitoring, incident response and continuous improvement
+19. In the context of Multi-Agent Systems, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Multi-Agent Systems system before and after release
 20. In the context of Multi-Agent Systems, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
-21. In the context of Multi-Agent Systems, which statement best describes “Cost, Performance and Scaling”?
    - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
+   - B. the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
+   - C. It removes all security and governance requirements.
    - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a Multi-Agent Systems system trustworthy and compliant
+21. In the context of Multi-Agent Systems, which statement best describes “Cost, Performance and Scaling”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Multi-Agent Systems system to production traffic
 22. In the context of Multi-Agent Systems, which statement best describes “Integration and Interoperability”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Integration and Interoperability: patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
+23. In the context of Multi-Agent Systems, which statement best describes “Trends and Research Directions”?
+   - A. emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
+24. In the context of Multi-Agent Systems, which statement best describes “Capstone Project”?
+   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
+25. In the context of Multi-Agent Systems, which statement best describes “Certification Preparation and Review”?
    - A. It is only relevant to academic research, not production.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
-   - **Answer: D.** Integration and Interoperability: patterns for integrating a Multi-Agent Systems system with surrounding enterprise systems and data
-23. In the context of Multi-Agent Systems, which statement best describes “Trends and Research Directions”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Multi-Agent Systems
-24. In the context of Multi-Agent Systems, which statement best describes “Capstone Project”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Multi-Agent Systems deliverable
-25. In the context of Multi-Agent Systems, which statement best describes “Certification Preparation and Review”?
-   - A. a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
-   - B. It makes the system slower but has no other effect.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
+   - C. a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Multi-Agent Systems
 
 # References
 

@@ -1,5 +1,5 @@
 @startuml
-title Data Lineage - The Enterprise Knowledge Graph Architecture
+title Data Lineage - Visualising Knowledge Graphs
 class Service {
   +process(req)
   +evaluate(sample)

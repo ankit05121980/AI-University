@@ -1,5 +1,5 @@
 classDiagram
-  class RService {
+  class SPaGService {
     +configure(config)
     +process(request) Response
     +evaluate(sample) Metrics
@@ -11,5 +11,5 @@ classDiagram
   class Policy {
     +authorise(ctx) bool
   }
-  RService --> Repository
-  RService --> Policy
+  SPaGService --> Repository
+  SPaGService --> Policy

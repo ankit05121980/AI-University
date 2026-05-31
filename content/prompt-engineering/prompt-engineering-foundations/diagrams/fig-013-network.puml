@@ -1,11 +1,11 @@
 @startuml
 title Network - Defending Against Prompt Injection
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
-  component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
+package "Defending Against Prompt Injection Platform" {
+  component "Defending Against Promp…" as C0
+  component "Retrieval-Augmented Pro…" as C1
+  component "Zero-, One- and Few-Sho…" as C2
+  component "Decoding Parameters and…" as C3
+  component "Prompt Templates and Co…" as C4
 }
 database "Storage" as DB
 C0 --> DB

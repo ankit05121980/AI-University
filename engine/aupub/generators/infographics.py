@@ -103,7 +103,7 @@ def _labels(domain, n, rng):
     ls = [c[0] for c in domain.get("concepts", [])]
     if not ls:
         ls = ["Input", "Process", "Store", "Serve", "Monitor", "Govern"]
-    start = rng.randrange(len(ls))
+    start = 0 if domain.get("_ordered") else rng.randrange(len(ls))
     out = [ls[(start + i) % len(ls)] for i in range(n)]
     return out
 
@@ -565,5 +565,38 @@ def render_infographic(domain: dict, kind: str, title: str, rng: random.Random) 
         f'<rect x="0" y="0" width="{W}" height="48" rx="14" fill="url(#bn{uid})"/>'
         f'<rect x="0" y="32" width="{W}" height="16" fill="url(#bn{uid})"/>'
         f'{_txt(W/2, 25, _short(title, 92), 14.5, "#ffffff", weight="700")}'
+        f'{inner}{footer}</svg>'
+    )
+
+
+def render_named(name: str, items, subject: str = "", pal_index: int = 0,
+                 seed: int = 7) -> str:
+    """Render a specific template from an explicit list of ``items`` (used by the
+    Diagram Studio to turn a prompt/text into a professional diagram)."""
+    rng = random.Random(seed)
+    if name not in _BY_NAME:
+        name = "flow_h"
+    ti = _BY_NAME[name]
+    items = [str(i).strip() for i in items if str(i).strip()] or ["Item 1", "Item 2", "Item 3"]
+    title = (subject or items[0]).strip()
+    pseudo = {"name": title, "concepts": [(i, "") for i in items], "_ordered": True,
+              "use_cases": [], "best_practices": [], "pitfalls": [], "patterns": [],
+              "tools": [], "overview": "", "architecture": ""}
+    pi = pal_index % len(PALETTES)
+    pal = PALETTES[pi]
+    inner = TEMPLATES[ti](pseudo, title, pal, rng)
+    uid = format(rng.getrandbits(28), "x")
+    grad = (f'<defs><linearGradient id="bn{uid}" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{pal[0]}"/>'
+            f'<stop offset="1" stop-color="{pal[1 % len(pal)]}"/></linearGradient></defs>')
+    footer = _txt(PAD, H - 14, _short(title or "Diagram", 80), 9.5, MUTED, "start", "500")
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+        f'data-tpl="{name}" data-pal="{pi}" '
+        f'viewBox="0 0 {W} {H}" font-family="Inter, Segoe UI, Arial, sans-serif">'
+        f'{_DEFS}{grad}<rect width="{W}" height="{H}" rx="14" fill="{BG}"/>'
+        f'<rect x="0" y="0" width="{W}" height="48" rx="14" fill="url(#bn{uid})"/>'
+        f'<rect x="0" y="32" width="{W}" height="16" fill="url(#bn{uid})"/>'
+        f'{_txt(W/2, 25, _short(title, 92), 14.5, "#ffffff", "middle", "700")}'
         f'{inner}{footer}</svg>'
     )

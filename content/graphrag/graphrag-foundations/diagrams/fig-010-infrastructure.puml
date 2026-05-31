@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - Query Routing in GraphRAG
-package "GraphRAG Platform" {
-  component "Limits of Vector-Only R…" as C0
-  component "Knowledge Graph Constru…" as C1
-  component "Entity Resolution and D…" as C2
-  component "Community Detection and…" as C3
-  component "Local versus Global Sea…" as C4
+package "Query Routing in GraphRAG Platform" {
+  component "Query Routing in GraphR…" as C0
+  component "Entity Resolution and D…" as C1
+  component "Incremental Graph Updat…" as C2
+  component "Limits of Vector-Only R…" as C3
+  component "Security and Provenance" as C4
 }
 database "Storage" as DB
 C0 --> DB

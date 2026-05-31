@@ -87,24 +87,24 @@ First published 2026. First Edition. Document version 1.0.0.
 | 5 | Feed-Forward Networks and Activations | 10 | 1 | 1 | 4 |
 | 6 | Residual Connections and Normalisation | 10 | 1 | 1 | 4 |
 | 7 | Encoder, Decoder and Encoder–Decoder Variants | 11 | 2 | 1 | 4 |
-| 8 | Efficient Attention | 11 | 2 | 1 | 4 |
-| 9 | Vision and Multimodal Transformers | 10 | 1 | 1 | 4 |
+| 8 | Efficient Attention | 10 | 1 | 1 | 4 |
+| 9 | Vision and Multimodal Transformers | 11 | 2 | 1 | 4 |
 | 10 | Mixture-of-Experts Transformers | 10 | 1 | 1 | 4 |
 | 11 | Training Dynamics and Stability | 11 | 2 | 1 | 4 |
-| 12 | Implementing a Transformer from Scratch | 11 | 2 | 1 | 4 |
+| 12 | Implementing a Transformer from Scratch | 10 | 1 | 1 | 4 |
 | 13 | Profiling and Optimising Transformers | 10 | 1 | 1 | 4 |
 | 14 | The Transformer Design Space | 11 | 2 | 1 | 4 |
-| 15 | Putting It Together: A Reference Implementation | 10 | 1 | 1 | 4 |
-| 16 | Hands-On Lab: Building an End-to-End Transformers System | 10 | 1 | 1 | 4 |
+| 15 | Putting It Together: A Reference Implementation | 11 | 2 | 1 | 4 |
+| 16 | Hands-On Lab: Building an End-to-End Transformers System | 11 | 2 | 1 | 4 |
 | 17 | Case Study: NLP at Scale | 10 | 1 | 1 | 4 |
-| 18 | Operating in Production | 10 | 1 | 1 | 4 |
+| 18 | Operating in Production | 11 | 2 | 1 | 4 |
 | 19 | Evaluation and Quality Assurance | 10 | 1 | 1 | 4 |
-| 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
+| 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
 | 23 | Trends and Research Directions | 9 | 1 | 0 | 4 |
-| 24 | Capstone Project | 10 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
+| 24 | Capstone Project | 11 | 2 | 1 | 4 |
+| 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
 
 ---
 
@@ -120,29 +120,30 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 8. Security Architecture - Encoder, Decoder and Encoder–Decoder Variants
 - Figure 9. DevOps Pipeline - Encoder, Decoder and Encoder–Decoder Variants
 - Figure 10. DevOps Pipeline - Efficient Attention
-- Figure 11. Agent Architecture - Efficient Attention
-- Figure 12. Agent Architecture - Vision and Multimodal Transformers
+- Figure 11. Agent Architecture - Vision and Multimodal Transformers
+- Figure 12. Network - Vision and Multimodal Transformers
 - Figure 13. Network - Mixture-of-Experts Transformers
 - Figure 14. RAG Architecture - Training Dynamics and Stability
 - Figure 15. Architecture - Training Dynamics and Stability
 - Figure 16. Architecture - Implementing a Transformer from Scratch
-- Figure 17. Sequence - Implementing a Transformer from Scratch
-- Figure 18. Sequence - Profiling and Optimising Transformers
-- Figure 19. Class - The Transformer Design Space
-- Figure 20. Cloud Architecture - The Transformer Design Space
-- Figure 21. Cloud Architecture - Putting It Together: A Reference Implementation
+- Figure 17. Sequence - Profiling and Optimising Transformers
+- Figure 18. Class - The Transformer Design Space
+- Figure 19. Cloud Architecture - The Transformer Design Space
+- Figure 20. Cloud Architecture - Putting It Together: A Reference Implementation
+- Figure 21. Knowledge Graph - Putting It Together: A Reference Implementation
 - Figure 22. Knowledge Graph - Hands-On Lab: Building an End-to-End Transformers System
-- Figure 23. Data Lineage - Case Study: NLP at Scale
-- Figure 24. Infrastructure - Operating in Production
-- Figure 25. Operating Model - Evaluation and Quality Assurance
-- Figure 26. Business Process - Security, Privacy and Governance
-- Figure 27. CI/CD Pipeline - Security, Privacy and Governance
-- Figure 28. CI/CD Pipeline - Cost, Performance and Scaling
-- Figure 29. Deployment - Integration and Interoperability
-- Figure 30. Capability Map - Trends and Research Directions
-- Figure 31. Component - Capstone Project
-- Figure 32. Data Flow - Certification Preparation and Review
-- Figure 33. Application Flow - Certification Preparation and Review
+- Figure 23. Data Lineage - Hands-On Lab: Building an End-to-End Transformers System
+- Figure 24. Data Lineage - Case Study: NLP at Scale
+- Figure 25. Infrastructure - Operating in Production
+- Figure 26. Operating Model - Operating in Production
+- Figure 27. Operating Model - Evaluation and Quality Assurance
+- Figure 28. Business Process - Security, Privacy and Governance
+- Figure 29. CI/CD Pipeline - Cost, Performance and Scaling
+- Figure 30. Deployment - Integration and Interoperability
+- Figure 31. Capability Map - Trends and Research Directions
+- Figure 32. Component - Capstone Project
+- Figure 33. Data Flow - Capstone Project
+- Figure 34. Data Flow - Certification Preparation and Review
 
 ---
 
@@ -248,7 +249,7 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 1. CI/CD Pipeline - Why Self-Attention Replaced Recurrence** (plantuml). Figure: CI/CD Pipeline view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. CI/CD Pipeline - Why Self-Attention Replaced Recurrence** (plantuml). Figure: CI/CD Pipeline view for Why Self-Attention Replaced Recurrence. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -392,11 +393,11 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Why Self-Attention Replaced Recurrence”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
-   - **Answer: D.** Why Self-Attention Replaced Recurrence: Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Why Self-Attention Replaced Recurrence: Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
 2. Which of the following is a recommended best practice when working with Transformers?
    - A. Validate positional encoding choice against target sequence lengths.
    - B. It is only relevant to academic research, not production.
@@ -457,16 +458,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Deployment - Scaled Dot-Product Attention" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Transformers" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Scaled Dot-Product At…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Training Dynamics and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Profiling and Optimisin…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Feed-Forward Networks a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Residual Connections an…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -476,7 +477,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 2. Deployment - Scaled Dot-Product Attention** (drawio). Figure: Deployment view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Deployment - Scaled Dot-Product Attention** (drawio). Figure: Deployment view for Scaled Dot-Product Attention. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -631,24 +632,24 @@ class ScaledAttention:
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Scaled Dot-Product Attention”?
-   - A. Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Scaled Dot-Product Attention: Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
+   - **Answer: D.** Scaled Dot-Product Attention: Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It applies exclusively to image data.
-   - B. Position encoding that fails to extrapolate beyond training length.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
-3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It removes all security and governance requirements.
+   - A. It is only relevant to academic research, not production.
    - B. Numerical instability from post-norm at depth.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Numerical instability from post-norm at depth.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
-4. *(Discussion)* Describe a failure mode of Scaled Dot-Product Attention and how you would mitigate it.
+4. *(Discussion)* How does Scaled Dot-Product Attention interact with security and governance requirements?
    - **Model answer:** A strong answer defines scaled dot-product attention (Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -660,23 +661,23 @@ _This chapter examines multi-head attention within Transformers. It covers proje
 
 ## Introduction
 
-At its core, Multi-Head Attention concerns projecting into multiple subspaces to attend to different relations simultaneously. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Formally, Multi-Head Attention addresses projecting into multiple subspaces to attend to different relations simultaneously. Getting this right early prevents expensive rework once a Transformers system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Multi-Head Attention as projecting into multiple subspaces to attend to different relations simultaneously. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Multi-Head Attention addresses projecting into multiple subspaces to attend to different relations simultaneously. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, multi-head attention is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Neglecting it is one of the most common reasons Transformers initiatives stall in production.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, multi-head attention is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Multi-Head Attention cannot be understood in isolation from feed-forward networks and activations. Recall that feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Multi-Head Attention cannot be understood in isolation from residual connections and normalisation. Recall that residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Multi-Head Attention cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Multi-Head Attention cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to multi-head attention. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to multi-head attention. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around multi-head attention are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around multi-head attention are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -686,25 +687,25 @@ Concretely, the principal building blocks include why self-attention replaced re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="kpi" data-pal="7-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn4caba40" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d946ef"/><stop offset="1" stop-color="#6b21a8"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn4caba40)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn4caba40)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Multi-Head Attention</text><rect x="28" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="28" y="90" width="182" height="8" rx="0" fill="#d946ef"/><text x="119" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#d946ef" dominant-baseline="middle">92%</text><text x="119" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Feed-Forward Networks</text><text x="119" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">and Activations</text><rect x="228" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="228" y="90" width="182" height="8" rx="0" fill="#6b21a8"/><text x="320" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#6b21a8" dominant-baseline="middle">41%</text><text x="320" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Residual Connections</text><text x="320" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">and Normalisation</text><rect x="429" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="429" y="90" width="182" height="8" rx="0" fill="#7e22ce"/><text x="520" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#7e22ce" dominant-baseline="middle">75%</text><text x="520" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Encoder, Decoder and</text><text x="520" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Encoder–Decoder</text><rect x="630" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="630" y="90" width="182" height="8" rx="0" fill="#9333ea"/><text x="721" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#9333ea" dominant-baseline="middle">78%</text><text x="721" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Efficient Attention</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Capability Map</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="11-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn7571b22" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4338ca"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn7571b22)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn7571b22)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Multi-Head Attention</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#4338ca"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#4338ca"/><text x="128" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Head</text><text x="128" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Attention</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#0f172a"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#0f172a"/><text x="274" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Residual</text><text x="274" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Connections and</text><text x="274" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Normalisation</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#1e40af"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#1e40af"/><text x="420" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Training</text><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Dynamics and</text><text x="420" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Stability</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#0e7490"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#0e7490"/><text x="566" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Positional</text><text x="566" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Encoding</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#b45309"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#b45309"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Scaled</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Dot-Product</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Attention</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Head Attention  •  Capability Map</text></svg>
 
 </div>
 
-**Figure 3. Capability Map - Multi-Head Attention** (svg). Figure: Capability Map view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 3. Capability Map - Multi-Head Attention** (svg). Figure: Capability Map view for Multi-Head Attention. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into multi-head attention. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into multi-head attention. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with residual connections and normalisation. Because residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -712,13 +713,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into multi-head attention. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into multi-head attention. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -726,7 +727,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply multi-head attention as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply multi-head attention as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -798,75 +799,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Multi-Head Attention component with retry semantics and typed interfaces — the shape we expect from production Transformers code rather than a notebook prototype.
+Pipelines keep Multi-Head Attention logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Multi-Head Attention component
+### Listing: A composable processing pipeline for Multi-Head Attention
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class AttentionConfig:
-    """Configuration for the Multi-Head Attention component in a Transformers system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class Attention:
-    """A minimal, production-shaped implementation of Multi-Head Attention."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Multi-Head Attention."""
 
-    def __init__(self, config: AttentionConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"Attention failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Multi-Head Attention goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Multi-Head Attention”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Projecting into multiple subspaces to attend to different relations simultaneously.
-   - **Answer: D.** Multi-Head Attention: Projecting into multiple subspaces to attend to different relations simultaneously.
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Projecting into multiple subspaces to attend to different relations simultaneously.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Multi-Head Attention: Projecting into multiple subspaces to attend to different relations simultaneously.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Numerical instability from post-norm at depth.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Quadratic attention cost dominating long-sequence workloads.
    - C. It makes the system slower but has no other effect.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
+   - D. Validate positional encoding choice against target sequence lengths.
+   - **Answer: D.** Best practice: Validate positional encoding choice against target sequence lengths.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. Profile FLOPs and memory before scaling parameters.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* What trade-offs would you weigh when implementing Multi-Head Attention?
+   - A. Adopt fused attention kernels to cut memory and latency.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Numerical instability from post-norm at depth.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+4. *(Discussion)* Explain Multi-Head Attention and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines multi-head attention (Projecting into multiple subspaces to attend to different relations simultaneously.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -878,27 +885,27 @@ _This chapter examines positional encoding within Transformers. It covers sinuso
 
 ## Introduction
 
-We define Positional Encoding as sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. It is foundational: later capabilities in Transformers are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Positional Encoding refers to sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Positional Encoding addresses sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Positional Encoding as sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, positional encoding is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, positional encoding is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Positional Encoding cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Positional Encoding cannot be understood in isolation from feed-forward networks and activations. Recall that feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Positional Encoding cannot be understood in isolation from why self-attention replaced recurrence. Recall that why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Positional Encoding cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to positional encoding. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to positional encoding. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around positional encoding are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around positional encoding are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Positional Encoding is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+The reference architecture for Positional Encoding separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -906,73 +913,46 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Transformers Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Self-Attention Replac…]
-    S1[Scaled Dot-Product Attent…]
-    S2[Multi-Head Attention]
-    S3[Positional Encoding]
-    S4[Feed-Forward Networks and…]
-    S5[Residual Connections and …]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
-
-**Figure 4. Component - Positional Encoding** (mermaid). Figure: Component view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
 ```plantuml
 @startuml
-title Data Flow - Positional Encoding
-class Service {
-  +process(req)
-  +evaluate(sample)
+title Component - Positional Encoding
+package "Positional Encoding Platform" {
+  component "Positional Encoding" as C0
+  component "Feed-Forward Networks a…" as C1
+  component "Encoder, Decoder and En…" as C2
+  component "Implementing a Transfor…" as C3
+  component "Profiling and Optimisin…" as C4
 }
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
 @enduml
 ```
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 5. Data Flow - Positional Encoding** (plantuml). Figure: Data Flow view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 4. Component - Positional Encoding** (plantuml). Figure: Component view for Positional Encoding. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_v" data-pal="8-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnde08e88" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#65a30d"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnde08e88)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnde08e88)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Positional Encoding</text><rect x="270" y="70" width="300" height="52" rx="11" fill="#2dd4bf" filter="url(#sh)"/><text x="420" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><rect x="270" y="144" width="300" height="52" rx="11" fill="#65a30d" filter="url(#sh)"/><text x="420" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feed-Forward Networks and Activations</text><line x1="420" y1="122" x2="420" y2="144" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="218" width="300" height="52" rx="11" fill="#84cc16" filter="url(#sh)"/><text x="420" y="244" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Encoder, Decoder and Encoder–Decoder Variants</text><line x1="420" y1="196" x2="420" y2="218" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="292" width="300" height="52" rx="11" fill="#0d9488" filter="url(#sh)"/><text x="420" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer from Scratch</text><line x1="420" y1="270" x2="420" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="270" y="366" width="300" height="52" rx="11" fill="#0f766e" filter="url(#sh)"/><text x="420" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising Transformers</text><line x1="420" y1="344" x2="420" y2="366" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Positional Encoding  •  Data Flow</text></svg>
+
+</div>
+
+**Figure 5. Data Flow - Positional Encoding** (svg). Figure: Data Flow view for Positional Encoding. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into positional encoding. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with training dynamics and stability. Because training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -982,11 +962,11 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into positional encoding. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaled dot-product attention. Because scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with mixture-of-experts transformers. Because mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -994,7 +974,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A science organisation needs protein structure and molecular property prediction. They decide to apply positional encoding as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply positional encoding as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1066,64 +1046,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Positional Encoding logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Positional Encoding with a regression gate
+### Listing: A composable processing pipeline for Positional Encoding
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Positional Encoding output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Positional Encoding."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Positional Encoding”?
-   - A. It removes all security and governance requirements.
-   - B. Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Positional Encoding: Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
+   - A. Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Positional Encoding: Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
 2. Which of the following is a recommended best practice when working with Transformers?
    - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Profile FLOPs and memory before scaling parameters.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Profile FLOPs and memory before scaling parameters.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Numerical instability from post-norm at depth.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
-4. *(Discussion)* What trade-offs would you weigh when implementing Positional Encoding?
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+4. *(Discussion)* Explain Positional Encoding and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines positional encoding (Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1135,23 +1132,23 @@ _This chapter examines feed-forward networks and activations within Transformers
 
 ## Introduction
 
-In practical terms, Feed-Forward Networks and Activations is best understood as position-wise MLPs, GELU/SwiGLU and their role in capacity. Neglecting it is one of the most common reasons Transformers initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+At its core, Feed-Forward Networks and Activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Feed-Forward Networks and Activations refers to position-wise MLPs, GELU/SwiGLU and their role in capacity. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Feed-Forward Networks and Activations refers to position-wise MLPs, GELU/SwiGLU and their role in capacity. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, feed-forward networks and activations is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, feed-forward networks and activations is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Neglecting it is one of the most common reasons Transformers initiatives stall in production.
 
-Feed-Forward Networks and Activations cannot be understood in isolation from the transformer design space. Recall that the transformer design space concerns a map of architectural choices and their empirical trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Feed-Forward Networks and Activations cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Feed-Forward Networks and Activations cannot be understood in isolation from scaled dot-product attention. Recall that scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Feed-Forward Networks and Activations cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to feed-forward networks and activations. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to feed-forward networks and activations. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around feed-forward networks and activations are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around feed-forward networks and activations are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1161,36 +1158,25 @@ Concretely, the principal building blocks include why self-attention replaced re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```plantuml
-@startuml
-title Data Flow - Feed-Forward Networks and Activations
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+<div class="diagram-svg">
 
-_Source diagram (plantuml); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="3-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn75360d0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn75360d0)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn75360d0)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Feed-Forward Networks and Activations</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="104" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feed-Forward Networks</text><text x="104" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Activations</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#f97316" filter="url(#sh)"/><text x="262" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and</text><text x="262" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Optimising</text><text x="262" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#b45309" filter="url(#sh)"/><text x="578" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vision and Multimodal</text><text x="578" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#d97706" filter="url(#sh)"/><text x="736" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a</text><text x="736" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformer from</text><text x="736" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scratch</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Feed-Forward Networks and Activations  •  Data Flow</text></svg>
 
-**Figure 6. Data Flow - Feed-Forward Networks and Activations** (plantuml). Figure: Data Flow view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 6. Data Flow - Feed-Forward Networks and Activations** (svg). Figure: Data Flow view for Feed-Forward Networks and Activations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into feed-forward networks and activations. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into feed-forward networks and activations. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the transformer design space. Because the transformer design space concerns a map of architectural choices and their empirical trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1198,13 +1184,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into feed-forward networks and activations. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into feed-forward networks and activations. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with vision and multimodal transformers. Because vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with residual connections and normalisation. Because residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1212,7 +1198,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply feed-forward networks and activations as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A science organisation needs protein structure and molecular property prediction. They decide to apply feed-forward networks and activations as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1324,24 +1310,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Feed-Forward Networks and Activations”?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
    - D. Position-wise MLPs, GELU/SwiGLU and their role in capacity.
    - **Answer: D.** Feed-Forward Networks and Activations: Position-wise MLPs, GELU/SwiGLU and their role in capacity.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+   - A. Profile FLOPs and memory before scaling parameters.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Adopt fused attention kernels to cut memory and latency.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Profile FLOPs and memory before scaling parameters.
-   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-4. *(Discussion)* What trade-offs would you weigh when implementing Feed-Forward Networks and Activations?
+   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+4. *(Discussion)* How would you test and monitor Feed-Forward Networks and Activations in production?
    - **Model answer:** A strong answer defines feed-forward networks and activations (Position-wise MLPs, GELU/SwiGLU and their role in capacity.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1353,51 +1339,62 @@ _This chapter examines residual connections and normalisation within Transformer
 
 ## Introduction
 
-We define Residual Connections and Normalisation as pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. Teams that master this consistently ship more reliable Transformers systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+We define Residual Connections and Normalisation as pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. Neglecting it is one of the most common reasons Transformers initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Residual Connections and Normalisation as pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Residual Connections and Normalisation as pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, residual connections and normalisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Residual Connections and Normalisation cannot be understood in isolation from why self-attention replaced recurrence. Recall that why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Residual Connections and Normalisation cannot be understood in isolation from mixture-of-experts transformers. Recall that mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Residual Connections and Normalisation cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Residual Connections and Normalisation cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to residual connections and normalisation. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to residual connections and normalisation. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around residual connections and normalisation are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around residual connections and normalisation are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Residual Connections and Normalisation sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Residual Connections and Normalisation is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title Application Flow - Residual Connections and Normalisation
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="0-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn1c87e56" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn1c87e56)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn1c87e56)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Residual Connections and Normalisation</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Design</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Space</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Self-Attention</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Replaced Recurrence</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Attention</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Self-Attention</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Replaced Recurrence</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="388" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product</text><text x="388" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Attention</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="548" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Head Attention</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="708" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Self-Attention</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Replaced Recurrence</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Attention</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="548" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Head Attention</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="708" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Application Flow</text></svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
-
-**Figure 7. Application Flow - Residual Connections and Normalisation** (svg). Figure: Application Flow view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 7. Application Flow - Residual Connections and Normalisation** (plantuml). Figure: Application Flow view for Residual Connections and Normalisation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into residual connections and normalisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with mixture-of-experts transformers. Because mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1405,13 +1402,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into residual connections and normalisation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into residual connections and normalisation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1419,7 +1416,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply residual connections and normalisation as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A science organisation needs protein structure and molecular property prediction. They decide to apply residual connections and normalisation as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1491,81 +1488,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Residual Connections and Normalisation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Residual Connections and Normalisation
+### Listing: Evaluating Residual Connections and Normalisation with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Residual Connections and Normalisation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Residual Connections and Normalisation output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Residual Connections and Normalisation”?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
-   - **Answer: D.** Residual Connections and Normalisation: Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
+   - A. Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Residual Connections and Normalisation: Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
 2. Which of the following is a recommended best practice when working with Transformers?
    - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Numerical instability from post-norm at depth.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - D. Quadratic attention cost dominating long-sequence workloads.
+   - **Answer: B.** Best practice: Validate positional encoding choice against target sequence lengths.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Adopt fused attention kernels to cut memory and latency.
-   - B. Numerical instability from post-norm at depth.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
-4. *(Discussion)* Walk through how you would design Residual Connections and Normalisation for an enterprise Transformers workload.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Numerical instability from post-norm at depth.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+4. *(Discussion)* Explain Residual Connections and Normalisation and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines residual connections and normalisation (Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1577,27 +1557,27 @@ _This chapter examines encoder, decoder and encoder–decoder variants within Tr
 
 ## Introduction
 
-Formally, Encoder, Decoder and Encoder–Decoder Variants addresses bERT-style, GPT-style and T5-style architectures and their use cases. This concept recurs throughout the Transformers lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Encoder, Decoder and Encoder–Decoder Variants can be characterised as bERT-style, GPT-style and T5-style architectures and their use cases. Teams that master this consistently ship more reliable Transformers systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Encoder, Decoder and Encoder–Decoder Variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define Encoder, Decoder and Encoder–Decoder Variants as bERT-style, GPT-style and T5-style architectures and their use cases. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, encoder, decoder and encoder–decoder variants is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, encoder, decoder and encoder–decoder variants is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Neglecting it is one of the most common reasons Transformers initiatives stall in production.
 
-Encoder, Decoder and Encoder–Decoder Variants cannot be understood in isolation from efficient attention. Recall that efficient attention concerns flashAttention, sparse and linear attention to tame quadratic cost. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Encoder, Decoder and Encoder–Decoder Variants cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Encoder, Decoder and Encoder–Decoder Variants cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Encoder, Decoder and Encoder–Decoder Variants cannot be understood in isolation from residual connections and normalisation. Recall that residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to encoder, decoder and encoder–decoder variants. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to encoder, decoder and encoder–decoder variants. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around encoder, decoder and encoder–decoder variants are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around encoder, decoder and encoder–decoder variants are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Encoder, Decoder and Encoder–Decoder Variants sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Encoder, Decoder and Encoder–Decoder Variants is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1605,43 +1585,73 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="10-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn5595d7f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#15803d"/><stop offset="1" stop-color="#16a34a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn5595d7f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn5595d7f)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Encoder, Decoder and Encoder–Decoder Variants</text><circle cx="420.0" cy="238.0" r="150" fill="#15803d"/><text x="420" y="104" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Encoder, Decoder and</text><text x="420" y="116" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Encoder–Decoder Variants</text><circle cx="420.0" cy="238.0" r="116" fill="#16a34a"/><text x="420" y="144" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Efficient Attention</text><circle cx="420.0" cy="238.0" r="82" fill="#22c55e"/><text x="420" y="172" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Vision and Multimodal</text><text x="420" y="184" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Transformers</text><circle cx="420.0" cy="238.0" r="48" fill="#4ade80"/><text x="420" y="206" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Mixture-of-Experts</text><text x="420" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Transformers</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Security Architecture</text></svg>
-
-</div>
-
-**Figure 8. Security Architecture - Encoder, Decoder and Encoder–Decoder Variants** (svg). Figure: Security Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+```xml
+<mxfile host="ai-university">
+  <diagram name="Security Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Security Architecture - Encoder, Decoder and Encoder–Decode…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Encoder, Decoder and …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Encoder, Decoder and En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Residual Connections an…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Efficient Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Mixture-of-Experts Tran…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 9. DevOps Pipeline - Encoder, Decoder and Encoder–Decoder Variants** (mermaid). Figure: DevOps Pipeline view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 8. Security Architecture - Encoder, Decoder and Encoder–Decoder Variants** (drawio). Figure: Security Architecture view for Encoder, Decoder and Encoder–Decoder Variants. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="DevOps Pipeline">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="DevOps Pipeline - Encoder, Decoder and Encoder–Decoder Vari…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Encoder, Decoder and …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Encoder, Decoder and En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Residual Connections an…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Efficient Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Mixture-of-Experts Tran…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 9. DevOps Pipeline - Encoder, Decoder and Encoder–Decoder Variants** (drawio). Figure: DevOps Pipeline view for Encoder, Decoder and Encoder–Decoder Variants. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into encoder, decoder and encoder–decoder variants. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into encoder, decoder and encoder–decoder variants. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with efficient attention. Because efficient attention concerns flashAttention, sparse and linear attention to tame quadratic cost, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-head attention. Because multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1651,11 +1661,11 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into encoder, decoder and encoder–decoder variants. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1663,7 +1673,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A science organisation needs protein structure and molecular property prediction. They decide to apply encoder, decoder and encoder–decoder variants as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply encoder, decoder and encoder–decoder variants as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1735,57 +1745,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Encoder, Decoder and Encoder–Decoder Variants logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Encoder, Decoder and Encoder–Decoder Variants
+### Listing: Evaluating Encoder, Decoder and Encoder–Decoder Variants with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Encoder, Decoder and Encoder–Decoder Variants."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Encoder, Decoder and Encoder–Decoder Variants output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -1793,23 +1786,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Transformers, which statement best describes “Encoder, Decoder and Encoder–Decoder Variants”?
    - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - B. BERT-style, GPT-style and T5-style architectures and their use cases.
    - C. It removes all security and governance requirements.
-   - D. BERT-style, GPT-style and T5-style architectures and their use cases.
-   - **Answer: D.** Encoder, Decoder and Encoder–Decoder Variants: BERT-style, GPT-style and T5-style architectures and their use cases.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Encoder, Decoder and Encoder–Decoder Variants: BERT-style, GPT-style and T5-style architectures and their use cases.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Quadratic attention cost dominating long-sequence workloads.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
-3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It applies exclusively to image data.
-   - B. Adopt fused attention kernels to cut memory and latency.
-   - C. It removes all security and governance requirements.
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. It guarantees deterministic output regardless of input.
    - D. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - **Answer: D.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* How does Encoder, Decoder and Encoder–Decoder Variants interact with security and governance requirements?
+   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+4. *(Discussion)* Explain Encoder, Decoder and Encoder–Decoder Variants and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines encoder, decoder and encoder–decoder variants (BERT-style, GPT-style and T5-style architectures and their use cases.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1821,23 +1814,23 @@ _This chapter examines efficient attention within Transformers. It covers flashA
 
 ## Introduction
 
-At its core, Efficient Attention concerns flashAttention, sparse and linear attention to tame quadratic cost. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Efficient Attention can be characterised as flashAttention, sparse and linear attention to tame quadratic cost. This concept recurs throughout the Transformers lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Efficient Attention can be characterised as flashAttention, sparse and linear attention to tame quadratic cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Efficient Attention concerns flashAttention, sparse and linear attention to tame quadratic cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, efficient attention is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Neglecting it is one of the most common reasons Transformers initiatives stall in production.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, efficient attention is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
 Efficient Attention cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Efficient Attention cannot be understood in isolation from residual connections and normalisation. Recall that residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Efficient Attention cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to efficient attention. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to efficient attention. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around efficient attention are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around efficient attention are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1847,29 +1840,21 @@ Concretely, the principal building blocks include why self-attention replaced re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn73e8377" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn73e8377)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn73e8377)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Efficient Attention</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#b45309" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Design</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Space</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Self-Attention</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Replaced Recurrence</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Attention</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Head Attention</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  DevOps Pipeline</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="0-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnbd23ef0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnbd23ef0)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnbd23ef0)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Efficient Attention</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="104" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Efficient Attention</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="262" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Head Attention</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vision and Multimodal</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="736" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Encoder, Decoder and</text><text x="736" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Encoder–Decoder</text><text x="736" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Variants</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Efficient Attention  •  DevOps Pipeline</text></svg>
 
 </div>
 
-**Figure 10. DevOps Pipeline - Efficient Attention** (svg). Figure: DevOps Pipeline view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="2-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnf2c5432" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#047857"/><stop offset="1" stop-color="#059669"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnf2c5432)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnf2c5432)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Agent Architecture - Efficient Attention</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#047857"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#047857" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Head</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Attention</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#059669"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#059669" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Positional</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Encoding</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#10b981"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#10b981" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Feed-Forward</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Networks and</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#34d399"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#34d399" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Residual</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Connections and</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#0d9488"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0d9488" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Encoder, Decoder</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Agent Architecture</text></svg>
-
-</div>
-
-**Figure 11. Agent Architecture - Efficient Attention** (svg). Figure: Agent Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. DevOps Pipeline - Efficient Attention** (svg). Figure: DevOps Pipeline view for Efficient Attention. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into efficient attention. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into efficient attention. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1881,13 +1866,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into efficient attention. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into efficient attention. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with mixture-of-experts transformers. Because mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1895,7 +1880,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply efficient attention as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply efficient attention as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1967,63 +1952,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Efficient Attention logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Efficient Attention with a regression gate
+### Listing: A composable processing pipeline for Efficient Attention
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Efficient Attention output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Efficient Attention."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Efficient Attention”?
-   - A. It makes the system slower but has no other effect.
-   - B. FlashAttention, sparse and linear attention to tame quadratic cost.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Efficient Attention: FlashAttention, sparse and linear attention to tame quadratic cost.
+   - A. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
+   - C. FlashAttention, sparse and linear attention to tame quadratic cost.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Efficient Attention: FlashAttention, sparse and linear attention to tame quadratic cost.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Quadratic attention cost dominating long-sequence workloads.
-   - C. It removes all security and governance requirements.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-3. Which of the following is a common pitfall to avoid in Transformers?
    - A. It removes all security and governance requirements.
    - B. Adopt fused attention kernels to cut memory and latency.
-   - C. Numerical instability from post-norm at depth.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+   - C. Position encoding that fails to extrapolate beyond training length.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Adopt fused attention kernels to cut memory and latency.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Numerical instability from post-norm at depth.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
 4. *(Discussion)* Describe a failure mode of Efficient Attention and how you would mitigate it.
    - **Model answer:** A strong answer defines efficient attention (FlashAttention, sparse and linear attention to tame quadratic cost.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
@@ -2036,23 +2038,23 @@ _This chapter examines vision and multimodal transformers within Transformers. I
 
 ## Introduction
 
-In practical terms, Vision and Multimodal Transformers is best understood as patch embeddings, ViT and cross-modal attention. This concept recurs throughout the Transformers lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Vision and Multimodal Transformers refers to patch embeddings, ViT and cross-modal attention. Getting this right early prevents expensive rework once a Transformers system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Vision and Multimodal Transformers can be characterised as patch embeddings, ViT and cross-modal attention. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Vision and Multimodal Transformers addresses patch embeddings, ViT and cross-modal attention. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, vision and multimodal transformers is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Teams that master this consistently ship more reliable Transformers systems at lower cost.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, vision and multimodal transformers is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Vision and Multimodal Transformers cannot be understood in isolation from scaled dot-product attention. Recall that scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Vision and Multimodal Transformers cannot be understood in isolation from mixture-of-experts transformers. Recall that mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Vision and Multimodal Transformers cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Vision and Multimodal Transformers cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to vision and multimodal transformers. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to vision and multimodal transformers. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around vision and multimodal transformers are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around vision and multimodal transformers are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2062,36 +2064,85 @@ Concretely, the principal building blocks include why self-attention replaced re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```plantuml
-@startuml
-title Agent Architecture - Vision and Multimodal Transformers
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Vision and Multimodal Transfo… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Vision and Multimodal Tra…]
+    S1[Mixture-of-Experts Transf…]
+    S2[Training Dynamics and Sta…]
+    S3[Why Self-Attention Replac…]
+    S4[The Transformer Design Sp…]
+    S5[Scaled Dot-Product Attent…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+**Figure 11. Agent Architecture - Vision and Multimodal Transformers** (mermaid). Figure: Agent Architecture view for Vision and Multimodal Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 12. Agent Architecture - Vision and Multimodal Transformers** (plantuml). Figure: Agent Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```xml
+<mxfile host="ai-university">
+  <diagram name="Network">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Network - Vision and Multimodal Transformers" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Vision and Multimodal…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Vision and Multimodal T…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Mixture-of-Experts Tran…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Training Dynamics and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The Transformer Design …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 12. Network - Vision and Multimodal Transformers** (drawio). Figure: Network view for Vision and Multimodal Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into vision and multimodal transformers. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into vision and multimodal transformers. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaled dot-product attention. Because scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with mixture-of-experts transformers. Because mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2099,13 +2150,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into vision and multimodal transformers. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into vision and multimodal transformers. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2113,7 +2164,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A science organisation needs protein structure and molecular property prediction. They decide to apply vision and multimodal transformers as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply vision and multimodal transformers as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2185,64 +2236,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Vision and Multimodal Transformers logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Vision and Multimodal Transformers with a regression gate
+### Listing: A composable processing pipeline for Vision and Multimodal Transformers
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Vision and Multimodal Transformers output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Vision and Multimodal Transformers."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Vision and Multimodal Transformers”?
-   - A. Patch embeddings, ViT and cross-modal attention.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Vision and Multimodal Transformers: Patch embeddings, ViT and cross-modal attention.
-2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. Patch embeddings, ViT and cross-modal attention.
    - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - **Answer: C.** Vision and Multimodal Transformers: Patch embeddings, ViT and cross-modal attention.
+2. Which of the following is a recommended best practice when working with Transformers?
+   - A. Profile FLOPs and memory before scaling parameters.
    - B. It makes the system slower but has no other effect.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: C.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-4. *(Discussion)* What trade-offs would you weigh when implementing Vision and Multimodal Transformers?
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+4. *(Discussion)* How would you test and monitor Vision and Multimodal Transformers in production?
    - **Model answer:** A strong answer defines vision and multimodal transformers (Patch embeddings, ViT and cross-modal attention.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2254,72 +2322,66 @@ _This chapter examines mixture-of-experts transformers within Transformers. It c
 
 ## Introduction
 
-Formally, Mixture-of-Experts Transformers addresses sparse routing for parameter-efficient scaling. Neglecting it is one of the most common reasons Transformers initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Mixture-of-Experts Transformers refers to sparse routing for parameter-efficient scaling. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Mixture-of-Experts Transformers as sparse routing for parameter-efficient scaling. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Mixture-of-Experts Transformers refers to sparse routing for parameter-efficient scaling. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, mixture-of-experts transformers is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, mixture-of-experts transformers is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. This concept recurs throughout the Transformers lifecycle, from design to operations.
 
-Mixture-of-Experts Transformers cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Mixture-of-Experts Transformers cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Mixture-of-Experts Transformers cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Mixture-of-Experts Transformers cannot be understood in isolation from the transformer design space. Recall that the transformer design space concerns a map of architectural choices and their empirical trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to mixture-of-experts transformers. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to mixture-of-experts transformers. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around mixture-of-experts transformers are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around mixture-of-experts transformers are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Mixture-of-Experts Transformers separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Mixture-of-Experts Transformers is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Network">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Network - Mixture-of-Experts Transformers" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Transformers" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Feed-Forward Networks a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Network - Mixture-of-Experts Transformers
+package "Mixture-of-Experts Transformers Platform" {
+  component "Mixture-of-Experts Tran…" as C0
+  component "Implementing a Transfor…" as C1
+  component "The Transformer Design …" as C2
+  component "Training Dynamics and S…" as C3
+  component "Why Self-Attention Repl…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 13. Network - Mixture-of-Experts Transformers** (drawio). Figure: Network view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Network - Mixture-of-Experts Transformers** (plantuml). Figure: Network view for Mixture-of-Experts Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into mixture-of-experts transformers. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into mixture-of-experts transformers. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2329,11 +2391,11 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into mixture-of-experts transformers. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2341,7 +2403,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply mixture-of-experts transformers as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply mixture-of-experts transformers as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2470,24 +2532,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Mixture-of-Experts Transformers”?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Sparse routing for parameter-efficient scaling.
-   - **Answer: D.** Mixture-of-Experts Transformers: Sparse routing for parameter-efficient scaling.
+   - A. Sparse routing for parameter-efficient scaling.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Mixture-of-Experts Transformers: Sparse routing for parameter-efficient scaling.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. It makes the system slower but has no other effect.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. Validate positional encoding choice against target sequence lengths.
+   - **Answer: D.** Best practice: Validate positional encoding choice against target sequence lengths.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - **Answer: D.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* What trade-offs would you weigh when implementing Mixture-of-Experts Transformers?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Validate positional encoding choice against target sequence lengths.
+   - D. Quadratic attention cost dominating long-sequence workloads.
+   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+4. *(Discussion)* Explain Mixture-of-Experts Transformers and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines mixture-of-experts transformers (Sparse routing for parameter-efficient scaling.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2499,81 +2561,59 @@ _This chapter examines training dynamics and stability within Transformers. It c
 
 ## Introduction
 
-In practical terms, Training Dynamics and Stability is best understood as initialisation, warmup, gradient clipping and loss spikes. It is foundational: later capabilities in Transformers are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Training Dynamics and Stability refers to initialisation, warmup, gradient clipping and loss spikes. It is foundational: later capabilities in Transformers are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Training Dynamics and Stability concerns initialisation, warmup, gradient clipping and loss spikes. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Training Dynamics and Stability refers to initialisation, warmup, gradient clipping and loss spikes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, training dynamics and stability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, training dynamics and stability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
 
-Training Dynamics and Stability cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Training Dynamics and Stability cannot be understood in isolation from residual connections and normalisation. Recall that residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Training Dynamics and Stability cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Training Dynamics and Stability cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to training dynamics and stability. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to training dynamics and stability. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around training dynamics and stability are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around training dynamics and stability are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Training Dynamics and Stability is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+The reference architecture for Training Dynamics and Stability separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```plantuml
-@startuml
-title RAG Architecture - Training Dynamics and Stability
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+<div class="diagram-svg">
 
-_Source diagram (plantuml); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn880cadc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn880cadc)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn880cadc)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">RAG Architecture - Training Dynamics and Stability</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#0e7490"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0e7490" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Training Dynamics</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Stability</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#b45309"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Residual</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Connections and</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#9f1239"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#9f1239" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Vision and</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multimodal</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#4338ca"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#4338ca" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The Transformer</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Design Space</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#0f172a"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Profiling and</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Optimising</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Training Dynamics and Stability  •  RAG Architecture</text></svg>
 
-**Figure 14. RAG Architecture - Training Dynamics and Stability** (plantuml). Figure: RAG Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
 
-```plantuml
-@startuml
-title Architecture - Training Dynamics and Stability
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+**Figure 14. RAG Architecture - Training Dynamics and Stability** (svg). Figure: RAG Architecture view for Training Dynamics and Stability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-_Source diagram (plantuml); render with the appropriate tool._
+<div class="diagram-svg">
 
-**Figure 15. Architecture - Training Dynamics and Stability** (plantuml). Figure: Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="3-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnafccdce" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnafccdce)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnafccdce)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Training Dynamics and Stability</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Training</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Dynamics and</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#f97316" filter="url(#sh)"/><text x="654" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Residual Connections and</text><text x="654" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Normalisation</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="654" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vision and Multimodal</text><text x="654" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#b45309" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Design Space</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#d97706" filter="url(#sh)"/><text x="186" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="186" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#f59e0b" filter="url(#sh)"/><text x="186" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer</text><text x="186" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">from Scratch</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Training Dynamics and Stability  •  Architecture</text></svg>
+
+</div>
+
+**Figure 15. Architecture - Training Dynamics and Stability** (svg). Figure: Architecture view for Training Dynamics and Stability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into training dynamics and stability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into training dynamics and stability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with vision and multimodal transformers. Because vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with residual connections and normalisation. Because residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2581,9 +2621,9 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into training dynamics and stability. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into training dynamics and stability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -2595,7 +2635,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A nlp organisation needs language understanding and generation across tasks. They decide to apply training dynamics and stability as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply training dynamics and stability as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2667,40 +2707,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Training Dynamics and Stability logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Training Dynamics and Stability with a regression gate
+### Listing: A composable processing pipeline for Training Dynamics and Stability
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Training Dynamics and Stability output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Training Dynamics and Stability."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -2708,23 +2765,23 @@ if __name__ == "__main__":
 
 1. In the context of Transformers, which statement best describes “Training Dynamics and Stability”?
    - A. Initialisation, warmup, gradient clipping and loss spikes.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Training Dynamics and Stability: Initialisation, warmup, gradient clipping and loss spikes.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: A.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Validate positional encoding choice against target sequence lengths.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-4. *(Discussion)* Walk through how you would design Training Dynamics and Stability for an enterprise Transformers workload.
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Validate positional encoding choice against target sequence lengths.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+4. *(Discussion)* How would you test and monitor Training Dynamics and Stability in production?
    - **Model answer:** A strong answer defines training dynamics and stability (Initialisation, warmup, gradient clipping and loss spikes.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2736,102 +2793,72 @@ _This chapter examines implementing a transformer from scratch within Transforme
 
 ## Introduction
 
-We define Implementing a Transformer from Scratch as a minimal, correct implementation that demystifies every component. Teams that master this consistently ship more reliable Transformers systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Implementing a Transformer from Scratch refers to a minimal, correct implementation that demystifies every component. Teams that master this consistently ship more reliable Transformers systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Implementing a Transformer from Scratch is best understood as a minimal, correct implementation that demystifies every component. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Implementing a Transformer from Scratch is best understood as a minimal, correct implementation that demystifies every component. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, implementing a transformer from scratch is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, implementing a transformer from scratch is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Teams that master this consistently ship more reliable Transformers systems at lower cost.
 
-Implementing a Transformer from Scratch cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Implementing a Transformer from Scratch cannot be understood in isolation from why self-attention replaced recurrence. Recall that why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Implementing a Transformer from Scratch cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Implementing a Transformer from Scratch cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to implementing a transformer from scratch. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to implementing a transformer from scratch. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around implementing a transformer from scratch are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around implementing a transformer from scratch are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Implementing a Transformer from Scratch sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+The reference architecture for Implementing a Transformer from Scratch separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Transformers Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Self-Attention Replac…]
-    S1[Scaled Dot-Product Attent…]
-    S2[Multi-Head Attention]
-    S3[Positional Encoding]
-    S4[Feed-Forward Networks and…]
-    S5[Residual Connections and …]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Architecture - Implementing a Transformer from Scratch" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Implementing a Transf…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Implementing a Transfor…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Training Dynamics and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Encoder, Decoder and En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 16. Architecture - Implementing a Transformer from Scratch** (mermaid). Figure: Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
 
-```plantuml
-@startuml
-title Sequence - Implementing a Transformer from Scratch
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 17. Sequence - Implementing a Transformer from Scratch** (plantuml). Figure: Sequence view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 16. Architecture - Implementing a Transformer from Scratch** (drawio). Figure: Architecture view for Implementing a Transformer from Scratch. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into implementing a transformer from scratch. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2839,13 +2866,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into implementing a transformer from scratch. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into implementing a transformer from scratch. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with encoder, decoder and encoder–decoder variants. Because encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2853,7 +2880,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply implementing a transformer from scratch as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply implementing a transformer from scratch as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2925,40 +2952,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Implementing a Transformer from Scratch logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Implementing a Transformer from Scratch with a regression gate
+### Listing: A composable processing pipeline for Implementing a Transformer from Scratch
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Implementing a Transformer from Scratch output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Implementing a Transformer from Scratch."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -2966,22 +3010,22 @@ if __name__ == "__main__":
 
 1. In the context of Transformers, which statement best describes “Implementing a Transformer from Scratch”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. A minimal, correct implementation that demystifies every component.
    - **Answer: D.** Implementing a Transformer from Scratch: A minimal, correct implementation that demystifies every component.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: C.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+   - A. It is only relevant to academic research, not production.
+   - B. Profile FLOPs and memory before scaling parameters.
+   - C. It makes the system slower but has no other effect.
+   - D. Numerical instability from post-norm at depth.
+   - **Answer: B.** Best practice: Profile FLOPs and memory before scaling parameters.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - D. Profile FLOPs and memory before scaling parameters.
-   - **Answer: C.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
 4. *(Discussion)* Explain Implementing a Transformer from Scratch and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines implementing a transformer from scratch (A minimal, correct implementation that demystifies every component.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
@@ -2994,62 +3038,63 @@ _This chapter examines profiling and optimising transformers within Transformers
 
 ## Introduction
 
-We define Profiling and Optimising Transformers as memory, FLOPs, kernel fusion and hardware-aware design. Neglecting it is one of the most common reasons Transformers initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Profiling and Optimising Transformers addresses memory, FLOPs, kernel fusion and hardware-aware design. Teams that master this consistently ship more reliable Transformers systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Profiling and Optimising Transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Profiling and Optimising Transformers addresses memory, FLOPs, kernel fusion and hardware-aware design. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, profiling and optimising transformers is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, profiling and optimising transformers is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Profiling and Optimising Transformers cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Profiling and Optimising Transformers cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Profiling and Optimising Transformers cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Profiling and Optimising Transformers cannot be understood in isolation from efficient attention. Recall that efficient attention concerns flashAttention, sparse and linear attention to tame quadratic cost. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to profiling and optimising transformers. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to profiling and optimising transformers. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around profiling and optimising transformers are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around profiling and optimising transformers are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Profiling and Optimising Transformers sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+The reference architecture for Profiling and Optimising Transformers separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant U as User
-  participant G as Gateway
-  participant P as Processor
-  participant D as Data Store
-  U->>G: Submit request
-  G->>G: Validate & authorise
-  G->>P: Dispatch task
-  P->>D: Retrieve context
-  D-->>P: Return records
-  P->>P: Process & reason
-  P-->>G: Result + metadata
-  G-->>U: Response (with provenance)
+```plantuml
+@startuml
+title Sequence - Profiling and Optimising Transformers
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
 ```
 
-**Figure 18. Sequence - Profiling and Optimising Transformers** (mermaid). Figure: Sequence view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 17. Sequence - Profiling and Optimising Transformers** (plantuml). Figure: Sequence view for Profiling and Optimising Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into profiling and optimising transformers. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into profiling and optimising transformers. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with encoder, decoder and encoder–decoder variants. Because encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3057,13 +3102,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into profiling and optimising transformers. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into profiling and optimising transformers. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with mixture-of-experts transformers. Because mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3071,7 +3116,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply profiling and optimising transformers as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A nlp organisation needs language understanding and generation across tasks. They decide to apply profiling and optimising transformers as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3143,64 +3188,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Profiling and Optimising Transformers component with retry semantics and typed interfaces — the shape we expect from production Transformers code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Profiling and Optimising Transformers with a regression gate
+### Listing: Implementing a Profiling and Optimising Transformers component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class ProfilingAndOptimisingConfig:
+    """Configuration for the Profiling and Optimising Transformers component in a Transformers system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Profiling and Optimising Transformers output against references with a simple exact-match metric.
+class ProfilingAndOptimising:
+    """A minimal, production-shaped implementation of Profiling and Optimising Transformers."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: ProfilingAndOptimisingConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"ProfilingAndOptimising failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Profiling and Optimising Transformers goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Profiling and Optimising Transformers”?
-   - A. It makes the system slower but has no other effect.
-   - B. Memory, FLOPs, kernel fusion and hardware-aware design.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Profiling and Optimising Transformers: Memory, FLOPs, kernel fusion and hardware-aware design.
+   - A. Memory, FLOPs, kernel fusion and hardware-aware design.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Profiling and Optimising Transformers: Memory, FLOPs, kernel fusion and hardware-aware design.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. It removes all security and governance requirements.
-   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
-3. Which of the following is a common pitfall to avoid in Transformers?
    - A. Validate positional encoding choice against target sequence lengths.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: C.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-4. *(Discussion)* How would you test and monitor Profiling and Optimising Transformers in production?
+   - B. Quadratic attention cost dominating long-sequence workloads.
+   - C. It makes the system slower but has no other effect.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Numerical instability from post-norm at depth.
+   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+4. *(Discussion)* Walk through how you would design Profiling and Optimising Transformers for an enterprise Transformers workload.
    - **Model answer:** A strong answer defines profiling and optimising transformers (Memory, FLOPs, kernel fusion and hardware-aware design.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3212,37 +3268,37 @@ _This chapter examines the transformer design space within Transformers. It cove
 
 ## Introduction
 
-The Transformer Design Space refers to a map of architectural choices and their empirical trade-offs. Neglecting it is one of the most common reasons Transformers initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, The Transformer Design Space concerns a map of architectural choices and their empirical trade-offs. This concept recurs throughout the Transformers lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-The Transformer Design Space refers to a map of architectural choices and their empirical trade-offs. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, The Transformer Design Space addresses a map of architectural choices and their empirical trade-offs. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, the transformer design space is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Teams that master this consistently ship more reliable Transformers systems at lower cost.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, the transformer design space is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. This concept recurs throughout the Transformers lifecycle, from design to operations.
 
-The Transformer Design Space cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+The Transformer Design Space cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-The Transformer Design Space cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+The Transformer Design Space cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to the transformer design space. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the transformer design space. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around the transformer design space are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around the transformer design space are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for The Transformer Design Space is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+From an architectural standpoint, The Transformer Design Space sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```mermaid
 classDiagram
-  class TService {
+  class TTDSService {
     +configure(config)
     +process(request) Response
     +evaluate(sample) Metrics
@@ -3254,50 +3310,29 @@ classDiagram
   class Policy {
     +authorise(ctx) bool
   }
-  TService --> Repository
-  TService --> Policy
+  TTDSService --> Repository
+  TTDSService --> Policy
 ```
 
-**Figure 19. Class - The Transformer Design Space** (mermaid). Figure: Class view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 18. Class - The Transformer Design Space** (mermaid). Figure: Class view for The Transformer Design Space. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Cloud Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Cloud Architecture - The Transformer Design Space" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Transformers" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Feed-Forward Networks a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="grid_matrix" data-pal="5-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn7361787" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn7361787)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn7361787)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Cloud Architecture - The Transformer Design Space</text><text x="276" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Plan</text><text x="430" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Build</text><text x="582" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Run</text><text x="736" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Improve</text><text x="188" y="119" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">The Transformer Design</text><text x="188" y="131" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Space</text><rect x="203" y="93" width="147" height="64" rx="8" fill="#3b82f6"/><rect x="203" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#60a5fa"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#1e40af"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#1e3a8a"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><text x="188" y="195" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Positional Encoding</text><rect x="203" y="163" width="147" height="64" rx="8" fill="#60a5fa"/><rect x="203" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#1e40af"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#1e3a8a"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#1d4ed8"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><text x="188" y="259" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Training Dynamics and</text><text x="188" y="271" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Stability</text><rect x="203" y="233" width="147" height="64" rx="8" fill="#1e40af"/><rect x="203" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#1e3a8a"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#1d4ed8"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#2563eb"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><text x="188" y="329" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Profiling and Optimising</text><text x="188" y="341" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Transformers</text><rect x="203" y="303" width="147" height="64" rx="8" fill="#1e3a8a"/><rect x="203" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#1d4ed8"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#2563eb"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#3b82f6"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">The Transformer Design Space  •  Cloud Architecture</text></svg>
 
-**Figure 20. Cloud Architecture - The Transformer Design Space** (drawio). Figure: Cloud Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 19. Cloud Architecture - The Transformer Design Space** (svg). Figure: Cloud Architecture view for The Transformer Design Space. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the transformer design space. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the transformer design space. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3311,7 +3346,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3319,7 +3354,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply the transformer design space as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A science organisation needs protein structure and molecular property prediction. They decide to apply the transformer design space as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3442,23 +3477,23 @@ class TheTransformerDesign:
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “The Transformer Design Space”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. A map of architectural choices and their empirical trade-offs.
    - **Answer: D.** The Transformer Design Space: A map of architectural choices and their empirical trade-offs.
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
+   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
    - B. Position encoding that fails to extrapolate beyond training length.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
+   - C. Numerical instability from post-norm at depth.
+   - D. Adopt fused attention kernels to cut memory and latency.
+   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
 3. Which of the following is a common pitfall to avoid in Transformers?
    - A. Adopt fused attention kernels to cut memory and latency.
-   - B. Position encoding that fails to extrapolate beyond training length.
-   - C. It removes all security and governance requirements.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: B.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: D.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
 4. *(Discussion)* How does The Transformer Design Space interact with security and governance requirements?
    - **Model answer:** A strong answer defines the transformer design space (A map of architectural choices and their empirical trade-offs.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
@@ -3471,82 +3506,70 @@ _This chapter examines putting it together: a reference implementation within Tr
 
 ## Introduction
 
-Putting It Together: A Reference Implementation can be characterised as an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole. This concept recurs throughout the Transformers lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Putting It Together: A Reference Implementation refers to an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Teams that master this consistently ship more reliable Transformers systems at lower cost.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Putting It Together: A Reference Implementation cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Putting It Together: A Reference Implementation cannot be understood in isolation from residual connections and normalisation. Recall that residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Putting It Together: A Reference Implementation sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Putting It Together: A Reference Implementation is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Transformers Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Self-Attention Replac…]
-    S1[Scaled Dot-Product Attent…]
-    S2[Multi-Head Attention]
-    S3[Positional Encoding]
-    S4[Feed-Forward Networks and…]
-    S5[Residual Connections and …]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```plantuml
+@startuml
+title Cloud Architecture - Putting It Together: A Reference Implementation
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 21. Cloud Architecture - Putting It Together: A Reference Implementation** (mermaid). Figure: Cloud Architecture view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 20. Cloud Architecture - Putting It Together: A Reference Implementation** (plantuml). Figure: Cloud Architecture view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn6e871f5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn6e871f5)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn6e871f5)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Putting It Together: A Reference Implementation</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Putting It</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Together: A</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Putting It Together: A</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reference Implementation</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#b45309" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="654" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Residual Connections and</text><text x="654" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Normalisation</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="420" y="383" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Encoder, Decoder and</text><text x="420" y="393" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Encoder–Decoder Variants</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="186" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="186" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="186" y="163" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product Attention</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Putting It Together: A Reference Implementation  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 21. Knowledge Graph - Putting It Together: A Reference Implementation** (svg). Figure: Knowledge Graph view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with vision and multimodal transformers. Because vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3556,7 +3579,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -3568,7 +3591,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A science organisation needs protein structure and molecular property prediction. They decide to apply putting it together: a reference implementation as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A nlp organisation needs language understanding and generation across tasks. They decide to apply putting it together: a reference implementation as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3640,75 +3663,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Putting It Together: A Reference Implementation component with retry semantics and typed interfaces — the shape we expect from production Transformers code rather than a notebook prototype.
+Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Putting It Together: A Reference Implementation component
+### Listing: Evaluating Putting It Together: A Reference Implementation with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class PuttingItConfig:
-    """Configuration for the Putting It Together: A Reference Implementation component in a Transformers system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class PuttingIt:
-    """A minimal, production-shaped implementation of Putting It Together: A Reference Implementation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Putting It Together: A Reference Implementation output against references with a simple exact-match metric.
 
-    def __init__(self, config: PuttingItConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PuttingIt failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Putting It Together: A Reference Implementation goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole
-   - C. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Adopt fused attention kernels to cut memory and latency.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
+   - A. Adopt fused attention kernels to cut memory and latency.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Numerical instability from post-norm at depth.
+   - **Answer: D.** Pitfall to avoid: Numerical instability from post-norm at depth.
+4. *(Discussion)* How would you test and monitor Putting It Together: A Reference Implementation in production?
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3720,51 +3732,59 @@ _This chapter examines hands-on lab: building an end-to-end transformers system 
 
 ## Introduction
 
-We define Hands-On Lab: Building an End-to-End Transformers System as a guided, build-along laboratory that constructs a functioning Transformers system from first principles. Teams that master this consistently ship more reliable Transformers systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Hands-On Lab: Building an End-to-End Transformers System refers to a guided, build-along laboratory that constructs a functioning Transformers system from first principles. It is foundational: later capabilities in Transformers are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Hands-On Lab: Building an End-to-End Transformers System refers to a guided, build-along laboratory that constructs a functioning Transformers system from first principles. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Hands-On Lab: Building an End-to-End Transformers System as a guided, build-along laboratory that constructs a functioning Transformers system from first principles. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, hands-on lab: building an end-to-end transformers system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, hands-on lab: building an end-to-end transformers system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Neglecting it is one of the most common reasons Transformers initiatives stall in production.
 
-Hands-On Lab: Building an End-to-End Transformers System cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End Transformers System cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Hands-On Lab: Building an End-to-End Transformers System cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Hands-On Lab: Building an End-to-End Transformers System cannot be understood in isolation from feed-forward networks and activations. Recall that feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end transformers system. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end transformers system. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end transformers system are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hands-on lab: building an end-to-end transformers system are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Hands-On Lab: Building an End-to-End Transformers System sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Hands-On Lab: Building an End-to-End Transformers System is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="mindmap" data-pal="6-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc042e20" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#64748b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc042e20)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc042e20)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Hands-On Lab: Building an End-to-End Transformers System</text><rect x="330" y="210" width="180" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="236" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><path d="M330,236 C250,236 250,126 248,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="104" width="156" height="44" rx="11" fill="#64748b" filter="url(#sh)"/><text x="170" y="121" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Mixture-of-Experts</text><text x="170" y="131" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><path d="M330,236 C250,236 250,236 248,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="214" width="156" height="44" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="170" y="231" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="170" y="241" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><path d="M330,236 C250,236 250,346 248,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="324" width="156" height="44" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="170" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer</text><text x="170" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">from Scratch</text><path d="M510,236 C590,236 590,126 592,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="104" width="156" height="44" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="670" y="121" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="670" y="131" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><path d="M510,236 C590,236 590,236 592,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="214" width="156" height="44" rx="11" fill="#334155" filter="url(#sh)"/><text x="670" y="236" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Design Space</text><path d="M510,236 C590,236 590,346 592,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="324" width="156" height="44" rx="11" fill="#475569" filter="url(#sh)"/><text x="670" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Self-Attention Replaced</text><text x="670" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Recurrence</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Knowledge Graph</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="mindmap" data-pal="5-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnb732683" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnb732683)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnb732683)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Hands-On Lab: Building an End-to-End Transformers System</text><rect x="330" y="210" width="180" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="223" text-anchor="middle" font-size="11.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hands-On Lab: Building an</text><text x="420" y="236" text-anchor="middle" font-size="11.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">End-to-End Transformers</text><text x="420" y="249" text-anchor="middle" font-size="11.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">System</text><path d="M330,236 C250,236 250,126 248,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="104" width="156" height="44" rx="11" fill="#3b82f6" filter="url(#sh)"/><text x="170" y="115" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hands-On Lab: Building an</text><text x="170" y="126" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">End-to-End Transformers</text><text x="170" y="137" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">System</text><path d="M330,236 C250,236 250,236 248,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="214" width="156" height="44" rx="11" fill="#60a5fa" filter="url(#sh)"/><text x="170" y="231" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="170" y="241" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><path d="M330,236 C250,236 250,346 248,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="324" width="156" height="44" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="170" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feed-Forward Networks and</text><text x="170" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Activations</text><path d="M510,236 C590,236 590,126 592,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="104" width="156" height="44" rx="11" fill="#1e3a8a" filter="url(#sh)"/><text x="670" y="121" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Residual Connections and</text><text x="670" y="131" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Normalisation</text><path d="M510,236 C590,236 590,236 592,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="214" width="156" height="44" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="670" y="231" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="670" y="241" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><path d="M510,236 C590,236 590,346 592,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="324" width="156" height="44" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="670" y="346" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Efficient Attention</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Hands-On Lab: Building an End-to-End Transformers System  •  Knowledge Graph</text></svg>
 
 </div>
 
-**Figure 22. Knowledge Graph - Hands-On Lab: Building an End-to-End Transformers System** (svg). Figure: Knowledge Graph view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 22. Knowledge Graph - Hands-On Lab: Building an End-to-End Transformers System** (svg). Figure: Knowledge Graph view for Hands-On Lab: Building an End-to-End Transformers System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="timeline" data-pal="4-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn1a0a1bc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#be123c"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn1a0a1bc)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn1a0a1bc)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Lineage - Hands-On Lab: Building an End-to-End Transformers System</text><line x1="68" y1="230.0" x2="772" y2="230.0" stroke="#cbd5e1" stroke-width="3"/><circle cx="68" cy="230.0" r="9" fill="#be123c"/><line x1="68" y1="230.0" x2="68" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="-2" y="138" width="140" height="52" rx="11" fill="#be123c" filter="url(#sh)"/><text x="68" y="145" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hands-On Lab: Building an</text><text x="68" y="156" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">End-to-End Transformers</text><text x="68" y="167" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">System</text><text x="68" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 1</text><circle cx="244" cy="230.0" r="9" fill="#e11d48"/><line x1="244" y1="230.0" x2="244" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="174" y="254" width="140" height="52" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="244" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="244" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><text x="244" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 2</text><circle cx="420" cy="230.0" r="9" fill="#f43f5e"/><line x1="420" y1="230.0" x2="420" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="350" y="138" width="140" height="52" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="420" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feed-Forward Networks and</text><text x="420" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Activations</text><text x="420" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 3</text><circle cx="596" cy="230.0" r="9" fill="#fb7185"/><line x1="596" y1="230.0" x2="596" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="526" y="254" width="140" height="52" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="596" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Residual Connections and</text><text x="596" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Normalisation</text><text x="596" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 4</text><circle cx="772" cy="230.0" r="9" fill="#db2777"/><line x1="772" y1="230.0" x2="772" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="702" y="138" width="140" height="52" rx="11" fill="#db2777" filter="url(#sh)"/><text x="772" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="772" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><text x="772" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 5</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Hands-On Lab: Building an End-to-End Transformers System  •  Data Lineage</text></svg>
+
+</div>
+
+**Figure 23. Data Lineage - Hands-On Lab: Building an End-to-End Transformers System** (svg). Figure: Data Lineage view for Hands-On Lab: Building an End-to-End Transformers System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end transformers system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end transformers system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3772,13 +3792,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end transformers system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end transformers system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-head attention. Because multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3786,7 +3806,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A science organisation needs protein structure and molecular property prediction. They decide to apply hands-on lab: building an end-to-end transformers system as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply hands-on lab: building an end-to-end transformers system as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3898,24 +3918,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Hands-On Lab: Building an End-to-End Transformers System”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. a guided, build-along laboratory that constructs a functioning Transformers system from first principles
-   - **Answer: D.** Hands-On Lab: Building an End-to-End Transformers System: a guided, build-along laboratory that constructs a functioning Transformers system from first principles
+   - A. a guided, build-along laboratory that constructs a functioning Transformers system from first principles
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Hands-On Lab: Building an End-to-End Transformers System: a guided, build-along laboratory that constructs a functioning Transformers system from first principles
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Quadratic attention cost dominating long-sequence workloads.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Numerical instability from post-norm at depth.
-   - **Answer: C.** Best practice: Validate positional encoding choice against target sequence lengths.
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Validate positional encoding choice against target sequence lengths.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-4. *(Discussion)* Describe a failure mode of Hands-On Lab: Building an End-to-End Transformers System and how you would mitigate it.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Validate positional encoding choice against target sequence lengths.
+   - D. Quadratic attention cost dominating long-sequence workloads.
+   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+4. *(Discussion)* Walk through how you would design Hands-On Lab: Building an End-to-End Transformers System for an enterprise Transformers workload.
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end transformers system (a guided, build-along laboratory that constructs a functioning Transformers system from first principles) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3927,27 +3947,27 @@ _This chapter examines case study: nlp at scale within Transformers. It covers a
 
 ## Introduction
 
-We define Case Study: NLP at Scale as a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes. This concept recurs throughout the Transformers lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+We define Case Study: NLP at Scale as a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes. Getting this right early prevents expensive rework once a Transformers system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Case Study: NLP at Scale addresses a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Case Study: NLP at Scale refers to a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, case study: nlp at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, case study: nlp at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Teams that master this consistently ship more reliable Transformers systems at lower cost.
 
-Case Study: NLP at Scale cannot be understood in isolation from the transformer design space. Recall that the transformer design space concerns a map of architectural choices and their empirical trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Case Study: NLP at Scale cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Case Study: NLP at Scale cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Case Study: NLP at Scale cannot be understood in isolation from mixture-of-experts transformers. Recall that mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to case study: nlp at scale. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: nlp at scale. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around case study: nlp at scale are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: nlp at scale are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Case Study: NLP at Scale separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+From an architectural standpoint, Case Study: NLP at Scale sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -3955,23 +3975,28 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="5-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bndb908df" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bndb908df)"/><rect x="0" y="32" width="840" height="16" fill="url(#bndb908df)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Lineage - Case Study: NLP at Scale</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#1e3a8a"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e3a8a" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The Transformer</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Design Space</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#1d4ed8"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1d4ed8" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Why Self-Attention</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Replaced</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#2563eb"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#2563eb" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Scaled Dot-Product</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Attention</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#3b82f6"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#3b82f6" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Head</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Attention</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#60a5fa"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#60a5fa" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Positional</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Encoding</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Data Lineage</text></svg>
-
-</div>
-
-**Figure 23. Data Lineage - Case Study: NLP at Scale** (svg). Figure: Data Lineage view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. Data Lineage - Case Study: NLP at Scale** (mermaid). Figure: Data Lineage view for Case Study: NLP at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: nlp at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: nlp at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the transformer design space. Because the transformer design space concerns a map of architectural choices and their empirical trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with training dynamics and stability. Because training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3979,13 +4004,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into case study: nlp at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: nlp at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with mixture-of-experts transformers. Because mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3993,7 +4018,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A nlp organisation needs language understanding and generation across tasks. They decide to apply case study: nlp at scale as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A science organisation needs protein structure and molecular property prediction. They decide to apply case study: nlp at scale as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4065,75 +4090,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Case Study: NLP at Scale component with retry semantics and typed interfaces — the shape we expect from production Transformers code rather than a notebook prototype.
+Pipelines keep Case Study: NLP at Scale logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Case Study: NLP at Scale component
+### Listing: A composable processing pipeline for Case Study: NLP at Scale
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class CaseNlpConfig:
-    """Configuration for the Case Study: NLP at Scale component in a Transformers system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class CaseNlp:
-    """A minimal, production-shaped implementation of Case Study: NLP at Scale."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Case Study: NLP at Scale."""
 
-    def __init__(self, config: CaseNlpConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"CaseNlp failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Case Study: NLP at Scale goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Case Study: NLP at Scale”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
    - C. a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Case Study: NLP at Scale: a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: C.** Best practice: Validate positional encoding choice against target sequence lengths.
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Numerical instability from post-norm at depth.
+   - C. It is only relevant to academic research, not production.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: A.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - A. Quadratic attention cost dominating long-sequence workloads.
    - B. Profile FLOPs and memory before scaling parameters.
-   - C. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: A.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* Describe a failure mode of Case Study: NLP at Scale and how you would mitigate it.
+   - **Answer: A.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+4. *(Discussion)* Explain Case Study: NLP at Scale and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines case study: nlp at scale (a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4145,23 +4176,23 @@ _This chapter examines operating in production within Transformers. It covers th
 
 ## Introduction
 
-Formally, Operating in Production addresses the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement. This concept recurs throughout the Transformers lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+At its core, Operating in Production concerns the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Operating in Production concerns the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Operating in Production is best understood as the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Operating in Production cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Operating in Production cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Operating in Production cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from efficient attention. Recall that efficient attention concerns flashAttention, sparse and linear attention to tame quadratic cost. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to operating in production. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4171,7 +4202,7 @@ Concretely, the principal building blocks include why self-attention replaced re
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```xml
 <mxfile host="ai-university">
@@ -4181,16 +4212,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Infrastructure - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Transformers" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Operating in Producti…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Operating in Production" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Training Dynamics and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Efficient Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Vision and Multimodal T…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Feed-Forward Networks a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The Transformer Design …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -4200,17 +4231,46 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 24. Infrastructure - Operating in Production** (drawio). Figure: Infrastructure view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 25. Infrastructure - Operating in Production** (drawio). Figure: Infrastructure view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Operating Model">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Operating Model - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Operating in Producti…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Operating in Production" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Training Dynamics and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Efficient Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Vision and Multimodal T…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The Transformer Design …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 26. Operating Model - Operating in Production** (drawio). Figure: Operating Model view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with training dynamics and stability. Because training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4218,7 +4278,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
@@ -4232,7 +4292,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply operating in production as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply operating in production as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4304,81 +4364,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Operating in Production
+### Listing: Evaluating Operating in Production with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Operating in Production."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Operating in Production output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Operating in Production”?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
-   - **Answer: D.** Operating in Production: the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
-2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Validate positional encoding choice against target sequence lengths.
+   - A. the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
+   - B. It is only relevant to academic research, not production.
    - C. It makes the system slower but has no other effect.
-   - D. Numerical instability from post-norm at depth.
-   - **Answer: B.** Best practice: Validate positional encoding choice against target sequence lengths.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Operating in Production: the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
+2. Which of the following is a recommended best practice when working with Transformers?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Numerical instability from post-norm at depth.
+   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
 3. Which of the following is a common pitfall to avoid in Transformers?
    - A. It makes the system slower but has no other effect.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* Explain Operating in Production and why it matters in a production Transformers system.
+   - B. It applies exclusively to image data.
+   - C. Adopt fused attention kernels to cut memory and latency.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: D.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+4. *(Discussion)* What trade-offs would you weigh when implementing Operating in Production?
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4390,51 +4433,72 @@ _This chapter examines evaluation and quality assurance within Transformers. It 
 
 ## Introduction
 
-Formally, Evaluation and Quality Assurance addresses a rigorous approach to measuring and assuring the quality of a Transformers system before and after release. Teams that master this consistently ship more reliable Transformers systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a Transformers system before and after release. It is foundational: later capabilities in Transformers are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Evaluation and Quality Assurance addresses a rigorous approach to measuring and assuring the quality of a Transformers system before and after release. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a Transformers system before and after release. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
 
-Evaluation and Quality Assurance cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluation and Quality Assurance cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Evaluation and Quality Assurance cannot be understood in isolation from the transformer design space. Recall that the transformer design space concerns a map of architectural choices and their empirical trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluation and Quality Assurance cannot be understood in isolation from residual connections and normalisation. Recall that residual connections and normalisation concerns pre-norm versus post-norm, LayerNorm/RMSNorm and training stability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Evaluation and Quality Assurance is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="Operating Model">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Operating Model - Evaluation and Quality Assurance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluation and Qualit…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluation and Quality …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Residual Connections an…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="The Transformer Design …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Profiling and Optimisin…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="0-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn52aece" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn52aece)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn52aece)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Evaluation and Quality Assurance</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Mixture-of-Experts</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">from Scratch</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="228" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Head Attention</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="388" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feed-Forward Networks and</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Activations</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="708" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Residual Connections and</text><text x="708" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Normalisation</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vision and Multimodal</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Mixture-of-Experts</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="708" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer</text><text x="708" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">from Scratch</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Operating Model</text></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
-
-**Figure 25. Operating Model - Evaluation and Quality Assurance** (svg). Figure: Operating Model view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. Operating Model - Evaluation and Quality Assurance** (drawio). Figure: Operating Model view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with vision and multimodal transformers. Because vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-head attention. Because multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4442,13 +4506,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4456,7 +4520,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A nlp organisation needs language understanding and generation across tasks. They decide to apply evaluation and quality assurance as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A science organisation needs protein structure and molecular property prediction. They decide to apply evaluation and quality assurance as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4528,64 +4592,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Evaluation and Quality Assurance component with retry semantics and typed interfaces — the shape we expect from production Transformers code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
+### Listing: Implementing a Evaluation and Quality Assurance component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class EvaluationAndQualityConfig:
+    """Configuration for the Evaluation and Quality Assurance component in a Transformers system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
+class EvaluationAndQuality:
+    """A minimal, production-shaped implementation of Evaluation and Quality Assurance."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: EvaluationAndQualityConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"EvaluationAndQuality failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Evaluation and Quality Assurance goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
-2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. Numerical instability from post-norm at depth.
-   - **Answer: C.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-3. Which of the following is a common pitfall to avoid in Transformers?
    - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
+2. Which of the following is a recommended best practice when working with Transformers?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It makes the system slower but has no other effect.
+   - B. Profile FLOPs and memory before scaling parameters.
    - C. Quadratic attention cost dominating long-sequence workloads.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - D. Adopt fused attention kernels to cut memory and latency.
    - **Answer: C.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-4. *(Discussion)* Walk through how you would design Evaluation and Quality Assurance for an enterprise Transformers workload.
+4. *(Discussion)* Explain Evaluation and Quality Assurance and why it matters in a production Transformers system.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Transformers system before and after release) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4597,59 +4672,51 @@ _This chapter examines security, privacy and governance within Transformers. It 
 
 ## Introduction
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Transformers system trustworthy and compliant. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Transformers system trustworthy and compliant. Teams that master this consistently ship more reliable Transformers systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Transformers system trustworthy and compliant. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Transformers system trustworthy and compliant. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. This concept recurs throughout the Transformers lifecycle, from design to operations.
 
-Security, Privacy and Governance cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security, Privacy and Governance cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Security, Privacy and Governance cannot be understood in isolation from mixture-of-experts transformers. Recall that mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from vision and multimodal transformers. Recall that vision and multimodal transformers concerns patch embeddings, ViT and cross-modal attention. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to security, privacy and governance. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, mixture-of-experts routing for sparse scaling, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Security, Privacy and Governance sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="0-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn7993d00" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn7993d00)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn7993d00)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Security, Privacy and Governance</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Mixture-of-Experts</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">from Scratch</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Attention</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="388" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Head Attention</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="548" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Positional Encoding</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="708" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feed-Forward Networks and</text><text x="708" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Activations</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="228" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Efficient Attention</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vision and Multimodal</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Mixture-of-Experts</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="708" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Training Dynamics and</text><text x="708" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Stability</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  Business Process</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="5-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn564f075" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn564f075)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn564f075)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Security, Privacy and Governance</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#1e40af"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e40af" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security, Privacy</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Governance</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#1e3a8a"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e3a8a" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Encoder, Decoder</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#1d4ed8"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1d4ed8" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Vision and</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multimodal</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#2563eb"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#2563eb" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Mixture-of-Experts</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Transformers</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#3b82f6"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#3b82f6" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Head</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Attention</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Security, Privacy and Governance  •  Business Process</text></svg>
 
 </div>
 
-**Figure 26. Business Process - Security, Privacy and Governance** (svg). Figure: Business Process view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="3-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc16f279" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb923c"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc16f279)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc16f279)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Security, Privacy and Governance</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementing a Transformer</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">from Scratch</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#b45309" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Profiling and Optimising</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Transformers</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#d97706" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Design</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Space</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#f59e0b" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Why Self-Attention</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Replaced Recurrence</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="296" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaled Dot-Product</text><text x="296" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Attention</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Transformers  •  CI/CD Pipeline</text></svg>
-
-</div>
-
-**Figure 27. CI/CD Pipeline - Security, Privacy and Governance** (svg). Figure: CI/CD Pipeline view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. Business Process - Security, Privacy and Governance** (svg). Figure: Business Process view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into security, privacy and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with encoder, decoder and encoder–decoder variants. Because encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4657,13 +4724,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multi-head attention. Because multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with scaled dot-product attention. Because scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4671,7 +4738,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply security, privacy and governance as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply security, privacy and governance as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4794,24 +4861,24 @@ class PrivacyAnd:
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Security, Privacy and Governance”?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
    - D. the security, privacy and governance controls that make a Transformers system trustworthy and compliant
    - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a Transformers system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. Validate positional encoding choice against target sequence lengths.
-   - **Answer: D.** Best practice: Validate positional encoding choice against target sequence lengths.
-3. Which of the following is a common pitfall to avoid in Transformers?
    - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-4. *(Discussion)* How would you test and monitor Security, Privacy and Governance in production?
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. Numerical instability from post-norm at depth.
+   - **Answer: B.** Best practice: Adopt fused attention kernels to cut memory and latency.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - D. Profile FLOPs and memory before scaling parameters.
+   - **Answer: C.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+4. *(Discussion)* Describe a failure mode of Security, Privacy and Governance and how you would mitigate it.
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Transformers system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4823,23 +4890,23 @@ _This chapter examines cost, performance and scaling within Transformers. It cov
 
 ## Introduction
 
-In practical terms, Cost, Performance and Scaling is best understood as techniques for controlling cost and latency while scaling a Transformers system to production traffic. This concept recurs throughout the Transformers lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Formally, Cost, Performance and Scaling addresses techniques for controlling cost and latency while scaling a Transformers system to production traffic. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Cost, Performance and Scaling is best understood as techniques for controlling cost and latency while scaling a Transformers system to production traffic. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Transformers system to production traffic. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
 
-Cost, Performance and Scaling cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Performance and Scaling cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Cost, Performance and Scaling cannot be understood in isolation from implementing a transformer from scratch. Recall that implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Performance and Scaling cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to cost, performance and scaling. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4851,35 +4918,44 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+```xml
+<mxfile host="ai-university">
+  <diagram name="CI/CD Pipeline">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CI/CD Pipeline - Cost, Performance and Scaling" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Cost, Performance and…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Cost, Performance and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Profiling and Optimisin…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The Transformer Design …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 28. CI/CD Pipeline - Cost, Performance and Scaling** (mermaid). Figure: CI/CD Pipeline view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 29. CI/CD Pipeline - Cost, Performance and Scaling** (drawio). Figure: CI/CD Pipeline view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with training dynamics and stability. Because training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4887,13 +4963,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, performance and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with encoder, decoder and encoder–decoder variants. Because encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5013,24 +5089,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Cost, Performance and Scaling”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. techniques for controlling cost and latency while scaling a Transformers system to production traffic
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Transformers system to production traffic
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. techniques for controlling cost and latency while scaling a Transformers system to production traffic
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Transformers system to production traffic
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. It applies exclusively to image data.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Profile FLOPs and memory before scaling parameters.
    - C. It applies exclusively to image data.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-4. *(Discussion)* How does Cost, Performance and Scaling interact with security and governance requirements?
+   - D. Adopt fused attention kernels to cut memory and latency.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+4. *(Discussion)* What trade-offs would you weigh when implementing Cost, Performance and Scaling?
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Transformers system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5042,33 +5118,33 @@ _This chapter examines integration and interoperability within Transformers. It 
 
 ## Introduction
 
-In practical terms, Integration and Interoperability is best understood as patterns for integrating a Transformers system with surrounding enterprise systems and data. Getting this right early prevents expensive rework once a Transformers system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Integration and Interoperability can be characterised as patterns for integrating a Transformers system with surrounding enterprise systems and data. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Integration and Interoperability refers to patterns for integrating a Transformers system with surrounding enterprise systems and data. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Integration and Interoperability concerns patterns for integrating a Transformers system with surrounding enterprise systems and data. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
 
-Integration and Interoperability cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Integration and Interoperability cannot be understood in isolation from encoder, decoder and encoder–decoder variants. Recall that encoder, decoder and encoder–decoder variants concerns bERT-style, GPT-style and T5-style architectures and their use cases. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Integration and Interoperability cannot be understood in isolation from mixture-of-experts transformers. Recall that mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration and Interoperability cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to integration and interoperability. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Integration and Interoperability separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+From an architectural standpoint, Integration and Interoperability sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -5078,16 +5154,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Deployment - Integration and Interoperability" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Transformers" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Integration and Inter…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Integration and Interop…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Encoder, Decoder and En…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Profiling and Optimisin…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Feed-Forward Networks a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Vision and Multimodal T…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5097,27 +5173,13 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 29. Deployment - Integration and Interoperability** (drawio). Figure: Deployment view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. Deployment - Integration and Interoperability** (drawio). Figure: Deployment view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
-
-In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with multi-head attention. Because multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Dao et al. — FlashAttention (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5127,9 +5189,23 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Dao et al. — FlashAttention (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
 
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+
+In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with the transformer design space. Because the transformer design space concerns a map of architectural choices and their empirical trade-offs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Dao et al. — FlashAttention (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply integration and interoperability as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A nlp organisation needs language understanding and generation across tasks. They decide to apply integration and interoperability as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5258,23 +5334,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Integration and Interoperability”?
-   - A. It removes all security and governance requirements.
+   - A. It makes the system slower but has no other effect.
    - B. patterns for integrating a Transformers system with surrounding enterprise systems and data
-   - C. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Integration and Interoperability: patterns for integrating a Transformers system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Validate positional encoding choice against target sequence lengths.
+   - A. Numerical instability from post-norm at depth.
+   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. Position encoding that fails to extrapolate beyond training length.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Numerical instability from post-norm at depth.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
 4. *(Discussion)* What trade-offs would you weigh when implementing Integration and Interoperability?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Transformers system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
@@ -5287,57 +5363,51 @@ _This chapter examines trends and research directions within Transformers. It co
 
 ## Introduction
 
-Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Transformers. It is foundational: later capabilities in Transformers are built directly on top of it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of Transformers. Neglecting it is one of the most common reasons Transformers initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Transformers. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of Transformers. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. This concept recurs throughout the Transformers lifecycle, from design to operations.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Getting this right early prevents expensive rework once a Transformers system reaches scale.
 
-Trends and Research Directions cannot be understood in isolation from scaled dot-product attention. Recall that scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Trends and Research Directions cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Trends and Research Directions cannot be understood in isolation from positional encoding. Recall that positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Trends and Research Directions cannot be understood in isolation from mixture-of-experts transformers. Recall that mixture-of-experts transformers concerns sparse routing for parameter-efficient scaling. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to trends and research directions. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Trends and Research Directions is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-graph LR
-  D(("Transformers"))
-  D --- C0[Why Self-Attention Re…]
-  D --- C1[Scaled Dot-Product At…]
-  D --- C2[Multi-Head Attention]
-  D --- C3[Positional Encoding]
-  D --- C4[Feed-Forward Networks…]
-  C0 --- C1
-  C1 --- C2
-```
+<div class="diagram-svg">
 
-**Figure 30. Capability Map - Trends and Research Directions** (mermaid). Figure: Capability Map view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="grid_matrix" data-pal="4-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn12b6930" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#be123c"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn12b6930)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn12b6930)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Trends and Research Directions</text><text x="276" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Plan</text><text x="430" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Build</text><text x="582" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Run</text><text x="736" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Improve</text><text x="188" y="119" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Trends and Research</text><text x="188" y="131" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Directions</text><rect x="203" y="93" width="147" height="64" rx="8" fill="#be123c"/><rect x="203" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#e11d48"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#f43f5e"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#fb7185"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><text x="188" y="195" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Positional Encoding</text><rect x="203" y="163" width="147" height="64" rx="8" fill="#e11d48"/><rect x="203" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#f43f5e"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#fb7185"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#db2777"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><text x="188" y="259" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Mixture-of-Experts</text><text x="188" y="271" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Transformers</text><rect x="203" y="233" width="147" height="64" rx="8" fill="#f43f5e"/><rect x="203" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#fb7185"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#db2777"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#9f1239"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><text x="188" y="329" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Implementing a Transformer</text><text x="188" y="341" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">from Scratch</text><rect x="203" y="303" width="147" height="64" rx="8" fill="#fb7185"/><rect x="203" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#db2777"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#9f1239"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#be123c"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Trends and Research Directions  •  Capability Map</text></svg>
+
+</div>
+
+**Figure 31. Capability Map - Trends and Research Directions** (svg). Figure: Capability Map view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaled dot-product attention. Because scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5345,13 +5415,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5359,7 +5429,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply trends and research directions as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A audio organisation needs speech recognition and synthesis with transformer encoders. They decide to apply trends and research directions as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5433,23 +5503,23 @@ Key takeaways from this chapter:
 
 1. In the context of Transformers, which statement best describes “Trends and Research Directions”?
    - A. emerging trends, open problems and research directions shaping the future of Transformers
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Transformers
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Validate positional encoding choice against target sequence lengths.
-   - B. It applies exclusively to image data.
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. Profile FLOPs and memory before scaling parameters.
    - C. Numerical instability from post-norm at depth.
-   - D. Position encoding that fails to extrapolate beyond training length.
-   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
+   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - **Answer: B.** Best practice: Profile FLOPs and memory before scaling parameters.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It makes the system slower but has no other effect.
+   - A. It guarantees deterministic output regardless of input.
    - B. Adopt fused attention kernels to cut memory and latency.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-4. *(Discussion)* Walk through how you would design Trends and Research Directions for an enterprise Transformers workload.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - **Answer: D.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+4. *(Discussion)* How would you test and monitor Trends and Research Directions in production?
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Transformers) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5461,82 +5531,85 @@ _This chapter examines capstone project within Transformers. It covers a substan
 
 ## Introduction
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable. Understanding this matters because Transformers systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable. Getting this right early prevents expensive rework once a Transformers system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Teams that master this consistently ship more reliable Transformers systems at lower cost.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Capstone Project cannot be understood in isolation from profiling and optimising transformers. Recall that profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from feed-forward networks and activations. Recall that feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Capstone Project cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Capstone Project cannot be understood in isolation from the transformer design space. Recall that the transformer design space concerns a map of architectural choices and their empirical trade-offs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to capstone project. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, pre-norm residual blocks for deep stability, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, flashattention for memory-efficient exact attention, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, rotary positional embeddings for length generalisation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Capstone Project separates concerns into clearly bounded components with explicit contracts. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Capstone Project is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Transformers Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Why Self-Attention Replac…]
-    S1[Scaled Dot-Product Attent…]
-    S2[Multi-Head Attention]
-    S3[Positional Encoding]
-    S4[Feed-Forward Networks and…]
-    S5[Residual Connections and …]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```plantuml
+@startuml
+title Component - Capstone Project
+package "Capstone Project Platform" {
+  component "Capstone Project" as C0
+  component "Feed-Forward Networks a…" as C1
+  component "The Transformer Design …" as C2
+  component "Positional Encoding" as C3
+  component "Implementing a Transfor…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-**Figure 31. Component - Capstone Project** (mermaid). Figure: Component view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 32. Component - Capstone Project** (plantuml). Figure: Component view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Data Flow - Capstone Project
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 33. Data Flow - Capstone Project** (plantuml). Figure: Data Flow view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with profiling and optimising transformers. Because profiling and optimising transformers concerns memory, FLOPs, kernel fusion and hardware-aware design, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with feed-forward networks and activations. Because feed-forward networks and activations concerns position-wise MLPs, GELU/SwiGLU and their role in capacity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5546,11 +5619,11 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with positional encoding. Because positional encoding concerns sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5558,7 +5631,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A computer vision organisation needs image classification and detection with ViT backbones. They decide to apply capstone project as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A nlp organisation needs language understanding and generation across tasks. They decide to apply capstone project as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5630,64 +5703,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Capstone Project component with retry semantics and typed interfaces — the shape we expect from production Transformers code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Capstone Project with a regression gate
+### Listing: Implementing a Capstone Project component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class CapstoneProjectConfig:
+    """Configuration for the Capstone Project component in a Transformers system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Capstone Project output against references with a simple exact-match metric.
+class CapstoneProject:
+    """A minimal, production-shaped implementation of Capstone Project."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: CapstoneProjectConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CapstoneProject failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Capstone Project goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Capstone Project”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
+   - A. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
+   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
 2. Which of the following is a recommended best practice when working with Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. Quadratic attention cost dominating long-sequence workloads.
-   - C. It applies exclusively to image data.
-   - D. Position encoding that fails to extrapolate beyond training length.
-   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
-3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. Profile FLOPs and memory before scaling parameters.
+   - A. It makes the system slower but has no other effect.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Quadratic attention cost dominating long-sequence workloads.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-4. *(Discussion)* How would you test and monitor Capstone Project in production?
+   - **Answer: B.** Best practice: Validate positional encoding choice against target sequence lengths.
+3. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. It is only relevant to academic research, not production.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: D.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+4. *(Discussion)* How does Capstone Project interact with security and governance requirements?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5699,33 +5783,33 @@ _This chapter examines certification preparation and review within Transformers.
 
 ## Introduction
 
-Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of Transformers. Getting this right early prevents expensive rework once a Transformers system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Transformers. Getting this right early prevents expensive rework once a Transformers system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Transformers work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of Transformers. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of Transformers. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. Understanding this matters because Transformers systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: The transformer is a neural architecture built on self-attention that processes sequences in parallel and models long-range dependencies without recurrence. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Transformers fall into place. It is foundational: later capabilities in Transformers are built directly on top of it.
 
-Certification Preparation and Review cannot be understood in isolation from why self-attention replaced recurrence. Recall that why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Certification Preparation and Review cannot be understood in isolation from multi-head attention. Recall that multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Certification Preparation and Review cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Certification Preparation and Review cannot be understood in isolation from training dynamics and stability. Recall that training dynamics and stability concerns initialisation, warmup, gradient clipping and loss spikes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to certification preparation and review. The first, rotary positional embeddings for length generalisation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, flashattention for memory-efficient exact attention, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, pre-norm residual blocks for deep stability, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, mixture-of-experts routing for sparse scaling, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Transformers system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Certification Preparation and Review sits at the intersection of data, models and operations. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
+A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. A transformer block stacks multi-head self-attention and a position-wise feed-forward network, each wrapped in residual connections and normalisation. Decoder-only stacks add causal masking; encoder–decoder stacks add cross attention. At scale, efficient attention kernels, mixed precision and tensor parallelism turn the mathematics into a trainable system.
 
 Concretely, the principal building blocks include why self-attention replaced recurrence, scaled dot-product attention, multi-head attention, positional encoding and feed-forward networks and activations. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Transformers system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -5735,16 +5819,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Data Flow - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Transformers" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Why Self-Attention Repl…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Certification Prepara…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Certification Preparati…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Scaled Dot-Product Atte…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Multi-Head Attention" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Training Dynamics and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Positional Encoding" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Profiling and Optimisin…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Feed-Forward Networks a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Vision and Multimodal T…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5754,36 +5838,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 32. Data Flow - Certification Preparation and Review** (drawio). Figure: Data Flow view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Application Flow - Certification Preparation and Review
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 33. Application Flow - Certification Preparation and Review** (plantuml). Figure: Application Flow view for Transformers. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 34. Data Flow - Certification Preparation and Review** (drawio). Figure: Data Flow view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with why self-attention replaced recurrence. Because why self-attention replaced recurrence concerns parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-head attention. Because multi-head attention concerns projecting into multiple subspaces to attend to different relations simultaneously, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5791,13 +5856,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, FlashAttention, Triton, xFormers. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with implementing a transformer from scratch. Because implementing a transformer from scratch concerns a minimal, correct implementation that demystifies every component, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with scaled dot-product attention. Because scaled dot-product attention concerns queries, keys, values, the scaling factor and the softmax that produces context-aware representations, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5805,7 +5870,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A science organisation needs protein structure and molecular property prediction. They decide to apply certification preparation and review as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A nlp organisation needs language understanding and generation across tasks. They decide to apply certification preparation and review as part of their Transformers solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5877,81 +5942,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Certification Preparation and Review logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Transformers system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Certification Preparation and Review
+### Listing: Evaluating Certification Preparation and Review with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Certification Preparation and Review."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Certification Preparation and Review output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Transformers, which statement best describes “Certification Preparation and Review”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. a structured review and certification-style preparation covering the full breadth of Transformers
-   - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Transformers
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. a structured review and certification-style preparation covering the full breadth of Transformers
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Transformers
 2. Which of the following is a recommended best practice when working with Transformers?
    - A. Quadratic attention cost dominating long-sequence workloads.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
+   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - C. It is only relevant to academic research, not production.
    - D. Use pre-norm and careful warmup to stabilise deep transformer training.
    - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
 3. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-4. *(Discussion)* Explain Certification Preparation and Review and why it matters in a production Transformers system.
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+4. *(Discussion)* Walk through how you would design Certification Preparation and Review for an enterprise Transformers workload.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Transformers) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5989,53 +6037,53 @@ A consolidated bank of discussion-style interview questions drawn from across th
 
 1. Walk through how you would design Why Self-Attention Replaced Recurrence for an enterprise Transformers workload.
    - **Guidance:** A strong answer defines why self-attention replaced recurrence (Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-2. Describe a failure mode of Scaled Dot-Product Attention and how you would mitigate it.
+2. How does Scaled Dot-Product Attention interact with security and governance requirements?
    - **Guidance:** A strong answer defines scaled dot-product attention (Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-3. What trade-offs would you weigh when implementing Multi-Head Attention?
+3. Explain Multi-Head Attention and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines multi-head attention (Projecting into multiple subspaces to attend to different relations simultaneously.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-4. What trade-offs would you weigh when implementing Positional Encoding?
+4. Explain Positional Encoding and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines positional encoding (Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-5. What trade-offs would you weigh when implementing Feed-Forward Networks and Activations?
+5. How would you test and monitor Feed-Forward Networks and Activations in production?
    - **Guidance:** A strong answer defines feed-forward networks and activations (Position-wise MLPs, GELU/SwiGLU and their role in capacity.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-6. Walk through how you would design Residual Connections and Normalisation for an enterprise Transformers workload.
+6. Explain Residual Connections and Normalisation and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines residual connections and normalisation (Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-7. How does Encoder, Decoder and Encoder–Decoder Variants interact with security and governance requirements?
+7. Explain Encoder, Decoder and Encoder–Decoder Variants and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines encoder, decoder and encoder–decoder variants (BERT-style, GPT-style and T5-style architectures and their use cases.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 8. Describe a failure mode of Efficient Attention and how you would mitigate it.
    - **Guidance:** A strong answer defines efficient attention (FlashAttention, sparse and linear attention to tame quadratic cost.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-9. What trade-offs would you weigh when implementing Vision and Multimodal Transformers?
+9. How would you test and monitor Vision and Multimodal Transformers in production?
    - **Guidance:** A strong answer defines vision and multimodal transformers (Patch embeddings, ViT and cross-modal attention.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-10. What trade-offs would you weigh when implementing Mixture-of-Experts Transformers?
+10. Explain Mixture-of-Experts Transformers and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines mixture-of-experts transformers (Sparse routing for parameter-efficient scaling.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-11. Walk through how you would design Training Dynamics and Stability for an enterprise Transformers workload.
+11. How would you test and monitor Training Dynamics and Stability in production?
    - **Guidance:** A strong answer defines training dynamics and stability (Initialisation, warmup, gradient clipping and loss spikes.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 12. Explain Implementing a Transformer from Scratch and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines implementing a transformer from scratch (A minimal, correct implementation that demystifies every component.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-13. How would you test and monitor Profiling and Optimising Transformers in production?
+13. Walk through how you would design Profiling and Optimising Transformers for an enterprise Transformers workload.
    - **Guidance:** A strong answer defines profiling and optimising transformers (Memory, FLOPs, kernel fusion and hardware-aware design.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 14. How does The Transformer Design Space interact with security and governance requirements?
    - **Guidance:** A strong answer defines the transformer design space (A map of architectural choices and their empirical trade-offs.) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-15. Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
+15. How would you test and monitor Putting It Together: A Reference Implementation in production?
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-16. Describe a failure mode of Hands-On Lab: Building an End-to-End Transformers System and how you would mitigate it.
+16. Walk through how you would design Hands-On Lab: Building an End-to-End Transformers System for an enterprise Transformers workload.
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end transformers system (a guided, build-along laboratory that constructs a functioning Transformers system from first principles) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-17. Describe a failure mode of Case Study: NLP at Scale and how you would mitigate it.
+17. Explain Case Study: NLP at Scale and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines case study: nlp at scale (a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-18. Explain Operating in Production and why it matters in a production Transformers system.
+18. What trade-offs would you weigh when implementing Operating in Production?
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-19. Walk through how you would design Evaluation and Quality Assurance for an enterprise Transformers workload.
+19. Explain Evaluation and Quality Assurance and why it matters in a production Transformers system.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Transformers system before and after release) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-20. How would you test and monitor Security, Privacy and Governance in production?
+20. Describe a failure mode of Security, Privacy and Governance and how you would mitigate it.
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Transformers system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-21. How does Cost, Performance and Scaling interact with security and governance requirements?
+21. What trade-offs would you weigh when implementing Cost, Performance and Scaling?
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Transformers system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 22. What trade-offs would you weigh when implementing Integration and Interoperability?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Transformers system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-23. Walk through how you would design Trends and Research Directions for an enterprise Transformers workload.
+23. How would you test and monitor Trends and Research Directions in production?
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Transformers) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-24. How would you test and monitor Capstone Project in production?
+24. How does Capstone Project interact with security and governance requirements?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
-25. Explain Certification Preparation and Review and why it matters in a production Transformers system.
+25. Walk through how you would design Certification Preparation and Review for an enterprise Transformers workload.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Transformers) then connects it to architecture, evaluation, cost, security and operations for Transformers, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6055,448 +6103,448 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Quadratic attention cost dominating long-sequence workloads.
    - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
 3. Which of the following is a recommended best practice when working with Transformers?
-   - A. It applies exclusively to image data.
-   - B. Position encoding that fails to extrapolate beyond training length.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
-4. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It removes all security and governance requirements.
+   - A. It is only relevant to academic research, not production.
    - B. Numerical instability from post-norm at depth.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
+4. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Numerical instability from post-norm at depth.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
 5. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Numerical instability from post-norm at depth.
-   - C. It makes the system slower but has no other effect.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
-6. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. Profile FLOPs and memory before scaling parameters.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-7. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Profile FLOPs and memory before scaling parameters.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Profile FLOPs and memory before scaling parameters.
-8. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Numerical instability from post-norm at depth.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
-9. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-10. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Adopt fused attention kernels to cut memory and latency.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Profile FLOPs and memory before scaling parameters.
-   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-11. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Numerical instability from post-norm at depth.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
-12. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Adopt fused attention kernels to cut memory and latency.
-   - B. Numerical instability from post-norm at depth.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
-13. Which of the following is a recommended best practice when working with Transformers?
-   - A. Quadratic attention cost dominating long-sequence workloads.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
-14. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It applies exclusively to image data.
-   - B. Adopt fused attention kernels to cut memory and latency.
-   - C. It removes all security and governance requirements.
-   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - **Answer: D.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-15. Which of the following is a recommended best practice when working with Transformers?
    - A. It eliminates the need for any evaluation or monitoring.
    - B. Quadratic attention cost dominating long-sequence workloads.
-   - C. It removes all security and governance requirements.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-16. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It removes all security and governance requirements.
-   - B. Adopt fused attention kernels to cut memory and latency.
-   - C. Numerical instability from post-norm at depth.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
-17. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-18. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. It makes the system slower but has no other effect.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: C.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-19. Which of the following is a recommended best practice when working with Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. It makes the system slower but has no other effect.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
-20. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - **Answer: D.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-21. Which of the following is a recommended best practice when working with Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: A.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-22. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Validate positional encoding choice against target sequence lengths.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-23. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: C.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-24. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - D. Profile FLOPs and memory before scaling parameters.
-   - **Answer: C.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-25. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. It removes all security and governance requirements.
-   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
-26. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Validate positional encoding choice against target sequence lengths.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Position encoding that fails to extrapolate beyond training length.
-   - D. Adopt fused attention kernels to cut memory and latency.
-   - **Answer: C.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-27. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Position encoding that fails to extrapolate beyond training length.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
-28. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Adopt fused attention kernels to cut memory and latency.
-   - B. Position encoding that fails to extrapolate beyond training length.
-   - C. It removes all security and governance requirements.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: B.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-29. Which of the following is a recommended best practice when working with Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
-30. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-31. Which of the following is a recommended best practice when working with Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Quadratic attention cost dominating long-sequence workloads.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Numerical instability from post-norm at depth.
-   - **Answer: C.** Best practice: Validate positional encoding choice against target sequence lengths.
-32. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Position encoding that fails to extrapolate beyond training length.
-   - B. Validate positional encoding choice against target sequence lengths.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
-33. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: C.** Best practice: Validate positional encoding choice against target sequence lengths.
-34. Which of the following is a common pitfall to avoid in Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. Profile FLOPs and memory before scaling parameters.
-   - C. It applies exclusively to image data.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: A.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-35. Which of the following is a recommended best practice when working with Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Validate positional encoding choice against target sequence lengths.
    - C. It makes the system slower but has no other effect.
-   - D. Numerical instability from post-norm at depth.
-   - **Answer: B.** Best practice: Validate positional encoding choice against target sequence lengths.
-36. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
-37. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - C. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - D. Numerical instability from post-norm at depth.
-   - **Answer: C.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-38. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. Quadratic attention cost dominating long-sequence workloads.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: C.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-39. Which of the following is a recommended best practice when working with Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
    - D. Validate positional encoding choice against target sequence lengths.
    - **Answer: D.** Best practice: Validate positional encoding choice against target sequence lengths.
-40. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-41. Which of the following is a recommended best practice when working with Transformers?
-   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
-42. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - C. It applies exclusively to image data.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-43. Which of the following is a recommended best practice when working with Transformers?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Validate positional encoding choice against target sequence lengths.
-44. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Numerical instability from post-norm at depth.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
-45. Which of the following is a recommended best practice when working with Transformers?
-   - A. Validate positional encoding choice against target sequence lengths.
-   - B. It applies exclusively to image data.
+6. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Adopt fused attention kernels to cut memory and latency.
+   - B. It guarantees deterministic output regardless of input.
    - C. Numerical instability from post-norm at depth.
-   - D. Position encoding that fails to extrapolate beyond training length.
-   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
-46. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It makes the system slower but has no other effect.
-   - B. Adopt fused attention kernels to cut memory and latency.
-   - C. Validate positional encoding choice against target sequence lengths.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
-47. Which of the following is a recommended best practice when working with Transformers?
-   - A. Profile FLOPs and memory before scaling parameters.
-   - B. Quadratic attention cost dominating long-sequence workloads.
-   - C. It applies exclusively to image data.
-   - D. Position encoding that fails to extrapolate beyond training length.
-   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
-48. Which of the following is a common pitfall to avoid in Transformers?
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+7. Which of the following is a recommended best practice when working with Transformers?
+   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
+8. Which of the following is a common pitfall to avoid in Transformers?
    - A. Use pre-norm and careful warmup to stabilise deep transformer training.
-   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+9. Which of the following is a recommended best practice when working with Transformers?
+   - A. Profile FLOPs and memory before scaling parameters.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
+10. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - B. It guarantees deterministic output regardless of input.
    - C. Profile FLOPs and memory before scaling parameters.
    - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+11. Which of the following is a recommended best practice when working with Transformers?
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - D. Quadratic attention cost dominating long-sequence workloads.
+   - **Answer: B.** Best practice: Validate positional encoding choice against target sequence lengths.
+12. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Numerical instability from post-norm at depth.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+13. Which of the following is a recommended best practice when working with Transformers?
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
+14. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+15. Which of the following is a recommended best practice when working with Transformers?
+   - A. It removes all security and governance requirements.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Position encoding that fails to extrapolate beyond training length.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Adopt fused attention kernels to cut memory and latency.
+16. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Numerical instability from post-norm at depth.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Numerical instability from post-norm at depth.
+17. Which of the following is a recommended best practice when working with Transformers?
+   - A. Profile FLOPs and memory before scaling parameters.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: A.** Best practice: Profile FLOPs and memory before scaling parameters.
+18. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+19. Which of the following is a recommended best practice when working with Transformers?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. Validate positional encoding choice against target sequence lengths.
+   - **Answer: D.** Best practice: Validate positional encoding choice against target sequence lengths.
+20. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Validate positional encoding choice against target sequence lengths.
+   - D. Quadratic attention cost dominating long-sequence workloads.
+   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+21. Which of the following is a recommended best practice when working with Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
+22. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Validate positional encoding choice against target sequence lengths.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+23. Which of the following is a recommended best practice when working with Transformers?
+   - A. It is only relevant to academic research, not production.
+   - B. Profile FLOPs and memory before scaling parameters.
+   - C. It makes the system slower but has no other effect.
+   - D. Numerical instability from post-norm at depth.
+   - **Answer: B.** Best practice: Profile FLOPs and memory before scaling parameters.
+24. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+25. Which of the following is a recommended best practice when working with Transformers?
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. Quadratic attention cost dominating long-sequence workloads.
+   - C. It makes the system slower but has no other effect.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
+26. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Numerical instability from post-norm at depth.
+   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - **Answer: C.** Pitfall to avoid: Numerical instability from post-norm at depth.
+27. Which of the following is a recommended best practice when working with Transformers?
+   - A. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - B. Position encoding that fails to extrapolate beyond training length.
+   - C. Numerical instability from post-norm at depth.
+   - D. Adopt fused attention kernels to cut memory and latency.
+   - **Answer: D.** Best practice: Adopt fused attention kernels to cut memory and latency.
+28. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Adopt fused attention kernels to cut memory and latency.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: D.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+29. Which of the following is a recommended best practice when working with Transformers?
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Adopt fused attention kernels to cut memory and latency.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Adopt fused attention kernels to cut memory and latency.
+30. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Adopt fused attention kernels to cut memory and latency.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Numerical instability from post-norm at depth.
+   - **Answer: D.** Pitfall to avoid: Numerical instability from post-norm at depth.
+31. Which of the following is a recommended best practice when working with Transformers?
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. Profile FLOPs and memory before scaling parameters.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Best practice: Profile FLOPs and memory before scaling parameters.
+32. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Validate positional encoding choice against target sequence lengths.
+   - D. Quadratic attention cost dominating long-sequence workloads.
+   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+33. Which of the following is a recommended best practice when working with Transformers?
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Numerical instability from post-norm at depth.
+   - C. It is only relevant to academic research, not production.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: A.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+34. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. Profile FLOPs and memory before scaling parameters.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - **Answer: A.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+35. Which of the following is a recommended best practice when working with Transformers?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Numerical instability from post-norm at depth.
+   - D. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+36. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
+   - C. Adopt fused attention kernels to cut memory and latency.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: D.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+37. Which of the following is a recommended best practice when working with Transformers?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+38. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It makes the system slower but has no other effect.
+   - B. Profile FLOPs and memory before scaling parameters.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. Adopt fused attention kernels to cut memory and latency.
+   - **Answer: C.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+39. Which of the following is a recommended best practice when working with Transformers?
+   - A. It removes all security and governance requirements.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. Numerical instability from post-norm at depth.
+   - **Answer: B.** Best practice: Adopt fused attention kernels to cut memory and latency.
+40. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - D. Profile FLOPs and memory before scaling parameters.
+   - **Answer: C.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+41. Which of the following is a recommended best practice when working with Transformers?
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. It applies exclusively to image data.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Validate positional encoding choice against target sequence lengths.
+42. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. Profile FLOPs and memory before scaling parameters.
+   - C. It applies exclusively to image data.
+   - D. Adopt fused attention kernels to cut memory and latency.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+43. Which of the following is a recommended best practice when working with Transformers?
+   - A. Numerical instability from post-norm at depth.
+   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. Position encoding that fails to extrapolate beyond training length.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
+44. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Position encoding that fails to extrapolate beyond training length.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
+45. Which of the following is a recommended best practice when working with Transformers?
+   - A. Quadratic attention cost dominating long-sequence workloads.
+   - B. Profile FLOPs and memory before scaling parameters.
+   - C. Numerical instability from post-norm at depth.
+   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - **Answer: B.** Best practice: Profile FLOPs and memory before scaling parameters.
+46. Which of the following is a common pitfall to avoid in Transformers?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - **Answer: D.** Pitfall to avoid: Ignoring kernel-level efficiency and over-provisioning hardware.
+47. Which of the following is a recommended best practice when working with Transformers?
+   - A. It makes the system slower but has no other effect.
+   - B. Validate positional encoding choice against target sequence lengths.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Validate positional encoding choice against target sequence lengths.
+48. Which of the following is a common pitfall to avoid in Transformers?
+   - A. Validate positional encoding choice against target sequence lengths.
+   - B. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - C. It is only relevant to academic research, not production.
+   - D. Position encoding that fails to extrapolate beyond training length.
+   - **Answer: D.** Pitfall to avoid: Position encoding that fails to extrapolate beyond training length.
 49. Which of the following is a recommended best practice when working with Transformers?
    - A. Quadratic attention cost dominating long-sequence workloads.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
+   - B. Ignoring kernel-level efficiency and over-provisioning hardware.
+   - C. It is only relevant to academic research, not production.
    - D. Use pre-norm and careful warmup to stabilise deep transformer training.
    - **Answer: D.** Best practice: Use pre-norm and careful warmup to stabilise deep transformer training.
 50. Which of the following is a common pitfall to avoid in Transformers?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Adopt fused attention kernels to cut memory and latency.
-   - D. Quadratic attention cost dominating long-sequence workloads.
-   - **Answer: D.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
+   - A. Use pre-norm and careful warmup to stabilise deep transformer training.
+   - B. Adopt fused attention kernels to cut memory and latency.
+   - C. Quadratic attention cost dominating long-sequence workloads.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Quadratic attention cost dominating long-sequence workloads.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Transformers, which statement best describes “Why Self-Attention Replaced Recurrence”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
-   - **Answer: D.** Why Self-Attention Replaced Recurrence: Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
-2. In the context of Transformers, which statement best describes “Scaled Dot-Product Attention”?
-   - A. Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Scaled Dot-Product Attention: Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
-3. In the context of Transformers, which statement best describes “Multi-Head Attention”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Projecting into multiple subspaces to attend to different relations simultaneously.
-   - **Answer: D.** Multi-Head Attention: Projecting into multiple subspaces to attend to different relations simultaneously.
-4. In the context of Transformers, which statement best describes “Positional Encoding”?
-   - A. It removes all security and governance requirements.
-   - B. Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
-   - C. It is only relevant to academic research, not production.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Positional Encoding: Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
-5. In the context of Transformers, which statement best describes “Feed-Forward Networks and Activations”?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Why Self-Attention Replaced Recurrence: Parallelism, long-range dependency modelling and the limitations of RNNs/LSTMs that transformers overcame.
+2. In the context of Transformers, which statement best describes “Scaled Dot-Product Attention”?
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
    - C. It applies exclusively to image data.
+   - D. Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
+   - **Answer: D.** Scaled Dot-Product Attention: Queries, keys, values, the scaling factor and the softmax that produces context-aware representations.
+3. In the context of Transformers, which statement best describes “Multi-Head Attention”?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Projecting into multiple subspaces to attend to different relations simultaneously.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Multi-Head Attention: Projecting into multiple subspaces to attend to different relations simultaneously.
+4. In the context of Transformers, which statement best describes “Positional Encoding”?
+   - A. Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Positional Encoding: Sinusoidal, learned and rotary (RoPE) encodings that inject order into a permutation-invariant operation.
+5. In the context of Transformers, which statement best describes “Feed-Forward Networks and Activations”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
    - D. Position-wise MLPs, GELU/SwiGLU and their role in capacity.
    - **Answer: D.** Feed-Forward Networks and Activations: Position-wise MLPs, GELU/SwiGLU and their role in capacity.
 6. In the context of Transformers, which statement best describes “Residual Connections and Normalisation”?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
-   - **Answer: D.** Residual Connections and Normalisation: Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
+   - A. Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Residual Connections and Normalisation: Pre-norm versus post-norm, LayerNorm/RMSNorm and training stability.
 7. In the context of Transformers, which statement best describes “Encoder, Decoder and Encoder–Decoder Variants”?
    - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - B. BERT-style, GPT-style and T5-style architectures and their use cases.
    - C. It removes all security and governance requirements.
-   - D. BERT-style, GPT-style and T5-style architectures and their use cases.
-   - **Answer: D.** Encoder, Decoder and Encoder–Decoder Variants: BERT-style, GPT-style and T5-style architectures and their use cases.
-8. In the context of Transformers, which statement best describes “Efficient Attention”?
-   - A. It makes the system slower but has no other effect.
-   - B. FlashAttention, sparse and linear attention to tame quadratic cost.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Efficient Attention: FlashAttention, sparse and linear attention to tame quadratic cost.
-9. In the context of Transformers, which statement best describes “Vision and Multimodal Transformers”?
-   - A. Patch embeddings, ViT and cross-modal attention.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Vision and Multimodal Transformers: Patch embeddings, ViT and cross-modal attention.
-10. In the context of Transformers, which statement best describes “Mixture-of-Experts Transformers”?
+   - **Answer: B.** Encoder, Decoder and Encoder–Decoder Variants: BERT-style, GPT-style and T5-style architectures and their use cases.
+8. In the context of Transformers, which statement best describes “Efficient Attention”?
    - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Sparse routing for parameter-efficient scaling.
-   - **Answer: D.** Mixture-of-Experts Transformers: Sparse routing for parameter-efficient scaling.
+   - B. It is only relevant to academic research, not production.
+   - C. FlashAttention, sparse and linear attention to tame quadratic cost.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Efficient Attention: FlashAttention, sparse and linear attention to tame quadratic cost.
+9. In the context of Transformers, which statement best describes “Vision and Multimodal Transformers”?
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. Patch embeddings, ViT and cross-modal attention.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Vision and Multimodal Transformers: Patch embeddings, ViT and cross-modal attention.
+10. In the context of Transformers, which statement best describes “Mixture-of-Experts Transformers”?
+   - A. Sparse routing for parameter-efficient scaling.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Mixture-of-Experts Transformers: Sparse routing for parameter-efficient scaling.
 11. In the context of Transformers, which statement best describes “Training Dynamics and Stability”?
    - A. Initialisation, warmup, gradient clipping and loss spikes.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Training Dynamics and Stability: Initialisation, warmup, gradient clipping and loss spikes.
 12. In the context of Transformers, which statement best describes “Implementing a Transformer from Scratch”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. A minimal, correct implementation that demystifies every component.
    - **Answer: D.** Implementing a Transformer from Scratch: A minimal, correct implementation that demystifies every component.
 13. In the context of Transformers, which statement best describes “Profiling and Optimising Transformers”?
-   - A. It makes the system slower but has no other effect.
-   - B. Memory, FLOPs, kernel fusion and hardware-aware design.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Profiling and Optimising Transformers: Memory, FLOPs, kernel fusion and hardware-aware design.
+   - A. Memory, FLOPs, kernel fusion and hardware-aware design.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Profiling and Optimising Transformers: Memory, FLOPs, kernel fusion and hardware-aware design.
 14. In the context of Transformers, which statement best describes “The Transformer Design Space”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. A map of architectural choices and their empirical trade-offs.
    - **Answer: D.** The Transformer Design Space: A map of architectural choices and their empirical trade-offs.
 15. In the context of Transformers, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole
-   - C. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. It is only relevant to academic research, not production.
    - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Transformers system into a cohesive, working whole
 16. In the context of Transformers, which statement best describes “Hands-On Lab: Building an End-to-End Transformers System”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. a guided, build-along laboratory that constructs a functioning Transformers system from first principles
-   - **Answer: D.** Hands-On Lab: Building an End-to-End Transformers System: a guided, build-along laboratory that constructs a functioning Transformers system from first principles
-17. In the context of Transformers, which statement best describes “Case Study: NLP at Scale”?
-   - A. It applies exclusively to image data.
+   - A. a guided, build-along laboratory that constructs a functioning Transformers system from first principles
    - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Hands-On Lab: Building an End-to-End Transformers System: a guided, build-along laboratory that constructs a functioning Transformers system from first principles
+17. In the context of Transformers, which statement best describes “Case Study: NLP at Scale”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
    - C. a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Case Study: NLP at Scale: a detailed case study of deploying Transformers in a demanding nlp environment, including the decisions, trade-offs and outcomes
 18. In the context of Transformers, which statement best describes “Operating in Production”?
-   - A. It makes the system slower but has no other effect.
+   - A. the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Operating in Production: the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
+19. In the context of Transformers, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It guarantees deterministic output regardless of input.
    - B. It eliminates the need for any evaluation or monitoring.
    - C. It applies exclusively to image data.
-   - D. the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
-   - **Answer: D.** Operating in Production: the operational discipline required to run a Transformers system reliably, including monitoring, incident response and continuous improvement
-19. In the context of Transformers, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
+   - D. a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
+   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Transformers system before and after release
 20. In the context of Transformers, which statement best describes “Security, Privacy and Governance”?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
    - D. the security, privacy and governance controls that make a Transformers system trustworthy and compliant
    - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a Transformers system trustworthy and compliant
 21. In the context of Transformers, which statement best describes “Cost, Performance and Scaling”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. techniques for controlling cost and latency while scaling a Transformers system to production traffic
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Transformers system to production traffic
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. techniques for controlling cost and latency while scaling a Transformers system to production traffic
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Transformers system to production traffic
 22. In the context of Transformers, which statement best describes “Integration and Interoperability”?
-   - A. It removes all security and governance requirements.
+   - A. It makes the system slower but has no other effect.
    - B. patterns for integrating a Transformers system with surrounding enterprise systems and data
-   - C. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Integration and Interoperability: patterns for integrating a Transformers system with surrounding enterprise systems and data
 23. In the context of Transformers, which statement best describes “Trends and Research Directions”?
    - A. emerging trends, open problems and research directions shaping the future of Transformers
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Transformers
 24. In the context of Transformers, which statement best describes “Capstone Project”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
+   - A. It applies exclusively to image data.
+   - B. It is only relevant to academic research, not production.
+   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Transformers deliverable
 25. In the context of Transformers, which statement best describes “Certification Preparation and Review”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. a structured review and certification-style preparation covering the full breadth of Transformers
-   - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Transformers
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. a structured review and certification-style preparation covering the full breadth of Transformers
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Transformers
 
 # References
 

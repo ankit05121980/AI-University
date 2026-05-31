@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - The Agent Loop: Reason, Act, Observe
-package "Agentic AI Platform" {
-  component "From Chatbots to Agents" as C0
-  component "The Agent Loop: Reason,…" as C1
-  component "Planning and Task Decom…" as C2
-  component "Tool Use and Function C…" as C3
-  component "Memory Architectures" as C4
+package "The Agent Loop: Reason, Act, Observe Platform" {
+  component "The Agent Loop: Reason,…" as C0
+  component "Planning and Task Decom…" as C1
+  component "The Agentic Reference A…" as C2
+  component "Grounding and Retrieval…" as C3
+  component "Safety, Sandboxing and …" as C4
 }
 database "Storage" as DB
 C0 --> DB

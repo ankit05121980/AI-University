@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - Failure Modes and Debugging
-package "RAG Platform" {
-  component "Why RAG: Grounding and …" as C0
-  component "Document Ingestion and …" as C1
-  component "Embedding and Indexing …" as C2
-  component "Retrieval and Query Tra…" as C3
-  component "Re-ranking and Context …" as C4
+package "Failure Modes and Debugging Platform" {
+  component "Failure Modes and Debug…" as C0
+  component "Prompt Assembly and Cit…" as C1
+  component "Handling Tables, Images…" as C2
+  component "Evaluation of RAG Syste…" as C3
+  component "Advanced RAG Patterns" as C4
 }
 database "Storage" as DB
 C0 --> DB

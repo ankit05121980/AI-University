@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Case Study: Finance at Scale
+package "Case Study: Finance at Scale Platform" {
+  component "Case Study: Finance at …" as C0
+  component "Visualising Knowledge G…" as C1
+  component "Scaling Graph Storage" as C2
+  component "Reasoning and Inference" as C3
+  component "Graph Query Languages" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

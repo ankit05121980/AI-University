@@ -83,28 +83,28 @@ First published 2026. First Edition. Document version 1.0.0.
 | 1 | From Chatbots to Agents | 11 | 2 | 1 | 4 |
 | 2 | The Agent Loop: Reason, Act, Observe | 10 | 1 | 1 | 4 |
 | 3 | Planning and Task Decomposition | 10 | 1 | 1 | 4 |
-| 4 | Tool Use and Function Calling | 11 | 2 | 1 | 4 |
-| 5 | Memory Architectures | 10 | 1 | 1 | 4 |
+| 4 | Tool Use and Function Calling | 10 | 1 | 1 | 4 |
+| 5 | Memory Architectures | 11 | 2 | 1 | 4 |
 | 6 | Reflection and Self-Correction | 11 | 2 | 1 | 4 |
 | 7 | Grounding and Retrieval for Agents | 10 | 1 | 1 | 4 |
 | 8 | Human-in-the-Loop and Approvals | 10 | 1 | 1 | 4 |
 | 9 | Safety, Sandboxing and Permissions | 10 | 1 | 1 | 4 |
-| 10 | Cost, Latency and Loop Control | 10 | 1 | 1 | 4 |
-| 11 | Evaluating Agents | 10 | 1 | 1 | 4 |
-| 12 | Agent Frameworks and Patterns | 10 | 1 | 1 | 4 |
+| 10 | Cost, Latency and Loop Control | 11 | 2 | 1 | 4 |
+| 11 | Evaluating Agents | 11 | 2 | 1 | 4 |
+| 12 | Agent Frameworks and Patterns | 11 | 2 | 1 | 4 |
 | 13 | Observability for Agents | 11 | 2 | 1 | 4 |
-| 14 | The Agentic Reference Architecture | 11 | 2 | 1 | 4 |
+| 14 | The Agentic Reference Architecture | 10 | 1 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 10 | 1 | 1 | 4 |
 | 16 | Hands-On Lab: Building an End-to-End Agentic AI System | 11 | 1 | 1 | 4 |
-| 17 | Case Study: Software at Scale | 11 | 2 | 1 | 4 |
-| 18 | Operating in Production | 11 | 2 | 1 | 4 |
-| 19 | Evaluation and Quality Assurance | 10 | 1 | 1 | 4 |
+| 17 | Case Study: Software at Scale | 10 | 1 | 1 | 4 |
+| 18 | Operating in Production | 10 | 1 | 1 | 4 |
+| 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
 | 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
-| 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
-| 24 | Capstone Project | 10 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
+| 23 | Trends and Research Directions | 9 | 1 | 0 | 4 |
+| 24 | Capstone Project | 11 | 2 | 1 | 4 |
+| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
 
 ---
 
@@ -115,34 +115,36 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 3. Infrastructure - The Agent Loop: Reason, Act, Observe
 - Figure 4. Security Architecture - Planning and Task Decomposition
 - Figure 5. Capability Map - Tool Use and Function Calling
-- Figure 6. Cloud Architecture - Tool Use and Function Calling
-- Figure 7. Cloud Architecture - Memory Architectures
+- Figure 6. Cloud Architecture - Memory Architectures
+- Figure 7. Knowledge Graph - Memory Architectures
 - Figure 8. Knowledge Graph - Reflection and Self-Correction
 - Figure 9. Data Flow - Reflection and Self-Correction
 - Figure 10. Data Flow - Grounding and Retrieval for Agents
 - Figure 11. DevOps Pipeline - Human-in-the-Loop and Approvals
 - Figure 12. Network - Safety, Sandboxing and Permissions
 - Figure 13. Operating Model - Cost, Latency and Loop Control
-- Figure 14. Application Flow - Evaluating Agents
-- Figure 15. Class - Agent Frameworks and Patterns
-- Figure 16. Data Lineage - Observability for Agents
-- Figure 17. Sequence - Observability for Agents
-- Figure 18. Sequence - The Agentic Reference Architecture
-- Figure 19. Deployment - The Agentic Reference Architecture
-- Figure 20. Deployment - Putting It Together: A Reference Implementation
-- Figure 21. Business Process - Hands-On Lab: Building an End-to-End Agentic AI System
-- Figure 22. Architecture - Case Study: Software at Scale
-- Figure 23. Component - Case Study: Software at Scale
-- Figure 24. Component - Operating in Production
-- Figure 25. Agent Architecture - Operating in Production
+- Figure 14. Application Flow - Cost, Latency and Loop Control
+- Figure 15. Application Flow - Evaluating Agents
+- Figure 16. Class - Evaluating Agents
+- Figure 17. Class - Agent Frameworks and Patterns
+- Figure 18. Data Lineage - Agent Frameworks and Patterns
+- Figure 19. Data Lineage - Observability for Agents
+- Figure 20. Sequence - Observability for Agents
+- Figure 21. Sequence - The Agentic Reference Architecture
+- Figure 22. Deployment - Putting It Together: A Reference Implementation
+- Figure 23. Business Process - Hands-On Lab: Building an End-to-End Agentic AI System
+- Figure 24. Architecture - Case Study: Software at Scale
+- Figure 25. Component - Operating in Production
 - Figure 26. Agent Architecture - Evaluation and Quality Assurance
-- Figure 27. RAG Architecture - Security, Privacy and Governance
-- Figure 28. CI/CD Pipeline - Cost, Performance and Scaling
-- Figure 29. Infrastructure - Integration and Interoperability
-- Figure 30. Security Architecture - Trends and Research Directions
-- Figure 31. Capability Map - Trends and Research Directions
+- Figure 27. RAG Architecture - Evaluation and Quality Assurance
+- Figure 28. RAG Architecture - Security, Privacy and Governance
+- Figure 29. CI/CD Pipeline - Cost, Performance and Scaling
+- Figure 30. Infrastructure - Integration and Interoperability
+- Figure 31. Security Architecture - Trends and Research Directions
 - Figure 32. Capability Map - Capstone Project
-- Figure 33. Cloud Architecture - Certification Preparation and Review
+- Figure 33. Cloud Architecture - Capstone Project
+- Figure 34. Cloud Architecture - Certification Preparation and Review
+- Figure 35. Knowledge Graph - Certification Preparation and Review
 
 ---
 
@@ -249,17 +251,17 @@ flowchart LR
   S6 -.->|drift / regression| S0
 ```
 
-**Figure 1. CI/CD Pipeline - From Chatbots to Agents** (mermaid). Figure: CI/CD Pipeline view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. CI/CD Pipeline - From Chatbots to Agents** (mermaid). Figure: CI/CD Pipeline view for From Chatbots to Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
 title Infrastructure - From Chatbots to Agents
-package "Agentic AI Platform" {
+package "From Chatbots to Agents Platform" {
   component "From Chatbots to Agents" as C0
-  component "The Agent Loop: Reason,…" as C1
-  component "Planning and Task Decom…" as C2
-  component "Tool Use and Function C…" as C3
-  component "Memory Architectures" as C4
+  component "Observability for Agents" as C1
+  component "Human-in-the-Loop and A…" as C2
+  component "Evaluating Agents" as C3
+  component "Agent Frameworks and Pa…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -272,7 +274,7 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 2. Infrastructure - From Chatbots to Agents** (plantuml). Figure: Infrastructure view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Infrastructure - From Chatbots to Agents** (plantuml). Figure: Infrastructure view for From Chatbots to Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -376,80 +378,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep From Chatbots to Agents logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for From Chatbots to Agents
+### Listing: Evaluating From Chatbots to Agents with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for From Chatbots to Agents."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score From Chatbots to Agents output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “From Chatbots to Agents”?
-   - A. It makes the system slower but has no other effect.
-   - B. The shift from single responses to goal-directed loops.
+   - A. The shift from single responses to goal-directed loops.
+   - B. It is only relevant to academic research, not production.
    - C. It removes all security and governance requirements.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** From Chatbots to Agents: The shift from single responses to goal-directed loops.
+   - **Answer: A.** From Chatbots to Agents: The shift from single responses to goal-directed loops.
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Constrain tools with typed schemas and least-privilege permissions.
-   - C. Unbounded loops that burn cost without converging.
-   - D. Granting broad tool permissions that enable harmful actions.
-   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+   - A. Granting broad tool permissions that enable harmful actions.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. It applies exclusively to image data.
+   - A. Granting broad tool permissions that enable harmful actions.
+   - B. It is only relevant to academic research, not production.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - **Answer: A.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
 4. *(Discussion)* How does From Chatbots to Agents interact with security and governance requirements?
    - **Model answer:** A strong answer defines from chatbots to agents (The shift from single responses to goal-directed loops.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
@@ -493,12 +478,12 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 ```plantuml
 @startuml
 title Infrastructure - The Agent Loop: Reason, Act, Observe
-package "Agentic AI Platform" {
-  component "From Chatbots to Agents" as C0
-  component "The Agent Loop: Reason,…" as C1
-  component "Planning and Task Decom…" as C2
-  component "Tool Use and Function C…" as C3
-  component "Memory Architectures" as C4
+package "The Agent Loop: Reason, Act, Observe Platform" {
+  component "The Agent Loop: Reason,…" as C0
+  component "Planning and Task Decom…" as C1
+  component "The Agentic Reference A…" as C2
+  component "Grounding and Retrieval…" as C3
+  component "Safety, Sandboxing and …" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -511,7 +496,7 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 3. Infrastructure - The Agent Loop: Reason, Act, Observe** (plantuml). Figure: Infrastructure view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 3. Infrastructure - The Agent Loop: Reason, Act, Observe** (plantuml). Figure: Infrastructure view for The Agent Loop: Reason, Act, Observe. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -615,74 +600,68 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep The Agent Loop: Reason, Act, Observe logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven The Agent Loop: Reason, Act, Observe component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for The Agent Loop: Reason, Act, Observe
+### Listing: Implementing a The Agent Loop: Reason, Act, Observe component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class TheAgentConfig:
+    """Configuration for the The Agent Loop: Reason, Act, Observe component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for The Agent Loop: Reason, Act, Observe."""
+class TheAgent:
+    """A minimal, production-shaped implementation of The Agent Loop: Reason, Act, Observe."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: TheAgentConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheAgent failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The Agent Loop: Reason, Act, Observe goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “The Agent Loop: Reason, Act, Observe”?
-   - A. It removes all security and governance requirements.
-   - B. ReAct-style cycles and the perception–action interface.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** The Agent Loop: Reason, Act, Observe: ReAct-style cycles and the perception–action interface.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. ReAct-style cycles and the perception–action interface.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** The Agent Loop: Reason, Act, Observe: ReAct-style cycles and the perception–action interface.
 2. Which of the following is a recommended best practice when working with Agentic AI?
    - A. Granting broad tool permissions that enable harmful actions.
-   - B. No observability, making failures impossible to diagnose.
-   - C. It makes the system slower but has no other effect.
-   - D. Trace every reasoning step and tool call for debugging and audit.
-   - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
+   - B. It removes all security and governance requirements.
+   - C. No observability, making failures impossible to diagnose.
+   - D. Cap loop steps and cost to prevent runaway behaviour.
+   - **Answer: D.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. It eliminates the need for any evaluation or monitoring.
    - B. Constrain tools with typed schemas and least-privilege permissions.
@@ -746,7 +725,7 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 4. Security Architecture - Planning and Task Decomposition** (plantuml). Figure: Security Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 4. Security Architecture - Planning and Task Decomposition** (plantuml). Figure: Security Architecture view for Planning and Task Decomposition. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -901,24 +880,24 @@ class PlanningAndTask:
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Planning and Task Decomposition”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. Plan-and-execute, tree-of-thought and hierarchical planning.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Planning and Task Decomposition: Plan-and-execute, tree-of-thought and hierarchical planning.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. Plan-and-execute, tree-of-thought and hierarchical planning.
+   - **Answer: D.** Planning and Task Decomposition: Plan-and-execute, tree-of-thought and hierarchical planning.
 2. Which of the following is a recommended best practice when working with Agentic AI?
    - A. Over-automating tasks that need human judgement.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. It applies exclusively to image data.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: D.** Best practice: Require human approval for irreversible or high-impact actions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. Granting broad tool permissions that enable harmful actions.
+   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Unbounded loops that burn cost without converging.
    - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: D.** Pitfall to avoid: Over-automating tasks that need human judgement.
-4. *(Discussion)* Describe a failure mode of Planning and Task Decomposition and how you would mitigate it.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+4. *(Discussion)* What trade-offs would you weigh when implementing Planning and Task Decomposition?
    - **Model answer:** A strong answer defines planning and task decomposition (Plan-and-execute, tree-of-thought and hierarchical planning.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -930,23 +909,23 @@ _This chapter examines tool use and function calling within Agentic AI. It cover
 
 ## Introduction
 
-In practical terms, Tool Use and Function Calling is best understood as defining, selecting and safely invoking tools and APIs. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Formally, Tool Use and Function Calling addresses defining, selecting and safely invoking tools and APIs. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Tool Use and Function Calling refers to defining, selecting and safely invoking tools and APIs. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Tool Use and Function Calling refers to defining, selecting and safely invoking tools and APIs. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, tool use and function calling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, tool use and function calling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions.
 
-Tool Use and Function Calling cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Tool Use and Function Calling cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Tool Use and Function Calling cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Tool Use and Function Calling cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to tool use and function calling. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to tool use and function calling. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around tool use and function calling are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around tool use and function calling are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -956,70 +935,25 @@ Concretely, the principal building blocks include from chatbots to agents, the a
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-graph LR
-  D(("Agentic AI"))
-  D --- C0[From Chatbots to Agen…]
-  D --- C1[The Agent Loop: Reaso…]
-  D --- C2[Planning and Task Dec…]
-  D --- C3[Tool Use and Function…]
-  D --- C4[Memory Architectures]
-  C0 --- C1
-  C1 --- C2
-```
+<div class="diagram-svg">
 
-**Figure 5. Capability Map - Tool Use and Function Calling** (mermaid). Figure: Capability Map view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="kpi" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn7d1994f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn7d1994f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn7d1994f)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Tool Use and Function Calling</text><rect x="28" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="28" y="90" width="182" height="8" rx="0" fill="#0d9488"/><text x="119" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#0d9488" dominant-baseline="middle">44%</text><text x="119" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Tool Use and Function</text><text x="119" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Calling</text><rect x="228" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="228" y="90" width="182" height="8" rx="0" fill="#14b8a6"/><text x="320" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#14b8a6" dominant-baseline="middle">46%</text><text x="320" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Observability for</text><text x="320" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Agents</text><rect x="429" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="429" y="90" width="182" height="8" rx="0" fill="#047857"/><text x="520" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#047857" dominant-baseline="middle">57%</text><text x="520" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Memory Architectures</text><rect x="630" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="630" y="90" width="182" height="8" rx="0" fill="#059669"/><text x="721" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#059669" dominant-baseline="middle">70%</text><text x="721" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Safety, Sandboxing and</text><text x="721" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Permissions</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Tool Use and Function Calling  •  Capability Map</text></svg>
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Agentic AI Platform"]
-    GW[Gateway / Orchestrator]
-    S0[From Chatbots to Agents]
-    S1[The Agent Loop: Reason, A…]
-    S2[Planning and Task Decompo…]
-    S3[Tool Use and Function Cal…]
-    S4[Memory Architectures]
-    S5[Reflection and Self-Corre…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
+</div>
 
-**Figure 6. Cloud Architecture - Tool Use and Function Calling** (mermaid). Figure: Cloud Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 5. Capability Map - Tool Use and Function Calling** (svg). Figure: Capability Map view for Tool Use and Function Calling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into tool use and function calling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into tool use and function calling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding and retrieval for agents. Because grounding and retrieval for agents concerns bringing knowledge into the agent loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability for agents. Because observability for agents concerns tracing reasoning, tool calls and outcomes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1027,13 +961,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into tool use and function calling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into tool use and function calling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with memory architectures. Because memory architectures concerns short-term context, long-term vector memory and episodic recall, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the agent loop: reason, act, observe. Because the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1041,7 +975,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A operations organisation needs incident triage agents that gather context and act. They decide to apply tool use and function calling as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A back office organisation needs workflow automation across enterprise systems. They decide to apply tool use and function calling as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1113,75 +1047,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Tool Use and Function Calling component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
+Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Tool Use and Function Calling component
+### Listing: Evaluating Tool Use and Function Calling with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class ToolUseAndConfig:
-    """Configuration for the Tool Use and Function Calling component in a Agentic AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class ToolUseAnd:
-    """A minimal, production-shaped implementation of Tool Use and Function Calling."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Tool Use and Function Calling output against references with a simple exact-match metric.
 
-    def __init__(self, config: ToolUseAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ToolUseAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Tool Use and Function Calling goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Tool Use and Function Calling”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Defining, selecting and safely invoking tools and APIs.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Tool Use and Function Calling: Defining, selecting and safely invoking tools and APIs.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. Defining, selecting and safely invoking tools and APIs.
+   - **Answer: D.** Tool Use and Function Calling: Defining, selecting and safely invoking tools and APIs.
 2. Which of the following is a recommended best practice when working with Agentic AI?
    - A. No observability, making failures impossible to diagnose.
-   - B. Trace every reasoning step and tool call for debugging and audit.
-   - C. Over-automating tasks that need human judgement.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. No observability, making failures impossible to diagnose.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - C. Unbounded loops that burn cost without converging.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Granting broad tool permissions that enable harmful actions.
    - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: A.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-4. *(Discussion)* How does Tool Use and Function Calling interact with security and governance requirements?
+   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+4. *(Discussion)* Describe a failure mode of Tool Use and Function Calling and how you would mitigate it.
    - **Model answer:** A strong answer defines tool use and function calling (Defining, selecting and safely invoking tools and APIs.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1193,23 +1116,23 @@ _This chapter examines memory architectures within Agentic AI. It covers short-t
 
 ## Introduction
 
-Memory Architectures can be characterised as short-term context, long-term vector memory and episodic recall. This concept recurs throughout the Agentic AI lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Memory Architectures as short-term context, long-term vector memory and episodic recall. It is foundational: later capabilities in Agentic AI are built directly on top of it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Memory Architectures can be characterised as short-term context, long-term vector memory and episodic recall. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+In practical terms, Memory Architectures is best understood as short-term context, long-term vector memory and episodic recall. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, memory architectures is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
-
-Memory Architectures cannot be understood in isolation from cost, latency and loop control. Recall that cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, memory architectures is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions.
 
 Memory Architectures cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to memory architectures. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Memory Architectures cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around memory architectures are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Several established patterns apply directly to memory architectures. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around memory architectures are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1221,34 +1144,52 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Cloud Architecture - Memory Architectures
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Cloud Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Cloud Architecture - Memory Architectures" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Memory Architectures" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Human-in-the-Loop and A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Reflection and Self-Cor…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Agent Frameworks and Pa…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 7. Cloud Architecture - Memory Architectures** (plantuml). Figure: Cloud Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 6. Cloud Architecture - Memory Architectures** (drawio). Figure: Cloud Architecture view for Memory Architectures. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="9-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnfee4ff1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnfee4ff1)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnfee4ff1)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Memory Architectures</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#f472b6"/><text x="420" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Memory</text><text x="420" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Architectures</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#fb7185"/><text x="330" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Tool Use</text><text x="330" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#e11d48"/><text x="510" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Human-in-the-Loop</text><text x="510" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#9d174d"/><text x="375" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Reflection</text><text x="375" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#db2777"/><text x="465" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Agent</text><text x="465" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Frameworks</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#ec4899"/><text x="375" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">From</text><text x="375" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Chatbots to</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#f472b6"/><text x="465" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Safety,</text><text x="465" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Sandboxing</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Memory Architectures  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 7. Knowledge Graph - Memory Architectures** (svg). Figure: Knowledge Graph view for Memory Architectures. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into memory architectures. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost, latency and loop control. Because cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1256,13 +1197,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into memory architectures. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into memory architectures. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the agent loop: reason, act, observe. Because the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1270,7 +1211,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A back office organisation needs workflow automation across enterprise systems. They decide to apply memory architectures as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs agents that browse, synthesise and report. They decide to apply memory architectures as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1394,23 +1335,23 @@ class MemoryArchitectures:
 
 1. In the context of Agentic AI, which statement best describes “Memory Architectures”?
    - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Short-term context, long-term vector memory and episodic recall.
-   - **Answer: D.** Memory Architectures: Short-term context, long-term vector memory and episodic recall.
+   - B. Short-term context, long-term vector memory and episodic recall.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Memory Architectures: Short-term context, long-term vector memory and episodic recall.
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Constrain tools with typed schemas and least-privilege permissions.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: A.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+   - A. Unbounded loops that burn cost without converging.
+   - B. It applies exclusively to image data.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Cap loop steps and cost to prevent runaway behaviour.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: B.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-4. *(Discussion)* How does Memory Architectures interact with security and governance requirements?
+   - A. Trace every reasoning step and tool call for debugging and audit.
+   - B. Require human approval for irreversible or high-impact actions.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. Unbounded loops that burn cost without converging.
+   - **Answer: D.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+4. *(Discussion)* How would you test and monitor Memory Architectures in production?
    - **Model answer:** A strong answer defines memory architectures (Short-term context, long-term vector memory and episodic recall.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1422,27 +1363,27 @@ _This chapter examines reflection and self-correction within Agentic AI. It cove
 
 ## Introduction
 
-Reflection and Self-Correction refers to critique loops, verification and error recovery. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+We define Reflection and Self-Correction as critique loops, verification and error recovery. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Reflection and Self-Correction refers to critique loops, verification and error recovery. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Reflection and Self-Correction is best understood as critique loops, verification and error recovery. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, reflection and self-correction is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. It is foundational: later capabilities in Agentic AI are built directly on top of it.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, reflection and self-correction is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
 
-Reflection and Self-Correction cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Reflection and Self-Correction cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Reflection and Self-Correction cannot be understood in isolation from planning and task decomposition. Recall that planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Reflection and Self-Correction cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to reflection and self-correction. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to reflection and self-correction. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around reflection and self-correction are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around reflection and self-correction are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Reflection and Self-Correction is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+From an architectural standpoint, Reflection and Self-Correction sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1450,58 +1391,36 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="10-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnd9be36a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14532d"/><stop offset="1" stop-color="#166534"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnd9be36a)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnd9be36a)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Reflection and Self-Correction</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#14532d"/><text x="420" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Reflection</text><text x="420" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#166534"/><text x="330" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Memory</text><text x="330" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Architectures</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#15803d"/><text x="510" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Observability</text><text x="510" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">for Agents</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#16a34a"/><text x="375" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Tool Use</text><text x="375" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#22c55e"/><text x="465" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Agent</text><text x="465" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Frameworks</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#4ade80"/><text x="375" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Cost,</text><text x="375" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Latency and</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#14532d"/><text x="465" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Safety,</text><text x="465" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Sandboxing</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Reflection and Self-Correction  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 8. Knowledge Graph - Reflection and Self-Correction** (svg). Figure: Knowledge Graph view for Reflection and Self-Correction. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
 ```mermaid
-graph LR
-  D(("Agentic AI"))
-  D --- C0[From Chatbots to Agen…]
-  D --- C1[The Agent Loop: Reaso…]
-  D --- C2[Planning and Task Dec…]
-  D --- C3[Tool Use and Function…]
-  D --- C4[Memory Architectures]
-  C0 --- C1
-  C1 --- C2
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
 ```
 
-**Figure 8. Knowledge Graph - Reflection and Self-Correction** (mermaid). Figure: Knowledge Graph view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Data Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Data Flow - Reflection and Self-Correction" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 9. Data Flow - Reflection and Self-Correction** (drawio). Figure: Data Flow view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. Data Flow - Reflection and Self-Correction** (mermaid). Figure: Data Flow view for Reflection and Self-Correction. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into reflection and self-correction. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into reflection and self-correction. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with human-in-the-loop and approvals. Because human-in-the-loop and approvals concerns confirmation gates for high-impact actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with memory architectures. Because memory architectures concerns short-term context, long-term vector memory and episodic recall, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1509,13 +1428,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into reflection and self-correction. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into reflection and self-correction. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with planning and task decomposition. Because planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1523,7 +1442,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A operations organisation needs incident triage agents that gather context and act. They decide to apply reflection and self-correction as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs incident triage agents that gather context and act. They decide to apply reflection and self-correction as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1595,75 +1514,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Reflection and Self-Correction component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
+Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Reflection and Self-Correction component
+### Listing: Evaluating Reflection and Self-Correction with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class ReflectionAndConfig:
-    """Configuration for the Reflection and Self-Correction component in a Agentic AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class ReflectionAnd:
-    """A minimal, production-shaped implementation of Reflection and Self-Correction."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Reflection and Self-Correction output against references with a simple exact-match metric.
 
-    def __init__(self, config: ReflectionAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ReflectionAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Reflection and Self-Correction goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Reflection and Self-Correction”?
-   - A. Critique loops, verification and error recovery.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Reflection and Self-Correction: Critique loops, verification and error recovery.
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. Critique loops, verification and error recovery.
+   - **Answer: D.** Reflection and Self-Correction: Critique loops, verification and error recovery.
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Granting broad tool permissions that enable harmful actions.
+   - A. It is only relevant to academic research, not production.
    - B. No observability, making failures impossible to diagnose.
    - C. Cap loop steps and cost to prevent runaway behaviour.
    - D. Over-automating tasks that need human judgement.
    - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Require human approval for irreversible or high-impact actions.
-   - B. Over-automating tasks that need human judgement.
-   - C. It applies exclusively to image data.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
-4. *(Discussion)* How does Reflection and Self-Correction interact with security and governance requirements?
+   - A. It applies exclusively to image data.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. Over-automating tasks that need human judgement.
+   - D. Cap loop steps and cost to prevent runaway behaviour.
+   - **Answer: C.** Pitfall to avoid: Over-automating tasks that need human judgement.
+4. *(Discussion)* Explain Reflection and Self-Correction and why it matters in a production Agentic AI system.
    - **Model answer:** A strong answer defines reflection and self-correction (Critique loops, verification and error recovery.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1675,23 +1583,23 @@ _This chapter examines grounding and retrieval for agents within Agentic AI. It 
 
 ## Introduction
 
-Formally, Grounding and Retrieval for Agents addresses bringing knowledge into the agent loop. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Grounding and Retrieval for Agents addresses bringing knowledge into the agent loop. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Grounding and Retrieval for Agents concerns bringing knowledge into the agent loop. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Grounding and Retrieval for Agents is best understood as bringing knowledge into the agent loop. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, grounding and retrieval for agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. It is foundational: later capabilities in Agentic AI are built directly on top of it.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, grounding and retrieval for agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Grounding and Retrieval for Agents cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Grounding and Retrieval for Agents cannot be understood in isolation from planning and task decomposition. Recall that planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Grounding and Retrieval for Agents cannot be understood in isolation from from chatbots to agents. Recall that from chatbots to agents concerns the shift from single responses to goal-directed loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Grounding and Retrieval for Agents cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to grounding and retrieval for agents. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to grounding and retrieval for agents. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around grounding and retrieval for agents are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around grounding and retrieval for agents are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1703,38 +1611,40 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Flow">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Flow - Grounding and Retrieval for Agents" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Grounding and Retriev…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Grounding and Retrieval…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Observability for Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Human-in-the-Loop and A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Reflection and Self-Cor…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 10. Data Flow - Grounding and Retrieval for Agents** (mermaid). Figure: Data Flow view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 10. Data Flow - Grounding and Retrieval for Agents** (drawio). Figure: Data Flow view for Grounding and Retrieval for Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into grounding and retrieval for agents. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into grounding and retrieval for agents. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into grounding and retrieval for agents. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1744,9 +1654,23 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
 
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into grounding and retrieval for agents. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+
+In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
+
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A operations organisation needs incident triage agents that gather context and act. They decide to apply grounding and retrieval for agents as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs agents that browse, synthesise and report. They decide to apply grounding and retrieval for agents as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1859,22 +1783,22 @@ if __name__ == "__main__":
 
 1. In the context of Agentic AI, which statement best describes “Grounding and Retrieval for Agents”?
    - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. Bringing knowledge into the agent loop.
-   - **Answer: D.** Grounding and Retrieval for Agents: Bringing knowledge into the agent loop.
+   - B. Bringing knowledge into the agent loop.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Grounding and Retrieval for Agents: Bringing knowledge into the agent loop.
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. Over-automating tasks that need human judgement.
-   - C. Unbounded loops that burn cost without converging.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Trace every reasoning step and tool call for debugging and audit.
    - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Cap loop steps and cost to prevent runaway behaviour.
-   - B. Over-automating tasks that need human judgement.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - A. No observability, making failures impossible to diagnose.
+   - B. It is only relevant to academic research, not production.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: No observability, making failures impossible to diagnose.
 4. *(Discussion)* Describe a failure mode of Grounding and Retrieval for Agents and how you would mitigate it.
    - **Model answer:** A strong answer defines grounding and retrieval for agents (Bringing knowledge into the agent loop.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
@@ -1887,69 +1811,43 @@ _This chapter examines human-in-the-loop and approvals within Agentic AI. It cov
 
 ## Introduction
 
-We define Human-in-the-Loop and Approvals as confirmation gates for high-impact actions. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Human-in-the-Loop and Approvals as confirmation gates for high-impact actions. It is foundational: later capabilities in Agentic AI are built directly on top of it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Human-in-the-Loop and Approvals addresses confirmation gates for high-impact actions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Human-in-the-Loop and Approvals refers to confirmation gates for high-impact actions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, human-in-the-loop and approvals is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Human-in-the-Loop and Approvals cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Human-in-the-Loop and Approvals cannot be understood in isolation from the agentic reference architecture. Recall that the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Human-in-the-Loop and Approvals cannot be understood in isolation from planning and task decomposition. Recall that planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Human-in-the-Loop and Approvals cannot be understood in isolation from the agent loop: reason, act, observe. Recall that the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to human-in-the-loop and approvals. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to human-in-the-loop and approvals. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around human-in-the-loop and approvals are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around human-in-the-loop and approvals are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Human-in-the-Loop and Approvals sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+A robust architecture for Human-in-the-Loop and Approvals is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
-```
+<div class="diagram-svg">
 
-**Figure 11. DevOps Pipeline - Human-in-the-Loop and Approvals** (mermaid). Figure: DevOps Pipeline view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="11-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnd51179d" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnd51179d)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnd51179d)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Human-in-the-Loop and Approvals</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#1e40af"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e40af" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Human-in-the-Loop</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Approvals</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#0e7490"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0e7490" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The Agentic</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Reference</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#b45309"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">The Agent Loop:</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Reason, Act,</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#9f1239"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#9f1239" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Tool Use and</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Function Calling</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#4338ca"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#4338ca" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Grounding and</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Retrieval for</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Human-in-the-Loop and Approvals  •  DevOps Pipeline</text></svg>
+
+</div>
+
+**Figure 11. DevOps Pipeline - Human-in-the-Loop and Approvals** (svg). Figure: DevOps Pipeline view for Human-in-the-Loop and Approvals. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into human-in-the-loop and approvals. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
-
-In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with observability for agents. Because observability for agents concerns tracing reasoning, tool calls and outcomes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into human-in-the-loop and approvals. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -1957,7 +1855,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the agentic reference architecture. Because the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into human-in-the-loop and approvals. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with observability for agents. Because observability for agents concerns tracing reasoning, tool calls and outcomes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2037,64 +1949,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Human-in-the-Loop and Approvals component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Human-in-the-Loop and Approvals with a regression gate
+### Listing: Implementing a Human-in-the-Loop and Approvals component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class AndApprovalsConfig:
+    """Configuration for the Human-in-the-Loop and Approvals component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Human-in-the-Loop and Approvals output against references with a simple exact-match metric.
+class AndApprovals:
+    """A minimal, production-shaped implementation of Human-in-the-Loop and Approvals."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: AndApprovalsConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"AndApprovals failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Human-in-the-Loop and Approvals goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Human-in-the-Loop and Approvals”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Confirmation gates for high-impact actions.
+   - A. Confirmation gates for high-impact actions.
+   - B. It makes the system slower but has no other effect.
    - C. It guarantees deterministic output regardless of input.
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Human-in-the-Loop and Approvals: Confirmation gates for high-impact actions.
+   - **Answer: A.** Human-in-the-Loop and Approvals: Confirmation gates for high-impact actions.
 2. Which of the following is a recommended best practice when working with Agentic AI?
    - A. It guarantees deterministic output regardless of input.
-   - B. Constrain tools with typed schemas and least-privilege permissions.
-   - C. Granting broad tool permissions that enable harmful actions.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+   - B. It makes the system slower but has no other effect.
+   - C. Trace every reasoning step and tool call for debugging and audit.
+   - D. Unbounded loops that burn cost without converging.
+   - **Answer: C.** Best practice: Trace every reasoning step and tool call for debugging and audit.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It applies exclusively to image data.
-   - B. Trace every reasoning step and tool call for debugging and audit.
-   - C. No observability, making failures impossible to diagnose.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: C.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-4. *(Discussion)* Explain Human-in-the-Loop and Approvals and why it matters in a production Agentic AI system.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Unbounded loops that burn cost without converging.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+4. *(Discussion)* Describe a failure mode of Human-in-the-Loop and Approvals and how you would mitigate it.
    - **Model answer:** A strong answer defines human-in-the-loop and approvals (Confirmation gates for high-impact actions.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2106,33 +2029,33 @@ _This chapter examines safety, sandboxing and permissions within Agentic AI. It 
 
 ## Introduction
 
-Formally, Safety, Sandboxing and Permissions addresses constraining what agents can do and access. It is foundational: later capabilities in Agentic AI are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+We define Safety, Sandboxing and Permissions as constraining what agents can do and access. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Safety, Sandboxing and Permissions can be characterised as constraining what agents can do and access. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Safety, Sandboxing and Permissions refers to constraining what agents can do and access. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, safety, sandboxing and permissions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, safety, sandboxing and permissions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Safety, Sandboxing and Permissions cannot be understood in isolation from the agentic reference architecture. Recall that the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Safety, Sandboxing and Permissions cannot be understood in isolation from reflection and self-correction. Recall that reflection and self-correction concerns critique loops, verification and error recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Safety, Sandboxing and Permissions cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Safety, Sandboxing and Permissions cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to safety, sandboxing and permissions. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to safety, sandboxing and permissions. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around safety, sandboxing and permissions are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around safety, sandboxing and permissions are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Safety, Sandboxing and Permissions is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+From an architectural standpoint, Safety, Sandboxing and Permissions sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -2142,16 +2065,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Network - Safety, Sandboxing and Permissions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Safety, Sandboxing an…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Safety, Sandboxing and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Reflection and Self-Cor…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Human-in-the-Loop and A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Agent Frameworks and Pa…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -2161,17 +2084,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 12. Network - Safety, Sandboxing and Permissions** (drawio). Figure: Network view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. Network - Safety, Sandboxing and Permissions** (drawio). Figure: Network view for Safety, Sandboxing and Permissions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into safety, sandboxing and permissions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into safety, sandboxing and permissions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the agentic reference architecture. Because the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with reflection and self-correction. Because reflection and self-correction concerns critique loops, verification and error recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2179,7 +2102,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into safety, sandboxing and permissions. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into safety, sandboxing and permissions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
@@ -2193,7 +2116,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply safety, sandboxing and permissions as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A back office organisation needs workflow automation across enterprise systems. They decide to apply safety, sandboxing and permissions as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2265,64 +2188,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Safety, Sandboxing and Permissions logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Safety, Sandboxing and Permissions with a regression gate
+### Listing: A composable processing pipeline for Safety, Sandboxing and Permissions
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Safety, Sandboxing and Permissions output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Safety, Sandboxing and Permissions."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Safety, Sandboxing and Permissions”?
-   - A. It is only relevant to academic research, not production.
+   - A. It applies exclusively to image data.
    - B. Constraining what agents can do and access.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
    - **Answer: B.** Safety, Sandboxing and Permissions: Constraining what agents can do and access.
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Unbounded loops that burn cost without converging.
-   - C. Require human approval for irreversible or high-impact actions.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
+   - A. Constrain tools with typed schemas and least-privilege permissions.
+   - B. Granting broad tool permissions that enable harmful actions.
+   - C. It applies exclusively to image data.
+   - D. No observability, making failures impossible to diagnose.
+   - **Answer: A.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. Over-automating tasks that need human judgement.
-   - D. Cap loop steps and cost to prevent runaway behaviour.
-   - **Answer: C.** Pitfall to avoid: Over-automating tasks that need human judgement.
-4. *(Discussion)* What trade-offs would you weigh when implementing Safety, Sandboxing and Permissions?
+   - B. Unbounded loops that burn cost without converging.
+   - C. Trace every reasoning step and tool call for debugging and audit.
+   - D. Require human approval for irreversible or high-impact actions.
+   - **Answer: B.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+4. *(Discussion)* Walk through how you would design Safety, Sandboxing and Permissions for an enterprise Agentic AI workload.
    - **Model answer:** A strong answer defines safety, sandboxing and permissions (Constraining what agents can do and access.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2334,23 +2274,23 @@ _This chapter examines cost, latency and loop control within Agentic AI. It cove
 
 ## Introduction
 
-At its core, Cost, Latency and Loop Control concerns budgeting steps, preventing runaway loops and caching. This concept recurs throughout the Agentic AI lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Cost, Latency and Loop Control refers to budgeting steps, preventing runaway loops and caching. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Cost, Latency and Loop Control concerns budgeting steps, preventing runaway loops and caching. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Cost, Latency and Loop Control addresses budgeting steps, preventing runaway loops and caching. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, cost, latency and loop control is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions.
 
-Cost, Latency and Loop Control cannot be understood in isolation from reflection and self-correction. Recall that reflection and self-correction concerns critique loops, verification and error recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Cost, Latency and Loop Control cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Cost, Latency and Loop Control cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Latency and Loop Control cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to cost, latency and loop control. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, latency and loop control. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, latency and loop control are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, latency and loop control are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2360,21 +2300,43 @@ Concretely, the principal building blocks include from chatbots to agents, the a
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="grid_matrix" data-pal="0-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnd556f02" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnd556f02)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnd556f02)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Cost, Latency and Loop Control</text><text x="276" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Plan</text><text x="430" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Build</text><text x="582" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Run</text><text x="736" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Improve</text><text x="188" y="119" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Safety, Sandboxing and</text><text x="188" y="131" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Permissions</text><rect x="203" y="93" width="147" height="64" rx="8" fill="#a78bfa"/><rect x="203" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#c4b5fd"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#4338ca"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#6d28d9"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><text x="188" y="189" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Cost, Latency and Loop</text><text x="188" y="201" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Control</text><rect x="203" y="163" width="147" height="64" rx="8" fill="#c4b5fd"/><rect x="203" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#4338ca"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#6d28d9"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#7c3aed"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><text x="188" y="265" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Evaluating Agents</text><rect x="203" y="233" width="147" height="64" rx="8" fill="#4338ca"/><rect x="203" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#6d28d9"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#7c3aed"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#8b5cf6"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><text x="188" y="329" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Agent Frameworks and</text><text x="188" y="341" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Patterns</text><rect x="203" y="303" width="147" height="64" rx="8" fill="#6d28d9"/><rect x="203" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#7c3aed"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#8b5cf6"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#a78bfa"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  Operating Model</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="10-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn6ef2189" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#15803d"/><stop offset="1" stop-color="#16a34a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn6ef2189)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn6ef2189)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Cost, Latency and Loop Control</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#15803d" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and Loop</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Control</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#16a34a" filter="url(#sh)"/><text x="388" y="109" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability for Agents</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#22c55e" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Human-in-the-Loop and</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Approvals</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#4ade80" filter="url(#sh)"/><text x="708" y="109" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#16a34a" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and Loop</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Control</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#22c55e" filter="url(#sh)"/><text x="388" y="209" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability for Agents</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#4ade80" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Human-in-the-Loop and</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Approvals</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#14532d" filter="url(#sh)"/><text x="708" y="209" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#22c55e" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and Loop</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Control</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#4ade80" filter="url(#sh)"/><text x="388" y="309" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability for Agents</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#14532d" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Human-in-the-Loop and</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Approvals</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#166534" filter="url(#sh)"/><text x="708" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Cost, Latency and Loop Control  •  Operating Model</text></svg>
 
 </div>
 
-**Figure 13. Operating Model - Cost, Latency and Loop Control** (svg). Figure: Operating Model view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Operating Model - Cost, Latency and Loop Control** (svg). Figure: Operating Model view for Cost, Latency and Loop Control. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="3-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnf83a3a6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb923c"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnf83a3a6)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnf83a3a6)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Cost, Latency and Loop Control</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#fb923c"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#fb923c" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Cost, Latency and</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Loop Control</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#b45309"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Observability for</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Agents</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#d97706"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#d97706" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Human-in-the-Loop</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Approvals</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#f59e0b"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#f59e0b" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Memory</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Architectures</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#ea580c"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#ea580c" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Planning and Task</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Decomposition</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Cost, Latency and Loop Control  •  Application Flow</text></svg>
+
+</div>
+
+**Figure 14. Application Flow - Cost, Latency and Loop Control** (svg). Figure: Application Flow view for Cost, Latency and Loop Control. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, latency and loop control. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, latency and loop control. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with observability for agents. Because observability for agents concerns tracing reasoning, tool calls and outcomes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into cost, latency and loop control. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -2384,23 +2346,9 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
 
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into cost, latency and loop control. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
-In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with evaluating agents. Because evaluating agents concerns task success, trajectory quality and robustness benchmarks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Yao et al. — ReAct (2022) and Shinn et al. — Reflexion (2023). These primary sources reward careful reading and ground the practical guidance above in established results.
-
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply cost, latency and loop control as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply cost, latency and loop control as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2529,24 +2477,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Cost, Latency and Loop Control”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Budgeting steps, preventing runaway loops and caching.
-   - **Answer: D.** Cost, Latency and Loop Control: Budgeting steps, preventing runaway loops and caching.
-2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. It is only relevant to academic research, not production.
-   - D. Granting broad tool permissions that enable harmful actions.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Require human approval for irreversible or high-impact actions.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. It guarantees deterministic output regardless of input.
-   - C. Granting broad tool permissions that enable harmful actions.
+   - C. Budgeting steps, preventing runaway loops and caching.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Cost, Latency and Loop Control: Budgeting steps, preventing runaway loops and caching.
+2. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It applies exclusively to image data.
+   - B. Granting broad tool permissions that enable harmful actions.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
    - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-4. *(Discussion)* Explain Cost, Latency and Loop Control and why it matters in a production Agentic AI system.
+   - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Granting broad tool permissions that enable harmful actions.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. Require human approval for irreversible or high-impact actions.
+   - **Answer: A.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+4. *(Discussion)* Describe a failure mode of Cost, Latency and Loop Control and how you would mitigate it.
    - **Model answer:** A strong answer defines cost, latency and loop control (Budgeting steps, preventing runaway loops and caching.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2558,23 +2506,23 @@ _This chapter examines evaluating agents within Agentic AI. It covers task succe
 
 ## Introduction
 
-We define Evaluating Agents as task success, trajectory quality and robustness benchmarks. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Evaluating Agents addresses task success, trajectory quality and robustness benchmarks. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Evaluating Agents as task success, trajectory quality and robustness benchmarks. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Evaluating Agents as task success, trajectory quality and robustness benchmarks. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, evaluating agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, evaluating agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. It is foundational: later capabilities in Agentic AI are built directly on top of it.
 
-Evaluating Agents cannot be understood in isolation from from chatbots to agents. Recall that from chatbots to agents concerns the shift from single responses to goal-directed loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluating Agents cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Evaluating Agents cannot be understood in isolation from the agent loop: reason, act, observe. Recall that the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Evaluating Agents cannot be understood in isolation from planning and task decomposition. Recall that planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to evaluating agents. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluating agents. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluating agents are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluating agents are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2584,25 +2532,65 @@ Concretely, the principal building blocks include from chatbots to agents, the a
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="Application Flow">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Application Flow - Evaluating Agents" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluating Agents" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluating Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Human-in-the-Loop and A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Grounding and Retrieval…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="4-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8122589" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8122589)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8122589)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Evaluating Agents</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="104" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool Use and Function</text><text x="104" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Calling</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="262" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reflection and</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Self-Correction</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#db2777" filter="url(#sh)"/><text x="578" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Grounding and</text><text x="578" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Retrieval for Agents</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="736" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Human-in-the-Loop and</text><text x="736" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Approvals</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  Application Flow</text></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
+**Figure 15. Application Flow - Evaluating Agents** (drawio). Figure: Application Flow view for Evaluating Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 14. Application Flow - Evaluating Agents** (svg). Figure: Application Flow view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```plantuml
+@startuml
+title Class - Evaluating Agents
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 16. Class - Evaluating Agents** (plantuml). Figure: Class view for Evaluating Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluating agents. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluating agents. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with memory architectures. Because memory architectures concerns short-term context, long-term vector memory and episodic recall, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2610,13 +2598,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluating agents. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluating agents. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with human-in-the-loop and approvals. Because human-in-the-loop and approvals concerns confirmation gates for high-impact actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent frameworks and patterns. Because agent frameworks and patterns concerns comparing frameworks and reusable design patterns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2624,7 +2612,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A operations organisation needs incident triage agents that gather context and act. They decide to apply evaluating agents as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A back office organisation needs workflow automation across enterprise systems. They decide to apply evaluating agents as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2696,75 +2684,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluating Agents component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
+Pipelines keep Evaluating Agents logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluating Agents component
+### Listing: A composable processing pipeline for Evaluating Agents
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class EvaluatingAgentsConfig:
-    """Configuration for the Evaluating Agents component in a Agentic AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class EvaluatingAgents:
-    """A minimal, production-shaped implementation of Evaluating Agents."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Evaluating Agents."""
 
-    def __init__(self, config: EvaluatingAgentsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluatingAgents failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluating Agents goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Evaluating Agents”?
-   - A. Task success, trajectory quality and robustness benchmarks.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Evaluating Agents: Task success, trajectory quality and robustness benchmarks.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Task success, trajectory quality and robustness benchmarks.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Evaluating Agents: Task success, trajectory quality and robustness benchmarks.
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Over-automating tasks that need human judgement.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Require human approval for irreversible or high-impact actions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. No observability, making failures impossible to diagnose.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-4. *(Discussion)* What trade-offs would you weigh when implementing Evaluating Agents?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Unbounded loops that burn cost without converging.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+4. *(Discussion)* How does Evaluating Agents interact with security and governance requirements?
    - **Model answer:** A strong answer defines evaluating agents (Task success, trajectory quality and robustness benchmarks.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2776,27 +2770,27 @@ _This chapter examines agent frameworks and patterns within Agentic AI. It cover
 
 ## Introduction
 
-In practical terms, Agent Frameworks and Patterns is best understood as comparing frameworks and reusable design patterns. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Agent Frameworks and Patterns is best understood as comparing frameworks and reusable design patterns. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Agent Frameworks and Patterns concerns comparing frameworks and reusable design patterns. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Agent Frameworks and Patterns as comparing frameworks and reusable design patterns. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, agent frameworks and patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, agent frameworks and patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Getting this right early prevents expensive rework once a Agentic AI system reaches scale.
 
-Agent Frameworks and Patterns cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Agent Frameworks and Patterns cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Agent Frameworks and Patterns cannot be understood in isolation from evaluating agents. Recall that evaluating agents concerns task success, trajectory quality and robustness benchmarks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Agent Frameworks and Patterns cannot be understood in isolation from cost, latency and loop control. Recall that cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to agent frameworks and patterns. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to agent frameworks and patterns. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around agent frameworks and patterns are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around agent frameworks and patterns are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Agent Frameworks and Patterns sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+The reference architecture for Agent Frameworks and Patterns separates concerns into clearly bounded components with explicit contracts. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -2821,17 +2815,46 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 15. Class - Agent Frameworks and Patterns** (plantuml). Figure: Class view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 17. Class - Agent Frameworks and Patterns** (plantuml). Figure: Class view for Agent Frameworks and Patterns. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Lineage">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Lineage - Agent Frameworks and Patterns" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Agent Frameworks and …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Agent Frameworks and Pa…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Cost, Latency and Loop …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Observability for Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 18. Data Lineage - Agent Frameworks and Patterns** (drawio). Figure: Data Lineage view for Agent Frameworks and Patterns. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into agent frameworks and patterns. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2839,13 +2862,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into agent frameworks and patterns. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into agent frameworks and patterns. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating agents. Because evaluating agents concerns task success, trajectory quality and robustness benchmarks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the agent loop: reason, act, observe. Because the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2853,7 +2876,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A operations organisation needs incident triage agents that gather context and act. They decide to apply agent frameworks and patterns as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A back office organisation needs workflow automation across enterprise systems. They decide to apply agent frameworks and patterns as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2925,63 +2948,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Agent Frameworks and Patterns component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Agent Frameworks and Patterns with a regression gate
+### Listing: Implementing a Agent Frameworks and Patterns component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class AgentFrameworksAndConfig:
+    """Configuration for the Agent Frameworks and Patterns component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Agent Frameworks and Patterns output against references with a simple exact-match metric.
+class AgentFrameworksAnd:
+    """A minimal, production-shaped implementation of Agent Frameworks and Patterns."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: AgentFrameworksAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"AgentFrameworksAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Agent Frameworks and Patterns goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Agent Frameworks and Patterns”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Comparing frameworks and reusable design patterns.
-   - **Answer: D.** Agent Frameworks and Patterns: Comparing frameworks and reusable design patterns.
-2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. Over-automating tasks that need human judgement.
-   - C. It is only relevant to academic research, not production.
+   - A. Comparing frameworks and reusable design patterns.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Trace every reasoning step and tool call for debugging and audit.
+   - **Answer: A.** Agent Frameworks and Patterns: Comparing frameworks and reusable design patterns.
+2. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It removes all security and governance requirements.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. Unbounded loops that burn cost without converging.
+   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. Over-automating tasks that need human judgement.
-   - C. Trace every reasoning step and tool call for debugging and audit.
+   - A. Trace every reasoning step and tool call for debugging and audit.
+   - B. It applies exclusively to image data.
+   - C. No observability, making failures impossible to diagnose.
    - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - **Answer: C.** Pitfall to avoid: No observability, making failures impossible to diagnose.
 4. *(Discussion)* Describe a failure mode of Agent Frameworks and Patterns and how you would mitigate it.
    - **Model answer:** A strong answer defines agent frameworks and patterns (Comparing frameworks and reusable design patterns.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
@@ -2994,41 +3028,62 @@ _This chapter examines observability for agents within Agentic AI. It covers tra
 
 ## Introduction
 
-At its core, Observability for Agents concerns tracing reasoning, tool calls and outcomes. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Observability for Agents is best understood as tracing reasoning, tool calls and outcomes. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Observability for Agents concerns tracing reasoning, tool calls and outcomes. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Observability for Agents as tracing reasoning, tool calls and outcomes. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, observability for agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. This concept recurs throughout the Agentic AI lifecycle, from design to operations.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, observability for agents is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. It is foundational: later capabilities in Agentic AI are built directly on top of it.
 
-Observability for Agents cannot be understood in isolation from reflection and self-correction. Recall that reflection and self-correction concerns critique loops, verification and error recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Observability for Agents cannot be understood in isolation from from chatbots to agents. Recall that from chatbots to agents concerns the shift from single responses to goal-directed loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Observability for Agents cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Observability for Agents cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to observability for agents. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to observability for agents. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around observability for agents are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around observability for agents are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Observability for Agents sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+A robust architecture for Observability for Agents is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Lineage">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Lineage - Observability for Agents" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Observability for Age…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Observability for Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Agent Frameworks and Pa…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="tree" data-pal="11-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn2a0c45" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn2a0c45)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn2a0c45)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Lineage - Observability for Agents</text><rect x="330" y="70" width="180" height="48" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="94" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agentic AI</text><path d="M420,118 C420,170 108,160 108,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="30" y="210" width="156" height="46" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="108" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agent Loop: Reason, Act,</text><text x="108" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observe</text><line x1="108" y1="256" x2="108" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="38" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="108" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Planning and Task</text><text x="108" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Decomposition</text><path d="M420,118 C420,170 316,160 316,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="238" y="210" width="156" height="46" rx="11" fill="#b45309" filter="url(#sh)"/><text x="316" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Planning and Task</text><text x="316" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Decomposition</text><line x1="316" y1="256" x2="316" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="246" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="316" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">The Agentic Reference</text><text x="316" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Architecture</text><path d="M420,118 C420,170 524,160 524,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="446" y="210" width="156" height="46" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="524" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool Use and Function</text><text x="524" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Calling</text><line x1="524" y1="256" x2="524" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="454" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="524" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Agent Frameworks and</text><text x="524" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Patterns</text><path d="M420,118 C420,170 732,160 732,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="654" y="210" width="156" height="46" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="732" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><line x1="732" y1="256" x2="732" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="662" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="732" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Memory Architectures</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  Data Lineage</text></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
-
-**Figure 16. Data Lineage - Observability for Agents** (svg). Figure: Data Lineage view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 19. Data Lineage - Observability for Agents** (drawio). Figure: Data Lineage view for Observability for Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
@@ -3048,17 +3103,17 @@ Gateway --> User : response
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 17. Sequence - Observability for Agents** (plantuml). Figure: Sequence view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 20. Sequence - Observability for Agents** (plantuml). Figure: Sequence view for Observability for Agents. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into observability for agents. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into observability for agents. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reflection and self-correction. Because reflection and self-correction concerns critique loops, verification and error recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3066,13 +3121,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into observability for agents. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into observability for agents. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with reflection and self-correction. Because reflection and self-correction concerns critique loops, verification and error recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and loop control. Because cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3080,7 +3135,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A operations organisation needs incident triage agents that gather context and act. They decide to apply observability for agents as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply observability for agents as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3152,81 +3207,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Observability for Agents logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Observability for Agents component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Observability for Agents
+### Listing: Implementing a Observability for Agents component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class ObservabilityForAgentsConfig:
+    """Configuration for the Observability for Agents component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Observability for Agents."""
+class ObservabilityForAgents:
+    """A minimal, production-shaped implementation of Observability for Agents."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: ObservabilityForAgentsConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"ObservabilityForAgents failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Observability for Agents goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Observability for Agents”?
-   - A. It removes all security and governance requirements.
-   - B. Tracing reasoning, tool calls and outcomes.
+   - A. Tracing reasoning, tool calls and outcomes.
+   - B. It makes the system slower but has no other effect.
    - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Observability for Agents: Tracing reasoning, tool calls and outcomes.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Observability for Agents: Tracing reasoning, tool calls and outcomes.
 2. Which of the following is a recommended best practice when working with Agentic AI?
    - A. It is only relevant to academic research, not production.
-   - B. Over-automating tasks that need human judgement.
-   - C. No observability, making failures impossible to diagnose.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: D.** Best practice: Require human approval for irreversible or high-impact actions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. Cap loop steps and cost to prevent runaway behaviour.
+   - **Answer: D.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Unbounded loops that burn cost without converging.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: A.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-4. *(Discussion)* Walk through how you would design Observability for Agents for an enterprise Agentic AI workload.
+   - A. Over-automating tasks that need human judgement.
+   - B. Constrain tools with typed schemas and least-privilege permissions.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Over-automating tasks that need human judgement.
+4. *(Discussion)* How does Observability for Agents interact with security and governance requirements?
    - **Model answer:** A strong answer defines observability for agents (Tracing reasoning, tool calls and outcomes.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3238,23 +3287,23 @@ _This chapter examines the agentic reference architecture within Agentic AI. It 
 
 ## Introduction
 
-The Agentic Reference Architecture can be characterised as orchestrator, tools, memory and guardrails as a platform. It is foundational: later capabilities in Agentic AI are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+In practical terms, The Agentic Reference Architecture is best understood as orchestrator, tools, memory and guardrails as a platform. It is foundational: later capabilities in Agentic AI are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, The Agentic Reference Architecture is best understood as orchestrator, tools, memory and guardrails as a platform. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, The Agentic Reference Architecture is best understood as orchestrator, tools, memory and guardrails as a platform. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, the agentic reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
 
-The Agentic Reference Architecture cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+The Agentic Reference Architecture cannot be understood in isolation from reflection and self-correction. Recall that reflection and self-correction concerns critique loops, verification and error recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-The Agentic Reference Architecture cannot be understood in isolation from reflection and self-correction. Recall that reflection and self-correction concerns critique loops, verification and error recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+The Agentic Reference Architecture cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to the agentic reference architecture. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the agentic reference architecture. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around the agentic reference architecture are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the agentic reference architecture are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3264,65 +3313,37 @@ Concretely, the principal building blocks include from chatbots to agents, the a
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant U as User
-  participant G as Gateway
-  participant P as Processor
-  participant D as Data Store
-  U->>G: Submit request
-  G->>G: Validate & authorise
-  G->>P: Dispatch task
-  P->>D: Retrieve context
-  D-->>P: Return records
-  P->>P: Process & reason
-  P-->>G: Result + metadata
-  G-->>U: Response (with provenance)
+```plantuml
+@startuml
+title Sequence - The Agentic Reference Architecture
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
 ```
 
-**Figure 18. Sequence - The Agentic Reference Architecture** (mermaid). Figure: Sequence view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Deployment">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Deployment - The Agentic Reference Architecture" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 19. Deployment - The Agentic Reference Architecture** (drawio). Figure: Deployment view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 21. Sequence - The Agentic Reference Architecture** (plantuml). Figure: Sequence view for The Agentic Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the agentic reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the agentic reference architecture. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with reflection and self-correction. Because reflection and self-correction concerns critique loops, verification and error recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3330,13 +3351,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into the agentic reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the agentic reference architecture. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluating agents. Because evaluating agents concerns task success, trajectory quality and robustness benchmarks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and loop control. Because cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3344,7 +3365,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply the agentic reference architecture as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A operations organisation needs incident triage agents that gather context and act. They decide to apply the agentic reference architecture as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3416,51 +3437,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven The Agentic Reference Architecture component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
+Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a The Agentic Reference Architecture component
+### Listing: Evaluating The Agentic Reference Architecture with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class TheAgenticReferenceConfig:
-    """Configuration for the The Agentic Reference Architecture component in a Agentic AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class TheAgenticReference:
-    """A minimal, production-shaped implementation of The Agentic Reference Architecture."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score The Agentic Reference Architecture output against references with a simple exact-match metric.
 
-    def __init__(self, config: TheAgenticReferenceConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"TheAgenticReference failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for The Agentic Reference Architecture goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -3469,22 +3479,22 @@ class TheAgenticReference:
 1. In the context of Agentic AI, which statement best describes “The Agentic Reference Architecture”?
    - A. Orchestrator, tools, memory and guardrails as a platform.
    - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: A.** The Agentic Reference Architecture: Orchestrator, tools, memory and guardrails as a platform.
 2. Which of the following is a recommended best practice when working with Agentic AI?
    - A. Granting broad tool permissions that enable harmful actions.
-   - B. Cap loop steps and cost to prevent runaway behaviour.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Unbounded loops that burn cost without converging.
-   - **Answer: B.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+   - B. Over-automating tasks that need human judgement.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. Over-automating tasks that need human judgement.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: C.** Pitfall to avoid: Over-automating tasks that need human judgement.
-4. *(Discussion)* Describe a failure mode of The Agentic Reference Architecture and how you would mitigate it.
+   - A. Over-automating tasks that need human judgement.
+   - B. Require human approval for irreversible or high-impact actions.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Over-automating tasks that need human judgement.
+4. *(Discussion)* How would you test and monitor The Agentic Reference Architecture in production?
    - **Model answer:** A strong answer defines the agentic reference architecture (Orchestrator, tools, memory and guardrails as a platform.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3496,23 +3506,23 @@ _This chapter examines putting it together: a reference implementation within Ag
 
 ## Introduction
 
-Putting It Together: A Reference Implementation refers to an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole. It is foundational: later capabilities in Agentic AI are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Putting It Together: A Reference Implementation can be characterised as an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole. This concept recurs throughout the Agentic AI lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Putting It Together: A Reference Implementation concerns an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. This concept recurs throughout the Agentic AI lifecycle, from design to operations.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Putting It Together: A Reference Implementation cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from the agentic reference architecture. Recall that the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3522,46 +3532,40 @@ Concretely, the principal building blocks include from chatbots to agents, the a
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Deployment">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Deployment - Putting It Together: A Reference Implementation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Deployment - Putting It Together: A Reference Implementation
+package "Putting It Together: A Reference Implementation Platform" {
+  component "Putting It Together: A …" as C0
+  component "Safety, Sandboxing and …" as C1
+  component "Tool Use and Function C…" as C2
+  component "Planning and Task Decom…" as C3
+  component "Reflection and Self-Cor…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 20. Deployment - Putting It Together: A Reference Implementation** (drawio). Figure: Deployment view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 22. Deployment - Putting It Together: A Reference Implementation** (plantuml). Figure: Deployment view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding and retrieval for agents. Because grounding and retrieval for agents concerns bringing knowledge into the agent loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3569,13 +3573,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the agentic reference architecture. Because the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with human-in-the-loop and approvals. Because human-in-the-loop and approvals concerns confirmation gates for high-impact actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3583,7 +3587,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply putting it together: a reference implementation as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs agents that browse, synthesise and report. They decide to apply putting it together: a reference implementation as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3706,24 +3710,24 @@ class PuttingIt:
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
+   - A. It removes all security and governance requirements.
+   - B. an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. Over-automating tasks that need human judgement.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: D.** Best practice: Require human approval for irreversible or high-impact actions.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. It is only relevant to academic research, not production.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
    - D. Over-automating tasks that need human judgement.
-   - **Answer: D.** Pitfall to avoid: Over-automating tasks that need human judgement.
-4. *(Discussion)* Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
+   - **Answer: C.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Constrain tools with typed schemas and least-privilege permissions.
+   - C. No observability, making failures impossible to diagnose.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+4. *(Discussion)* Explain Putting It Together: A Reference Implementation and why it matters in a production Agentic AI system.
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3735,51 +3739,56 @@ _This chapter examines hands-on lab: building an end-to-end agentic ai system wi
 
 ## Introduction
 
-Formally, Hands-On Lab: Building an End-to-End Agentic AI System addresses a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Hands-On Lab: Building an End-to-End Agentic AI System can be characterised as a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Hands-On Lab: Building an End-to-End Agentic AI System can be characterised as a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Hands-On Lab: Building an End-to-End Agentic AI System can be characterised as a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, hands-on lab: building an end-to-end agentic ai system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, hands-on lab: building an end-to-end agentic ai system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. This concept recurs throughout the Agentic AI lifecycle, from design to operations.
 
-Hands-On Lab: Building an End-to-End Agentic AI System cannot be understood in isolation from planning and task decomposition. Recall that planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End Agentic AI System cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Hands-On Lab: Building an End-to-End Agentic AI System cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Hands-On Lab: Building an End-to-End Agentic AI System cannot be understood in isolation from reflection and self-correction. Recall that reflection and self-correction concerns critique loops, verification and error recovery. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end agentic ai system. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end agentic ai system. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end agentic ai system are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around hands-on lab: building an end-to-end agentic ai system are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Hands-On Lab: Building an End-to-End Agentic AI System sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+A robust architecture for Hands-On Lab: Building an End-to-End Agentic AI System is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="10-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8533f18" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#14532d"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8533f18)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8533f18)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Hands-On Lab: Building an End-to-End Agentic AI System</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#4ade80" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Frameworks and</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#14532d" filter="url(#sh)"/><text x="388" y="109" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability for Agents</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#166534" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agentic Reference</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#15803d" filter="url(#sh)"/><text x="708" y="109" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">From Chatbots to Agents</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#14532d" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Frameworks and</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#166534" filter="url(#sh)"/><text x="388" y="209" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability for Agents</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#15803d" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agentic Reference</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#16a34a" filter="url(#sh)"/><text x="708" y="209" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">From Chatbots to Agents</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#166534" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Human-in-the-Loop and</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Approvals</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#15803d" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety, Sandboxing and</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Permissions</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#16a34a" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and Loop</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Control</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#22c55e" filter="url(#sh)"/><text x="708" y="309" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Agents</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  Business Process</text></svg>
-
-</div>
-
-**Figure 21. Business Process - Hands-On Lab: Building an End-to-End Agentic AI System** (svg). Figure: Business Process view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 23. Business Process - Hands-On Lab: Building an End-to-End Agentic AI System** (mermaid). Figure: Business Process view for Hands-On Lab: Building an End-to-End Agentic AI System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into hands-on lab: building an end-to-end agentic ai system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with planning and task decomposition. Because planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with memory architectures. Because memory architectures concerns short-term context, long-term vector memory and episodic recall, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3787,13 +3796,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end agentic ai system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end agentic ai system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with planning and task decomposition. Because planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating agents. Because evaluating agents concerns task success, trajectory quality and robustness benchmarks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3801,7 +3810,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A operations organisation needs incident triage agents that gather context and act. They decide to apply hands-on lab: building an end-to-end agentic ai system as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A back office organisation needs workflow automation across enterprise systems. They decide to apply hands-on lab: building an end-to-end agentic ai system as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3873,57 +3882,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Hands-On Lab: Building an End-to-End Agentic AI System logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Hands-On Lab: Building an End-to-End Agentic AI System
+### Listing: Evaluating Hands-On Lab: Building an End-to-End Agentic AI System with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Hands-On Lab: Building an End-to-End Agentic AI System."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Hands-On Lab: Building an End-to-End Agentic AI System output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -3931,23 +3923,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Agentic AI, which statement best describes “Hands-On Lab: Building an End-to-End Agentic AI System”?
    - A. a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Hands-On Lab: Building an End-to-End Agentic AI System: a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. Unbounded loops that burn cost without converging.
-   - **Answer: C.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. It makes the system slower but has no other effect.
-   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
    - D. No observability, making failures impossible to diagnose.
-   - **Answer: D.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-4. *(Discussion)* What trade-offs would you weigh when implementing Hands-On Lab: Building an End-to-End Agentic AI System?
+   - **Answer: A.** Best practice: Trace every reasoning step and tool call for debugging and audit.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. No observability, making failures impossible to diagnose.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+4. *(Discussion)* How does Hands-On Lab: Building an End-to-End Agentic AI System interact with security and governance requirements?
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end agentic ai system (a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3959,91 +3951,47 @@ _This chapter examines case study: software at scale within Agentic AI. It cover
 
 ## Introduction
 
-Formally, Case Study: Software at Scale addresses a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+At its core, Case Study: Software at Scale concerns a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes. It is foundational: later capabilities in Agentic AI are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Case Study: Software at Scale can be characterised as a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Case Study: Software at Scale addresses a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, case study: software at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, case study: software at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Case Study: Software at Scale cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Case Study: Software at Scale cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Case Study: Software at Scale cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Case Study: Software at Scale cannot be understood in isolation from cost, latency and loop control. Recall that cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to case study: software at scale. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: software at scale. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: software at scale are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: software at scale are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Case Study: Software at Scale is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+The reference architecture for Case Study: Software at Scale separates concerns into clearly bounded components with explicit contracts. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Architecture - Case Study: Software at Scale" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="concentric" data-pal="4-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn34c40a8" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f1239"/><stop offset="1" stop-color="#be123c"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn34c40a8)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn34c40a8)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Case Study: Software at Scale</text><circle cx="420.0" cy="238.0" r="150" fill="#9f1239"/><text x="420" y="110" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Case Study: Software at Scale</text><circle cx="420.0" cy="238.0" r="116" fill="#be123c"/><text x="420" y="138" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Grounding and Retrieval for</text><text x="420" y="150" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Agents</text><circle cx="420.0" cy="238.0" r="82" fill="#e11d48"/><text x="420" y="178" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Cost, Latency and Loop Control</text><circle cx="420.0" cy="238.0" r="48" fill="#f43f5e"/><text x="420" y="212" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">From Chatbots to Agents</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Case Study: Software at Scale  •  Architecture</text></svg>
 
-**Figure 22. Architecture - Case Study: Software at Scale** (drawio). Figure: Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
 
-```plantuml
-@startuml
-title Component - Case Study: Software at Scale
-package "Agentic AI Platform" {
-  component "From Chatbots to Agents" as C0
-  component "The Agent Loop: Reason,…" as C1
-  component "Planning and Task Decom…" as C2
-  component "Tool Use and Function C…" as C3
-  component "Memory Architectures" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 23. Component - Case Study: Software at Scale** (plantuml). Figure: Component view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. Architecture - Case Study: Software at Scale** (svg). Figure: Architecture view for Case Study: Software at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: software at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: software at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -4055,13 +4003,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into case study: software at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: software at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with planning and task decomposition. Because planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4069,7 +4017,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply case study: software at scale as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A research organisation needs agents that browse, synthesise and report. They decide to apply case study: software at scale as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4141,81 +4089,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Case Study: Software at Scale logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Case Study: Software at Scale component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Case Study: Software at Scale
+### Listing: Implementing a Case Study: Software at Scale component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CaseSoftwareConfig:
+    """Configuration for the Case Study: Software at Scale component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Case Study: Software at Scale."""
+class CaseSoftware:
+    """A minimal, production-shaped implementation of Case Study: Software at Scale."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CaseSoftwareConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CaseSoftware failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Case Study: Software at Scale goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Case Study: Software at Scale”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
-   - **Answer: D.** Case Study: Software at Scale: a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
-2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. Trace every reasoning step and tool call for debugging and audit.
-   - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Unbounded loops that burn cost without converging.
-   - B. It applies exclusively to image data.
+   - A. a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It is only relevant to academic research, not production.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: A.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-4. *(Discussion)* What trade-offs would you weigh when implementing Case Study: Software at Scale?
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Case Study: Software at Scale: a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
+2. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Unbounded loops that burn cost without converging.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+4. *(Discussion)* How would you test and monitor Case Study: Software at Scale in production?
    - **Model answer:** A strong answer defines case study: software at scale (a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4227,85 +4169,82 @@ _This chapter examines operating in production within Agentic AI. It covers the 
 
 ## Introduction
 
-We define Operating in Production as the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Formally, Operating in Production addresses the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Operating in Production concerns the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Operating in Production addresses the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Getting this right early prevents expensive rework once a Agentic AI system reaches scale.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Operating in Production cannot be understood in isolation from from chatbots to agents. Recall that from chatbots to agents concerns the shift from single responses to goal-directed loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Operating in Production cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Operating in Production cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Operating in Production cannot be understood in isolation from agent frameworks and patterns. Recall that agent frameworks and patterns concerns comparing frameworks and reusable design patterns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to operating in production. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Operating in Production sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+A robust architecture for Operating in Production is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Component - Operating in Production
-package "Agentic AI Platform" {
-  component "From Chatbots to Agents" as C0
-  component "The Agent Loop: Reason,…" as C1
-  component "Planning and Task Decom…" as C2
-  component "Tool Use and Function C…" as C3
-  component "Memory Architectures" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Operating in Production Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Operating in Production]
+    S1[Safety, Sandboxing and Pe…]
+    S2[Agent Frameworks and Patt…]
+    S3[From Chatbots to Agents]
+    S4[Cost, Latency and Loop Co…]
+    S5[Tool Use and Function Cal…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 24. Component - Operating in Production** (plantuml). Figure: Component view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Agent Architecture - Operating in Production
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 25. Agent Architecture - Operating in Production** (plantuml). Figure: Agent Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 25. Component - Operating in Production** (mermaid). Figure: Component view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4313,13 +4252,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with reflection and self-correction. Because reflection and self-correction concerns critique loops, verification and error recovery, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4327,7 +4266,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A research organisation needs agents that browse, synthesise and report. They decide to apply operating in production as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A back office organisation needs workflow automation across enterprise systems. They decide to apply operating in production as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4399,75 +4338,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Operating in Production component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
+Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Operating in Production component
+### Listing: A composable processing pipeline for Operating in Production
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class OperatingInProductionConfig:
-    """Configuration for the Operating in Production component in a Agentic AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class OperatingInProduction:
-    """A minimal, production-shaped implementation of Operating in Production."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Operating in Production."""
 
-    def __init__(self, config: OperatingInProductionConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"OperatingInProduction failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Operating in Production goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Operating in Production”?
-   - A. the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Operating in Production: the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
-2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Unbounded loops that burn cost without converging.
-   - D. Cap loop steps and cost to prevent runaway behaviour.
-   - **Answer: D.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. It is only relevant to academic research, not production.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. Unbounded loops that burn cost without converging.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: D.** Operating in Production: the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
+2. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Constrain tools with typed schemas and least-privilege permissions.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. No observability, making failures impossible to diagnose.
+   - **Answer: A.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It makes the system slower but has no other effect.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
    - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-4. *(Discussion)* What trade-offs would you weigh when implementing Operating in Production?
+   - **Answer: B.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+4. *(Discussion)* Describe a failure mode of Operating in Production and how you would mitigate it.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4479,51 +4424,91 @@ _This chapter examines evaluation and quality assurance within Agentic AI. It co
 
 ## Introduction
 
-In practical terms, Evaluation and Quality Assurance is best understood as a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Evaluation and Quality Assurance addresses a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
 
-Evaluation and Quality Assurance cannot be understood in isolation from cost, latency and loop control. Recall that cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Quality Assurance cannot be understood in isolation from from chatbots to agents. Recall that from chatbots to agents concerns the shift from single responses to goal-directed loops. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Evaluation and Quality Assurance cannot be understood in isolation from the agentic reference architecture. Recall that the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Quality Assurance cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Evaluation and Quality Assurance is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title Agent Architecture - Evaluation and Quality Assurance
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="11-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnbb1ff" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnbb1ff)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnbb1ff)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Agent Architecture - Evaluation and Quality Assurance</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="420" y="108" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluating Agents</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Agent Frameworks and</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#b45309" filter="url(#sh)"/><text x="496" y="343" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability for Agents</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agentic Reference</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">From Chatbots to Agents</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  Agent Architecture</text></svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
+**Figure 26. Agent Architecture - Evaluation and Quality Assurance** (plantuml). Figure: Agent Architecture view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 26. Agent Architecture - Evaluation and Quality Assurance** (svg). Figure: Agent Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```xml
+<mxfile host="ai-university">
+  <diagram name="RAG Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="RAG Architecture - Evaluation and Quality Assurance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluation and Qualit…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluation and Quality …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Safety, Sandboxing and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Agent Frameworks and Pa…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Grounding and Retrieval…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 27. RAG Architecture - Evaluation and Quality Assurance** (drawio). Figure: RAG Architecture view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost, latency and loop control. Because cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4531,13 +4516,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding and retrieval for agents. Because grounding and retrieval for agents concerns bringing knowledge into the agent loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent frameworks and patterns. Because agent frameworks and patterns concerns comparing frameworks and reusable design patterns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4545,7 +4530,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A research organisation needs agents that browse, synthesise and report. They decide to apply evaluation and quality assurance as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A back office organisation needs workflow automation across enterprise systems. They decide to apply evaluation and quality assurance as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4617,81 +4602,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Evaluation and Quality Assurance
+### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
+   - A. It removes all security and governance requirements.
    - B. a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Granting broad tool permissions that enable harmful actions.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
-3. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. Require human approval for irreversible or high-impact actions.
-   - B. It makes the system slower but has no other effect.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Require human approval for irreversible or high-impact actions.
+3. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
    - D. Granting broad tool permissions that enable harmful actions.
    - **Answer: D.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-4. *(Discussion)* What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
+4. *(Discussion)* How does Evaluation and Quality Assurance interact with security and governance requirements?
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4703,62 +4671,51 @@ _This chapter examines security, privacy and governance within Agentic AI. It co
 
 ## Introduction
 
-Security, Privacy and Governance refers to the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant. Teams that master this consistently ship more reliable Agentic AI systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Security, Privacy and Governance is best understood as the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. This concept recurs throughout the Agentic AI lifecycle, from design to operations.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
 
-Security, Privacy and Governance cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Security, Privacy and Governance cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security, Privacy and Governance cannot be understood in isolation from the agentic reference architecture. Recall that the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to security, privacy and governance. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Security, Privacy and Governance sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title RAG Architecture - Security, Privacy and Governance
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+<div class="diagram-svg">
 
-_Source diagram (plantuml); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="4-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn59f4a94" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f43f5e"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn59f4a94)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn59f4a94)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">RAG Architecture - Security, Privacy and Governance</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security, Privacy and</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool Use and Function</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Calling</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#db2777" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agentic Reference</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agent Loop: Reason,</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Act, Observe</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#be123c" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Security, Privacy and Governance  •  RAG Architecture</text></svg>
 
-**Figure 27. RAG Architecture - Security, Privacy and Governance** (plantuml). Figure: RAG Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 28. RAG Architecture - Security, Privacy and Governance** (svg). Figure: RAG Architecture view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with human-in-the-loop and approvals. Because human-in-the-loop and approvals concerns confirmation gates for high-impact actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4766,13 +4723,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding and retrieval for agents. Because grounding and retrieval for agents concerns bringing knowledge into the agent loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluating agents. Because evaluating agents concerns task success, trajectory quality and robustness benchmarks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4780,7 +4737,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A back office organisation needs workflow automation across enterprise systems. They decide to apply security, privacy and governance as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A research organisation needs agents that browse, synthesise and report. They decide to apply security, privacy and governance as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4903,24 +4860,24 @@ class PrivacyAnd:
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Security, Privacy and Governance”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
-2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. Require human approval for irreversible or high-impact actions.
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
+   - D. the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
+   - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
+2. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It guarantees deterministic output regardless of input.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Unbounded loops that burn cost without converging.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. Cap loop steps and cost to prevent runaway behaviour.
-   - C. Require human approval for irreversible or high-impact actions.
+   - A. Cap loop steps and cost to prevent runaway behaviour.
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
    - D. Unbounded loops that burn cost without converging.
    - **Answer: D.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-4. *(Discussion)* Walk through how you would design Security, Privacy and Governance for an enterprise Agentic AI workload.
+4. *(Discussion)* Describe a failure mode of Security, Privacy and Governance and how you would mitigate it.
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4932,51 +4889,72 @@ _This chapter examines cost, performance and scaling within Agentic AI. It cover
 
 ## Introduction
 
-In practical terms, Cost, Performance and Scaling is best understood as techniques for controlling cost and latency while scaling a Agentic AI system to production traffic. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+In practical terms, Cost, Performance and Scaling is best understood as techniques for controlling cost and latency while scaling a Agentic AI system to production traffic. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Agentic AI system to production traffic. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Cost, Performance and Scaling can be characterised as techniques for controlling cost and latency while scaling a Agentic AI system to production traffic. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Getting this right early prevents expensive rework once a Agentic AI system reaches scale.
 
-Cost, Performance and Scaling cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Performance and Scaling cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Cost, Performance and Scaling cannot be understood in isolation from the agent loop: reason, act, observe. Recall that the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to cost, performance and scaling. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, react: interleave reasoning and tool actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Cost, Performance and Scaling is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+The reference architecture for Cost, Performance and Scaling separates concerns into clearly bounded components with explicit contracts. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-<div class="diagram-svg">
+```xml
+<mxfile host="ai-university">
+  <diagram name="CI/CD Pipeline">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CI/CD Pipeline - Cost, Performance and Scaling" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Cost, Performance and…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Cost, Performance and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Observability for Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Human-in-the-Loop and A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Reflection and Self-Cor…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="0-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bncc0f0c3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4338ca"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bncc0f0c3)"/><rect x="0" y="32" width="840" height="16" fill="url(#bncc0f0c3)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Cost, Performance and Scaling</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Agent Loop: Reason,</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Act, Observe</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Planning and Task</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Decomposition</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tool Use and Function</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Calling</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="344" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Memory Architectures</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="296" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reflection and</text><text x="296" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Self-Correction</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  CI/CD Pipeline</text></svg>
+_Source diagram (drawio); render with the appropriate tool._
 
-</div>
-
-**Figure 28. CI/CD Pipeline - Cost, Performance and Scaling** (svg). Figure: CI/CD Pipeline view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. CI/CD Pipeline - Cost, Performance and Scaling** (drawio). Figure: CI/CD Pipeline view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into cost, performance and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with observability for agents. Because observability for agents concerns tracing reasoning, tool calls and outcomes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4984,13 +4962,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, performance and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent frameworks and patterns. Because agent frameworks and patterns concerns comparing frameworks and reusable design patterns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4998,7 +4976,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs autonomous coding agents that plan, edit and test. They decide to apply cost, performance and scaling as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs incident triage agents that gather context and act. They decide to apply cost, performance and scaling as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5070,40 +5048,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Cost, Performance and Scaling logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Cost, Performance and Scaling with a regression gate
+### Listing: A composable processing pipeline for Cost, Performance and Scaling
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Cost, Performance and Scaling output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Cost, Performance and Scaling."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -5111,23 +5106,23 @@ if __name__ == "__main__":
 
 1. In the context of Agentic AI, which statement best describes “Cost, Performance and Scaling”?
    - A. techniques for controlling cost and latency while scaling a Agentic AI system to production traffic
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Agentic AI system to production traffic
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Constrain tools with typed schemas and least-privilege permissions.
-   - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+   - A. Cap loop steps and cost to prevent runaway behaviour.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. No observability, making failures impossible to diagnose.
+   - **Answer: A.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-4. *(Discussion)* How would you test and monitor Cost, Performance and Scaling in production?
+   - A. Unbounded loops that burn cost without converging.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. Trace every reasoning step and tool call for debugging and audit.
+   - **Answer: A.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+4. *(Discussion)* What trade-offs would you weigh when implementing Cost, Performance and Scaling?
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Agentic AI system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5139,23 +5134,23 @@ _This chapter examines integration and interoperability within Agentic AI. It co
 
 ## Introduction
 
-We define Integration and Interoperability as patterns for integrating a Agentic AI system with surrounding enterprise systems and data. This concept recurs throughout the Agentic AI lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Integration and Interoperability addresses patterns for integrating a Agentic AI system with surrounding enterprise systems and data. It is foundational: later capabilities in Agentic AI are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Integration and Interoperability refers to patterns for integrating a Agentic AI system with surrounding enterprise systems and data. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Integration and Interoperability is best understood as patterns for integrating a Agentic AI system with surrounding enterprise systems and data. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. This concept recurs throughout the Agentic AI lifecycle, from design to operations.
 
 Integration and Interoperability cannot be understood in isolation from memory architectures. Recall that memory architectures concerns short-term context, long-term vector memory and episodic recall. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Integration and Interoperability cannot be understood in isolation from observability for agents. Recall that observability for agents concerns tracing reasoning, tool calls and outcomes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration and Interoperability cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to integration and interoperability. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5175,16 +5170,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Infrastructure - Integration and Interoperability" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Integration and Inter…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Integration and Interop…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Grounding and Retrieval…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Reflection and Self-Cor…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5194,13 +5189,13 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 29. Infrastructure - Integration and Interoperability** (drawio). Figure: Infrastructure view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. Infrastructure - Integration and Interoperability** (drawio). Figure: Infrastructure view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5212,13 +5207,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with planning and task decomposition. Because planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the agent loop: reason, act, observe. Because the agent loop: reason, act, observe concerns reAct-style cycles and the perception–action interface, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5298,40 +5293,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Agentic AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Integration and Interoperability component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Integration and Interoperability with a regression gate
+### Listing: Implementing a Integration and Interoperability component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class IntegrationAndInteroperabilityConfig:
+    """Configuration for the Integration and Interoperability component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Integration and Interoperability output against references with a simple exact-match metric.
+class IntegrationAndInteroperability:
+    """A minimal, production-shaped implementation of Integration and Interoperability."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: IntegrationAndInteroperabilityConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"IntegrationAndInteroperability failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Integration and Interoperability goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
@@ -5339,23 +5345,23 @@ if __name__ == "__main__":
 
 1. In the context of Agentic AI, which statement best describes “Integration and Interoperability”?
    - A. patterns for integrating a Agentic AI system with surrounding enterprise systems and data
-   - B. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Integration and Interoperability: patterns for integrating a Agentic AI system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. Granting broad tool permissions that enable harmful actions.
-   - D. Trace every reasoning step and tool call for debugging and audit.
-   - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. No observability, making failures impossible to diagnose.
+   - C. It removes all security and governance requirements.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It applies exclusively to image data.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-4. *(Discussion)* How does Integration and Interoperability interact with security and governance requirements?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Granting broad tool permissions that enable harmful actions.
+   - **Answer: D.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+4. *(Discussion)* How would you test and monitor Integration and Interoperability in production?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Agentic AI system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5367,23 +5373,23 @@ _This chapter examines trends and research directions within Agentic AI. It cove
 
 ## Introduction
 
-We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of Agentic AI. It is foundational: later capabilities in Agentic AI are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Agentic AI. Getting this right early prevents expensive rework once a Agentic AI system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Agentic AI. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Trends and Research Directions addresses emerging trends, open problems and research directions shaping the future of Agentic AI. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Teams that master this consistently ship more reliable Agentic AI systems at lower cost.
 
-Trends and Research Directions cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Trends and Research Directions cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Trends and Research Directions cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Trends and Research Directions cannot be understood in isolation from the agentic reference architecture. Recall that the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to trends and research directions. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, plan-and-execute with a separate planner and executor, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around trends and research directions are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5393,50 +5399,46 @@ Concretely, the principal building blocks include from chatbots to agents, the a
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Agentic AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```plantuml
-@startuml
-title Security Architecture - Trends and Research Directions
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Security Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Security Architecture - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Trends and Research D…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Trends and Research Dir…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="The Agentic Reference A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Cost, Latency and Loop …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 30. Security Architecture - Trends and Research Directions** (plantuml). Figure: Security Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```mermaid
-graph LR
-  D(("Agentic AI"))
-  D --- C0[From Chatbots to Agen…]
-  D --- C1[The Agent Loop: Reaso…]
-  D --- C2[Planning and Task Dec…]
-  D --- C3[Tool Use and Function…]
-  D --- C4[Memory Architectures]
-  C0 --- C1
-  C1 --- C2
-```
-
-**Figure 31. Capability Map - Trends and Research Directions** (mermaid). Figure: Capability Map view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 31. Security Architecture - Trends and Research Directions** (drawio). Figure: Security Architecture view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns defining, selecting and safely invoking tools and APIs, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5444,13 +5446,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from chatbots to agents. Because from chatbots to agents concerns the shift from single responses to goal-directed loops, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with agent frameworks and patterns. Because agent frameworks and patterns concerns comparing frameworks and reusable design patterns, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5458,7 +5460,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A research organisation needs agents that browse, synthesise and report. They decide to apply trends and research directions as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs incident triage agents that gather context and act. They decide to apply trends and research directions as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5531,24 +5533,24 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of Agentic AI, which statement best describes “Trends and Research Directions”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
    - C. emerging trends, open problems and research directions shaping the future of Agentic AI
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
    - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Agentic AI
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. It makes the system slower but has no other effect.
-   - C. Require human approval for irreversible or high-impact actions.
-   - D. No observability, making failures impossible to diagnose.
-   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
+   - A. It removes all security and governance requirements.
+   - B. Constrain tools with typed schemas and least-privilege permissions.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Constrain tools with typed schemas and least-privilege permissions.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. Unbounded loops that burn cost without converging.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-4. *(Discussion)* What trade-offs would you weigh when implementing Trends and Research Directions?
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. Over-automating tasks that need human judgement.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
+4. *(Discussion)* Walk through how you would design Trends and Research Directions for an enterprise Agentic AI workload.
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Agentic AI) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5566,17 +5568,17 @@ This chapter builds intuition first, then formalises the ideas, derives an archi
 
 ## Theory and Foundations
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. This concept recurs throughout the Agentic AI lifecycle, from design to operations.
 
-Capstone Project cannot be understood in isolation from safety, sandboxing and permissions. Recall that safety, sandboxing and permissions concerns constraining what agents can do and access. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Capstone Project cannot be understood in isolation from planning and task decomposition. Recall that planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Capstone Project cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Capstone Project cannot be understood in isolation from agent frameworks and patterns. Recall that agent frameworks and patterns concerns comparing frameworks and reusable design patterns. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to capstone project. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, plan-and-execute with a separate planner and executor, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reflection loop to critique and revise outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5590,21 +5592,60 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="kpi" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn32754ff" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn32754ff)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn32754ff)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Capstone Project</text><rect x="28" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="28" y="90" width="182" height="8" rx="0" fill="#0d9488"/><text x="119" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#0d9488" dominant-baseline="middle">70%</text><text x="119" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Planning and Task</text><text x="119" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Decomposition</text><rect x="228" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="228" y="90" width="182" height="8" rx="0" fill="#14b8a6"/><text x="320" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#14b8a6" dominant-baseline="middle">52%</text><text x="320" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Tool Use and Function</text><text x="320" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Calling</text><rect x="429" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="429" y="90" width="182" height="8" rx="0" fill="#047857"/><text x="520" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#047857" dominant-baseline="middle">89%</text><text x="520" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Memory Architectures</text><rect x="630" y="90" width="182" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><rect x="630" y="90" width="182" height="8" rx="0" fill="#059669"/><text x="721" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#059669" dominant-baseline="middle">64%</text><text x="721" y="192" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Reflection and</text><text x="721" y="204" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b" dominant-baseline="middle">Self-Correction</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Agentic AI  •  Capability Map</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="4-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn81c68d9" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn81c68d9)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn81c68d9)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Capstone Project</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#e11d48"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#e11d48"/><text x="128" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Capstone Project</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#f43f5e"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#f43f5e"/><text x="274" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Planning and</text><text x="274" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Task</text><text x="274" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Decomposition</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#fb7185"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#fb7185"/><text x="420" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Agent Frameworks</text><text x="420" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and Patterns</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#db2777"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#db2777"/><text x="566" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Memory</text><text x="566" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Architectures</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#9f1239"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#9f1239"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">The Agent Loop:</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Reason, Act,</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Observe</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Capstone Project  •  Capability Map</text></svg>
 
 </div>
 
-**Figure 32. Capability Map - Capstone Project** (svg). Figure: Capability Map view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Capability Map - Capstone Project** (svg). Figure: Capability Map view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Capstone Project Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Capstone Project]
+    S1[Planning and Task Decompo…]
+    S2[Agent Frameworks and Patt…]
+    S3[Memory Architectures]
+    S4[The Agent Loop: Reason, A…]
+    S5[Safety, Sandboxing and Pe…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
+
+**Figure 33. Cloud Architecture - Capstone Project** (mermaid). Figure: Cloud Architecture view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety, sandboxing and permissions. Because safety, sandboxing and permissions concerns constraining what agents can do and access, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with planning and task decomposition. Because planning and task decomposition concerns plan-and-execute, tree-of-thought and hierarchical planning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5612,13 +5653,13 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost, latency and loop control. Because cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the agentic reference architecture. Because the agentic reference architecture concerns orchestrator, tools, memory and guardrails as a platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5739,23 +5780,23 @@ if __name__ == "__main__":
 
 1. In the context of Agentic AI, which statement best describes “Capstone Project”?
    - A. It makes the system slower but has no other effect.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
-   - C. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
+   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Unbounded loops that burn cost without converging.
-   - B. Cap loop steps and cost to prevent runaway behaviour.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+   - A. Cap loop steps and cost to prevent runaway behaviour.
+   - B. Unbounded loops that burn cost without converging.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. No observability, making failures impossible to diagnose.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-4. *(Discussion)* How does Capstone Project interact with security and governance requirements?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Require human approval for irreversible or high-impact actions.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5767,27 +5808,27 @@ _This chapter examines certification preparation and review within Agentic AI. I
 
 ## Introduction
 
-At its core, Certification Preparation and Review concerns a structured review and certification-style preparation covering the full breadth of Agentic AI. It is foundational: later capabilities in Agentic AI are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of Agentic AI. Understanding this matters because Agentic AI systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Agentic AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of Agentic AI. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Agentic AI. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Neglecting it is one of the most common reasons Agentic AI initiatives stall in production.
+To place this in context, recall the broader picture: Agentic AI systems use language models as reasoning engines that plan, invoke tools, observe results and iterate toward goals with limited human oversight. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Agentic AI fall into place. Getting this right early prevents expensive rework once a Agentic AI system reaches scale.
 
-Certification Preparation and Review cannot be understood in isolation from human-in-the-loop and approvals. Recall that human-in-the-loop and approvals concerns confirmation gates for high-impact actions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Certification Preparation and Review cannot be understood in isolation from grounding and retrieval for agents. Recall that grounding and retrieval for agents concerns bringing knowledge into the agent loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Certification Preparation and Review cannot be understood in isolation from cost, latency and loop control. Recall that cost, latency and loop control concerns budgeting steps, preventing runaway loops and caching. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Certification Preparation and Review cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns defining, selecting and safely invoking tools and APIs. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to certification preparation and review. The first, reflection loop to critique and revise outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, approval gate before irreversible actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, approval gate before irreversible actions, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, react: interleave reasoning and tool actions, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Agentic AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
+From an architectural standpoint, Certification Preparation and Review sits at the intersection of data, models and operations. An agent runtime hosts a reasoning model, a tool registry with typed schemas, a memory store (short-term context plus long-term vector memory), and a controller enforcing step budgets, permissions and human approvals. Every step is traced for observability and replay.
 
 Concretely, the principal building blocks include from chatbots to agents, the agent loop: reason, act, observe, planning and task decomposition, tool use and function calling and memory architectures. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -5803,16 +5844,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Cloud Architecture - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Agentic AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From Chatbots to Agents" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Certification Prepara…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Certification Preparati…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="The Agent Loop: Reason,…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Grounding and Retrieval…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Planning and Task Decom…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Safety, Sandboxing and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Memory Architectures" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The Agentic Reference A…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5822,17 +5863,31 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 33. Cloud Architecture - Certification Preparation and Review** (drawio). Figure: Cloud Architecture view for Agentic AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 34. Cloud Architecture - Certification Preparation and Review** (drawio). Figure: Cloud Architecture view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+graph LR
+  D(("Certification Prepa…"))
+  D --- C0[Certification Prepara…]
+  D --- C1[Grounding and Retriev…]
+  D --- C2[Tool Use and Function…]
+  D --- C3[Safety, Sandboxing an…]
+  D --- C4[The Agentic Reference…]
+  C0 --- C1
+  C1 --- C2
+```
+
+**Figure 35. Knowledge Graph - Certification Preparation and Review** (mermaid). Figure: Knowledge Graph view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with human-in-the-loop and approvals. Because human-in-the-loop and approvals concerns confirmation gates for high-impact actions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with grounding and retrieval for agents. Because grounding and retrieval for agents concerns bringing knowledge into the agent loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5842,7 +5897,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including LangGraph, AutoGen, CrewAI, OpenAI Agents. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5854,7 +5909,7 @@ For deeper study, the literature offers authoritative treatments such as Yao et 
 
 ## Worked Example
 
-Consider a concrete scenario. A back office organisation needs workflow automation across enterprise systems. They decide to apply certification preparation and review as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs incident triage agents that gather context and act. They decide to apply certification preparation and review as part of their Agentic AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5926,57 +5981,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Certification Preparation and Review logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Certification Preparation and Review component with retry semantics and typed interfaces — the shape we expect from production Agentic AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Certification Preparation and Review
+### Listing: Implementing a Certification Preparation and Review component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CertificationPreparationAndConfig:
+    """Configuration for the Certification Preparation and Review component in a Agentic AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Certification Preparation and Review."""
+class CertificationPreparationAnd:
+    """A minimal, production-shaped implementation of Certification Preparation and Review."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CertificationPreparationAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CertificationPreparationAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Certification Preparation and Review goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
@@ -5984,23 +6033,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Agentic AI, which statement best describes “Certification Preparation and Review”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
    - C. a structured review and certification-style preparation covering the full breadth of Agentic AI
-   - D. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Agentic AI
 2. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
+   - A. It removes all security and governance requirements.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: C.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 3. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Constrain tools with typed schemas and least-privilege permissions.
-   - B. It removes all security and governance requirements.
-   - C. Unbounded loops that burn cost without converging.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-4. *(Discussion)* Walk through how you would design Certification Preparation and Review for an enterprise Agentic AI workload.
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. It applies exclusively to image data.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: D.** Pitfall to avoid: Over-automating tasks that need human judgement.
+4. *(Discussion)* How does Certification Preparation and Review interact with security and governance requirements?
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Agentic AI) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6040,51 +6089,51 @@ A consolidated bank of discussion-style interview questions drawn from across th
    - **Guidance:** A strong answer defines from chatbots to agents (The shift from single responses to goal-directed loops.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 2. How does The Agent Loop: Reason, Act, Observe interact with security and governance requirements?
    - **Guidance:** A strong answer defines the agent loop: reason, act, observe (ReAct-style cycles and the perception–action interface.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-3. Describe a failure mode of Planning and Task Decomposition and how you would mitigate it.
+3. What trade-offs would you weigh when implementing Planning and Task Decomposition?
    - **Guidance:** A strong answer defines planning and task decomposition (Plan-and-execute, tree-of-thought and hierarchical planning.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-4. How does Tool Use and Function Calling interact with security and governance requirements?
+4. Describe a failure mode of Tool Use and Function Calling and how you would mitigate it.
    - **Guidance:** A strong answer defines tool use and function calling (Defining, selecting and safely invoking tools and APIs.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-5. How does Memory Architectures interact with security and governance requirements?
+5. How would you test and monitor Memory Architectures in production?
    - **Guidance:** A strong answer defines memory architectures (Short-term context, long-term vector memory and episodic recall.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-6. How does Reflection and Self-Correction interact with security and governance requirements?
+6. Explain Reflection and Self-Correction and why it matters in a production Agentic AI system.
    - **Guidance:** A strong answer defines reflection and self-correction (Critique loops, verification and error recovery.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 7. Describe a failure mode of Grounding and Retrieval for Agents and how you would mitigate it.
    - **Guidance:** A strong answer defines grounding and retrieval for agents (Bringing knowledge into the agent loop.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-8. Explain Human-in-the-Loop and Approvals and why it matters in a production Agentic AI system.
+8. Describe a failure mode of Human-in-the-Loop and Approvals and how you would mitigate it.
    - **Guidance:** A strong answer defines human-in-the-loop and approvals (Confirmation gates for high-impact actions.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-9. What trade-offs would you weigh when implementing Safety, Sandboxing and Permissions?
+9. Walk through how you would design Safety, Sandboxing and Permissions for an enterprise Agentic AI workload.
    - **Guidance:** A strong answer defines safety, sandboxing and permissions (Constraining what agents can do and access.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-10. Explain Cost, Latency and Loop Control and why it matters in a production Agentic AI system.
+10. Describe a failure mode of Cost, Latency and Loop Control and how you would mitigate it.
    - **Guidance:** A strong answer defines cost, latency and loop control (Budgeting steps, preventing runaway loops and caching.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-11. What trade-offs would you weigh when implementing Evaluating Agents?
+11. How does Evaluating Agents interact with security and governance requirements?
    - **Guidance:** A strong answer defines evaluating agents (Task success, trajectory quality and robustness benchmarks.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 12. Describe a failure mode of Agent Frameworks and Patterns and how you would mitigate it.
    - **Guidance:** A strong answer defines agent frameworks and patterns (Comparing frameworks and reusable design patterns.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-13. Walk through how you would design Observability for Agents for an enterprise Agentic AI workload.
+13. How does Observability for Agents interact with security and governance requirements?
    - **Guidance:** A strong answer defines observability for agents (Tracing reasoning, tool calls and outcomes.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-14. Describe a failure mode of The Agentic Reference Architecture and how you would mitigate it.
+14. How would you test and monitor The Agentic Reference Architecture in production?
    - **Guidance:** A strong answer defines the agentic reference architecture (Orchestrator, tools, memory and guardrails as a platform.) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-15. Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
+15. Explain Putting It Together: A Reference Implementation and why it matters in a production Agentic AI system.
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-16. What trade-offs would you weigh when implementing Hands-On Lab: Building an End-to-End Agentic AI System?
+16. How does Hands-On Lab: Building an End-to-End Agentic AI System interact with security and governance requirements?
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end agentic ai system (a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-17. What trade-offs would you weigh when implementing Case Study: Software at Scale?
+17. How would you test and monitor Case Study: Software at Scale in production?
    - **Guidance:** A strong answer defines case study: software at scale (a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-18. What trade-offs would you weigh when implementing Operating in Production?
+18. Describe a failure mode of Operating in Production and how you would mitigate it.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-19. What trade-offs would you weigh when implementing Evaluation and Quality Assurance?
+19. How does Evaluation and Quality Assurance interact with security and governance requirements?
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-20. Walk through how you would design Security, Privacy and Governance for an enterprise Agentic AI workload.
+20. Describe a failure mode of Security, Privacy and Governance and how you would mitigate it.
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-21. How would you test and monitor Cost, Performance and Scaling in production?
+21. What trade-offs would you weigh when implementing Cost, Performance and Scaling?
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Agentic AI system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-22. How does Integration and Interoperability interact with security and governance requirements?
+22. How would you test and monitor Integration and Interoperability in production?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Agentic AI system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-23. What trade-offs would you weigh when implementing Trends and Research Directions?
+23. Walk through how you would design Trends and Research Directions for an enterprise Agentic AI workload.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Agentic AI) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-24. How does Capstone Project interact with security and governance requirements?
+24. What trade-offs would you weigh when implementing Capstone Project?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
-25. Walk through how you would design Certification Preparation and Review for an enterprise Agentic AI workload.
+25. How does Certification Preparation and Review interact with security and governance requirements?
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Agentic AI) then connects it to architecture, evaluation, cost, security and operations for Agentic AI, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6092,23 +6141,23 @@ A consolidated bank of discussion-style interview questions drawn from across th
 Certification-style multiple-choice questions covering best practices and common pitfalls.
 
 1. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Constrain tools with typed schemas and least-privilege permissions.
-   - C. Unbounded loops that burn cost without converging.
-   - D. Granting broad tool permissions that enable harmful actions.
-   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+   - A. Granting broad tool permissions that enable harmful actions.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 2. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. It applies exclusively to image data.
+   - A. Granting broad tool permissions that enable harmful actions.
+   - B. It is only relevant to academic research, not production.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - **Answer: A.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
 3. Which of the following is a recommended best practice when working with Agentic AI?
    - A. Granting broad tool permissions that enable harmful actions.
-   - B. No observability, making failures impossible to diagnose.
-   - C. It makes the system slower but has no other effect.
-   - D. Trace every reasoning step and tool call for debugging and audit.
-   - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
+   - B. It removes all security and governance requirements.
+   - C. No observability, making failures impossible to diagnose.
+   - D. Cap loop steps and cost to prevent runaway behaviour.
+   - **Answer: D.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 4. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. It eliminates the need for any evaluation or monitoring.
    - B. Constrain tools with typed schemas and least-privilege permissions.
@@ -6117,434 +6166,434 @@ Certification-style multiple-choice questions covering best practices and common
    - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
 5. Which of the following is a recommended best practice when working with Agentic AI?
    - A. Over-automating tasks that need human judgement.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. It applies exclusively to image data.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: D.** Best practice: Require human approval for irreversible or high-impact actions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. Granting broad tool permissions that enable harmful actions.
+   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
 6. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Unbounded loops that burn cost without converging.
    - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: D.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Unbounded loops that burn cost without converging.
 7. Which of the following is a recommended best practice when working with Agentic AI?
    - A. No observability, making failures impossible to diagnose.
-   - B. Trace every reasoning step and tool call for debugging and audit.
-   - C. Over-automating tasks that need human judgement.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-8. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. No observability, making failures impossible to diagnose.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: A.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-9. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Constrain tools with typed schemas and least-privilege permissions.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: A.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
-10. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Cap loop steps and cost to prevent runaway behaviour.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. Trace every reasoning step and tool call for debugging and audit.
+   - C. Unbounded loops that burn cost without converging.
    - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: B.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+8. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. Require human approval for irreversible or high-impact actions.
+   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+9. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Unbounded loops that burn cost without converging.
+   - B. It applies exclusively to image data.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
+10. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Trace every reasoning step and tool call for debugging and audit.
+   - B. Require human approval for irreversible or high-impact actions.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. Unbounded loops that burn cost without converging.
+   - **Answer: D.** Pitfall to avoid: Unbounded loops that burn cost without converging.
 11. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Granting broad tool permissions that enable harmful actions.
+   - A. It is only relevant to academic research, not production.
    - B. No observability, making failures impossible to diagnose.
    - C. Cap loop steps and cost to prevent runaway behaviour.
    - D. Over-automating tasks that need human judgement.
    - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
 12. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Require human approval for irreversible or high-impact actions.
-   - B. Over-automating tasks that need human judgement.
-   - C. It applies exclusively to image data.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - A. It applies exclusively to image data.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. Over-automating tasks that need human judgement.
+   - D. Cap loop steps and cost to prevent runaway behaviour.
+   - **Answer: C.** Pitfall to avoid: Over-automating tasks that need human judgement.
 13. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. Over-automating tasks that need human judgement.
-   - C. Unbounded loops that burn cost without converging.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. Trace every reasoning step and tool call for debugging and audit.
    - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
 14. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Cap loop steps and cost to prevent runaway behaviour.
-   - B. Over-automating tasks that need human judgement.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
+   - A. No observability, making failures impossible to diagnose.
+   - B. It is only relevant to academic research, not production.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: No observability, making failures impossible to diagnose.
 15. Which of the following is a recommended best practice when working with Agentic AI?
    - A. It guarantees deterministic output regardless of input.
-   - B. Constrain tools with typed schemas and least-privilege permissions.
-   - C. Granting broad tool permissions that enable harmful actions.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
-16. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It applies exclusively to image data.
-   - B. Trace every reasoning step and tool call for debugging and audit.
-   - C. No observability, making failures impossible to diagnose.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: C.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-17. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Unbounded loops that burn cost without converging.
-   - C. Require human approval for irreversible or high-impact actions.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
-18. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. Over-automating tasks that need human judgement.
-   - D. Cap loop steps and cost to prevent runaway behaviour.
-   - **Answer: C.** Pitfall to avoid: Over-automating tasks that need human judgement.
-19. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. It is only relevant to academic research, not production.
-   - D. Granting broad tool permissions that enable harmful actions.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
-20. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Require human approval for irreversible or high-impact actions.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Granting broad tool permissions that enable harmful actions.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-21. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
-22. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. No observability, making failures impossible to diagnose.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-23. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. Over-automating tasks that need human judgement.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-24. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. Over-automating tasks that need human judgement.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
-25. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Over-automating tasks that need human judgement.
-   - C. No observability, making failures impossible to diagnose.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: D.** Best practice: Require human approval for irreversible or high-impact actions.
-26. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Unbounded loops that burn cost without converging.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: A.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-27. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Granting broad tool permissions that enable harmful actions.
-   - B. Cap loop steps and cost to prevent runaway behaviour.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Unbounded loops that burn cost without converging.
-   - **Answer: B.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
-28. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. Over-automating tasks that need human judgement.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: C.** Pitfall to avoid: Over-automating tasks that need human judgement.
-29. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It removes all security and governance requirements.
-   - C. Over-automating tasks that need human judgement.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: D.** Best practice: Require human approval for irreversible or high-impact actions.
-30. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. It is only relevant to academic research, not production.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
-   - D. Over-automating tasks that need human judgement.
-   - **Answer: D.** Pitfall to avoid: Over-automating tasks that need human judgement.
-31. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
    - C. Trace every reasoning step and tool call for debugging and audit.
    - D. Unbounded loops that burn cost without converging.
    - **Answer: C.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-32. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. It makes the system slower but has no other effect.
-   - C. Constrain tools with typed schemas and least-privilege permissions.
-   - D. No observability, making failures impossible to diagnose.
-   - **Answer: D.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-33. Which of the following is a recommended best practice when working with Agentic AI?
+16. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. Trace every reasoning step and tool call for debugging and audit.
-   - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-34. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Unbounded loops that burn cost without converging.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Require human approval for irreversible or high-impact actions.
-   - **Answer: A.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-35. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. Unbounded loops that burn cost without converging.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+17. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Constrain tools with typed schemas and least-privilege permissions.
+   - B. Granting broad tool permissions that enable harmful actions.
+   - C. It applies exclusively to image data.
+   - D. No observability, making failures impossible to diagnose.
+   - **Answer: A.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+18. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It is only relevant to academic research, not production.
+   - B. Unbounded loops that burn cost without converging.
+   - C. Trace every reasoning step and tool call for debugging and audit.
+   - D. Require human approval for irreversible or high-impact actions.
+   - **Answer: B.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+19. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It applies exclusively to image data.
+   - B. Granting broad tool permissions that enable harmful actions.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+20. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Granting broad tool permissions that enable harmful actions.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. Require human approval for irreversible or high-impact actions.
+   - **Answer: A.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+21. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Over-automating tasks that need human judgement.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Best practice: Require human approval for irreversible or high-impact actions.
+22. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Unbounded loops that burn cost without converging.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+23. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It removes all security and governance requirements.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. Unbounded loops that burn cost without converging.
+   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
+24. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Trace every reasoning step and tool call for debugging and audit.
+   - B. It applies exclusively to image data.
+   - C. No observability, making failures impossible to diagnose.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: C.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+25. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Granting broad tool permissions that enable harmful actions.
    - D. Cap loop steps and cost to prevent runaway behaviour.
    - **Answer: D.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
-36. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. Unbounded loops that burn cost without converging.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-37. Which of the following is a recommended best practice when working with Agentic AI?
+26. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Over-automating tasks that need human judgement.
+   - B. Constrain tools with typed schemas and least-privilege permissions.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Over-automating tasks that need human judgement.
+27. Which of the following is a recommended best practice when working with Agentic AI?
    - A. Granting broad tool permissions that enable harmful actions.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Constrain tools with typed schemas and least-privilege permissions.
-   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
-38. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Require human approval for irreversible or high-impact actions.
-   - B. It makes the system slower but has no other effect.
+   - B. Over-automating tasks that need human judgement.
    - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+28. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Over-automating tasks that need human judgement.
+   - B. Require human approval for irreversible or high-impact actions.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Over-automating tasks that need human judgement.
+29. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: C.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+30. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Constrain tools with typed schemas and least-privilege permissions.
+   - C. No observability, making failures impossible to diagnose.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+31. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Trace every reasoning step and tool call for debugging and audit.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. No observability, making failures impossible to diagnose.
+   - **Answer: A.** Best practice: Trace every reasoning step and tool call for debugging and audit.
+32. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. No observability, making failures impossible to diagnose.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+33. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Unbounded loops that burn cost without converging.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: C.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+34. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+35. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Constrain tools with typed schemas and least-privilege permissions.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. No observability, making failures impossible to diagnose.
+   - **Answer: A.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+36. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It makes the system slower but has no other effect.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: No observability, making failures impossible to diagnose.
+37. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Require human approval for irreversible or high-impact actions.
+38. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
    - D. Granting broad tool permissions that enable harmful actions.
    - **Answer: D.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
 39. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
+   - A. It guarantees deterministic output regardless of input.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Unbounded loops that burn cost without converging.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
 40. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Trace every reasoning step and tool call for debugging and audit.
-   - B. Cap loop steps and cost to prevent runaway behaviour.
-   - C. Require human approval for irreversible or high-impact actions.
+   - A. Cap loop steps and cost to prevent runaway behaviour.
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
    - D. Unbounded loops that burn cost without converging.
    - **Answer: D.** Pitfall to avoid: Unbounded loops that burn cost without converging.
 41. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Constrain tools with typed schemas and least-privilege permissions.
-   - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
-42. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It removes all security and governance requirements.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. Cap loop steps and cost to prevent runaway behaviour.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-43. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. It is only relevant to academic research, not production.
-   - B. It makes the system slower but has no other effect.
-   - C. Granting broad tool permissions that enable harmful actions.
-   - D. Trace every reasoning step and tool call for debugging and audit.
-   - **Answer: D.** Best practice: Trace every reasoning step and tool call for debugging and audit.
-44. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It applies exclusively to image data.
-   - B. Granting broad tool permissions that enable harmful actions.
-   - C. Trace every reasoning step and tool call for debugging and audit.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
-45. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. It makes the system slower but has no other effect.
-   - C. Require human approval for irreversible or high-impact actions.
+   - A. Cap loop steps and cost to prevent runaway behaviour.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
    - D. No observability, making failures impossible to diagnose.
-   - **Answer: C.** Best practice: Require human approval for irreversible or high-impact actions.
-46. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Constrain tools with typed schemas and least-privilege permissions.
-   - B. Require human approval for irreversible or high-impact actions.
-   - C. Unbounded loops that burn cost without converging.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
-47. Which of the following is a recommended best practice when working with Agentic AI?
+   - **Answer: A.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+42. Which of the following is a common pitfall to avoid in Agentic AI?
    - A. Unbounded loops that burn cost without converging.
-   - B. Cap loop steps and cost to prevent runaway behaviour.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
-48. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. It guarantees deterministic output regardless of input.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Require human approval for irreversible or high-impact actions.
+   - D. Trace every reasoning step and tool call for debugging and audit.
+   - **Answer: A.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+43. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. No observability, making failures impossible to diagnose.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: No observability, making failures impossible to diagnose.
-49. Which of the following is a recommended best practice when working with Agentic AI?
-   - A. Over-automating tasks that need human judgement.
-   - B. Require human approval for irreversible or high-impact actions.
+   - C. It removes all security and governance requirements.
+   - D. Constrain tools with typed schemas and least-privilege permissions.
+   - **Answer: D.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+44. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Granting broad tool permissions that enable harmful actions.
+   - **Answer: D.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+45. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It removes all security and governance requirements.
+   - B. Constrain tools with typed schemas and least-privilege permissions.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+46. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. Over-automating tasks that need human judgement.
+   - C. Cap loop steps and cost to prevent runaway behaviour.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Over-automating tasks that need human judgement.
+47. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. Cap loop steps and cost to prevent runaway behaviour.
+   - B. Unbounded loops that burn cost without converging.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Require human approval for irreversible or high-impact actions.
-50. Which of the following is a common pitfall to avoid in Agentic AI?
-   - A. Constrain tools with typed schemas and least-privilege permissions.
-   - B. It removes all security and governance requirements.
-   - C. Unbounded loops that burn cost without converging.
    - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Unbounded loops that burn cost without converging.
+   - **Answer: A.** Best practice: Cap loop steps and cost to prevent runaway behaviour.
+48. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Require human approval for irreversible or high-impact actions.
+   - C. Granting broad tool permissions that enable harmful actions.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Granting broad tool permissions that enable harmful actions.
+49. Which of the following is a recommended best practice when working with Agentic AI?
+   - A. It removes all security and governance requirements.
+   - B. No observability, making failures impossible to diagnose.
+   - C. Constrain tools with typed schemas and least-privilege permissions.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: C.** Best practice: Constrain tools with typed schemas and least-privilege permissions.
+50. Which of the following is a common pitfall to avoid in Agentic AI?
+   - A. Require human approval for irreversible or high-impact actions.
+   - B. Trace every reasoning step and tool call for debugging and audit.
+   - C. It applies exclusively to image data.
+   - D. Over-automating tasks that need human judgement.
+   - **Answer: D.** Pitfall to avoid: Over-automating tasks that need human judgement.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Agentic AI, which statement best describes “From Chatbots to Agents”?
-   - A. It makes the system slower but has no other effect.
-   - B. The shift from single responses to goal-directed loops.
+   - A. The shift from single responses to goal-directed loops.
+   - B. It is only relevant to academic research, not production.
    - C. It removes all security and governance requirements.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** From Chatbots to Agents: The shift from single responses to goal-directed loops.
+   - **Answer: A.** From Chatbots to Agents: The shift from single responses to goal-directed loops.
 2. In the context of Agentic AI, which statement best describes “The Agent Loop: Reason, Act, Observe”?
-   - A. It removes all security and governance requirements.
-   - B. ReAct-style cycles and the perception–action interface.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** The Agent Loop: Reason, Act, Observe: ReAct-style cycles and the perception–action interface.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
+   - C. ReAct-style cycles and the perception–action interface.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** The Agent Loop: Reason, Act, Observe: ReAct-style cycles and the perception–action interface.
 3. In the context of Agentic AI, which statement best describes “Planning and Task Decomposition”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. Plan-and-execute, tree-of-thought and hierarchical planning.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Planning and Task Decomposition: Plan-and-execute, tree-of-thought and hierarchical planning.
+   - A. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It removes all security and governance requirements.
+   - D. Plan-and-execute, tree-of-thought and hierarchical planning.
+   - **Answer: D.** Planning and Task Decomposition: Plan-and-execute, tree-of-thought and hierarchical planning.
 4. In the context of Agentic AI, which statement best describes “Tool Use and Function Calling”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Defining, selecting and safely invoking tools and APIs.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Tool Use and Function Calling: Defining, selecting and safely invoking tools and APIs.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. Defining, selecting and safely invoking tools and APIs.
+   - **Answer: D.** Tool Use and Function Calling: Defining, selecting and safely invoking tools and APIs.
 5. In the context of Agentic AI, which statement best describes “Memory Architectures”?
    - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Short-term context, long-term vector memory and episodic recall.
-   - **Answer: D.** Memory Architectures: Short-term context, long-term vector memory and episodic recall.
+   - B. Short-term context, long-term vector memory and episodic recall.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Memory Architectures: Short-term context, long-term vector memory and episodic recall.
 6. In the context of Agentic AI, which statement best describes “Reflection and Self-Correction”?
-   - A. Critique loops, verification and error recovery.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Reflection and Self-Correction: Critique loops, verification and error recovery.
+   - A. It is only relevant to academic research, not production.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. Critique loops, verification and error recovery.
+   - **Answer: D.** Reflection and Self-Correction: Critique loops, verification and error recovery.
 7. In the context of Agentic AI, which statement best describes “Grounding and Retrieval for Agents”?
    - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. Bringing knowledge into the agent loop.
-   - **Answer: D.** Grounding and Retrieval for Agents: Bringing knowledge into the agent loop.
+   - B. Bringing knowledge into the agent loop.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Grounding and Retrieval for Agents: Bringing knowledge into the agent loop.
 8. In the context of Agentic AI, which statement best describes “Human-in-the-Loop and Approvals”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Confirmation gates for high-impact actions.
+   - A. Confirmation gates for high-impact actions.
+   - B. It makes the system slower but has no other effect.
    - C. It guarantees deterministic output regardless of input.
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Human-in-the-Loop and Approvals: Confirmation gates for high-impact actions.
+   - **Answer: A.** Human-in-the-Loop and Approvals: Confirmation gates for high-impact actions.
 9. In the context of Agentic AI, which statement best describes “Safety, Sandboxing and Permissions”?
-   - A. It is only relevant to academic research, not production.
+   - A. It applies exclusively to image data.
    - B. Constraining what agents can do and access.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
    - **Answer: B.** Safety, Sandboxing and Permissions: Constraining what agents can do and access.
 10. In the context of Agentic AI, which statement best describes “Cost, Latency and Loop Control”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Budgeting steps, preventing runaway loops and caching.
-   - **Answer: D.** Cost, Latency and Loop Control: Budgeting steps, preventing runaway loops and caching.
-11. In the context of Agentic AI, which statement best describes “Evaluating Agents”?
-   - A. Task success, trajectory quality and robustness benchmarks.
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Evaluating Agents: Task success, trajectory quality and robustness benchmarks.
-12. In the context of Agentic AI, which statement best describes “Agent Frameworks and Patterns”?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Comparing frameworks and reusable design patterns.
-   - **Answer: D.** Agent Frameworks and Patterns: Comparing frameworks and reusable design patterns.
-13. In the context of Agentic AI, which statement best describes “Observability for Agents”?
-   - A. It removes all security and governance requirements.
-   - B. Tracing reasoning, tool calls and outcomes.
-   - C. It is only relevant to academic research, not production.
+   - C. Budgeting steps, preventing runaway loops and caching.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Observability for Agents: Tracing reasoning, tool calls and outcomes.
+   - **Answer: C.** Cost, Latency and Loop Control: Budgeting steps, preventing runaway loops and caching.
+11. In the context of Agentic AI, which statement best describes “Evaluating Agents”?
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. Task success, trajectory quality and robustness benchmarks.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Evaluating Agents: Task success, trajectory quality and robustness benchmarks.
+12. In the context of Agentic AI, which statement best describes “Agent Frameworks and Patterns”?
+   - A. Comparing frameworks and reusable design patterns.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Agent Frameworks and Patterns: Comparing frameworks and reusable design patterns.
+13. In the context of Agentic AI, which statement best describes “Observability for Agents”?
+   - A. Tracing reasoning, tool calls and outcomes.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Observability for Agents: Tracing reasoning, tool calls and outcomes.
 14. In the context of Agentic AI, which statement best describes “The Agentic Reference Architecture”?
    - A. Orchestrator, tools, memory and guardrails as a platform.
    - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: A.** The Agentic Reference Architecture: Orchestrator, tools, memory and guardrails as a platform.
 15. In the context of Agentic AI, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
+   - A. It removes all security and governance requirements.
+   - B. an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Agentic AI system into a cohesive, working whole
 16. In the context of Agentic AI, which statement best describes “Hands-On Lab: Building an End-to-End Agentic AI System”?
    - A. a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Hands-On Lab: Building an End-to-End Agentic AI System: a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles
-17. In the context of Agentic AI, which statement best describes “Case Study: Software at Scale”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
-   - **Answer: D.** Case Study: Software at Scale: a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
-18. In the context of Agentic AI, which statement best describes “Operating in Production”?
-   - A. the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Operating in Production: the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
-19. In the context of Agentic AI, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
-   - B. a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release
-20. In the context of Agentic AI, which statement best describes “Security, Privacy and Governance”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
-21. In the context of Agentic AI, which statement best describes “Cost, Performance and Scaling”?
-   - A. techniques for controlling cost and latency while scaling a Agentic AI system to production traffic
    - B. It guarantees deterministic output regardless of input.
    - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Hands-On Lab: Building an End-to-End Agentic AI System: a guided, build-along laboratory that constructs a functioning Agentic AI system from first principles
+17. In the context of Agentic AI, which statement best describes “Case Study: Software at Scale”?
+   - A. a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Case Study: Software at Scale: a detailed case study of deploying Agentic AI in a demanding software environment, including the decisions, trade-offs and outcomes
+18. In the context of Agentic AI, which statement best describes “Operating in Production”?
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: D.** Operating in Production: the operational discipline required to run a Agentic AI system reliably, including monitoring, incident response and continuous improvement
+19. In the context of Agentic AI, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It removes all security and governance requirements.
+   - B. a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release
+   - C. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Agentic AI system before and after release
+20. In the context of Agentic AI, which statement best describes “Security, Privacy and Governance”?
+   - A. It makes the system slower but has no other effect.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
+   - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a Agentic AI system trustworthy and compliant
+21. In the context of Agentic AI, which statement best describes “Cost, Performance and Scaling”?
+   - A. techniques for controlling cost and latency while scaling a Agentic AI system to production traffic
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Agentic AI system to production traffic
 22. In the context of Agentic AI, which statement best describes “Integration and Interoperability”?
    - A. patterns for integrating a Agentic AI system with surrounding enterprise systems and data
-   - B. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Integration and Interoperability: patterns for integrating a Agentic AI system with surrounding enterprise systems and data
 23. In the context of Agentic AI, which statement best describes “Trends and Research Directions”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
    - C. emerging trends, open problems and research directions shaping the future of Agentic AI
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
    - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Agentic AI
 24. In the context of Agentic AI, which statement best describes “Capstone Project”?
    - A. It makes the system slower but has no other effect.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
-   - C. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
    - D. It removes all security and governance requirements.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
+   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Agentic AI deliverable
 25. In the context of Agentic AI, which statement best describes “Certification Preparation and Review”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
    - C. a structured review and certification-style preparation covering the full breadth of Agentic AI
-   - D. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Agentic AI
 
 # References

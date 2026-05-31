@@ -1,11 +1,11 @@
 @startuml
 title Deployment - Trends and Research Directions
-package "Knowledge Graphs Platform" {
-  component "Graphs, Triples and the…" as C0
-  component "Ontology and Schema Des…" as C1
-  component "Entity Extraction and L…" as C2
-  component "Graph Query Languages" as C3
-  component "Reasoning and Inference" as C4
+package "Trends and Research Directions Platform" {
+  component "Trends and Research Dir…" as C0
+  component "Graphs, Triples and the…" as C1
+  component "Graph Algorithms for In…" as C2
+  component "Graphs for Grounding LL…" as C3
+  component "Governance and Lineage" as C4
 }
 database "Storage" as DB
 C0 --> DB

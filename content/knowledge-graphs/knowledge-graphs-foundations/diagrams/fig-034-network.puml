@@ -1,11 +1,11 @@
 @startuml
-title Network - Capstone Project
-package "Knowledge Graphs Platform" {
-  component "Graphs, Triples and the…" as C0
-  component "Ontology and Schema Des…" as C1
-  component "Entity Extraction and L…" as C2
-  component "Graph Query Languages" as C3
-  component "Reasoning and Inference" as C4
+title Network - Certification Preparation and Review
+package "Certification Preparation and Review Platform" {
+  component "Certification Preparati…" as C0
+  component "Governance and Lineage" as C1
+  component "Graphs for Grounding LL…" as C2
+  component "Reasoning and Inference" as C3
+  component "Entity Extraction and L…" as C4
 }
 database "Storage" as DB
 C0 --> DB

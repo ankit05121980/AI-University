@@ -1,11 +1,11 @@
 @startuml
 title Network - Hands-On Lab: Building an End-to-End Vector Databases System
-package "Vector Databases Platform" {
-  component "The Case for Purpose-Bu…" as C0
-  component "ANN Indexing Algorithms" as C1
-  component "Distance Metrics and Qu…" as C2
+package "Hands-On Lab: Building an End-to-End Vector Databases System Platform" {
+  component "Hands-On Lab: Building …" as C0
+  component "Cost and Capacity Plann…" as C1
+  component "Benchmarking Vector Dat…" as C2
   component "Metadata Filtering and …" as C3
-  component "Sharding, Replication a…" as C4
+  component "Distance Metrics and Qu…" as C4
 }
 database "Storage" as DB
 C0 --> DB

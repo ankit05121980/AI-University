@@ -1,0 +1,34 @@
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Operating in Production Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Operating in Production]
+    S1[Safety, Sandboxing and Pe…]
+    S2[Agent Frameworks and Patt…]
+    S3[From Chatbots to Agents]
+    S4[Cost, Latency and Loop Co…]
+    S5[Tool Use and Function Cal…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC

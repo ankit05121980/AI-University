@@ -1,11 +1,11 @@
 @startuml
-title Infrastructure - Integration and Interoperability
-package "Vector Databases Platform" {
-  component "The Case for Purpose-Bu…" as C0
-  component "ANN Indexing Algorithms" as C1
-  component "Distance Metrics and Qu…" as C2
-  component "Metadata Filtering and …" as C3
-  component "Sharding, Replication a…" as C4
+title Infrastructure - Trends and Research Directions
+package "Trends and Research Directions Platform" {
+  component "Trends and Research Dir…" as C0
+  component "Sharding, Replication a…" as C1
+  component "Security and Multi-Tena…" as C2
+  component "Hybrid and Multi-Vector…" as C3
+  component "Operating in Production" as C4
 }
 database "Storage" as DB
 C0 --> DB

@@ -121,11 +121,15 @@ def build_book(spec: BookSpec) -> Book:
         chap_words = sum(prose.word_count(s.body) for s in sections)
 
         n_diag = 1 + (1 if rng.random() < 0.35 else 0)
+        # Per-chapter diagram context: centre the figures on this chapter's topic
+        # so diagrams differ from chapter to chapter instead of repeating.
+        chap_dom = {**domain, "name": topic, "concepts": [(topic, desc)] + related,
+                    "_ordered": True}
         cdiagrams: list[Diagram] = []
         for d in range(n_diag):
             kind = diagram_kinds[(idx + d) % len(diagram_kinds)]
             dtitle = f"{kind} - {topic}"
-            cdiagrams.append(diaggen.make_diagram(domain, kind, dtitle, rng))
+            cdiagrams.append(diaggen.make_diagram(chap_dom, kind, dtitle, rng))
 
         ccode: list[CodeSample] = []
         if topic not in ("Trends and Research Directions",):

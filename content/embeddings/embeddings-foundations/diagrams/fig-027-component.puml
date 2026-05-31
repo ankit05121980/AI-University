@@ -1,0 +1,16 @@
+@startuml
+title Component - Evaluation and Quality Assurance
+package "Evaluation and Quality Assurance Platform" {
+  component "Evaluation and Quality …" as C0
+  component "Operating an Embedding …" as C1
+  component "Domain Adaptation and F…" as C2
+  component "Word, Sentence and Docu…" as C3
+  component "Multimodal and Cross-En…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

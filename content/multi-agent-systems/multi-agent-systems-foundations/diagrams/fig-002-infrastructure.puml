@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - Agent Roles and Topologies
-package "Multi-Agent Systems Platform" {
-  component "Why Multiple Agents" as C0
-  component "Agent Roles and Topolog…" as C1
-  component "Communication Protocols" as C2
-  component "Orchestration and Routi…" as C3
-  component "Shared Memory and State" as C4
+package "Agent Roles and Topologies Platform" {
+  component "Agent Roles and Topolog…" as C0
+  component "Communication Protocols" as C1
+  component "The Multi-Agent Referen…" as C2
+  component "Conflict Resolution" as C3
+  component "Frameworks and Patterns" as C4
 }
 database "Storage" as DB
 C0 --> DB

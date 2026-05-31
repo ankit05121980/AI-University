@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Domain Adaptation and Fine-Tuning
+package "Domain Adaptation and Fine-Tuning Platform" {
+  component "Domain Adaptation and F…" as C0
+  component "From One-Hot to Distrib…" as C1
+  component "Contrastive Representat…" as C2
+  component "Indexing for Approximat…" as C3
+  component "The Retrieval Stack Ref…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

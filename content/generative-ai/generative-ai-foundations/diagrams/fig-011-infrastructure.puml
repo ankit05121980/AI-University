@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - Evaluation of Generative Systems
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
-  component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
+package "Evaluation of Generative Systems Platform" {
+  component "Evaluation of Generativ…" as C0
+  component "Safety, Guardrails and …" as C1
+  component "Productionising Generat…" as C2
+  component "Large Language Models a…" as C3
+  component "Controllability and Str…" as C4
 }
 database "Storage" as DB
 C0 --> DB

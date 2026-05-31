@@ -83,28 +83,28 @@ First published 2026. First Edition. Document version 1.0.0.
 | 1 | Generative Modelling Foundations | 10 | 1 | 1 | 4 |
 | 2 | Large Language Models as Generators | 11 | 1 | 1 | 4 |
 | 3 | Diffusion Models for Images and Audio | 11 | 2 | 1 | 4 |
-| 4 | Multimodal Generation | 11 | 2 | 1 | 4 |
-| 5 | Grounding with Enterprise Data | 11 | 1 | 1 | 4 |
-| 6 | Controllability and Structured Output | 11 | 1 | 1 | 4 |
-| 7 | Evaluation of Generative Systems | 10 | 1 | 1 | 4 |
-| 8 | Safety, Guardrails and Content Moderation | 11 | 2 | 1 | 4 |
+| 4 | Multimodal Generation | 10 | 1 | 1 | 4 |
+| 5 | Grounding with Enterprise Data | 11 | 2 | 1 | 4 |
+| 6 | Controllability and Structured Output | 11 | 2 | 1 | 4 |
+| 7 | Evaluation of Generative Systems | 11 | 2 | 1 | 4 |
+| 8 | Safety, Guardrails and Content Moderation | 11 | 1 | 1 | 4 |
 | 9 | Cost, Latency and Throughput Engineering | 11 | 2 | 1 | 4 |
-| 10 | Synthetic Data Generation | 10 | 1 | 1 | 4 |
+| 10 | Synthetic Data Generation | 11 | 1 | 1 | 4 |
 | 11 | Enterprise Use-Case Patterns | 10 | 1 | 1 | 4 |
-| 12 | Productionising Generative Applications | 11 | 2 | 1 | 4 |
-| 13 | Governance and Intellectual Property | 11 | 2 | 1 | 4 |
-| 14 | The GenAI Reference Architecture | 11 | 1 | 1 | 4 |
+| 12 | Productionising Generative Applications | 10 | 1 | 1 | 4 |
+| 13 | Governance and Intellectual Property | 10 | 1 | 1 | 4 |
+| 14 | The GenAI Reference Architecture | 11 | 2 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 11 | 1 | 1 | 4 |
-| 16 | Hands-On Lab: Building an End-to-End Generative AI System | 11 | 1 | 1 | 4 |
+| 16 | Hands-On Lab: Building an End-to-End Generative AI System | 11 | 2 | 1 | 4 |
 | 17 | Case Study: Legal at Scale | 11 | 2 | 1 | 4 |
-| 18 | Operating in Production | 11 | 1 | 1 | 4 |
-| 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
+| 18 | Operating in Production | 10 | 1 | 1 | 4 |
+| 19 | Evaluation and Quality Assurance | 11 | 1 | 1 | 4 |
 | 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 11 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
 | 23 | Trends and Research Directions | 10 | 1 | 0 | 4 |
-| 24 | Capstone Project | 10 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
+| 24 | Capstone Project | 11 | 2 | 1 | 4 |
+| 25 | Certification Preparation and Review | 11 | 1 | 1 | 4 |
 
 ---
 
@@ -115,35 +115,36 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 3. Business Process - Diffusion Models for Images and Audio
 - Figure 4. Application Flow - Diffusion Models for Images and Audio
 - Figure 5. Application Flow - Multimodal Generation
-- Figure 6. Knowledge Graph - Multimodal Generation
-- Figure 7. Knowledge Graph - Grounding with Enterprise Data
+- Figure 6. Knowledge Graph - Grounding with Enterprise Data
+- Figure 7. Operating Model - Grounding with Enterprise Data
 - Figure 8. Operating Model - Controllability and Structured Output
-- Figure 9. Cloud Architecture - Evaluation of Generative Systems
-- Figure 10. Infrastructure - Safety, Guardrails and Content Moderation
-- Figure 11. Data Lineage - Safety, Guardrails and Content Moderation
-- Figure 12. Data Lineage - Cost, Latency and Throughput Engineering
-- Figure 13. CI/CD Pipeline - Cost, Latency and Throughput Engineering
-- Figure 14. CI/CD Pipeline - Synthetic Data Generation
-- Figure 15. Architecture - Enterprise Use-Case Patterns
-- Figure 16. Component - Productionising Generative Applications
-- Figure 17. Security Architecture - Productionising Generative Applications
+- Figure 9. Cloud Architecture - Controllability and Structured Output
+- Figure 10. Cloud Architecture - Evaluation of Generative Systems
+- Figure 11. Infrastructure - Evaluation of Generative Systems
+- Figure 12. Infrastructure - Safety, Guardrails and Content Moderation
+- Figure 13. Data Lineage - Cost, Latency and Throughput Engineering
+- Figure 14. CI/CD Pipeline - Cost, Latency and Throughput Engineering
+- Figure 15. CI/CD Pipeline - Synthetic Data Generation
+- Figure 16. Architecture - Enterprise Use-Case Patterns
+- Figure 17. Component - Productionising Generative Applications
 - Figure 18. Security Architecture - Governance and Intellectual Property
-- Figure 19. Class - Governance and Intellectual Property
-- Figure 20. Class - The GenAI Reference Architecture
+- Figure 19. Class - The GenAI Reference Architecture
+- Figure 20. Capability Map - The GenAI Reference Architecture
 - Figure 21. Capability Map - Putting It Together: A Reference Implementation
 - Figure 22. Data Flow - Hands-On Lab: Building an End-to-End Generative AI System
-- Figure 23. Network - Case Study: Legal at Scale
-- Figure 24. Deployment - Case Study: Legal at Scale
-- Figure 25. Deployment - Operating in Production
-- Figure 26. RAG Architecture - Evaluation and Quality Assurance
-- Figure 27. DevOps Pipeline - Evaluation and Quality Assurance
+- Figure 23. Network - Hands-On Lab: Building an End-to-End Generative AI System
+- Figure 24. Network - Case Study: Legal at Scale
+- Figure 25. Deployment - Case Study: Legal at Scale
+- Figure 26. Deployment - Operating in Production
+- Figure 27. RAG Architecture - Evaluation and Quality Assurance
 - Figure 28. DevOps Pipeline - Security, Privacy and Governance
 - Figure 29. Agent Architecture - Security, Privacy and Governance
 - Figure 30. Agent Architecture - Cost, Performance and Scaling
 - Figure 31. Sequence - Integration and Interoperability
 - Figure 32. Business Process - Trends and Research Directions
 - Figure 33. Application Flow - Capstone Project
-- Figure 34. Knowledge Graph - Certification Preparation and Review
+- Figure 34. Knowledge Graph - Capstone Project
+- Figure 35. Knowledge Graph - Certification Preparation and Review
 
 ---
 
@@ -249,7 +250,7 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 1. Agent Architecture - Generative Modelling Foundations** (plantuml). Figure: Agent Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. Agent Architecture - Generative Modelling Foundations** (plantuml). Figure: Agent Architecture view for Generative Modelling Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -353,59 +354,48 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Generative Modelling Foundations component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Generative Modelling Foundations component
+### Listing: Evaluating Generative Modelling Foundations with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class GenerativeModellingFoundationsConfig:
-    """Configuration for the Generative Modelling Foundations component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class GenerativeModellingFoundations:
-    """A minimal, production-shaped implementation of Generative Modelling Foundations."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Generative Modelling Foundations output against references with a simple exact-match metric.
 
-    def __init__(self, config: GenerativeModellingFoundationsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"GenerativeModellingFoundations failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Generative Modelling Foundations goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Generative Modelling Foundations”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. Likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Generative Modelling Foundations: Likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity.
@@ -479,7 +469,7 @@ Gateway --> User : response
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 2. Sequence - Large Language Models as Generators** (plantuml). Figure: Sequence view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Sequence - Large Language Models as Generators** (plantuml). Figure: Sequence view for Large Language Models as Generators. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -583,75 +573,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Large Language Models as Generators component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Large Language Models as Generators component
+### Listing: Evaluating Large Language Models as Generators with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class LargeLanguageModelsConfig:
-    """Configuration for the Large Language Models as Generators component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class LargeLanguageModels:
-    """A minimal, production-shaped implementation of Large Language Models as Generators."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Large Language Models as Generators output against references with a simple exact-match metric.
 
-    def __init__(self, config: LargeLanguageModelsConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"LargeLanguageModels failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Large Language Models as Generators goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Large Language Models as Generators”?
-   - A. It removes all security and governance requirements.
-   - B. Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Large Language Models as Generators: Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
+   - A. Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Large Language Models as Generators: Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
+   - A. Ignoring token cost growth as adoption scales.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Run an automated evaluation suite on every prompt or model change.
    - D. Relying on a single provider with no fallback or routing strategy.
-   - **Answer: B.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - **Answer: C.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. It is only relevant to academic research, not production.
-   - D. Run an automated evaluation suite on every prompt or model change.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-4. *(Discussion)* Explain Large Language Models as Generators and why it matters in a production Generative AI system.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Ignoring token cost growth as adoption scales.
+   - D. Treat prompts as versioned, tested artefacts under source control.
+   - **Answer: C.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* What trade-offs would you weigh when implementing Large Language Models as Generators?
    - **Model answer:** A strong answer defines large language models as generators (Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -708,15 +687,26 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 3. Business Process - Diffusion Models for Images and Audio** (plantuml). Figure: Business Process view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 3. Business Process - Diffusion Models for Images and Audio** (plantuml). Figure: Business Process view for Diffusion Models for Images and Audio. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title Application Flow - Diffusion Models for Images and Audio
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="4-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn9fd5c44" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn9fd5c44)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn9fd5c44)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Diffusion Models for Images and Audio</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="420" y="108" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Synthetic Data Generation</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Enterprise Use-Case</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Productionising Generative</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Applications</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#db2777" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Intellectual Property</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="296" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The GenAI Reference</text><text x="296" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  Application Flow</text></svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
-
-**Figure 4. Application Flow - Diffusion Models for Images and Audio** (svg). Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 4. Application Flow - Diffusion Models for Images and Audio** (plantuml). Figure: Application Flow view for Diffusion Models for Images and Audio. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -740,7 +730,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with governance and intellectual property. Because governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation of generative systems. Because evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -820,80 +810,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Diffusion Models for Images and Audio logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Diffusion Models for Images and Audio
+### Listing: Evaluating Diffusion Models for Images and Audio with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Diffusion Models for Images and Audio."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Diffusion Models for Images and Audio output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Diffusion Models for Images and Audio”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
    - B. Forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance.
    - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
    - **Answer: B.** Diffusion Models for Images and Audio: Forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
+   - A. It guarantees deterministic output regardless of input.
    - B. It is only relevant to academic research, not production.
-   - C. Define explicit cost and latency budgets per use case and route accordingly.
-   - D. Shipping ungrounded generations into high-stakes workflows.
-   - **Answer: C.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: C.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Treat prompts as versioned, tested artefacts under source control.
+   - A. Always ground high-stakes generations in retrieved, citable sources.
    - B. It removes all security and governance requirements.
-   - C. Shipping ungrounded generations into high-stakes workflows.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
 4. *(Discussion)* Describe a failure mode of Diffusion Models for Images and Audio and how you would mitigate it.
    - **Model answer:** A strong answer defines diffusion models for images and audio (Forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
@@ -906,33 +879,33 @@ _This chapter examines multimodal generation within Generative AI. It covers joi
 
 ## Introduction
 
-Multimodal Generation can be characterised as joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Multimodal Generation can be characterised as joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. Getting this right early prevents expensive rework once a Generative AI system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Multimodal Generation is best understood as joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Multimodal Generation addresses joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, multimodal generation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, multimodal generation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. This concept recurs throughout the Generative AI lifecycle, from design to operations.
 
-Multimodal Generation cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Multimodal Generation cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Multimodal Generation cannot be understood in isolation from governance and intellectual property. Recall that governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Multimodal Generation cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to multimodal generation. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to multimodal generation. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around multimodal generation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around multimodal generation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Multimodal Generation sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+The reference architecture for Multimodal Generation separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```mermaid
 flowchart LR
@@ -945,25 +918,17 @@ flowchart LR
   STORE --> CONS[Consumers]
 ```
 
-**Figure 5. Application Flow - Multimodal Generation** (mermaid). Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="mindmap" data-pal="11-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn9a0069a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e40af"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn9a0069a)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn9a0069a)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Multimodal Generation</text><rect x="330" y="210" width="180" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="236" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff" dominant-baseline="middle">Generative AI</text><path d="M330,236 C250,236 250,126 248,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="104" width="156" height="44" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="170" y="126" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Synthetic Data Generation</text><path d="M330,236 C250,236 250,236 248,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="214" width="156" height="44" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="170" y="236" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Enterprise Use-Case Patterns</text><path d="M330,236 C250,236 250,346 248,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="324" width="156" height="44" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="170" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Productionising Generative</text><text x="170" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Applications</text><path d="M510,236 C590,236 590,126 592,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="104" width="156" height="44" rx="11" fill="#b45309" filter="url(#sh)"/><text x="670" y="121" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and Intellectual</text><text x="670" y="131" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Property</text><path d="M510,236 C590,236 590,236 592,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="214" width="156" height="44" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="670" y="231" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The GenAI Reference</text><text x="670" y="241" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><path d="M510,236 C590,236 590,346 592,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="324" width="156" height="44" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="670" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Generative Modelling</text><text x="670" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Foundations</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  Knowledge Graph</text></svg>
-
-</div>
-
-**Figure 6. Knowledge Graph - Multimodal Generation** (svg). Figure: Knowledge Graph view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 5. Application Flow - Multimodal Generation** (mermaid). Figure: Application Flow view for Multimodal Generation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into multimodal generation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into multimodal generation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with enterprise use-case patterns. Because enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -971,13 +936,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into multimodal generation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into multimodal generation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with enterprise use-case patterns. Because enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and throughput engineering. Because cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1057,57 +1022,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Multimodal Generation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Multimodal Generation component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Multimodal Generation
+### Listing: Implementing a Multimodal Generation component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class MultimodalGenerationConfig:
+    """Configuration for the Multimodal Generation component in a Generative AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Multimodal Generation."""
+class MultimodalGeneration:
+    """A minimal, production-shaped implementation of Multimodal Generation."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: MultimodalGenerationConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"MultimodalGeneration failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Multimodal Generation goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
@@ -1115,23 +1074,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Generative AI, which statement best describes “Multimodal Generation”?
    - A. Joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Multimodal Generation: Joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Always ground high-stakes generations in retrieved, citable sources.
-   - B. Shipping ungrounded generations into high-stakes workflows.
-   - C. It is only relevant to academic research, not production.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Shipping ungrounded generations into high-stakes workflows.
+   - D. Treat prompts as versioned, tested artefacts under source control.
+   - **Answer: D.** Best practice: Treat prompts as versioned, tested artefacts under source control.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Run an automated evaluation suite on every prompt or model change.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-4. *(Discussion)* What trade-offs would you weigh when implementing Multimodal Generation?
+   - A. Define explicit cost and latency budgets per use case and route accordingly.
+   - B. It is only relevant to academic research, not production.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+4. *(Discussion)* How would you test and monitor Multimodal Generation in production?
    - **Model answer:** A strong answer defines multimodal generation (Joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1143,23 +1102,23 @@ _This chapter examines grounding with enterprise data within Generative AI. It c
 
 ## Introduction
 
-Grounding with Enterprise Data refers to retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. This concept recurs throughout the Generative AI lifecycle, from design to operations. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+In practical terms, Grounding with Enterprise Data is best understood as retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. Getting this right early prevents expensive rework once a Generative AI system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Grounding with Enterprise Data can be characterised as retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Grounding with Enterprise Data addresses retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, grounding with enterprise data is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, grounding with enterprise data is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
 
-Grounding with Enterprise Data cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Grounding with Enterprise Data cannot be understood in isolation from generative modelling foundations. Recall that generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Grounding with Enterprise Data cannot be understood in isolation from large language models as generators. Recall that large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Grounding with Enterprise Data cannot be understood in isolation from governance and intellectual property. Recall that governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Several established patterns apply directly to grounding with enterprise data. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around grounding with enterprise data are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around grounding with enterprise data are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1173,27 +1132,56 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 ```mermaid
 graph LR
-  D(("Generative AI"))
-  D --- C0[Generative Modelling …]
-  D --- C1[Large Language Models…]
-  D --- C2[Diffusion Models for …]
-  D --- C3[Multimodal Generation]
-  D --- C4[Grounding with Enterp…]
+  D(("Grounding with Ente…"))
+  D --- C0[Grounding with Enterp…]
+  D --- C1[Generative Modelling …]
+  D --- C2[Governance and Intell…]
+  D --- C3[Diffusion Models for …]
+  D --- C4[Synthetic Data Genera…]
   C0 --- C1
   C1 --- C2
 ```
 
-**Figure 7. Knowledge Graph - Grounding with Enterprise Data** (mermaid). Figure: Knowledge Graph view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 6. Knowledge Graph - Grounding with Enterprise Data** (mermaid). Figure: Knowledge Graph view for Grounding with Enterprise Data. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Operating Model">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Operating Model - Grounding with Enterprise Data" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Grounding with Enterp…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Governance and Intellec…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Synthetic Data Generati…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 7. Operating Model - Grounding with Enterprise Data** (drawio). Figure: Operating Model view for Grounding with Enterprise Data. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into grounding with enterprise data. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into grounding with enterprise data. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with generative modelling foundations. Because generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1203,11 +1191,11 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 Having established the essentials, we now go deeper into grounding with enterprise data. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1215,7 +1203,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply grounding with enterprise data as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply grounding with enterprise data as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1287,75 +1275,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Grounding with Enterprise Data component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Grounding with Enterprise Data component
+### Listing: Evaluating Grounding with Enterprise Data with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class GroundingWithEnterpriseConfig:
-    """Configuration for the Grounding with Enterprise Data component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class GroundingWithEnterprise:
-    """A minimal, production-shaped implementation of Grounding with Enterprise Data."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Grounding with Enterprise Data output against references with a simple exact-match metric.
 
-    def __init__(self, config: GroundingWithEnterpriseConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"GroundingWithEnterprise failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Grounding with Enterprise Data goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Grounding with Enterprise Data”?
-   - A. Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
+   - A. It makes the system slower but has no other effect.
+   - B. Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Grounding with Enterprise Data: Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
+2. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. Relying on a single provider with no fallback or routing strategy.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It guarantees deterministic output regardless of input.
    - B. It makes the system slower but has no other effect.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Grounding with Enterprise Data: Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
-2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Always ground high-stakes generations in retrieved, citable sources.
-   - C. Shipping ungrounded generations into high-stakes workflows.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: B.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It makes the system slower but has no other effect.
-   - C. Run an automated evaluation suite on every prompt or model change.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-4. *(Discussion)* What trade-offs would you weigh when implementing Grounding with Enterprise Data?
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+4. *(Discussion)* How would you test and monitor Grounding with Enterprise Data in production?
    - **Model answer:** A strong answer defines grounding with enterprise data (Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1367,50 +1344,58 @@ _This chapter examines controllability and structured output within Generative A
 
 ## Introduction
 
-Controllability and Structured Output can be characterised as constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. It is foundational: later capabilities in Generative AI are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+We define Controllability and Structured Output as constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Controllability and Structured Output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Controllability and Structured Output is best understood as constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, controllability and structured output is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
 
-Controllability and Structured Output cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Controllability and Structured Output cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Controllability and Structured Output cannot be understood in isolation from productionising generative applications. Recall that productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Controllability and Structured Output cannot be understood in isolation from multimodal generation. Recall that multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to controllability and structured output. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to controllability and structured output. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around controllability and structured output are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Controllability and Structured Output is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+From an architectural standpoint, Controllability and Structured Output sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="grid_matrix" data-pal="10-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnb11cdf4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#14532d"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnb11cdf4)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnb11cdf4)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Controllability and Structured Output</text><text x="276" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Plan</text><text x="430" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Build</text><text x="582" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Run</text><text x="736" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Improve</text><text x="188" y="119" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Controllability and</text><text x="188" y="131" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Structured Output</text><rect x="203" y="93" width="147" height="64" rx="8" fill="#4ade80"/><rect x="203" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#14532d"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#166534"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#15803d"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><text x="188" y="189" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">The GenAI Reference</text><text x="188" y="201" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Architecture</text><rect x="203" y="163" width="147" height="64" rx="8" fill="#14532d"/><rect x="203" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#166534"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#15803d"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#16a34a"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><text x="188" y="265" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Multimodal Generation</text><rect x="203" y="233" width="147" height="64" rx="8" fill="#166534"/><rect x="203" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#15803d"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#16a34a"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#22c55e"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><text x="188" y="329" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Evaluation of Generative</text><text x="188" y="341" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Systems</text><rect x="203" y="303" width="147" height="64" rx="8" fill="#15803d"/><rect x="203" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.38"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#16a34a"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#22c55e"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#4ade80"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Controllability and Structured Output  •  Operating Model</text></svg>
+
+</div>
+
+**Figure 8. Operating Model - Controllability and Structured Output** (svg). Figure: Operating Model view for Controllability and Structured Output. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```xml
 <mxfile host="ai-university">
-  <diagram name="Operating Model">
+  <diagram name="Cloud Architecture">
     <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Controllability and Structured Output" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="title" value="Cloud Architecture - Controllability and Structured Output" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Controllability and S…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Controllability and Str…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="The GenAI Reference Arc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Evaluation of Generativ…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
@@ -1422,17 +1407,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 8. Operating Model - Controllability and Structured Output** (drawio). Figure: Operating Model view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. Cloud Architecture - Controllability and Structured Output** (drawio). Figure: Cloud Architecture view for Controllability and Structured Output. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into controllability and structured output. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1442,11 +1427,11 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 Having established the essentials, we now go deeper into controllability and structured output. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with large language models as generators. Because large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with enterprise use-case patterns. Because enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1454,7 +1439,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-Consider a concrete scenario. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply controllability and structured output as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A marketing organisation needs brand-safe content generation with human-in-the-loop review. They decide to apply controllability and structured output as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1577,24 +1562,24 @@ class ControllabilityAndStructured:
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Controllability and Structured Output”?
-   - A. It is only relevant to academic research, not production.
-   - B. Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
-   - C. It applies exclusively to image data.
+   - A. Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Controllability and Structured Output: Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
+   - **Answer: A.** Controllability and Structured Output: Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Define explicit cost and latency budgets per use case and route accordingly.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Ignoring token cost growth as adoption scales.
+   - A. Always ground high-stakes generations in retrieved, citable sources.
    - B. It is only relevant to academic research, not production.
    - C. It removes all security and governance requirements.
    - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-4. *(Discussion)* Describe a failure mode of Controllability and Structured Output and how you would mitigate it.
+   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It removes all security and governance requirements.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+4. *(Discussion)* Walk through how you would design Controllability and Structured Output for an enterprise Generative AI workload.
    - **Model answer:** A strong answer defines controllability and structured output (Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1606,23 +1591,23 @@ _This chapter examines evaluation of generative systems within Generative AI. It
 
 ## Introduction
 
-Evaluation of Generative Systems refers to reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. This concept recurs throughout the Generative AI lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Evaluation of Generative Systems refers to reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. Getting this right early prevents expensive rework once a Generative AI system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Evaluation of Generative Systems addresses reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Evaluation of Generative Systems refers to reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, evaluation of generative systems is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, evaluation of generative systems is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
 
-Evaluation of Generative Systems cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation of Generative Systems cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Evaluation of Generative Systems cannot be understood in isolation from productionising generative applications. Recall that productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Evaluation of Generative Systems cannot be understood in isolation from productionising generative applications. Recall that productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to evaluation of generative systems. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation of generative systems. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation of generative systems are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation of generative systems are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1632,25 +1617,59 @@ Concretely, the principal building blocks include generative modelling foundatio
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title Cloud Architecture - Evaluation of Generative Systems
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="3-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnf3efcb7" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnf3efcb7)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnf3efcb7)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Cloud Architecture - Evaluation of Generative Systems</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and Intellectual Property</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#f97316" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The GenAI Reference Architecture</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#f97316" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multimodal Generation</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Grounding with Enterprise Data</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="516" y="239" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Controllability and Structured</text><text x="516" y="249" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Output</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#d97706" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of Generative Systems</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#d97706" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#f59e0b" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  Cloud Architecture</text></svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
+**Figure 10. Cloud Architecture - Evaluation of Generative Systems** (plantuml). Figure: Cloud Architecture view for Evaluation of Generative Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 9. Cloud Architecture - Evaluation of Generative Systems** (svg). Figure: Cloud Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```plantuml
+@startuml
+title Infrastructure - Evaluation of Generative Systems
+package "Evaluation of Generative Systems Platform" {
+  component "Evaluation of Generativ…" as C0
+  component "Safety, Guardrails and …" as C1
+  component "Productionising Generat…" as C2
+  component "Large Language Models a…" as C3
+  component "Controllability and Str…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 11. Infrastructure - Evaluation of Generative Systems** (plantuml). Figure: Infrastructure view for Evaluation of Generative Systems. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into evaluation of generative systems. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with enterprise use-case patterns. Because enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with safety, guardrails and content moderation. Because safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1658,9 +1677,9 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation of generative systems. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation of generative systems. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1672,7 +1691,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply evaluation of generative systems as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply evaluation of generative systems as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1744,64 +1763,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Evaluation of Generative Systems logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Evaluation of Generative Systems with a regression gate
+### Listing: A composable processing pipeline for Evaluation of Generative Systems
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Evaluation of Generative Systems output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Evaluation of Generative Systems."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Evaluation of Generative Systems”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Evaluation of Generative Systems: Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
-2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Define explicit cost and latency budgets per use case and route accordingly.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
    - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-4. *(Discussion)* Describe a failure mode of Evaluation of Generative Systems and how you would mitigate it.
+   - C. It applies exclusively to image data.
+   - D. Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
+   - **Answer: D.** Evaluation of Generative Systems: Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
+2. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Run an automated evaluation suite on every prompt or model change.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Run an automated evaluation suite on every prompt or model change.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Define explicit cost and latency budgets per use case and route accordingly.
+   - B. Ignoring token cost growth as adoption scales.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* What trade-offs would you weigh when implementing Evaluation of Generative Systems?
    - **Model answer:** A strong answer defines evaluation of generative systems (Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1813,23 +1849,23 @@ _This chapter examines safety, guardrails and content moderation within Generati
 
 ## Introduction
 
-Safety, Guardrails and Content Moderation can be characterised as input/output filtering, jailbreak resistance and layered defence in depth. This concept recurs throughout the Generative AI lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Safety, Guardrails and Content Moderation refers to input/output filtering, jailbreak resistance and layered defence in depth. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Safety, Guardrails and Content Moderation as input/output filtering, jailbreak resistance and layered defence in depth. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Safety, Guardrails and Content Moderation can be characterised as input/output filtering, jailbreak resistance and layered defence in depth. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, safety, guardrails and content moderation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
 
-Safety, Guardrails and Content Moderation cannot be understood in isolation from productionising generative applications. Recall that productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Safety, Guardrails and Content Moderation cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Safety, Guardrails and Content Moderation cannot be understood in isolation from cost, latency and throughput engineering. Recall that cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Safety, Guardrails and Content Moderation cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Several established patterns apply directly to safety, guardrails and content moderation. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around safety, guardrails and content moderation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around safety, guardrails and content moderation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1841,57 +1877,38 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Infrastructure">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Safety, Guardrails and Content Moderation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Infrastructure - Safety, Guardrails and Content Moderation
+package "Safety, Guardrails and Content Moderation Platform" {
+  component "Safety, Guardrails and …" as C0
+  component "Evaluation of Generativ…" as C1
+  component "Diffusion Models for Im…" as C2
+  component "Productionising Generat…" as C3
+  component "Synthetic Data Generati…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 10. Infrastructure - Safety, Guardrails and Content Moderation** (drawio). Figure: Infrastructure view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
-```
-
-**Figure 11. Data Lineage - Safety, Guardrails and Content Moderation** (mermaid). Figure: Data Lineage view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. Infrastructure - Safety, Guardrails and Content Moderation** (plantuml). Figure: Infrastructure view for Safety, Guardrails and Content Moderation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into safety, guardrails and content moderation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into safety, guardrails and content moderation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with productionising generative applications. Because productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation of generative systems. Because evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1901,7 +1918,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 Having established the essentials, we now go deeper into safety, guardrails and content moderation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1913,7 +1930,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply safety, guardrails and content moderation as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply safety, guardrails and content moderation as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2025,24 +2042,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Safety, Guardrails and Content Moderation”?
-   - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Input/output filtering, jailbreak resistance and layered defence in depth.
-   - **Answer: D.** Safety, Guardrails and Content Moderation: Input/output filtering, jailbreak resistance and layered defence in depth.
+   - A. Input/output filtering, jailbreak resistance and layered defence in depth.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Safety, Guardrails and Content Moderation: Input/output filtering, jailbreak resistance and layered defence in depth.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Shipping ungrounded generations into high-stakes workflows.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. Define explicit cost and latency budgets per use case and route accordingly.
+   - **Answer: D.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-4. *(Discussion)* What trade-offs would you weigh when implementing Safety, Guardrails and Content Moderation?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. It makes the system slower but has no other effect.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* Describe a failure mode of Safety, Guardrails and Content Moderation and how you would mitigate it.
    - **Model answer:** A strong answer defines safety, guardrails and content moderation (Input/output filtering, jailbreak resistance and layered defence in depth.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2054,33 +2071,33 @@ _This chapter examines cost, latency and throughput engineering within Generativ
 
 ## Introduction
 
-Cost, Latency and Throughput Engineering refers to token economics, caching, batching, distillation and routing across model tiers. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Cost, Latency and Throughput Engineering refers to token economics, caching, batching, distillation and routing across model tiers. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Cost, Latency and Throughput Engineering concerns token economics, caching, batching, distillation and routing across model tiers. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Cost, Latency and Throughput Engineering is best understood as token economics, caching, batching, distillation and routing across model tiers. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, cost, latency and throughput engineering is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, cost, latency and throughput engineering is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
 
-Cost, Latency and Throughput Engineering cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Latency and Throughput Engineering cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Cost, Latency and Throughput Engineering cannot be understood in isolation from productionising generative applications. Recall that productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Cost, Latency and Throughput Engineering cannot be understood in isolation from grounding with enterprise data. Recall that grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to cost, latency and throughput engineering. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, latency and throughput engineering. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, latency and throughput engineering are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, latency and throughput engineering are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Cost, Latency and Throughput Engineering separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for Cost, Latency and Throughput Engineering is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```mermaid
 flowchart LR
@@ -2093,25 +2110,37 @@ flowchart LR
   STORE --> CONS[Consumers]
 ```
 
-**Figure 12. Data Lineage - Cost, Latency and Throughput Engineering** (mermaid). Figure: Data Lineage view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Data Lineage - Cost, Latency and Throughput Engineering** (mermaid). Figure: Data Lineage view for Cost, Latency and Throughput Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="5-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnfe441c5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#1e40af"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnfe441c5)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnfe441c5)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Cost, Latency and Throughput Engineering</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#60a5fa" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Productionising Generative</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Applications</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Governance and</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Intellectual Property</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#1e3a8a" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The GenAI Reference</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Generative Modelling</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Foundations</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="296" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Large Language Models as</text><text x="296" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Generators</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  CI/CD Pipeline</text></svg>
-
-</div>
-
-**Figure 13. CI/CD Pipeline - Cost, Latency and Throughput Engineering** (svg). Figure: CI/CD Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 14. CI/CD Pipeline - Cost, Latency and Throughput Engineering** (mermaid). Figure: CI/CD Pipeline view for Cost, Latency and Throughput Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, latency and throughput engineering. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, latency and throughput engineering. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2119,13 +2148,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, latency and throughput engineering. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, latency and throughput engineering. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation of generative systems. Because evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2133,7 +2162,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply cost, latency and throughput engineering as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply cost, latency and throughput engineering as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2205,63 +2234,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Cost, Latency and Throughput Engineering component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Cost, Latency and Throughput Engineering with a regression gate
+### Listing: Implementing a Cost, Latency and Throughput Engineering component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class LatencyAndConfig:
+    """Configuration for the Cost, Latency and Throughput Engineering component in a Generative AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Cost, Latency and Throughput Engineering output against references with a simple exact-match metric.
+class LatencyAnd:
+    """A minimal, production-shaped implementation of Cost, Latency and Throughput Engineering."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: LatencyAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"LatencyAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Cost, Latency and Throughput Engineering goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Cost, Latency and Throughput Engineering”?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Token economics, caching, batching, distillation and routing across model tiers.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Cost, Latency and Throughput Engineering: Token economics, caching, batching, distillation and routing across model tiers.
-2. Which of the following is a recommended best practice when working with Generative AI?
    - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-3. Which of the following is a common pitfall to avoid in Generative AI?
+   - B. Token economics, caching, batching, distillation and routing across model tiers.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Cost, Latency and Throughput Engineering: Token economics, caching, batching, distillation and routing across model tiers.
+2. Which of the following is a recommended best practice when working with Generative AI?
    - A. Always ground high-stakes generations in retrieved, citable sources.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. Relying on a single provider with no fallback or routing strategy.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
+   - B. Relying on a single provider with no fallback or routing strategy.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Evaluating only with anecdotes instead of a versioned test set.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. It is only relevant to academic research, not production.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
 4. *(Discussion)* Walk through how you would design Cost, Latency and Throughput Engineering for an enterprise Generative AI workload.
    - **Model answer:** A strong answer defines cost, latency and throughput engineering (Token economics, caching, batching, distillation and routing across model tiers.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
@@ -2274,41 +2314,53 @@ _This chapter examines synthetic data generation within Generative AI. It covers
 
 ## Introduction
 
-Formally, Synthetic Data Generation addresses augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Formally, Synthetic Data Generation addresses augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. Getting this right early prevents expensive rework once a Generative AI system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Synthetic Data Generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Synthetic Data Generation can be characterised as augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, synthetic data generation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, synthetic data generation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
 
-Synthetic Data Generation cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Synthetic Data Generation cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Synthetic Data Generation cannot be understood in isolation from grounding with enterprise data. Recall that grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Synthetic Data Generation cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to synthetic data generation. The first, retrieval-augmented grounding to reduce hallucination, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to synthetic data generation. The first, retrieval-augmented grounding to reduce hallucination, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around synthetic data generation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around synthetic data generation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Synthetic Data Generation sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+The reference architecture for Synthetic Data Generation separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="11-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn67dd78e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn67dd78e)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn67dd78e)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Synthetic Data Generation</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Controllability and</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Structured Output</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="544" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of Generative</text><text x="544" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Systems</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#b45309" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety, Guardrails and</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Content Moderation</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Throughput Engineering</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="296" y="198" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Synthetic Data Generation</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  CI/CD Pipeline</text></svg>
-
-</div>
-
-**Figure 14. CI/CD Pipeline - Synthetic Data Generation** (svg). Figure: CI/CD Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 15. CI/CD Pipeline - Synthetic Data Generation** (mermaid). Figure: CI/CD Pipeline view for Synthetic Data Generation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2318,7 +2370,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2332,7 +2384,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2340,7 +2392,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply synthetic data generation as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply synthetic data generation as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2412,75 +2464,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Synthetic Data Generation component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Synthetic Data Generation component
+### Listing: Evaluating Synthetic Data Generation with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class SyntheticDataGenerationConfig:
-    """Configuration for the Synthetic Data Generation component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class SyntheticDataGeneration:
-    """A minimal, production-shaped implementation of Synthetic Data Generation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Synthetic Data Generation output against references with a simple exact-match metric.
 
-    def __init__(self, config: SyntheticDataGenerationConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"SyntheticDataGeneration failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Synthetic Data Generation goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Synthetic Data Generation”?
-   - A. It removes all security and governance requirements.
-   - B. Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
-   - C. It is only relevant to academic research, not production.
+   - A. Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. It applies exclusively to image data.
-   - **Answer: B.** Synthetic Data Generation: Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
+   - **Answer: A.** Synthetic Data Generation: Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Always ground high-stakes generations in retrieved, citable sources.
+   - C. Shipping ungrounded generations into high-stakes workflows.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: B.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Ignoring token cost growth as adoption scales.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. Always ground high-stakes generations in retrieved, citable sources.
-   - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-4. *(Discussion)* How does Synthetic Data Generation interact with security and governance requirements?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. It removes all security and governance requirements.
+   - C. Define explicit cost and latency budgets per use case and route accordingly.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* Walk through how you would design Synthetic Data Generation for an enterprise Generative AI workload.
    - **Model answer:** A strong answer defines synthetic data generation (Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2492,27 +2533,27 @@ _This chapter examines enterprise use-case patterns within Generative AI. It cov
 
 ## Introduction
 
-Formally, Enterprise Use-Case Patterns addresses assistants, copilots, summarisers and autonomous workflows mapped to value. This concept recurs throughout the Generative AI lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Enterprise Use-Case Patterns addresses assistants, copilots, summarisers and autonomous workflows mapped to value. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Enterprise Use-Case Patterns as assistants, copilots, summarisers and autonomous workflows mapped to value. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Enterprise Use-Case Patterns is best understood as assistants, copilots, summarisers and autonomous workflows mapped to value. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, enterprise use-case patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, enterprise use-case patterns is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. This concept recurs throughout the Generative AI lifecycle, from design to operations.
 
-Enterprise Use-Case Patterns cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Enterprise Use-Case Patterns cannot be understood in isolation from synthetic data generation. Recall that synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Enterprise Use-Case Patterns cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Enterprise Use-Case Patterns cannot be understood in isolation from governance and intellectual property. Recall that governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to enterprise use-case patterns. The first, retrieval-augmented grounding to reduce hallucination, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to enterprise use-case patterns. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around enterprise use-case patterns are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around enterprise use-case patterns are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Enterprise Use-Case Patterns sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for Enterprise Use-Case Patterns is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -2520,13 +2561,24 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title Architecture - Enterprise Use-Case Patterns
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="0-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn99d03ed" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn99d03ed)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn99d03ed)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Enterprise Use-Case Patterns</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Large Language Models as Generators</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Diffusion Models for Images and Audio</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="131" y="239" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and Throughput</text><text x="131" y="249" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Engineering</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="324" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Synthetic Data Generation</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Enterprise Use-Case Patterns</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="709" y="239" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Productionising Generative</text><text x="709" y="249" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Applications</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  Architecture</text></svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
-
-**Figure 15. Architecture - Enterprise Use-Case Patterns** (svg). Figure: Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 16. Architecture - Enterprise Use-Case Patterns** (plantuml). Figure: Architecture view for Enterprise Use-Case Patterns. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -2536,7 +2588,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with synthetic data generation. Because synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2544,13 +2596,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into enterprise use-case patterns. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into enterprise use-case patterns. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with productionising generative applications. Because productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2558,7 +2610,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-Consider a concrete scenario. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply enterprise use-case patterns as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A marketing organisation needs brand-safe content generation with human-in-the-loop review. They decide to apply enterprise use-case patterns as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2671,23 +2723,23 @@ if __name__ == "__main__":
 
 1. In the context of Generative AI, which statement best describes “Enterprise Use-Case Patterns”?
    - A. Assistants, copilots, summarisers and autonomous workflows mapped to value.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Enterprise Use-Case Patterns: Assistants, copilots, summarisers and autonomous workflows mapped to value.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. Treat prompts as versioned, tested artefacts under source control.
-   - **Answer: D.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. It makes the system slower but has no other effect.
+   - C. Relying on a single provider with no fallback or routing strategy.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-4. *(Discussion)* How would you test and monitor Enterprise Use-Case Patterns in production?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. Relying on a single provider with no fallback or routing strategy.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Define explicit cost and latency budgets per use case and route accordingly.
+   - **Answer: B.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
+4. *(Discussion)* Explain Enterprise Use-Case Patterns and why it matters in a production Generative AI system.
    - **Model answer:** A strong answer defines enterprise use-case patterns (Assistants, copilots, summarisers and autonomous workflows mapped to value.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2699,23 +2751,23 @@ _This chapter examines productionising generative applications within Generative
 
 ## Introduction
 
-Productionising Generative Applications can be characterised as prompt management, versioning, observability and continuous evaluation in CI. It is foundational: later capabilities in Generative AI are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Productionising Generative Applications addresses prompt management, versioning, observability and continuous evaluation in CI. Getting this right early prevents expensive rework once a Generative AI system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Productionising Generative Applications can be characterised as prompt management, versioning, observability and continuous evaluation in CI. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Productionising Generative Applications can be characterised as prompt management, versioning, observability and continuous evaluation in CI. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, productionising generative applications is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, productionising generative applications is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
 
-Productionising Generative Applications cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Productionising Generative Applications cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Productionising Generative Applications cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Productionising Generative Applications cannot be understood in isolation from synthetic data generation. Recall that synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to productionising generative applications. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to productionising generative applications. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around productionising generative applications are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around productionising generative applications are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2725,17 +2777,17 @@ Concretely, the principal building blocks include generative modelling foundatio
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```plantuml
 @startuml
 title Component - Productionising Generative Applications
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
-  component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
+package "Productionising Generative Applications Platform" {
+  component "Productionising Generat…" as C0
+  component "Enterprise Use-Case Pat…" as C1
+  component "Synthetic Data Generati…" as C2
+  component "Evaluation of Generativ…" as C3
+  component "Cost, Latency and Throu…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -2748,52 +2800,9 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 16. Component - Productionising Generative Applications** (plantuml). Figure: Component view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Security Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Security Architecture - Productionising Generative Applicat…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 17. Security Architecture - Productionising Generative Applications** (drawio). Figure: Security Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 17. Component - Productionising Generative Applications** (plantuml). Figure: Component view for Productionising Generative Applications. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into productionising generative applications. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
-
-In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into productionising generative applications. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -2801,7 +2810,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with large language models as generators. Because large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with enterprise use-case patterns. Because enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into productionising generative applications. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+
+In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with enterprise use-case patterns. Because enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2921,24 +2944,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Productionising Generative Applications”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It makes the system slower but has no other effect.
    - B. Prompt management, versioning, observability and continuous evaluation in CI.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
    - **Answer: B.** Productionising Generative Applications: Prompt management, versioning, observability and continuous evaluation in CI.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Run an automated evaluation suite on every prompt or model change.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: A.** Best practice: Run an automated evaluation suite on every prompt or model change.
-3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. Shipping ungrounded generations into high-stakes workflows.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. It makes the system slower but has no other effect.
+   - C. Shipping ungrounded generations into high-stakes workflows.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-4. *(Discussion)* Walk through how you would design Productionising Generative Applications for an enterprise Generative AI workload.
+   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Treat prompts as versioned, tested artefacts under source control.
+   - C. Ignoring token cost growth as adoption scales.
+   - D. Always ground high-stakes generations in retrieved, citable sources.
+   - **Answer: C.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* What trade-offs would you weigh when implementing Productionising Generative Applications?
    - **Model answer:** A strong answer defines productionising generative applications (Prompt management, versioning, observability and continuous evaluation in CI.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2950,102 +2973,62 @@ _This chapter examines governance and intellectual property within Generative AI
 
 ## Introduction
 
-Governance and Intellectual Property can be characterised as provenance, watermarking, licensing and the legal landscape of generated content. This concept recurs throughout the Generative AI lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Formally, Governance and Intellectual Property addresses provenance, watermarking, licensing and the legal landscape of generated content. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Governance and Intellectual Property refers to provenance, watermarking, licensing and the legal landscape of generated content. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Governance and Intellectual Property refers to provenance, watermarking, licensing and the legal landscape of generated content. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, governance and intellectual property is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, governance and intellectual property is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
 
-Governance and Intellectual Property cannot be understood in isolation from multimodal generation. Recall that multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Governance and Intellectual Property cannot be understood in isolation from cost, latency and throughput engineering. Recall that cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Governance and Intellectual Property cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Governance and Intellectual Property cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to governance and intellectual property. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to governance and intellectual property. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around governance and intellectual property are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around governance and intellectual property are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Governance and Intellectual Property is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+From an architectural standpoint, Governance and Intellectual Property sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Generative AI Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Generative Modelling Foun…]
-    S1[Large Language Models as …]
-    S2[Diffusion Models for Imag…]
-    S3[Multimodal Generation]
-    S4[Grounding with Enterprise…]
-    S5[Controllability and Struc…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```plantuml
+@startuml
+title Security Architecture - Governance and Intellectual Property
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 18. Security Architecture - Governance and Intellectual Property** (mermaid). Figure: Security Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
 
-```mermaid
-classDiagram
-  class GAService {
-    +configure(config)
-    +process(request) Response
-    +evaluate(sample) Metrics
-  }
-  class Repository {
-    +get(id) Entity
-    +put(entity)
-  }
-  class Policy {
-    +authorise(ctx) bool
-  }
-  GAService --> Repository
-  GAService --> Policy
-```
-
-**Figure 19. Class - Governance and Intellectual Property** (mermaid). Figure: Class view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 18. Security Architecture - Governance and Intellectual Property** (plantuml). Figure: Security Architecture view for Governance and Intellectual Property. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into governance and intellectual property. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into governance and intellectual property. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and throughput engineering. Because cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3053,13 +3036,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into governance and intellectual property. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into governance and intellectual property. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with large language models as generators. Because large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3067,7 +3050,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply governance and intellectual property as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply governance and intellectual property as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3139,64 +3122,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Governance and Intellectual Property logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Governance and Intellectual Property with a regression gate
+### Listing: A composable processing pipeline for Governance and Intellectual Property
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Governance and Intellectual Property output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Governance and Intellectual Property."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Governance and Intellectual Property”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Provenance, watermarking, licensing and the legal landscape of generated content.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Governance and Intellectual Property: Provenance, watermarking, licensing and the legal landscape of generated content.
+   - A. Provenance, watermarking, licensing and the legal landscape of generated content.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Governance and Intellectual Property: Provenance, watermarking, licensing and the legal landscape of generated content.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Treat prompts as versioned, tested artefacts under source control.
-   - **Answer: D.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Shipping ungrounded generations into high-stakes workflows.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Shipping ungrounded generations into high-stakes workflows.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Run an automated evaluation suite on every prompt or model change.
-   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-4. *(Discussion)* Describe a failure mode of Governance and Intellectual Property and how you would mitigate it.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* Explain Governance and Intellectual Property and why it matters in a production Generative AI system.
    - **Model answer:** A strong answer defines governance and intellectual property (Provenance, watermarking, licensing and the legal landscape of generated content.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3208,7 +3208,7 @@ _This chapter examines the genai reference architecture within Generative AI. It
 
 ## Introduction
 
-The GenAI Reference Architecture can be characterised as gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. Getting this right early prevents expensive rework once a Generative AI system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+The GenAI Reference Architecture can be characterised as gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. Teams that master this consistently ship more reliable Generative AI systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
@@ -3216,54 +3216,69 @@ This chapter builds intuition first, then formalises the ideas, derives an archi
 
 Formally, The GenAI Reference Architecture addresses gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, the genai reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Neglecting it is one of the most common reasons Generative AI initiatives stall in production.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, the genai reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
 
-The GenAI Reference Architecture cannot be understood in isolation from synthetic data generation. Recall that synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+The GenAI Reference Architecture cannot be understood in isolation from generative modelling foundations. Recall that generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-The GenAI Reference Architecture cannot be understood in isolation from large language models as generators. Recall that large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+The GenAI Reference Architecture cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to the genai reference architecture. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the genai reference architecture. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the genai reference architecture are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around the genai reference architecture are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, The GenAI Reference Architecture sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for The GenAI Reference Architecture is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Class - The GenAI Reference Architecture
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```mermaid
+classDiagram
+  class TGRAService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  TGRAService --> Repository
+  TGRAService --> Policy
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+**Figure 19. Class - The GenAI Reference Architecture** (mermaid). Figure: Class view for The GenAI Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 20. Class - The GenAI Reference Architecture** (plantuml). Figure: Class view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```mermaid
+graph LR
+  D(("The GenAI Reference…"))
+  D --- C0[The GenAI Reference A…]
+  D --- C1[Generative Modelling …]
+  D --- C2[Diffusion Models for …]
+  D --- C3[Cost, Latency and Thr…]
+  D --- C4[Governance and Intell…]
+  C0 --- C1
+  C1 --- C2
+```
+
+**Figure 20. Capability Map - The GenAI Reference Architecture** (mermaid). Figure: Capability Map view for The GenAI Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the genai reference architecture. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the genai reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with synthetic data generation. Because synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with generative modelling foundations. Because generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3277,7 +3292,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with large language models as generators. Because large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3285,7 +3300,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply the genai reference architecture as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply the genai reference architecture as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3410,22 +3425,22 @@ class TheGenaiReference:
 1. In the context of Generative AI, which statement best describes “The GenAI Reference Architecture”?
    - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
-   - **Answer: D.** The GenAI Reference Architecture: Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
+   - C. Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** The GenAI Reference Architecture: Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Define explicit cost and latency budgets per use case and route accordingly.
-   - B. Evaluating only with anecdotes instead of a versioned test set.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-4. *(Discussion)* How would you test and monitor The GenAI Reference Architecture in production?
+   - A. Evaluating only with anecdotes instead of a versioned test set.
+   - B. Always ground high-stakes generations in retrieved, citable sources.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+4. *(Discussion)* Describe a failure mode of The GenAI Reference Architecture and how you would mitigate it.
    - **Model answer:** A strong answer defines the genai reference architecture (Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3437,43 +3452,63 @@ _This chapter examines putting it together: a reference implementation within Ge
 
 ## Introduction
 
-In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Putting It Together: A Reference Implementation concerns an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole. It is foundational: later capabilities in Generative AI are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Putting It Together: A Reference Implementation as an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Putting It Together: A Reference Implementation cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Putting It Together: A Reference Implementation cannot be understood in isolation from grounding with enterprise data. Recall that grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Putting It Together: A Reference Implementation separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for Putting It Together: A Reference Implementation is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-<div class="diagram-svg">
+```mermaid
+graph LR
+  D(("Putting It Together…"))
+  D --- C0[Putting It Together: …]
+  D --- C1[The GenAI Reference A…]
+  D --- C2[Grounding with Enterp…]
+  D --- C3[Diffusion Models for …]
+  D --- C4[Evaluation of Generat…]
+  C0 --- C1
+  C1 --- C2
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="3-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn9fd477c" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#d97706"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn9fd477c)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn9fd477c)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Putting It Together: A Reference Implementation</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#b45309"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#b45309"/><text x="128" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Enterprise</text><text x="128" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Use-Case</text><text x="128" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Patterns</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#d97706"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#d97706"/><text x="274" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Productionising</text><text x="274" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Generative</text><text x="274" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Applications</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#f59e0b"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#f59e0b"/><text x="420" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Governance and</text><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Intellectual</text><text x="420" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Property</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#ea580c"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#ea580c"/><text x="566" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">The GenAI</text><text x="566" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Reference</text><text x="566" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Architecture</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#f97316"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#f97316"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Generative</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Modelling</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Foundations</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  Capability Map</text></svg>
-
-</div>
-
-**Figure 21. Capability Map - Putting It Together: A Reference Implementation** (svg). Figure: Capability Map view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 21. Capability Map - Putting It Together: A Reference Implementation** (mermaid). Figure: Capability Map view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
+
+Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+
+In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
 
 Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -3487,23 +3522,9 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
 
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
-
-In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
-
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply putting it together: a reference implementation as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A marketing organisation needs brand-safe content generation with human-in-the-loop review. They decide to apply putting it together: a reference implementation as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3575,75 +3596,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Putting It Together: A Reference Implementation component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Pipelines keep Putting It Together: A Reference Implementation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Putting It Together: A Reference Implementation component
+### Listing: A composable processing pipeline for Putting It Together: A Reference Implementation
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class PuttingItConfig:
-    """Configuration for the Putting It Together: A Reference Implementation component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class PuttingIt:
-    """A minimal, production-shaped implementation of Putting It Together: A Reference Implementation."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Putting It Together: A Reference Implementation."""
 
-    def __init__(self, config: PuttingItConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PuttingIt failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Putting It Together: A Reference Implementation goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It removes all security and governance requirements.
+   - A. It applies exclusively to image data.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
+   - C. It guarantees deterministic output regardless of input.
+   - D. an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Run an automated evaluation suite on every prompt or model change.
-   - B. Relying on a single provider with no fallback or routing strategy.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Run an automated evaluation suite on every prompt or model change.
+   - A. Relying on a single provider with no fallback or routing strategy.
+   - B. Run an automated evaluation suite on every prompt or model change.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Shipping ungrounded generations into high-stakes workflows.
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. Always ground high-stakes generations in retrieved, citable sources.
-   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-4. *(Discussion)* How would you test and monitor Putting It Together: A Reference Implementation in production?
+   - A. It makes the system slower but has no other effect.
+   - B. It is only relevant to academic research, not production.
+   - C. Always ground high-stakes generations in retrieved, citable sources.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+4. *(Discussion)* Walk through how you would design Putting It Together: A Reference Implementation for an enterprise Generative AI workload.
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3655,33 +3682,33 @@ _This chapter examines hands-on lab: building an end-to-end generative ai system
 
 ## Introduction
 
-At its core, Hands-On Lab: Building an End-to-End Generative AI System concerns a guided, build-along laboratory that constructs a functioning Generative AI system from first principles. It is foundational: later capabilities in Generative AI are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+In practical terms, Hands-On Lab: Building an End-to-End Generative AI System is best understood as a guided, build-along laboratory that constructs a functioning Generative AI system from first principles. This concept recurs throughout the Generative AI lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Hands-On Lab: Building an End-to-End Generative AI System as a guided, build-along laboratory that constructs a functioning Generative AI system from first principles. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Hands-On Lab: Building an End-to-End Generative AI System addresses a guided, build-along laboratory that constructs a functioning Generative AI system from first principles. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, hands-on lab: building an end-to-end generative ai system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. This concept recurs throughout the Generative AI lifecycle, from design to operations.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, hands-on lab: building an end-to-end generative ai system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
 
-Hands-On Lab: Building an End-to-End Generative AI System cannot be understood in isolation from synthetic data generation. Recall that synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Hands-On Lab: Building an End-to-End Generative AI System cannot be understood in isolation from productionising generative applications. Recall that productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Hands-On Lab: Building an End-to-End Generative AI System cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Hands-On Lab: Building an End-to-End Generative AI System cannot be understood in isolation from large language models as generators. Recall that large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end generative ai system. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end generative ai system. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end generative ai system are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hands-on lab: building an end-to-end generative ai system are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Hands-On Lab: Building an End-to-End Generative AI System sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+The reference architecture for Hands-On Lab: Building an End-to-End Generative AI System separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```xml
 <mxfile host="ai-university">
@@ -3691,16 +3718,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Data Flow - Hands-On Lab: Building an End-to-End Generative…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Hands-On Lab: Buildin…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Hands-On Lab: Building …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Productionising Generat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -3710,17 +3737,46 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 22. Data Flow - Hands-On Lab: Building an End-to-End Generative AI System** (drawio). Figure: Data Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 22. Data Flow - Hands-On Lab: Building an End-to-End Generative AI System** (drawio). Figure: Data Flow view for Hands-On Lab: Building an End-to-End Generative AI System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Network">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Network - Hands-On Lab: Building an End-to-End Generative A…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Hands-On Lab: Buildin…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Hands-On Lab: Building …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Productionising Generat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 23. Network - Hands-On Lab: Building an End-to-End Generative AI System** (drawio). Figure: Network view for Hands-On Lab: Building an End-to-End Generative AI System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end generative ai system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end generative ai system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with synthetic data generation. Because synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with productionising generative applications. Because productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3728,13 +3784,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end generative ai system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end generative ai system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3742,7 +3798,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply hands-on lab: building an end-to-end generative ai system as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply hands-on lab: building an end-to-end generative ai system as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3814,57 +3870,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Hands-On Lab: Building an End-to-End Generative AI System logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Hands-On Lab: Building an End-to-End Generative AI System
+### Listing: Evaluating Hands-On Lab: Building an End-to-End Generative AI System with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Hands-On Lab: Building an End-to-End Generative AI System."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Hands-On Lab: Building an End-to-End Generative AI System output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -3872,23 +3911,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Generative AI, which statement best describes “Hands-On Lab: Building an End-to-End Generative AI System”?
    - A. a guided, build-along laboratory that constructs a functioning Generative AI system from first principles
-   - B. It removes all security and governance requirements.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Hands-On Lab: Building an End-to-End Generative AI System: a guided, build-along laboratory that constructs a functioning Generative AI system from first principles
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Ignoring token cost growth as adoption scales.
+   - D. Always ground high-stakes generations in retrieved, citable sources.
+   - **Answer: D.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Relying on a single provider with no fallback or routing strategy.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-4. *(Discussion)* Walk through how you would design Hands-On Lab: Building an End-to-End Generative AI System for an enterprise Generative AI workload.
+   - A. Define explicit cost and latency budgets per use case and route accordingly.
+   - B. Ignoring token cost growth as adoption scales.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* How would you test and monitor Hands-On Lab: Building an End-to-End Generative AI System in production?
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end generative ai system (a guided, build-along laboratory that constructs a functioning Generative AI system from first principles) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3900,23 +3939,23 @@ _This chapter examines case study: legal at scale within Generative AI. It cover
 
 ## Introduction
 
-In practical terms, Case Study: Legal at Scale is best understood as a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes. Teams that master this consistently ship more reliable Generative AI systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+At its core, Case Study: Legal at Scale concerns a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Case Study: Legal at Scale as a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Case Study: Legal at Scale concerns a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, case study: legal at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Neglecting it is one of the most common reasons Generative AI initiatives stall in production.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, case study: legal at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. This concept recurs throughout the Generative AI lifecycle, from design to operations.
 
-Case Study: Legal at Scale cannot be understood in isolation from multimodal generation. Recall that multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Case Study: Legal at Scale cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Case Study: Legal at Scale cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Case Study: Legal at Scale cannot be understood in isolation from generative modelling foundations. Recall that generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to case study: legal at scale. The first, retrieval-augmented grounding to reduce hallucination, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: legal at scale. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around case study: legal at scale are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: legal at scale are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3928,38 +3967,44 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Network - Case Study: Legal at Scale
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
-  component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Network">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Network - Case Study: Legal at Scale" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Case Study: Legal at …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Case Study: Legal at Sc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Controllability and Str…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Productionising Generat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 23. Network - Case Study: Legal at Scale** (plantuml). Figure: Network view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. Network - Case Study: Legal at Scale** (drawio). Figure: Network view for Case Study: Legal at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
 title Deployment - Case Study: Legal at Scale
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
-  component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
+package "Case Study: Legal at Scale Platform" {
+  component "Case Study: Legal at Sc…" as C0
+  component "Controllability and Str…" as C1
+  component "Generative Modelling Fo…" as C2
+  component "Productionising Generat…" as C3
+  component "Multimodal Generation" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -3972,17 +4017,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 24. Deployment - Case Study: Legal at Scale** (plantuml). Figure: Deployment view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 25. Deployment - Case Study: Legal at Scale** (plantuml). Figure: Deployment view for Case Study: Legal at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: legal at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: legal at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3990,13 +4035,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into case study: legal at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: legal at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with governance and intellectual property. Because governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4004,7 +4049,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply case study: legal at scale as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply case study: legal at scale as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4116,24 +4161,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Case Study: Legal at Scale”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
-   - **Answer: D.** Case Study: Legal at Scale: a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Case Study: Legal at Scale: a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It applies exclusively to image data.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. Ignoring token cost growth as adoption scales.
+   - C. It makes the system slower but has no other effect.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: D.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Define explicit cost and latency budgets per use case and route accordingly.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-4. *(Discussion)* What trade-offs would you weigh when implementing Case Study: Legal at Scale?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* Describe a failure mode of Case Study: Legal at Scale and how you would mitigate it.
    - **Model answer:** A strong answer defines case study: legal at scale (a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4145,27 +4190,27 @@ _This chapter examines operating in production within Generative AI. It covers t
 
 ## Introduction
 
-Operating in Production can be characterised as the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Operating in Production is best understood as the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement. Teams that master this consistently ship more reliable Generative AI systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Operating in Production refers to the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Operating in Production concerns the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Neglecting it is one of the most common reasons Generative AI initiatives stall in production.
 
-Operating in Production cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Operating in Production cannot be understood in isolation from multimodal generation. Recall that multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Operating in Production cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from synthetic data generation. Recall that synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to operating in production. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating in production are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Operating in Production is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+The reference architecture for Operating in Production separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4173,44 +4218,38 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Deployment">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Deployment - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Deployment - Operating in Production
+package "Operating in Production Platform" {
+  component "Operating in Production" as C0
+  component "Multimodal Generation" as C1
+  component "Synthetic Data Generati…" as C2
+  component "Enterprise Use-Case Pat…" as C3
+  component "Large Language Models a…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 25. Deployment - Operating in Production** (drawio). Figure: Deployment view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 26. Deployment - Operating in Production** (plantuml). Figure: Deployment view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4218,13 +4257,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4344,24 +4383,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Operating in Production”?
-   - A. the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Operating in Production: the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: D.** Operating in Production: the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. Define explicit cost and latency budgets per use case and route accordingly.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Relying on a single provider with no fallback or routing strategy.
+   - **Answer: C.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
    - A. Ignoring token cost growth as adoption scales.
-   - B. Treat prompts as versioned, tested artefacts under source control.
+   - B. It is only relevant to academic research, not production.
    - C. It guarantees deterministic output regardless of input.
    - D. It makes the system slower but has no other effect.
    - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-4. *(Discussion)* What trade-offs would you weigh when implementing Operating in Production?
+4. *(Discussion)* Walk through how you would design Operating in Production for an enterprise Generative AI workload.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4373,82 +4412,82 @@ _This chapter examines evaluation and quality assurance within Generative AI. It
 
 ## Introduction
 
-At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release. Getting this right early prevents expensive rework once a Generative AI system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release. This concept recurs throughout the Generative AI lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Evaluation and Quality Assurance is best understood as a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
 
-Evaluation and Quality Assurance cannot be understood in isolation from multimodal generation. Recall that multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluation and Quality Assurance cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Evaluation and Quality Assurance cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Evaluation and Quality Assurance cannot be understood in isolation from synthetic data generation. Recall that synthetic data generation concerns augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 Several established patterns apply directly to evaluation and quality assurance. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Evaluation and Quality Assurance is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
-
-```plantuml
-@startuml
-title RAG Architecture - Evaluation and Quality Assurance
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 26. RAG Architecture - Evaluation and Quality Assurance** (plantuml). Figure: RAG Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Evaluation and Quality Assura… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Evaluation and Quality As…]
+    S1[Safety, Guardrails and Co…]
+    S2[Synthetic Data Generation]
+    S3[Diffusion Models for Imag…]
+    S4[Cost, Latency and Through…]
+    S5[Controllability and Struc…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-**Figure 27. DevOps Pipeline - Evaluation and Quality Assurance** (mermaid). Figure: DevOps Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. RAG Architecture - Evaluation and Quality Assurance** (mermaid). Figure: RAG Architecture view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with safety, guardrails and content moderation. Because safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4456,9 +4495,9 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -4470,7 +4509,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply evaluation and quality assurance as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply evaluation and quality assurance as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4542,75 +4581,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluation and Quality Assurance component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluation and Quality Assurance component
+### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class EvaluationAndQualityConfig:
-    """Configuration for the Evaluation and Quality Assurance component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class EvaluationAndQuality:
-    """A minimal, production-shaped implementation of Evaluation and Quality Assurance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
 
-    def __init__(self, config: EvaluationAndQualityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluationAndQuality failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluation and Quality Assurance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It applies exclusively to image data.
-   - B. Evaluating only with anecdotes instead of a versioned test set.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Treat prompts as versioned, tested artefacts under source control.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Run an automated evaluation suite on every prompt or model change.
    - C. It makes the system slower but has no other effect.
-   - D. Always ground high-stakes generations in retrieved, citable sources.
-   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-4. *(Discussion)* How does Evaluation and Quality Assurance interact with security and governance requirements?
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: B.** Best practice: Run an automated evaluation suite on every prompt or model change.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Ignoring token cost growth as adoption scales.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+4. *(Discussion)* Describe a failure mode of Evaluation and Quality Assurance and how you would mitigate it.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4622,27 +4650,27 @@ _This chapter examines security, privacy and governance within Generative AI. It
 
 ## Introduction
 
-Security, Privacy and Governance can be characterised as the security, privacy and governance controls that make a Generative AI system trustworthy and compliant. Getting this right early prevents expensive rework once a Generative AI system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Security, Privacy and Governance addresses the security, privacy and governance controls that make a Generative AI system trustworthy and compliant. Teams that master this consistently ship more reliable Generative AI systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Security, Privacy and Governance concerns the security, privacy and governance controls that make a Generative AI system trustworthy and compliant. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a Generative AI system trustworthy and compliant. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
 
-Security, Privacy and Governance cannot be understood in isolation from grounding with enterprise data. Recall that grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Security, Privacy and Governance cannot be understood in isolation from cost, latency and throughput engineering. Recall that cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Security, Privacy and Governance cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security, Privacy and Governance cannot be understood in isolation from large language models as generators. Recall that large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Several established patterns apply directly to security, privacy and governance. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4652,50 +4680,60 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="4-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn1dac904" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn1dac904)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn1dac904)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Security, Privacy and Governance</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#fb7185"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#fb7185" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Multimodal</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Generation</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#db2777"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#db2777" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Grounding with</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Enterprise Data</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#9f1239"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#9f1239" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Controllability</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Structured</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#be123c"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#be123c" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Generative Systems</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#e11d48"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#e11d48" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Safety, Guardrails</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Content</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Generative AI  •  DevOps Pipeline</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="1-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn984f840" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0284c7"/><stop offset="1" stop-color="#075985"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn984f840)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn984f840)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Security, Privacy and Governance</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#0284c7"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0284c7" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Security, Privacy</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Governance</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#075985"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#075985" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Cost, Latency and</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Throughput</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#0e7490"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0e7490" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Large Language</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Models as</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#0891b2"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0891b2" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Productionising</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Generative</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#0ea5e9"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0ea5e9" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation of</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Generative Systems</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Security, Privacy and Governance  •  DevOps Pipeline</text></svg>
 
 </div>
 
-**Figure 28. DevOps Pipeline - Security, Privacy and Governance** (svg). Figure: DevOps Pipeline view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. DevOps Pipeline - Security, Privacy and Governance** (svg). Figure: DevOps Pipeline view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Agent Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Agent Architecture - Security, Privacy and Governance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Security, Privacy and Governa… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Security, Privacy and Gov…]
+    S1[Cost, Latency and Through…]
+    S2[Large Language Models as …]
+    S3[Productionising Generativ…]
+    S4[Evaluation of Generative …]
+    S5[Generative Modelling Foun…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 29. Agent Architecture - Security, Privacy and Governance** (drawio). Figure: Agent Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Agent Architecture - Security, Privacy and Governance** (mermaid). Figure: Agent Architecture view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and throughput engineering. Because cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4703,13 +4741,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with productionising generative applications. Because productionising generative applications concerns prompt management, versioning, observability and continuous evaluation in CI, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with generative modelling foundations. Because generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4717,7 +4755,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply security, privacy and governance as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply security, privacy and governance as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4789,75 +4827,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Security, Privacy and Governance component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Security, Privacy and Governance component
+### Listing: Evaluating Security, Privacy and Governance with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class PrivacyAndConfig:
-    """Configuration for the Security, Privacy and Governance component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class PrivacyAnd:
-    """A minimal, production-shaped implementation of Security, Privacy and Governance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Security, Privacy and Governance output against references with a simple exact-match metric.
 
-    def __init__(self, config: PrivacyAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PrivacyAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Security, Privacy and Governance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
+   - A. It is only relevant to academic research, not production.
+   - B. the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with Generative AI?
    - A. It guarantees deterministic output regardless of input.
-   - B. Ignoring token cost growth as adoption scales.
+   - B. It is only relevant to academic research, not production.
    - C. Evaluating only with anecdotes instead of a versioned test set.
    - D. Define explicit cost and latency budgets per use case and route accordingly.
    - **Answer: D.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-4. *(Discussion)* Explain Security, Privacy and Governance and why it matters in a production Generative AI system.
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+4. *(Discussion)* How would you test and monitor Security, Privacy and Governance in production?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Generative AI system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4869,33 +4896,33 @@ _This chapter examines cost, performance and scaling within Generative AI. It co
 
 ## Introduction
 
-At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Generative AI system to production traffic. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a Generative AI system to production traffic. This concept recurs throughout the Generative AI lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Generative AI system to production traffic. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Cost, Performance and Scaling as techniques for controlling cost and latency while scaling a Generative AI system to production traffic. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
 
-Cost, Performance and Scaling cannot be understood in isolation from governance and intellectual property. Recall that governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Cost, Performance and Scaling cannot be understood in isolation from cost, latency and throughput engineering. Recall that cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to cost, performance and scaling. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Cost, Performance and Scaling sits at the intersection of data, models and operations. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for Cost, Performance and Scaling is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```xml
 <mxfile host="ai-university">
@@ -4905,16 +4932,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Agent Architecture - Cost, Performance and Scaling" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Cost, Performance and…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Cost, Performance and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Evaluation of Generativ…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Enterprise Use-Case Pat…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Safety, Guardrails and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Governance and Intellec…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -4924,17 +4951,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 30. Agent Architecture - Cost, Performance and Scaling** (drawio). Figure: Agent Architecture view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. Agent Architecture - Cost, Performance and Scaling** (drawio). Figure: Agent Architecture view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with governance and intellectual property. Because governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation of generative systems. Because evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4944,11 +4971,11 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 Having established the essentials, we now go deeper into cost, performance and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with controllability and structured output. Because controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with large language models as generators. Because large language models as generators concerns next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4956,7 +4983,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply cost, performance and scaling as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A marketing organisation needs brand-safe content generation with human-in-the-loop review. They decide to apply cost, performance and scaling as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5028,75 +5055,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Cost, Performance and Scaling component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Cost, Performance and Scaling component
+### Listing: Evaluating Cost, Performance and Scaling with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class PerformanceAndConfig:
-    """Configuration for the Cost, Performance and Scaling component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class PerformanceAnd:
-    """A minimal, production-shaped implementation of Cost, Performance and Scaling."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Cost, Performance and Scaling output against references with a simple exact-match metric.
 
-    def __init__(self, config: PerformanceAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PerformanceAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Cost, Performance and Scaling goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Cost, Performance and Scaling”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. techniques for controlling cost and latency while scaling a Generative AI system to production traffic
-   - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Generative AI system to production traffic
+   - A. techniques for controlling cost and latency while scaling a Generative AI system to production traffic
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Generative AI system to production traffic
 2. Which of the following is a recommended best practice when working with Generative AI?
    - A. It is only relevant to academic research, not production.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. It removes all security and governance requirements.
-   - D. Define explicit cost and latency budgets per use case and route accordingly.
-   - **Answer: D.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - B. It makes the system slower but has no other effect.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-4. *(Discussion)* Walk through how you would design Cost, Performance and Scaling for an enterprise Generative AI workload.
+   - A. It is only relevant to academic research, not production.
+   - B. Evaluating only with anecdotes instead of a versioned test set.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+4. *(Discussion)* Explain Cost, Performance and Scaling and why it matters in a production Generative AI system.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Generative AI system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5108,62 +5124,63 @@ _This chapter examines integration and interoperability within Generative AI. It
 
 ## Introduction
 
-At its core, Integration and Interoperability concerns patterns for integrating a Generative AI system with surrounding enterprise systems and data. This concept recurs throughout the Generative AI lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Integration and Interoperability refers to patterns for integrating a Generative AI system with surrounding enterprise systems and data. Getting this right early prevents expensive rework once a Generative AI system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Integration and Interoperability can be characterised as patterns for integrating a Generative AI system with surrounding enterprise systems and data. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Integration and Interoperability can be characterised as patterns for integrating a Generative AI system with surrounding enterprise systems and data. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. This concept recurs throughout the Generative AI lifecycle, from design to operations.
 
-Integration and Interoperability cannot be understood in isolation from grounding with enterprise data. Recall that grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Integration and Interoperability cannot be understood in isolation from cost, latency and throughput engineering. Recall that cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Integration and Interoperability cannot be understood in isolation from diffusion models for images and audio. Recall that diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration and Interoperability cannot be understood in isolation from generative modelling foundations. Recall that generative modelling foundations concerns likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to integration and interoperability. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, retrieval-augmented grounding to reduce hallucination, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Integration and Interoperability is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+The reference architecture for Integration and Interoperability separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant U as User
-  participant G as Gateway
-  participant P as Processor
-  participant D as Data Store
-  U->>G: Submit request
-  G->>G: Validate & authorise
-  G->>P: Dispatch task
-  P->>D: Retrieve context
-  D-->>P: Return records
-  P->>P: Process & reason
-  P-->>G: Result + metadata
-  G-->>U: Response (with provenance)
+```plantuml
+@startuml
+title Sequence - Integration and Interoperability
+actor User
+participant Gateway
+participant Processor
+database Store
+User -> Gateway : request
+Gateway -> Processor : dispatch
+Processor -> Store : retrieve
+Store --> Processor : context
+Processor --> Gateway : result
+Gateway --> User : response
+@enduml
 ```
 
-**Figure 31. Sequence - Integration and Interoperability** (mermaid). Figure: Sequence view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 31. Sequence - Integration and Interoperability** (plantuml). Figure: Sequence view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and throughput engineering. Because cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5171,13 +5188,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety, guardrails and content moderation. Because safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multimodal generation. Because multimodal generation concerns joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5185,7 +5202,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A marketing organisation needs brand-safe content generation with human-in-the-loop review. They decide to apply integration and interoperability as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply integration and interoperability as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5315,23 +5332,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Generative AI, which statement best describes “Integration and Interoperability”?
    - A. patterns for integrating a Generative AI system with surrounding enterprise systems and data
-   - B. It guarantees deterministic output regardless of input.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Integration and Interoperability: patterns for integrating a Generative AI system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Define explicit cost and latency budgets per use case and route accordingly.
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: A.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - A. It applies exclusively to image data.
+   - B. Evaluating only with anecdotes instead of a versioned test set.
+   - C. Relying on a single provider with no fallback or routing strategy.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: D.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Run an automated evaluation suite on every prompt or model change.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. Ignoring token cost growth as adoption scales.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-4. *(Discussion)* How does Integration and Interoperability interact with security and governance requirements?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. It applies exclusively to image data.
+   - C. Define explicit cost and latency budgets per use case and route accordingly.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+4. *(Discussion)* How would you test and monitor Integration and Interoperability in production?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Generative AI system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5343,23 +5360,23 @@ _This chapter examines trends and research directions within Generative AI. It c
 
 ## Introduction
 
-Formally, Trends and Research Directions addresses emerging trends, open problems and research directions shaping the future of Generative AI. It is foundational: later capabilities in Generative AI are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Trends and Research Directions addresses emerging trends, open problems and research directions shaping the future of Generative AI. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Generative AI. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Trends and Research Directions is best understood as emerging trends, open problems and research directions shaping the future of Generative AI. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. It is foundational: later capabilities in Generative AI are built directly on top of it.
 
-Trends and Research Directions cannot be understood in isolation from grounding with enterprise data. Recall that grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Trends and Research Directions cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Trends and Research Directions cannot be understood in isolation from enterprise use-case patterns. Recall that enterprise use-case patterns concerns assistants, copilots, summarisers and autonomous workflows mapped to value. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Trends and Research Directions cannot be understood in isolation from governance and intellectual property. Recall that governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to trends and research directions. The first, retrieval-augmented grounding to reduce hallucination, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, semantic caching keyed on normalised prompts and embeddings, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around trends and research directions are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5369,7 +5386,7 @@ Concretely, the principal building blocks include generative modelling foundatio
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```xml
 <mxfile host="ai-university">
@@ -5379,16 +5396,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Business Process - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Trends and Research D…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Trends and Research Dir…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Safety, Guardrails and …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Governance and Intellec…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Cost, Latency and Throu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5398,7 +5415,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 32. Business Process - Trends and Research Directions** (drawio). Figure: Business Process view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Business Process - Trends and Research Directions** (drawio). Figure: Business Process view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -5408,7 +5425,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with safety, guardrails and content moderation. Because safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5418,11 +5435,11 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with grounding with enterprise data. Because grounding with enterprise data concerns retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost, latency and throughput engineering. Because cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5430,7 +5447,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply trends and research directions as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply trends and research directions as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5503,23 +5520,23 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Trends and Research Directions”?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. emerging trends, open problems and research directions shaping the future of Generative AI
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Generative AI
-2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Run an automated evaluation suite on every prompt or model change.
+   - A. emerging trends, open problems and research directions shaping the future of Generative AI
+   - B. It is only relevant to academic research, not production.
    - C. It applies exclusively to image data.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Run an automated evaluation suite on every prompt or model change.
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Generative AI
+2. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Run an automated evaluation suite on every prompt or model change.
-   - C. It removes all security and governance requirements.
-   - D. Shipping ungrounded generations into high-stakes workflows.
-   - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+   - A. Evaluating only with anecdotes instead of a versioned test set.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
 4. *(Discussion)* Describe a failure mode of Trends and Research Directions and how you would mitigate it.
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Generative AI) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
@@ -5532,23 +5549,23 @@ _This chapter examines capstone project within Generative AI. It covers a substa
 
 ## Introduction
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable. Teams that master this consistently ship more reliable Generative AI systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Getting this right early prevents expensive rework once a Generative AI system reaches scale.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
 
-Capstone Project cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from governance and intellectual property. Recall that governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Capstone Project cannot be understood in isolation from safety, guardrails and content moderation. Recall that safety, guardrails and content moderation concerns input/output filtering, jailbreak resistance and layered defence in depth. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Capstone Project cannot be understood in isolation from controllability and structured output. Recall that controllability and structured output concerns constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to capstone project. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, model gateway abstracting multiple providers behind one api, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, guardrail sandwich: validate inputs, constrain decoding, validate outputs, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5558,46 +5575,50 @@ Concretely, the principal building blocks include generative modelling foundatio
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Application Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Application Flow - Capstone Project" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Generative AI" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Generative Modelling Fo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Large Language Models a…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Diffusion Models for Im…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Multimodal Generation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Grounding with Enterpri…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Application Flow - Capstone Project
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 33. Application Flow - Capstone Project** (drawio). Figure: Application Flow view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 33. Application Flow - Capstone Project** (plantuml). Figure: Application Flow view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+graph LR
+  D(("Capstone Project"))
+  D --- C0[Capstone Project]
+  D --- C1[Governance and Intell…]
+  D --- C2[Controllability and S…]
+  D --- C3[Cost, Latency and Thr…]
+  D --- C4[Grounding with Enterp…]
+  C0 --- C1
+  C1 --- C2
+```
+
+**Figure 34. Knowledge Graph - Capstone Project** (mermaid). Figure: Knowledge Graph view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the genai reference architecture. Because the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with governance and intellectual property. Because governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5605,13 +5626,13 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost, latency and throughput engineering. Because cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with diffusion models for images and audio. Because diffusion models for images and audio concerns forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5619,7 +5640,7 @@ For deeper study, the literature offers authoritative treatments such as Ho et a
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply capstone project as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A software organisation needs code generation, refactoring and test synthesis inside the IDE. They decide to apply capstone project as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5691,75 +5712,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Capstone Project component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
+Every change to a Generative AI system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Capstone Project component
+### Listing: Evaluating Capstone Project with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class CapstoneProjectConfig:
-    """Configuration for the Capstone Project component in a Generative AI system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class CapstoneProject:
-    """A minimal, production-shaped implementation of Capstone Project."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Capstone Project output against references with a simple exact-match metric.
 
-    def __init__(self, config: CapstoneProjectConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"CapstoneProject failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Capstone Project goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Capstone Project”?
-   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
+   - A. It removes all security and governance requirements.
+   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It makes the system slower but has no other effect.
+   - A. Treat prompts as versioned, tested artefacts under source control.
    - B. It applies exclusively to image data.
    - C. Shipping ungrounded generations into high-stakes workflows.
    - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-4. *(Discussion)* Describe a failure mode of Capstone Project and how you would mitigate it.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+3. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. It makes the system slower but has no other effect.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+4. *(Discussion)* Walk through how you would design Capstone Project for an enterprise Generative AI workload.
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5771,67 +5781,47 @@ _This chapter examines certification preparation and review within Generative AI
 
 ## Introduction
 
-Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Generative AI. Neglecting it is one of the most common reasons Generative AI initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of Generative AI. It is foundational: later capabilities in Generative AI are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Generative AI work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Certification Preparation and Review concerns a structured review and certification-style preparation covering the full breadth of Generative AI. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of Generative AI. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Understanding this matters because Generative AI systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Generative AI refers to models that synthesise novel content—text, images, audio, code and structured data—by learning the distribution of training data and sampling from it. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Generative AI fall into place. Teams that master this consistently ship more reliable Generative AI systems at lower cost.
 
-Certification Preparation and Review cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Certification Preparation and Review cannot be understood in isolation from cost, latency and throughput engineering. Recall that cost, latency and throughput engineering concerns token economics, caching, batching, distillation and routing across model tiers. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Certification Preparation and Review cannot be understood in isolation from the genai reference architecture. Recall that the genai reference architecture concerns gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from evaluation of generative systems. Recall that evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to certification preparation and review. The first, semantic caching keyed on normalised prompts and embeddings, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model gateway abstracting multiple providers behind one api, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, guardrail sandwich: validate inputs, constrain decoding, validate outputs, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, retrieval-augmented grounding to reduce hallucination, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Generative AI system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Certification Preparation and Review separates concerns into clearly bounded components with explicit contracts. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
+A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. A production generative-AI platform places a model gateway in front of one or more foundation models, with orchestration handling prompt assembly, retrieval, tool calls and guardrails. A semantic cache reduces cost and latency, an evaluation service scores responses offline and online, and an observability layer captures prompts, completions, tokens, cost and quality signals for every request.
 
 Concretely, the principal building blocks include generative modelling foundations, large language models as generators, diffusion models for images and audio, multimodal generation and grounding with enterprise data. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Generative AI system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-graph LR
-  D(("Generative AI"))
-  D --- C0[Generative Modelling …]
-  D --- C1[Large Language Models…]
-  D --- C2[Diffusion Models for …]
-  D --- C3[Multimodal Generation]
-  D --- C4[Grounding with Enterp…]
-  C0 --- C1
-  C1 --- C2
-```
+<div class="diagram-svg">
 
-**Figure 34. Knowledge Graph - Certification Preparation and Review** (mermaid). Figure: Knowledge Graph view for Generative AI. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="6-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn6c29a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#64748b"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn6c29a)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn6c29a)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Certification Preparation and Review</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Certification</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Preparation</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#475569" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Certification Preparation</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Review</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#64748b" filter="url(#sh)"/><text x="654" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost, Latency and Throughput</text><text x="654" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Engineering</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="654" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation of Generative</text><text x="654" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Systems</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="420" y="383" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Grounding with Enterprise</text><text x="420" y="393" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Data</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="186" y="313" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Synthetic Data Generation</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#334155" filter="url(#sh)"/><text x="186" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Productionising Generative</text><text x="186" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Applications</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Certification Preparation and Review  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 35. Knowledge Graph - Certification Preparation and Review** (svg). Figure: Knowledge Graph view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with evaluation of generative systems. Because evaluation of generative systems concerns reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5841,9 +5831,23 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
 
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including OpenAI API, Anthropic Claude, LangChain, LlamaIndex. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with governance and intellectual property. Because governance and intellectual property concerns provenance, watermarking, licensing and the legal landscape of generated content, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Ho et al. — Denoising Diffusion Probabilistic Models (2020) and Brown et al. — Language Models are Few-Shot Learners (2020). These primary sources reward careful reading and ground the practical guidance above in established results.
+
 ## Worked Example
 
-Consider a concrete scenario. A customer service organisation needs grounded assistants that resolve tickets with cited policy. They decide to apply certification preparation and review as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A legal organisation needs contract drafting and clause extraction with citation back to source. They decide to apply certification preparation and review as part of their Generative AI solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5915,81 +5919,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Certification Preparation and Review logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Certification Preparation and Review component with retry semantics and typed interfaces — the shape we expect from production Generative AI code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Certification Preparation and Review
+### Listing: Implementing a Certification Preparation and Review component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CertificationPreparationAndConfig:
+    """Configuration for the Certification Preparation and Review component in a Generative AI system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Certification Preparation and Review."""
+class CertificationPreparationAnd:
+    """A minimal, production-shaped implementation of Certification Preparation and Review."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CertificationPreparationAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CertificationPreparationAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Certification Preparation and Review goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Generative AI, which statement best describes “Certification Preparation and Review”?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It applies exclusively to image data.
-   - D. a structured review and certification-style preparation covering the full breadth of Generative AI
-   - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Generative AI
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
+   - C. a structured review and certification-style preparation covering the full breadth of Generative AI
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Generative AI
 2. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It removes all security and governance requirements.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: B.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - A. Ignoring token cost growth as adoption scales.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: D.** Best practice: Run an automated evaluation suite on every prompt or model change.
 3. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Always ground high-stakes generations in retrieved, citable sources.
-   - B. Evaluating only with anecdotes instead of a versioned test set.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-4. *(Discussion)* How would you test and monitor Certification Preparation and Review in production?
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. Relying on a single provider with no fallback or routing strategy.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
+4. *(Discussion)* Explain Certification Preparation and Review and why it matters in a production Generative AI system.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Generative AI) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6027,53 +6025,53 @@ A consolidated bank of discussion-style interview questions drawn from across th
 
 1. Walk through how you would design Generative Modelling Foundations for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines generative modelling foundations (Likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-2. Explain Large Language Models as Generators and why it matters in a production Generative AI system.
+2. What trade-offs would you weigh when implementing Large Language Models as Generators?
    - **Guidance:** A strong answer defines large language models as generators (Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 3. Describe a failure mode of Diffusion Models for Images and Audio and how you would mitigate it.
    - **Guidance:** A strong answer defines diffusion models for images and audio (Forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-4. What trade-offs would you weigh when implementing Multimodal Generation?
+4. How would you test and monitor Multimodal Generation in production?
    - **Guidance:** A strong answer defines multimodal generation (Joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-5. What trade-offs would you weigh when implementing Grounding with Enterprise Data?
+5. How would you test and monitor Grounding with Enterprise Data in production?
    - **Guidance:** A strong answer defines grounding with enterprise data (Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-6. Describe a failure mode of Controllability and Structured Output and how you would mitigate it.
+6. Walk through how you would design Controllability and Structured Output for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines controllability and structured output (Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-7. Describe a failure mode of Evaluation of Generative Systems and how you would mitigate it.
+7. What trade-offs would you weigh when implementing Evaluation of Generative Systems?
    - **Guidance:** A strong answer defines evaluation of generative systems (Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-8. What trade-offs would you weigh when implementing Safety, Guardrails and Content Moderation?
+8. Describe a failure mode of Safety, Guardrails and Content Moderation and how you would mitigate it.
    - **Guidance:** A strong answer defines safety, guardrails and content moderation (Input/output filtering, jailbreak resistance and layered defence in depth.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 9. Walk through how you would design Cost, Latency and Throughput Engineering for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines cost, latency and throughput engineering (Token economics, caching, batching, distillation and routing across model tiers.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-10. How does Synthetic Data Generation interact with security and governance requirements?
+10. Walk through how you would design Synthetic Data Generation for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines synthetic data generation (Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-11. How would you test and monitor Enterprise Use-Case Patterns in production?
+11. Explain Enterprise Use-Case Patterns and why it matters in a production Generative AI system.
    - **Guidance:** A strong answer defines enterprise use-case patterns (Assistants, copilots, summarisers and autonomous workflows mapped to value.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-12. Walk through how you would design Productionising Generative Applications for an enterprise Generative AI workload.
+12. What trade-offs would you weigh when implementing Productionising Generative Applications?
    - **Guidance:** A strong answer defines productionising generative applications (Prompt management, versioning, observability and continuous evaluation in CI.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-13. Describe a failure mode of Governance and Intellectual Property and how you would mitigate it.
+13. Explain Governance and Intellectual Property and why it matters in a production Generative AI system.
    - **Guidance:** A strong answer defines governance and intellectual property (Provenance, watermarking, licensing and the legal landscape of generated content.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-14. How would you test and monitor The GenAI Reference Architecture in production?
+14. Describe a failure mode of The GenAI Reference Architecture and how you would mitigate it.
    - **Guidance:** A strong answer defines the genai reference architecture (Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-15. How would you test and monitor Putting It Together: A Reference Implementation in production?
+15. Walk through how you would design Putting It Together: A Reference Implementation for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-16. Walk through how you would design Hands-On Lab: Building an End-to-End Generative AI System for an enterprise Generative AI workload.
+16. How would you test and monitor Hands-On Lab: Building an End-to-End Generative AI System in production?
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end generative ai system (a guided, build-along laboratory that constructs a functioning Generative AI system from first principles) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-17. What trade-offs would you weigh when implementing Case Study: Legal at Scale?
+17. Describe a failure mode of Case Study: Legal at Scale and how you would mitigate it.
    - **Guidance:** A strong answer defines case study: legal at scale (a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-18. What trade-offs would you weigh when implementing Operating in Production?
+18. Walk through how you would design Operating in Production for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-19. How does Evaluation and Quality Assurance interact with security and governance requirements?
+19. Describe a failure mode of Evaluation and Quality Assurance and how you would mitigate it.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-20. Explain Security, Privacy and Governance and why it matters in a production Generative AI system.
+20. How would you test and monitor Security, Privacy and Governance in production?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Generative AI system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-21. Walk through how you would design Cost, Performance and Scaling for an enterprise Generative AI workload.
+21. Explain Cost, Performance and Scaling and why it matters in a production Generative AI system.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Generative AI system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-22. How does Integration and Interoperability interact with security and governance requirements?
+22. How would you test and monitor Integration and Interoperability in production?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Generative AI system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 23. Describe a failure mode of Trends and Research Directions and how you would mitigate it.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Generative AI) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-24. Describe a failure mode of Capstone Project and how you would mitigate it.
+24. Walk through how you would design Capstone Project for an enterprise Generative AI workload.
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
-25. How would you test and monitor Certification Preparation and Review in production?
+25. Explain Certification Preparation and Review and why it matters in a production Generative AI system.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Generative AI) then connects it to architecture, evaluation, cost, security and operations for Generative AI, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6093,448 +6091,448 @@ Certification-style multiple-choice questions covering best practices and common
    - D. Define explicit cost and latency budgets per use case and route accordingly.
    - **Answer: B.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
 3. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
+   - A. Ignoring token cost growth as adoption scales.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Run an automated evaluation suite on every prompt or model change.
    - D. Relying on a single provider with no fallback or routing strategy.
-   - **Answer: B.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - **Answer: C.** Best practice: Run an automated evaluation suite on every prompt or model change.
 4. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Ignoring token cost growth as adoption scales.
+   - D. Treat prompts as versioned, tested artefacts under source control.
+   - **Answer: C.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+5. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: C.** Best practice: Run an automated evaluation suite on every prompt or model change.
+6. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. It removes all security and governance requirements.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+7. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Shipping ungrounded generations into high-stakes workflows.
+   - D. Treat prompts as versioned, tested artefacts under source control.
+   - **Answer: D.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+8. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Define explicit cost and latency budgets per use case and route accordingly.
+   - B. It is only relevant to academic research, not production.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+9. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. Relying on a single provider with no fallback or routing strategy.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+10. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+11. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+12. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It removes all security and governance requirements.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+13. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Run an automated evaluation suite on every prompt or model change.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Run an automated evaluation suite on every prompt or model change.
+14. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Define explicit cost and latency budgets per use case and route accordingly.
+   - B. Ignoring token cost growth as adoption scales.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+15. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. Define explicit cost and latency budgets per use case and route accordingly.
+   - **Answer: D.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+16. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. It makes the system slower but has no other effect.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+17. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. Relying on a single provider with no fallback or routing strategy.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+18. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Evaluating only with anecdotes instead of a versioned test set.
    - B. Define explicit cost and latency budgets per use case and route accordingly.
    - C. It is only relevant to academic research, not production.
-   - D. Run an automated evaluation suite on every prompt or model change.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-5. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It is only relevant to academic research, not production.
-   - C. Define explicit cost and latency budgets per use case and route accordingly.
-   - D. Shipping ungrounded generations into high-stakes workflows.
-   - **Answer: C.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-6. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. It removes all security and governance requirements.
-   - C. Shipping ungrounded generations into high-stakes workflows.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-7. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Always ground high-stakes generations in retrieved, citable sources.
-   - B. Shipping ungrounded generations into high-stakes workflows.
-   - C. It is only relevant to academic research, not production.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-8. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Run an automated evaluation suite on every prompt or model change.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-9. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
+19. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. Always ground high-stakes generations in retrieved, citable sources.
    - C. Shipping ungrounded generations into high-stakes workflows.
    - D. Ignoring token cost growth as adoption scales.
    - **Answer: B.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-10. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It makes the system slower but has no other effect.
-   - C. Run an automated evaluation suite on every prompt or model change.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-11. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Define explicit cost and latency budgets per use case and route accordingly.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-12. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Ignoring token cost growth as adoption scales.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-13. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Define explicit cost and latency budgets per use case and route accordingly.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-14. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-15. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Shipping ungrounded generations into high-stakes workflows.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-16. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-17. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-18. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Always ground high-stakes generations in retrieved, citable sources.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. Relying on a single provider with no fallback or routing strategy.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-19. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It makes the system slower but has no other effect.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
 20. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Ignoring token cost growth as adoption scales.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. Always ground high-stakes generations in retrieved, citable sources.
-   - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. It removes all security and governance requirements.
+   - C. Define explicit cost and latency budgets per use case and route accordingly.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
 21. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. Treat prompts as versioned, tested artefacts under source control.
-   - **Answer: D.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-22. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-23. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Run an automated evaluation suite on every prompt or model change.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Evaluating only with anecdotes instead of a versioned test set.
-   - **Answer: A.** Best practice: Run an automated evaluation suite on every prompt or model change.
-24. Which of the following is a common pitfall to avoid in Generative AI?
    - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. Shipping ungrounded generations into high-stakes workflows.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-25. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Treat prompts as versioned, tested artefacts under source control.
-   - **Answer: D.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-26. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Shipping ungrounded generations into high-stakes workflows.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Run an automated evaluation suite on every prompt or model change.
-   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-27. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-28. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Define explicit cost and latency budgets per use case and route accordingly.
-   - B. Evaluating only with anecdotes instead of a versioned test set.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
-29. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Run an automated evaluation suite on every prompt or model change.
-   - B. Relying on a single provider with no fallback or routing strategy.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Run an automated evaluation suite on every prompt or model change.
-30. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Shipping ungrounded generations into high-stakes workflows.
    - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. Always ground high-stakes generations in retrieved, citable sources.
-   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-31. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-32. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
    - C. Relying on a single provider with no fallback or routing strategy.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-33. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It applies exclusively to image data.
-   - B. Treat prompts as versioned, tested artefacts under source control.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-34. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It applies exclusively to image data.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+22. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. Relying on a single provider with no fallback or routing strategy.
    - C. It guarantees deterministic output regardless of input.
    - D. Define explicit cost and latency budgets per use case and route accordingly.
-   - **Answer: A.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
-35. Which of the following is a recommended best practice when working with Generative AI?
+   - **Answer: B.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
+23. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Always ground high-stakes generations in retrieved, citable sources.
+   - B. It makes the system slower but has no other effect.
+   - C. Shipping ungrounded generations into high-stakes workflows.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+24. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Treat prompts as versioned, tested artefacts under source control.
+   - C. Ignoring token cost growth as adoption scales.
+   - D. Always ground high-stakes generations in retrieved, citable sources.
+   - **Answer: C.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+25. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Shipping ungrounded generations into high-stakes workflows.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+26. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+27. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. Shipping ungrounded generations into high-stakes workflows.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+28. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Evaluating only with anecdotes instead of a versioned test set.
+   - B. Always ground high-stakes generations in retrieved, citable sources.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+29. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Relying on a single provider with no fallback or routing strategy.
+   - B. Run an automated evaluation suite on every prompt or model change.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Run an automated evaluation suite on every prompt or model change.
+30. Which of the following is a common pitfall to avoid in Generative AI?
    - A. It makes the system slower but has no other effect.
    - B. It is only relevant to academic research, not production.
-   - C. Define explicit cost and latency budgets per use case and route accordingly.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
+   - C. Always ground high-stakes generations in retrieved, citable sources.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: D.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+31. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Ignoring token cost growth as adoption scales.
+   - D. Always ground high-stakes generations in retrieved, citable sources.
+   - **Answer: D.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
+32. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Define explicit cost and latency budgets per use case and route accordingly.
+   - B. Ignoring token cost growth as adoption scales.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+33. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. Ignoring token cost growth as adoption scales.
+   - C. It makes the system slower but has no other effect.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: D.** Best practice: Run an automated evaluation suite on every prompt or model change.
+34. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
+35. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Run an automated evaluation suite on every prompt or model change.
+   - D. Relying on a single provider with no fallback or routing strategy.
+   - **Answer: C.** Best practice: Run an automated evaluation suite on every prompt or model change.
 36. Which of the following is a common pitfall to avoid in Generative AI?
    - A. Ignoring token cost growth as adoption scales.
-   - B. Treat prompts as versioned, tested artefacts under source control.
+   - B. It is only relevant to academic research, not production.
    - C. It guarantees deterministic output regardless of input.
    - D. It makes the system slower but has no other effect.
    - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
 37. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It applies exclusively to image data.
-   - B. Evaluating only with anecdotes instead of a versioned test set.
-   - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
-38. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Evaluating only with anecdotes instead of a versioned test set.
-   - B. Treat prompts as versioned, tested artefacts under source control.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Run an automated evaluation suite on every prompt or model change.
    - C. It makes the system slower but has no other effect.
-   - D. Always ground high-stakes generations in retrieved, citable sources.
-   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+   - D. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: B.** Best practice: Run an automated evaluation suite on every prompt or model change.
+38. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Ignoring token cost growth as adoption scales.
+   - B. It is only relevant to academic research, not production.
+   - C. It removes all security and governance requirements.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: A.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
 39. Which of the following is a recommended best practice when working with Generative AI?
    - A. It guarantees deterministic output regardless of input.
-   - B. Ignoring token cost growth as adoption scales.
+   - B. It is only relevant to academic research, not production.
    - C. Evaluating only with anecdotes instead of a versioned test set.
    - D. Define explicit cost and latency budgets per use case and route accordingly.
    - **Answer: D.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
 40. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-41. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Ignoring token cost growth as adoption scales.
-   - C. It removes all security and governance requirements.
-   - D. Define explicit cost and latency budgets per use case and route accordingly.
-   - **Answer: D.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-42. Which of the following is a common pitfall to avoid in Generative AI?
    - A. Treat prompts as versioned, tested artefacts under source control.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: D.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-43. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Define explicit cost and latency budgets per use case and route accordingly.
-   - B. It makes the system slower but has no other effect.
-   - C. It applies exclusively to image data.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: A.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-44. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Run an automated evaluation suite on every prompt or model change.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. Ignoring token cost growth as adoption scales.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Ignoring token cost growth as adoption scales.
-45. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It is only relevant to academic research, not production.
-   - B. Run an automated evaluation suite on every prompt or model change.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Run an automated evaluation suite on every prompt or model change.
-46. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Run an automated evaluation suite on every prompt or model change.
+   - B. It is only relevant to academic research, not production.
    - C. It removes all security and governance requirements.
    - D. Shipping ungrounded generations into high-stakes workflows.
    - **Answer: D.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+41. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+42. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. It is only relevant to academic research, not production.
+   - B. Evaluating only with anecdotes instead of a versioned test set.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+43. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It applies exclusively to image data.
+   - B. Evaluating only with anecdotes instead of a versioned test set.
+   - C. Relying on a single provider with no fallback or routing strategy.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: D.** Best practice: Run an automated evaluation suite on every prompt or model change.
+44. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. It applies exclusively to image data.
+   - C. Define explicit cost and latency budgets per use case and route accordingly.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+45. Which of the following is a recommended best practice when working with Generative AI?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Treat prompts as versioned, tested artefacts under source control.
+   - D. Ignoring token cost growth as adoption scales.
+   - **Answer: C.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+46. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Evaluating only with anecdotes instead of a versioned test set.
+   - B. Define explicit cost and latency budgets per use case and route accordingly.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
 47. Which of the following is a recommended best practice when working with Generative AI?
-   - A. Relying on a single provider with no fallback or routing strategy.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Always ground high-stakes generations in retrieved, citable sources.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Always ground high-stakes generations in retrieved, citable sources.
-48. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. It makes the system slower but has no other effect.
+   - A. Treat prompts as versioned, tested artefacts under source control.
    - B. It applies exclusively to image data.
    - C. Shipping ungrounded generations into high-stakes workflows.
    - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
-49. Which of the following is a recommended best practice when working with Generative AI?
-   - A. It removes all security and governance requirements.
-   - B. Define explicit cost and latency budgets per use case and route accordingly.
-   - C. Evaluating only with anecdotes instead of a versioned test set.
-   - D. Ignoring token cost growth as adoption scales.
-   - **Answer: B.** Best practice: Define explicit cost and latency budgets per use case and route accordingly.
-50. Which of the following is a common pitfall to avoid in Generative AI?
-   - A. Always ground high-stakes generations in retrieved, citable sources.
-   - B. Evaluating only with anecdotes instead of a versioned test set.
+   - **Answer: A.** Best practice: Treat prompts as versioned, tested artefacts under source control.
+48. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Shipping ungrounded generations into high-stakes workflows.
+   - B. It makes the system slower but has no other effect.
    - C. Treat prompts as versioned, tested artefacts under source control.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Evaluating only with anecdotes instead of a versioned test set.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Pitfall to avoid: Shipping ungrounded generations into high-stakes workflows.
+49. Which of the following is a recommended best practice when working with Generative AI?
+   - A. Ignoring token cost growth as adoption scales.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Run an automated evaluation suite on every prompt or model change.
+   - **Answer: D.** Best practice: Run an automated evaluation suite on every prompt or model change.
+50. Which of the following is a common pitfall to avoid in Generative AI?
+   - A. Treat prompts as versioned, tested artefacts under source control.
+   - B. Relying on a single provider with no fallback or routing strategy.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Relying on a single provider with no fallback or routing strategy.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Generative AI, which statement best describes “Generative Modelling Foundations”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. Likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Generative Modelling Foundations: Likelihood-based versus implicit models; autoregressive, diffusion and variational approaches and the trade-offs between fidelity and diversity.
 2. In the context of Generative AI, which statement best describes “Large Language Models as Generators”?
-   - A. It removes all security and governance requirements.
-   - B. Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Large Language Models as Generators: Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
+   - A. Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Large Language Models as Generators: Next-token prediction, sampling strategies (temperature, top-k, top-p) and the emergence of instruction following.
 3. In the context of Generative AI, which statement best describes “Diffusion Models for Images and Audio”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It removes all security and governance requirements.
    - B. Forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance.
    - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
+   - D. It makes the system slower but has no other effect.
    - **Answer: B.** Diffusion Models for Images and Audio: Forward/reverse diffusion, denoising objectives, latent diffusion and classifier-free guidance.
 4. In the context of Generative AI, which statement best describes “Multimodal Generation”?
    - A. Joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Multimodal Generation: Joint text–image–audio models, cross-attention conditioning and unified tokenisation strategies.
 5. In the context of Generative AI, which statement best describes “Grounding with Enterprise Data”?
-   - A. Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
-   - B. It makes the system slower but has no other effect.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Grounding with Enterprise Data: Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
-6. In the context of Generative AI, which statement best describes “Controllability and Structured Output”?
-   - A. It is only relevant to academic research, not production.
-   - B. Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Controllability and Structured Output: Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
-7. In the context of Generative AI, which statement best describes “Evaluation of Generative Systems”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
-   - C. It removes all security and governance requirements.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Evaluation of Generative Systems: Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
-8. In the context of Generative AI, which statement best describes “Safety, Guardrails and Content Moderation”?
-   - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Input/output filtering, jailbreak resistance and layered defence in depth.
-   - **Answer: D.** Safety, Guardrails and Content Moderation: Input/output filtering, jailbreak resistance and layered defence in depth.
-9. In the context of Generative AI, which statement best describes “Cost, Latency and Throughput Engineering”?
    - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Token economics, caching, batching, distillation and routing across model tiers.
+   - B. Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
+   - C. It removes all security and governance requirements.
    - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Cost, Latency and Throughput Engineering: Token economics, caching, batching, distillation and routing across model tiers.
-10. In the context of Generative AI, which statement best describes “Synthetic Data Generation”?
+   - **Answer: B.** Grounding with Enterprise Data: Retrieval augmentation, tool use and structured outputs to keep generations factual and policy-compliant.
+6. In the context of Generative AI, which statement best describes “Controllability and Structured Output”?
+   - A. Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Controllability and Structured Output: Constrained decoding, JSON/schema enforcement and function calling for reliable downstream integration.
+7. In the context of Generative AI, which statement best describes “Evaluation of Generative Systems”?
    - A. It removes all security and governance requirements.
-   - B. Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
-   - C. It is only relevant to academic research, not production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
+   - **Answer: D.** Evaluation of Generative Systems: Reference-based and reference-free metrics, LLM-as-judge, human preference evaluation and red-teaming.
+8. In the context of Generative AI, which statement best describes “Safety, Guardrails and Content Moderation”?
+   - A. Input/output filtering, jailbreak resistance and layered defence in depth.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Safety, Guardrails and Content Moderation: Input/output filtering, jailbreak resistance and layered defence in depth.
+9. In the context of Generative AI, which statement best describes “Cost, Latency and Throughput Engineering”?
+   - A. It is only relevant to academic research, not production.
+   - B. Token economics, caching, batching, distillation and routing across model tiers.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Cost, Latency and Throughput Engineering: Token economics, caching, batching, distillation and routing across model tiers.
+10. In the context of Generative AI, which statement best describes “Synthetic Data Generation”?
+   - A. Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
    - D. It applies exclusively to image data.
-   - **Answer: B.** Synthetic Data Generation: Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
+   - **Answer: A.** Synthetic Data Generation: Augmenting scarce datasets, privacy-preserving generation and avoiding model collapse from recursive training.
 11. In the context of Generative AI, which statement best describes “Enterprise Use-Case Patterns”?
    - A. Assistants, copilots, summarisers and autonomous workflows mapped to value.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Enterprise Use-Case Patterns: Assistants, copilots, summarisers and autonomous workflows mapped to value.
 12. In the context of Generative AI, which statement best describes “Productionising Generative Applications”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It makes the system slower but has no other effect.
    - B. Prompt management, versioning, observability and continuous evaluation in CI.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
    - **Answer: B.** Productionising Generative Applications: Prompt management, versioning, observability and continuous evaluation in CI.
 13. In the context of Generative AI, which statement best describes “Governance and Intellectual Property”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Provenance, watermarking, licensing and the legal landscape of generated content.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Governance and Intellectual Property: Provenance, watermarking, licensing and the legal landscape of generated content.
+   - A. Provenance, watermarking, licensing and the legal landscape of generated content.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Governance and Intellectual Property: Provenance, watermarking, licensing and the legal landscape of generated content.
 14. In the context of Generative AI, which statement best describes “The GenAI Reference Architecture”?
    - A. It guarantees deterministic output regardless of input.
    - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
-   - **Answer: D.** The GenAI Reference Architecture: Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
+   - C. Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** The GenAI Reference Architecture: Gateways, orchestration, retrieval, guardrails and evaluation as a cohesive platform.
 15. In the context of Generative AI, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It removes all security and governance requirements.
+   - A. It applies exclusively to image data.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
+   - C. It guarantees deterministic output regardless of input.
+   - D. an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Generative AI system into a cohesive, working whole
 16. In the context of Generative AI, which statement best describes “Hands-On Lab: Building an End-to-End Generative AI System”?
    - A. a guided, build-along laboratory that constructs a functioning Generative AI system from first principles
-   - B. It removes all security and governance requirements.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Hands-On Lab: Building an End-to-End Generative AI System: a guided, build-along laboratory that constructs a functioning Generative AI system from first principles
 17. In the context of Generative AI, which statement best describes “Case Study: Legal at Scale”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
-   - **Answer: D.** Case Study: Legal at Scale: a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
+   - C. a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Case Study: Legal at Scale: a detailed case study of deploying Generative AI in a demanding legal environment, including the decisions, trade-offs and outcomes
 18. In the context of Generative AI, which statement best describes “Operating in Production”?
-   - A. the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Operating in Production: the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
+   - **Answer: D.** Operating in Production: the operational discipline required to run a Generative AI system reliably, including monitoring, incident response and continuous improvement
 19. In the context of Generative AI, which statement best describes “Evaluation and Quality Assurance”?
-   - A. a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
-   - B. It removes all security and governance requirements.
+   - A. It is only relevant to academic research, not production.
+   - B. It makes the system slower but has no other effect.
+   - C. a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
+20. In the context of Generative AI, which statement best describes “Security, Privacy and Governance”?
+   - A. It is only relevant to academic research, not production.
+   - B. the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
    - C. It applies exclusively to image data.
    - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Generative AI system before and after release
-20. In the context of Generative AI, which statement best describes “Security, Privacy and Governance”?
-   - A. the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
+   - **Answer: B.** Security, Privacy and Governance: the security, privacy and governance controls that make a Generative AI system trustworthy and compliant
 21. In the context of Generative AI, which statement best describes “Cost, Performance and Scaling”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. techniques for controlling cost and latency while scaling a Generative AI system to production traffic
-   - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Generative AI system to production traffic
-22. In the context of Generative AI, which statement best describes “Integration and Interoperability”?
-   - A. patterns for integrating a Generative AI system with surrounding enterprise systems and data
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Integration and Interoperability: patterns for integrating a Generative AI system with surrounding enterprise systems and data
-23. In the context of Generative AI, which statement best describes “Trends and Research Directions”?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. emerging trends, open problems and research directions shaping the future of Generative AI
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Generative AI
-24. In the context of Generative AI, which statement best describes “Capstone Project”?
-   - A. a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
-25. In the context of Generative AI, which statement best describes “Certification Preparation and Review”?
-   - A. It is only relevant to academic research, not production.
+   - A. techniques for controlling cost and latency while scaling a Generative AI system to production traffic
    - B. It guarantees deterministic output regardless of input.
    - C. It applies exclusively to image data.
-   - D. a structured review and certification-style preparation covering the full breadth of Generative AI
-   - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Generative AI
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Generative AI system to production traffic
+22. In the context of Generative AI, which statement best describes “Integration and Interoperability”?
+   - A. patterns for integrating a Generative AI system with surrounding enterprise systems and data
+   - B. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Integration and Interoperability: patterns for integrating a Generative AI system with surrounding enterprise systems and data
+23. In the context of Generative AI, which statement best describes “Trends and Research Directions”?
+   - A. emerging trends, open problems and research directions shaping the future of Generative AI
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Generative AI
+24. In the context of Generative AI, which statement best describes “Capstone Project”?
+   - A. It removes all security and governance requirements.
+   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Generative AI deliverable
+25. In the context of Generative AI, which statement best describes “Certification Preparation and Review”?
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
+   - C. a structured review and certification-style preparation covering the full breadth of Generative AI
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Generative AI
 
 # References
 

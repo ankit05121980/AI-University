@@ -1,5 +1,5 @@
 @startuml
-title Sequence - Implementing a Transformer from Scratch
+title Sequence - Profiling and Optimising Transformers
 actor User
 participant Gateway
 participant Processor

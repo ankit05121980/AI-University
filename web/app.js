@@ -665,6 +665,87 @@
     return out;
   }
 
+  // ---- Diagram Studio: prompt/text -> professional diagram ----
+  const STUDIO_TYPES = [["auto","Auto-detect"],["flow_h","Flow"],["flow_v","Flow (vertical)"],["steps","Numbered steps"],["layered","Layered architecture"],["cycle","Cycle"],["timeline","Timeline"],["roadmap","Roadmap"],["funnel","Funnel"],["pyramid","Pyramid"],["donut","Donut"],["bars","Bar chart"],["matrix","2x2 matrix"],["grid_matrix","Heat grid"],["mindmap","Mind map"],["tree","Hierarchy / tree"],["radial","Radial hub"],["pillars","Pillars"],["concentric","Concentric"],["honeycomb","Honeycomb"],["kpi","KPI cards"],["venn","Venn"],["gauge","Gauge"],["swimlane","Swimlane"]];
+  const STUDIO_PALS = ["Indigo","Ocean","Emerald","Sunset","Rose","Royal","Slate","Berry","Teal-Lime","Coral","Forest","Corporate"];
+  const STUDIO_EX = [
+    "Idea -> Prototype -> MVP -> Launch -> Scale",
+    "RAG pipeline: ingest, chunk, embed, retrieve, rerank, generate",
+    "Compare REST vs GraphQL vs gRPC",
+    "Incident response cycle: detect, triage, mitigate, resolve, review",
+    "Data platform architecture: ingestion, storage, processing, serving, governance",
+    "Product roadmap: Q1 discovery, Q2 build, Q3 beta, Q4 GA",
+    "Conversion funnel: visitors, signups, activated, paying, retained",
+    "ML lifecycle: data, train, evaluate, deploy, monitor, retrain",
+  ];
+  let studioSvg = "", studioPal = 0;
+  routes.studio = async (arg) => {
+    const q = decodeURIComponent(arg || "");
+    view().innerHTML = `
+      <div class="page-head"><h1>✎ Diagram Studio</h1><p>Describe what you want — a process, architecture, comparison, cycle, timeline or list — and it builds a professional diagram by understanding your text. Pick a style and colour, or let it auto-detect.</p></div>
+      <div class="studio">
+        <div class="studio-controls">
+          <textarea id="dg-text" class="dg-text" placeholder="e.g. RAG pipeline: ingest, chunk, embed, retrieve, rerank, generate&#10;or&#10;Idea -> Prototype -> MVP -> Launch -> Scale">${esc(q)}</textarea>
+          <div class="dg-row">
+            <select id="dg-type">${STUDIO_TYPES.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}</select>
+            <select id="dg-pal">${STUDIO_PALS.map((l,i)=>`<option value="${i}">${l}</option>`).join("")}</select>
+          </div>
+          <div class="dg-row">
+            <button class="btn primary" id="dg-go">Generate diagram</button>
+            <button class="btn" id="dg-surprise">🎲 Example</button>
+          </div>
+          <div class="dg-ex"><span class="cap">Try:</span>${STUDIO_EX.map(e=>`<button class="chip-btn" data-q="${esc(e)}">${esc(e.length>34?e.slice(0,33)+"…":e)}</button>`).join("")}</div>
+          ${state.apiUp?"":'<p class="cap" style="margin-top:10px">For the full engine (25 diagram types), run <code>python serve.py</code>. A simple offline renderer is used otherwise.</p>'}
+        </div>
+        <div class="studio-preview" id="dg-out"><div class="empty">Your diagram will appear here.</div></div>
+      </div>`;
+    const ta = $("#dg-text");
+    const go = () => doDiagram(ta.value, $("#dg-type").value, +$("#dg-pal").value);
+    $("#dg-go").onclick = go;
+    ta.addEventListener("keydown", e => { if ((e.metaKey || e.ctrlKey) && e.key === "Enter") go(); });
+    $("#dg-surprise").onclick = () => { ta.value = STUDIO_EX[Math.floor(Math.random()*STUDIO_EX.length)]; go(); };
+    $$(".dg-ex .chip-btn", view()).forEach(c => c.onclick = () => { ta.value = c.dataset.q; go(); });
+    ta.focus();
+    if (q) go();
+  };
+  async function doDiagram(text, type, pal) {
+    text = (text||"").trim(); if (!text) { toast("Type a description first"); return; }
+    studioPal = pal || 0;
+    const out = $("#dg-out");
+    out.innerHTML = `<div class="ask-thinking"><span class="spinner"></span> Designing your diagram…</div>`;
+    try {
+      let data;
+      if (state.apiUp) data = await getJSON(`${API}/diagram?q=${encodeURIComponent(text)}&type=${encodeURIComponent(type)}&palette=${studioPal}`);
+      else data = clientDiagram(text, type, studioPal);
+      studioSvg = data.svg;
+      out.innerHTML = `
+        <div class="dg-card">${data.svg}</div>
+        <div class="dg-meta"><span class="tag level">type: ${esc(data.type)}</span>
+          ${(data.items||[]).slice(0,8).map(i=>`<span class="chip">${esc(i)}</span>`).join("")}</div>
+        <div class="btn-row" style="margin-top:10px">
+          <button class="btn" id="dg-recolor">🎨 New colour</button>
+          <button class="btn" id="dg-copy">⧉ Copy SVG</button></div>`;
+      $("#dg-recolor").onclick = () => { studioPal = (studioPal+1)%12; $("#dg-pal").value = studioPal; doDiagram(text, type, studioPal); };
+      $("#dg-copy").onclick = async () => { try { await navigator.clipboard.writeText(studioSvg); toast("SVG copied to clipboard"); } catch { toast("Copy not available"); } };
+    } catch (e) { out.innerHTML = `<div class="empty">Could not generate.<br><small>${esc(e.message)}</small></div>`; }
+  }
+  function clientDiagram(text, type, pal) {
+    // minimal offline fallback: parse items + render a flow/bars SVG
+    let items, subject = "Diagram";
+    const m = text.match(/^([^:\n]{2,60}):\s*(.+)$/s);
+    let body = text;
+    if (m && /[,\n]|->/.test(m[2])) { subject = m[1].trim(); body = m[2]; }
+    items = body.split(/->|→|,|;|\n|\bthen\b|\bnext\b/i).map(x => x.replace(/^\s*(\d+[.\)]|[-*•])\s*/, "").trim()).filter(Boolean).slice(0, 7);
+    if (!items.length) items = ["Concept"];
+    const pals = [["#4338ca","#6d28d9","#7c3aed","#8b5cf6","#a78bfa","#c4b5fd"],["#0e7490","#0891b2","#0ea5e9","#38bdf8","#0284c7","#075985"],["#047857","#059669","#10b981","#34d399","#0d9488","#14b8a6"],["#b45309","#d97706","#f59e0b","#ea580c","#f97316","#fb923c"]];
+    const P = pals[pal % pals.length];
+    const W = 840, H = 300, pad = 26, N = items.length, gap = 16, bw = (W - 2*pad - (N-1)*gap)/N, y = 150, bh = 64;
+    let inner = "";
+    for (let i=0;i<N;i++){ const x=pad+i*(bw+gap); inner += `<rect x="${x.toFixed(0)}" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="${P[i%P.length]}"/><text x="${(x+bw/2).toFixed(0)}" y="${y+bh/2}" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#fff">${esc(items[i].slice(0,18))}</text>`; if(i<N-1) inner += `<line x1="${(x+bw).toFixed(0)}" y1="${y+bh/2}" x2="${(x+bw+gap).toFixed(0)}" y2="${y+bh/2}" stroke="#94a3b8" stroke-width="2"/>`; }
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" font-family="Inter,sans-serif"><rect width="${W}" height="${H}" rx="14" fill="#fff"/><rect width="${W}" height="48" rx="14" fill="${P[0]}"/><rect y="32" width="${W}" height="16" fill="${P[0]}"/><text x="${W/2}" y="25" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">${esc(subject)}</text>${inner}</svg>`;
+    return { svg, type: "flow", subject, items };
+  }
+
   routes.diagrams = async () => {
     await Promise.all([load("library", `${DATA}/library.json`), load("stats", `${DATA}/stats.json`), loadPublished()]);
     const kinds = ["Architecture", "Application Flow", "Business Process", "Data Flow", "Sequence", "Class", "Component", "Deployment", "Network", "Cloud Architecture", "RAG Architecture", "Agent Architecture", "Security Architecture", "DevOps Pipeline", "CI/CD Pipeline", "Infrastructure", "Knowledge Graph", "Data Lineage", "Capability Map", "Operating Model"];

@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - Safety, Guardrails and Content Moderation
-package "Generative AI Platform" {
-  component "Generative Modelling Fo…" as C0
-  component "Large Language Models a…" as C1
+package "Safety, Guardrails and Content Moderation Platform" {
+  component "Safety, Guardrails and …" as C0
+  component "Evaluation of Generativ…" as C1
   component "Diffusion Models for Im…" as C2
-  component "Multimodal Generation" as C3
-  component "Grounding with Enterpri…" as C4
+  component "Productionising Generat…" as C3
+  component "Synthetic Data Generati…" as C4
 }
 database "Storage" as DB
 C0 --> DB

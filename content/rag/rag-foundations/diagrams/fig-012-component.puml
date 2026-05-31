@@ -1,11 +1,11 @@
 @startuml
 title Component - Handling Tables, Images and Code
-package "RAG Platform" {
-  component "Why RAG: Grounding and …" as C0
+package "Handling Tables, Images and Code Platform" {
+  component "Handling Tables, Images…" as C0
   component "Document Ingestion and …" as C1
-  component "Embedding and Indexing …" as C2
-  component "Retrieval and Query Tra…" as C3
-  component "Re-ranking and Context …" as C4
+  component "Re-ranking and Context …" as C2
+  component "Advanced RAG Patterns" as C3
+  component "The End-to-End RAG Refe…" as C4
 }
 database "Storage" as DB
 C0 --> DB

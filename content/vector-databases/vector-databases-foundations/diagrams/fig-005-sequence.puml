@@ -1,5 +1,5 @@
 @startuml
-title Sequence - Metadata Filtering and Hybrid Queries
+title Sequence - Distance Metrics and Quantisation
 actor User
 participant Gateway
 participant Processor

@@ -1,0 +1,16 @@
+@startuml
+title Network - Graph Query Languages
+package "Graph Query Languages Platform" {
+  component "Graph Query Languages" as C0
+  component "Reasoning and Inference" as C1
+  component "Graph Algorithms for In…" as C2
+  component "Operating Knowledge Gra…" as C3
+  component "Graphs, Triples and the…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

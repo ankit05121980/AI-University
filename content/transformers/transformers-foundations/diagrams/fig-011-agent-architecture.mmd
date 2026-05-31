@@ -1,0 +1,34 @@
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Vision and Multimodal Transfo… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Vision and Multimodal Tra…]
+    S1[Mixture-of-Experts Transf…]
+    S2[Training Dynamics and Sta…]
+    S3[Why Self-Attention Replac…]
+    S4[The Transformer Design Sp…]
+    S5[Scaled Dot-Product Attent…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC

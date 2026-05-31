@@ -1,11 +1,11 @@
 @startuml
 title Network - Multi-Step and Agentic Prompting
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
+package "Multi-Step and Agentic Prompting Platform" {
+  component "Multi-Step and Agentic …" as C0
+  component "Tool Use and Function C…" as C1
+  component "Prompt Templates and Co…" as C2
   component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
+  component "Prompt Management and V…" as C4
 }
 database "Storage" as DB
 C0 --> DB

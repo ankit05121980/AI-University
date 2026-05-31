@@ -1,5 +1,5 @@
 @startuml
-title Sequence - The Agentic Reference Architecture
+title Sequence - Observability for Agents
 actor User
 participant Gateway
 participant Processor

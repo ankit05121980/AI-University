@@ -1,0 +1,34 @@
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Evaluation and Quality Assura… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Evaluation and Quality As…]
+    S1[Shared Memory and State]
+    S2[Why Multiple Agents]
+    S3[Orchestration and Routing]
+    S4[Emergent Behaviour and Ri…]
+    S5[Cost Control at Team Scale]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC

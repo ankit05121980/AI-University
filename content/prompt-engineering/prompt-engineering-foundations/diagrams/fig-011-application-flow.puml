@@ -1,0 +1,12 @@
+@startuml
+title Application Flow - Decoding Parameters and Sampling
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

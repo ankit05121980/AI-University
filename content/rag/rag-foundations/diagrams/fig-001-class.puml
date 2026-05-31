@@ -1,0 +1,12 @@
+@startuml
+title Class - Why RAG: Grounding and Freshness
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

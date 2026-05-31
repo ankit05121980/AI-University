@@ -1,0 +1,12 @@
+@startuml
+title Application Flow - Case Study: Financial Services at Scale
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

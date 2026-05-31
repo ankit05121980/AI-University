@@ -1,0 +1,16 @@
+@startuml
+title Network - Indexing for Approximate Nearest Neighbour Search
+package "Embeddings Platform" {
+  component "From One-Hot to Distrib…" as C0
+  component "Word, Sentence and Docu…" as C1
+  component "Contrastive Representat…" as C2
+  component "Similarity Metrics and …" as C3
+  component "Multimodal and Cross-En…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

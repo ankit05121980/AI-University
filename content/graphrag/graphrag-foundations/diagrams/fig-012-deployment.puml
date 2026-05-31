@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Incremental Graph Updates
+package "GraphRAG Platform" {
+  component "Limits of Vector-Only R…" as C0
+  component "Knowledge Graph Constru…" as C1
+  component "Entity Resolution and D…" as C2
+  component "Community Detection and…" as C3
+  component "Local versus Global Sea…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

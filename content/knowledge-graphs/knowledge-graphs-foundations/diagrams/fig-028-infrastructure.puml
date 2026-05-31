@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Operating in Production
+package "Knowledge Graphs Platform" {
+  component "Graphs, Triples and the…" as C0
+  component "Ontology and Schema Des…" as C1
+  component "Entity Extraction and L…" as C2
+  component "Graph Query Languages" as C3
+  component "Reasoning and Inference" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

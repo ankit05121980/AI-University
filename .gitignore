@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Node (portal is framework-free; nothing to build, but keep clean)
+node_modules/
+
+# Bulk-generated corpus beyond the committed demo.
+# The committed demo lives in content/ and is tracked explicitly.
+# If you publish the full catalog locally, it can grow to many GB; keep it
+# out of version control by uncommenting the next line.
+# content/
+/tmp_content/

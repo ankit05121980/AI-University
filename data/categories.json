@@ -1,0 +1,299 @@
+[
+  {
+    "name": "AI Foundations",
+    "slug": "ai-foundations",
+    "tagline": "The mathematical and engineering bedrock of modern AI",
+    "books": 16,
+    "pages": 4645,
+    "words": 1080893,
+    "diagrams": 542
+  },
+  {
+    "name": "Generative AI",
+    "slug": "generative-ai",
+    "tagline": "Designing, deploying and governing systems that create content",
+    "books": 16,
+    "pages": 4574,
+    "words": 1056511,
+    "diagrams": 559
+  },
+  {
+    "name": "Prompt Engineering",
+    "slug": "prompt-engineering",
+    "tagline": "Engineering reliable behaviour from foundation models",
+    "books": 16,
+    "pages": 4531,
+    "words": 1045229,
+    "diagrams": 546
+  },
+  {
+    "name": "LLMs",
+    "slug": "llms",
+    "tagline": "Architecture, training and serving of large language models",
+    "books": 16,
+    "pages": 4552,
+    "words": 1050791,
+    "diagrams": 552
+  },
+  {
+    "name": "Transformers",
+    "slug": "transformers",
+    "tagline": "The architecture that powers modern AI",
+    "books": 16,
+    "pages": 4446,
+    "words": 1020773,
+    "diagrams": 545
+  },
+  {
+    "name": "Embeddings",
+    "slug": "embeddings",
+    "tagline": "Dense representations that power search and retrieval",
+    "books": 16,
+    "pages": 4456,
+    "words": 1024072,
+    "diagrams": 544
+  },
+  {
+    "name": "Vector Databases",
+    "slug": "vector-databases",
+    "tagline": "Storing and searching high-dimensional vectors at scale",
+    "books": 16,
+    "pages": 4480,
+    "words": 1030378,
+    "diagrams": 549
+  },
+  {
+    "name": "RAG",
+    "slug": "rag",
+    "tagline": "Retrieval-augmented generation for grounded, current answers",
+    "books": 16,
+    "pages": 4490,
+    "words": 1034065,
+    "diagrams": 546
+  },
+  {
+    "name": "GraphRAG",
+    "slug": "graphrag",
+    "tagline": "Knowledge-graph-grounded retrieval for global reasoning",
+    "books": 16,
+    "pages": 4438,
+    "words": 1022409,
+    "diagrams": 524
+  },
+  {
+    "name": "Knowledge Graphs",
+    "slug": "knowledge-graphs",
+    "tagline": "Modelling, storing and reasoning over connected data",
+    "books": 16,
+    "pages": 4458,
+    "words": 1025333,
+    "diagrams": 536
+  },
+  {
+    "name": "Agentic AI",
+    "slug": "agentic-ai",
+    "tagline": "Autonomous systems that plan, act and use tools",
+    "books": 16,
+    "pages": 4468,
+    "words": 1025996,
+    "diagrams": 555
+  },
+  {
+    "name": "Multi-Agent Systems",
+    "slug": "multi-agent-systems",
+    "tagline": "Coordinating teams of specialised AI agents",
+    "books": 16,
+    "pages": 4401,
+    "words": 1012496,
+    "diagrams": 515
+  },
+  {
+    "name": "MCP",
+    "slug": "mcp",
+    "tagline": "The Model Context Protocol for tool and data integration",
+    "books": 16,
+    "pages": 4435,
+    "words": 1019478,
+    "diagrams": 535
+  },
+  {
+    "name": "Cursor IDE",
+    "slug": "cursor-ide",
+    "tagline": "AI-native software development with Cursor",
+    "books": 16,
+    "pages": 4470,
+    "words": 1025029,
+    "diagrams": 558
+  },
+  {
+    "name": "Claude",
+    "slug": "claude",
+    "tagline": "Building with Anthropic's Claude models",
+    "books": 16,
+    "pages": 4402,
+    "words": 1009449,
+    "diagrams": 531
+  },
+  {
+    "name": "OpenAI",
+    "slug": "openai",
+    "tagline": "Building with the OpenAI platform",
+    "books": 16,
+    "pages": 4402,
+    "words": 1009441,
+    "diagrams": 534
+  },
+  {
+    "name": "Gemini",
+    "slug": "gemini",
+    "tagline": "Building with Google's Gemini models",
+    "books": 16,
+    "pages": 4380,
+    "words": 1000851,
+    "diagrams": 545
+  },
+  {
+    "name": "Anthropic",
+    "slug": "anthropic",
+    "tagline": "Anthropic's research, safety approach and platform",
+    "books": 16,
+    "pages": 4374,
+    "words": 1000389,
+    "diagrams": 535
+  },
+  {
+    "name": "Fine Tuning",
+    "slug": "fine-tuning",
+    "tagline": "Adapting foundation models to your domain",
+    "books": 16,
+    "pages": 4393,
+    "words": 1003963,
+    "diagrams": 552
+  },
+  {
+    "name": "LoRA",
+    "slug": "lora",
+    "tagline": "Low-Rank Adaptation for efficient fine-tuning",
+    "books": 16,
+    "pages": 4403,
+    "words": 1008849,
+    "diagrams": 536
+  },
+  {
+    "name": "PEFT",
+    "slug": "peft",
+    "tagline": "Parameter-efficient fine-tuning methods",
+    "books": 16,
+    "pages": 4389,
+    "words": 1002693,
+    "diagrams": 548
+  },
+  {
+    "name": "RLHF",
+    "slug": "rlhf",
+    "tagline": "Aligning models with human feedback",
+    "books": 16,
+    "pages": 4420,
+    "words": 1013618,
+    "diagrams": 538
+  },
+  {
+    "name": "AI Security",
+    "slug": "ai-security",
+    "tagline": "Securing AI systems against adversarial threats",
+    "books": 16,
+    "pages": 4467,
+    "words": 1026417,
+    "diagrams": 550
+  },
+  {
+    "name": "Responsible AI",
+    "slug": "responsible-ai",
+    "tagline": "Fair, transparent and accountable AI systems",
+    "books": 16,
+    "pages": 4416,
+    "words": 1011477,
+    "diagrams": 547
+  },
+  {
+    "name": "AI Governance",
+    "slug": "ai-governance",
+    "tagline": "Policy, risk and compliance for enterprise AI",
+    "books": 16,
+    "pages": 4425,
+    "words": 1016245,
+    "diagrams": 532
+  },
+  {
+    "name": "LLMOps",
+    "slug": "llmops",
+    "tagline": "Operating large language model applications in production",
+    "books": 16,
+    "pages": 4437,
+    "words": 1017651,
+    "diagrams": 546
+  },
+  {
+    "name": "MLOps",
+    "slug": "mlops",
+    "tagline": "Reliable, automated machine-learning operations",
+    "books": 16,
+    "pages": 4371,
+    "words": 999558,
+    "diagrams": 537
+  },
+  {
+    "name": "AIOps",
+    "slug": "aiops",
+    "tagline": "AI for IT operations and observability",
+    "books": 16,
+    "pages": 4371,
+    "words": 998013,
+    "diagrams": 546
+  },
+  {
+    "name": "AgentOps",
+    "slug": "agentops",
+    "tagline": "Operating autonomous agents in production",
+    "books": 16,
+    "pages": 4359,
+    "words": 995396,
+    "diagrams": 538
+  },
+  {
+    "name": "AI Architecture",
+    "slug": "ai-architecture",
+    "tagline": "Designing enterprise AI systems and platforms",
+    "books": 16,
+    "pages": 4426,
+    "words": 1018313,
+    "diagrams": 524
+  },
+  {
+    "name": "AI Testing",
+    "slug": "ai-testing",
+    "tagline": "Quality assurance for AI and ML systems",
+    "books": 16,
+    "pages": 4366,
+    "words": 1000060,
+    "diagrams": 527
+  },
+  {
+    "name": "AI Observability",
+    "slug": "ai-observability",
+    "tagline": "Monitoring, tracing and debugging AI in production",
+    "books": 16,
+    "pages": 4401,
+    "words": 1007601,
+    "diagrams": 544
+  },
+  {
+    "name": "AI Product Management",
+    "slug": "ai-product-management",
+    "tagline": "Building successful AI-powered products",
+    "books": 16,
+    "pages": 4428,
+    "words": 1016562,
+    "diagrams": 537
+  }
+]

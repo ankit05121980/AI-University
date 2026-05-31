@@ -1,0 +1,16 @@
+@startuml
+title Component - The AI/ML Landscape and Problem Framing
+package "AI Foundations Platform" {
+  component "The AI/ML Landscape and…" as C0
+  component "Linear Algebra for Mach…" as C1
+  component "Probability, Statistics…" as C2
+  component "Optimisation and Gradie…" as C3
+  component "Data Engineering and Fe…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

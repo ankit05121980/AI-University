@@ -1,0 +1,12 @@
+@startuml
+title Class - From Notebook to Production
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

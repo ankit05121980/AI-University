@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-05-31T18:28:58Z",
+  "categories": 33,
+  "books": 528,
+  "pages": 146474,
+  "words": 33629999,
+  "diagrams": 17853,
+  "code": 12672,
+  "questions": 52800,
+  "chapters": 13200,
+  "targets": {
+    "books": 500,
+    "pages": 125000,
+    "words": 10000000,
+    "diagrams": 10000,
+    "code": 5000,
+    "questions": 10000
+  }
+}

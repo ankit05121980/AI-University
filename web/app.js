@@ -336,42 +336,160 @@
     if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans show">💡 ${esc(q.explanation)}</div></div>`;
     return `<div class="qbox" data-ans="${q.answer_index}"><b>${i + 1}. ${esc(q.question)}</b><div class="opts">${q.options.map((o, j) => `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join("")}</div><div class="ans hidden">${esc(q.explanation)}</div></div>`;
   }
-  function explainerHtml(c) {
-    const steps = ["Problem", "Approach", "Design", "Build", "Evaluate", "Operate"];
+  // contextual, per-chapter animated walkthrough ("video")
+  const CATEGORY_FLOWS = {
+    "ai-foundations": ["Data", "Features", "Train", "Evaluate", "Deploy", "Monitor"],
+    "generative-ai": ["Prompt", "Ground", "Generate", "Guardrail", "Evaluate", "Serve"],
+    "prompt-engineering": ["Instruct", "Add Context", "Examples", "Constrain", "Generate", "Validate"],
+    "llms": ["Tokenize", "Embed", "Attention", "Decode", "Sample", "Detokenize"],
+    "transformers": ["Embed", "Q.K.V", "Attention", "Add and Norm", "Feed-Forward", "Output"],
+    "embeddings": ["Text", "Encode", "Normalize", "Index", "Query", "Rank"],
+    "vector-databases": ["Embed", "Upsert", "Index", "Query", "Filter", "Return"],
+    "rag": ["Ingest", "Chunk", "Embed", "Retrieve", "Re-rank", "Generate"],
+    "graphrag": ["Extract", "Resolve", "Build Graph", "Communities", "Retrieve", "Synthesize"],
+    "knowledge-graphs": ["Model", "Extract", "Resolve", "Load", "Query", "Reason"],
+    "agentic-ai": ["Goal", "Plan", "Act", "Observe", "Reflect", "Finish"],
+    "multi-agent-systems": ["Assign", "Plan", "Communicate", "Act", "Resolve", "Deliver"],
+    "mcp": ["Discover", "Connect", "Authorize", "Call Tool", "Return", "Audit"],
+    "cursor-ide": ["Prompt", "Add Context", "Generate", "Review", "Test", "Commit"],
+    "claude": ["Compose", "Tag Context", "Tool Use", "Generate", "Validate", "Respond"],
+    "openai": ["Build Prompt", "Function Call", "Generate", "Parse", "Validate", "Respond"],
+    "gemini": ["Multimodal In", "Ground", "Generate", "Function Call", "Validate", "Respond"],
+    "anthropic": ["Constitution", "Prompt", "Tool Use", "Generate", "Red-team", "Deploy"],
+    "fine-tuning": ["Curate Data", "Format", "Train", "Evaluate", "Register", "Serve"],
+    "lora": ["Freeze Base", "Inject LoRA", "Train", "Merge", "Evaluate", "Serve"],
+    "peft": ["Pick Method", "Add Module", "Train", "Evaluate", "Compose", "Serve"],
+    "rlhf": ["SFT", "Collect Prefs", "Reward Model", "Optimize", "Evaluate", "Align"],
+    "ai-security": ["Threat Model", "Validate Input", "Constrain", "Validate Output", "Monitor", "Respond"],
+    "responsible-ai": ["Assess Risk", "Measure Fairness", "Mitigate", "Document", "Oversee", "Monitor"],
+    "ai-governance": ["Intake", "Classify Risk", "Review", "Approve", "Monitor", "Audit"],
+    "llmops": ["Manage Prompts", "Evaluate", "Gate", "Deploy", "Observe", "Improve"],
+    "mlops": ["Data", "Train", "Register", "Deploy", "Monitor", "Retrain"],
+    "aiops": ["Ingest", "Detect", "Correlate", "Diagnose", "Remediate", "Learn"],
+    "agentops": ["Trace", "Evaluate", "Budget", "Approve", "Monitor", "Improve"],
+    "ai-architecture": ["Requirements", "Design", "Decide", "Build", "Integrate", "Operate"],
+    "ai-testing": ["Define", "Build Set", "Run", "Slice", "Gate", "Report"],
+    "ai-observability": ["Instrument", "Collect", "Trace", "Detect Drift", "Alert", "Improve"],
+    "ai-product-management": ["Discover", "Validate", "Prototype", "Launch", "Measure", "Iterate"],
+  };
+  const TOPIC_FLOWS = [
+    [/secur|threat|privacy|inject|jailbreak/i, ["Threat Model", "Validate Input", "Constrain", "Validate Output", "Monitor", "Respond"]],
+    [/govern|complian|\brisk\b|policy|audit/i, ["Intake", "Classify Risk", "Review", "Approve", "Monitor", "Audit"]],
+    [/eval|test|quality|assess|benchmark/i, ["Define Metric", "Build Set", "Run", "Slice", "Gate", "Report"]],
+    [/operat|production|observ|monitor|reliab|incident/i, ["Deploy", "Monitor", "Detect", "Diagnose", "Remediate", "Improve"]],
+    [/cost|scal|performance|latency|throughput/i, ["Profile", "Budget", "Cache", "Batch", "Scale", "Verify"]],
+    [/data|ingest|lineage|chunk|pipeline/i, ["Source", "Ingest", "Validate", "Transform", "Index", "Serve"]],
+    [/architect|design|reference|blueprint|integrat/i, ["Requirements", "Design", "Decide", "Build", "Integrate", "Operate"]],
+    [/case study/i, ["Context", "Approach", "Build", "Measure", "Outcome", "Lessons"]],
+    [/capstone|project|hands-on|\blab\b/i, ["Scope", "Build", "Test", "Document", "Demo", "Ship"]],
+    [/certif|review|preparation|prepare/i, ["Review", "Practice", "Assess", "Find Gaps", "Revise", "Certify"]],
+    [/trend|research|future|direction/i, ["Today", "Limits", "Research", "Emerging", "Adopt", "Watch"]],
+  ];
+  function chapterSteps(c, b) {
+    for (const [re, steps] of TOPIC_FLOWS) if (re.test(c.title)) return steps;
+    const base = CATEGORY_FLOWS[b.category_slug] || ["Define", "Design", "Build", "Evaluate", "Operate", "Improve"];
+    const k = (c.number - 1) % base.length;  // rotate so concept chapters differ
+    return base.slice(k).concat(base.slice(0, k));
+  }
+  function chHue(b, n) { return (hashHue(b.category_slug) + (n - 1) * 53) % 360; }
+
+  function explainerHtml(c, b, n) {
+    const steps = chapterSteps(c, b);
+    const style = (n - 1) % 5;
+    const hue = chHue(b, n);
+    const styleName = ["sequence", "build-up", "flow-through", "cycle", "growth"][style];
     const yt = "https://www.youtube.com/results?search_query=" + encodeURIComponent(c.title + " explained");
     return `<div class="explainer">
-      <div class="exp-head"><span class="exp-badge">\u25B6 Animated walkthrough</span>
+      <div class="exp-head"><span class="exp-badge">\u25B6 Animated walkthrough \u00b7 ${styleName}</span>
         <a class="btn ghost" href="${yt}" target="_blank" rel="noopener">Watch real-world videos \u2197</a></div>
-      ${explainerSVG(steps, c.title)}
-      <div class="exp-cap">A looping, real-world walkthrough of how teams take \u201C${esc(c.title)}\u201D from problem to production. Use the link above for hands-on video tutorials.</div>
+      ${explainerSVG(steps, c.title, style, hue)}
+      <div class="exp-cap">How ${esc(b.category)} approaches \u201C${esc(c.title)}\u201D: ${steps.map(esc).join(" \u2192 ")}.</div>
     </div>`;
   }
-  function explainerSVG(steps, scenario) {
-    const N = steps.length, slot = 1.5, total = (N * slot).toFixed(1);
+  function explainerSVG(steps, scenario, style, hue) {
     const VW = 820, VH = 210, pad = 26;
-    const bw = (VW - 2 * pad - (N - 1) * 14) / N, y = 78, bh = 60;
-    const xs = []; for (let i = 0; i < N; i++) xs.push(pad + i * (bw + 14));
-    let boxes = "", labels = "", conns = "";
-    for (let i = 0; i < N; i++) {
-      const x = xs[i];
-      boxes += `<rect x="${x.toFixed(0)}" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>`;
-      labels += `<text x="${(x + bw / 2).toFixed(0)}" y="${y + bh / 2 - 4}" text-anchor="middle" font-size="13" font-weight="800" fill="#1e293b">${esc(steps[i])}</text>`;
-      labels += `<text x="${(x + bw / 2).toFixed(0)}" y="${y + bh / 2 + 15}" text-anchor="middle" font-size="9.5" fill="#64748b">step ${i + 1}</text>`;
-      if (i < N - 1) conns += `<line x1="${(x + bw).toFixed(0)}" y1="${y + bh / 2}" x2="${(x + bw + 14).toFixed(0)}" y2="${y + bh / 2}" stroke="#cbd5e1" stroke-width="2"/>`;
-    }
-    const kt = []; for (let i = 0; i <= N; i++) kt.push((i / N).toFixed(3));
-    const vals = xs.map(x => `${x.toFixed(0)} 0`).concat([`${xs[0].toFixed(0)} 0`]).join(";");
-    const hl = `<rect x="0" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="#4338ca" fill-opacity="0.16" stroke="#4338ca" stroke-width="3">
-      <animateTransform attributeName="transform" type="translate" dur="${total}s" repeatCount="indefinite" calcMode="discrete" keyTimes="${kt.join(";")}" values="${vals}"/></rect>`;
-    const prog = `<rect x="${pad}" y="${VH - 24}" width="0" height="6" rx="3" fill="#4338ca"><animate attributeName="width" dur="${total}s" repeatCount="indefinite" values="0;${VW - 2 * pad}"/></rect>`;
+    const C = { acc: `hsl(${hue} 72% 48%)`, soft: `hsl(${hue} 85% 96%)`, bd: `hsl(${hue} 70% 80%)` };
+    const inner = [expSequence, expBuildup, expTravel, expCycle, expBars][style](steps, C, VW, VH, pad);
     return `<svg viewBox="0 0 ${VW} ${VH}" class="exp-svg" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
       <rect width="${VW}" height="${VH}" rx="14" fill="#ffffff"/>
-      <text x="${pad}" y="42" font-size="13" font-weight="700" fill="#0f172a">Real-world walkthrough</text>
-      <circle cx="${VW - pad - 8}" cy="38" r="6" fill="#dc2626"><animate attributeName="opacity" dur="1.4s" repeatCount="indefinite" values="1;0.2;1"/></circle>
-      <rect x="${pad}" y="${VH - 24}" width="${VW - 2 * pad}" height="6" rx="3" fill="#e2e8f0"/>
-      ${conns}${boxes}${hl}${labels}${prog}</svg>`;
+      <text x="${pad}" y="40" font-size="13" font-weight="800" fill="#0f172a">${esc(scenario)}</text>
+      <circle cx="${VW - pad - 8}" cy="36" r="6" fill="#dc2626"><animate attributeName="opacity" dur="1.4s" repeatCount="indefinite" values="1;0.2;1"/></circle>
+      ${inner}</svg>`;
   }
-  function chapterHtml(c, n, total) {
+  function expRow(steps, VW, pad, y, bh) {
+    const N = steps.length, gap = 14, bw = (VW - 2 * pad - (N - 1) * gap) / N;
+    const xs = []; for (let i = 0; i < N; i++) xs.push(pad + i * (bw + gap));
+    return { N, bw, xs, gap };
+  }
+  function expLabels(steps, xs, bw, y, bh) {
+    return steps.map((s, i) => `<text x="${(xs[i] + bw / 2).toFixed(0)}" y="${y + bh / 2 - 3}" text-anchor="middle" font-size="12" font-weight="800" fill="#1e293b">${esc(s)}</text><text x="${(xs[i] + bw / 2).toFixed(0)}" y="${y + bh / 2 + 14}" text-anchor="middle" font-size="9" fill="#64748b">step ${i + 1}</text>`).join("");
+  }
+  function expSequence(steps, C, VW, VH, pad) {
+    const y = 78, bh = 60; const { N, bw, xs } = expRow(steps, VW, pad, y, bh);
+    const total = (N * 1.4).toFixed(1);
+    let s = "";
+    for (let i = 0; i < N; i++) { s += `<rect x="${xs[i].toFixed(0)}" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="${C.soft}" stroke="${C.bd}"/>`; if (i < N - 1) s += `<line x1="${(xs[i] + bw).toFixed(0)}" y1="${y + bh / 2}" x2="${(xs[i] + bw + 14).toFixed(0)}" y2="${y + bh / 2}" stroke="#cbd5e1" stroke-width="2"/>`; }
+    const kt = []; for (let i = 0; i <= N; i++) kt.push((i / N).toFixed(3));
+    const vals = xs.map(x => `${x.toFixed(0)} 0`).concat([`${xs[0].toFixed(0)} 0`]).join(";");
+    s += `<rect x="0" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="${C.acc}" fill-opacity="0.18" stroke="${C.acc}" stroke-width="3"><animateTransform attributeName="transform" type="translate" dur="${total}s" repeatCount="indefinite" calcMode="discrete" keyTimes="${kt.join(";")}" values="${vals}"/></rect>`;
+    s += expLabels(steps, xs, bw, y, bh);
+    s += `<rect x="${pad}" y="${VH - 22}" width="${VW - 2 * pad}" height="6" rx="3" fill="#e2e8f0"/><rect x="${pad}" y="${VH - 22}" width="0" height="6" rx="3" fill="${C.acc}"><animate attributeName="width" dur="${total}s" repeatCount="indefinite" values="0;${VW - 2 * pad}"/></rect>`;
+    return s;
+  }
+  function expBuildup(steps, C, VW, VH, pad) {
+    const y = 82, bh = 58; const { N, bw, xs } = expRow(steps, VW, pad, y, bh);
+    const total = (N * 1.2 + 1).toFixed(1);
+    let s = "";
+    for (let i = 0; i < N; i++) {
+      const a = (i / (N + 1)).toFixed(3), b2 = ((i + 0.4) / (N + 1)).toFixed(3);
+      s += `<g opacity="0"><animate attributeName="opacity" dur="${total}s" repeatCount="indefinite" keyTimes="0;${a};${b2};0.9;1" values="0;0;1;1;0"/>` +
+        `<rect x="${xs[i].toFixed(0)}" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="${C.acc}"/>` +
+        `<text x="${(xs[i] + bw / 2).toFixed(0)}" y="${y + bh / 2 - 3}" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">${esc(steps[i])}</text>` +
+        `<text x="${(xs[i] + bw / 2).toFixed(0)}" y="${y + bh / 2 + 14}" text-anchor="middle" font-size="9" fill="#ffffff" opacity="0.85">step ${i + 1}</text></g>`;
+    }
+    return s;
+  }
+  function expTravel(steps, C, VW, VH, pad) {
+    const y = 80, bh = 60; const { N, bw, xs } = expRow(steps, VW, pad, y, bh);
+    const total = (N * 1.3).toFixed(1);
+    let s = `<line x1="${pad}" y1="${y + bh / 2}" x2="${VW - pad}" y2="${y + bh / 2}" stroke="#e2e8f0" stroke-width="3"/>`;
+    for (let i = 0; i < N; i++) s += `<rect x="${xs[i].toFixed(0)}" y="${y}" width="${bw.toFixed(0)}" height="${bh}" rx="12" fill="${C.soft}" stroke="${C.bd}"/>`;
+    s += expLabels(steps, xs, bw, y, bh);
+    const cx = xs.map(x => (x + bw / 2).toFixed(0)).concat([(xs[0] + bw / 2).toFixed(0)]).join(";");
+    const kt = []; for (let i = 0; i <= N; i++) kt.push((i / N).toFixed(3));
+    s += `<circle cx="${(xs[0] + bw / 2).toFixed(0)}" cy="${y + bh / 2}" r="11" fill="${C.acc}"><animate attributeName="cx" dur="${total}s" repeatCount="indefinite" calcMode="linear" keyTimes="${kt.join(";")}" values="${cx}"/></circle>`;
+    return s;
+  }
+  function expCycle(steps, C, VW, VH, pad) {
+    const N = steps.length, cx = VW / 2, cy = 122, R = 70, total = (N * 1.3).toFixed(1);
+    let s = `<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="#e2e8f0" stroke-width="2"/>`;
+    const nodes = [];
+    for (let i = 0; i < N; i++) { const a = (2 * Math.PI * i / N) - Math.PI / 2; nodes.push([cx + R * Math.cos(a), cy + R * Math.sin(a)]); }
+    for (let i = 0; i < N; i++) {
+      const [x, yy] = nodes[i];
+      s += `<circle cx="${x.toFixed(0)}" cy="${yy.toFixed(0)}" r="9" fill="${C.acc}"/>`;
+      const lx = cx + (R + 58) * Math.cos(2 * Math.PI * i / N - Math.PI / 2);
+      const ly = cy + (R + 26) * Math.sin(2 * Math.PI * i / N - Math.PI / 2);
+      s += `<text x="${lx.toFixed(0)}" y="${ly.toFixed(0)}" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">${esc(steps[i])}</text>`;
+    }
+    s += `<g><animateTransform attributeName="transform" type="rotate" dur="${total}s" repeatCount="indefinite" values="0 ${cx} ${cy};360 ${cx} ${cy}"/><line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy - R}" stroke="${C.acc}" stroke-width="3"/><circle cx="${cx}" cy="${cy - R}" r="7" fill="${C.acc}"/></g>`;
+    s += `<circle cx="${cx}" cy="${cy}" r="5" fill="#0f172a"/>`;
+    return s;
+  }
+  function expBars(steps, C, VW, VH, pad) {
+    const N = steps.length, gap = 16, bw = (VW - 2 * pad - (N - 1) * gap) / N, base = VH - 30, maxh = 110;
+    const xs = []; for (let i = 0; i < N; i++) xs.push(pad + i * (bw + gap));
+    const total = (N * 0.9 + 1).toFixed(1);
+    let s = `<line x1="${pad}" y1="${base}" x2="${VW - pad}" y2="${base}" stroke="#e2e8f0" stroke-width="2"/>`;
+    for (let i = 0; i < N; i++) {
+      const h = maxh * (0.45 + 0.55 * ((i + 1) / N));
+      const a = (i / (N + 1)).toFixed(3), b2 = ((i + 0.5) / (N + 1)).toFixed(3);
+      s += `<rect x="${xs[i].toFixed(0)}" y="${base}" width="${bw.toFixed(0)}" height="0" rx="8" fill="${C.acc}"><animate attributeName="height" dur="${total}s" repeatCount="indefinite" keyTimes="0;${a};${b2};0.9;1" values="0;0;${h.toFixed(0)};${h.toFixed(0)};0"/><animate attributeName="y" dur="${total}s" repeatCount="indefinite" keyTimes="0;${a};${b2};0.9;1" values="${base};${base};${(base - h).toFixed(0)};${(base - h).toFixed(0)};${base}"/></rect>`;
+      s += `<text x="${(xs[i] + bw / 2).toFixed(0)}" y="${base + 16}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#475569">${esc(steps[i])}</text>`;
+    }
+    return s;
+  }
+    function chapterHtml(c, n, total, b) {
     const mins = Math.max(1, Math.round(chapterWords(c) / 220));
     const topics = (c.sections || []).map(s => s.heading).filter(hd => !/introduction|review|walkthrough|takeaway|check your/i.test(hd)).slice(0, 5);
     const diagrams = c.diagrams || [];
@@ -393,7 +511,7 @@
         <p class="ch-summary">${esc(c.summary)}</p>
         ${topics.length ? `<div class="chip-row">${topics.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
       </div>
-      ${explainerHtml(c)}
+      ${explainerHtml(c, b, n)}
       ${sec}${code}${quiz}
       <div class="ch-pager">
         <button class="btn" id="pg-prev" ${n <= 1 ? "disabled" : ""}>‹ Previous</button>
@@ -433,7 +551,7 @@
   function showChapter(n) {
     const ctx = readerCtx; if (!ctx) return; n = Math.min(ctx.total, Math.max(1, n)); ctx.current = n;
     const c = ctx.content.chapters[n - 1]; const host = $("#reader-body");
-    host.innerHTML = chapterHtml(c, n, ctx.total);
+    host.innerHTML = chapterHtml(c, n, ctx.total, ctx.b);
     host.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: "ease" });
     $$("#reader-toc a").forEach(a => a.classList.toggle("active", +a.dataset.ch === n));
     const act = $(`#reader-toc a[data-ch="${n}"]`); if (act) act.scrollIntoView({ block: "nearest" });

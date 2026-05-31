@@ -4,19 +4,18 @@
 (() => {
   "use strict";
 
-  // Resolve data/content roots relative to this page (served under /web/).
   const DATA = "../data";
   const CONTENT = "../content";
 
   const state = {
     library: null, categories: null, stats: null, search: null,
-    published: null, outlineCache: {}, contentCache: {},
+    published: null, publishedMap: {}, outlineCache: {}, contentCache: {},
   };
 
   // ---- storage ----
   const store = {
-    get(key, def) { try { return JSON.parse(localStorage.getItem(key)) ?? def; } catch { return def; } },
-    set(key, val) { localStorage.setItem(key, JSON.stringify(val)); },
+    get(key, def) { try { const v = localStorage.getItem(key); return v == null ? def : JSON.parse(v); } catch { return def; } },
+    set(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} },
   };
   const favs = {
     list: () => store.get("aiu:favorites", []),
@@ -36,63 +35,77 @@
 
   // ---- helpers ----
   const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const view = () => $("#view");
-  const fmt = (n) => (n == null ? "—" : n.toLocaleString());
+  const fmt = (n) => (n == null ? "—" : Number(n).toLocaleString());
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  function el(html) { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstElementChild; }
 
-  async function getJSON(url) {
-    const r = await fetch(url);
-    if (!r.ok) throw new Error(`${r.status} ${url}`);
-    return r.json();
-  }
-  async function load(key, url) {
-    if (state[key]) return state[key];
-    state[key] = await getJSON(url);
-    return state[key];
-  }
+  async function getJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
+  async function load(key, url) { if (state[key]) return state[key]; state[key] = await getJSON(url); return state[key]; }
   async function loadPublished() {
     if (state.published) return state.published;
     try { state.published = await getJSON(`${DATA}/published.json`); }
     catch { state.published = []; }
-    state.publishedMap = {};
-    state.published.forEach(p => state.publishedMap[p.id] = p);
+    state.publishedMap = {}; state.published.forEach(p => state.publishedMap[p.id] = p);
     return state.published;
   }
   async function loadOutline(id) {
     if (state.outlineCache[id]) return state.outlineCache[id];
-    const o = await getJSON(`${DATA}/outlines/${id}.json`);
-    state.outlineCache[id] = o; return o;
+    const o = await getJSON(`${DATA}/outlines/${id}.json`); state.outlineCache[id] = o; return o;
   }
 
-  // ---- minimal markdown → HTML for section bodies ----
+  // ---- markdown → HTML for section bodies ----
   function mdInline(s) {
-    return esc(s)
-      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-      .replace(/`([^`]+)`/g, "<code>$1</code>");
+    return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`([^`]+)`/g, "<code>$1</code>");
   }
   function mdToHtml(md) {
-    const lines = md.split("\n");
-    const out = [];
-    let list = null; // 'ul' | 'ol'
-    const closeList = () => { if (list) { out.push(`</${list}>`); list = null; } };
+    const lines = String(md || "").split("\n"); const out = []; let list = null;
+    const close = () => { if (list) { out.push(`</${list}>`); list = null; } };
     for (const raw of lines) {
       const line = raw.trimEnd();
-      if (!line.trim()) { closeList(); continue; }
-      const ul = line.match(/^\s*-\s+(.*)$/);
-      const ol = line.match(/^\s*\d+\.\s+(.*)$/);
-      if (ul) { if (list !== "ul") { closeList(); list = "ul"; out.push("<ul>"); } out.push(`<li>${mdInline(ul[1])}</li>`); }
-      else if (ol) { if (list !== "ol") { closeList(); list = "ol"; out.push("<ol>"); } out.push(`<li>${mdInline(ol[1])}</li>`); }
-      else { closeList(); out.push(`<p>${mdInline(line)}</p>`); }
+      if (!line.trim()) { close(); continue; }
+      const ul = line.match(/^\s*-\s+(.*)$/), ol = line.match(/^\s*\d+\.\s+(.*)$/);
+      if (ul) { if (list !== "ul") { close(); list = "ul"; out.push("<ul>"); } out.push(`<li>${mdInline(ul[1])}</li>`); }
+      else if (ol) { if (list !== "ol") { close(); list = "ol"; out.push("<ol>"); } out.push(`<li>${mdInline(ol[1])}</li>`); }
+      else { close(); out.push(`<p>${mdInline(line)}</p>`); }
     }
-    closeList();
-    return out.join("\n");
+    close(); return out.join("\n");
+  }
+
+  // ---- mermaid (robust, lazy, with offline fallback) ----
+  let mermaidPromise = null;
+  function ensureMermaid() {
+    if (window.__mermaid) return Promise.resolve(window.__mermaid);
+    if (mermaidPromise) return mermaidPromise;
+    const theme = document.documentElement.dataset.theme === "dark" ? "dark" : "neutral";
+    mermaidPromise = import("https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs")
+      .then(mod => { const m = mod.default; m.initialize({ startOnLoad: false, theme, securityLevel: "loose" }); window.__mermaid = m; return m; });
+    return mermaidPromise;
+  }
+  async function renderFigures(root) {
+    const nodes = $$(".mermaid[data-pending]", root);
+    if (!nodes.length) return;
+    let m;
+    try { m = await ensureMermaid(); }
+    catch { nodes.forEach(fallbackFigure); return; }
+    for (const n of nodes) {
+      try {
+        const def = n.getAttribute("data-src");
+        const { svg } = await m.render("mmd-" + Math.random().toString(36).slice(2), def);
+        n.innerHTML = svg; n.removeAttribute("data-pending");
+        const fig = n.closest(".figure"); const ld = fig && $(".diag-loading", fig); if (ld) ld.remove();
+      } catch { fallbackFigure(n); }
+    }
+  }
+  function fallbackFigure(n) {
+    const fig = n.closest(".figure"); const ld = fig && $(".diag-loading", fig); if (ld) ld.remove();
+    const def = n.getAttribute("data-src") || "";
+    n.outerHTML = `<pre class="fallback">${esc(def)}</pre>
+      <div class="cap">Diagram source shown above (live rendering requires internet for the Mermaid renderer).</div>`;
   }
 
   // ---- nav ----
-  function setActive(route) {
-    document.querySelectorAll(".nav-item").forEach(a => a.classList.toggle("active", a.dataset.route === route));
-  }
+  function setActive(route) { $$(".nav-item").forEach(a => a.classList.toggle("active", a.dataset.route === route)); }
 
   function router() {
     const hash = location.hash.slice(1) || "dashboard";
@@ -100,21 +113,22 @@
     const arg = rest.join("/");
     setActive(route);
     $("#sidebar").classList.remove("open");
+    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
     const fn = routes[route] || routes.dashboard;
-    view().innerHTML = `<div class="loading">Loading…</div>`;
+    view().innerHTML = `<div class="loading"><span class="spinner" style="display:inline-block;vertical-align:middle"></span> Loading…</div>`;
     Promise.resolve(fn(arg)).catch(err => {
-      view().innerHTML = `<div class="empty">Could not load this view.<br><small>${esc(err.message)}</small><br><br>Make sure you are serving the repository root (see README) so that <code>/data</code> and <code>/content</code> are reachable.</div>`;
+      view().innerHTML = `<div class="empty">Could not load this view.<br><small>${esc(err.message)}</small><br><br>Make sure you are serving the repository root (run <code>python serve.py</code>) so that <code>/data</code> and <code>/content</code> are reachable.</div>`;
       console.error(err);
     });
   }
 
   // ---- shared UI ----
-  function bookCard(b) {
-    const pub = state.publishedMap && state.publishedMap[b.id];
+  function bookCard(b, i = 0) {
+    const pub = state.publishedMap[b.id];
     const p = progress.get(b.id);
     const pct = p.total ? Math.round((p.ch / p.total) * 100) : 0;
     return `
-    <div class="card">
+    <div class="card" style="animation-delay:${Math.min(i * 35, 400)}ms">
       <a href="#book/${b.id}">
         <div class="book-cover">
           <div class="bc-cat">${esc(b.category)}</div>
@@ -128,7 +142,7 @@
         <span>${fmt(b.diagram_count)} dia.</span>
         ${pub ? '<span class="tag pub">Downloadable</span>' : ""}
       </div>
-      ${pct ? `<div class="progress-track"><span style="width:${pct}%"></span></div>` : ""}
+      ${pct ? `<div class="progress-track" title="${pct}% read"><span style="width:${pct}%"></span></div>` : ""}
       <div class="card-actions">
         <a class="btn primary" href="#book/${b.id}">Open</a>
         ${pub ? `<a class="btn" href="${CONTENT}/${pub.artifacts.pdf}" download>PDF</a>` : ""}
@@ -136,23 +150,25 @@
       </div>
     </div>`;
   }
-
   function wireFavButtons(root) {
-    root.querySelectorAll(".fav").forEach(btn => btn.addEventListener("click", e => {
-      e.preventDefault();
-      const on = favs.toggle(btn.dataset.id);
-      btn.textContent = on ? "★" : "☆";
+    $$(".fav", root).forEach(btn => btn.addEventListener("click", e => {
+      e.preventDefault(); const on = favs.toggle(btn.dataset.id); btn.textContent = on ? "★" : "☆"; btn.style.color = on ? "#f59e0b" : "";
     }));
   }
+  function animateCounters(root) {
+    $$("[data-count]", root).forEach(el => {
+      const target = +el.dataset.count, dur = 900, t0 = performance.now();
+      const tick = (t) => { const k = Math.min(1, (t - t0) / dur); el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3))).toLocaleString(); if (k < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    });
+  }
+  function animateBars(root) { requestAnimationFrame(() => $$(".bar > span", root).forEach(s => s.style.width = s.dataset.w + "%")); }
 
   // ---- views ----
   const routes = {};
 
   routes.dashboard = async () => {
-    const [stats, cats] = await Promise.all([
-      load("stats", `${DATA}/stats.json`),
-      load("categories", `${DATA}/categories.json`),
-    ]);
+    const [stats, cats] = await Promise.all([load("stats", `${DATA}/stats.json`), load("categories", `${DATA}/categories.json`)]);
     await Promise.all([load("library", `${DATA}/library.json`), loadPublished()]);
     const t = stats.targets;
     const cards = [
@@ -161,38 +177,39 @@
       ["Code Samples", stats.code, t.code], ["Assessment Questions", stats.questions, t.questions],
     ].map(([label, val, tgt]) => {
       const pct = Math.min(100, Math.round((val / tgt) * 100));
-      return `<div class="stat-card"><div class="label">${label}</div><div class="value">${fmt(val)}</div>
-        <div class="target">Target ${fmt(tgt)} — ${pct}%</div><div class="bar"><span style="width:${pct}%"></span></div></div>`;
+      return `<div class="stat-card"><div class="label">${label}</div><div class="value" data-count="${val}">0</div>
+        <div class="target">Target ${fmt(tgt)} — ${pct}%</div><div class="bar"><span data-w="${pct}"></span></div></div>`;
     }).join("");
 
-    const featured = state.library.filter(b => state.publishedMap[b.id]).slice(0, 8)
-      .concat(state.library.slice(0, 8)).slice(0, 8);
-
+    const featured = state.library.filter(b => state.publishedMap[b.id]).concat(state.library).slice(0, 8);
     const recent = Object.entries(progress.all()).sort((a, b) => (b[1].t || 0) - (a[1].t || 0)).slice(0, 4)
       .map(([id]) => state.library.find(b => b.id === id)).filter(Boolean);
 
     view().innerHTML = `
-      <div class="page-head"><h1>Enterprise AI Knowledge Library</h1>
-        <p>An automated publishing platform with ${fmt(stats.books)} professional AI books across ${stats.categories} categories — every title professionally formatted, searchable, viewable online and downloadable as PDF, DOCX, PPTX, HTML and Markdown.</p></div>
+      <div class="hero">
+        <div class="orb a"></div><div class="orb b"></div>
+        <h1>Enterprise AI Knowledge Library</h1>
+        <p>${fmt(stats.books)} professional, enterprise-grade AI books across ${stats.categories} categories — each professionally formatted, searchable, viewable online and downloadable as PDF, DOCX, PPTX, HTML and Markdown.</p>
+        <div class="cta"><a class="btn" style="background:rgba(255,255,255,.16);color:#fff;border:none" href="#library">Browse the library →</a>
+          <a class="btn" style="background:#fff;color:var(--accent);border:none" href="#search">Search topics</a></div>
+      </div>
       <div class="stat-grid">${cards}</div>
       ${recent.length ? `<h2 style="margin:28px 0 12px">Continue reading</h2><div class="cards">${recent.map(bookCard).join("")}</div>` : ""}
       <h2 style="margin:28px 0 12px">Featured titles</h2>
       <div class="cards">${featured.map(bookCard).join("")}</div>
       <h2 style="margin:28px 0 12px">Browse by category</h2>
-      <div class="cards">${cats.map(c => `
-        <a class="card" href="#categories/${c.slug}">
+      <div class="cards">${cats.map((c, i) => `
+        <a class="card" style="animation-delay:${Math.min(i * 25, 400)}ms" href="#categories/${c.slug}">
           <div style="font-weight:800">${esc(c.name)}</div>
           <div class="meta">${esc(c.tagline)}</div>
           <div class="meta"><span>${c.books} books</span><span>${fmt(c.pages)} pp.</span><span>${fmt(c.diagrams)} dia.</span></div>
         </a>`).join("")}</div>`;
-    wireFavButtons(view());
+    animateCounters(view()); animateBars(view()); wireFavButtons(view());
   };
 
-  // Library with filters + pagination
   let libState = { page: 0, perPage: 24, cat: "", level: "", q: "", sort: "id", pubOnly: false };
   routes.library = async (arg) => {
-    await Promise.all([load("library", `${DATA}/library.json`),
-      load("categories", `${DATA}/categories.json`), loadPublished()]);
+    await Promise.all([load("library", `${DATA}/library.json`), load("categories", `${DATA}/categories.json`), loadPublished()]);
     if (arg) libState.cat = arg;
     renderLibrary();
   };
@@ -206,8 +223,7 @@
     else if (libState.sort === "title") items.sort((a, b) => a.title.localeCompare(b.title));
     else items.sort((a, b) => a.id.localeCompare(b.id));
 
-    const total = items.length;
-    const pages = Math.max(1, Math.ceil(total / libState.perPage));
+    const total = items.length, pages = Math.max(1, Math.ceil(total / libState.perPage));
     libState.page = Math.min(libState.page, pages - 1);
     const slice = items.slice(libState.page * libState.perPage, (libState.page + 1) * libState.perPage);
     const catOpts = ['<option value="">All categories</option>']
@@ -219,11 +235,11 @@
         <select id="f-cat">${catOpts}</select>
         <select id="f-level">${["", "Foundational", "Intermediate", "Advanced"].map(l => `<option value="${l}" ${libState.level === l ? "selected" : ""}>${l || "All levels"}</option>`).join("")}</select>
         <select id="f-sort">${[["id", "Sort: catalog"], ["title", "Sort: title"], ["pages", "Sort: pages"]].map(([v, t]) => `<option value="${v}" ${libState.sort === v ? "selected" : ""}>${t}</option>`).join("")}</select>
-        <label class="tag" style="cursor:pointer"><input type="checkbox" id="f-pub" ${libState.pubOnly ? "checked" : ""}/> Downloadable only</label>
+        <label class="tag" style="cursor:pointer;display:flex;align-items:center;gap:6px"><input type="checkbox" id="f-pub" ${libState.pubOnly ? "checked" : ""}/> Downloadable only</label>
         <input id="f-q" placeholder="Filter titles…" value="${esc(libState.q)}" />
         <span class="count-note">${fmt(total)} results</span>
       </div>
-      <div class="cards" id="lib-cards">${slice.map(bookCard).join("") || '<div class="empty">No matching books.</div>'}</div>
+      <div class="cards" id="lib-cards">${slice.map((b, i) => bookCard(b, i)).join("") || '<div class="empty">No matching books.</div>'}</div>
       <div class="pager">
         <button class="btn" id="prev" ${libState.page === 0 ? "disabled" : ""}>‹ Prev</button>
         <span class="tag">Page ${libState.page + 1} / ${pages}</span>
@@ -240,13 +256,12 @@
   }
 
   routes.categories = async (arg) => {
-    await Promise.all([load("categories", `${DATA}/categories.json`),
-      load("library", `${DATA}/library.json`), loadPublished()]);
+    await Promise.all([load("categories", `${DATA}/categories.json`), load("library", `${DATA}/library.json`), loadPublished()]);
     if (arg) { libState.cat = arg; libState.page = 0; return renderLibrary(); }
     view().innerHTML = `
       <div class="page-head"><h1>Categories</h1><p>${state.categories.length} subject areas, each with a full series of books.</p></div>
-      <div class="cards">${state.categories.map(c => `
-        <a class="card" href="#categories/${c.slug}">
+      <div class="cards">${state.categories.map((c, i) => `
+        <a class="card" style="animation-delay:${Math.min(i * 25, 400)}ms" href="#categories/${c.slug}">
           <div class="book-cover"><div class="bc-cat">${c.books} books</div><div class="bc-title">${esc(c.name)}</div></div>
           <div class="meta">${esc(c.tagline)}</div>
           <div class="meta"><span>${fmt(c.pages)} pp.</span><span>${fmt(c.words)} words</span><span>${fmt(c.diagrams)} diagrams</span></div>
@@ -282,28 +297,24 @@
           <h1>${esc(b.title)}</h1>
           <div class="sub">${esc(b.subtitle)}</div>
           <div class="kv">
-            <span><b>${fmt(b.chapter_count)}</b> chapters</span>
-            <span><b>${fmt(b.estimated_pages)}</b> pages</span>
-            <span><b>${fmt(b.word_count)}</b> words</span>
-            <span><b>${fmt(b.diagram_count)}</b> diagrams</span>
-            <span><b>${fmt(b.code_count)}</b> code samples</span>
-            <span><b>${fmt(b.question_count)}</b> questions</span>
+            <span><b>${fmt(b.chapter_count)}</b> chapters</span><span><b>${fmt(b.estimated_pages)}</b> pages</span>
+            <span><b>${fmt(b.word_count)}</b> words</span><span><b>${fmt(b.diagram_count)}</b> diagrams</span>
+            <span><b>${fmt(b.code_count)}</b> code samples</span><span><b>${fmt(b.question_count)}</b> questions</span>
           </div>
           <div class="kv"><span>Authors: <b>${esc(b.authors.join(", "))}</b></span><span>ISBN <b>${esc(b.isbn)}</b></span><span>v${esc(b.version)}</span></div>
           <div class="btn-row">
-            ${pub ? `<a class="btn primary" href="#read/${id}">Read online</a>` : `<a class="btn primary" href="#read/${id}">Preview outline</a>`}
+            <a class="btn primary" href="#read/${id}">${pub ? "Read online" : "Preview outline"}</a>
             <button class="btn fav" data-id="${id}">${favs.has(id) ? "★ Favorited" : "☆ Favorite"}</button>
             ${dls}
           </div>
-          ${!pub ? `<p class="cap" style="margin-top:12px">Full export files for this title are generated on demand. Run <code>python -m aupub.cli publish --ids ${id}</code> in <code>engine/</code> to produce its PDF, DOCX, PPTX, HTML and Markdown.</p>` : ""}
+          ${!pub ? `<p class="cap" style="margin-top:12px">Export files for this title are generated on demand. Run <code>python -m aupub.cli publish --ids ${id}</code> in <code>engine/</code> to produce its PDF, DOCX, PPTX, HTML and Markdown.</p>` : ""}
         </div>
       </div>
-      <div class="section-block"><h2>Executive summary</h2><div>${mdToHtml(esc(b.description))}</div></div>
+      <div class="section-block"><h2>About this book</h2><div>${mdToHtml(b.description)}</div></div>
       <div class="section-block"><h2>Table of contents (${outline.chapters.length} chapters)</h2><div class="chapter-list">${chapters}</div></div>`;
     wireFavButtons(view());
   };
 
-  // Reader — full content if published, else outline preview
   routes.read = async (id) => {
     await Promise.all([load("library", `${DATA}/library.json`), loadPublished()]);
     const b = state.library.find(x => x.id === id);
@@ -314,14 +325,14 @@
       if (state.contentCache[id]) content = state.contentCache[id];
       else { content = await getJSON(`${CONTENT}/${pub.artifacts.content}`); state.contentCache[id] = content; }
     }
-    if (content) renderReader(b, content, pub);
-    else renderOutlinePreview(b);
+    if (content) renderReader(b, content, pub); else renderOutlinePreview(b);
   };
 
   function diagramHtml(d) {
-    if (d.fmt === "mermaid") return `<pre class="mermaid">${esc(d.source)}</pre><p class="cap">${esc(d.caption)}</p>`;
-    if (d.fmt === "svg") return `<div style="text-align:center">${d.source}</div><p class="cap">${esc(d.caption)}</p>`;
-    return `<pre><code>${esc(d.source)}</code></pre><p class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</p>`;
+    if (d.fmt === "mermaid") return `<div class="figure"><div class="diag-loading"><span class="spinner"></span> Rendering diagram…</div>
+      <div class="mermaid" data-pending data-src="${esc(d.source)}"></div><div class="cap">${esc(d.caption)}</div></div>`;
+    if (d.fmt === "svg") return `<div class="figure">${d.source}<div class="cap">${esc(d.caption)}</div></div>`;
+    return `<div class="figure"><pre class="fallback">${esc(d.source)}</pre><div class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</div></div>`;
   }
 
   function renderReader(b, content, pub) {
@@ -335,7 +346,8 @@
       for (const cs of c.code_samples) html += `<h3>Listing: ${esc(cs.title)}</h3><pre><code>${esc(cs.code)}</code></pre>`;
       html += `<h2>Review Questions</h2>` + c.questions.map((q, i) => {
         if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans">Guidance: ${esc(q.explanation)}</div></div>`;
-        return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b>${q.options.map((o, j) => `<span class="opt">${String.fromCharCode(65 + j)}. ${esc(o)}</span>`).join("")}<div class="ans">Answer ${String.fromCharCode(65 + q.answer_index)}. ${esc(q.explanation)}</div></div>`;
+        return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b>${q.options.map((o, j) => `<span class="opt">${String.fromCharCode(65 + j)}. ${esc(o)}</span>`).join("")}
+          <button class="btn ghost reveal">Reveal answer</button><div class="ans hidden">Answer ${String.fromCharCode(65 + q.answer_index)}. ${esc(q.explanation)}</div></div>`;
       }).join("");
       return `<section class="rch" data-ch="${c.number}">${html}</section>`;
     }).join("");
@@ -346,6 +358,7 @@
     view().innerHTML = `
       <div class="btn-row" style="margin-bottom:14px">
         <a class="btn ghost" href="#book/${b.id}">‹ Details</a>${dls}
+        ${pub.artifacts.pdf ? `<a class="btn" href="${CONTENT}/${pub.artifacts.pdf}" target="_blank">Open PDF viewer ↗</a>` : ""}
         <button class="btn" id="bookmark-btn">⚑ Bookmark current chapter</button>
       </div>
       <div class="reader">
@@ -354,33 +367,32 @@
       </div>`;
     progress.set(b.id, 0, content.chapters.length);
 
-    // mermaid
-    loadMermaid();
-    // scroll spy + progress
-    const tocLinks = view().querySelectorAll(".reader-toc a");
-    const sections = view().querySelectorAll(".rch");
+    renderFigures(view());
+
+    $$(".qbox .reveal", view()).forEach(btn => btn.onclick = () => { const a = btn.nextElementSibling; a.classList.toggle("hidden"); btn.textContent = a.classList.contains("hidden") ? "Reveal answer" : "Hide answer"; });
+
+    const tocLinks = $$(".reader-toc a", view());
+    const sections = $$(".rch", view());
     let current = 1;
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(en => {
         if (en.isIntersecting) {
           current = +en.target.dataset.ch;
           tocLinks.forEach(a => a.classList.toggle("active", +a.dataset.ch === current));
-          progress.set(b.id, current, content.chapters.length);
-          updateProgressPill();
+          progress.set(b.id, current, content.chapters.length); updateProgressPill();
         }
       });
-    }, { rootMargin: "-20% 0px -70% 0px" });
+    }, { rootMargin: "-15% 0px -75% 0px" });
     sections.forEach(s => obs.observe(s));
     $("#bookmark-btn").onclick = () => {
       const c = content.chapters[current - 1];
       marks.add({ id: b.id, ch: current, title: b.title, chapter: c.title });
-      $("#bookmark-btn").textContent = "⚑ Bookmarked!";
-      setTimeout(() => $("#bookmark-btn").textContent = "⚑ Bookmark current chapter", 1500);
+      $("#bookmark-btn").textContent = "⚑ Bookmarked!"; setTimeout(() => $("#bookmark-btn").textContent = "⚑ Bookmark current chapter", 1500);
     };
   }
 
   function renderOutlinePreview(b) {
-    loadOutline(b.id).then(outline => {
+    return loadOutline(b.id).then(outline => {
       const body = outline.chapters.map(c => `
         <section><h1>Chapter ${c.number}. ${esc(c.title)}</h1><p class="cap">${esc(c.summary)}</p>
         <ul>${c.sections.map(s => `<li>${esc(s)}</li>`).join("")}</ul></section>`).join("");
@@ -392,19 +404,6 @@
     });
   }
 
-  let mermaidLoaded = false;
-  function loadMermaid() {
-    const render = () => window.mermaid && window.mermaid.run({ querySelector: "pre.mermaid" });
-    if (mermaidLoaded) { render(); return; }
-    const s = document.createElement("script");
-    s.type = "module";
-    s.textContent = `import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      window.mermaid = mermaid; mermaid.initialize({ startOnLoad:false, theme:'neutral' });
-      mermaid.run({ querySelector: 'pre.mermaid' });`;
-    document.body.appendChild(s);
-    mermaidLoaded = true;
-  }
-
   // Search
   routes.search = async (arg) => {
     await load("search", `${DATA}/search-index.json`);
@@ -413,30 +412,23 @@
       <div class="page-head"><h1>Search</h1><p>Full-text search across ${fmt(state.search.length)} books, chapters and topics.</p></div>
       <div class="toolbar"><input id="search-box" style="flex:1" placeholder="Search topics, e.g. retrieval, transformers, governance…" value="${esc(q)}"/></div>
       <div id="search-results"></div>`;
-    const box = $("#search-box");
-    const run = () => doSearch(box.value);
-    let deb; box.oninput = () => { clearTimeout(deb); deb = setTimeout(run, 180); };
-    box.focus();
-    if (q) run();
+    const box = $("#search-box"); const run = () => doSearch(box.value);
+    let deb; box.oninput = () => { clearTimeout(deb); deb = setTimeout(run, 160); };
+    box.focus(); if (q) run();
   };
   function doSearch(q) {
-    const res = $("#search-results");
-    q = q.trim();
-    if (!q) { res.innerHTML = `<div class="empty">Type to search.</div>`; return; }
-    const terms = q.toLowerCase().split(/\s+/);
-    const scored = [];
+    const res = $("#search-results"); q = q.trim();
+    if (!q) { res.innerHTML = `<div class="empty">Type to search across the whole library.</div>`; return; }
+    const terms = q.toLowerCase().split(/\s+/); const scored = [];
     for (const r of state.search) {
       const hay = (r.title + " " + r.subtitle + " " + r.category + " " + r.chapters.join(" ") + " " + r.text + " " + r.keywords.join(" ")).toLowerCase();
       let score = 0;
       for (const t of terms) { const c = hay.split(t).length - 1; if (c) score += c; if (r.title.toLowerCase().includes(t)) score += 5; }
-      if (score) {
-        const chMatch = r.chapters.filter(c => terms.some(t => c.toLowerCase().includes(t))).slice(0, 3);
-        scored.push({ r, score, chMatch });
-      }
+      if (score) { const chMatch = r.chapters.filter(c => terms.some(t => c.toLowerCase().includes(t))).slice(0, 3); scored.push({ r, score, chMatch }); }
     }
     scored.sort((a, b) => b.score - a.score);
     const top = scored.slice(0, 40);
-    res.innerHTML = top.length ? top.map(({ r, chMatch }) => `
+    res.innerHTML = top.length ? `<div class="count-note" style="margin:0 0 12px">${scored.length} matches</div>` + top.map(({ r, chMatch }) => `
       <a class="result" href="#book/${r.id}">
         <h3>${hl(r.title, terms)} <span class="tag level">${esc(r.level)}</span></h3>
         <div class="snippet">${esc(r.category)} · ${fmt(r.pages)} pp. — ${hl(r.subtitle, terms)}</div>
@@ -454,21 +446,17 @@
     await Promise.all([load("library", `${DATA}/library.json`), load("stats", `${DATA}/stats.json`), loadPublished()]);
     const kinds = ["Architecture", "Application Flow", "Business Process", "Data Flow", "Sequence", "Class", "Component", "Deployment", "Network", "Cloud Architecture", "RAG Architecture", "Agent Architecture", "Security Architecture", "DevOps Pipeline", "CI/CD Pipeline", "Infrastructure", "Knowledge Graph", "Data Lineage", "Capability Map", "Operating Model"];
     const fmts = ["mermaid", "plantuml", "svg", "drawio"];
-    // gather sample diagrams from published outlines
     const pubIds = (state.published || []).map(p => p.id).slice(0, 6);
     const samples = [];
-    for (const id of pubIds) {
-      const o = await loadOutline(id);
-      o.chapters.forEach(c => c.diagrams.forEach(d => samples.push({ ...d, book: o.title, id })));
-    }
+    for (const id of pubIds) { const o = await loadOutline(id); o.chapters.forEach(c => c.diagrams.forEach(d => samples.push({ ...d, book: o.title, id }))); }
     view().innerHTML = `
       <div class="page-head"><h1>Diagram Browser</h1><p>The library contains ${fmt(state.stats.diagrams)} professional diagrams generated in Mermaid, PlantUML, SVG and Draw.io across ${kinds.length} diagram types.</p></div>
       <div class="section-block"><h2>Diagram types</h2><div class="chip-row">${kinds.map(k => `<span class="tag">${esc(k)}</span>`).join("")}</div></div>
       <div class="section-block"><h2>Source formats</h2><div class="chip-row">${fmts.map(f => `<span class="tag level">${esc(f)}</span>`).join("")}</div>
         <p class="cap">Diagram source files are stored separately alongside each published book (under its <code>diagrams/</code> folder).</p></div>
       <h2 style="margin:20px 0 12px">Sample figures from published titles</h2>
-      <div class="cards">${samples.slice(0, 24).map(d => `
-        <a class="card" href="#read/${d.id}">
+      <div class="cards">${samples.slice(0, 24).map((d, i) => `
+        <a class="card" style="animation-delay:${Math.min(i * 25, 400)}ms" href="#read/${d.id}">
           <div style="font-weight:700">${esc(d.title)}</div>
           <div class="meta"><span class="tag">${esc(d.kind)}</span><span class="tag level">${esc(d.fmt)}</span></div>
           <div class="meta">${esc(d.book)}</div>
@@ -492,7 +480,7 @@
       ${rows || '<div class="empty">No published books yet. Run the publish command in engine/.</div>'}`;
   };
 
-  // Learning paths
+  // Paths
   const LEARNING_PATHS = [
     { name: "RAG Engineer", desc: "From embeddings to production retrieval-augmented generation.", steps: ["embeddings", "vector-databases", "rag", "graphrag", "ai-observability"] },
     { name: "LLM Application Developer", desc: "Build, prompt and ship LLM-powered applications.", steps: ["ai-foundations", "transformers", "llms", "prompt-engineering", "generative-ai", "llmops"] },
@@ -509,26 +497,24 @@
   function renderPaths(title, intro, paths) {
     return Promise.all([load("library", `${DATA}/library.json`), load("categories", `${DATA}/categories.json`)]).then(() => {
       const catName = s => (state.categories.find(c => c.slug === s) || {}).name || s;
-      const firstBook = s => (state.library.find(b => b.category_slug === s) || {});
       view().innerHTML = `
         <div class="page-head"><h1>${title}</h1><p>${intro}</p></div>
         ${paths.map(p => `
           <div class="path-card">
             <div style="font-weight:800;font-size:1.05rem">${esc(p.name)}</div>
             <div class="meta">${esc(p.desc)} · ${p.steps.length} stages · ~${p.steps.length * 280} pages</div>
-            <div class="path-steps">${p.steps.map((s, i) => { const fb = firstBook(s); return `<a class="path-step" href="#categories/${s}"><span class="n">${i + 1}</span>${esc(catName(s))}</a>`; }).join("")}</div>
+            <div class="path-steps">${p.steps.map((s, i) => `<a class="path-step" href="#categories/${s}"><span class="n">${i + 1}</span>${esc(catName(s))}</a>`).join("")}</div>
           </div>`).join("")}`;
     });
   }
-  routes.paths = () => renderPaths("Learning Paths", "Curated, sequenced tracks that take you from foundations to mastery across multiple categories.", LEARNING_PATHS);
-  routes.certifications = () => renderPaths("Certification Paths", "Structured certification tracks. Read the books in order, complete the assessments and certification questions in each.", CERT_PATHS);
+  routes.paths = () => renderPaths("Learning Paths", "Curated, sequenced tracks that take you from foundations to mastery across multiple categories. Click any stage to open its books.", LEARNING_PATHS);
+  routes.certifications = () => renderPaths("Certification Paths", "Structured certification tracks. Read the books in order, then complete the assessment and certification questions in each.", CERT_PATHS);
 
-  // Favorites & bookmarks
   routes.favorites = async () => {
     await Promise.all([load("library", `${DATA}/library.json`), loadPublished()]);
     const items = favs.list().map(id => state.library.find(b => b.id === id)).filter(Boolean);
     view().innerHTML = `<div class="page-head"><h1>Favorites</h1><p>${items.length} saved titles.</p></div>
-      <div class="cards">${items.map(bookCard).join("") || '<div class="empty">No favorites yet. Tap the ☆ on any book.</div>'}</div>`;
+      <div class="cards">${items.map((b, i) => bookCard(b, i)).join("") || '<div class="empty">No favorites yet. Tap the ☆ on any book.</div>'}</div>`;
     wireFavButtons(view());
   };
   routes.bookmarks = async () => {
@@ -540,20 +526,17 @@
         <div class="btn-row" style="margin-top:8px"><a class="btn primary" href="#read/${m.id}">Open</a>
         <button class="btn rm" data-id="${m.id}" data-ch="${m.ch}">Remove</button></div></div>`).join("")
         : '<div class="empty">No bookmarks yet. Use “Bookmark current chapter” while reading.</div>'}`;
-    view().querySelectorAll(".rm").forEach(b => b.onclick = () => { marks.remove(b.dataset.id, +b.dataset.ch); router(); });
+    $$(".rm", view()).forEach(b => b.onclick = () => { marks.remove(b.dataset.id, +b.dataset.ch); router(); });
   };
 
-  // ---- progress pill + theme + chrome ----
+  // ---- chrome ----
   function updateProgressPill() {
-    const all = progress.all();
-    const ids = Object.keys(all);
-    const started = ids.length;
-    const done = ids.filter(id => all[id].total && all[id].ch >= all[id].total).length;
+    const all = progress.all(); const ids = Object.keys(all);
+    const started = ids.length; const done = ids.filter(id => all[id].total && all[id].ch >= all[id].total).length;
     $("#progress-pill").textContent = started ? `${started} started · ${done} finished` : "";
   }
   async function updateSidebarStats() {
-    try {
-      const s = await load("stats", `${DATA}/stats.json`);
+    try { const s = await load("stats", `${DATA}/stats.json`);
       $("#sidebar-stats").innerHTML = `<b>${fmt(s.books)}</b> books · <b>${fmt(s.pages)}</b> pages<br><b>${fmt(s.words)}</b> words · <b>${fmt(s.diagrams)}</b> diagrams`;
     } catch { $("#sidebar-stats").textContent = "Run the engine catalog command."; }
   }
@@ -561,18 +544,31 @@
     const saved = store.get("aiu:theme", null);
     if (saved) document.documentElement.dataset.theme = saved;
     $("#theme-toggle").onclick = () => {
-      const cur = document.documentElement.dataset.theme === "dark" ? "" : "dark";
-      document.documentElement.dataset.theme = cur; store.set("aiu:theme", cur);
+      const dark = document.documentElement.dataset.theme === "dark";
+      document.documentElement.dataset.theme = dark ? "" : "dark"; store.set("aiu:theme", dark ? "" : "dark");
     };
+  }
+  function initScrollChrome() {
+    const bar = $("#reading-progress"), top = $("#to-top");
+    const onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+      bar.style.width = pct + "%";
+      top.classList.toggle("show", h.scrollTop > 420);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    top.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function init() {
-    initTheme();
-    updateSidebarStats();
-    updateProgressPill();
+    initTheme(); updateSidebarStats(); updateProgressPill(); initScrollChrome();
     $("#hamburger").onclick = () => $("#sidebar").classList.toggle("open");
     const gs = $("#global-search-input");
     gs.addEventListener("keydown", e => { if (e.key === "Enter" && gs.value.trim()) location.hash = `search/${encodeURIComponent(gs.value.trim())}`; });
+    document.addEventListener("keydown", e => {
+      if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) { e.preventDefault(); gs.focus(); }
+    });
     window.addEventListener("hashchange", router);
     router();
   }

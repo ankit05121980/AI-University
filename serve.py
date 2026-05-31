@@ -261,24 +261,6 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/ask":
                 q = (qs.get("q", [""])[0]).strip()
                 return self._json(200, ask(q))
-            if path.startswith("/api/download/"):
-                rest = path[len("/api/download/"):].split("/")
-                if len(rest) != 2:
-                    return self._json(400, {"error": "use /api/download/<id>/<fmt>"})
-                book_id, fmt = rest
-                if fmt not in _MIME:
-                    return self._json(400, {"error": "bad format"})
-                book = get_book(book_id)
-                if not book:
-                    return self._json(404, {"error": "book not found"})
-                try:
-                    data = render_download(book, fmt)
-                except ImportError as e:
-                    return self._json(503, {"error": f"export library missing: {e}. "
-                                            "Install engine/requirements.txt."})
-                fname = f"{book.slug}.{fmt}"
-                return self._send(200, data, _MIME[fmt],
-                                  {"Content-Disposition": f'attachment; filename="{fname}"'})
             return self._json(404, {"error": "unknown endpoint"})
         except Exception as e:  # never crash the server on a bad request
             return self._json(500, {"error": str(e)})

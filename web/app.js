@@ -1,7 +1,7 @@
-/* AI-University portal — framework-free SPA.
- * Talks to the serve.py API (full read-online + downloads + Ask Anything for
- * every book), with graceful fallback to the committed demo corpus + static
- * search index when no API is available. */
+/* AI-University portal — framework-free SPA (read-only).
+ * Every book is fully readable online; nothing is downloadable.
+ * Talks to the serve.py API for full content + Ask Anything, with a graceful
+ * fallback to the committed demo content + static search index. */
 (() => {
   "use strict";
 
@@ -35,6 +35,10 @@
     get: (id) => progress.all()[id] || { ch: 0, total: 0 },
     set: (id, ch, total) => { const a = progress.all(); a[id] = { ch, total, t: Date.now() }; store.set("aiu:progress", a); },
   };
+  const readerPrefs = {
+    get: () => store.get("aiu:reader", { scale: 1.06, wide: false }),
+    set: (p) => store.set("aiu:reader", p),
+  };
 
   // ---- helpers ----
   const $ = (s, r = document) => r.querySelector(s);
@@ -42,6 +46,26 @@
   const view = () => $("#view");
   const fmt = (n) => (n == null ? "—" : Number(n).toLocaleString());
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  function hashHue(s) { let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; }
+  function catGradient(slug) { const h = hashHue(slug); return `linear-gradient(135deg, hsl(${h} 70% 52%), hsl(${(h + 45) % 360} 68% 40%))`; }
+  function readingTime(words) { const m = Math.max(1, Math.round((words || 0) / 220)); return m >= 90 ? `~${(m / 60).toFixed(1)} h read` : `~${m} min read`; }
+  function ring(pct, size = 36) {
+    const r = (size - 6) / 2, c = 2 * Math.PI * r, off = c * (1 - pct / 100);
+    return `<svg class="ring" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+      <circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="var(--surface-2)" stroke-width="4"/>
+      <circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="var(--accent)" stroke-width="4"
+        stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}" stroke-linecap="round"
+        transform="rotate(-90 ${size / 2} ${size / 2})" style="transition:stroke-dashoffset .5s"/>
+      <text x="50%" y="53%" dominant-baseline="middle" text-anchor="middle" font-size="${size * 0.26}" font-weight="800" fill="currentColor">${pct}%</text></svg>`;
+  }
+  let toastT;
+  function toast(msg) {
+    let wrap = $("#toast-wrap"); if (!wrap) { wrap = document.createElement("div"); wrap.id = "toast-wrap"; document.body.appendChild(wrap); }
+    const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; wrap.appendChild(t);
+    requestAnimationFrame(() => t.classList.add("show"));
+    setTimeout(() => { t.classList.remove("show"); setTimeout(() => t.remove(), 300); }, 2200);
+  }
 
   async function getJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
   async function load(key, url) { if (state[key]) return state[key]; state[key] = await getJSON(url); return state[key]; }
@@ -56,15 +80,7 @@
     const o = await getJSON(`${DATA}/outlines/${id}.json`); state.outlineCache[id] = o; return o;
   }
   async function probeApi() { try { const r = await fetch(`${API}/health`); state.apiUp = r.ok; } catch { state.apiUp = false; } }
-
-  // a book can be fully read online if the API is up (any book) or it is in the demo corpus
   const canRead = (id) => state.apiUp || !!state.publishedMap[id];
-  function dlUrl(id, k, pub) { return state.apiUp ? `${API}/download/${id}/${k}` : (pub ? `${CONTENT}/${pub.artifacts[k]}` : "#"); }
-  function downloadLinks(id, pub, only) {
-    const fmts = [["pdf", "PDF"], ["docx", "DOCX"], ["pptx", "PPTX"], ["html", "HTML"], ["md", "Markdown"]];
-    return fmts.filter(([k]) => (only ? only.includes(k) : true) && (state.apiUp || (pub && pub.artifacts[k])))
-      .map(([k, l]) => `<a class="btn" href="${dlUrl(id, k, pub)}" download>${l}</a>`).join("");
-  }
 
   // ---- markdown → HTML ----
   function mdInline(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`([^`]+)`/g, "<code>$1</code>"); }
@@ -82,7 +98,7 @@
     close(); return out.join("\n");
   }
 
-  // ---- nav / router ----
+  // ---- router ----
   function setActive(route) { $$(".nav-item").forEach(a => a.classList.toggle("active", a.dataset.route === route)); }
   function router() {
     const hash = location.hash.slice(1) || "dashboard";
@@ -98,24 +114,25 @@
   }
 
   // ---- shared UI ----
+  function shortTitle(b) { return b.title.replace(b.category + ": ", ""); }
+  function bookCover(b, cls = "book-cover") {
+    return `<div class="${cls}" style="background:${catGradient(b.category_slug)}">
+      <div class="bc-cat">${esc(b.category)}</div>
+      <div class="bc-title">${esc(shortTitle(b))}</div>
+      <div class="bc-foot"><span>${fmt(b.estimated_pages)} pp.</span><span>${readingTime(b.word_count)}</span></div></div>`;
+  }
   function bookCard(b, i = 0) {
-    const pub = state.publishedMap[b.id];
-    const available = state.apiUp || pub;
     const p = progress.get(b.id); const pct = p.total ? Math.round((p.ch / p.total) * 100) : 0;
     return `
-    <div class="card" style="animation-delay:${Math.min(i * 35, 400)}ms">
-      <a href="#book/${b.id}"><div class="book-cover">
-        <div class="bc-cat">${esc(b.category)}</div>
-        <div class="bc-title">${esc(b.title.replace(b.category + ": ", ""))}</div></div></a>
+    <div class="card" style="animation-delay:${Math.min(i * 30, 360)}ms">
+      <a href="#read/${b.id}">${bookCover(b)}</a>
       <div class="meta">
-        <span class="tag level">${esc(b.level)}</span>
-        <span>${fmt(b.estimated_pages)} pp.</span><span>${fmt(b.chapter_count)} ch.</span><span>${fmt(b.diagram_count)} dia.</span>
-        ${available ? '<span class="tag pub">Read &amp; download</span>' : ""}
+        <span class="tag level lv-${b.level}">${esc(b.level)}</span>
+        <span>${fmt(b.chapter_count)} ch.</span><span>${fmt(b.diagram_count)} diagrams</span>
       </div>
       ${pct ? `<div class="progress-track" title="${pct}% read"><span style="width:${pct}%"></span></div>` : ""}
       <div class="card-actions">
-        <a class="btn primary" href="#read/${b.id}">Read online</a>
-        ${available ? `<a class="btn" href="${dlUrl(b.id, "pdf", pub)}" download>PDF</a>` : ""}
+        <a class="btn primary" href="#read/${b.id}">${pct ? `Continue · ${pct}%` : "Read online"}</a>
         <button class="btn icon fav" data-id="${b.id}" title="Favorite">${favs.has(b.id) ? "★" : "☆"}</button>
       </div>
     </div>`;
@@ -123,11 +140,12 @@
   function wireFavButtons(root) {
     $$(".fav", root).forEach(btn => btn.addEventListener("click", e => {
       e.preventDefault(); const on = favs.toggle(btn.dataset.id); btn.textContent = on ? "★" : "☆"; btn.style.color = on ? "#f59e0b" : "";
+      toast(on ? "Added to favorites ★" : "Removed from favorites");
     }));
   }
   function animateCounters(root) {
     $$("[data-count]", root).forEach(el => {
-      const target = +el.dataset.count, dur = 900, t0 = performance.now();
+      const target = +el.dataset.count, dur = 950, t0 = performance.now();
       const tick = (t) => { const k = Math.min(1, (t - t0) / dur); el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3))).toLocaleString(); if (k < 1) requestAnimationFrame(tick); };
       requestAnimationFrame(tick);
     });
@@ -154,26 +172,37 @@
       .map(([id]) => state.library.find(b => b.id === id)).filter(Boolean);
     view().innerHTML = `
       <div class="hero"><div class="orb a"></div><div class="orb b"></div>
-        <h1>Enterprise AI Knowledge Library</h1>
-        <p>${fmt(stats.books)} professional, enterprise-grade AI books across ${stats.categories} categories — every title fully readable online with diagrams, searchable, and downloadable as PDF, DOCX, PPTX, HTML and Markdown.</p>
-        <div class="cta"><a class="btn" style="background:rgba(255,255,255,.16);color:#fff;border:none" href="#library">Browse the library →</a>
-          <a class="btn" style="background:#fff;color:var(--accent);border:none" href="#ask">✺ Ask Anything</a></div>
-        ${state.apiUp ? "" : `<p style="margin-top:10px;font-size:.82rem;opacity:.9">Tip: run <code>python serve.py</code> to read &amp; download all ${fmt(stats.books)} books (you appear to be on a static server, so only the ${state.published.length} demo books are fully available).</p>`}
+        <h1>Read the world's most complete AI library</h1>
+        <p>${fmt(stats.books)} professional, enterprise-grade AI books across ${stats.categories} categories — every title fully readable online with rendered diagrams, interactive quizzes and a distraction-free reader.</p>
+        <div class="cta">
+          <a class="btn cta-light" href="#library">Browse the library →</a>
+          <a class="btn cta-white" href="#ask">✺ Ask Anything</a>
+          <button class="btn cta-ghost" id="surprise">🎲 Surprise me</button>
+        </div>
       </div>
       <div class="stat-grid">${cards}</div>
-      ${recent.length ? `<h2 style="margin:28px 0 12px">Continue reading</h2><div class="cards">${recent.map((b, i) => bookCard(b, i)).join("")}</div>` : ""}
-      <h2 style="margin:28px 0 12px">Featured titles</h2>
+      ${recent.length ? `<h2 class="sec-h">Continue reading</h2><div class="continue">${recent.map(continueCard).join("")}</div>` : ""}
+      <h2 class="sec-h">Featured titles</h2>
       <div class="cards">${featured.map((b, i) => bookCard(b, i)).join("")}</div>
-      <h2 style="margin:28px 0 12px">Browse by category</h2>
-      <div class="cards">${cats.map((c, i) => `
-        <a class="card" style="animation-delay:${Math.min(i * 25, 400)}ms" href="#categories/${c.slug}">
-          <div style="font-weight:800">${esc(c.name)}</div><div class="meta">${esc(c.tagline)}</div>
-          <div class="meta"><span>${c.books} books</span><span>${fmt(c.pages)} pp.</span><span>${fmt(c.diagrams)} dia.</span></div>
+      <h2 class="sec-h">Explore by category</h2>
+      <div class="cat-grid">${cats.map((c, i) => `
+        <a class="cat-tile" style="--g:${catGradient(c.slug)};animation-delay:${Math.min(i * 22, 360)}ms" href="#categories/${c.slug}">
+          <div class="cat-swatch"></div>
+          <div class="cat-body"><div class="cat-name">${esc(c.name)}</div><div class="cat-tag">${esc(c.tagline)}</div>
+            <div class="cat-meta">${c.books} books · ${fmt(c.pages)} pp.</div></div>
         </a>`).join("")}</div>`;
     animateCounters(view()); animateBars(view()); wireFavButtons(view());
+    $("#surprise").onclick = () => { const b = state.library[Math.floor(Math.random() * state.library.length)]; toast("Opening " + shortTitle(b)); location.hash = `read/${b.id}`; };
   };
+  function continueCard(b) {
+    const p = progress.get(b.id); const pct = p.total ? Math.round((p.ch / p.total) * 100) : 0;
+    return `<a class="cont-card" href="#read/${b.id}" style="--g:${catGradient(b.category_slug)}">
+      <div class="cont-ring">${ring(pct, 48)}</div>
+      <div><div class="cont-title">${esc(shortTitle(b))}</div>
+        <div class="cont-sub">${esc(b.category)} · Chapter ${p.ch || 1} of ${b.chapter_count}</div></div></a>`;
+  }
 
-  let libState = { page: 0, perPage: 24, cat: "", level: "", q: "", sort: "id", pubOnly: false };
+  let libState = { page: 0, perPage: 24, cat: "", level: "", q: "", sort: "id" };
   routes.library = async (arg) => {
     await Promise.all([load("library", `${DATA}/library.json`), load("categories", `${DATA}/categories.json`), loadPublished()]);
     if (arg) libState.cat = arg; renderLibrary();
@@ -220,11 +249,11 @@
     if (arg) { libState.cat = arg; libState.page = 0; return renderLibrary(); }
     view().innerHTML = `
       <div class="page-head"><h1>Categories</h1><p>${state.categories.length} subject areas, each with a full series of books.</p></div>
-      <div class="cards">${state.categories.map((c, i) => `
-        <a class="card" style="animation-delay:${Math.min(i * 25, 400)}ms" href="#categories/${c.slug}">
-          <div class="book-cover"><div class="bc-cat">${c.books} books</div><div class="bc-title">${esc(c.name)}</div></div>
-          <div class="meta">${esc(c.tagline)}</div>
-          <div class="meta"><span>${fmt(c.pages)} pp.</span><span>${fmt(c.words)} words</span><span>${fmt(c.diagrams)} diagrams</span></div>
+      <div class="cat-grid">${state.categories.map((c, i) => `
+        <a class="cat-tile" style="--g:${catGradient(c.slug)};animation-delay:${Math.min(i * 20, 360)}ms" href="#categories/${c.slug}">
+          <div class="cat-swatch"></div>
+          <div class="cat-body"><div class="cat-name">${esc(c.name)}</div><div class="cat-tag">${esc(c.tagline)}</div>
+            <div class="cat-meta">${c.books} books · ${fmt(c.pages)} pp. · ${fmt(c.diagrams)} diagrams</div></div>
         </a>`).join("")}</div>`;
   };
 
@@ -233,34 +262,40 @@
     const b = state.library.find(x => x.id === id);
     if (!b) { view().innerHTML = `<div class="empty">Book not found.</div>`; return; }
     const outline = await loadOutline(id);
-    const pub = state.publishedMap[id];
-    const dls = downloadLinks(id, pub);
+    const p = progress.get(id); const pct = p.total ? Math.round((p.ch / p.total) * 100) : 0;
+    const topics = outline.chapters.slice(0, 12).map(c => `<a class="chip" href="#read/${id}">${esc(c.title)}</a>`).join("");
     const chapters = outline.chapters.map(c => `
-      <div class="chapter-row"><div class="num">${c.number}</div>
+      <a class="chapter-row" href="#read/${id}"><div class="num">${c.number}</div>
         <div><div class="ct">${esc(c.title)}</div><div class="cs">${esc(c.summary)}</div>
           <div class="chip-row">${c.sections.slice(0, 6).map(s => `<span class="chip">${esc(s)}</span>`).join("")}
-            ${c.diagrams.length ? `<span class="chip">${c.diagrams.length} diagrams</span>` : ""}</div></div></div>`).join("");
+            ${c.diagrams.length ? `<span class="chip">${c.diagrams.length} diagrams</span>` : ""}</div></div></a>`).join("");
     view().innerHTML = `
       <div class="btn-row" style="margin-bottom:16px"><a class="btn ghost" href="#library">‹ Library</a></div>
       <div class="detail-head">
-        <div class="detail-cover"><div><div class="bc-cat">${esc(b.category)}</div><div class="dc-title">${esc(b.title.replace(b.category + ": ", ""))}</div></div>
-          <div style="font-size:.8rem;opacity:.9">${esc(b.level)} · ${fmt(b.estimated_pages)} pages</div></div>
+        <div class="detail-cover" style="background:${catGradient(b.category_slug)}">
+          <div><div class="bc-cat">${esc(b.category)}</div><div class="dc-title">${esc(shortTitle(b))}</div></div>
+          <div style="font-size:.8rem;opacity:.92">${esc(b.level)} · ${fmt(b.estimated_pages)} pages · ${readingTime(b.word_count)}</div></div>
         <div class="detail-meta">
           <h1>${esc(b.title)}</h1><div class="sub">${esc(b.subtitle)}</div>
           <div class="kv"><span><b>${fmt(b.chapter_count)}</b> chapters</span><span><b>${fmt(b.estimated_pages)}</b> pages</span>
             <span><b>${fmt(b.word_count)}</b> words</span><span><b>${fmt(b.diagram_count)}</b> diagrams</span>
             <span><b>${fmt(b.code_count)}</b> code samples</span><span><b>${fmt(b.question_count)}</b> questions</span></div>
           <div class="kv"><span>Authors: <b>${esc(b.authors.join(", "))}</b></span><span>ISBN <b>${esc(b.isbn)}</b></span><span>v${esc(b.version)}</span></div>
-          <div class="btn-row"><a class="btn primary" href="#read/${id}">${canRead(id) ? "Read online" : "Preview outline"}</a>
-            <button class="btn fav" data-id="${id}">${favs.has(id) ? "★ Favorited" : "☆ Favorite"}</button>${dls}</div>
-          ${!canRead(id) ? `<p class="cap" style="margin-top:12px">Run <code>python serve.py</code> from the repo root to read and download this and all ${fmt(state.library.length)} books online.</p>` : ""}
+          <div class="btn-row" style="align-items:center">
+            <a class="btn primary lg" href="#read/${id}">${pct ? `Continue reading · ${pct}%` : "Start reading"}</a>
+            ${pct ? `<span class="ring-wrap">${ring(pct, 44)}</span>` : ""}
+            <button class="btn fav" data-id="${id}">${favs.has(id) ? "★ Favorited" : "☆ Favorite"}</button>
+          </div>
         </div>
       </div>
+      <div class="section-block"><h2>What you'll explore</h2><div class="chip-row">${topics}</div></div>
       <div class="section-block"><h2>About this book</h2><div>${mdToHtml(b.description)}</div></div>
       <div class="section-block"><h2>Table of contents (${outline.chapters.length} chapters)</h2><div class="chapter-list">${chapters}</div></div>`;
     wireFavButtons(view());
   };
 
+  // ---- Immersive reader ----
+  let readerCtx = null;
   routes.read = async (id) => {
     await Promise.all([load("library", `${DATA}/library.json`), loadPublished()]);
     const b = state.library.find(x => x.id === id);
@@ -269,7 +304,7 @@
     if (!content && state.apiUp) { try { content = await getJSON(`${API}/book/${id}`); state.contentCache[id] = content; } catch {} }
     const pub = state.publishedMap[id];
     if (!content && pub && pub.artifacts.content) { try { content = await getJSON(`${CONTENT}/${pub.artifacts.content}`); state.contentCache[id] = content; } catch {} }
-    if (content) renderReader(b, content, id, pub); else renderOutlinePreview(b);
+    if (content) renderReader(b, content, id); else renderOutlinePreview(b);
   };
 
   function diagramHtml(d) {
@@ -277,38 +312,101 @@
     if (svg) return `<div class="figure">${svg}<div class="cap">${esc(d.caption)}</div></div>`;
     return `<div class="figure"><pre class="fallback">${esc(d.source)}</pre><div class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</div></div>`;
   }
+  function chapterWords(c) {
+    let w = (c.sections || []).reduce((n, s) => n + (s.body ? s.body.split(/\s+/).length : 0), 0);
+    w += (c.code_samples || []).reduce((n, cs) => n + cs.code.split(/\s+/).length, 0);
+    return w;
+  }
 
-  function renderReader(b, content, id, pub) {
+  function renderReader(b, content, id) {
+    const total = content.chapters.length;
+    const prefs = readerPrefs.get();
     const toc = content.chapters.map(c => `<a href="#ch-${c.number}" data-ch="${c.number}">${c.number}. ${esc(c.title)}</a>`).join("");
     const body = content.chapters.map(c => {
-      let html = `<h1 id="ch-${c.number}">Chapter ${c.number}. ${esc(c.title)}</h1><p class="cap">${esc(c.summary)}</p>`;
+      const mins = Math.max(1, Math.round(chapterWords(c) / 220));
+      let html = `<h1 id="ch-${c.number}">Chapter ${c.number}. ${esc(c.title)}</h1>
+        <div class="ch-meta"><span>📖 ~${mins} min</span><span>${(c.diagrams || []).length} diagrams</span><span>${(c.questions || []).length} questions</span></div>
+        <p class="cap">${esc(c.summary)}</p>`;
       for (const s of c.sections) {
         html += `<h2>${esc(s.heading)}</h2>${mdToHtml(s.body)}`;
         if (s.heading.startsWith("Architecture")) html += (c.diagrams || []).map(diagramHtml).join("");
       }
       for (const cs of (c.code_samples || [])) html += `<h3>Listing: ${esc(cs.title)}</h3><pre><code>${esc(cs.code)}</code></pre>`;
-      html += `<h2>Review Questions</h2>` + (c.questions || []).map((q, i) => {
-        if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans">Guidance: ${esc(q.explanation)}</div></div>`;
-        return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b>${q.options.map((o, j) => `<span class="opt">${String.fromCharCode(65 + j)}. ${esc(o)}</span>`).join("")}
-          <button class="btn ghost reveal">Reveal answer</button><div class="ans hidden">Answer ${String.fromCharCode(65 + q.answer_index)}. ${esc(q.explanation)}</div></div>`;
+      html += `<h2>Check your understanding</h2>` + (c.questions || []).map((q, i) => {
+        if (q.answer_index < 0) return `<div class="qbox"><b>${i + 1}. ${esc(q.question)}</b><div class="ans show">💡 ${esc(q.explanation)}</div></div>`;
+        return `<div class="qbox" data-ans="${q.answer_index}"><b>${i + 1}. ${esc(q.question)}</b>
+          <div class="opts">${q.options.map((o, j) => `<button class="opt" data-j="${j}">${String.fromCharCode(65 + j)}. ${esc(o)}</button>`).join("")}</div>
+          <div class="ans hidden">${esc(q.explanation)}</div></div>`;
       }).join("");
       return `<section class="rch" data-ch="${c.number}">${html}</section>`;
     }).join("");
-    const dls = downloadLinks(id, pub, ["pdf", "docx", "pptx", "md"]);
+
     view().innerHTML = `
-      <div class="btn-row" style="margin-bottom:14px"><a class="btn ghost" href="#book/${id}">‹ Details</a>${dls}
-        ${(state.apiUp || (pub && pub.artifacts.pdf)) ? `<a class="btn" href="${dlUrl(id, "pdf", pub)}" target="_blank">Open PDF ↗</a>` : ""}
-        <button class="btn" id="bookmark-btn">⚑ Bookmark current chapter</button></div>
-      <div class="reader"><nav class="reader-toc">${toc}</nav><article class="reader-body" id="reader-body">${body}</article></div>`;
-    progress.set(b.id, 0, content.chapters.length);
-    $$(".qbox .reveal", view()).forEach(btn => btn.onclick = () => { const a = btn.nextElementSibling; a.classList.toggle("hidden"); btn.textContent = a.classList.contains("hidden") ? "Reveal answer" : "Hide answer"; });
+      <div class="reader-bar">
+        <a class="btn ghost" href="#book/${id}">‹ Details</a>
+        <div class="rb-title">${esc(shortTitle(b))}</div>
+        <div class="rb-tools">
+          <button class="btn icon" id="font-dn" title="Smaller text">A−</button>
+          <button class="btn icon" id="font-up" title="Larger text">A+</button>
+          <button class="btn icon" id="width-tg" title="Toggle width">⇔</button>
+          <button class="btn icon" id="bookmark-btn" title="Bookmark chapter">⚑</button>
+          <span class="rb-ring" id="rb-ring">${ring(0, 34)}</span>
+        </div>
+      </div>
+      <div class="reader ${prefs.wide ? "wide" : ""}" id="reader-wrap">
+        <nav class="reader-toc">${toc}</nav>
+        <article class="reader-body" id="reader-body" style="--rfs:${prefs.scale}rem">${body}</article>
+      </div>
+      <div class="chap-nav" id="chap-nav">
+        <button class="btn" id="cn-prev">‹ Prev</button>
+        <span id="cn-label" class="tag">Chapter 1 / ${total}</span>
+        <button class="btn" id="cn-next">Next ›</button>
+      </div>`;
+
+    progress.set(b.id, Math.max(1, progress.get(b.id).ch || 1), total);
+    readerCtx = { id, total, current: 1, finishedToast: false };
+
+    // interactive quizzes
+    $$(".qbox[data-ans]", view()).forEach(box => {
+      const correct = +box.dataset.ans;
+      $$(".opt", box).forEach(opt => opt.onclick = () => {
+        if (box.classList.contains("answered")) return;
+        box.classList.add("answered");
+        const j = +opt.dataset.j;
+        $$(".opt", box).forEach(o => { const oj = +o.dataset.j; if (oj === correct) o.classList.add("correct"); else if (oj === j) o.classList.add("wrong"); o.disabled = true; });
+        $(".ans", box).classList.remove("hidden");
+        toast(j === correct ? "Correct! ✓" : "Not quite — see the explanation");
+      });
+    });
+
+    // reader preferences
+    const applyFont = () => { $("#reader-body").style.setProperty("--rfs", prefs.scale.toFixed(2) + "rem"); readerPrefs.set(prefs); };
+    $("#font-dn").onclick = () => { prefs.scale = Math.max(0.9, prefs.scale - 0.08); applyFont(); };
+    $("#font-up").onclick = () => { prefs.scale = Math.min(1.5, prefs.scale + 0.08); applyFont(); };
+    $("#width-tg").onclick = () => { prefs.wide = !prefs.wide; $("#reader-wrap").classList.toggle("wide", prefs.wide); readerPrefs.set(prefs); };
+    $("#bookmark-btn").onclick = () => { const c = content.chapters[readerCtx.current - 1]; marks.add({ id: b.id, ch: readerCtx.current, title: b.title, chapter: c.title }); toast("⚑ Bookmarked Chapter " + readerCtx.current); };
+
+    // chapter navigation
+    const goCh = (n) => { n = Math.min(total, Math.max(1, n)); const el = $(`#ch-${n}`); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); };
+    $("#cn-prev").onclick = () => goCh(readerCtx.current - 1);
+    $("#cn-next").onclick = () => goCh(readerCtx.current + 1);
+
+    // scroll spy → progress + chapter label + ring
     const tocLinks = $$(".reader-toc a", view()), sections = $$(".rch", view());
-    let current = 1;
     const obs = new IntersectionObserver((entries) => entries.forEach(en => {
-      if (en.isIntersecting) { current = +en.target.dataset.ch; tocLinks.forEach(a => a.classList.toggle("active", +a.dataset.ch === current)); progress.set(b.id, current, content.chapters.length); updateProgressPill(); }
-    }), { rootMargin: "-15% 0px -75% 0px" });
+      if (en.isIntersecting) {
+        readerCtx.current = +en.target.dataset.ch;
+        tocLinks.forEach(a => a.classList.toggle("active", +a.dataset.ch === readerCtx.current));
+        $("#cn-label").textContent = `Chapter ${readerCtx.current} / ${total}`;
+        const pct = Math.round((readerCtx.current / total) * 100);
+        $("#rb-ring").innerHTML = ring(pct, 34);
+        progress.set(b.id, readerCtx.current, total);
+        updateProgressPill();
+        if (readerCtx.current === total && !readerCtx.finishedToast) { readerCtx.finishedToast = true; toast("🎉 You reached the final chapter — great work!"); }
+      }
+    }), { rootMargin: "-12% 0px -78% 0px" });
     sections.forEach(s => obs.observe(s));
-    $("#bookmark-btn").onclick = () => { const c = content.chapters[current - 1]; marks.add({ id: b.id, ch: current, title: b.title, chapter: c.title }); $("#bookmark-btn").textContent = "⚑ Bookmarked!"; setTimeout(() => $("#bookmark-btn").textContent = "⚑ Bookmark current chapter", 1500); };
+    window.scrollTo(0, 0);
   }
 
   function renderOutlinePreview(b) {
@@ -317,29 +415,30 @@
       view().innerHTML = `
         <div class="btn-row" style="margin-bottom:14px"><a class="btn ghost" href="#book/${b.id}">‹ Details</a></div>
         <div class="section-block"><b>Outline preview.</b> Start the app server (<code>python serve.py</code>) to read the full text and diagrams of this and every book online.</div>
-        <article class="reader-body">${body}</article>`;
+        <article class="reader-body" style="--rfs:1.06rem">${body}</article>`;
     });
   }
 
+  // keyboard chapter nav
+  document.addEventListener("keydown", e => {
+    if (!location.hash.startsWith("#read/") || /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+    if (!readerCtx) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); const el = $(`#ch-${Math.min(readerCtx.total, readerCtx.current + 1)}`); el && el.scrollIntoView({ behavior: "smooth" }); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); const el = $(`#ch-${Math.max(1, readerCtx.current - 1)}`); el && el.scrollIntoView({ behavior: "smooth" }); }
+  });
+
   // ---- Ask Anything ----
   const ASK_EXAMPLES = [
-    "What is retrieval-augmented generation?",
-    "How do I prevent prompt injection?",
-    "When should I fine-tune vs use RAG?",
-    "Best practices for LLM observability",
-    "Explain the transformer attention mechanism",
-    "How to govern AI under the EU AI Act?",
-    "What is the difference between LoRA and full fine-tuning?",
-    "How do agents use tools safely?",
+    "What is retrieval-augmented generation?", "How do I prevent prompt injection?",
+    "When should I fine-tune vs use RAG?", "Best practices for LLM observability",
+    "Explain the transformer attention mechanism", "How to govern AI under the EU AI Act?",
+    "Difference between LoRA and full fine-tuning?", "How do agents use tools safely?",
   ];
   routes.ask = async (arg) => {
     const q = decodeURIComponent(arg || "");
     view().innerHTML = `
-      <div class="page-head"><h1>✺ Ask Anything</h1><p>Ask a question and get a synthesised answer drawn from across the entire ${state.apiUp ? "528-book" : "library"} corpus, with citations to the exact books and chapters to read next.</p></div>
-      <div class="ask-box">
-        <input id="ask-input" class="ask-input" placeholder="Ask anything about AI, LLMs, RAG, agents, governance…" value="${esc(q)}" />
-        <button class="btn primary" id="ask-go">Ask</button>
-      </div>
+      <div class="page-head"><h1>✺ Ask Anything</h1><p>Ask a question and get a synthesised answer drawn from across the entire ${state.apiUp ? fmt(528) + "-book" : ""} corpus, with citations to the exact books and chapters to read next.</p></div>
+      <div class="ask-box"><input id="ask-input" class="ask-input" placeholder="Ask anything about AI, LLMs, RAG, agents, governance…" value="${esc(q)}" /><button class="btn primary" id="ask-go">Ask</button></div>
       <div class="ask-chips">${ASK_EXAMPLES.map(e => `<button class="chip-btn" data-q="${esc(e)}">${esc(e)}</button>`).join("")}</div>
       <div id="ask-results"></div>`;
     const input = $("#ask-input");
@@ -347,38 +446,25 @@
     $("#ask-go").onclick = go;
     input.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
     $$(".chip-btn", view()).forEach(c => c.onclick = () => { input.value = c.dataset.q; go(); });
-    input.focus();
-    if (q) doAsk(q);
+    input.focus(); if (q) doAsk(q);
   };
-
   async function doAsk(q) {
     const res = $("#ask-results");
     res.innerHTML = `<div class="ask-thinking"><span class="spinner"></span> Searching the library for the best answer…</div>`;
     let data;
-    try {
-      if (state.apiUp) data = await getJSON(`${API}/ask?q=${encodeURIComponent(q)}`);
-      else data = await clientAsk(q);
-    } catch (e) { res.innerHTML = `<div class="empty">Could not complete the search.<br><small>${esc(e.message)}</small></div>`; return; }
+    try { data = state.apiUp ? await getJSON(`${API}/ask?q=${encodeURIComponent(q)}`) : await clientAsk(q); }
+    catch (e) { res.innerHTML = `<div class="empty">Could not complete the search.<br><small>${esc(e.message)}</small></div>`; return; }
     const terms = (data.terms || q.toLowerCase().split(/\s+/)).filter(t => t.length > 1);
     const sources = data.sources || [];
     res.innerHTML = `
-      <div class="ask-answer">
-        <div class="ask-answer-label">Answer</div>
-        <p>${hl(data.answer, terms)}</p>
-      </div>
-      ${sources.length ? `<h2 style="margin:22px 0 12px">Sources — read these next</h2>
-        <div class="ask-sources">${sources.map(s => `
-          <a class="ask-source" href="#read/${s.book_id}">
-            <div class="as-top"><span class="tag level">${esc(s.category || "")}</span><span class="as-ch">${esc(s.chapter)}</span></div>
-            <div class="as-title">${esc(s.book_title)}</div>
-            <div class="as-snip">${hl(s.snippet, terms)}</div>
-            <div class="as-cta">Open in reader →</div>
-          </a>`).join("")}</div>` : ""}
+      <div class="ask-answer"><div class="ask-answer-label">Answer</div><p>${hl(data.answer, terms)}</p></div>
+      ${sources.length ? `<h2 class="sec-h">Sources — read these next</h2><div class="ask-sources">${sources.map(s => `
+        <a class="ask-source" href="#read/${s.book_id}"><div class="as-top"><span class="tag level">${esc(s.category || "")}</span><span class="as-ch">${esc(s.chapter)}</span></div>
+          <div class="as-title">${esc(s.book_title)}</div><div class="as-snip">${hl(s.snippet, terms)}</div><div class="as-cta">Open in reader →</div></a>`).join("")}</div>` : ""}
       <div class="ask-followups"><span class="cap">Try also:</span> ${ASK_EXAMPLES.slice(0, 4).map(e => `<button class="chip-btn" data-q="${esc(e)}">${esc(e)}</button>`).join("")}</div>`;
     $$(".ask-followups .chip-btn", res).forEach(c => c.onclick = () => { $("#ask-input").value = c.dataset.q; location.hash = `ask/${encodeURIComponent(c.dataset.q)}`; doAsk(c.dataset.q); });
     res.querySelector(".ask-answer").animate([{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 300, easing: "ease" });
   }
-
   async function clientAsk(q) {
     await load("search", `${DATA}/search-index.json`);
     const terms = q.toLowerCase().split(/\s+/).filter(t => t.length > 1);
@@ -390,12 +476,10 @@
     }
     scored.sort((a, b) => b.score - a.score);
     const top = scored.slice(0, 6);
-    const answer = top.length ? `Across the library, the most relevant material on “${q}” is found in ${top[0].r.category}. ${top[0].r.subtitle}. ${top.slice(0, 3).map(t => t.r.chapters.find(c => terms.some(x => c.toLowerCase().includes(x))) || "").filter(Boolean).map(c => "Key topic: " + c + ".").join(" ")}`
-      : `I couldn't find anything about “${q}”. Try different keywords.`;
+    const answer = top.length ? `Across the library, the most relevant material on “${q}” is in ${top[0].r.category}. ${top[0].r.subtitle}. ${top.slice(0, 3).map(t => t.r.chapters.find(c => terms.some(x => c.toLowerCase().includes(x))) || "").filter(Boolean).map(c => "Key topic: " + c + ".").join(" ")}` : `I couldn't find anything about “${q}”. Try different keywords.`;
     return { answer, terms, sources: top.map(({ r }) => ({ book_id: r.id, book_title: r.title, category: r.category, chapter: (r.chapters.find(c => terms.some(x => c.toLowerCase().includes(x))) || r.chapters[0] || "Overview"), snippet: r.subtitle })) };
   }
 
-  // Search
   routes.search = async (arg) => {
     await load("search", `${DATA}/search-index.json`);
     const q = decodeURIComponent(arg || "");
@@ -434,33 +518,15 @@
     await Promise.all([load("library", `${DATA}/library.json`), load("stats", `${DATA}/stats.json`), loadPublished()]);
     const kinds = ["Architecture", "Application Flow", "Business Process", "Data Flow", "Sequence", "Class", "Component", "Deployment", "Network", "Cloud Architecture", "RAG Architecture", "Agent Architecture", "Security Architecture", "DevOps Pipeline", "CI/CD Pipeline", "Infrastructure", "Knowledge Graph", "Data Lineage", "Capability Map", "Operating Model"];
     const fmts = ["mermaid", "plantuml", "svg", "drawio"];
-    // pull a few rendered SVGs to preview, via API if available else demo outlines
     const samples = [];
-    if (state.apiUp) {
-      const ids = state.library.slice(0, 3).map(b => b.id);
-      for (const id of ids) { try { const c = await getJSON(`${API}/book/${id}`); c.chapters.forEach(ch => ch.diagrams.forEach(d => samples.push({ ...d, id }))); } catch {} }
-    }
-    const gallery = samples.slice(0, 9).filter(d => d.render_svg).map(d => `<div class="figure">${d.render_svg}<div class="cap">${esc(d.kind)} (${esc(d.fmt)})</div></div>`).join("");
+    if (state.apiUp) { for (const bk of state.library.slice(0, 3)) { try { const c = await getJSON(`${API}/book/${bk.id}`); c.chapters.forEach(ch => ch.diagrams.forEach(d => samples.push({ ...d, id: bk.id }))); } catch {} } }
+    else { for (const id of (state.published || []).slice(0, 3).map(p => p.id)) { try { const c = await getJSON(`${CONTENT}/${state.publishedMap[id].artifacts.content}`); c.chapters.forEach(ch => ch.diagrams.forEach(d => samples.push({ ...d, id }))); } catch {} } }
+    const gallery = samples.filter(d => d.render_svg).slice(0, 9).map(d => `<a class="figure" href="#read/${d.id}">${d.render_svg}<div class="cap">${esc(d.kind)} (${esc(d.fmt)})</div></a>`).join("");
     view().innerHTML = `
       <div class="page-head"><h1>Diagram Browser</h1><p>The library contains ${fmt(state.stats.diagrams)} professional diagrams in Mermaid, PlantUML, SVG and Draw.io across ${kinds.length} diagram types.</p></div>
       <div class="section-block"><h2>Diagram types</h2><div class="chip-row">${kinds.map(k => `<span class="tag">${esc(k)}</span>`).join("")}</div></div>
       <div class="section-block"><h2>Source formats</h2><div class="chip-row">${fmts.map(f => `<span class="tag level">${esc(f)}</span>`).join("")}</div></div>
-      ${gallery ? `<h2 style="margin:20px 0 12px">Live rendered examples</h2><div class="cards">${gallery}</div>` : ""}`;
-  };
-
-  routes.downloads = async () => {
-    await Promise.all([loadPublished(), load("library", `${DATA}/library.json`)]);
-    const list = state.apiUp ? state.library : (state.published || []);
-    const rows = list.slice(0, state.apiUp ? 60 : list.length).map(p => {
-      const id = p.id; const pub = state.publishedMap[id];
-      return `<div class="result"><h3>${esc(p.title)}</h3>
-        <div class="snippet">${esc(p.category)} · ${esc(p.level)} · ${fmt(p.estimated_pages)} pp.</div>
-        <div class="btn-row" style="margin-top:8px">${downloadLinks(id, pub)} <a class="btn ghost" href="#read/${id}">Read online</a></div></div>`;
-    }).join("");
-    view().innerHTML = `
-      <div class="page-head"><h1>Download Center</h1>
-        <p>${state.apiUp ? `Every one of the ${fmt(state.library.length)} books is downloadable in five formats (generated on demand). Showing the first 60 — use the Library to find any title.` : `${(state.published || []).length} demo titles are pre-rendered. Run <code>python serve.py</code> to download all ${fmt(state.library.length)}.`}</p></div>
-      ${rows || '<div class="empty">No books available.</div>'}`;
+      ${gallery ? `<h2 class="sec-h">Live rendered examples</h2><div class="cards">${gallery}</div>` : ""}`;
   };
 
   const LEARNING_PATHS = [
@@ -502,8 +568,8 @@
     view().innerHTML = `<div class="page-head"><h1>Bookmarks</h1><p>${items.length} saved chapter bookmarks.</p></div>
       ${items.length ? items.map(m => `<div class="result"><h3>${esc(m.title)}</h3><div class="snippet">Chapter ${m.ch}: ${esc(m.chapter || "")}</div>
         <div class="btn-row" style="margin-top:8px"><a class="btn primary" href="#read/${m.id}">Open</a><button class="btn rm" data-id="${m.id}" data-ch="${m.ch}">Remove</button></div></div>`).join("")
-        : '<div class="empty">No bookmarks yet. Use “Bookmark current chapter” while reading.</div>'}`;
-    $$(".rm", view()).forEach(b => b.onclick = () => { marks.remove(b.dataset.id, +b.dataset.ch); router(); });
+        : '<div class="empty">No bookmarks yet. Use the ⚑ button while reading.</div>'}`;
+    $$(".rm", view()).forEach(b => b.onclick = () => { marks.remove(b.dataset.id, +b.dataset.ch); toast("Bookmark removed"); router(); });
   };
 
   // ---- chrome ----
@@ -528,7 +594,6 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     top.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
   }
-
   async function init() {
     initTheme(); updateSidebarStats(); updateProgressPill(); initScrollChrome();
     $("#hamburger").onclick = () => $("#sidebar").classList.toggle("open");

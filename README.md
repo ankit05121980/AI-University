@@ -1,7 +1,8 @@
 # AI-University — Enterprise AI Knowledge Publishing Platform
 
 A complete, automated **AI learning publishing system** that generates, stores,
-indexes, searches, views and downloads professional, enterprise-grade AI books.
+indexes, searches and reads professional, enterprise-grade AI books in a fully
+read-only online portal.
 
 The platform ships three things:
 
@@ -13,9 +14,10 @@ The platform ships three things:
    **Markdown, HTML, PDF, DOCX and a 30+ slide PPTX** deck, and stores every
    diagram's source separately (Mermaid, PlantUML, SVG, Draw.io XML).
 3. **A web portal** (`web/`) — a complete library, document viewer, PDF/format
-   download centre, full-text search, filters, diagram browser, bookmarks,
+   full-text search, an Ask Anything Q&A, filters, diagram browser, bookmarks,
    favourites, reading-progress tracking, learning paths and certification
-   paths.
+   paths. The portal is **read-only** — every book is read online; nothing is
+   downloadable.
 
 ---
 
@@ -52,13 +54,10 @@ in the committed demo measure **254–263 physical A4 pages**.
 >   structured content.
 >
 > The included **app server (`python serve.py`) renders any of the 528 books on
-> demand** — full text, diagrams, and downloads (PDF/DOCX/PPTX/HTML/Markdown) —
-> so **every** title is fully readable online and downloadable without
-> committing the multi-gigabyte corpus. The committed demo simply lets the
-> portal also work behind a plain static file server.
->
-> Any book — or the entire catalog — can also be pre-published to disk with a
-> single command (see below).
+> demand** — full text and diagrams — so **every** title is fully readable
+> online without committing the multi-gigabyte corpus. The committed demo simply
+> lets the portal also work behind a plain static file server. The portal is
+> read-only; books are not downloadable in any format.
 
 ---
 
@@ -103,7 +102,12 @@ python -m aupub.cli catalog
 This writes `data/library.json`, `data/outlines/*.json`,
 `data/categories.json`, `data/search-index.json` and `data/stats.json`.
 
-### 3. Publish books to all formats
+### 3. (Optional) Pre-render the demo corpus for static hosting
+
+The portal is read-only and serves all reading via the app server, so this step
+is optional. It writes each book's structured `content.json` (used when the
+portal is hosted behind a plain static file server) and is also how the small
+committed demo corpus was produced.
 
 ```bash
 cd engine
@@ -133,9 +137,9 @@ python serve.py
 ```
 
 `serve.py` is a small app server. With it running, **all 528 books are fully
-readable online (with rendered diagrams) and downloadable in every format**,
-generated on demand by the engine, and the **Ask Anything** feature answers
-questions from across the whole corpus. (Served behind a plain static server
+readable online (with rendered diagrams)**, generated on demand by the engine,
+and the **Ask Anything** feature answers questions from across the whole corpus.
+The portal is read-only — there are no downloads. (Served behind a plain static server
 instead, the portal still works but only the pre-rendered demo books are
 fully available.)
 
@@ -158,7 +162,6 @@ Open `http://localhost:8000/web/` after running `serve.py`. Features:
   and chapters to read next.
 - **Search** — instant full-text search across titles, chapters and topics.
 - **Diagram Browser** — explore the 20 diagram types and four source formats.
-- **Download Center** — download PDF, DOCX, PPTX, HTML and Markdown.
 - **Learning Paths & Certification Paths** — curated multi-book tracks.
 - **Bookmarks, Favorites & Reading Progress** — persisted locally.
 - **Light/dark theme**.

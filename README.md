@@ -136,9 +136,10 @@ Open `http://localhost:8000/web/` after running `serve.py`. Features:
 - **Document Library** — all 528 books with category/level/format filters,
   sorting, search and pagination.
 - **Categories** — browse the 33 subject areas.
-- **Document & PDF Viewer** — read any published book online with rendered
-  Mermaid diagrams, syntax-highlighted code, inline assessments and a sticky
-  table of contents; non-published titles show a full outline preview.
+- **Document & PDF Viewer** — read any published book online with fully
+  rendered, self-contained SVG diagrams (no external renderer / works offline),
+  syntax-highlighted code, inline assessments and a sticky table of contents;
+  non-published titles show a full outline preview.
 - **Search** — instant full-text search across titles, chapters and topics.
 - **Diagram Browser** — explore the 20 diagram types and four source formats.
 - **Download Center** — download PDF, DOCX, PPTX, HTML and Markdown.
@@ -179,6 +180,11 @@ source files alongside each published book:
 - **PlantUML** (`.puml`) — component, deployment, sequence diagrams
 - **SVG** (`.svg`) — rendered capability/architecture maps
 - **Draw.io XML** (`.drawio`) — editable architecture diagrams
+
+In addition to the editable source above, every diagram is also rendered to a
+**self-contained SVG** that the web viewer and the HTML export embed inline, so
+diagrams are always visible without any external renderer or internet access.
+(The PDF and DOCX exports include the editable diagram source.)
 
 Diagram types include architecture, application flow, business process, data
 flow, sequence, class, component, deployment, network, cloud architecture, RAG

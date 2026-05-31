@@ -1,21 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Knowledge Graph - Local versus Global Search</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">GraphRAG</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Limits of Vector-On…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Knowledge Graph Con…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Entity Resolution a…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Community Detection…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Local versus Global…</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Knowledge Graph - Local versus Global Search</text>
+<circle cx="380.0" cy="198.0" r="46" fill="#0f172a"/>
+<text x="380.0" y="202.0" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">GraphRAG</text>
+<line x1="380.0" y1="152.0" x2="380.0" y2="92.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="58.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="380.0" y="83.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Limits of Vector-Only R…</text>
+<line x1="419.83716857408416" y1="175.0" x2="575.7217412552832" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="596.5063509461097" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Knowledge Graph Constru…</text>
+<line x1="419.83716857408416" y1="221.0" x2="575.7217412552832" y2="251.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="235.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="596.5063509461097" y="260.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Entity Resolution and D…</text>
+<line x1="380.0" y1="244.0" x2="380.0" y2="304.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="294.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="380.0" y="319.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Community Detection and…</text>
+<line x1="340.16283142591584" y1="221.0" x2="184.2782587447169" y2="251.00000000000006" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389038" y="235.00000000000006" width="148" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="163.49364905389038" y="260.74000000000007" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Local versus Global Sea…</text>
+<line x1="340.16283142591584" y1="175.0" x2="184.27825874471688" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389035" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="163.49364905389035" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Graph + Vector Hybrid R…</text>
 </svg>

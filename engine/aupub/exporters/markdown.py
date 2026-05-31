@@ -1,14 +1,25 @@
 """Render a :class:`Book` to a complete, professionally structured Markdown
 document containing all 21 required front/back-matter sections plus the full
 chapter body, diagrams, code, tables and assessments.
+
+``diagram_mode`` controls how diagrams are embedded:
+
+* ``"source"`` (default) — emit the editable diagram source (Mermaid fences,
+  raw SVG, PlantUML/Draw.io blocks). Best for the ``.md`` download.
+* ``"svg"`` — embed the self-contained rendered SVG inline so diagrams are
+  always visible with no external renderer. Used for the HTML export.
 """
 from __future__ import annotations
 
 from ..models import Book, Diagram
 
 
-def _diagram_md(d: Diagram, fig_no: int) -> str:
+def _diagram_md(d: Diagram, fig_no: int, mode: str = "source") -> str:
     cap = f"**Figure {fig_no}. {d.title}** ({d.fmt}). {d.caption}"
+    if mode == "svg":
+        svg = d.render_svg or (d.source if d.fmt == "svg" else "")
+        if svg:
+            return f'<div class="diagram-svg">\n\n{svg}\n\n</div>\n\n{cap}\n'
     if d.fmt == "mermaid":
         return f"```mermaid\n{d.source}\n```\n\n{cap}\n"
     if d.fmt == "svg":
@@ -20,13 +31,13 @@ def _diagram_md(d: Diagram, fig_no: int) -> str:
     )
 
 
-def render_markdown(book: Book) -> str:
+def render_markdown(book: Book, *, diagram_mode: str = "source") -> str:
     out: list[str] = []
     A = out.append
     fig_no = 0
-    tables: list[tuple[int, str]] = []  # (table_no, caption)
+    tables: list[tuple[int, str]] = []
 
-    # 1. Cover Page -----------------------------------------------------------
+    # 1. Cover Page
     A(f"# {book.title}\n")
     A(f"## {book.subtitle}\n")
     A(f"**{book.category}** &nbsp;|&nbsp; **Level:** {book.level} &nbsp;|&nbsp; "
@@ -36,7 +47,7 @@ def render_markdown(book: Book) -> str:
       f"&nbsp;|&nbsp; **Version:** {book.version} &nbsp;|&nbsp; **{book.published}**\n")
     A("\n---\n")
 
-    # 2. Copyright Page -------------------------------------------------------
+    # 2. Copyright Page
     A("## Copyright\n")
     A(f"Copyright \u00a9 {book.published} AI-University Press. All rights reserved.\n")
     A("This work is published as part of the AI-University Enterprise AI Knowledge "
@@ -47,7 +58,7 @@ def render_markdown(book: Book) -> str:
       f"{book.version}.\n")
     A("\n---\n")
 
-    # 3. Table of Contents ----------------------------------------------------
+    # 3. Table of Contents
     A("## Table of Contents\n")
     A("**Front Matter**\n")
     for s in ["Executive Summary", "Learning Objectives", "Industry Context",
@@ -64,7 +75,6 @@ def render_markdown(book: Book) -> str:
         A(f"- {s}")
     A("\n---\n")
 
-    # Chapter overview table (Table 1) ---------------------------------------
     tbl_no = 1
     A(f"**Table {tbl_no}. Chapter overview and estimated length**\n")
     A("| # | Chapter | Est. pages | Diagrams | Code | Questions |")
@@ -75,49 +85,32 @@ def render_markdown(book: Book) -> str:
     tables.append((tbl_no, "Chapter overview and estimated length"))
     A("\n---\n")
 
-    # 4. List of Figures (placeholder, filled after body) ---------------------
     figures_marker = len(out)
     A("§§FIGURES§§")
     A("\n---\n")
-
-    # 5. List of Tables (placeholder) ----------------------------------------
     tables_marker = len(out)
     A("§§TABLES§§")
     A("\n---\n")
 
     fm = book.front_matter
-    # 6. Executive Summary
-    A("## Executive Summary\n")
-    A(fm.executive_summary + "\n")
-    # 7. Learning Objectives
+    A("## Executive Summary\n"); A(fm.executive_summary + "\n")
     A("## Learning Objectives\n")
     A("After completing this book, the reader will be able to:\n")
     for o in fm.learning_objectives:
         A(f"- {o}")
     A("")
-    # 8-13 perspectives
-    A("## Industry Context\n")
-    A(fm.industry_context + "\n")
-    A("## Business Perspective\n")
-    A(fm.business_perspective + "\n")
-    A("## Technical Perspective\n")
-    A(fm.technical_perspective + "\n")
-    A("## Architecture Perspective\n")
-    A(fm.architecture_perspective + "\n")
-    A("## Governance Perspective\n")
-    A(fm.governance_perspective + "\n")
-    A("## Security Perspective\n")
-    A(fm.security_perspective + "\n")
+    A("## Industry Context\n"); A(fm.industry_context + "\n")
+    A("## Business Perspective\n"); A(fm.business_perspective + "\n")
+    A("## Technical Perspective\n"); A(fm.technical_perspective + "\n")
+    A("## Architecture Perspective\n"); A(fm.architecture_perspective + "\n")
+    A("## Governance Perspective\n"); A(fm.governance_perspective + "\n")
+    A("## Security Perspective\n"); A(fm.security_perspective + "\n")
     A("\n---\n")
 
     figures: list[tuple[int, str]] = []
-
-    # Chapter body ------------------------------------------------------------
     for ch in book.chapters:
         A(f"\n# Chapter {ch.number}. {ch.title}\n")
         A(f"_{ch.summary}_\n")
-        # interleave diagrams after the architecture section
-        diag_iter = iter(ch.diagrams)
         for sec in ch.sections:
             A(f"## {sec.heading}\n")
             A(sec.body + "\n")
@@ -125,12 +118,10 @@ def render_markdown(book: Book) -> str:
                 for d in ch.diagrams:
                     fig_no += 1
                     figures.append((fig_no, d.title))
-                    A(_diagram_md(d, fig_no))
-        # code samples
+                    A(_diagram_md(d, fig_no, diagram_mode))
         for cs in ch.code_samples:
             A(f"### Listing: {cs.title}\n")
             A(f"```{cs.language}\n{cs.code}\n```\n")
-        # review questions
         A("## Review Questions\n")
         for i, q in enumerate(ch.questions, 1):
             if q.kind == "interview":
@@ -139,25 +130,18 @@ def render_markdown(book: Book) -> str:
             else:
                 A(f"{i}. {q.question}")
                 for j, opt in enumerate(q.options):
-                    letter = chr(ord('A') + j)
-                    A(f"   - {letter}. {opt}")
-                ans = chr(ord('A') + q.answer_index)
-                A(f"   - **Answer: {ans}.** {q.explanation}")
+                    A(f"   - {chr(ord('A') + j)}. {opt}")
+                A(f"   - **Answer: {chr(ord('A') + q.answer_index)}.** {q.explanation}")
         A("\n---\n")
 
-    # Back matter -------------------------------------------------------------
     bm = book.back_matter
     A("\n# Hands-On Labs\n")
     for lab in bm.labs:
-        A(f"## {lab['title']}\n")
-        A(lab["body"] + "\n")
-
+        A(f"## {lab['title']}\n"); A(lab["body"] + "\n")
     A("\n# Case Studies\n")
     for cs in bm.case_studies:
-        A(f"## {cs['title']}\n")
-        A(cs["body"] + "\n")
+        A(f"## {cs['title']}\n"); A(cs["body"] + "\n")
 
-    # Aggregated question banks
     interview = [q for ch in book.chapters for q in ch.questions if q.kind == "interview"]
     cert = [q for ch in book.chapters for q in ch.questions if q.kind == "certification"]
     assess = [q for ch in book.chapters for q in ch.questions if q.kind == "assessment"]
@@ -166,8 +150,7 @@ def render_markdown(book: Book) -> str:
     A("A consolidated bank of discussion-style interview questions drawn from across "
       "the book, suitable for preparation and technical screening.\n")
     for i, q in enumerate(interview, 1):
-        A(f"{i}. {q.question}")
-        A(f"   - **Guidance:** {q.explanation}")
+        A(f"{i}. {q.question}"); A(f"   - **Guidance:** {q.explanation}")
 
     A("\n# Certification Questions\n")
     A("Certification-style multiple-choice questions covering best practices and "
@@ -186,12 +169,10 @@ def render_markdown(book: Book) -> str:
             A(f"   - {chr(ord('A')+j)}. {opt}")
         A(f"   - **Answer: {chr(ord('A')+q.answer_index)}.** {q.explanation}")
 
-    # References
     A("\n# References\n")
     for i, r in enumerate(bm.references, 1):
         A(f"{i}. {r}")
 
-    # Glossary (also a table -> Table 2)
     A("\n# Glossary\n")
     tbl2 = 2
     A(f"**Table {tbl2}. Glossary of key terms**\n")
@@ -201,16 +182,13 @@ def render_markdown(book: Book) -> str:
         A(f"| {g['term']} | {g['definition']} |")
     tables.append((tbl2, "Glossary of key terms"))
 
-    # Index
     A("\n# Index\n")
     A(", ".join(bm.index_terms) + "\n")
 
-    # Fill List of Figures / Tables ------------------------------------------
     lof = ["## List of Figures\n"]
     for n, title in figures:
         lof.append(f"- Figure {n}. {title}")
     out[figures_marker] = "\n".join(lof)
-
     lot = ["## List of Tables\n"]
     for n, cap in tables:
         lot.append(f"- Table {n}. {cap}")

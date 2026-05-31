@@ -28,6 +28,7 @@ class Diagram:
     fmt: str  # mermaid | plantuml | svg | drawio
     source: str
     caption: str = ""
+    render_svg: str = ""  # always-available, self-contained SVG for viewers
 
     def to_dict(self) -> dict[str, Any]:
         return dataclasses.asdict(self)

@@ -329,9 +329,8 @@
   };
 
   function diagramHtml(d) {
-    if (d.fmt === "mermaid") return `<div class="figure"><div class="diag-loading"><span class="spinner"></span> Rendering diagram…</div>
-      <div class="mermaid" data-pending data-src="${esc(d.source)}"></div><div class="cap">${esc(d.caption)}</div></div>`;
-    if (d.fmt === "svg") return `<div class="figure">${d.source}<div class="cap">${esc(d.caption)}</div></div>`;
+    const svg = d.render_svg || (d.fmt === "svg" ? d.source : "");
+    if (svg) return `<div class="figure">${svg}<div class="cap">${esc(d.caption)}</div></div>`;
     return `<div class="figure"><pre class="fallback">${esc(d.source)}</pre><div class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</div></div>`;
   }
 

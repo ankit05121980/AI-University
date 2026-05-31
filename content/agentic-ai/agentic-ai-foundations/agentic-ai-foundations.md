@@ -756,26 +756,24 @@ _Source diagram (drawio); render with the appropriate tool._
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Capability Map - Planning and Task Decomposition</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Capability Map - Planning and Task Decomposition</text>
+<circle cx="380.0" cy="198.0" r="46" fill="#0f172a"/>
+<text x="380.0" y="202.0" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Agentic AI</text>
+<line x1="380.0" y1="152.0" x2="380.0" y2="92.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="58.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="380.0" y="83.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to Agents</text>
+<line x1="419.83716857408416" y1="175.0" x2="575.7217412552832" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="596.5063509461097" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Reason,…</text>
+<line x1="419.83716857408416" y1="221.0" x2="575.7217412552832" y2="251.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="235.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="596.5063509461097" y="260.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task Decom…</text>
+<line x1="380.0" y1="244.0" x2="380.0" y2="304.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="294.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="380.0" y="319.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Function C…</text>
+<line x1="340.16283142591584" y1="221.0" x2="184.2782587447169" y2="251.00000000000006" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389038" y="235.00000000000006" width="148" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="163.49364905389038" y="260.74000000000007" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Memory Architectures</text>
+<line x1="340.16283142591584" y1="175.0" x2="184.27825874471688" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389035" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="163.49364905389035" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Reflection and Self-Cor…</text>
 </svg>
 
 </div>
@@ -1213,26 +1211,29 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Cloud Architecture - Memory Architectures</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Cloud Architecture - Memory Architectures</text>
+<rect x="30" y="48" width="700" height="96" rx="12" fill="#eef2ff" stroke="#e2e8f0"/>
+<text x="44" y="66" font-size="11" font-weight="700" fill="#475569">Consumers</text>
+<rect x="44" y="78" width="150" height="48" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="119.0" y="105.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Users / Apps</text>
+<rect x="208" y="78" width="150" height="48" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="283.0" y="105.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">API Clients</text>
+<rect x="30" y="166" width="700" height="96" rx="12" fill="#f5f3ff" stroke="#e2e8f0"/>
+<text x="44" y="184" font-size="11" font-weight="700" fill="#475569">Agentic AI Platform</text>
+<rect x="44.0" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="105.4" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Gateway</text>
+<rect x="180.8" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="242.20000000000002" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to A…</text>
+<rect x="317.6" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="379.0" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Re…</text>
+<rect x="454.40000000000003" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="515.8000000000001" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task …</text>
+<rect x="591.2" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="652.6" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Funct…</text>
+<rect x="30" y="284" width="700" height="96" rx="12" fill="#ecfeff" stroke="#e2e8f0"/>
+<text x="44" y="302" font-size="11" font-weight="700" fill="#475569">Data &amp; Operations</text>
+<rect x="44" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="119.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Primary Store</text>
+<rect x="208" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="283.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Vector Index</text>
+<rect x="372" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="447.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Observability</text>
+<rect x="536" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="611.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Security</text>
+<line x1="380.0" y1="126" x2="380.0" y2="196" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<line x1="380.0" y1="244" x2="380.0" y2="314" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
 </svg>
 
 </div>
@@ -1241,26 +1242,24 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Knowledge Graph - Memory Architectures</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Knowledge Graph - Memory Architectures</text>
+<circle cx="380.0" cy="198.0" r="46" fill="#0f172a"/>
+<text x="380.0" y="202.0" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Agentic AI</text>
+<line x1="380.0" y1="152.0" x2="380.0" y2="92.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="58.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="380.0" y="83.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to Agents</text>
+<line x1="419.83716857408416" y1="175.0" x2="575.7217412552832" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="596.5063509461097" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Reason,…</text>
+<line x1="419.83716857408416" y1="221.0" x2="575.7217412552832" y2="251.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="235.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="596.5063509461097" y="260.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task Decom…</text>
+<line x1="380.0" y1="244.0" x2="380.0" y2="304.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="294.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="380.0" y="319.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Function C…</text>
+<line x1="340.16283142591584" y1="221.0" x2="184.2782587447169" y2="251.00000000000006" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389038" y="235.00000000000006" width="148" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="163.49364905389038" y="260.74000000000007" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Memory Architectures</text>
+<line x1="340.16283142591584" y1="175.0" x2="184.27825874471688" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389035" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="163.49364905389035" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Reflection and Self-Cor…</text>
 </svg>
 
 </div>
@@ -1485,26 +1484,24 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Knowledge Graph - Reflection and Self-Correction</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Knowledge Graph - Reflection and Self-Correction</text>
+<circle cx="380.0" cy="198.0" r="46" fill="#0f172a"/>
+<text x="380.0" y="202.0" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Agentic AI</text>
+<line x1="380.0" y1="152.0" x2="380.0" y2="92.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="58.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="380.0" y="83.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to Agents</text>
+<line x1="419.83716857408416" y1="175.0" x2="575.7217412552832" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="596.5063509461097" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Reason,…</text>
+<line x1="419.83716857408416" y1="221.0" x2="575.7217412552832" y2="251.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="235.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="596.5063509461097" y="260.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task Decom…</text>
+<line x1="380.0" y1="244.0" x2="380.0" y2="304.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="294.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="380.0" y="319.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Function C…</text>
+<line x1="340.16283142591584" y1="221.0" x2="184.2782587447169" y2="251.00000000000006" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389038" y="235.00000000000006" width="148" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="163.49364905389038" y="260.74000000000007" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Memory Architectures</text>
+<line x1="340.16283142591584" y1="175.0" x2="184.27825874471688" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389035" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="163.49364905389035" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Reflection and Self-Cor…</text>
 </svg>
 
 </div>
@@ -3808,26 +3805,23 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Business Process - Hands-On Lab: Building an End-to-End…</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Business Process - Hands-On Lab: Building an End-to-End Age…</text>
+<rect x="40.0" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="92.0" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Intake</text>
+<rect x="155.2" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="207.2" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Assess</text>
+<line x1="144.0" y1="196.0" x2="155.2" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="270.4" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="322.4" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Decide</text>
+<line x1="259.2" y1="196.0" x2="270.4" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="385.6" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="437.6" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Execute</text>
+<line x1="374.4" y1="196.0" x2="385.6" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="500.8" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="552.8" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Review</text>
+<line x1="489.6" y1="196.0" x2="500.8" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="616.0" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="668.0" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Close</text>
+<line x1="604.8" y1="196.0" x2="616.0" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<path d="M668.0,226.0 q0,46 -288.0,46 q-288.0,0 -288.0,-46" fill="none" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text x="380.0" y="288.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">feedback / monitoring loop</text>
 </svg>
 
 </div>
@@ -4046,26 +4040,29 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Architecture - Case Study: Software at Scale</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Architecture - Case Study: Software at Scale</text>
+<rect x="30" y="48" width="700" height="96" rx="12" fill="#eef2ff" stroke="#e2e8f0"/>
+<text x="44" y="66" font-size="11" font-weight="700" fill="#475569">Consumers</text>
+<rect x="44" y="78" width="150" height="48" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="119.0" y="105.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Users / Apps</text>
+<rect x="208" y="78" width="150" height="48" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="283.0" y="105.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">API Clients</text>
+<rect x="30" y="166" width="700" height="96" rx="12" fill="#f5f3ff" stroke="#e2e8f0"/>
+<text x="44" y="184" font-size="11" font-weight="700" fill="#475569">Agentic AI Platform</text>
+<rect x="44.0" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="105.4" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Gateway</text>
+<rect x="180.8" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="242.20000000000002" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to A…</text>
+<rect x="317.6" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="379.0" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Re…</text>
+<rect x="454.40000000000003" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="515.8000000000001" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task …</text>
+<rect x="591.2" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="652.6" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Funct…</text>
+<rect x="30" y="284" width="700" height="96" rx="12" fill="#ecfeff" stroke="#e2e8f0"/>
+<text x="44" y="302" font-size="11" font-weight="700" fill="#475569">Data &amp; Operations</text>
+<rect x="44" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="119.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Primary Store</text>
+<rect x="208" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="283.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Vector Index</text>
+<rect x="372" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="447.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Observability</text>
+<rect x="536" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="611.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Security</text>
+<line x1="380.0" y1="126" x2="380.0" y2="196" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<line x1="380.0" y1="244" x2="380.0" y2="314" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
 </svg>
 
 </div>
@@ -4757,26 +4754,23 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">RAG Architecture - Security, Privacy and Governance</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">RAG Architecture - Security, Privacy and Governance</text>
+<rect x="40.0" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="92.0" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Query</text>
+<rect x="155.2" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="207.2" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Embed</text>
+<line x1="144.0" y1="196.0" x2="155.2" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="270.4" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="322.4" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Retrieve</text>
+<line x1="259.2" y1="196.0" x2="270.4" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="385.6" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="437.6" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Re-rank</text>
+<line x1="374.4" y1="196.0" x2="385.6" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="500.8" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="552.8" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Generate</text>
+<line x1="489.6" y1="196.0" x2="500.8" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="616.0" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="668.0" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Answer</text>
+<line x1="604.8" y1="196.0" x2="616.0" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<path d="M668.0,226.0 q0,46 -288.0,46 q-288.0,0 -288.0,-46" fill="none" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text x="380.0" y="288.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">feedback / monitoring loop</text>
 </svg>
 
 </div>
@@ -5024,26 +5018,23 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">CI/CD Pipeline - Cost, Performance and Scaling</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">CI/CD Pipeline - Cost, Performance and Scaling</text>
+<rect x="40.0" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="92.0" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Commit</text>
+<rect x="155.2" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="207.2" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Build</text>
+<line x1="144.0" y1="196.0" x2="155.2" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="270.4" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="322.4" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Eval Gate</text>
+<line x1="259.2" y1="196.0" x2="270.4" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="385.6" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="437.6" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Package</text>
+<line x1="374.4" y1="196.0" x2="385.6" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="500.8" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="552.8" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Deploy</text>
+<line x1="489.6" y1="196.0" x2="500.8" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<rect x="616.0" y="166.0" width="104" height="60" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="668.0" y="200.08" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Monitor</text>
+<line x1="604.8" y1="196.0" x2="616.0" y2="196.0" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<path d="M668.0,226.0 q0,46 -288.0,46 q-288.0,0 -288.0,-46" fill="none" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text x="380.0" y="288.0" text-anchor="middle" font-size="9.5" fill="#94a3b8">feedback / monitoring loop</text>
 </svg>
 
 </div>
@@ -5297,26 +5288,29 @@ _Source diagram (drawio); render with the appropriate tool._
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Security Architecture - Integration and Interoperability</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Security Architecture - Integration and Interoperability</text>
+<rect x="30" y="48" width="700" height="96" rx="12" fill="#eef2ff" stroke="#e2e8f0"/>
+<text x="44" y="66" font-size="11" font-weight="700" fill="#475569">Consumers</text>
+<rect x="44" y="78" width="150" height="48" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="119.0" y="105.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Users / Apps</text>
+<rect x="208" y="78" width="150" height="48" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="283.0" y="105.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">API Clients</text>
+<rect x="30" y="166" width="700" height="96" rx="12" fill="#f5f3ff" stroke="#e2e8f0"/>
+<text x="44" y="184" font-size="11" font-weight="700" fill="#475569">Agentic AI Platform</text>
+<rect x="44.0" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="105.4" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Gateway</text>
+<rect x="180.8" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="242.20000000000002" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to A…</text>
+<rect x="317.6" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="379.0" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Re…</text>
+<rect x="454.40000000000003" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="515.8000000000001" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task …</text>
+<rect x="591.2" y="196" width="122.8" height="48" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="652.6" y="223.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Funct…</text>
+<rect x="30" y="284" width="700" height="96" rx="12" fill="#ecfeff" stroke="#e2e8f0"/>
+<text x="44" y="302" font-size="11" font-weight="700" fill="#475569">Data &amp; Operations</text>
+<rect x="44" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="119.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Primary Store</text>
+<rect x="208" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="283.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Vector Index</text>
+<rect x="372" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="447.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Observability</text>
+<rect x="536" y="314" width="150" height="48" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="611.0" y="341.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Security</text>
+<line x1="380.0" y1="126" x2="380.0" y2="196" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
+<line x1="380.0" y1="244" x2="380.0" y2="314" stroke="#4338ca" stroke-width="2" marker-end="url(#arrowA)"/>
 </svg>
 
 </div>
@@ -6029,26 +6023,24 @@ _Source diagram (drawio); render with the appropriate tool._
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Knowledge Graph - Certification Preparation and Review</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Agentic AI</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From Chatbots to Ag…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">The Agent Loop: Rea…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Planning and Task D…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Tool Use and Functi…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Memory Architectures</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Inter, Segoe UI, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#4338ca"/></marker></defs>
+<rect width="760" height="380" rx="12" fill="#f8fafc"/>
+<text x="380" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Knowledge Graph - Certification Preparation and Review</text>
+<circle cx="380.0" cy="198.0" r="46" fill="#0f172a"/>
+<text x="380.0" y="202.0" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Agentic AI</text>
+<line x1="380.0" y1="152.0" x2="380.0" y2="92.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="58.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="380.0" y="83.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">From Chatbots to Agents</text>
+<line x1="419.83716857408416" y1="175.0" x2="575.7217412552832" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/><text x="596.5063509461097" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">The Agent Loop: Reason,…</text>
+<line x1="419.83716857408416" y1="221.0" x2="575.7217412552832" y2="251.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522.5063509461097" y="235.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/><text x="596.5063509461097" y="260.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Planning and Task Decom…</text>
+<line x1="380.0" y1="244.0" x2="380.0" y2="304.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="306.0" y="294.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="380.0" y="319.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Tool Use and Function C…</text>
+<line x1="340.16283142591584" y1="221.0" x2="184.2782587447169" y2="251.00000000000006" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389038" y="235.00000000000006" width="148" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/><text x="163.49364905389038" y="260.74000000000007" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Memory Architectures</text>
+<line x1="340.16283142591584" y1="175.0" x2="184.27825874471688" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="89.49364905389035" y="117.0" width="148" height="44" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/><text x="163.49364905389035" y="142.74" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Reflection and Self-Cor…</text>
 </svg>
 
 </div>

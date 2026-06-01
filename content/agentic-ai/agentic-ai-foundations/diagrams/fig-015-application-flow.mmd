@@ -1,8 +1,0 @@
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]

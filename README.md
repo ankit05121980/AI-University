@@ -242,3 +242,45 @@ python -m aupub.cli --per-category 16 publish      # warning: many GB
 Increase `--per-category` to grow the library further (e.g. `--per-category 20`
 yields 660 books). The engine streams output per book, so generation scales
 linearly and can be resumed by category or id.
+
+---
+
+## Deploy to Vercel
+
+The portal deploys to Vercel as a **static site + Python serverless functions**.
+The API (reading any book, Ask Anything, Diagram Studio) is pure standard-library
+Python and generates everything on demand, so there are no runtime dependencies
+and nothing heavy to build.
+
+Layout used by Vercel:
+
+- `api/index.py` — a serverless function handling all `/api/*` routes
+  (`/api/health`, `/api/book/<id>`, `/api/ask`, `/api/diagram`). The engine is
+  bundled via `includeFiles` in `vercel.json`.
+- `web/`, `data/` — served as static assets.
+- `vercel.json` — rewrites `/api/*` to the function and redirects `/` to `/web/`.
+
+### Option A — Git integration (recommended)
+
+1. Push this repository to GitHub/GitLab/Bitbucket.
+2. In Vercel, **Add New → Project** and import the repo.
+3. Framework preset: **Other**. Leave Build Command and Output Directory empty
+   (root directory = repository root). No environment variables are required.
+4. **Deploy.** Your portal will be live at `https://<project>.vercel.app/`
+   (the root redirects to `/web/`).
+
+### Option B — Vercel CLI
+
+```bash
+npm i -g vercel
+vercel        # preview deploy
+vercel --prod # production deploy
+```
+
+Notes:
+
+- Books are rendered on demand by the serverless function, so all 528 titles
+  are fully readable online without committing the multi-gigabyte corpus.
+- The function has no pip dependencies (`api/requirements.txt` is empty); cold
+  starts are fast. `maxDuration` is set to 10s, well above the ~60ms needed to
+  build a book.

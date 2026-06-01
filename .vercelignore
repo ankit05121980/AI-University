@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.git
+# Demo download artefacts are not used on Vercel (books are read via the API).
+engine/requirements.txt

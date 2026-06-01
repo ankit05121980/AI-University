@@ -79,7 +79,13 @@
     if (state.outlineCache[id]) return state.outlineCache[id];
     const o = await getJSON(`${DATA}/outlines/${id}.json`); state.outlineCache[id] = o; return o;
   }
-  async function probeApi() { try { const r = await fetch(`${API}/health`); state.apiUp = r.ok; } catch { state.apiUp = false; } }
+  async function probeApi() {
+    try {
+      const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), 6000);
+      const r = await fetch(`${API}/health`, { signal: ctrl.signal }); clearTimeout(t);
+      state.apiUp = r.ok;
+    } catch { state.apiUp = false; }
+  }
   const canRead = (id) => state.apiUp || !!state.publishedMap[id];
 
   // ---- markdown → HTML ----

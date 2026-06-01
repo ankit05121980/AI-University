@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Case Study: Legal at Scale
+package "Case Study: Legal at Scale Platform" {
+  component "Case Study: Legal at Sc…" as C0
+  component "Controllability and Str…" as C1
+  component "Generative Modelling Fo…" as C2
+  component "Productionising Generat…" as C3
+  component "Multimodal Generation" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

@@ -1,5 +1,5 @@
 @startuml
-title Application Flow - Feed-Forward Networks and Activations
+title Application Flow - Residual Connections and Normalisation
 class Service {
   +process(req)
   +evaluate(sample)

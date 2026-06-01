@@ -1,0 +1,12 @@
+@startuml
+title Class - Hands-On Lab: Building an End-to-End Multi-Agent Systems System
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

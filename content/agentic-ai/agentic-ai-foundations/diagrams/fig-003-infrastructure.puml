@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - The Agent Loop: Reason, Act, Observe
+package "The Agent Loop: Reason, Act, Observe Platform" {
+  component "The Agent Loop: Reason,…" as C0
+  component "Planning and Task Decom…" as C1
+  component "The Agentic Reference A…" as C2
+  component "Grounding and Retrieval…" as C3
+  component "Safety, Sandboxing and …" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

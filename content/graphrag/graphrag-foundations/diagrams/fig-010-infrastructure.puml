@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Query Routing in GraphRAG
+package "Query Routing in GraphRAG Platform" {
+  component "Query Routing in GraphR…" as C0
+  component "Entity Resolution and D…" as C1
+  component "Incremental Graph Updat…" as C2
+  component "Limits of Vector-Only R…" as C3
+  component "Security and Provenance" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Security, Privacy and Governance
+package "Security, Privacy and Governance Platform" {
+  component "Security, Privacy and G…" as C0
+  component "Orchestration and Routi…" as C1
+  component "Agent Roles and Topolog…" as C2
+  component "The Multi-Agent Referen…" as C3
+  component "Tool and Resource Conte…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

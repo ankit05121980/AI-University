@@ -1,0 +1,34 @@
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Freshness, Upserts and Deletes Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Freshness, Upserts and De…]
+    S1[Security and Multi-Tenancy]
+    S2[The Case for Purpose-Buil…]
+    S3[Choosing a Vector Database]
+    S4[ANN Indexing Algorithms]
+    S5[Integration with the RAG …]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC

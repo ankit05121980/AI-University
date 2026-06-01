@@ -82,29 +82,29 @@ First published 2026. First Edition. Document version 1.0.0.
 |---|---------|-----------:|---------:|-----:|----------:|
 | 1 | The AI/ML Landscape and Problem Framing | 12 | 2 | 1 | 4 |
 | 2 | Linear Algebra for Machine Learning | 11 | 1 | 1 | 4 |
-| 3 | Probability, Statistics and Bayesian Reasoning | 11 | 2 | 1 | 4 |
+| 3 | Probability, Statistics and Bayesian Reasoning | 11 | 1 | 1 | 4 |
 | 4 | Optimisation and Gradient Descent | 11 | 2 | 1 | 4 |
 | 5 | Data Engineering and Feature Pipelines | 11 | 1 | 1 | 4 |
-| 6 | Model Families and Inductive Bias | 11 | 1 | 1 | 4 |
+| 6 | Model Families and Inductive Bias | 11 | 2 | 1 | 4 |
 | 7 | Neural Networks and Backpropagation | 11 | 1 | 1 | 4 |
 | 8 | Evaluation, Metrics and Experimental Design | 11 | 1 | 1 | 4 |
-| 9 | Regularisation and Generalisation | 11 | 2 | 1 | 4 |
+| 9 | Regularisation and Generalisation | 11 | 1 | 1 | 4 |
 | 10 | Representation Learning and Embeddings | 11 | 2 | 1 | 4 |
-| 11 | Responsible and Trustworthy AI by Design | 11 | 2 | 1 | 4 |
+| 11 | Responsible and Trustworthy AI by Design | 11 | 1 | 1 | 4 |
 | 12 | From Notebook to Production | 11 | 1 | 1 | 4 |
 | 13 | Scaling Laws and Compute Economics | 11 | 1 | 1 | 4 |
 | 14 | The Modern AI Stack | 11 | 2 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 11 | 1 | 1 | 4 |
 | 16 | Hands-On Lab: Building an End-to-End AI Foundations System | 11 | 1 | 1 | 4 |
-| 17 | Case Study: Financial Services at Scale | 11 | 1 | 1 | 4 |
-| 18 | Operating in Production | 11 | 1 | 1 | 4 |
+| 17 | Case Study: Financial Services at Scale | 11 | 2 | 1 | 4 |
+| 18 | Operating in Production | 11 | 2 | 1 | 4 |
 | 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
 | 20 | Security, Privacy and Governance | 11 | 1 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 11 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 11 | 1 | 1 | 4 |
 | 23 | Trends and Research Directions | 10 | 1 | 0 | 4 |
 | 24 | Capstone Project | 11 | 1 | 1 | 4 |
-| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
+| 25 | Certification Preparation and Review | 11 | 1 | 1 | 4 |
 
 ---
 
@@ -114,27 +114,27 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 2. Component - The AI/ML Landscape and Problem Framing
 - Figure 3. Component - Linear Algebra for Machine Learning
 - Figure 4. RAG Architecture - Probability, Statistics and Bayesian Reasoning
-- Figure 5. Deployment - Probability, Statistics and Bayesian Reasoning
-- Figure 6. Deployment - Optimisation and Gradient Descent
-- Figure 7. DevOps Pipeline - Optimisation and Gradient Descent
-- Figure 8. DevOps Pipeline - Data Engineering and Feature Pipelines
-- Figure 9. Operating Model - Model Families and Inductive Bias
+- Figure 5. Deployment - Optimisation and Gradient Descent
+- Figure 6. DevOps Pipeline - Optimisation and Gradient Descent
+- Figure 7. DevOps Pipeline - Data Engineering and Feature Pipelines
+- Figure 8. Operating Model - Model Families and Inductive Bias
+- Figure 9. Knowledge Graph - Model Families and Inductive Bias
 - Figure 10. Knowledge Graph - Neural Networks and Backpropagation
 - Figure 11. CI/CD Pipeline - Evaluation, Metrics and Experimental Design
 - Figure 12. Agent Architecture - Regularisation and Generalisation
-- Figure 13. Sequence - Regularisation and Generalisation
-- Figure 14. Sequence - Representation Learning and Embeddings
-- Figure 15. Data Flow - Representation Learning and Embeddings
-- Figure 16. Data Flow - Responsible and Trustworthy AI by Design
-- Figure 17. Class - Responsible and Trustworthy AI by Design
-- Figure 18. Class - From Notebook to Production
-- Figure 19. Cloud Architecture - Scaling Laws and Compute Economics
-- Figure 20. Infrastructure - The Modern AI Stack
-- Figure 21. Architecture - The Modern AI Stack
-- Figure 22. Architecture - Putting It Together: A Reference Implementation
-- Figure 23. Capability Map - Hands-On Lab: Building an End-to-End AI Foundations System
-- Figure 24. Application Flow - Case Study: Financial Services at Scale
-- Figure 25. Security Architecture - Operating in Production
+- Figure 13. Sequence - Representation Learning and Embeddings
+- Figure 14. Data Flow - Representation Learning and Embeddings
+- Figure 15. Data Flow - Responsible and Trustworthy AI by Design
+- Figure 16. Class - From Notebook to Production
+- Figure 17. Cloud Architecture - Scaling Laws and Compute Economics
+- Figure 18. Infrastructure - The Modern AI Stack
+- Figure 19. Architecture - The Modern AI Stack
+- Figure 20. Architecture - Putting It Together: A Reference Implementation
+- Figure 21. Capability Map - Hands-On Lab: Building an End-to-End AI Foundations System
+- Figure 22. Application Flow - Case Study: Financial Services at Scale
+- Figure 23. Security Architecture - Case Study: Financial Services at Scale
+- Figure 24. Security Architecture - Operating in Production
+- Figure 25. Business Process - Operating in Production
 - Figure 26. Business Process - Evaluation and Quality Assurance
 - Figure 27. Network - Evaluation and Quality Assurance
 - Figure 28. Network - Security, Privacy and Governance
@@ -143,7 +143,6 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 31. RAG Architecture - Trends and Research Directions
 - Figure 32. Deployment - Capstone Project
 - Figure 33. DevOps Pipeline - Certification Preparation and Review
-- Figure 34. Operating Model - Certification Preparation and Review
 
 ---
 
@@ -240,14 +239,14 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Data Lineage - The AI/ML Landscape and Problem Framing" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="AI Foundations" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="hub" value="The AI/ML Landscape a…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
         <mxCell id="n0" value="The AI/ML Landscape and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Responsible and Trustwo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Neural Networks and Bac…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Scaling Laws and Comput…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="n4" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
@@ -259,30 +258,46 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 1. Data Lineage - The AI/ML Landscape and Problem Framing** (drawio). Figure: Data Lineage view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. Data Lineage - The AI/ML Landscape and Problem Framing** (drawio). Figure: Data Lineage view for The AI/ML Landscape and Problem Framing. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```plantuml
-@startuml
-title Component - The AI/ML Landscape and Problem Framing
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["The AI/ML Landscape and Probl… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[The AI/ML Landscape and P…]
+    S1[Responsible and Trustwort…]
+    S2[Neural Networks and Backp…]
+    S3[Scaling Laws and Compute …]
+    S4[Data Engineering and Feat…]
+    S5[Evaluation, Metrics and E…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 2. Component - The AI/ML Landscape and Problem Framing** (plantuml). Figure: Component view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Component - The AI/ML Landscape and Problem Framing** (mermaid). Figure: Component view for The AI/ML Landscape and Problem Framing. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -387,81 +402,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep The AI/ML Landscape and Problem Framing logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven The AI/ML Landscape and Problem Framing component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for The AI/ML Landscape and Problem Framing
+### Listing: Implementing a The AI/ML Landscape and Problem Framing component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class TheLandscapeConfig:
+    """Configuration for the The AI/ML Landscape and Problem Framing component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for The AI/ML Landscape and Problem Framing."""
+class TheLandscape:
+    """A minimal, production-shaped implementation of The AI/ML Landscape and Problem Framing."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: TheLandscapeConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheLandscape failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The AI/ML Landscape and Problem Framing goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “The AI/ML Landscape and Problem Framing”?
-   - A. Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
+   - A. It removes all security and governance requirements.
    - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** The AI/ML Landscape and Problem Framing: Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
-2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - B. It applies exclusively to image data.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. Automate data validation to catch schema and distribution drift before training.
+   - C. Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
    - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-4. *(Discussion)* How does The AI/ML Landscape and Problem Framing interact with security and governance requirements?
+   - **Answer: C.** The AI/ML Landscape and Problem Framing: Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
+2. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Establish a held-out test set early and never touch it during development.
+   - B. It removes all security and governance requirements.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Best practice: Establish a held-out test set early and never touch it during development.
+3. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Prefer the simplest model that meets the requirement before adding complexity.
+   - B. It removes all security and governance requirements.
+   - C. Ignoring class imbalance and reporting misleading accuracy.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+4. *(Discussion)* Explain The AI/ML Landscape and Problem Framing and why it matters in a production AI Foundations system.
    - **Model answer:** A strong answer defines the ai/ml landscape and problem framing (Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -473,66 +482,82 @@ _This chapter examines linear algebra for machine learning within AI Foundations
 
 ## Introduction
 
-Linear Algebra for Machine Learning can be characterised as vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. It is foundational: later capabilities in AI Foundations are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Linear Algebra for Machine Learning refers to vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Linear Algebra for Machine Learning can be characterised as vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Formally, Linear Algebra for Machine Learning addresses vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, linear algebra for machine learning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, linear algebra for machine learning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Teams that master this consistently ship more reliable AI Foundations systems at lower cost.
 
-Linear Algebra for Machine Learning cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Linear Algebra for Machine Learning cannot be understood in isolation from from notebook to production. Recall that from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Linear Algebra for Machine Learning cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Linear Algebra for Machine Learning cannot be understood in isolation from data engineering and feature pipelines. Recall that data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to linear algebra for machine learning. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to linear algebra for machine learning. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around linear algebra for machine learning are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around linear algebra for machine learning are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Linear Algebra for Machine Learning sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Linear Algebra for Machine Learning separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```plantuml
-@startuml
-title Component - Linear Algebra for Machine Learning
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Linear Algebra for Machine Le… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Linear Algebra for Machin…]
+    S1[From Notebook to Producti…]
+    S2[Data Engineering and Feat…]
+    S3[Regularisation and Genera…]
+    S4[Evaluation, Metrics and E…]
+    S5[The Modern AI Stack]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 3. Component - Linear Algebra for Machine Learning** (plantuml). Figure: Component view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 3. Component - Linear Algebra for Machine Learning** (mermaid). Figure: Component view for Linear Algebra for Machine Learning. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into linear algebra for machine learning. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into linear algebra for machine learning. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from notebook to production. Because from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -540,13 +565,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into linear algebra for machine learning. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into linear algebra for machine learning. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -554,7 +579,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply linear algebra for machine learning as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply linear algebra for machine learning as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -627,63 +652,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Linear Algebra for Machine Learning component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Linear Algebra for Machine Learning with a regression gate
+### Listing: Implementing a Linear Algebra for Machine Learning component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class LinearAlgebraForConfig:
+    """Configuration for the Linear Algebra for Machine Learning component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Linear Algebra for Machine Learning output against references with a simple exact-match metric.
+class LinearAlgebraFor:
+    """A minimal, production-shaped implementation of Linear Algebra for Machine Learning."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: LinearAlgebraForConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"LinearAlgebraFor failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Linear Algebra for Machine Learning goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Linear Algebra for Machine Learning”?
-   - A. Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Linear Algebra for Machine Learning: Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
+   - A. It removes all security and governance requirements.
+   - B. Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Linear Algebra for Machine Learning: Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
 2. Which of the following is a recommended best practice when working with AI Foundations?
    - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Track every experiment with code, data and hyper-parameter provenance.
-   - **Answer: D.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It applies exclusively to image data.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It is only relevant to academic research, not production.
-   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+   - A. It makes the system slower but has no other effect.
+   - B. Optimising a proxy metric that diverges from the true business objective.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
 4. *(Discussion)* How does Linear Algebra for Machine Learning interact with security and governance requirements?
    - **Model answer:** A strong answer defines linear algebra for machine learning (Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
@@ -696,33 +732,33 @@ _This chapter examines probability, statistics and bayesian reasoning within AI 
 
 ## Introduction
 
-Formally, Probability, Statistics and Bayesian Reasoning addresses random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Probability, Statistics and Bayesian Reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Probability, Statistics and Bayesian Reasoning refers to random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Probability, Statistics and Bayesian Reasoning is best understood as random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, probability, statistics and bayesian reasoning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, probability, statistics and bayesian reasoning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
 
-Probability, Statistics and Bayesian Reasoning cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Probability, Statistics and Bayesian Reasoning cannot be understood in isolation from data engineering and feature pipelines. Recall that data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Probability, Statistics and Bayesian Reasoning cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Probability, Statistics and Bayesian Reasoning cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to probability, statistics and bayesian reasoning. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to probability, statistics and bayesian reasoning. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around probability, statistics and bayesian reasoning are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around probability, statistics and bayesian reasoning are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Probability, Statistics and Bayesian Reasoning sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Probability, Statistics and Bayesian Reasoning separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -732,16 +768,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="RAG Architecture - Probability, Statistics and Bayesian Rea…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="AI Foundations" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The AI/ML Landscape and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Probability, Statisti…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Evaluation, Metrics and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Model Families and Indu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Responsible and Trustwo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -751,40 +787,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 4. RAG Architecture - Probability, Statistics and Bayesian Reasoning** (drawio). Figure: RAG Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Deployment - Probability, Statistics and Bayesian Reasoning
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 5. Deployment - Probability, Statistics and Bayesian Reasoning** (plantuml). Figure: Deployment view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 4. RAG Architecture - Probability, Statistics and Bayesian Reasoning** (drawio). Figure: RAG Architecture view for Probability, Statistics and Bayesian Reasoning. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into probability, statistics and bayesian reasoning. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into probability, statistics and bayesian reasoning. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with data engineering and feature pipelines. Because data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -792,13 +805,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into probability, statistics and bayesian reasoning. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into probability, statistics and bayesian reasoning. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the ai/ml landscape and problem framing. Because the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -806,7 +819,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply probability, statistics and bayesian reasoning as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply probability, statistics and bayesian reasoning as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -879,63 +892,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Probability, Statistics and Bayesian Reasoning logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Probability, Statistics and Bayesian Reasoning with a regression gate
+### Listing: A composable processing pipeline for Probability, Statistics and Bayesian Reasoning
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Probability, Statistics and Bayesian Reasoning output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Probability, Statistics and Bayesian Reasoning."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Probability, Statistics and Bayesian Reasoning”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Probability, Statistics and Bayesian Reasoning: Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
-2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
+   - A. Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
+   - B. It makes the system slower but has no other effect.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+   - **Answer: A.** Probability, Statistics and Bayesian Reasoning: Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
+2. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. It is only relevant to academic research, not production.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+   - A. It makes the system slower but has no other effect.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
 4. *(Discussion)* How would you test and monitor Probability, Statistics and Bayesian Reasoning in production?
    - **Model answer:** A strong answer defines probability, statistics and bayesian reasoning (Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
@@ -948,94 +978,80 @@ _This chapter examines optimisation and gradient descent within AI Foundations. 
 
 ## Introduction
 
-Optimisation and Gradient Descent refers to loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. It is foundational: later capabilities in AI Foundations are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Optimisation and Gradient Descent can be characterised as loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Optimisation and Gradient Descent can be characterised as loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Optimisation and Gradient Descent refers to loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, optimisation and gradient descent is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. This concept recurs throughout the AI Foundations lifecycle, from design to operations.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, optimisation and gradient descent is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
 
-Optimisation and Gradient Descent cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Optimisation and Gradient Descent cannot be understood in isolation from data engineering and feature pipelines. Recall that data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Optimisation and Gradient Descent cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Optimisation and Gradient Descent cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to optimisation and gradient descent. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, feature store as the single source of truth for online/offline parity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to optimisation and gradient descent. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around optimisation and gradient descent are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around optimisation and gradient descent are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Optimisation and Gradient Descent sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Optimisation and Gradient Descent separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Deployment - Optimisation and Gradient Descent
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Deployment">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Deployment - Optimisation and Gradient Descent" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Optimisation and Grad…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="From Notebook to Produc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Evaluation, Metrics and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 6. Deployment - Optimisation and Gradient Descent** (plantuml). Figure: Deployment view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 5. Deployment - Optimisation and Gradient Descent** (drawio). Figure: Deployment view for Optimisation and Gradient Descent. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">DevOps Pipeline - Optimisation and Gradient Descent</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="7-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn2a260ff" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b21a8"/><stop offset="1" stop-color="#7e22ce"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn2a260ff)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn2a260ff)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">DevOps Pipeline - Optimisation and Gradient Descent</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#6b21a8" filter="url(#sh)"/><text x="104" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Optimisation and</text><text x="104" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Gradient Descent</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#7e22ce" filter="url(#sh)"/><text x="262" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Data Engineering and</text><text x="262" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Feature Pipelines</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#9333ea" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Linear Algebra for</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Machine Learning</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#a21caf" filter="url(#sh)"/><text x="578" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">From Notebook to</text><text x="578" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#c026d3" filter="url(#sh)"/><text x="736" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation, Metrics</text><text x="736" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Experimental</text><text x="736" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Design</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Optimisation and Gradient Descent  •  DevOps Pipeline</text></svg>
 
 </div>
 
-**Figure 7. DevOps Pipeline - Optimisation and Gradient Descent** (svg). Figure: DevOps Pipeline view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 6. DevOps Pipeline - Optimisation and Gradient Descent** (svg). Figure: DevOps Pipeline view for Optimisation and Gradient Descent. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into optimisation and gradient descent. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into optimisation and gradient descent. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with data engineering and feature pipelines. Because data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1045,11 +1061,11 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 Having established the essentials, we now go deeper into optimisation and gradient descent. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the modern ai stack. Because the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from notebook to production. Because from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1057,7 +1073,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply optimisation and gradient descent as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply optimisation and gradient descent as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1130,75 +1146,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Optimisation and Gradient Descent component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
+Pipelines keep Optimisation and Gradient Descent logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Optimisation and Gradient Descent component
+### Listing: A composable processing pipeline for Optimisation and Gradient Descent
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class OptimisationAndGradientConfig:
-    """Configuration for the Optimisation and Gradient Descent component in a AI Foundations system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class OptimisationAndGradient:
-    """A minimal, production-shaped implementation of Optimisation and Gradient Descent."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Optimisation and Gradient Descent."""
 
-    def __init__(self, config: OptimisationAndGradientConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"OptimisationAndGradient failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Optimisation and Gradient Descent goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Optimisation and Gradient Descent”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Optimisation and Gradient Descent: Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
+   - A. Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Optimisation and Gradient Descent: Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Optimising a proxy metric that diverges from the true business objective.
+   - C. Prefer the simplest model that meets the requirement before adding complexity.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: C.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Automate data validation to catch schema and distribution drift before training.
-   - D. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - **Answer: D.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-4. *(Discussion)* How does Optimisation and Gradient Descent interact with security and governance requirements?
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. Automate data validation to catch schema and distribution drift before training.
+   - C. It makes the system slower but has no other effect.
+   - D. Track every experiment with code, data and hyper-parameter provenance.
+   - **Answer: A.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+4. *(Discussion)* How would you test and monitor Optimisation and Gradient Descent in production?
    - **Model answer:** A strong answer defines optimisation and gradient descent (Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1210,63 +1232,72 @@ _This chapter examines data engineering and feature pipelines within AI Foundati
 
 ## Introduction
 
-At its core, Data Engineering and Feature Pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Data Engineering and Feature Pipelines is best understood as ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Data Engineering and Feature Pipelines refers to ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Data Engineering and Feature Pipelines is best understood as ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, data engineering and feature pipelines is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Teams that master this consistently ship more reliable AI Foundations systems at lower cost.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, data engineering and feature pipelines is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions.
 
-Data Engineering and Feature Pipelines cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Data Engineering and Feature Pipelines cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Data Engineering and Feature Pipelines cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Data Engineering and Feature Pipelines cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to data engineering and feature pipelines. The first, reproducible pipelines pinned by data, code and environment hashes, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to data engineering and feature pipelines. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around data engineering and feature pipelines are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around data engineering and feature pipelines are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Data Engineering and Feature Pipelines separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+A robust architecture for Data Engineering and Feature Pipelines is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+```xml
+<mxfile host="ai-university">
+  <diagram name="DevOps Pipeline">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="DevOps Pipeline - Data Engineering and Feature Pipelines" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Data Engineering and …" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Representation Learning…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Responsible and Trustwo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Neural Networks and Bac…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 8. DevOps Pipeline - Data Engineering and Feature Pipelines** (mermaid). Figure: DevOps Pipeline view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 7. DevOps Pipeline - Data Engineering and Feature Pipelines** (drawio). Figure: DevOps Pipeline view for Data Engineering and Feature Pipelines. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into data engineering and feature pipelines. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into data engineering and feature pipelines. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with regularisation and generalisation. Because regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1276,11 +1307,11 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 Having established the essentials, we now go deeper into data engineering and feature pipelines. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with regularisation and generalisation. Because regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with model families and inductive bias. Because model families and inductive bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1288,7 +1319,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply data engineering and feature pipelines as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply data engineering and feature pipelines as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1361,40 +1392,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Data Engineering and Feature Pipelines logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Data Engineering and Feature Pipelines with a regression gate
+### Listing: A composable processing pipeline for Data Engineering and Feature Pipelines
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Data Engineering and Feature Pipelines output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Data Engineering and Feature Pipelines."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -1403,22 +1451,22 @@ if __name__ == "__main__":
 1. In the context of AI Foundations, which statement best describes “Data Engineering and Feature Pipelines”?
    - A. Ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program.
    - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Data Engineering and Feature Pipelines: Ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It applies exclusively to image data.
-   - B. Optimising a proxy metric that diverges from the true business objective.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Prefer the simplest model that meets the requirement before adding complexity.
-   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* How would you test and monitor Data Engineering and Feature Pipelines in production?
+   - A. Prefer the simplest model that meets the requirement before adding complexity.
+   - B. Establish a held-out test set early and never touch it during development.
+   - C. Ignoring class imbalance and reporting misleading accuracy.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+4. *(Discussion)* Walk through how you would design Data Engineering and Feature Pipelines for an enterprise AI Foundations workload.
    - **Model answer:** A strong answer defines data engineering and feature pipelines (Ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1430,71 +1478,59 @@ _This chapter examines model families and inductive bias within AI Foundations. 
 
 ## Introduction
 
-Formally, Model Families and Inductive Bias addresses linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Model Families and Inductive Bias can be characterised as linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. This concept recurs throughout the AI Foundations lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Model Families and Inductive Bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+At its core, Model Families and Inductive Bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, model families and inductive bias is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, model families and inductive bias is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
 
-Model Families and Inductive Bias cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Model Families and Inductive Bias cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Model Families and Inductive Bias cannot be understood in isolation from the modern ai stack. Recall that the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Model Families and Inductive Bias cannot be understood in isolation from the modern ai stack. Recall that the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to model families and inductive bias. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to model families and inductive bias. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around model families and inductive bias are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around model families and inductive bias are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Model Families and Inductive Bias separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+From an architectural standpoint, Model Families and Inductive Bias sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Operating Model - Model Families and Inductive Bias</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="7-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8e890ef" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a21caf"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8e890ef)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8e890ef)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Model Families and Inductive Bias</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#a21caf"/><text x="345" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Model Families</text><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">and Inductive</text><text x="345" y="183" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Bias</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#c026d3"/><text x="495" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Optimisation and</text><text x="495" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Gradient Descent</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#d946ef"/><text x="345" y="312" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">The Modern AI</text><text x="345" y="326" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Stack</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#6b21a8"/><text x="495" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Representation</text><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Learning and</text><text x="495" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Embeddings</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Model Families and Inductive Bias  •  Operating Model</text></svg>
 
 </div>
 
-**Figure 9. Operating Model - Model Families and Inductive Bias** (svg). Figure: Operating Model view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 8. Operating Model - Model Families and Inductive Bias** (svg). Figure: Operating Model view for Model Families and Inductive Bias. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="tree" data-pal="5-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn3ed594c" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn3ed594c)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn3ed594c)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Model Families and Inductive Bias</text><rect x="330" y="70" width="180" height="48" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="88" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Model Families and Inductive</text><text x="420" y="100" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Bias</text><path d="M420,118 C420,170 108,160 108,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="30" y="210" width="156" height="46" rx="11" fill="#1e3a8a" filter="url(#sh)"/><text x="108" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Model Families and Inductive</text><text x="108" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Bias</text><line x1="108" y1="256" x2="108" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="38" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="108" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Model Families and Inductive</text><text x="108" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Bias</text><path d="M420,118 C420,170 316,160 316,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="238" y="210" width="156" height="46" rx="11" fill="#1d4ed8" filter="url(#sh)"/><text x="316" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Optimisation and Gradient</text><text x="316" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Descent</text><line x1="316" y1="256" x2="316" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="246" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="316" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Model Families and Inductive</text><text x="316" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Bias</text><path d="M420,118 C420,170 524,160 524,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="446" y="210" width="156" height="46" rx="11" fill="#2563eb" filter="url(#sh)"/><text x="524" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Modern AI Stack</text><line x1="524" y1="256" x2="524" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="454" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="524" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Model Families and Inductive</text><text x="524" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Bias</text><path d="M420,118 C420,170 732,160 732,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="654" y="210" width="156" height="46" rx="11" fill="#3b82f6" filter="url(#sh)"/><text x="732" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Representation Learning and</text><text x="732" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Embeddings</text><line x1="732" y1="256" x2="732" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="662" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="732" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Model Families and Inductive</text><text x="732" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Bias</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Model Families and Inductive Bias  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 9. Knowledge Graph - Model Families and Inductive Bias** (svg). Figure: Knowledge Graph view for Model Families and Inductive Bias. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into model families and inductive bias. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into model families and inductive bias. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1502,13 +1538,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into model families and inductive bias. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into model families and inductive bias. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with responsible and trustworthy ai by design. Because responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1516,7 +1552,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply model families and inductive bias as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply model families and inductive bias as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1646,24 +1682,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Model Families and Inductive Bias”?
-   - A. Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Model Families and Inductive Bias: Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Model Families and Inductive Bias: Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
+   - A. It is only relevant to academic research, not production.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Prefer the simplest model that meets the requirement before adding complexity.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: C.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
    - A. Ignoring class imbalance and reporting misleading accuracy.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Establish a held-out test set early and never touch it during development.
    - **Answer: A.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-4. *(Discussion)* Explain Model Families and Inductive Bias and why it matters in a production AI Foundations system.
+4. *(Discussion)* What trade-offs would you weigh when implementing Model Families and Inductive Bias?
    - **Model answer:** A strong answer defines model families and inductive bias (Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1675,23 +1711,23 @@ _This chapter examines neural networks and backpropagation within AI Foundations
 
 ## Introduction
 
-At its core, Neural Networks and Backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Neural Networks and Backpropagation can be characterised as perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Neural Networks and Backpropagation as perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Neural Networks and Backpropagation is best understood as perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, neural networks and backpropagation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, neural networks and backpropagation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
 
-Neural Networks and Backpropagation cannot be understood in isolation from model families and inductive bias. Recall that model families and inductive bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Neural Networks and Backpropagation cannot be understood in isolation from data engineering and feature pipelines. Recall that data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Neural Networks and Backpropagation cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Neural Networks and Backpropagation cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to neural networks and backpropagation. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, feature store as the single source of truth for online/offline parity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to neural networks and backpropagation. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around neural networks and backpropagation are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around neural networks and backpropagation are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1705,27 +1741,27 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 ```mermaid
 graph LR
-  D(("AI Foundations"))
-  D --- C0[The AI/ML Landscape a…]
-  D --- C1[Linear Algebra for Ma…]
-  D --- C2[Probability, Statisti…]
-  D --- C3[Optimisation and Grad…]
-  D --- C4[Data Engineering and …]
+  D(("Neural Networks and…"))
+  D --- C0[Neural Networks and B…]
+  D --- C1[Data Engineering and …]
+  D --- C2[Representation Learni…]
+  D --- C3[Regularisation and Ge…]
+  D --- C4[Responsible and Trust…]
   C0 --- C1
   C1 --- C2
 ```
 
-**Figure 10. Knowledge Graph - Neural Networks and Backpropagation** (mermaid). Figure: Knowledge Graph view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. Knowledge Graph - Neural Networks and Backpropagation** (mermaid). Figure: Knowledge Graph view for Neural Networks and Backpropagation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into neural networks and backpropagation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into neural networks and backpropagation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with model families and inductive bias. Because model families and inductive bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with data engineering and feature pipelines. Because data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1733,13 +1769,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into neural networks and backpropagation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into neural networks and backpropagation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with responsible and trustworthy ai by design. Because responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1747,7 +1783,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply neural networks and backpropagation as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply neural networks and backpropagation as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1820,40 +1856,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Neural Networks and Backpropagation component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Neural Networks and Backpropagation with a regression gate
+### Listing: Implementing a Neural Networks and Backpropagation component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class NeuralNetworksAndConfig:
+    """Configuration for the Neural Networks and Backpropagation component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Neural Networks and Backpropagation output against references with a simple exact-match metric.
+class NeuralNetworksAnd:
+    """A minimal, production-shaped implementation of Neural Networks and Backpropagation."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: NeuralNetworksAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"NeuralNetworksAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Neural Networks and Backpropagation goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
@@ -1861,23 +1908,23 @@ if __name__ == "__main__":
 
 1. In the context of AI Foundations, which statement best describes “Neural Networks and Backpropagation”?
    - A. Perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Neural Networks and Backpropagation: Perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. Track every experiment with code, data and hyper-parameter provenance.
+   - C. It applies exclusively to image data.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: B.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. Establish a held-out test set early and never touch it during development.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* How would you test and monitor Neural Networks and Backpropagation in production?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+4. *(Discussion)* What trade-offs would you weigh when implementing Neural Networks and Backpropagation?
    - **Model answer:** A strong answer defines neural networks and backpropagation (Perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1889,23 +1936,23 @@ _This chapter examines evaluation, metrics and experimental design within AI Fou
 
 ## Introduction
 
-At its core, Evaluation, Metrics and Experimental Design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Evaluation, Metrics and Experimental Design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Evaluation, Metrics and Experimental Design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Evaluation, Metrics and Experimental Design is best understood as train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, evaluation, metrics and experimental design is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, evaluation, metrics and experimental design is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. This concept recurs throughout the AI Foundations lifecycle, from design to operations.
 
-Evaluation, Metrics and Experimental Design cannot be understood in isolation from the ai/ml landscape and problem framing. Recall that the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Evaluation, Metrics and Experimental Design cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Evaluation, Metrics and Experimental Design cannot be understood in isolation from the modern ai stack. Recall that the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Evaluation, Metrics and Experimental Design cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to evaluation, metrics and experimental design. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation, metrics and experimental design. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, feature store as the single source of truth for online/offline parity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation, metrics and experimental design are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation, metrics and experimental design are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1915,45 +1962,25 @@ Concretely, the principal building blocks include the ai/ml landscape and proble
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">CI/CD Pipeline - Evaluation, Metrics and Experimental D…</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="roadmap" data-pal="9-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn9848a89" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9d174d"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn9848a89)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn9848a89)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Evaluation, Metrics and Experimental Design</text><polygon points="28,204 206,204 224,234 206,264 28,264 46,234" fill="#9d174d"/><text x="126" y="228" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation, Metrics</text><text x="126" y="240" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and Experimental</text><text x="126" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q1</text><polygon points="224,204 402,204 420,234 402,264 224,264 242,234" fill="#db2777"/><text x="322" y="228" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Representation</text><text x="322" y="240" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Learning and</text><text x="322" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q2</text><polygon points="420,204 598,204 616,234 598,264 420,264 438,234" fill="#ec4899"/><text x="518" y="228" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Linear Algebra for</text><text x="518" y="240" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Machine Learning</text><text x="518" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q3</text><polygon points="616,204 794,204 812,234 794,264 616,264 634,234" fill="#f472b6"/><text x="714" y="228" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Regularisation and</text><text x="714" y="240" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Generalisation</text><text x="714" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Q4</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Evaluation, Metrics and Experimental Design  •  CI/CD Pipeline</text></svg>
 
 </div>
 
-**Figure 11. CI/CD Pipeline - Evaluation, Metrics and Experimental Design** (svg). Figure: CI/CD Pipeline view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 11. CI/CD Pipeline - Evaluation, Metrics and Experimental Design** (svg). Figure: CI/CD Pipeline view for Evaluation, Metrics and Experimental Design. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation, metrics and experimental design. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation, metrics and experimental design. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the ai/ml landscape and problem framing. Because the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1961,9 +1988,9 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation, metrics and experimental design. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation, metrics and experimental design. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1975,7 +2002,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply evaluation, metrics and experimental design as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply evaluation, metrics and experimental design as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2048,63 +2075,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Evaluation, Metrics and Experimental Design component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Evaluation, Metrics and Experimental Design with a regression gate
+### Listing: Implementing a Evaluation, Metrics and Experimental Design component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class MetricsAndConfig:
+    """Configuration for the Evaluation, Metrics and Experimental Design component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Evaluation, Metrics and Experimental Design output against references with a simple exact-match metric.
+class MetricsAnd:
+    """A minimal, production-shaped implementation of Evaluation, Metrics and Experimental Design."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: MetricsAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"MetricsAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Evaluation, Metrics and Experimental Design goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Evaluation, Metrics and Experimental Design”?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. Train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Evaluation, Metrics and Experimental Design: Train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Ignoring class imbalance and reporting misleading accuracy.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Measure calibration, not just accuracy, for decision-support systems.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It is only relevant to academic research, not production.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: D.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+   - A. It is only relevant to academic research, not production.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
 4. *(Discussion)* Explain Evaluation, Metrics and Experimental Design and why it matters in a production AI Foundations system.
    - **Model answer:** A strong answer defines evaluation, metrics and experimental design (Train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
@@ -2117,101 +2155,72 @@ _This chapter examines regularisation and generalisation within AI Foundations. 
 
 ## Introduction
 
-At its core, Regularisation and Generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+At its core, Regularisation and Generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Regularisation and Generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Regularisation and Generalisation refers to overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, regularisation and generalisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Teams that master this consistently ship more reliable AI Foundations systems at lower cost.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, regularisation and generalisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. This concept recurs throughout the AI Foundations lifecycle, from design to operations.
 
-Regularisation and Generalisation cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Regularisation and Generalisation cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Regularisation and Generalisation cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Regularisation and Generalisation cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to regularisation and generalisation. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to regularisation and generalisation. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, feature store as the single source of truth for online/offline parity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around regularisation and generalisation are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around regularisation and generalisation are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Regularisation and Generalisation is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+From an architectural standpoint, Regularisation and Generalisation sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["AI Foundations Platform"]
-    GW[Gateway / Orchestrator]
-    S0[The AI/ML Landscape and P…]
-    S1[Linear Algebra for Machin…]
-    S2[Probability, Statistics a…]
-    S3[Optimisation and Gradient…]
-    S4[Data Engineering and Feat…]
-    S5[Model Families and Induct…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Agent Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Agent Architecture - Regularisation and Generalisation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Regularisation and Ge…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Regularisation and Gene…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Representation Learning…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Evaluation, Metrics and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Scaling Laws and Comput…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 12. Agent Architecture - Regularisation and Generalisation** (mermaid). Figure: Agent Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant U as User
-  participant G as Gateway
-  participant P as Processor
-  participant D as Data Store
-  U->>G: Submit request
-  G->>G: Validate & authorise
-  G->>P: Dispatch task
-  P->>D: Retrieve context
-  D-->>P: Return records
-  P->>P: Process & reason
-  P-->>G: Result + metadata
-  G-->>U: Response (with provenance)
-```
-
-**Figure 13. Sequence - Regularisation and Generalisation** (mermaid). Figure: Sequence view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. Agent Architecture - Regularisation and Generalisation** (drawio). Figure: Agent Architecture view for Regularisation and Generalisation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into regularisation and generalisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into regularisation and generalisation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2219,13 +2228,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into regularisation and generalisation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into regularisation and generalisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the modern ai stack. Because the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2233,7 +2242,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-Consider a concrete scenario. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply regularisation and generalisation as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply regularisation and generalisation as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2306,75 +2315,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Regularisation and Generalisation component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
+Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Regularisation and Generalisation component
+### Listing: Evaluating Regularisation and Generalisation with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class RegularisationAndGeneralisationConfig:
-    """Configuration for the Regularisation and Generalisation component in a AI Foundations system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class RegularisationAndGeneralisation:
-    """A minimal, production-shaped implementation of Regularisation and Generalisation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Regularisation and Generalisation output against references with a simple exact-match metric.
 
-    def __init__(self, config: RegularisationAndGeneralisationConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"RegularisationAndGeneralisation failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Regularisation and Generalisation goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Regularisation and Generalisation”?
-   - A. It applies exclusively to image data.
+   - A. It guarantees deterministic output regardless of input.
    - B. Overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models.
    - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
    - **Answer: B.** Regularisation and Generalisation: Overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models.
 2. Which of the following is a recommended best practice when working with AI Foundations?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. Automate data validation to catch schema and distribution drift before training.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: B.** Best practice: Automate data validation to catch schema and distribution drift before training.
+   - B. It applies exclusively to image data.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Automate data validation to catch schema and distribution drift before training.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. Establish a held-out test set early and never touch it during development.
-   - D. Optimising a proxy metric that diverges from the true business objective.
-   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* How would you test and monitor Regularisation and Generalisation in production?
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* How does Regularisation and Generalisation interact with security and governance requirements?
    - **Model answer:** A strong answer defines regularisation and generalisation (Overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2386,21 +2384,21 @@ _This chapter examines representation learning and embeddings within AI Foundati
 
 ## Introduction
 
-In practical terms, Representation Learning and Embeddings is best understood as learning compact, transferable representations that power transfer learning and downstream tasks across modalities. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+We define Representation Learning and Embeddings as learning compact, transferable representations that power transfer learning and downstream tasks across modalities. This concept recurs throughout the AI Foundations lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Representation Learning and Embeddings as learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Representation Learning and Embeddings addresses learning compact, transferable representations that power transfer learning and downstream tasks across modalities. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, representation learning and embeddings is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. This concept recurs throughout the AI Foundations lifecycle, from design to operations.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, representation learning and embeddings is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
 
-Representation Learning and Embeddings cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Representation Learning and Embeddings cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Representation Learning and Embeddings cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Representation Learning and Embeddings cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to representation learning and embeddings. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to representation learning and embeddings. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around representation learning and embeddings are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
@@ -2414,69 +2412,39 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```plantuml
-@startuml
-title Sequence - Representation Learning and Embeddings
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
-@enduml
+```mermaid
+sequenceDiagram
+  autonumber
+  participant U as User
+  participant G as Gateway
+  participant P as Processor
+  participant D as Data Store
+  U->>G: Submit request
+  G->>G: Validate & authorise
+  G->>P: Dispatch task
+  P->>D: Retrieve context
+  D-->>P: Return records
+  P->>P: Process & reason
+  P-->>G: Result + metadata
+  G-->>U: Response (with provenance)
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+**Figure 13. Sequence - Representation Learning and Embeddings** (mermaid). Figure: Sequence view for Representation Learning and Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 14. Sequence - Representation Learning and Embeddings** (plantuml). Figure: Sequence view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Data Flow - Representation Learning and Embeddings</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
-
-</div>
-
-**Figure 15. Data Flow - Representation Learning and Embeddings** (svg). Figure: Data Flow view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 14. Data Flow - Representation Learning and Embeddings** (mermaid). Figure: Data Flow view for Representation Learning and Embeddings. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into representation learning and embeddings. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
-
-In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Goodfellow, Bengio & Courville — Deep Learning (MIT Press) and Bishop — Pattern Recognition and Machine Learning (Springer). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into representation learning and embeddings. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -2484,7 +2452,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaling laws and compute economics. Because scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Goodfellow, Bengio & Courville — Deep Learning (MIT Press) and Bishop — Pattern Recognition and Machine Learning (Springer). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into representation learning and embeddings. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+
+In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2492,7 +2474,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply representation learning and embeddings as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply representation learning and embeddings as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2622,24 +2604,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Representation Learning and Embeddings”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
    - C. Learning compact, transferable representations that power transfer learning and downstream tasks across modalities.
-   - D. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
    - **Answer: C.** Representation Learning and Embeddings: Learning compact, transferable representations that power transfer learning and downstream tasks across modalities.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It applies exclusively to image data.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Automate data validation to catch schema and distribution drift before training.
-   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
-3. Which of the following is a common pitfall to avoid in AI Foundations?
    - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - B. Measure calibration, not just accuracy, for decision-support systems.
+   - C. It removes all security and governance requirements.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-4. *(Discussion)* How does Representation Learning and Embeddings interact with security and governance requirements?
+   - **Answer: B.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+3. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Establish a held-out test set early and never touch it during development.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. It is only relevant to academic research, not production.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+4. *(Discussion)* How would you test and monitor Representation Learning and Embeddings in production?
    - **Model answer:** A strong answer defines representation learning and embeddings (Learning compact, transferable representations that power transfer learning and downstream tasks across modalities.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2651,7 +2633,7 @@ _This chapter examines responsible and trustworthy ai by design within AI Founda
 
 ## Introduction
 
-We define Responsible and Trustworthy AI by Design as fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. This concept recurs throughout the AI Foundations lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, Responsible and Trustworthy AI by Design is best understood as fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
@@ -2659,68 +2641,43 @@ This chapter builds intuition first, then formalises the ideas, derives an archi
 
 Formally, Responsible and Trustworthy AI by Design addresses fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, responsible and trustworthy ai by design is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, responsible and trustworthy ai by design is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
 
-Responsible and Trustworthy AI by Design cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Responsible and Trustworthy AI by Design cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Responsible and Trustworthy AI by Design cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Responsible and Trustworthy AI by Design cannot be understood in isolation from model families and inductive bias. Recall that model families and inductive bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to responsible and trustworthy ai by design. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to responsible and trustworthy ai by design. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, feature store as the single source of truth for online/offline parity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around responsible and trustworthy ai by design are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around responsible and trustworthy ai by design are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Responsible and Trustworthy AI by Design separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+A robust architecture for Responsible and Trustworthy AI by Design is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
-```
+<div class="diagram-svg">
 
-**Figure 16. Data Flow - Responsible and Trustworthy AI by Design** (mermaid). Figure: Data Flow view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="9-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn897ee75" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9d174d"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn897ee75)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn897ee75)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Data Flow - Responsible and Trustworthy AI by Design</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#9d174d"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#9d174d" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Responsible and</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Trustworthy AI by</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#db2777"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#db2777" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Regularisation and</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Generalisation</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#ec4899"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#ec4899" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Model Families and</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Inductive Bias</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#f472b6"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#f472b6" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Representation</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Learning and</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#fb7185"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#fb7185" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Optimisation and</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Gradient Descent</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Responsible and Trustworthy AI by Design  •  Data Flow</text></svg>
 
-```mermaid
-classDiagram
-  class AFService {
-    +configure(config)
-    +process(request) Response
-    +evaluate(sample) Metrics
-  }
-  class Repository {
-    +get(id) Entity
-    +put(entity)
-  }
-  class Policy {
-    +authorise(ctx) bool
-  }
-  AFService --> Repository
-  AFService --> Policy
-```
+</div>
 
-**Figure 17. Class - Responsible and Trustworthy AI by Design** (mermaid). Figure: Class view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 15. Data Flow - Responsible and Trustworthy AI by Design** (svg). Figure: Data Flow view for Responsible and Trustworthy AI by Design. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into responsible and trustworthy ai by design. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into responsible and trustworthy ai by design. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with regularisation and generalisation. Because regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2728,13 +2685,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into responsible and trustworthy ai by design. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into responsible and trustworthy ai by design. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2742,7 +2699,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply responsible and trustworthy ai by design as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply responsible and trustworthy ai by design as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2815,64 +2772,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Responsible and Trustworthy AI by Design component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Responsible and Trustworthy AI by Design with a regression gate
+### Listing: Implementing a Responsible and Trustworthy AI by Design component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class ResponsibleAndTrustworthyConfig:
+    """Configuration for the Responsible and Trustworthy AI by Design component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Responsible and Trustworthy AI by Design output against references with a simple exact-match metric.
+class ResponsibleAndTrustworthy:
+    """A minimal, production-shaped implementation of Responsible and Trustworthy AI by Design."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: ResponsibleAndTrustworthyConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"ResponsibleAndTrustworthy failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Responsible and Trustworthy AI by Design goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Responsible and Trustworthy AI by Design”?
-   - A. It applies exclusively to image data.
+   - A. It is only relevant to academic research, not production.
    - B. Fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. It removes all security and governance requirements.
    - **Answer: B.** Responsible and Trustworthy AI by Design: Fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
-3. Which of the following is a common pitfall to avoid in AI Foundations?
    - A. Establish a held-out test set early and never touch it during development.
-   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - C. It makes the system slower but has no other effect.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It is only relevant to academic research, not production.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: A.** Best practice: Establish a held-out test set early and never touch it during development.
+3. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-4. *(Discussion)* How does Responsible and Trustworthy AI by Design interact with security and governance requirements?
+   - **Answer: C.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+4. *(Discussion)* Describe a failure mode of Responsible and Trustworthy AI by Design and how you would mitigate it.
    - **Model answer:** A strong answer defines responsible and trustworthy ai by design (Fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2884,7 +2852,7 @@ _This chapter examines from notebook to production within AI Foundations. It cov
 
 ## Introduction
 
-From Notebook to Production can be characterised as packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+From Notebook to Production can be characterised as packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. It is foundational: later capabilities in AI Foundations are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
@@ -2892,15 +2860,15 @@ This chapter builds intuition first, then formalises the ideas, derives an archi
 
 From Notebook to Production refers to packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, from notebook to production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, from notebook to production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
 
-From Notebook to Production cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+From Notebook to Production cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-From Notebook to Production cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+From Notebook to Production cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to from notebook to production. The first, reproducible pipelines pinned by data, code and environment hashes, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, feature store as the single source of truth for online/offline parity, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to from notebook to production. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around from notebook to production are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around from notebook to production are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2910,7 +2878,7 @@ Concretely, the principal building blocks include the ai/ml landscape and proble
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```plantuml
 @startuml
@@ -2929,17 +2897,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 18. Class - From Notebook to Production** (plantuml). Figure: Class view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 16. Class - From Notebook to Production** (plantuml). Figure: Class view for From Notebook to Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into from notebook to production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into from notebook to production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with responsible and trustworthy ai by design. Because responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2947,13 +2915,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into from notebook to production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into from notebook to production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the ai/ml landscape and problem framing. Because the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2961,7 +2929,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply from notebook to production as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply from notebook to production as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3092,23 +3060,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of AI Foundations, which statement best describes “From Notebook to Production”?
    - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
-   - **Answer: D.** From Notebook to Production: Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
+   - B. It makes the system slower but has no other effect.
+   - C. Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** From Notebook to Production: Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+   - A. Ignoring class imbalance and reporting misleading accuracy.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
+   - A. Establish a held-out test set early and never touch it during development.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: D.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-4. *(Discussion)* How does From Notebook to Production interact with security and governance requirements?
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+4. *(Discussion)* Explain From Notebook to Production and why it matters in a production AI Foundations system.
    - **Model answer:** A strong answer defines from notebook to production (Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3120,23 +3088,23 @@ _This chapter examines scaling laws and compute economics within AI Foundations.
 
 ## Introduction
 
-In practical terms, Scaling Laws and Compute Economics is best understood as how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Scaling Laws and Compute Economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Scaling Laws and Compute Economics can be characterised as how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Scaling Laws and Compute Economics refers to how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, scaling laws and compute economics is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. This concept recurs throughout the AI Foundations lifecycle, from design to operations.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, scaling laws and compute economics is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
 
-Scaling Laws and Compute Economics cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Scaling Laws and Compute Economics cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Scaling Laws and Compute Economics cannot be understood in isolation from the ai/ml landscape and problem framing. Recall that the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Scaling Laws and Compute Economics cannot be understood in isolation from from notebook to production. Recall that from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to scaling laws and compute economics. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to scaling laws and compute economics. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around scaling laws and compute economics are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around scaling laws and compute economics are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3148,54 +3116,44 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["AI Foundations Platform"]
-    GW[Gateway / Orchestrator]
-    S0[The AI/ML Landscape and P…]
-    S1[Linear Algebra for Machin…]
-    S2[Probability, Statistics a…]
-    S3[Optimisation and Gradient…]
-    S4[Data Engineering and Feat…]
-    S5[Model Families and Induct…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Cloud Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Cloud Architecture - Scaling Laws and Compute Economics" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Scaling Laws and Comp…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Scaling Laws and Comput…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="From Notebook to Produc…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Model Families and Indu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 19. Cloud Architecture - Scaling Laws and Compute Economics** (mermaid). Figure: Cloud Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 17. Cloud Architecture - Scaling Laws and Compute Economics** (drawio). Figure: Cloud Architecture view for Scaling Laws and Compute Economics. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into scaling laws and compute economics. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into scaling laws and compute economics. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with regularisation and generalisation. Because regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3203,13 +3161,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into scaling laws and compute economics. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into scaling laws and compute economics. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3217,7 +3175,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply scaling laws and compute economics as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply scaling laws and compute economics as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3290,81 +3248,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Scaling Laws and Compute Economics logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Scaling Laws and Compute Economics component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Scaling Laws and Compute Economics
+### Listing: Implementing a Scaling Laws and Compute Economics component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class ScalingLawsAndConfig:
+    """Configuration for the Scaling Laws and Compute Economics component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Scaling Laws and Compute Economics."""
+class ScalingLawsAnd:
+    """A minimal, production-shaped implementation of Scaling Laws and Compute Economics."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: ScalingLawsAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"ScalingLawsAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Scaling Laws and Compute Economics goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Scaling Laws and Compute Economics”?
-   - A. It is only relevant to academic research, not production.
-   - B. How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
+   - A. How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
+   - B. It removes all security and governance requirements.
    - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Scaling Laws and Compute Economics: How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
-2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Prefer the simplest model that meets the requirement before adding complexity.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. It is only relevant to academic research, not production.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-4. *(Discussion)* Explain Scaling Laws and Compute Economics and why it matters in a production AI Foundations system.
+   - **Answer: A.** Scaling Laws and Compute Economics: How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
+2. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Measure calibration, not just accuracy, for decision-support systems.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: A.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+3. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: D.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+4. *(Discussion)* How does Scaling Laws and Compute Economics interact with security and governance requirements?
    - **Model answer:** A strong answer defines scaling laws and compute economics (How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3376,23 +3328,23 @@ _This chapter examines the modern ai stack within AI Foundations. It covers fram
 
 ## Introduction
 
-Formally, The Modern AI Stack addresses frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+At its core, The Modern AI Stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-The Modern AI Stack refers to frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define The Modern AI Stack as frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, the modern ai stack is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, the modern ai stack is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
 
-The Modern AI Stack cannot be understood in isolation from representation learning and embeddings. Recall that representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+The Modern AI Stack cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-The Modern AI Stack cannot be understood in isolation from scaling laws and compute economics. Recall that scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+The Modern AI Stack cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to the modern ai stack. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the modern ai stack. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around the modern ai stack are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the modern ai stack are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3402,7 +3354,7 @@ Concretely, the principal building blocks include the ai/ml landscape and proble
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```xml
 <mxfile host="ai-university">
@@ -3412,16 +3364,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Infrastructure - The Modern AI Stack" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="AI Foundations" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The AI/ML Landscape and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="The Modern AI Stack" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="The Modern AI Stack" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Neural Networks and Bac…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Regularisation and Gene…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -3431,46 +3383,25 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 20. Infrastructure - The Modern AI Stack** (drawio). Figure: Infrastructure view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 18. Infrastructure - The Modern AI Stack** (drawio). Figure: Infrastructure view for The Modern AI Stack. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Architecture - The Modern AI Stack" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="AI Foundations" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The AI/ML Landscape and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="11-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn4b09661" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#9f1239"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn4b09661)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn4b09661)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - The Modern AI Stack</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#b45309"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#b45309"/><text x="128" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">The Modern AI</text><text x="128" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Stack</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#9f1239"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#9f1239"/><text x="274" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Neural Networks</text><text x="274" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><text x="274" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Backpropagation</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#4338ca"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#4338ca"/><text x="420" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Linear Algebra</text><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">for Machine</text><text x="420" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Learning</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#0f172a"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#0f172a"/><text x="566" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Regularisation</text><text x="566" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><text x="566" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Generalisation</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#1e40af"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#1e40af"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Probability,</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Statistics and</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Bayesian</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">The Modern AI Stack  •  Architecture</text></svg>
 
-**Figure 21. Architecture - The Modern AI Stack** (drawio). Figure: Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 19. Architecture - The Modern AI Stack** (svg). Figure: Architecture view for The Modern AI Stack. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the modern ai stack. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the modern ai stack. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3478,13 +3409,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into the modern ai stack. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the modern ai stack. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with regularisation and generalisation. Because regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3492,7 +3423,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply the modern ai stack as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply the modern ai stack as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3565,64 +3496,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven The Modern AI Stack component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating The Modern AI Stack with a regression gate
+### Listing: Implementing a The Modern AI Stack component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class TheModernAiConfig:
+    """Configuration for the The Modern AI Stack component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score The Modern AI Stack output against references with a simple exact-match metric.
+class TheModernAi:
+    """A minimal, production-shaped implementation of The Modern AI Stack."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: TheModernAiConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheModernAi failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The Modern AI Stack goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “The Modern AI Stack”?
-   - A. Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** The Modern AI Stack: Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** The Modern AI Stack: Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Prefer the simplest model that meets the requirement before adding complexity.
-   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: A.** Best practice: Automate data validation to catch schema and distribution drift before training.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Automate data validation to catch schema and distribution drift before training.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-4. *(Discussion)* Explain The Modern AI Stack and why it matters in a production AI Foundations system.
+   - A. It is only relevant to academic research, not production.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Establish a held-out test set early and never touch it during development.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* Walk through how you would design The Modern AI Stack for an enterprise AI Foundations workload.
    - **Model answer:** A strong answer defines the modern ai stack (Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3634,27 +3576,27 @@ _This chapter examines putting it together: a reference implementation within AI
 
 ## Introduction
 
-In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole. It is foundational: later capabilities in AI Foundations are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole. It is foundational: later capabilities in AI Foundations are built directly on top of it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Putting It Together: A Reference Implementation as an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Putting It Together: A Reference Implementation can be characterised as an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Teams that master this consistently ship more reliable AI Foundations systems at lower cost.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from scaling laws and compute economics. Recall that scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Putting It Together: A Reference Implementation cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, reproducible pipelines pinned by data, code and environment hashes, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, reproducible pipelines pinned by data, code and environment hashes, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Putting It Together: A Reference Implementation separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+A robust architecture for Putting It Together: A Reference Implementation is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -3662,43 +3604,34 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title Architecture - Putting It Together: A Reference Implementation
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Architecture - Putting It Together: A Reference Impleme…</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
-
-**Figure 22. Architecture - Putting It Together: A Reference Implementation** (svg). Figure: Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 20. Architecture - Putting It Together: A Reference Implementation** (plantuml). Figure: Architecture view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with scaling laws and compute economics. Because scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3706,9 +3639,9 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -3720,7 +3653,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply putting it together: a reference implementation as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply putting it together: a reference implementation as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3850,24 +3783,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. Measure calibration, not just accuracy, for decision-support systems.
-   - C. Target leakage that inflates offline metrics and collapses in production.
+   - A. It applies exclusively to image data.
+   - B. Automate data validation to catch schema and distribution drift before training.
+   - C. It makes the system slower but has no other effect.
    - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: B.** Best practice: Automate data validation to catch schema and distribution drift before training.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Prefer the simplest model that meets the requirement before adding complexity.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - **Answer: D.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-4. *(Discussion)* What trade-offs would you weigh when implementing Putting It Together: A Reference Implementation?
+   - A. It makes the system slower but has no other effect.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. Establish a held-out test set early and never touch it during development.
+   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+4. *(Discussion)* Walk through how you would design Putting It Together: A Reference Implementation for an enterprise AI Foundations workload.
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3879,71 +3812,57 @@ _This chapter examines hands-on lab: building an end-to-end ai foundations syste
 
 ## Introduction
 
-Hands-On Lab: Building an End-to-End AI Foundations System can be characterised as a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+In practical terms, Hands-On Lab: Building an End-to-End AI Foundations System is best understood as a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles. This concept recurs throughout the AI Foundations lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Hands-On Lab: Building an End-to-End AI Foundations System can be characterised as a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Hands-On Lab: Building an End-to-End AI Foundations System addresses a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, hands-on lab: building an end-to-end ai foundations system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, hands-on lab: building an end-to-end ai foundations system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions.
 
-Hands-On Lab: Building an End-to-End AI Foundations System cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Hands-On Lab: Building an End-to-End AI Foundations System cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Hands-On Lab: Building an End-to-End AI Foundations System cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End AI Foundations System cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end ai foundations system. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end ai foundations system. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around hands-on lab: building an end-to-end ai foundations system are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Hands-On Lab: Building an End-to-End AI Foundations System sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Hands-On Lab: Building an End-to-End AI Foundations System separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-<div class="diagram-svg">
+```mermaid
+graph LR
+  D(("Hands-On Lab: Build…"))
+  D --- C0[Hands-On Lab: Buildin…]
+  D --- C1[Probability, Statisti…]
+  D --- C2[Evaluation, Metrics a…]
+  D --- C3[From Notebook to Prod…]
+  D --- C4[Responsible and Trust…]
+  C0 --- C1
+  C1 --- C2
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Capability Map - Hands-On Lab: Building an End-to-End A…</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
-
-</div>
-
-**Figure 23. Capability Map - Hands-On Lab: Building an End-to-End AI Foundations System** (svg). Figure: Capability Map view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 21. Capability Map - Hands-On Lab: Building an End-to-End AI Foundations System** (mermaid). Figure: Capability Map view for Hands-On Lab: Building an End-to-End AI Foundations System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into hands-on lab: building an end-to-end ai foundations system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3951,13 +3870,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end ai foundations system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end ai foundations system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from notebook to production. Because from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3965,7 +3884,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply hands-on lab: building an end-to-end ai foundations system as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply hands-on lab: building an end-to-end ai foundations system as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4038,64 +3957,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Hands-On Lab: Building an End-to-End AI Foundations System logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Hands-On Lab: Building an End-to-End AI Foundations System with a regression gate
+### Listing: A composable processing pipeline for Hands-On Lab: Building an End-to-End AI Foundations System
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Hands-On Lab: Building an End-to-End AI Foundations System output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Hands-On Lab: Building an End-to-End AI Foundations System."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Hands-On Lab: Building an End-to-End AI Foundations System”?
-   - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles
    - **Answer: D.** Hands-On Lab: Building an End-to-End AI Foundations System: a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. It makes the system slower but has no other effect.
-   - D. Automate data validation to catch schema and distribution drift before training.
-   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
-3. Which of the following is a common pitfall to avoid in AI Foundations?
    - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Establish a held-out test set early and never touch it during development.
-   - C. Automate data validation to catch schema and distribution drift before training.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-4. *(Discussion)* What trade-offs would you weigh when implementing Hands-On Lab: Building an End-to-End AI Foundations System?
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+3. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Measure calibration, not just accuracy, for decision-support systems.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* How does Hands-On Lab: Building an End-to-End AI Foundations System interact with security and governance requirements?
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end ai foundations system (a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4107,27 +4043,27 @@ _This chapter examines case study: financial services at scale within AI Foundat
 
 ## Introduction
 
-At its core, Case Study: Financial Services at Scale concerns a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+At its core, Case Study: Financial Services at Scale concerns a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes. It is foundational: later capabilities in AI Foundations are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Case Study: Financial Services at Scale is best understood as a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Case Study: Financial Services at Scale concerns a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, case study: financial services at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, case study: financial services at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
 
-Case Study: Financial Services at Scale cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Case Study: Financial Services at Scale cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Case Study: Financial Services at Scale cannot be understood in isolation from model families and inductive bias. Recall that model families and inductive bias concerns linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Case Study: Financial Services at Scale cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to case study: financial services at scale. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: financial services at scale. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around case study: financial services at scale are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around case study: financial services at scale are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Case Study: Financial Services at Scale separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+A robust architecture for Case Study: Financial Services at Scale is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4152,17 +4088,56 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 24. Application Flow - Case Study: Financial Services at Scale** (plantuml). Figure: Application Flow view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 22. Application Flow - Case Study: Financial Services at Scale** (plantuml). Figure: Application Flow view for Case Study: Financial Services at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Case Study: Financial Service… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Case Study: Financial Ser…]
+    S1[Linear Algebra for Machin…]
+    S2[Optimisation and Gradient…]
+    S3[Representation Learning a…]
+    S4[The AI/ML Landscape and P…]
+    S5[Data Engineering and Feat…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
+
+**Figure 23. Security Architecture - Case Study: Financial Services at Scale** (mermaid). Figure: Security Architecture view for Case Study: Financial Services at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: financial services at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: financial services at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with responsible and trustworthy ai by design. Because responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4170,13 +4145,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into case study: financial services at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: financial services at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4184,7 +4159,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply case study: financial services at scale as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply case study: financial services at scale as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4257,40 +4232,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Case Study: Financial Services at Scale logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Case Study: Financial Services at Scale with a regression gate
+### Listing: A composable processing pipeline for Case Study: Financial Services at Scale
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Case Study: Financial Services at Scale output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Case Study: Financial Services at Scale."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -4300,21 +4292,21 @@ if __name__ == "__main__":
    - A. a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes
    - B. It guarantees deterministic output regardless of input.
    - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Case Study: Financial Services at Scale: a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Measure calibration, not just accuracy, for decision-support systems.
-   - B. It removes all security and governance requirements.
+   - A. It removes all security and governance requirements.
+   - B. Establish a held-out test set early and never touch it during development.
    - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Establish a held-out test set early and never touch it during development.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Establish a held-out test set early and never touch it during development.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - **Answer: D.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-4. *(Discussion)* Walk through how you would design Case Study: Financial Services at Scale for an enterprise AI Foundations workload.
+   - A. Prefer the simplest model that meets the requirement before adding complexity.
+   - B. Automate data validation to catch schema and distribution drift before training.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* What trade-offs would you weigh when implementing Case Study: Financial Services at Scale?
    - **Model answer:** A strong answer defines case study: financial services at scale (a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4326,33 +4318,33 @@ _This chapter examines operating in production within AI Foundations. It covers 
 
 ## Introduction
 
-Formally, Operating in Production addresses the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement. It is foundational: later capabilities in AI Foundations are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Operating in Production addresses the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Operating in Production is best understood as the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Operating in Production refers to the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
 
-Operating in Production cannot be understood in isolation from from notebook to production. Recall that from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Operating in Production cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Operating in Production cannot be understood in isolation from scaling laws and compute economics. Recall that scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Operating in Production cannot be understood in isolation from from notebook to production. Recall that from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to operating in production. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating in production are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Operating in Production sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+A robust architecture for Operating in Production is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 ```plantuml
 @startuml
@@ -4371,17 +4363,36 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 25. Security Architecture - Operating in Production** (plantuml). Figure: Security Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. Security Architecture - Operating in Production** (plantuml). Figure: Security Architecture view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Business Process - Operating in Production
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 25. Business Process - Operating in Production** (plantuml). Figure: Business Process view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from notebook to production. Because from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with regularisation and generalisation. Because regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4389,13 +4400,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the modern ai stack. Because the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4403,7 +4414,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply operating in production as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply operating in production as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4527,24 +4538,24 @@ class OperatingInProduction:
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Operating in Production”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
-   - **Answer: D.** Operating in Production: the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
+   - A. It is only relevant to academic research, not production.
+   - B. the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Operating in Production: the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
+   - A. Track every experiment with code, data and hyper-parameter provenance.
+   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: A.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Measure calibration, not just accuracy, for decision-support systems.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. Prefer the simplest model that meets the requirement before adding complexity.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-4. *(Discussion)* Walk through how you would design Operating in Production for an enterprise AI Foundations workload.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+4. *(Discussion)* Describe a failure mode of Operating in Production and how you would mitigate it.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4556,27 +4567,27 @@ _This chapter examines evaluation and quality assurance within AI Foundations. I
 
 ## Introduction
 
-At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Formally, Evaluation and Quality Assurance addresses a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Teams that master this consistently ship more reliable AI Foundations systems at lower cost.
 
-Evaluation and Quality Assurance cannot be understood in isolation from evaluation, metrics and experimental design. Recall that evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluation and Quality Assurance cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Evaluation and Quality Assurance cannot be understood in isolation from data engineering and feature pipelines. Recall that data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Evaluation and Quality Assurance cannot be understood in isolation from the modern ai stack. Recall that the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Evaluation and Quality Assurance separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4584,43 +4595,28 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Business Process - Evaluation and Quality Assurance</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
-
-</div>
-
-**Figure 26. Business Process - Evaluation and Quality Assurance** (svg). Figure: Business Process view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 26. Business Process - Evaluation and Quality Assurance** (mermaid). Figure: Business Process view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
 title Network - Evaluation and Quality Assurance
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
+package "Evaluation and Quality Assurance Platform" {
+  component "Evaluation and Quality …" as C0
+  component "Optimisation and Gradie…" as C1
+  component "The Modern AI Stack" as C2
+  component "Scaling Laws and Comput…" as C3
+  component "The AI/ML Landscape and…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -4633,17 +4629,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 27. Network - Evaluation and Quality Assurance** (plantuml). Figure: Network view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. Network - Evaluation and Quality Assurance** (plantuml). Figure: Network view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4651,13 +4647,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4665,7 +4661,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply evaluation and quality assurance as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply evaluation and quality assurance as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4738,75 +4734,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluation and Quality Assurance component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
+Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluation and Quality Assurance component
+### Listing: Evaluating Evaluation and Quality Assurance with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class EvaluationAndQualityConfig:
-    """Configuration for the Evaluation and Quality Assurance component in a AI Foundations system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class EvaluationAndQuality:
-    """A minimal, production-shaped implementation of Evaluation and Quality Assurance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation and Quality Assurance output against references with a simple exact-match metric.
 
-    def __init__(self, config: EvaluationAndQualityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluationAndQuality failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluation and Quality Assurance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It is only relevant to academic research, not production.
-   - B. a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
-2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It makes the system slower but has no other effect.
+   - A. It removes all security and governance requirements.
+   - B. It guarantees deterministic output regardless of input.
+   - C. a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
    - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
+2. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Optimising a proxy metric that diverges from the true business objective.
+   - B. It makes the system slower but has no other effect.
+   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Track every experiment with code, data and hyper-parameter provenance.
-   - B. It applies exclusively to image data.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* How would you test and monitor Evaluation and Quality Assurance in production?
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. It removes all security and governance requirements.
+   - C. Establish a held-out test set early and never touch it during development.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* Walk through how you would design Evaluation and Quality Assurance for an enterprise AI Foundations workload.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4818,43 +4803,43 @@ _This chapter examines security, privacy and governance within AI Foundations. I
 
 ## Introduction
 
-Formally, Security, Privacy and Governance addresses the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Security, Privacy and Governance is best understood as the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define Security, Privacy and Governance as the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
 
-Security, Privacy and Governance cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Security, Privacy and Governance cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Security, Privacy and Governance cannot be understood in isolation from from notebook to production. Recall that from notebook to production concerns packaging, serving, monitoring and the operational loop that keeps models performing as data drifts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Security, Privacy and Governance cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to security, privacy and governance. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, reproducible pipelines pinned by data, code and environment hashes, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+From an architectural standpoint, Security, Privacy and Governance sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```plantuml
 @startuml
 title Network - Security, Privacy and Governance
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
+package "Security, Privacy and Governance Platform" {
+  component "Security, Privacy and G…" as C0
+  component "Neural Networks and Bac…" as C1
+  component "Optimisation and Gradie…" as C2
+  component "Responsible and Trustwo…" as C3
+  component "Linear Algebra for Mach…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -4867,23 +4852,9 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 28. Network - Security, Privacy and Governance** (plantuml). Figure: Network view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. Network - Security, Privacy and Governance** (plantuml). Figure: Network view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
-In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with responsible and trustworthy ai by design. Because responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Goodfellow, Bengio & Courville — Deep Learning (MIT Press) and Bishop — Pattern Recognition and Machine Learning (Springer). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -4891,7 +4862,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Goodfellow, Bengio & Courville — Deep Learning (MIT Press) and Bishop — Pattern Recognition and Machine Learning (Springer). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+
+In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4899,7 +4884,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply security, privacy and governance as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply security, privacy and governance as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4972,75 +4957,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Security, Privacy and Governance component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
+Pipelines keep Security, Privacy and Governance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Security, Privacy and Governance component
+### Listing: A composable processing pipeline for Security, Privacy and Governance
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class PrivacyAndConfig:
-    """Configuration for the Security, Privacy and Governance component in a AI Foundations system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class PrivacyAnd:
-    """A minimal, production-shaped implementation of Security, Privacy and Governance."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Security, Privacy and Governance."""
 
-    def __init__(self, config: PrivacyAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PrivacyAnd failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Security, Privacy and Governance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Security, Privacy and Governance”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
+   - A. the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Automate data validation to catch schema and distribution drift before training.
-   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
+   - A. It makes the system slower but has no other effect.
+   - B. Establish a held-out test set early and never touch it during development.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Establish a held-out test set early and never touch it during development.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It applies exclusively to image data.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. Optimising a proxy metric that diverges from the true business objective.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Ignoring class imbalance and reporting misleading accuracy.
    - D. Track every experiment with code, data and hyper-parameter provenance.
-   - **Answer: C.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* What trade-offs would you weigh when implementing Security, Privacy and Governance?
+   - **Answer: C.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+4. *(Discussion)* Walk through how you would design Security, Privacy and Governance for an enterprise AI Foundations workload.
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5052,71 +5043,56 @@ _This chapter examines cost, performance and scaling within AI Foundations. It c
 
 ## Introduction
 
-At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a AI Foundations system to production traffic. It is foundational: later capabilities in AI Foundations are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Cost, Performance and Scaling addresses techniques for controlling cost and latency while scaling a AI Foundations system to production traffic. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Cost, Performance and Scaling as techniques for controlling cost and latency while scaling a AI Foundations system to production traffic. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a AI Foundations system to production traffic. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
 
-Cost, Performance and Scaling cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Performance and Scaling cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Cost, Performance and Scaling cannot be understood in isolation from the modern ai stack. Recall that the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Cost, Performance and Scaling cannot be understood in isolation from scaling laws and compute economics. Recall that scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to cost, performance and scaling. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Cost, Performance and Scaling is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Cost, Performance and Scaling separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Data Lineage - Cost, Performance and Scaling</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AI Foundations</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">The AI/ML Landscape…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Linear Algebra for …</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Probability, Statis…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Optimisation and Gr…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Data Engineering an…</text>
-</svg>
-
-</div>
-
-**Figure 29. Data Lineage - Cost, Performance and Scaling** (svg). Figure: Data Lineage view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Data Lineage - Cost, Performance and Scaling** (mermaid). Figure: Data Lineage view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5124,9 +5100,9 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, performance and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -5138,7 +5114,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply cost, performance and scaling as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply cost, performance and scaling as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5211,51 +5187,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Cost, Performance and Scaling component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
+Every change to a AI Foundations system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Cost, Performance and Scaling component
+### Listing: Evaluating Cost, Performance and Scaling with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class PerformanceAndConfig:
-    """Configuration for the Cost, Performance and Scaling component in a AI Foundations system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class PerformanceAnd:
-    """A minimal, production-shaped implementation of Cost, Performance and Scaling."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Cost, Performance and Scaling output against references with a simple exact-match metric.
 
-    def __init__(self, config: PerformanceAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PerformanceAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Cost, Performance and Scaling goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -5263,23 +5228,23 @@ class PerformanceAnd:
 
 1. In the context of AI Foundations, which statement best describes “Cost, Performance and Scaling”?
    - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
-   - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
+   - B. techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Establish a held-out test set early and never touch it during development.
-   - B. It applies exclusively to image data.
-   - C. Ignoring class imbalance and reporting misleading accuracy.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Establish a held-out test set early and never touch it during development.
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: A.** Best practice: Automate data validation to catch schema and distribution drift before training.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. Establish a held-out test set early and never touch it during development.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Optimising a proxy metric that diverges from the true business objective.
-   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* Explain Cost, Performance and Scaling and why it matters in a production AI Foundations system.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Optimising a proxy metric that diverges from the true business objective.
+   - C. Prefer the simplest model that meets the requirement before adding complexity.
+   - D. Track every experiment with code, data and hyper-parameter provenance.
+   - **Answer: B.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+4. *(Discussion)* Describe a failure mode of Cost, Performance and Scaling and how you would mitigate it.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a AI Foundations system to production traffic) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5291,33 +5256,33 @@ _This chapter examines integration and interoperability within AI Foundations. I
 
 ## Introduction
 
-In practical terms, Integration and Interoperability is best understood as patterns for integrating a AI Foundations system with surrounding enterprise systems and data. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Integration and Interoperability addresses patterns for integrating a AI Foundations system with surrounding enterprise systems and data. Getting this right early prevents expensive rework once a AI Foundations system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Integration and Interoperability as patterns for integrating a AI Foundations system with surrounding enterprise systems and data. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Integration and Interoperability is best understood as patterns for integrating a AI Foundations system with surrounding enterprise systems and data. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
 
-Integration and Interoperability cannot be understood in isolation from neural networks and backpropagation. Recall that neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Integration and Interoperability cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Integration and Interoperability cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration and Interoperability cannot be understood in isolation from the modern ai stack. Recall that the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to integration and interoperability. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model registry with staged promotion (dev → staging → production), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around integration and interoperability are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around integration and interoperability are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Integration and Interoperability is layered so each part can evolve independently without destabilising the whole. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+From an architectural standpoint, Integration and Interoperability sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```mermaid
 flowchart TB
@@ -5325,14 +5290,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["AI Foundations Platform"]
+  subgraph Platform["Integration and Interoperabil… Platform"]
     GW[Gateway / Orchestrator]
-    S0[The AI/ML Landscape and P…]
-    S1[Linear Algebra for Machin…]
-    S2[Probability, Statistics a…]
-    S3[Optimisation and Gradient…]
-    S4[Data Engineering and Feat…]
-    S5[Model Families and Induct…]
+    S0[Integration and Interoper…]
+    S1[Optimisation and Gradient…]
+    S2[The Modern AI Stack]
+    S3[Responsible and Trustwort…]
+    S4[Probability, Statistics a…]
+    S5[Data Engineering and Feat…]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -5356,17 +5321,17 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 30. Component - Integration and Interoperability** (mermaid). Figure: Component view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. Component - Integration and Interoperability** (mermaid). Figure: Component view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5374,13 +5339,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with neural networks and backpropagation. Because neural networks and backpropagation concerns perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5512,24 +5477,24 @@ class IntegrationAndInteroperability:
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Integration and Interoperability”?
-   - A. patterns for integrating a AI Foundations system with surrounding enterprise systems and data
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Integration and Interoperability: patterns for integrating a AI Foundations system with surrounding enterprise systems and data
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. patterns for integrating a AI Foundations system with surrounding enterprise systems and data
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Integration and Interoperability: patterns for integrating a AI Foundations system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
+   - A. Optimising a proxy metric that diverges from the true business objective.
+   - B. It makes the system slower but has no other effect.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It applies exclusively to image data.
-   - D. Target leakage that inflates offline metrics and collapses in production.
-   - **Answer: D.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-4. *(Discussion)* How does Integration and Interoperability interact with security and governance requirements?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: C.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a AI Foundations system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5541,27 +5506,27 @@ _This chapter examines trends and research directions within AI Foundations. It 
 
 ## Introduction
 
-Trends and Research Directions can be characterised as emerging trends, open problems and research directions shaping the future of AI Foundations. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of AI Foundations. Understanding this matters because AI Foundations systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of AI Foundations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of AI Foundations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Getting this right early prevents expensive rework once a AI Foundations system reaches scale.
 
-Trends and Research Directions cannot be understood in isolation from the ai/ml landscape and problem framing. Recall that the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Trends and Research Directions cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Trends and Research Directions cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Trends and Research Directions cannot be understood in isolation from linear algebra for machine learning. Recall that linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to trends and research directions. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Trends and Research Directions sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+The reference architecture for Trends and Research Directions separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -5569,54 +5534,44 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["AI Foundations Platform"]
-    GW[Gateway / Orchestrator]
-    S0[The AI/ML Landscape and P…]
-    S1[Linear Algebra for Machin…]
-    S2[Probability, Statistics a…]
-    S3[Optimisation and Gradient…]
-    S4[Data Engineering and Feat…]
-    S5[Model Families and Induct…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="RAG Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="RAG Architecture - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Trends and Research D…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Trends and Research Dir…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Scaling Laws and Comput…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="The AI/ML Landscape and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 31. RAG Architecture - Trends and Research Directions** (mermaid). Figure: RAG Architecture view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 31. RAG Architecture - Trends and Research Directions** (drawio). Figure: RAG Architecture view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the ai/ml landscape and problem framing. Because the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5624,13 +5579,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the modern ai stack. Because the modern ai stack concerns frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5638,7 +5593,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A manufacturing organisation needs predictive maintenance from sensor telemetry to reduce unplanned downtime. They decide to apply trends and research directions as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A healthcare organisation needs clinical decision support where uncertainty estimates and explainability are prerequisites for adoption. They decide to apply trends and research directions as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5712,23 +5667,23 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Trends and Research Directions”?
-   - A. It is only relevant to academic research, not production.
-   - B. emerging trends, open problems and research directions shaping the future of AI Foundations
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of AI Foundations
+   - A. emerging trends, open problems and research directions shaping the future of AI Foundations
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of AI Foundations
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Optimising a proxy metric that diverges from the true business objective.
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. It removes all security and governance requirements.
    - C. It makes the system slower but has no other effect.
    - D. Prefer the simplest model that meets the requirement before adding complexity.
    - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Track every experiment with code, data and hyper-parameter provenance.
-   - **Answer: C.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
 4. *(Discussion)* Explain Trends and Research Directions and why it matters in a production AI Foundations system.
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of AI Foundations) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
@@ -5741,66 +5696,72 @@ _This chapter examines capstone project within AI Foundations. It covers a subst
 
 ## Introduction
 
-Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable. Teams that master this consistently ship more reliable AI Foundations systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable. This concept recurs throughout the AI Foundations lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Capstone Project addresses a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. It is foundational: later capabilities in AI Foundations are built directly on top of it.
+To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production.
 
-Capstone Project cannot be understood in isolation from optimisation and gradient descent. Recall that optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Capstone Project cannot be understood in isolation from data engineering and feature pipelines. Recall that data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Capstone Project cannot be understood in isolation from scaling laws and compute economics. Recall that scaling laws and compute economics concerns how model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to capstone project. The first, champion/challenger evaluation before any production swap, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around capstone project are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around capstone project are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Capstone Project separates concerns into clearly bounded components with explicit contracts. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
+From an architectural standpoint, Capstone Project sits at the intersection of data, models and operations. A foundational AI platform separates four planes: a data plane (ingestion, validation, feature store), a training plane (experiment tracking, distributed training, model registry), a serving plane (low-latency and batch inference, feature retrieval) and a governance plane (lineage, access control, audit). Clean interfaces between planes allow teams to evolve each independently while preserving reproducibility and compliance.
 
 Concretely, the principal building blocks include the ai/ml landscape and problem framing, linear algebra for machine learning, probability, statistics and bayesian reasoning, optimisation and gradient descent and data engineering and feature pipelines. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Deployment - Capstone Project
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Deployment">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Deployment - Capstone Project" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Capstone Project" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Capstone Project" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Scaling Laws and Comput…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Responsible and Trustwo…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 32. Deployment - Capstone Project** (plantuml). Figure: Deployment view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Deployment - Capstone Project** (drawio). Figure: Deployment view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with optimisation and gradient descent. Because optimisation and gradient descent concerns loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5808,13 +5769,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with linear algebra for machine learning. Because linear algebra for machine learning concerns vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation, metrics and experimental design. Because evaluation, metrics and experimental design concerns train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5895,75 +5856,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Capstone Project component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
+Pipelines keep Capstone Project logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Capstone Project component
+### Listing: A composable processing pipeline for Capstone Project
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class CapstoneProjectConfig:
-    """Configuration for the Capstone Project component in a AI Foundations system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class CapstoneProject:
-    """A minimal, production-shaped implementation of Capstone Project."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Capstone Project."""
 
-    def __init__(self, config: CapstoneProjectConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"CapstoneProject failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Capstone Project goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Capstone Project”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
    - D. a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable
    - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: C.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It makes the system slower but has no other effect.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - A. Track every experiment with code, data and hyper-parameter provenance.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. Target leakage that inflates offline metrics and collapses in production.
    - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-4. *(Discussion)* How would you test and monitor Capstone Project in production?
+   - **Answer: A.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+3. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Establish a held-out test set early and never touch it during development.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: D.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5975,23 +5942,23 @@ _This chapter examines certification preparation and review within AI Foundation
 
 ## Introduction
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of AI Foundations. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of AI Foundations. Neglecting it is one of the most common reasons AI Foundations initiatives stall in production. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own AI Foundations work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of AI Foundations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+We define Certification Preparation and Review as a structured review and certification-style preparation covering the full breadth of AI Foundations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Artificial intelligence is the discipline of building systems that perceive, reason and act to achieve goals under uncertainty. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of AI Foundations fall into place. This concept recurs throughout the AI Foundations lifecycle, from design to operations.
 
-Certification Preparation and Review cannot be understood in isolation from probability, statistics and bayesian reasoning. Recall that probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from the ai/ml landscape and problem framing. Recall that the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Certification Preparation and Review cannot be understood in isolation from responsible and trustworthy ai by design. Recall that responsible and trustworthy ai by design concerns fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from regularisation and generalisation. Recall that regularisation and generalisation concerns overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to certification preparation and review. The first, model registry with staged promotion (dev → staging → production), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, reproducible pipelines pinned by data, code and environment hashes, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, feature store as the single source of truth for online/offline parity, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, champion/challenger evaluation before any production swap, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around certification preparation and review are invisible; in a production AI Foundations system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -6001,7 +5968,7 @@ Concretely, the principal building blocks include the ai/ml landscape and proble
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the AI Foundations system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```mermaid
 flowchart LR
@@ -6021,46 +5988,17 @@ flowchart LR
   S6 -.->|drift / regression| S0
 ```
 
-**Figure 33. DevOps Pipeline - Certification Preparation and Review** (mermaid). Figure: DevOps Pipeline view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="AI Foundations" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="The AI/ML Landscape and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Linear Algebra for Mach…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Probability, Statistics…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Optimisation and Gradie…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Data Engineering and Fe…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 34. Operating Model - Certification Preparation and Review** (drawio). Figure: Operating Model view for AI Foundations. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 33. DevOps Pipeline - Certification Preparation and Review** (mermaid). Figure: DevOps Pipeline view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with probability, statistics and bayesian reasoning. Because probability, statistics and bayesian reasoning concerns random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the ai/ml landscape and problem framing. Because the ai/ml landscape and problem framing concerns distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6068,13 +6006,13 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including PyTorch, scikit-learn, NumPy, MLflow. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with data engineering and feature pipelines. Because data engineering and feature pipelines concerns ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with representation learning and embeddings. Because representation learning and embeddings concerns learning compact, transferable representations that power transfer learning and downstream tasks across modalities, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6082,7 +6020,7 @@ For deeper study, the literature offers authoritative treatments such as Goodfel
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A retail organisation needs demand forecasting and price elasticity modelling feeding automated replenishment. They decide to apply certification preparation and review as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A financial services organisation needs credit risk scoring with calibrated probabilities and auditable feature lineage for regulators. They decide to apply certification preparation and review as part of their AI Foundations solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -6155,80 +6093,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Certification Preparation and Review logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Certification Preparation and Review component with retry semantics and typed interfaces — the shape we expect from production AI Foundations code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Certification Preparation and Review
+### Listing: Implementing a Certification Preparation and Review component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CertificationPreparationAndConfig:
+    """Configuration for the Certification Preparation and Review component in a AI Foundations system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Certification Preparation and Review."""
+class CertificationPreparationAnd:
+    """A minimal, production-shaped implementation of Certification Preparation and Review."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CertificationPreparationAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CertificationPreparationAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Certification Preparation and Review goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of AI Foundations, which statement best describes “Certification Preparation and Review”?
-   - A. a structured review and certification-style preparation covering the full breadth of AI Foundations
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of AI Foundations
+   - A. It removes all security and governance requirements.
+   - B. a structured review and certification-style preparation covering the full breadth of AI Foundations
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of AI Foundations
 2. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Track every experiment with code, data and hyper-parameter provenance.
-   - B. It makes the system slower but has no other effect.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 3. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Establish a held-out test set early and never touch it during development.
-   - B. It applies exclusively to image data.
-   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Automate data validation to catch schema and distribution drift before training.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
 4. *(Discussion)* How does Certification Preparation and Review interact with security and governance requirements?
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of AI Foundations) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 
@@ -6265,53 +6197,53 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 A consolidated bank of discussion-style interview questions drawn from across the book, suitable for preparation and technical screening.
 
-1. How does The AI/ML Landscape and Problem Framing interact with security and governance requirements?
+1. Explain The AI/ML Landscape and Problem Framing and why it matters in a production AI Foundations system.
    - **Guidance:** A strong answer defines the ai/ml landscape and problem framing (Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 2. How does Linear Algebra for Machine Learning interact with security and governance requirements?
    - **Guidance:** A strong answer defines linear algebra for machine learning (Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 3. How would you test and monitor Probability, Statistics and Bayesian Reasoning in production?
    - **Guidance:** A strong answer defines probability, statistics and bayesian reasoning (Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-4. How does Optimisation and Gradient Descent interact with security and governance requirements?
+4. How would you test and monitor Optimisation and Gradient Descent in production?
    - **Guidance:** A strong answer defines optimisation and gradient descent (Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-5. How would you test and monitor Data Engineering and Feature Pipelines in production?
+5. Walk through how you would design Data Engineering and Feature Pipelines for an enterprise AI Foundations workload.
    - **Guidance:** A strong answer defines data engineering and feature pipelines (Ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-6. Explain Model Families and Inductive Bias and why it matters in a production AI Foundations system.
+6. What trade-offs would you weigh when implementing Model Families and Inductive Bias?
    - **Guidance:** A strong answer defines model families and inductive bias (Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-7. How would you test and monitor Neural Networks and Backpropagation in production?
+7. What trade-offs would you weigh when implementing Neural Networks and Backpropagation?
    - **Guidance:** A strong answer defines neural networks and backpropagation (Perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 8. Explain Evaluation, Metrics and Experimental Design and why it matters in a production AI Foundations system.
    - **Guidance:** A strong answer defines evaluation, metrics and experimental design (Train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-9. How would you test and monitor Regularisation and Generalisation in production?
+9. How does Regularisation and Generalisation interact with security and governance requirements?
    - **Guidance:** A strong answer defines regularisation and generalisation (Overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-10. How does Representation Learning and Embeddings interact with security and governance requirements?
+10. How would you test and monitor Representation Learning and Embeddings in production?
    - **Guidance:** A strong answer defines representation learning and embeddings (Learning compact, transferable representations that power transfer learning and downstream tasks across modalities.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-11. How does Responsible and Trustworthy AI by Design interact with security and governance requirements?
+11. Describe a failure mode of Responsible and Trustworthy AI by Design and how you would mitigate it.
    - **Guidance:** A strong answer defines responsible and trustworthy ai by design (Fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-12. How does From Notebook to Production interact with security and governance requirements?
+12. Explain From Notebook to Production and why it matters in a production AI Foundations system.
    - **Guidance:** A strong answer defines from notebook to production (Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-13. Explain Scaling Laws and Compute Economics and why it matters in a production AI Foundations system.
+13. How does Scaling Laws and Compute Economics interact with security and governance requirements?
    - **Guidance:** A strong answer defines scaling laws and compute economics (How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-14. Explain The Modern AI Stack and why it matters in a production AI Foundations system.
+14. Walk through how you would design The Modern AI Stack for an enterprise AI Foundations workload.
    - **Guidance:** A strong answer defines the modern ai stack (Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-15. What trade-offs would you weigh when implementing Putting It Together: A Reference Implementation?
+15. Walk through how you would design Putting It Together: A Reference Implementation for an enterprise AI Foundations workload.
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-16. What trade-offs would you weigh when implementing Hands-On Lab: Building an End-to-End AI Foundations System?
+16. How does Hands-On Lab: Building an End-to-End AI Foundations System interact with security and governance requirements?
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end ai foundations system (a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-17. Walk through how you would design Case Study: Financial Services at Scale for an enterprise AI Foundations workload.
+17. What trade-offs would you weigh when implementing Case Study: Financial Services at Scale?
    - **Guidance:** A strong answer defines case study: financial services at scale (a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-18. Walk through how you would design Operating in Production for an enterprise AI Foundations workload.
+18. Describe a failure mode of Operating in Production and how you would mitigate it.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-19. How would you test and monitor Evaluation and Quality Assurance in production?
+19. Walk through how you would design Evaluation and Quality Assurance for an enterprise AI Foundations workload.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-20. What trade-offs would you weigh when implementing Security, Privacy and Governance?
+20. Walk through how you would design Security, Privacy and Governance for an enterprise AI Foundations workload.
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-21. Explain Cost, Performance and Scaling and why it matters in a production AI Foundations system.
+21. Describe a failure mode of Cost, Performance and Scaling and how you would mitigate it.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a AI Foundations system to production traffic) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-22. How does Integration and Interoperability interact with security and governance requirements?
+22. Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a AI Foundations system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 23. Explain Trends and Research Directions and why it matters in a production AI Foundations system.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of AI Foundations) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
-24. How would you test and monitor Capstone Project in production?
+24. What trade-offs would you weigh when implementing Capstone Project?
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
 25. How does Certification Preparation and Review interact with security and governance requirements?
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of AI Foundations) then connects it to architecture, evaluation, cost, security and operations for AI Foundations, citing concrete trade-offs and a real-world example.
@@ -6321,460 +6253,460 @@ A consolidated bank of discussion-style interview questions drawn from across th
 Certification-style multiple-choice questions covering best practices and common pitfalls.
 
 1. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - B. It applies exclusively to image data.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-2. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. Automate data validation to catch schema and distribution drift before training.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-3. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Track every experiment with code, data and hyper-parameter provenance.
-   - **Answer: D.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
-4. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It is only relevant to academic research, not production.
-   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-5. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
-6. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. It is only relevant to academic research, not production.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-7. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
-8. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It applies exclusively to image data.
-   - B. It removes all security and governance requirements.
-   - C. Automate data validation to catch schema and distribution drift before training.
-   - D. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - **Answer: D.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-9. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It applies exclusively to image data.
-   - B. Optimising a proxy metric that diverges from the true business objective.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Prefer the simplest model that meets the requirement before adding complexity.
-   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-10. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-11. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
-12. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Ignoring class imbalance and reporting misleading accuracy.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-13. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-14. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. Establish a held-out test set early and never touch it during development.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-15. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Ignoring class imbalance and reporting misleading accuracy.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-16. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Measure calibration, not just accuracy, for decision-support systems.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It is only relevant to academic research, not production.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: D.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-17. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Automate data validation to catch schema and distribution drift before training.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: B.** Best practice: Automate data validation to catch schema and distribution drift before training.
-18. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Automate data validation to catch schema and distribution drift before training.
-   - B. Track every experiment with code, data and hyper-parameter provenance.
-   - C. Establish a held-out test set early and never touch it during development.
-   - D. Optimising a proxy metric that diverges from the true business objective.
-   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-19. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It applies exclusively to image data.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Automate data validation to catch schema and distribution drift before training.
-   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
-20. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-21. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
-22. Which of the following is a common pitfall to avoid in AI Foundations?
    - A. Establish a held-out test set early and never touch it during development.
-   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-23. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-24. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: D.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-25. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-26. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Prefer the simplest model that meets the requirement before adding complexity.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-27. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Prefer the simplest model that meets the requirement before adding complexity.
-   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-28. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Automate data validation to catch schema and distribution drift before training.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-29. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. Measure calibration, not just accuracy, for decision-support systems.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-30. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Prefer the simplest model that meets the requirement before adding complexity.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - **Answer: D.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-31. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. It makes the system slower but has no other effect.
-   - D. Automate data validation to catch schema and distribution drift before training.
-   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
-32. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Establish a held-out test set early and never touch it during development.
-   - C. Automate data validation to catch schema and distribution drift before training.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-33. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Measure calibration, not just accuracy, for decision-support systems.
    - B. It removes all security and governance requirements.
    - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-34. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Establish a held-out test set early and never touch it during development.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - **Answer: D.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
-35. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
-36. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Measure calibration, not just accuracy, for decision-support systems.
-   - B. Ignoring class imbalance and reporting misleading accuracy.
-   - C. Prefer the simplest model that meets the requirement before adding complexity.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
-37. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
-38. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Track every experiment with code, data and hyper-parameter provenance.
-   - B. It applies exclusively to image data.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-39. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Target leakage that inflates offline metrics and collapses in production.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Automate data validation to catch schema and distribution drift before training.
-   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
-40. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It applies exclusively to image data.
-   - B. Prefer the simplest model that meets the requirement before adding complexity.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. Track every experiment with code, data and hyper-parameter provenance.
-   - **Answer: C.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-41. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Establish a held-out test set early and never touch it during development.
-   - B. It applies exclusively to image data.
-   - C. Ignoring class imbalance and reporting misleading accuracy.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Best practice: Establish a held-out test set early and never touch it during development.
-42. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. Establish a held-out test set early and never touch it during development.
+2. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Prefer the simplest model that meets the requirement before adding complexity.
+   - B. It removes all security and governance requirements.
+   - C. Ignoring class imbalance and reporting misleading accuracy.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+3. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Optimising a proxy metric that diverges from the true business objective.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It applies exclusively to image data.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+4. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It makes the system slower but has no other effect.
+   - B. Optimising a proxy metric that diverges from the true business objective.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+5. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
+6. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It makes the system slower but has no other effect.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+7. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Optimising a proxy metric that diverges from the true business objective.
+   - C. Prefer the simplest model that meets the requirement before adding complexity.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: C.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+8. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. Automate data validation to catch schema and distribution drift before training.
+   - C. It makes the system slower but has no other effect.
+   - D. Track every experiment with code, data and hyper-parameter provenance.
+   - **Answer: A.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+9. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
    - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+10. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Prefer the simplest model that meets the requirement before adding complexity.
+   - B. Establish a held-out test set early and never touch it during development.
+   - C. Ignoring class imbalance and reporting misleading accuracy.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+11. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It is only relevant to academic research, not production.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Prefer the simplest model that meets the requirement before adding complexity.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: C.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+12. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Ignoring class imbalance and reporting misleading accuracy.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Establish a held-out test set early and never touch it during development.
+   - **Answer: A.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+13. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. Track every experiment with code, data and hyper-parameter provenance.
+   - C. It applies exclusively to image data.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: B.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+14. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+15. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+16. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It is only relevant to academic research, not production.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+17. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: D.** Best practice: Automate data validation to catch schema and distribution drift before training.
+18. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+19. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. Measure calibration, not just accuracy, for decision-support systems.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+20. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Establish a held-out test set early and never touch it during development.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. It is only relevant to academic research, not production.
    - D. Optimising a proxy metric that diverges from the true business objective.
    - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-43. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
+21. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Establish a held-out test set early and never touch it during development.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It is only relevant to academic research, not production.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: A.** Best practice: Establish a held-out test set early and never touch it during development.
+22. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. It guarantees deterministic output regardless of input.
    - C. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - D. Establish a held-out test set early and never touch it during development.
-   - **Answer: D.** Best practice: Establish a held-out test set early and never touch it during development.
-44. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It removes all security and governance requirements.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+23. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Ignoring class imbalance and reporting misleading accuracy.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+24. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Establish a held-out test set early and never touch it during development.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+25. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Measure calibration, not just accuracy, for decision-support systems.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: A.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+26. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. It is only relevant to academic research, not production.
    - C. It applies exclusively to image data.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: D.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+27. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. Target leakage that inflates offline metrics and collapses in production.
-   - **Answer: D.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-45. Which of the following is a recommended best practice when working with AI Foundations?
+   - **Answer: A.** Best practice: Automate data validation to catch schema and distribution drift before training.
+28. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It is only relevant to academic research, not production.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Establish a held-out test set early and never touch it during development.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+29. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It applies exclusively to image data.
+   - B. Automate data validation to catch schema and distribution drift before training.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Automate data validation to catch schema and distribution drift before training.
+30. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It makes the system slower but has no other effect.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. Establish a held-out test set early and never touch it during development.
+   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+31. Which of the following is a recommended best practice when working with AI Foundations?
    - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+32. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Measure calibration, not just accuracy, for decision-support systems.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+33. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It removes all security and governance requirements.
+   - B. Establish a held-out test set early and never touch it during development.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Establish a held-out test set early and never touch it during development.
+34. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Prefer the simplest model that meets the requirement before adding complexity.
+   - B. Automate data validation to catch schema and distribution drift before training.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+35. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Track every experiment with code, data and hyper-parameter provenance.
+   - B. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - C. Optimising a proxy metric that diverges from the true business objective.
+   - D. Ignoring class imbalance and reporting misleading accuracy.
+   - **Answer: A.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+36. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Measure calibration, not just accuracy, for decision-support systems.
+   - D. Optimising a proxy metric that diverges from the true business objective.
+   - **Answer: D.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+37. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Optimising a proxy metric that diverges from the true business objective.
+   - B. It makes the system slower but has no other effect.
+   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - D. Measure calibration, not just accuracy, for decision-support systems.
+   - **Answer: D.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
+38. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. It removes all security and governance requirements.
+   - C. Establish a held-out test set early and never touch it during development.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: A.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+39. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. It makes the system slower but has no other effect.
+   - B. Establish a held-out test set early and never touch it during development.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Establish a held-out test set early and never touch it during development.
+40. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Ignoring class imbalance and reporting misleading accuracy.
+   - D. Track every experiment with code, data and hyper-parameter provenance.
+   - **Answer: C.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+41. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: A.** Best practice: Automate data validation to catch schema and distribution drift before training.
+42. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
    - B. Optimising a proxy metric that diverges from the true business objective.
+   - C. Prefer the simplest model that meets the requirement before adding complexity.
+   - D. Track every experiment with code, data and hyper-parameter provenance.
+   - **Answer: B.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
+43. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Optimising a proxy metric that diverges from the true business objective.
+   - B. It makes the system slower but has no other effect.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
+44. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Prefer the simplest model that meets the requirement before adding complexity.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. Automate data validation to catch schema and distribution drift before training.
+   - **Answer: C.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+45. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Coupling preprocessing to a single notebook, destroying reproducibility.
+   - B. It removes all security and governance requirements.
    - C. It makes the system slower but has no other effect.
    - D. Prefer the simplest model that meets the requirement before adding complexity.
    - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 46. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Target leakage that inflates offline metrics and collapses in production.
-   - D. Track every experiment with code, data and hyper-parameter provenance.
-   - **Answer: C.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
-47. Which of the following is a recommended best practice when working with AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Measure calibration, not just accuracy, for decision-support systems.
-   - D. Ignoring class imbalance and reporting misleading accuracy.
-   - **Answer: C.** Best practice: Measure calibration, not just accuracy, for decision-support systems.
-48. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Optimising a proxy metric that diverges from the true business objective.
-   - B. It makes the system slower but has no other effect.
+   - A. Automate data validation to catch schema and distribution drift before training.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Optimising a proxy metric that diverges from the true business objective.
-49. Which of the following is a recommended best practice when working with AI Foundations?
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Ignoring class imbalance and reporting misleading accuracy.
+47. Which of the following is a recommended best practice when working with AI Foundations?
    - A. Track every experiment with code, data and hyper-parameter provenance.
-   - B. It makes the system slower but has no other effect.
-   - C. Optimising a proxy metric that diverges from the true business objective.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. Ignoring class imbalance and reporting misleading accuracy.
+   - C. Target leakage that inflates offline metrics and collapses in production.
+   - D. It applies exclusively to image data.
    - **Answer: A.** Best practice: Track every experiment with code, data and hyper-parameter provenance.
+48. Which of the following is a common pitfall to avoid in AI Foundations?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
+   - C. Establish a held-out test set early and never touch it during development.
+   - D. Target leakage that inflates offline metrics and collapses in production.
+   - **Answer: D.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
+49. Which of the following is a recommended best practice when working with AI Foundations?
+   - A. Target leakage that inflates offline metrics and collapses in production.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. Prefer the simplest model that meets the requirement before adding complexity.
+   - **Answer: D.** Best practice: Prefer the simplest model that meets the requirement before adding complexity.
 50. Which of the following is a common pitfall to avoid in AI Foundations?
-   - A. Establish a held-out test set early and never touch it during development.
-   - B. It applies exclusively to image data.
-   - C. Coupling preprocessing to a single notebook, destroying reproducibility.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Coupling preprocessing to a single notebook, destroying reproducibility.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Target leakage that inflates offline metrics and collapses in production.
+   - C. Automate data validation to catch schema and distribution drift before training.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Pitfall to avoid: Target leakage that inflates offline metrics and collapses in production.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of AI Foundations, which statement best describes “The AI/ML Landscape and Problem Framing”?
-   - A. Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
+   - A. It removes all security and governance requirements.
    - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** The AI/ML Landscape and Problem Framing: Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
-2. In the context of AI Foundations, which statement best describes “Linear Algebra for Machine Learning”?
-   - A. Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Linear Algebra for Machine Learning: Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
-3. In the context of AI Foundations, which statement best describes “Probability, Statistics and Bayesian Reasoning”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Probability, Statistics and Bayesian Reasoning: Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
-4. In the context of AI Foundations, which statement best describes “Optimisation and Gradient Descent”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
+   - C. Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
    - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Optimisation and Gradient Descent: Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
+   - **Answer: C.** The AI/ML Landscape and Problem Framing: Distinguishing supervised, unsupervised, self-supervised and reinforcement learning; mapping a business problem to a learnable objective; and deciding when not to use machine learning at all.
+2. In the context of AI Foundations, which statement best describes “Linear Algebra for Machine Learning”?
+   - A. It removes all security and governance requirements.
+   - B. Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Linear Algebra for Machine Learning: Vectors, matrices, norms, eigendecomposition and the singular value decomposition as the language of representation and dimensionality reduction.
+3. In the context of AI Foundations, which statement best describes “Probability, Statistics and Bayesian Reasoning”?
+   - A. Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Probability, Statistics and Bayesian Reasoning: Random variables, distributions, maximum likelihood, the bias–variance decomposition and calibrated uncertainty as the foundation of trustworthy prediction.
+4. In the context of AI Foundations, which statement best describes “Optimisation and Gradient Descent”?
+   - A. Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Optimisation and Gradient Descent: Loss surfaces, convexity, stochastic gradient descent, momentum, Adam and learning-rate schedules that make deep networks trainable at scale.
 5. In the context of AI Foundations, which statement best describes “Data Engineering and Feature Pipelines”?
    - A. Ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program.
    - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It makes the system slower but has no other effect.
+   - C. It is only relevant to academic research, not production.
+   - D. It guarantees deterministic output regardless of input.
    - **Answer: A.** Data Engineering and Feature Pipelines: Ingestion, validation, feature stores, leakage prevention and reproducible datasets as the highest-leverage investment in any AI program.
 6. In the context of AI Foundations, which statement best describes “Model Families and Inductive Bias”?
-   - A. Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Model Families and Inductive Bias: Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Model Families and Inductive Bias: Linear models, trees and ensembles, kernel methods and neural networks, and how their inductive biases suit different data regimes.
 7. In the context of AI Foundations, which statement best describes “Neural Networks and Backpropagation”?
    - A. Perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Neural Networks and Backpropagation: Perceptrons, activation functions, the chain rule, automatic differentiation and the universal-approximation intuition behind deep learning.
 8. In the context of AI Foundations, which statement best describes “Evaluation, Metrics and Experimental Design”?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. Train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Evaluation, Metrics and Experimental Design: Train/validation/test discipline, cross-validation, ROC/PR analysis, statistical significance and the perils of metric gaming.
 9. In the context of AI Foundations, which statement best describes “Regularisation and Generalisation”?
-   - A. It applies exclusively to image data.
+   - A. It guarantees deterministic output regardless of input.
    - B. Overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models.
    - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
+   - D. It applies exclusively to image data.
    - **Answer: B.** Regularisation and Generalisation: Overfitting, weight decay, dropout, early stopping and the modern view of double descent in over-parameterised models.
 10. In the context of AI Foundations, which statement best describes “Representation Learning and Embeddings”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
    - C. Learning compact, transferable representations that power transfer learning and downstream tasks across modalities.
-   - D. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
    - **Answer: C.** Representation Learning and Embeddings: Learning compact, transferable representations that power transfer learning and downstream tasks across modalities.
 11. In the context of AI Foundations, which statement best describes “Responsible and Trustworthy AI by Design”?
-   - A. It applies exclusively to image data.
+   - A. It is only relevant to academic research, not production.
    - B. Fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts.
    - C. It eliminates the need for any evaluation or monitoring.
    - D. It removes all security and governance requirements.
    - **Answer: B.** Responsible and Trustworthy AI by Design: Fairness, robustness, privacy and explainability treated as first-class requirements rather than afterthoughts.
 12. In the context of AI Foundations, which statement best describes “From Notebook to Production”?
    - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
-   - **Answer: D.** From Notebook to Production: Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
+   - B. It makes the system slower but has no other effect.
+   - C. Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** From Notebook to Production: Packaging, serving, monitoring and the operational loop that keeps models performing as data drifts.
 13. In the context of AI Foundations, which statement best describes “Scaling Laws and Compute Economics”?
-   - A. It is only relevant to academic research, not production.
-   - B. How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
+   - A. How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
+   - B. It removes all security and governance requirements.
    - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Scaling Laws and Compute Economics: How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
-14. In the context of AI Foundations, which statement best describes “The Modern AI Stack”?
-   - A. Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** The Modern AI Stack: Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
-15. In the context of AI Foundations, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
-   - C. It is only relevant to academic research, not production.
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
+   - **Answer: A.** Scaling Laws and Compute Economics: How model quality scales with data, parameters and compute, and how to make rational build-versus-buy decisions.
+14. In the context of AI Foundations, which statement best describes “The Modern AI Stack”?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** The Modern AI Stack: Frameworks, accelerators, orchestration and the reference architecture that ties data, training and inference together.
+15. In the context of AI Foundations, which statement best describes “Putting It Together: A Reference Implementation”?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a AI Foundations system into a cohesive, working whole
 16. In the context of AI Foundations, which statement best describes “Hands-On Lab: Building an End-to-End AI Foundations System”?
-   - A. It removes all security and governance requirements.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
    - D. a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles
    - **Answer: D.** Hands-On Lab: Building an End-to-End AI Foundations System: a guided, build-along laboratory that constructs a functioning AI Foundations system from first principles
 17. In the context of AI Foundations, which statement best describes “Case Study: Financial Services at Scale”?
    - A. a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes
    - B. It guarantees deterministic output regardless of input.
    - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Case Study: Financial Services at Scale: a detailed case study of deploying AI Foundations in a demanding financial services environment, including the decisions, trade-offs and outcomes
 18. In the context of AI Foundations, which statement best describes “Operating in Production”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
-   - **Answer: D.** Operating in Production: the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
-19. In the context of AI Foundations, which statement best describes “Evaluation and Quality Assurance”?
    - A. It is only relevant to academic research, not production.
-   - B. a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
+   - B. the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Operating in Production: the operational discipline required to run a AI Foundations system reliably, including monitoring, incident response and continuous improvement
+19. In the context of AI Foundations, which statement best describes “Evaluation and Quality Assurance”?
+   - A. It removes all security and governance requirements.
+   - B. It guarantees deterministic output regardless of input.
+   - C. a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a AI Foundations system before and after release
 20. In the context of AI Foundations, which statement best describes “Security, Privacy and Governance”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Security, Privacy and Governance: the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
+   - A. the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a AI Foundations system trustworthy and compliant
 21. In the context of AI Foundations, which statement best describes “Cost, Performance and Scaling”?
    - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
-   - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
+   - B. techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
+   - C. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
+   - **Answer: B.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a AI Foundations system to production traffic
 22. In the context of AI Foundations, which statement best describes “Integration and Interoperability”?
-   - A. patterns for integrating a AI Foundations system with surrounding enterprise systems and data
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Integration and Interoperability: patterns for integrating a AI Foundations system with surrounding enterprise systems and data
-23. In the context of AI Foundations, which statement best describes “Trends and Research Directions”?
-   - A. It is only relevant to academic research, not production.
-   - B. emerging trends, open problems and research directions shaping the future of AI Foundations
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of AI Foundations
-24. In the context of AI Foundations, which statement best describes “Capstone Project”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. patterns for integrating a AI Foundations system with surrounding enterprise systems and data
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Integration and Interoperability: patterns for integrating a AI Foundations system with surrounding enterprise systems and data
+23. In the context of AI Foundations, which statement best describes “Trends and Research Directions”?
+   - A. emerging trends, open problems and research directions shaping the future of AI Foundations
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of AI Foundations
+24. In the context of AI Foundations, which statement best describes “Capstone Project”?
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
    - D. a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable
    - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade AI Foundations deliverable
 25. In the context of AI Foundations, which statement best describes “Certification Preparation and Review”?
-   - A. a structured review and certification-style preparation covering the full breadth of AI Foundations
-   - B. It removes all security and governance requirements.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of AI Foundations
+   - A. It removes all security and governance requirements.
+   - B. a structured review and certification-style preparation covering the full breadth of AI Foundations
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of AI Foundations
 
 # References
 

@@ -1,0 +1,34 @@
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Document Ingestion and Chunki… Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Document Ingestion and Ch…]
+    S1[Prompt Assembly and Citat…]
+    S2[Security and Access Contr…]
+    S3[Failure Modes and Debuggi…]
+    S4[Handling Tables, Images a…]
+    S5[The End-to-End RAG Refere…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC

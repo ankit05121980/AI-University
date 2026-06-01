@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Privacy and Embedding Inversion
+package "Privacy and Embedding Inversion Platform" {
+  component "Privacy and Embedding I…" as C0
+  component "Dimensionality, Compres…" as C1
+  component "Similarity Metrics and …" as C2
+  component "From One-Hot to Distrib…" as C3
+  component "Domain Adaptation and F…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

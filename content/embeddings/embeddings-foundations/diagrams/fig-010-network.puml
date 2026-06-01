@@ -1,0 +1,16 @@
+@startuml
+title Network - Dimensionality, Compression and Quantisation
+package "Dimensionality, Compression and Quantisation Platform" {
+  component "Dimensionality, Compres…" as C0
+  component "Similarity Metrics and …" as C1
+  component "The Retrieval Stack Ref…" as C2
+  component "Multimodal and Cross-En…" as C3
+  component "Contrastive Representat…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

@@ -1,5 +1,5 @@
 classDiagram
-  class KGService {
+  class KGEService {
     +configure(config)
     +process(request) Response
     +evaluate(sample) Metrics
@@ -11,5 +11,5 @@ classDiagram
   class Policy {
     +authorise(ctx) bool
   }
-  KGService --> Repository
-  KGService --> Policy
+  KGEService --> Repository
+  KGEService --> Policy

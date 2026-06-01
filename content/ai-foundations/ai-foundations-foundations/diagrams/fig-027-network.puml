@@ -1,11 +1,11 @@
 @startuml
 title Network - Evaluation and Quality Assurance
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
+package "Evaluation and Quality Assurance Platform" {
+  component "Evaluation and Quality …" as C0
+  component "Optimisation and Gradie…" as C1
+  component "The Modern AI Stack" as C2
+  component "Scaling Laws and Comput…" as C3
+  component "The AI/ML Landscape and…" as C4
 }
 database "Storage" as DB
 C0 --> DB

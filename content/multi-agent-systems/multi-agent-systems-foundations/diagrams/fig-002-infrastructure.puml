@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Agent Roles and Topologies
+package "Agent Roles and Topologies Platform" {
+  component "Agent Roles and Topolog…" as C0
+  component "Communication Protocols" as C1
+  component "The Multi-Agent Referen…" as C2
+  component "Conflict Resolution" as C3
+  component "Frameworks and Patterns" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

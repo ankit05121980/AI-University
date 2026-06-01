@@ -1,0 +1,16 @@
+@startuml
+title Network - Mixture-of-Experts Transformers
+package "Mixture-of-Experts Transformers Platform" {
+  component "Mixture-of-Experts Tran…" as C0
+  component "Implementing a Transfor…" as C1
+  component "The Transformer Design …" as C2
+  component "Training Dynamics and S…" as C3
+  component "Why Self-Attention Repl…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

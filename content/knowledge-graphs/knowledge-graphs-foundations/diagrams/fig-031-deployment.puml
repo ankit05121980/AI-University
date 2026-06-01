@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Trends and Research Directions
+package "Trends and Research Directions Platform" {
+  component "Trends and Research Dir…" as C0
+  component "Graphs, Triples and the…" as C1
+  component "Graph Algorithms for In…" as C2
+  component "Graphs for Grounding LL…" as C3
+  component "Governance and Lineage" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

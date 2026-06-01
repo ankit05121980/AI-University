@@ -1,0 +1,16 @@
+@startuml
+title Component - Operating in Production
+package "Operating in Production Platform" {
+  component "Operating in Production" as C0
+  component "Reference Architecture …" as C1
+  component "Metadata Filtering and …" as C2
+  component "Distance Metrics and Qu…" as C3
+  component "Freshness, Upserts and …" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

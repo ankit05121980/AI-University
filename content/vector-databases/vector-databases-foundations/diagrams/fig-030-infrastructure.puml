@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Integration and Interoperability
+package "Integration and Interoperability Platform" {
+  component "Integration and Interop…" as C0
+  component "Benchmarking Vector Dat…" as C1
+  component "ANN Indexing Algorithms" as C2
+  component "Operating in Production" as C3
+  component "Security and Multi-Tena…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

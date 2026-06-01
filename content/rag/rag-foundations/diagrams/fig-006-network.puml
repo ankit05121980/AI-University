@@ -1,0 +1,16 @@
+@startuml
+title Network - Re-ranking and Context Selection
+package "Re-ranking and Context Selection Platform" {
+  component "Re-ranking and Context …" as C0
+  component "Embedding and Indexing …" as C1
+  component "Operating RAG in Produc…" as C2
+  component "Why RAG: Grounding and …" as C3
+  component "Caching and Cost Optimi…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

@@ -1,29 +1,8 @@
-# AI-University
-
-**Public portal:** https://ankit05121980.github.io/AI-University/
-
-**Cloudflare Pages** (when `CLOUDFLARE_API_TOKEN` is set in repo secrets): https://ai-university.pages.dev
-
-**Local dev:** `python serve.py` → http://localhost:8000/web/
-
-### Deploy to Cloudflare
-
-```bash
-export CLOUDFLARE_API_TOKEN="..."   # API token with Cloudflare Pages → Edit
-export CLOUDFLARE_ACCOUNT_ID="..."  # Account ID from dashboard sidebar
-./scripts/deploy-cloudflare.sh
-```
-
-Or add those values as GitHub Actions secrets — pushes to `main` that touch `web/` will deploy automatically.
-
-> Production hosts load `data/` and `content/` from jsDelivr (same files as this repo). After editing `web/`, run `./scripts/sync-portal-to-docs.sh` before pushing if you also use GitHub Pages.
-
----
-
 # AI-University — Enterprise AI Knowledge Publishing Platform
 
 A complete, automated **AI learning publishing system** that generates, stores,
-indexes, searches, views and downloads professional, enterprise-grade AI books.
+indexes, searches and reads professional, enterprise-grade AI books in a fully
+read-only online portal.
 
 The platform ships three things:
 
@@ -35,9 +14,10 @@ The platform ships three things:
    **Markdown, HTML, PDF, DOCX and a 30+ slide PPTX** deck, and stores every
    diagram's source separately (Mermaid, PlantUML, SVG, Draw.io XML).
 3. **A web portal** (`web/`) — a complete library, document viewer, PDF/format
-   download centre, full-text search, filters, diagram browser, bookmarks,
+   full-text search, an Ask Anything Q&A, filters, diagram browser, bookmarks,
    favourites, reading-progress tracking, learning paths and certification
-   paths.
+   paths. The portal is **read-only** — every book is read online; nothing is
+   downloadable.
 
 ---
 
@@ -73,8 +53,11 @@ in the committed demo measure **254–263 physical A4 pages**.
 >   categories) in `content/`, with all five formats, diagram sources and
 >   structured content.
 >
-> Any book — or the entire catalog — can be fully published on demand with a
-> single command (see below).
+> The included **app server (`python serve.py`) renders any of the 528 books on
+> demand** — full text and diagrams — so **every** title is fully readable
+> online without committing the multi-gigabyte corpus. The committed demo simply
+> lets the portal also work behind a plain static file server. The portal is
+> read-only; books are not downloadable in any format.
 
 ---
 
@@ -119,7 +102,12 @@ python -m aupub.cli catalog
 This writes `data/library.json`, `data/outlines/*.json`,
 `data/categories.json`, `data/search-index.json` and `data/stats.json`.
 
-### 3. Publish books to all formats
+### 3. (Optional) Pre-render the demo corpus for static hosting
+
+The portal is read-only and serves all reading via the app server, so this step
+is optional. It writes each book's structured `content.json` (used when the
+portal is hosted behind a plain static file server) and is also how the small
+committed demo corpus was produced.
 
 ```bash
 cd engine
@@ -148,6 +136,13 @@ python serve.py
 # open http://localhost:8000/web/
 ```
 
+`serve.py` is a small app server. With it running, **all 528 books are fully
+readable online (with rendered diagrams)**, generated on demand by the engine,
+and the **Ask Anything** feature answers questions from across the whole corpus.
+The portal is read-only — there are no downloads. (Served behind a plain static server
+instead, the portal still works but only the pre-rendered demo books are
+fully available.)
+
 ---
 
 ## The portal
@@ -158,12 +153,20 @@ Open `http://localhost:8000/web/` after running `serve.py`. Features:
 - **Document Library** — all 528 books with category/level/format filters,
   sorting, search and pagination.
 - **Categories** — browse the 33 subject areas.
-- **Document & PDF Viewer** — read any published book online with rendered
-  Mermaid diagrams, syntax-highlighted code, inline assessments and a sticky
-  table of contents; non-published titles show a full outline preview.
+- **Document & PDF Viewer** — read any published book online with fully
+  rendered, self-contained SVG diagrams (no external renderer / works offline),
+  syntax-highlighted code, inline assessments and a sticky table of contents;
+  non-published titles show a full outline preview.
+- **Ask Anything** — ask a natural-language question and get a synthesised
+  answer drawn from across the entire corpus, with citations to the exact books
+  and chapters to read next.
+- **Diagram Studio** — type a prompt or paste text (a process, architecture,
+  comparison, cycle, timeline or list) and the platform builds a professional
+  diagram by parsing the context; choose from 24 diagram types and 12 colour
+  palettes. Book diagrams are also generated per-chapter, centred on each
+  chapter's topic, so they differ from chapter to chapter.
 - **Search** — instant full-text search across titles, chapters and topics.
 - **Diagram Browser** — explore the 20 diagram types and four source formats.
-- **Download Center** — download PDF, DOCX, PPTX, HTML and Markdown.
 - **Learning Paths & Certification Paths** — curated multi-book tracks.
 - **Bookmarks, Favorites & Reading Progress** — persisted locally.
 - **Light/dark theme**.
@@ -202,6 +205,11 @@ source files alongside each published book:
 - **SVG** (`.svg`) — rendered capability/architecture maps
 - **Draw.io XML** (`.drawio`) — editable architecture diagrams
 
+In addition to the editable source above, every diagram is also rendered to a
+**self-contained SVG** that the web viewer and the HTML export embed inline, so
+diagrams are always visible without any external renderer or internet access.
+(The PDF and DOCX exports include the editable diagram source.)
+
 Diagram types include architecture, application flow, business process, data
 flow, sequence, class, component, deployment, network, cloud architecture, RAG
 architecture, agent architecture, security architecture, DevOps/CI-CD pipelines,
@@ -234,3 +242,45 @@ python -m aupub.cli --per-category 16 publish      # warning: many GB
 Increase `--per-category` to grow the library further (e.g. `--per-category 20`
 yields 660 books). The engine streams output per book, so generation scales
 linearly and can be resumed by category or id.
+
+---
+
+## Deploy to Vercel
+
+The portal deploys to Vercel as a **static site + Python serverless functions**.
+The API (reading any book, Ask Anything, Diagram Studio) is pure standard-library
+Python and generates everything on demand, so there are no runtime dependencies
+and nothing heavy to build.
+
+Layout used by Vercel:
+
+- `api/index.py` — a serverless function handling all `/api/*` routes
+  (`/api/health`, `/api/book/<id>`, `/api/ask`, `/api/diagram`). The engine is
+  bundled via `includeFiles` in `vercel.json`.
+- `web/`, `data/` — served as static assets.
+- `vercel.json` — rewrites `/api/*` to the function and redirects `/` to `/web/`.
+
+### Option A — Git integration (recommended)
+
+1. Push this repository to GitHub/GitLab/Bitbucket.
+2. In Vercel, **Add New → Project** and import the repo.
+3. Framework preset: **Other**. Leave Build Command and Output Directory empty
+   (root directory = repository root). No environment variables are required.
+4. **Deploy.** Your portal will be live at `https://<project>.vercel.app/`
+   (the root redirects to `/web/`).
+
+### Option B — Vercel CLI
+
+```bash
+npm i -g vercel
+vercel        # preview deploy
+vercel --prod # production deploy
+```
+
+Notes:
+
+- Books are rendered on demand by the serverless function, so all 528 titles
+  are fully readable online without committing the multi-gigabyte corpus.
+- The function has no pip dependencies (`api/requirements.txt` is empty); cold
+  starts are fast. `maxDuration` is set to 10s, well above the ~60ms needed to
+  build a book.

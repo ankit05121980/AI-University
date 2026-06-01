@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System
+package "Hands-On Lab: Building an End-to-End Prompt Engineering System Platform" {
+  component "Hands-On Lab: Building …" as C0
+  component "Prompt Evaluation and R…" as C1
+  component "Cost-Aware Prompt Design" as C2
+  component "Chain-of-Thought and Re…" as C3
+  component "Decoding Parameters and…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+title Class - Case Study: Search at Scale
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

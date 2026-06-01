@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Operating in Production
+package "Operating in Production Platform" {
+  component "Operating in Production" as C0
+  component "Multimodal Generation" as C1
+  component "Synthetic Data Generati…" as C2
+  component "Enterprise Use-Case Pat…" as C3
+  component "Large Language Models a…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

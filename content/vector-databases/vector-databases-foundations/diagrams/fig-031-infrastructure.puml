@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Trends and Research Directions
+package "Trends and Research Directions Platform" {
+  component "Trends and Research Dir…" as C0
+  component "Sharding, Replication a…" as C1
+  component "Security and Multi-Tena…" as C2
+  component "Hybrid and Multi-Vector…" as C3
+  component "Operating in Production" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+title Cloud Architecture - Word, Sentence and Document Embeddings
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml

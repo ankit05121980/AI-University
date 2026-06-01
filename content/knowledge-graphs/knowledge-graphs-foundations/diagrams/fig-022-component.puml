@@ -1,0 +1,16 @@
+@startuml
+title Component - Putting It Together: A Reference Implementation
+package "Putting It Together: A Reference Implementation Platform" {
+  component "Putting It Together: A …" as C0
+  component "Data Quality and Entity…" as C1
+  component "Knowledge Graph Embeddi…" as C2
+  component "Graphs for Grounding LL…" as C3
+  component "Visualising Knowledge G…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

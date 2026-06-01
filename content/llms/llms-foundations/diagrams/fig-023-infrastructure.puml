@@ -1,0 +1,16 @@
+@startuml
+title Infrastructure - Hands-On Lab: Building an End-to-End LLMs System
+package "Hands-On Lab: Building an End-to-End LLMs System Platform" {
+  component "Hands-On Lab: Building …" as C0
+  component "Instruction Tuning and …" as C1
+  component "Hallucination and Factu…" as C2
+  component "Inference Optimisation" as C3
+  component "The Transformer Backbon…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

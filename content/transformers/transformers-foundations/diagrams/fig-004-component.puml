@@ -1,0 +1,16 @@
+@startuml
+title Component - Positional Encoding
+package "Positional Encoding Platform" {
+  component "Positional Encoding" as C0
+  component "Feed-Forward Networks a…" as C1
+  component "Encoder, Decoder and En…" as C2
+  component "Implementing a Transfor…" as C3
+  component "Profiling and Optimisin…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

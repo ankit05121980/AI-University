@@ -1,0 +1,16 @@
+@startuml
+title Component - Productionising Generative Applications
+package "Productionising Generative Applications Platform" {
+  component "Productionising Generat…" as C0
+  component "Enterprise Use-Case Pat…" as C1
+  component "Synthetic Data Generati…" as C2
+  component "Evaluation of Generativ…" as C3
+  component "Cost, Latency and Throu…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

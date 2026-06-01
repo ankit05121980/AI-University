@@ -1,5 +1,5 @@
 @startuml
-title Network - Hands-On Lab: Building an End-to-End Generative AI System
+title Network - Case Study: Legal at Scale
 package "Generative AI Platform" {
   component "Generative Modelling Fo…" as C0
   component "Large Language Models a…" as C1

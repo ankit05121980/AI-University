@@ -81,28 +81,28 @@ First published 2026. First Edition. Document version 1.0.0.
 | # | Chapter | Est. pages | Diagrams | Code | Questions |
 |---|---------|-----------:|---------:|-----:|----------:|
 | 1 | Anatomy of a Prompt | 10 | 1 | 1 | 4 |
-| 2 | Zero-, One- and Few-Shot Prompting | 10 | 1 | 1 | 4 |
-| 3 | Chain-of-Thought and Reasoning Prompts | 10 | 1 | 1 | 4 |
+| 2 | Zero-, One- and Few-Shot Prompting | 11 | 2 | 1 | 4 |
+| 3 | Chain-of-Thought and Reasoning Prompts | 11 | 2 | 1 | 4 |
 | 4 | Structured Output and Schema Enforcement | 10 | 1 | 1 | 4 |
-| 5 | Retrieval-Augmented Prompting | 11 | 2 | 1 | 4 |
-| 6 | Tool Use and Function Calling | 11 | 2 | 1 | 4 |
+| 5 | Retrieval-Augmented Prompting | 10 | 1 | 1 | 4 |
+| 6 | Tool Use and Function Calling | 11 | 1 | 1 | 4 |
 | 7 | Prompt Templates and Composition | 10 | 1 | 1 | 4 |
-| 8 | Decoding Parameters and Sampling | 11 | 2 | 1 | 4 |
-| 9 | Prompt Evaluation and Regression Testing | 10 | 1 | 1 | 4 |
+| 8 | Decoding Parameters and Sampling | 10 | 1 | 1 | 4 |
+| 9 | Prompt Evaluation and Regression Testing | 11 | 1 | 1 | 4 |
 | 10 | Defending Against Prompt Injection | 11 | 2 | 1 | 4 |
-| 11 | Multi-Step and Agentic Prompting | 10 | 1 | 1 | 4 |
-| 12 | Prompt Management and Versioning | 11 | 2 | 1 | 4 |
+| 11 | Multi-Step and Agentic Prompting | 11 | 2 | 1 | 4 |
+| 12 | Prompt Management and Versioning | 10 | 1 | 1 | 4 |
 | 13 | Cost-Aware Prompt Design | 10 | 1 | 1 | 4 |
-| 14 | Patterns, Anti-Patterns and a Style Guide | 11 | 2 | 1 | 4 |
+| 14 | Patterns, Anti-Patterns and a Style Guide | 11 | 1 | 1 | 4 |
 | 15 | Putting It Together: A Reference Implementation | 11 | 1 | 1 | 4 |
-| 16 | Hands-On Lab: Building an End-to-End Prompt Engineering System | 11 | 2 | 1 | 4 |
+| 16 | Hands-On Lab: Building an End-to-End Prompt Engineering System | 11 | 1 | 1 | 4 |
 | 17 | Case Study: Support at Scale | 11 | 2 | 1 | 4 |
-| 18 | Operating in Production | 10 | 1 | 1 | 4 |
-| 19 | Evaluation and Quality Assurance | 11 | 1 | 1 | 4 |
-| 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
+| 18 | Operating in Production | 11 | 2 | 1 | 4 |
+| 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
+| 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
 | 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
-| 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
-| 23 | Trends and Research Directions | 10 | 1 | 0 | 4 |
+| 22 | Integration and Interoperability | 11 | 2 | 1 | 4 |
+| 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
 | 24 | Capstone Project | 10 | 1 | 1 | 4 |
 | 25 | Certification Preparation and Review | 10 | 1 | 1 | 4 |
 
@@ -112,37 +112,39 @@ First published 2026. First Edition. Document version 1.0.0.
 
 - Figure 1. Class - Anatomy of a Prompt
 - Figure 2. DevOps Pipeline - Zero-, One- and Few-Shot Prompting
-- Figure 3. Knowledge Graph - Chain-of-Thought and Reasoning Prompts
-- Figure 4. Capability Map - Structured Output and Schema Enforcement
-- Figure 5. Architecture - Retrieval-Augmented Prompting
-- Figure 6. Data Flow - Retrieval-Augmented Prompting
-- Figure 7. Data Flow - Tool Use and Function Calling
-- Figure 8. CI/CD Pipeline - Tool Use and Function Calling
+- Figure 3. Knowledge Graph - Zero-, One- and Few-Shot Prompting
+- Figure 4. Knowledge Graph - Chain-of-Thought and Reasoning Prompts
+- Figure 5. Capability Map - Chain-of-Thought and Reasoning Prompts
+- Figure 6. Capability Map - Structured Output and Schema Enforcement
+- Figure 7. Architecture - Retrieval-Augmented Prompting
+- Figure 8. Data Flow - Tool Use and Function Calling
 - Figure 9. CI/CD Pipeline - Prompt Templates and Composition
 - Figure 10. Agent Architecture - Decoding Parameters and Sampling
-- Figure 11. Application Flow - Decoding Parameters and Sampling
-- Figure 12. Application Flow - Prompt Evaluation and Regression Testing
-- Figure 13. RAG Architecture - Defending Against Prompt Injection
-- Figure 14. Network - Defending Against Prompt Injection
-- Figure 15. Network - Multi-Step and Agentic Prompting
+- Figure 11. Application Flow - Prompt Evaluation and Regression Testing
+- Figure 12. RAG Architecture - Defending Against Prompt Injection
+- Figure 13. Network - Defending Against Prompt Injection
+- Figure 14. Network - Multi-Step and Agentic Prompting
+- Figure 15. Security Architecture - Multi-Step and Agentic Prompting
 - Figure 16. Security Architecture - Prompt Management and Versioning
-- Figure 17. Component - Prompt Management and Versioning
-- Figure 18. Component - Cost-Aware Prompt Design
-- Figure 19. Sequence - Patterns, Anti-Patterns and a Style Guide
-- Figure 20. Deployment - Patterns, Anti-Patterns and a Style Guide
-- Figure 21. Deployment - Putting It Together: A Reference Implementation
-- Figure 22. Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System
-- Figure 23. Data Lineage - Hands-On Lab: Building an End-to-End Prompt Engineering System
-- Figure 24. Data Lineage - Case Study: Support at Scale
-- Figure 25. Cloud Architecture - Case Study: Support at Scale
-- Figure 26. Cloud Architecture - Operating in Production
-- Figure 27. Operating Model - Evaluation and Quality Assurance
-- Figure 28. Business Process - Security, Privacy and Governance
+- Figure 17. Component - Cost-Aware Prompt Design
+- Figure 18. Sequence - Patterns, Anti-Patterns and a Style Guide
+- Figure 19. Deployment - Putting It Together: A Reference Implementation
+- Figure 20. Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System
+- Figure 21. Data Lineage - Case Study: Support at Scale
+- Figure 22. Cloud Architecture - Case Study: Support at Scale
+- Figure 23. Cloud Architecture - Operating in Production
+- Figure 24. Operating Model - Operating in Production
+- Figure 25. Operating Model - Evaluation and Quality Assurance
+- Figure 26. Business Process - Evaluation and Quality Assurance
+- Figure 27. Business Process - Security, Privacy and Governance
+- Figure 28. Class - Security, Privacy and Governance
 - Figure 29. Class - Cost, Performance and Scaling
 - Figure 30. DevOps Pipeline - Integration and Interoperability
-- Figure 31. Knowledge Graph - Trends and Research Directions
-- Figure 32. Capability Map - Capstone Project
-- Figure 33. Architecture - Certification Preparation and Review
+- Figure 31. Knowledge Graph - Integration and Interoperability
+- Figure 32. Knowledge Graph - Trends and Research Directions
+- Figure 33. Capability Map - Trends and Research Directions
+- Figure 34. Capability Map - Capstone Project
+- Figure 35. Architecture - Certification Preparation and Review
 
 ---
 
@@ -233,7 +235,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 ```mermaid
 classDiagram
-  class PEService {
+  class AoaPService {
     +configure(config)
     +process(request) Response
     +evaluate(sample) Metrics
@@ -245,11 +247,11 @@ classDiagram
   class Policy {
     +authorise(ctx) bool
   }
-  PEService --> Repository
-  PEService --> Policy
+  AoaPService --> Repository
+  AoaPService --> Policy
 ```
 
-**Figure 1. Class - Anatomy of a Prompt** (mermaid). Figure: Class view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. Class - Anatomy of a Prompt** (mermaid). Figure: Class view for Anatomy of a Prompt. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -353,62 +355,73 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Anatomy of a Prompt component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Anatomy of a Prompt with a regression gate
+### Listing: Implementing a Anatomy of a Prompt component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class AnatomyOfAConfig:
+    """Configuration for the Anatomy of a Prompt component in a Prompt Engineering system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Anatomy of a Prompt output against references with a simple exact-match metric.
+class AnatomyOfA:
+    """A minimal, production-shaped implementation of Anatomy of a Prompt."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: AnatomyOfAConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"AnatomyOfA failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Anatomy of a Prompt goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Anatomy of a Prompt”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
-   - **Answer: D.** Anatomy of a Prompt: System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
+   - A. It applies exclusively to image data.
+   - B. System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Anatomy of a Prompt: System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. Keep untrusted content clearly delimited and never executed as instructions.
-   - B. It removes all security and governance requirements.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. It applies exclusively to image data.
    - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
    - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
 4. *(Discussion)* Describe a failure mode of Anatomy of a Prompt and how you would mitigate it.
    - **Model answer:** A strong answer defines anatomy of a prompt (System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
@@ -422,33 +435,33 @@ _This chapter examines zero-, one- and few-shot prompting within Prompt Engineer
 
 ## Introduction
 
-At its core, Zero-, One- and Few-Shot Prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+In practical terms, Zero-, One- and Few-Shot Prompting is best understood as how in-context examples shape behaviour and when demonstrations beat instructions. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Zero-, One- and Few-Shot Prompting addresses how in-context examples shape behaviour and when demonstrations beat instructions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Zero-, One- and Few-Shot Prompting refers to how in-context examples shape behaviour and when demonstrations beat instructions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
 To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, zero-, one- and few-shot prompting is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Zero-, One- and Few-Shot Prompting cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Zero-, One- and Few-Shot Prompting cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Zero-, One- and Few-Shot Prompting cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Zero-, One- and Few-Shot Prompting cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to zero-, one- and few-shot prompting. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to zero-, one- and few-shot prompting. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around zero-, one- and few-shot prompting are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around zero-, one- and few-shot prompting are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Zero-, One- and Few-Shot Prompting is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+From an architectural standpoint, Zero-, One- and Few-Shot Prompting sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```xml
 <mxfile host="ai-university">
@@ -458,16 +471,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="DevOps Pipeline - Zero-, One- and Few-Shot Prompting" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Prompt Engineering" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Anatomy of a Prompt" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Zero-, One- and Few-S…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Zero-, One- and Few-Sho…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Zero-, One- and Few-Sho…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Cost-Aware Prompt Design" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Chain-of-Thought and Re…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Prompt Templates and Co…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Structured Output and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Patterns, Anti-Patterns…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Retrieval-Augmented Pro…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Anatomy of a Prompt" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -477,17 +490,25 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 2. DevOps Pipeline - Zero-, One- and Few-Shot Prompting** (drawio). Figure: DevOps Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. DevOps Pipeline - Zero-, One- and Few-Shot Prompting** (drawio). Figure: DevOps Pipeline view for Zero-, One- and Few-Shot Prompting. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="tree" data-pal="9-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn3c019cb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#9d174d"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn3c019cb)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn3c019cb)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Zero-, One- and Few-Shot Prompting</text><rect x="330" y="70" width="180" height="48" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="88" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="420" y="100" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompting</text><path d="M420,118 C420,170 108,160 108,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="30" y="210" width="156" height="46" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="108" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="108" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompting</text><line x1="108" y1="256" x2="108" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="38" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="108" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="108" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Prompting</text><path d="M420,118 C420,170 316,160 316,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="238" y="210" width="156" height="46" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="316" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost-Aware Prompt Design</text><line x1="316" y1="256" x2="316" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="246" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="316" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="316" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Prompting</text><path d="M420,118 C420,170 524,160 524,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="446" y="210" width="156" height="46" rx="11" fill="#db2777" filter="url(#sh)"/><text x="524" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Templates and</text><text x="524" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Composition</text><line x1="524" y1="256" x2="524" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="454" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="524" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="524" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Prompting</text><path d="M420,118 C420,170 732,160 732,210" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="654" y="210" width="156" height="46" rx="11" fill="#ec4899" filter="url(#sh)"/><text x="732" y="228" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns, Anti-Patterns and</text><text x="732" y="238" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">a Style Guide</text><line x1="732" y1="256" x2="732" y2="296" stroke="#cbd5e1" stroke-width="1.6"/><rect x="662" y="296" width="140" height="40" rx="11" fill="#f8fafc" filter="url(#sh)"/><text x="732" y="311" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="732" y="321" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f172a" dominant-baseline="middle">Prompting</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Zero-, One- and Few-Shot Prompting  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 3. Knowledge Graph - Zero-, One- and Few-Shot Prompting** (svg). Figure: Knowledge Graph view for Zero-, One- and Few-Shot Prompting. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into zero-, one- and few-shot prompting. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into zero-, one- and few-shot prompting. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with retrieval-augmented prompting. Because retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -495,13 +516,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into zero-, one- and few-shot prompting. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into zero-, one- and few-shot prompting. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt templates and composition. Because prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -509,7 +530,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply zero-, one- and few-shot prompting as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply zero-, one- and few-shot prompting as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -581,64 +602,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Zero-, One- and Few-Shot Prompting component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Zero-, One- and Few-Shot Prompting with a regression gate
+### Listing: Implementing a Zero-, One- and Few-Shot Prompting component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class AndConfig:
+    """Configuration for the Zero-, One- and Few-Shot Prompting component in a Prompt Engineering system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Zero-, One- and Few-Shot Prompting output against references with a simple exact-match metric.
+class And:
+    """A minimal, production-shaped implementation of Zero-, One- and Few-Shot Prompting."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: AndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"And failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Zero-, One- and Few-Shot Prompting goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Zero-, One- and Few-Shot Prompting”?
-   - A. It makes the system slower but has no other effect.
+   - A. It applies exclusively to image data.
    - B. How in-context examples shape behaviour and when demonstrations beat instructions.
-   - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
    - **Answer: B.** Zero-, One- and Few-Shot Prompting: How in-context examples shape behaviour and when demonstrations beat instructions.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. Version prompts and gate changes behind an evaluation suite.
-   - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Version prompts and gate changes behind an evaluation suite.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. Overlong contexts that dilute attention and inflate cost.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It is only relevant to academic research, not production.
    - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-4. *(Discussion)* Explain Zero-, One- and Few-Shot Prompting and why it matters in a production Prompt Engineering system.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It applies exclusively to image data.
+   - C. Relying on temperature tweaks instead of structural prompt fixes.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+4. *(Discussion)* Describe a failure mode of Zero-, One- and Few-Shot Prompting and how you would mitigate it.
    - **Model answer:** A strong answer defines zero-, one- and few-shot prompting (How in-context examples shape behaviour and when demonstrations beat instructions.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -650,23 +682,23 @@ _This chapter examines chain-of-thought and reasoning prompts within Prompt Engi
 
 ## Introduction
 
-We define Chain-of-Thought and Reasoning Prompts as eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+We define Chain-of-Thought and Reasoning Prompts as eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Chain-of-Thought and Reasoning Prompts is best understood as eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Chain-of-Thought and Reasoning Prompts can be characterised as eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, chain-of-thought and reasoning prompts is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
 
-Chain-of-Thought and Reasoning Prompts cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Chain-of-Thought and Reasoning Prompts cannot be understood in isolation from defending against prompt injection. Recall that defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Chain-of-Thought and Reasoning Prompts cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Chain-of-Thought and Reasoning Prompts cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to chain-of-thought and reasoning prompts. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to chain-of-thought and reasoning prompts. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around chain-of-thought and reasoning prompts are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around chain-of-thought and reasoning prompts are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -676,45 +708,33 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Knowledge Graph - Chain-of-Thought and Reasoning Prompts</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="mindmap" data-pal="10-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn8466b73" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#14532d"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn8466b73)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn8466b73)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Chain-of-Thought and Reasoning Prompts</text><rect x="330" y="210" width="180" height="52" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="420" y="229" text-anchor="middle" font-size="11.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Chain-of-Thought and</text><text x="420" y="243" text-anchor="middle" font-size="11.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning Prompts</text><path d="M330,236 C250,236 250,126 248,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="104" width="156" height="44" rx="11" fill="#4ade80" filter="url(#sh)"/><text x="170" y="121" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Chain-of-Thought and</text><text x="170" y="131" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning Prompts</text><path d="M330,236 C250,236 250,236 248,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="214" width="156" height="44" rx="11" fill="#14532d" filter="url(#sh)"/><text x="170" y="231" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Defending Against Prompt</text><text x="170" y="241" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Injection</text><path d="M330,236 C250,236 250,346 248,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="92" y="324" width="156" height="44" rx="11" fill="#166534" filter="url(#sh)"/><text x="170" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Evaluation and</text><text x="170" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Regression Testing</text><path d="M510,236 C590,236 590,126 592,126" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="104" width="156" height="44" rx="11" fill="#15803d" filter="url(#sh)"/><text x="670" y="121" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns, Anti-Patterns and</text><text x="670" y="131" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">a Style Guide</text><path d="M510,236 C590,236 590,236 592,236" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="214" width="156" height="44" rx="11" fill="#16a34a" filter="url(#sh)"/><text x="670" y="231" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Management and</text><text x="670" y="241" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Versioning</text><path d="M510,236 C590,236 590,346 592,346" fill="none" stroke="#cbd5e1" stroke-width="2"/><rect x="592" y="324" width="156" height="44" rx="11" fill="#22c55e" filter="url(#sh)"/><text x="670" y="341" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Decoding Parameters and</text><text x="670" y="351" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Sampling</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Chain-of-Thought and Reasoning Prompts  •  Knowledge Graph</text></svg>
 
 </div>
 
-**Figure 3. Knowledge Graph - Chain-of-Thought and Reasoning Prompts** (svg). Figure: Knowledge Graph view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 4. Knowledge Graph - Chain-of-Thought and Reasoning Prompts** (svg). Figure: Knowledge Graph view for Chain-of-Thought and Reasoning Prompts. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="honeycomb" data-pal="10-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn4286178" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#4ade80"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn4286178)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn4286178)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Chain-of-Thought and Reasoning Prompts</text><polygon points="465,212 465,264 420,290 375,264 375,212 420,186" fill="#22c55e"/><text x="420" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Chain-of-Thought</text><text x="420" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><polygon points="375,212 375,264 330,290 284,264 284,212 330,186" fill="#4ade80"/><text x="330" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Defending</text><text x="330" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Against</text><polygon points="556,212 556,264 510,290 465,264 465,212 510,186" fill="#14532d"/><text x="510" y="233" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt</text><text x="510" y="243" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation</text><polygon points="420,134 420,186 375,212 330,186 330,134 375,108" fill="#166534"/><text x="375" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Patterns,</text><text x="375" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Anti-Patterns</text><polygon points="510,134 510,186 465,212 420,186 420,134 465,108" fill="#15803d"/><text x="465" y="155" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt</text><text x="465" y="165" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Management</text><polygon points="420,290 420,342 375,368 330,342 330,290 375,264" fill="#16a34a"/><text x="375" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Decoding</text><text x="375" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Parameters</text><polygon points="510,290 510,342 465,368 420,342 420,290 465,264" fill="#22c55e"/><text x="465" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">Zero-, One-</text><text x="465" y="321" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Chain-of-Thought and Reasoning Prompts  •  Capability Map</text></svg>
+
+</div>
+
+**Figure 5. Capability Map - Chain-of-Thought and Reasoning Prompts** (svg). Figure: Capability Map view for Chain-of-Thought and Reasoning Prompts. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into chain-of-thought and reasoning prompts. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into chain-of-thought and reasoning prompts. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -722,13 +742,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into chain-of-thought and reasoning prompts. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into chain-of-thought and reasoning prompts. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -736,7 +756,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply chain-of-thought and reasoning prompts as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply chain-of-thought and reasoning prompts as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -808,81 +828,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Chain-of-Thought and Reasoning Prompts logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Chain-of-Thought and Reasoning Prompts
+### Listing: Evaluating Chain-of-Thought and Reasoning Prompts with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Chain-of-Thought and Reasoning Prompts."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Chain-of-Thought and Reasoning Prompts output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Chain-of-Thought and Reasoning Prompts”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Chain-of-Thought and Reasoning Prompts: Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Chain-of-Thought and Reasoning Prompts: Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It makes the system slower but has no other effect.
+   - C. Overlong contexts that dilute attention and inflate cost.
    - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
+   - **Answer: A.** Best practice: Version prompts and gate changes behind an evaluation suite.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Version prompts and gate changes behind an evaluation suite.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. Mixing untrusted user content with trusted instructions (injection risk).
-   - **Answer: D.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-4. *(Discussion)* Describe a failure mode of Chain-of-Thought and Reasoning Prompts and how you would mitigate it.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Treating prompts as throwaway strings with no testing or versioning.
+   - C. It makes the system slower but has no other effect.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: B.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+4. *(Discussion)* How does Chain-of-Thought and Reasoning Prompts interact with security and governance requirements?
    - **Model answer:** A strong answer defines chain-of-thought and reasoning prompts (Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -894,23 +897,23 @@ _This chapter examines structured output and schema enforcement within Prompt En
 
 ## Introduction
 
-In practical terms, Structured Output and Schema Enforcement is best understood as jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Structured Output and Schema Enforcement can be characterised as jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Structured Output and Schema Enforcement addresses jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Structured Output and Schema Enforcement addresses jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, structured output and schema enforcement is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, structured output and schema enforcement is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
 
-Structured Output and Schema Enforcement cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Structured Output and Schema Enforcement cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Structured Output and Schema Enforcement cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Structured Output and Schema Enforcement cannot be understood in isolation from multi-step and agentic prompting. Recall that multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to structured output and schema enforcement. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to structured output and schema enforcement. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around structured output and schema enforcement are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around structured output and schema enforcement are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -920,37 +923,31 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Capability Map - Structured Output and Schema Enforceme…</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="2-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn64d2996" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn64d2996)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn64d2996)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Structured Output and Schema Enforcement</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#0d9488"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#0d9488"/><text x="128" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Structured</text><text x="128" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Output and</text><text x="128" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Schema</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#14b8a6"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#14b8a6"/><text x="274" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Retrieval-Augmented</text><text x="274" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompting</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#047857"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#047857"/><text x="420" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Step and</text><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Agentic</text><text x="420" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompting</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#059669"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#059669"/><text x="566" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Tool Use and</text><text x="566" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Function Calling</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#10b981"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#10b981"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Management and</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Versioning</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Structured Output and Schema Enforcement  •  Capability Map</text></svg>
 
 </div>
 
-**Figure 4. Capability Map - Structured Output and Schema Enforcement** (svg). Figure: Capability Map view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 6. Capability Map - Structured Output and Schema Enforcement** (svg). Figure: Capability Map view for Structured Output and Schema Enforcement. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
+
+Having established the essentials, we now go deeper into structured output and schema enforcement. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with retrieval-augmented prompting. Because retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Wei et al. — Chain-of-Thought Prompting (2022) and Wang et al. — Self-Consistency Improves Chain of Thought (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
 
 Having established the essentials, we now go deeper into structured output and schema enforcement. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -964,23 +961,9 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Wei et al. — Chain-of-Thought Prompting (2022) and Wang et al. — Self-Consistency Improves Chain of Thought (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
 
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into structured output and schema enforcement. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
-
-In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Wei et al. — Chain-of-Thought Prompting (2022) and Wang et al. — Self-Consistency Improves Chain of Thought (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply structured output and schema enforcement as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply structured output and schema enforcement as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1052,63 +1035,80 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Structured Output and Schema Enforcement logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Structured Output and Schema Enforcement with a regression gate
+### Listing: A composable processing pipeline for Structured Output and Schema Enforcement
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Structured Output and Schema Enforcement output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Structured Output and Schema Enforcement."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Structured Output and Schema Enforcement”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
+   - A. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
    - D. JSON mode, function/tool calling and grammar-constrained decoding for reliable integration.
    - **Answer: D.** Structured Output and Schema Enforcement: JSON mode, function/tool calling and grammar-constrained decoding for reliable integration.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. Mixing untrusted user content with trusted instructions (injection risk).
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
+   - B. It makes the system slower but has no other effect.
+   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - D. Treating prompts as throwaway strings with no testing or versioning.
+   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Overlong contexts that dilute attention and inflate cost.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+   - A. It applies exclusively to image data.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
 4. *(Discussion)* How does Structured Output and Schema Enforcement interact with security and governance requirements?
    - **Model answer:** A strong answer defines structured output and schema enforcement (JSON mode, function/tool calling and grammar-constrained decoding for reliable integration.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
@@ -1121,23 +1121,23 @@ _This chapter examines retrieval-augmented prompting within Prompt Engineering. 
 
 ## Introduction
 
-Formally, Retrieval-Augmented Prompting addresses injecting grounded context, citation discipline and context-window budgeting. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Retrieval-Augmented Prompting can be characterised as injecting grounded context, citation discipline and context-window budgeting. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Retrieval-Augmented Prompting is best understood as injecting grounded context, citation discipline and context-window budgeting. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Retrieval-Augmented Prompting can be characterised as injecting grounded context, citation discipline and context-window budgeting. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, retrieval-augmented prompting is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, retrieval-augmented prompting is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
 
-Retrieval-Augmented Prompting cannot be understood in isolation from structured output and schema enforcement. Recall that structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Retrieval-Augmented Prompting cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Retrieval-Augmented Prompting cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Retrieval-Augmented Prompting cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to retrieval-augmented prompting. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to retrieval-augmented prompting. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around retrieval-augmented prompting are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around retrieval-augmented prompting are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1147,64 +1147,46 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Architecture - Retrieval-Augmented Prompting</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
-
-</div>
-
-**Figure 5. Architecture - Retrieval-Augmented Prompting** (svg). Figure: Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Data Flow - Retrieval-Augmented Prompting
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Architecture - Retrieval-Augmented Prompting" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Retrieval-Augmented P…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Retrieval-Augmented Pro…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Prompt Evaluation and R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Zero-, One- and Few-Sho…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Cost-Aware Prompt Design" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Anatomy of a Prompt" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 6. Data Flow - Retrieval-Augmented Prompting** (plantuml). Figure: Data Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 7. Architecture - Retrieval-Augmented Prompting** (drawio). Figure: Architecture view for Retrieval-Augmented Prompting. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into retrieval-augmented prompting. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into retrieval-augmented prompting. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with structured output and schema enforcement. Because structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1218,7 +1200,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with chain-of-thought and reasoning prompts. Because chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1226,7 +1208,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply retrieval-augmented prompting as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply retrieval-augmented prompting as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1349,24 +1331,24 @@ class Prompting:
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Retrieval-Augmented Prompting”?
-   - A. Injecting grounded context, citation discipline and context-window budgeting.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Retrieval-Augmented Prompting: Injecting grounded context, citation discipline and context-window budgeting.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Injecting grounded context, citation discipline and context-window budgeting.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Retrieval-Augmented Prompting: Injecting grounded context, citation discipline and context-window budgeting.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. It makes the system slower but has no other effect.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
+   - A. Specify the output format explicitly and validate it programmatically.
+   - B. It applies exclusively to image data.
+   - C. Overlong contexts that dilute attention and inflate cost.
    - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-4. *(Discussion)* Explain Retrieval-Augmented Prompting and why it matters in a production Prompt Engineering system.
+   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - B. Specify the output format explicitly and validate it programmatically.
+   - C. It applies exclusively to image data.
+   - D. Mixing untrusted user content with trusted instructions (injection risk).
+   - **Answer: D.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+4. *(Discussion)* Describe a failure mode of Retrieval-Augmented Prompting and how you would mitigate it.
    - **Model answer:** A strong answer defines retrieval-augmented prompting (Injecting grounded context, citation discipline and context-window budgeting.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1378,33 +1360,33 @@ _This chapter examines tool use and function calling within Prompt Engineering. 
 
 ## Introduction
 
-Tool Use and Function Calling can be characterised as letting models invoke functions, search and code execution within a controlled loop. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+At its core, Tool Use and Function Calling concerns letting models invoke functions, search and code execution within a controlled loop. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Tool Use and Function Calling is best understood as letting models invoke functions, search and code execution within a controlled loop. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Tool Use and Function Calling is best understood as letting models invoke functions, search and code execution within a controlled loop. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, tool use and function calling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, tool use and function calling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Tool Use and Function Calling cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Tool Use and Function Calling cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Tool Use and Function Calling cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Tool Use and Function Calling cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to tool use and function calling. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to tool use and function calling. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around tool use and function calling are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around tool use and function calling are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Tool Use and Function Calling is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+The reference architecture for Tool Use and Function Calling separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```xml
 <mxfile host="ai-university">
@@ -1414,16 +1396,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Data Flow - Tool Use and Function Calling" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Prompt Engineering" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Anatomy of a Prompt" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Tool Use and Function…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Tool Use and Function C…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Zero-, One- and Few-Sho…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Anatomy of a Prompt" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Chain-of-Thought and Re…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Retrieval-Augmented Pro…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Structured Output and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Decoding Parameters and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Retrieval-Augmented Pro…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Defending Against Promp…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -1433,26 +1415,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 7. Data Flow - Tool Use and Function Calling** (drawio). Figure: Data Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title CI/CD Pipeline - Tool Use and Function Calling
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 8. CI/CD Pipeline - Tool Use and Function Calling** (plantuml). Figure: CI/CD Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 8. Data Flow - Tool Use and Function Calling** (drawio). Figure: Data Flow view for Tool Use and Function Calling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -1462,7 +1425,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1470,13 +1433,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into tool use and function calling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into tool use and function calling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with structured output and schema enforcement. Because structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1484,7 +1447,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply tool use and function calling as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply tool use and function calling as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1556,81 +1519,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Tool Use and Function Calling logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Tool Use and Function Calling
+### Listing: Evaluating Tool Use and Function Calling with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Tool Use and Function Calling."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Tool Use and Function Calling output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Tool Use and Function Calling”?
-   - A. It is only relevant to academic research, not production.
-   - B. Letting models invoke functions, search and code execution within a controlled loop.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Tool Use and Function Calling: Letting models invoke functions, search and code execution within a controlled loop.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
+   - D. Letting models invoke functions, search and code execution within a controlled loop.
+   - **Answer: D.** Tool Use and Function Calling: Letting models invoke functions, search and code execution within a controlled loop.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It is only relevant to academic research, not production.
+   - A. It makes the system slower but has no other effect.
    - B. Specify the output format explicitly and validate it programmatically.
    - C. It applies exclusively to image data.
-   - D. Overlong contexts that dilute attention and inflate cost.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
    - **Answer: B.** Best practice: Specify the output format explicitly and validate it programmatically.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. It makes the system slower but has no other effect.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-4. *(Discussion)* How would you test and monitor Tool Use and Function Calling in production?
+   - A. Relying on temperature tweaks instead of structural prompt fixes.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+4. *(Discussion)* Describe a failure mode of Tool Use and Function Calling and how you would mitigate it.
    - **Model answer:** A strong answer defines tool use and function calling (Letting models invoke functions, search and code execution within a controlled loop.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1642,27 +1588,27 @@ _This chapter examines prompt templates and composition within Prompt Engineerin
 
 ## Introduction
 
-Prompt Templates and Composition can be characterised as parameterised templates, partials and guardrail wrappers for reuse at scale. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Prompt Templates and Composition addresses parameterised templates, partials and guardrail wrappers for reuse at scale. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Prompt Templates and Composition is best understood as parameterised templates, partials and guardrail wrappers for reuse at scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+At its core, Prompt Templates and Composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, prompt templates and composition is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, prompt templates and composition is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
 
-Prompt Templates and Composition cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Prompt Templates and Composition cannot be understood in isolation from chain-of-thought and reasoning prompts. Recall that chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Prompt Templates and Composition cannot be understood in isolation from defending against prompt injection. Recall that defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Prompt Templates and Composition cannot be understood in isolation from decoding parameters and sampling. Recall that decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to prompt templates and composition. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to prompt templates and composition. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around prompt templates and composition are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around prompt templates and composition are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Prompt Templates and Composition separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+From an architectural standpoint, Prompt Templates and Composition sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1670,43 +1616,34 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```plantuml
+@startuml
+title CI/CD Pipeline - Prompt Templates and Composition
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">CI/CD Pipeline - Prompt Templates and Composition</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
+_Source diagram (plantuml); render with the appropriate tool._
 
-</div>
-
-**Figure 9. CI/CD Pipeline - Prompt Templates and Composition** (svg). Figure: CI/CD Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 9. CI/CD Pipeline - Prompt Templates and Composition** (plantuml). Figure: CI/CD Pipeline view for Prompt Templates and Composition. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into prompt templates and composition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt templates and composition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with chain-of-thought and reasoning prompts. Because chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1714,13 +1651,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into prompt templates and composition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt templates and composition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1728,7 +1665,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-Consider a concrete scenario. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply prompt templates and composition as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply prompt templates and composition as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1800,64 +1737,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Prompt Templates and Composition component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Prompt Templates and Composition with a regression gate
+### Listing: Implementing a Prompt Templates and Composition component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class PromptTemplatesAndConfig:
+    """Configuration for the Prompt Templates and Composition component in a Prompt Engineering system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Prompt Templates and Composition output against references with a simple exact-match metric.
+class PromptTemplatesAnd:
+    """A minimal, production-shaped implementation of Prompt Templates and Composition."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: PromptTemplatesAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PromptTemplatesAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Prompt Templates and Composition goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Prompt Templates and Composition”?
-   - A. Parameterised templates, partials and guardrail wrappers for reuse at scale.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Prompt Templates and Composition: Parameterised templates, partials and guardrail wrappers for reuse at scale.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Parameterised templates, partials and guardrail wrappers for reuse at scale.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Prompt Templates and Composition: Parameterised templates, partials and guardrail wrappers for reuse at scale.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Overlong contexts that dilute attention and inflate cost.
+   - B. Version prompts and gate changes behind an evaluation suite.
    - C. It makes the system slower but has no other effect.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: B.** Best practice: Version prompts and gate changes behind an evaluation suite.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It removes all security and governance requirements.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It guarantees deterministic output regardless of input.
    - D. Specify the output format explicitly and validate it programmatically.
    - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-4. *(Discussion)* Explain Prompt Templates and Composition and why it matters in a production Prompt Engineering system.
+4. *(Discussion)* How does Prompt Templates and Composition interact with security and governance requirements?
    - **Model answer:** A strong answer defines prompt templates and composition (Parameterised templates, partials and guardrail wrappers for reuse at scale.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1869,101 +1817,51 @@ _This chapter examines decoding parameters and sampling within Prompt Engineerin
 
 ## Introduction
 
-At its core, Decoding Parameters and Sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+In practical terms, Decoding Parameters and Sampling is best understood as temperature, top-p, penalties and stop sequences as levers on determinism. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Decoding Parameters and Sampling refers to temperature, top-p, penalties and stop sequences as levers on determinism. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+In practical terms, Decoding Parameters and Sampling is best understood as temperature, top-p, penalties and stop sequences as levers on determinism. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, decoding parameters and sampling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Decoding Parameters and Sampling cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Decoding Parameters and Sampling cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Decoding Parameters and Sampling cannot be understood in isolation from patterns, anti-patterns and a style guide. Recall that patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Decoding Parameters and Sampling cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to decoding parameters and sampling. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to decoding parameters and sampling. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around decoding parameters and sampling are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around decoding parameters and sampling are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Decoding Parameters and Sampling is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+From an architectural standpoint, Decoding Parameters and Sampling sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Prompt Engineering Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Anatomy of a Prompt]
-    S1[Zero-, One- and Few-Shot …]
-    S2[Chain-of-Thought and Reas…]
-    S3[Structured Output and Sch…]
-    S4[Retrieval-Augmented Promp…]
-    S5[Tool Use and Function Cal…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
+<div class="diagram-svg">
 
-**Figure 10. Agent Architecture - Decoding Parameters and Sampling** (mermaid). Figure: Agent Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="6-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn537b874" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#64748b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn537b874)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn537b874)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Agent Architecture - Decoding Parameters and Sampling</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#64748b" filter="url(#sh)"/><text x="104" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Decoding Parameters</text><text x="104" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Sampling</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="262" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Zero-, One- and</text><text x="262" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Few-Shot Prompting</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost-Aware Prompt</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Design</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Anatomy of a Prompt</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#334155" filter="url(#sh)"/><text x="736" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Defending Against</text><text x="736" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Injection</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Decoding Parameters and Sampling  •  Agent Architecture</text></svg>
 
-```plantuml
-@startuml
-title Application Flow - Decoding Parameters and Sampling
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+</div>
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 11. Application Flow - Decoding Parameters and Sampling** (plantuml). Figure: Application Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. Agent Architecture - Decoding Parameters and Sampling** (svg). Figure: Agent Architecture view for Decoding Parameters and Sampling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into decoding parameters and sampling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1971,13 +1869,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into decoding parameters and sampling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into decoding parameters and sampling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1985,7 +1883,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply decoding parameters and sampling as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply decoding parameters and sampling as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2057,81 +1955,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Decoding Parameters and Sampling logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Decoding Parameters and Sampling
+### Listing: Evaluating Decoding Parameters and Sampling with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Decoding Parameters and Sampling."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Decoding Parameters and Sampling output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Decoding Parameters and Sampling”?
-   - A. Temperature, top-p, penalties and stop sequences as levers on determinism.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Decoding Parameters and Sampling: Temperature, top-p, penalties and stop sequences as levers on determinism.
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Temperature, top-p, penalties and stop sequences as levers on determinism.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Decoding Parameters and Sampling: Temperature, top-p, penalties and stop sequences as levers on determinism.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - B. It makes the system slower but has no other effect.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It applies exclusively to image data.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-4. *(Discussion)* Walk through how you would design Decoding Parameters and Sampling for an enterprise Prompt Engineering workload.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Mixing untrusted user content with trusted instructions (injection risk).
+   - **Answer: D.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+4. *(Discussion)* How does Decoding Parameters and Sampling interact with security and governance requirements?
    - **Model answer:** A strong answer defines decoding parameters and sampling (Temperature, top-p, penalties and stop sequences as levers on determinism.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2143,23 +2024,23 @@ _This chapter examines prompt evaluation and regression testing within Prompt En
 
 ## Introduction
 
-Formally, Prompt Evaluation and Regression Testing addresses golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+At its core, Prompt Evaluation and Regression Testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Prompt Evaluation and Regression Testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+At its core, Prompt Evaluation and Regression Testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, prompt evaluation and regression testing is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, prompt evaluation and regression testing is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
 
-Prompt Evaluation and Regression Testing cannot be understood in isolation from defending against prompt injection. Recall that defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Prompt Evaluation and Regression Testing cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Prompt Evaluation and Regression Testing cannot be understood in isolation from patterns, anti-patterns and a style guide. Recall that patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Prompt Evaluation and Regression Testing cannot be understood in isolation from patterns, anti-patterns and a style guide. Recall that patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to prompt evaluation and regression testing. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to prompt evaluation and regression testing. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around prompt evaluation and regression testing are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around prompt evaluation and regression testing are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2169,36 +2050,46 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```plantuml
-@startuml
-title Application Flow - Prompt Evaluation and Regression Testing
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Application Flow">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Application Flow - Prompt Evaluation and Regression Testing" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Prompt Evaluation and…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Prompt Evaluation and R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Cost-Aware Prompt Design" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Patterns, Anti-Patterns…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Chain-of-Thought and Re…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Multi-Step and Agentic …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 12. Application Flow - Prompt Evaluation and Regression Testing** (plantuml). Figure: Application Flow view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 11. Application Flow - Prompt Evaluation and Regression Testing** (drawio). Figure: Application Flow view for Prompt Evaluation and Regression Testing. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into prompt evaluation and regression testing. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt evaluation and regression testing. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2206,13 +2097,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into prompt evaluation and regression testing. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt evaluation and regression testing. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt templates and composition. Because prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with patterns, anti-patterns and a style guide. Because patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2220,7 +2111,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-Consider a concrete scenario. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply prompt evaluation and regression testing as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply prompt evaluation and regression testing as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2332,24 +2223,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Prompt Evaluation and Regression Testing”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Prompt Evaluation and Regression Testing: Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
-2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. It removes all security and governance requirements.
-   - C. Specify the output format explicitly and validate it programmatically.
-   - D. Mixing untrusted user content with trusted instructions (injection risk).
-   - **Answer: C.** Best practice: Specify the output format explicitly and validate it programmatically.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - A. It removes all security and governance requirements.
    - B. It is only relevant to academic research, not production.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-4. *(Discussion)* How would you test and monitor Prompt Evaluation and Regression Testing in production?
+   - C. It guarantees deterministic output regardless of input.
+   - D. Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
+   - **Answer: D.** Prompt Evaluation and Regression Testing: Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
+2. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - **Answer: C.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+4. *(Discussion)* Walk through how you would design Prompt Evaluation and Regression Testing for an enterprise Prompt Engineering workload.
    - **Model answer:** A strong answer defines prompt evaluation and regression testing (Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2361,82 +2252,62 @@ _This chapter examines defending against prompt injection within Prompt Engineer
 
 ## Introduction
 
-We define Defending Against Prompt Injection as untrusted-content isolation, instruction hierarchy and output validation. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, Defending Against Prompt Injection addresses untrusted-content isolation, instruction hierarchy and output validation. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Defending Against Prompt Injection addresses untrusted-content isolation, instruction hierarchy and output validation. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Defending Against Prompt Injection can be characterised as untrusted-content isolation, instruction hierarchy and output validation. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, defending against prompt injection is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, defending against prompt injection is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
 
-Defending Against Prompt Injection cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Defending Against Prompt Injection cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Defending Against Prompt Injection cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Defending Against Prompt Injection cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to defending against prompt injection. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to defending against prompt injection. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around defending against prompt injection are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around defending against prompt injection are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Defending Against Prompt Injection sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+The reference architecture for Defending Against Prompt Injection separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Prompt Engineering Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Anatomy of a Prompt]
-    S1[Zero-, One- and Few-Shot …]
-    S2[Chain-of-Thought and Reas…]
-    S3[Structured Output and Sch…]
-    S4[Retrieval-Augmented Promp…]
-    S5[Tool Use and Function Cal…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```plantuml
+@startuml
+title RAG Architecture - Defending Against Prompt Injection
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 13. RAG Architecture - Defending Against Prompt Injection** (mermaid). Figure: RAG Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 12. RAG Architecture - Defending Against Prompt Injection** (plantuml). Figure: RAG Architecture view for Defending Against Prompt Injection. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
 title Network - Defending Against Prompt Injection
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
-  component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
+package "Defending Against Prompt Injection Platform" {
+  component "Defending Against Promp…" as C0
+  component "Retrieval-Augmented Pro…" as C1
+  component "Zero-, One- and Few-Sho…" as C2
+  component "Decoding Parameters and…" as C3
+  component "Prompt Templates and Co…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -2449,23 +2320,9 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 14. Network - Defending Against Prompt Injection** (plantuml). Figure: Network view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Network - Defending Against Prompt Injection** (plantuml). Figure: Network view for Defending Against Prompt Injection. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into defending against prompt injection. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
-
-In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Wei et al. — Chain-of-Thought Prompting (2022) and Wang et al. — Self-Consistency Improves Chain of Thought (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into defending against prompt injection. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -2473,7 +2330,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multi-step and agentic prompting. Because multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with retrieval-augmented prompting. Because retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Wei et al. — Chain-of-Thought Prompting (2022) and Wang et al. — Self-Consistency Improves Chain of Thought (2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into defending against prompt injection. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with prompt templates and composition. Because prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2481,7 +2352,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-Consider a concrete scenario. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply defending against prompt injection as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply defending against prompt injection as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2553,75 +2424,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Defending Against Prompt Injection component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
+Pipelines keep Defending Against Prompt Injection logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Defending Against Prompt Injection component
+### Listing: A composable processing pipeline for Defending Against Prompt Injection
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class DefendingAgainstPromptConfig:
-    """Configuration for the Defending Against Prompt Injection component in a Prompt Engineering system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class DefendingAgainstPrompt:
-    """A minimal, production-shaped implementation of Defending Against Prompt Injection."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Defending Against Prompt Injection."""
 
-    def __init__(self, config: DefendingAgainstPromptConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"DefendingAgainstPrompt failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Defending Against Prompt Injection goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Defending Against Prompt Injection”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Untrusted-content isolation, instruction hierarchy and output validation.
-   - C. It applies exclusively to image data.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Defending Against Prompt Injection: Untrusted-content isolation, instruction hierarchy and output validation.
-2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - A. Untrusted-content isolation, instruction hierarchy and output validation.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
    - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-4. *(Discussion)* How does Defending Against Prompt Injection interact with security and governance requirements?
+   - **Answer: A.** Defending Against Prompt Injection: Untrusted-content isolation, instruction hierarchy and output validation.
+2. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Relying on temperature tweaks instead of structural prompt fixes.
+   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: D.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+4. *(Discussion)* Describe a failure mode of Defending Against Prompt Injection and how you would mitigate it.
    - **Model answer:** A strong answer defines defending against prompt injection (Untrusted-content isolation, instruction hierarchy and output validation.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2633,23 +2510,23 @@ _This chapter examines multi-step and agentic prompting within Prompt Engineerin
 
 ## Introduction
 
-Formally, Multi-Step and Agentic Prompting addresses planner/executor patterns, reflection and decomposition of complex tasks. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+In practical terms, Multi-Step and Agentic Prompting is best understood as planner/executor patterns, reflection and decomposition of complex tasks. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Multi-Step and Agentic Prompting addresses planner/executor patterns, reflection and decomposition of complex tasks. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Multi-Step and Agentic Prompting can be characterised as planner/executor patterns, reflection and decomposition of complex tasks. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
 To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, multi-step and agentic prompting is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Multi-Step and Agentic Prompting cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Multi-Step and Agentic Prompting cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Multi-Step and Agentic Prompting cannot be understood in isolation from patterns, anti-patterns and a style guide. Recall that patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Multi-Step and Agentic Prompting cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to multi-step and agentic prompting. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to multi-step and agentic prompting. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around multi-step and agentic prompting are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around multi-step and agentic prompting are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2659,17 +2536,17 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```plantuml
 @startuml
 title Network - Multi-Step and Agentic Prompting
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
+package "Multi-Step and Agentic Prompting Platform" {
+  component "Multi-Step and Agentic …" as C0
+  component "Tool Use and Function C…" as C1
+  component "Prompt Templates and Co…" as C2
   component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
+  component "Prompt Management and V…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -2682,17 +2559,25 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 15. Network - Multi-Step and Agentic Prompting** (plantuml). Figure: Network view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 14. Network - Multi-Step and Agentic Prompting** (plantuml). Figure: Network view for Multi-Step and Agentic Prompting. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="4-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn3ec15f8" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn3ec15f8)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn3ec15f8)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Multi-Step and Agentic Prompting</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#fb7185"/><text x="345" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Multi-Step and</text><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Agentic</text><text x="345" y="183" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Prompting</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#db2777"/><text x="495" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Tool Use and</text><text x="495" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Function Calling</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#9f1239"/><text x="345" y="312" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Templates</text><text x="345" y="326" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">and Composition</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#be123c"/><text x="495" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Structured</text><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Output and</text><text x="495" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Schema</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Multi-Step and Agentic Prompting  •  Security Architecture</text></svg>
+
+</div>
+
+**Figure 15. Security Architecture - Multi-Step and Agentic Prompting** (svg). Figure: Security Architecture view for Multi-Step and Agentic Prompting. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into multi-step and agentic prompting. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2702,11 +2587,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into multi-step and agentic prompting. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with patterns, anti-patterns and a style guide. Because patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2714,7 +2599,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-Consider a concrete scenario. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply multi-step and agentic prompting as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply multi-step and agentic prompting as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2786,40 +2671,51 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Multi-Step and Agentic Prompting component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Multi-Step and Agentic Prompting with a regression gate
+### Listing: Implementing a Multi-Step and Agentic Prompting component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class AndAgenticConfig:
+    """Configuration for the Multi-Step and Agentic Prompting component in a Prompt Engineering system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Multi-Step and Agentic Prompting output against references with a simple exact-match metric.
+class AndAgentic:
+    """A minimal, production-shaped implementation of Multi-Step and Agentic Prompting."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: AndAgenticConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"AndAgentic failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Multi-Step and Agentic Prompting goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
@@ -2828,21 +2724,21 @@ if __name__ == "__main__":
 1. In the context of Prompt Engineering, which statement best describes “Multi-Step and Agentic Prompting”?
    - A. It applies exclusively to image data.
    - B. Planner/executor patterns, reflection and decomposition of complex tasks.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Multi-Step and Agentic Prompting: Planner/executor patterns, reflection and decomposition of complex tasks.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. It removes all security and governance requirements.
+   - A. Relying on temperature tweaks instead of structural prompt fixes.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
    - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. Version prompts and gate changes behind an evaluation suite.
-   - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
    - C. It is only relevant to academic research, not production.
-   - D. Treating prompts as throwaway strings with no testing or versioning.
-   - **Answer: D.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
 4. *(Discussion)* How would you test and monitor Multi-Step and Agentic Prompting in production?
    - **Model answer:** A strong answer defines multi-step and agentic prompting (Planner/executor patterns, reflection and decomposition of complex tasks.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
@@ -2855,61 +2751,33 @@ _This chapter examines prompt management and versioning within Prompt Engineerin
 
 ## Introduction
 
-Formally, Prompt Management and Versioning addresses registries, A/B testing and rollback for production prompts. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+We define Prompt Management and Versioning as registries, A/B testing and rollback for production prompts. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Prompt Management and Versioning as registries, A/B testing and rollback for production prompts. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Prompt Management and Versioning as registries, A/B testing and rollback for production prompts. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, prompt management and versioning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, prompt management and versioning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost.
 
-Prompt Management and Versioning cannot be understood in isolation from multi-step and agentic prompting. Recall that multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Prompt Management and Versioning cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Prompt Management and Versioning cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Prompt Management and Versioning cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to prompt management and versioning. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to prompt management and versioning. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around prompt management and versioning are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around prompt management and versioning are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Prompt Management and Versioning sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+A robust architecture for Prompt Management and Versioning is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Security Architecture - Prompt Management and Versioning</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
-
-</div>
-
-**Figure 16. Security Architecture - Prompt Management and Versioning** (svg). Figure: Security Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 ```mermaid
 flowchart TB
@@ -2917,14 +2785,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["Prompt Engineering Platform"]
+  subgraph Platform["Prompt Management and Version… Platform"]
     GW[Gateway / Orchestrator]
-    S0[Anatomy of a Prompt]
-    S1[Zero-, One- and Few-Shot …]
-    S2[Chain-of-Thought and Reas…]
-    S3[Structured Output and Sch…]
-    S4[Retrieval-Augmented Promp…]
-    S5[Tool Use and Function Cal…]
+    S0[Prompt Management and Ver…]
+    S1[Tool Use and Function Cal…]
+    S2[Prompt Templates and Comp…]
+    S3[Chain-of-Thought and Reas…]
+    S4[Patterns, Anti-Patterns a…]
+    S5[Decoding Parameters and S…]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -2948,17 +2816,17 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 17. Component - Prompt Management and Versioning** (mermaid). Figure: Component view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 16. Security Architecture - Prompt Management and Versioning** (mermaid). Figure: Security Architecture view for Prompt Management and Versioning. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into prompt management and versioning. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into prompt management and versioning. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with multi-step and agentic prompting. Because multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2968,11 +2836,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into prompt management and versioning. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2980,7 +2848,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply prompt management and versioning as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply prompt management and versioning as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3052,75 +2920,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Prompt Management and Versioning component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
+Pipelines keep Prompt Management and Versioning logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Prompt Management and Versioning component
+### Listing: A composable processing pipeline for Prompt Management and Versioning
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class PromptManagementAndConfig:
-    """Configuration for the Prompt Management and Versioning component in a Prompt Engineering system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class PromptManagementAnd:
-    """A minimal, production-shaped implementation of Prompt Management and Versioning."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Prompt Management and Versioning."""
 
-    def __init__(self, config: PromptManagementAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PromptManagementAnd failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Prompt Management and Versioning goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Prompt Management and Versioning”?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
-   - C. Registries, A/B testing and rollback for production prompts.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Prompt Management and Versioning: Registries, A/B testing and rollback for production prompts.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Registries, A/B testing and rollback for production prompts.
+   - **Answer: D.** Prompt Management and Versioning: Registries, A/B testing and rollback for production prompts.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. Relying on temperature tweaks instead of structural prompt fixes.
+   - C. Treating prompts as throwaway strings with no testing or versioning.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. It removes all security and governance requirements.
    - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-4. *(Discussion)* Walk through how you would design Prompt Management and Versioning for an enterprise Prompt Engineering workload.
+   - D. Keep untrusted content clearly delimited and never executed as instructions.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+4. *(Discussion)* What trade-offs would you weigh when implementing Prompt Management and Versioning?
    - **Model answer:** A strong answer defines prompt management and versioning (Registries, A/B testing and rollback for production prompts.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3132,66 +3006,82 @@ _This chapter examines cost-aware prompt design within Prompt Engineering. It co
 
 ## Introduction
 
-We define Cost-Aware Prompt Design as compression, context pruning and caching to control token spend. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+In practical terms, Cost-Aware Prompt Design is best understood as compression, context pruning and caching to control token spend. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Cost-Aware Prompt Design can be characterised as compression, context pruning and caching to control token spend. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Cost-Aware Prompt Design refers to compression, context pruning and caching to control token spend. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, cost-aware prompt design is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
 
-Cost-Aware Prompt Design cannot be understood in isolation from defending against prompt injection. Recall that defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost-Aware Prompt Design cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Cost-Aware Prompt Design cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost-Aware Prompt Design cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 Several established patterns apply directly to cost-aware prompt design. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost-aware prompt design are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost-aware prompt design are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Cost-Aware Prompt Design sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+A robust architecture for Cost-Aware Prompt Design is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```plantuml
-@startuml
-title Component - Cost-Aware Prompt Design
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
-  component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Cost-Aware Prompt Design Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Cost-Aware Prompt Design]
+    S1[Zero-, One- and Few-Shot …]
+    S2[Retrieval-Augmented Promp…]
+    S3[Multi-Step and Agentic Pr…]
+    S4[Defending Against Prompt …]
+    S5[Chain-of-Thought and Reas…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 18. Component - Cost-Aware Prompt Design** (plantuml). Figure: Component view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 17. Component - Cost-Aware Prompt Design** (mermaid). Figure: Component view for Cost-Aware Prompt Design. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost-aware prompt design. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost-aware prompt design. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3199,13 +3089,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost-aware prompt design. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost-aware prompt design. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt templates and composition. Because prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3213,7 +3103,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply cost-aware prompt design as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply cost-aware prompt design as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3285,64 +3175,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Cost-Aware Prompt Design logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Cost-Aware Prompt Design with a regression gate
+### Listing: A composable processing pipeline for Cost-Aware Prompt Design
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Cost-Aware Prompt Design output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Cost-Aware Prompt Design."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Cost-Aware Prompt Design”?
-   - A. It makes the system slower but has no other effect.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Compression, context pruning and caching to control token spend.
-   - **Answer: D.** Cost-Aware Prompt Design: Compression, context pruning and caching to control token spend.
-2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Specify the output format explicitly and validate it programmatically.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Mixing untrusted user content with trusted instructions (injection risk).
-   - B. It makes the system slower but has no other effect.
-   - C. Specify the output format explicitly and validate it programmatically.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Compression, context pruning and caching to control token spend.
    - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-4. *(Discussion)* Walk through how you would design Cost-Aware Prompt Design for an enterprise Prompt Engineering workload.
+   - **Answer: C.** Cost-Aware Prompt Design: Compression, context pruning and caching to control token spend.
+2. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - **Answer: D.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+4. *(Discussion)* How does Cost-Aware Prompt Design interact with security and governance requirements?
    - **Model answer:** A strong answer defines cost-aware prompt design (Compression, context pruning and caching to control token spend.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3354,23 +3261,23 @@ _This chapter examines patterns, anti-patterns and a style guide within Prompt E
 
 ## Introduction
 
-At its core, Patterns, Anti-Patterns and a Style Guide concerns a reusable library of prompt patterns and the failure modes to avoid. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Patterns, Anti-Patterns and a Style Guide can be characterised as a reusable library of prompt patterns and the failure modes to avoid. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Patterns, Anti-Patterns and a Style Guide as a reusable library of prompt patterns and the failure modes to avoid. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+In practical terms, Patterns, Anti-Patterns and a Style Guide is best understood as a reusable library of prompt patterns and the failure modes to avoid. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, patterns, anti-patterns and a style guide is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, patterns, anti-patterns and a style guide is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Patterns, Anti-Patterns and a Style Guide cannot be understood in isolation from decoding parameters and sampling. Recall that decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Patterns, Anti-Patterns and a Style Guide cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Patterns, Anti-Patterns and a Style Guide cannot be understood in isolation from chain-of-thought and reasoning prompts. Recall that chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Patterns, Anti-Patterns and a Style Guide cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to patterns, anti-patterns and a style guide. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to patterns, anti-patterns and a style guide. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around patterns, anti-patterns and a style guide are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around patterns, anti-patterns and a style guide are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -3380,60 +3287,36 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```plantuml
-@startuml
-title Sequence - Patterns, Anti-Patterns and a Style Guide
-actor User
-participant Gateway
-participant Processor
-database Store
-User -> Gateway : request
-Gateway -> Processor : dispatch
-Processor -> Store : retrieve
-Store --> Processor : context
-Processor --> Gateway : result
-Gateway --> User : response
-@enduml
+```mermaid
+sequenceDiagram
+  autonumber
+  participant U as User
+  participant G as Gateway
+  participant P as Processor
+  participant D as Data Store
+  U->>G: Submit request
+  G->>G: Validate & authorise
+  G->>P: Dispatch task
+  P->>D: Retrieve context
+  D-->>P: Return records
+  P->>P: Process & reason
+  P-->>G: Result + metadata
+  G-->>U: Response (with provenance)
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 19. Sequence - Patterns, Anti-Patterns and a Style Guide** (plantuml). Figure: Sequence view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Deployment - Patterns, Anti-Patterns and a Style Guide
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
-  component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 20. Deployment - Patterns, Anti-Patterns and a Style Guide** (plantuml). Figure: Deployment view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 18. Sequence - Patterns, Anti-Patterns and a Style Guide** (mermaid). Figure: Sequence view for Patterns, Anti-Patterns and a Style Guide. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into patterns, anti-patterns and a style guide. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into patterns, anti-patterns and a style guide. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with decoding parameters and sampling. Because decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with retrieval-augmented prompting. Because retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3443,11 +3326,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into patterns, anti-patterns and a style guide. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with structured output and schema enforcement. Because structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3455,7 +3338,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply patterns, anti-patterns and a style guide as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply patterns, anti-patterns and a style guide as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3527,40 +3410,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Patterns, Anti-Patterns and a Style Guide logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Patterns, Anti-Patterns and a Style Guide with a regression gate
+### Listing: A composable processing pipeline for Patterns, Anti-Patterns and a Style Guide
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Patterns, Anti-Patterns and a Style Guide output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Patterns, Anti-Patterns and a Style Guide."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -3568,22 +3468,22 @@ if __name__ == "__main__":
 
 1. In the context of Prompt Engineering, which statement best describes “Patterns, Anti-Patterns and a Style Guide”?
    - A. A reusable library of prompt patterns and the failure modes to avoid.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Patterns, Anti-Patterns and a Style Guide: A reusable library of prompt patterns and the failure modes to avoid.
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+   - A. Overlong contexts that dilute attention and inflate cost.
+   - B. Relying on temperature tweaks instead of structural prompt fixes.
+   - C. Specify the output format explicitly and validate it programmatically.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Specify the output format explicitly and validate it programmatically.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It removes all security and governance requirements.
+   - A. Treating prompts as throwaway strings with no testing or versioning.
    - B. It is only relevant to academic research, not production.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
 4. *(Discussion)* What trade-offs would you weigh when implementing Patterns, Anti-Patterns and a Style Guide?
    - **Model answer:** A strong answer defines patterns, anti-patterns and a style guide (A reusable library of prompt patterns and the failure modes to avoid.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
@@ -3596,27 +3496,27 @@ _This chapter examines putting it together: a reference implementation within Pr
 
 ## Introduction
 
-Putting It Together: A Reference Implementation can be characterised as an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-At its core, Putting It Together: A Reference Implementation concerns an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Putting It Together: A Reference Implementation as an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from decoding parameters and sampling. Recall that decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from multi-step and agentic prompting. Recall that multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from defending against prompt injection. Recall that defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Putting It Together: A Reference Implementation sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+The reference architecture for Putting It Together: A Reference Implementation separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -3627,12 +3527,12 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 ```plantuml
 @startuml
 title Deployment - Putting It Together: A Reference Implementation
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
-  component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
+package "Putting It Together: A Reference Implementation Platform" {
+  component "Putting It Together: A …" as C0
+  component "Multi-Step and Agentic …" as C1
+  component "Defending Against Promp…" as C2
+  component "Retrieval-Augmented Pro…" as C3
+  component "Decoding Parameters and…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -3645,17 +3545,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 21. Deployment - Putting It Together: A Reference Implementation** (plantuml). Figure: Deployment view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 19. Deployment - Putting It Together: A Reference Implementation** (plantuml). Figure: Deployment view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with decoding parameters and sampling. Because decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-step and agentic prompting. Because multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3663,13 +3563,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with patterns, anti-patterns and a style guide. Because patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3677,7 +3577,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply putting it together: a reference implementation as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply putting it together: a reference implementation as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3749,64 +3649,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Putting It Together: A Reference Implementation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Putting It Together: A Reference Implementation with a regression gate
+### Listing: A composable processing pipeline for Putting It Together: A Reference Implementation
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Putting It Together: A Reference Implementation output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Putting It Together: A Reference Implementation."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
-   - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
-2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. It removes all security and governance requirements.
+   - A. an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It makes the system slower but has no other effect.
-   - D. Treating prompts as throwaway strings with no testing or versioning.
-   - **Answer: D.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-4. *(Discussion)* How does Putting It Together: A Reference Implementation interact with security and governance requirements?
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
+2. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - D. Keep untrusted content clearly delimited and never executed as instructions.
+   - **Answer: C.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+4. *(Discussion)* Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3818,27 +3735,27 @@ _This chapter examines hands-on lab: building an end-to-end prompt engineering s
 
 ## Introduction
 
-Formally, Hands-On Lab: Building an End-to-End Prompt Engineering System addresses a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Hands-On Lab: Building an End-to-End Prompt Engineering System can be characterised as a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Hands-On Lab: Building an End-to-End Prompt Engineering System refers to a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Hands-On Lab: Building an End-to-End Prompt Engineering System concerns a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, hands-on lab: building an end-to-end prompt engineering system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, hands-on lab: building an end-to-end prompt engineering system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
 
-Hands-On Lab: Building an End-to-End Prompt Engineering System cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End Prompt Engineering System cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Hands-On Lab: Building an End-to-End Prompt Engineering System cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End Prompt Engineering System cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end prompt engineering system. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end prompt engineering system. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around hands-on lab: building an end-to-end prompt engineering system are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hands-on lab: building an end-to-end prompt engineering system are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Hands-On Lab: Building an End-to-End Prompt Engineering System is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+The reference architecture for Hands-On Lab: Building an End-to-End Prompt Engineering System separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -3849,12 +3766,12 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 ```plantuml
 @startuml
 title Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System
-package "Prompt Engineering Platform" {
-  component "Anatomy of a Prompt" as C0
-  component "Zero-, One- and Few-Sho…" as C1
-  component "Chain-of-Thought and Re…" as C2
-  component "Structured Output and S…" as C3
-  component "Retrieval-Augmented Pro…" as C4
+package "Hands-On Lab: Building an End-to-End Prompt Engineering System Platform" {
+  component "Hands-On Lab: Building …" as C0
+  component "Prompt Evaluation and R…" as C1
+  component "Cost-Aware Prompt Design" as C2
+  component "Chain-of-Thought and Re…" as C3
+  component "Decoding Parameters and…" as C4
 }
 database "Storage" as DB
 C0 --> DB
@@ -3867,36 +3784,17 @@ C4 --> DB
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 22. Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System** (plantuml). Figure: Infrastructure view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Data Lineage - Hands-On Lab: Building an End-to-End Prompt Engineering System
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 23. Data Lineage - Hands-On Lab: Building an End-to-End Prompt Engineering System** (plantuml). Figure: Data Lineage view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 20. Infrastructure - Hands-On Lab: Building an End-to-End Prompt Engineering System** (plantuml). Figure: Infrastructure view for Hands-On Lab: Building an End-to-End Prompt Engineering System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end prompt engineering system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end prompt engineering system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3904,13 +3802,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end prompt engineering system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end prompt engineering system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with patterns, anti-patterns and a style guide. Because patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3918,7 +3816,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-Consider a concrete scenario. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply hands-on lab: building an end-to-end prompt engineering system as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply hands-on lab: building an end-to-end prompt engineering system as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4041,23 +3939,23 @@ class Building:
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Hands-On Lab: Building an End-to-End Prompt Engineering System”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles
-   - D. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Hands-On Lab: Building an End-to-End Prompt Engineering System: a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. Version prompts and gate changes behind an evaluation suite.
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It applies exclusively to image data.
+   - C. Relying on temperature tweaks instead of structural prompt fixes.
    - D. Overlong contexts that dilute attention and inflate cost.
-   - **Answer: C.** Best practice: Version prompts and gate changes behind an evaluation suite.
+   - **Answer: A.** Best practice: Version prompts and gate changes behind an evaluation suite.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - **Answer: C.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
 4. *(Discussion)* Walk through how you would design Hands-On Lab: Building an End-to-End Prompt Engineering System for an enterprise Prompt Engineering workload.
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end prompt engineering system (a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
@@ -4070,23 +3968,23 @@ _This chapter examines case study: support at scale within Prompt Engineering. I
 
 ## Introduction
 
-At its core, Case Study: Support at Scale concerns a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+In practical terms, Case Study: Support at Scale is best understood as a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Case Study: Support at Scale is best understood as a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+We define Case Study: Support at Scale as a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
 To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, case study: support at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Case Study: Support at Scale cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Case Study: Support at Scale cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Case Study: Support at Scale cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Case Study: Support at Scale cannot be understood in isolation from prompt evaluation and regression testing. Recall that prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to case study: support at scale. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: support at scale. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around case study: support at scale are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around case study: support at scale are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4098,18 +3996,24 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+```plantuml
+@startuml
+title Data Lineage - Case Study: Support at Scale
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 24. Data Lineage - Case Study: Support at Scale** (mermaid). Figure: Data Lineage view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 21. Data Lineage - Case Study: Support at Scale** (plantuml). Figure: Data Lineage view for Case Study: Support at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```plantuml
 @startuml
@@ -4128,17 +4032,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 25. Cloud Architecture - Case Study: Support at Scale** (plantuml). Figure: Cloud Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 22. Cloud Architecture - Case Study: Support at Scale** (plantuml). Figure: Cloud Architecture view for Case Study: Support at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into case study: support at scale. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into case study: support at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with retrieval-augmented prompting. Because retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4148,11 +4052,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into case study: support at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4160,7 +4064,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply case study: support at scale as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply case study: support at scale as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4232,64 +4136,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Case Study: Support at Scale logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Case Study: Support at Scale with a regression gate
+### Listing: A composable processing pipeline for Case Study: Support at Scale
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Case Study: Support at Scale output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Case Study: Support at Scale."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Case Study: Support at Scale”?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Case Study: Support at Scale: a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
+   - **Answer: D.** Case Study: Support at Scale: a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It removes all security and governance requirements.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. Specify the output format explicitly and validate it programmatically.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Specify the output format explicitly and validate it programmatically.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. Relying on temperature tweaks instead of structural prompt fixes.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - A. Overlong contexts that dilute attention and inflate cost.
+   - B. Specify the output format explicitly and validate it programmatically.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
    - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-4. *(Discussion)* How would you test and monitor Case Study: Support at Scale in production?
+   - **Answer: B.** Best practice: Specify the output format explicitly and validate it programmatically.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Mixing untrusted user content with trusted instructions (injection risk).
+   - C. It makes the system slower but has no other effect.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: B.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+4. *(Discussion)* Explain Case Study: Support at Scale and why it matters in a production Prompt Engineering system.
    - **Model answer:** A strong answer defines case study: support at scale (a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4301,33 +4222,33 @@ _This chapter examines operating in production within Prompt Engineering. It cov
 
 ## Introduction
 
-In practical terms, Operating in Production is best understood as the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Operating in Production refers to the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Operating in Production as the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Operating in Production addresses the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
 
-Operating in Production cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Operating in Production cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Operating in Production cannot be understood in isolation from decoding parameters and sampling. Recall that decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Operating in Production cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Several established patterns apply directly to operating in production. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around operating in production are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Operating in Production sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+The reference architecture for Operating in Production separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 ```mermaid
 flowchart TB
@@ -4335,14 +4256,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["Prompt Engineering Platform"]
+  subgraph Platform["Operating in Production Platform"]
     GW[Gateway / Orchestrator]
-    S0[Anatomy of a Prompt]
+    S0[Operating in Production]
     S1[Zero-, One- and Few-Shot …]
-    S2[Chain-of-Thought and Reas…]
-    S3[Structured Output and Sch…]
-    S4[Retrieval-Augmented Promp…]
-    S5[Tool Use and Function Cal…]
+    S2[Prompt Management and Ver…]
+    S3[Chain-of-Thought and Reas…]
+    S4[Cost-Aware Prompt Design]
+    S5[Prompt Templates and Comp…]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -4366,17 +4287,25 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 26. Cloud Architecture - Operating in Production** (mermaid). Figure: Cloud Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 23. Cloud Architecture - Operating in Production** (mermaid). Figure: Cloud Architecture view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="0-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnb8e412f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnb8e412f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnb8e412f)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Operating in Production</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="228" y="109" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating in Production</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompting</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Management and</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Versioning</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Chain-of-Thought and</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning Prompts</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="228" y="209" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating in Production</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="388" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="388" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompting</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Management and</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Versioning</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="708" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Chain-of-Thought and</text><text x="708" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning Prompts</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="228" y="309" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Operating in Production</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Zero-, One- and Few-Shot</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompting</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Management and</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Versioning</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="708" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Chain-of-Thought and</text><text x="708" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reasoning Prompts</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Operating in Production  •  Operating Model</text></svg>
+
+</div>
+
+**Figure 24. Operating Model - Operating in Production** (svg). Figure: Operating Model view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4384,13 +4313,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-step and agentic prompting. Because multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4398,7 +4327,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply operating in production as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply operating in production as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4470,80 +4399,63 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Operating in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Operating in Production
+### Listing: Evaluating Operating in Production with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Operating in Production."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Operating in Production output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Operating in Production”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
+   - B. It guarantees deterministic output regardless of input.
    - C. the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement
-   - D. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Operating in Production: the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Version prompts and gate changes behind an evaluation suite.
-   - B. It applies exclusively to image data.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. Mixing untrusted user content with trusted instructions (injection risk).
-   - **Answer: A.** Best practice: Version prompts and gate changes behind an evaluation suite.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It is only relevant to academic research, not production.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. It removes all security and governance requirements.
    - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+   - **Answer: B.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Specify the output format explicitly and validate it programmatically.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: D.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
 4. *(Discussion)* Walk through how you would design Operating in Production for an enterprise Prompt Engineering workload.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
@@ -4556,23 +4468,23 @@ _This chapter examines evaluation and quality assurance within Prompt Engineerin
 
 ## Introduction
 
-Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Evaluation and Quality Assurance as a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release. It is foundational: later capabilities in Prompt Engineering are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
 
-Evaluation and Quality Assurance cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Quality Assurance cannot be understood in isolation from structured output and schema enforcement. Recall that structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Evaluation and Quality Assurance cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluation and Quality Assurance cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4582,45 +4494,54 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+
+```xml
+<mxfile host="ai-university">
+  <diagram name="Operating Model">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Operating Model - Evaluation and Quality Assurance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Evaluation and Qualit…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Evaluation and Quality …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Structured Output and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Cost-Aware Prompt Design" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Prompt Management and V…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Prompt Evaluation and R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
+
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 25. Operating Model - Evaluation and Quality Assurance** (drawio). Figure: Operating Model view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Operating Model - Evaluation and Quality Assurance</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="steps" data-pal="6-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn6b037b1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#64748b"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn6b037b1)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn6b037b1)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Evaluation and Quality Assurance</text><rect x="30" y="200" width="132" height="70" rx="12" fill="#475569"/><circle cx="54" cy="224" r="15" fill="#ffffff"/><text x="54" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#475569" dominant-baseline="middle">1</text><text x="96" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation and</text><text x="96" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Quality Assurance</text><rect x="192" y="200" width="132" height="70" rx="12" fill="#64748b"/><circle cx="216" cy="224" r="15" fill="#ffffff"/><text x="216" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#64748b" dominant-baseline="middle">2</text><text x="258" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Structured Output</text><text x="258" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Schema</text><line x1="162" y1="235" x2="192" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="354" y="200" width="132" height="70" rx="12" fill="#0f172a"/><circle cx="378" cy="224" r="15" fill="#ffffff"/><text x="378" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a" dominant-baseline="middle">3</text><text x="420" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Cost-Aware Prompt</text><text x="420" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Design</text><line x1="324" y1="235" x2="354" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="516" y="200" width="132" height="70" rx="12" fill="#1e293b"/><circle cx="540" cy="224" r="15" fill="#ffffff"/><text x="540" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#1e293b" dominant-baseline="middle">4</text><text x="582" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Management</text><text x="582" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Versioning</text><line x1="486" y1="235" x2="516" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="678" y="200" width="132" height="70" rx="12" fill="#94a3b8"/><circle cx="702" cy="224" r="15" fill="#ffffff"/><text x="702" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#94a3b8" dominant-baseline="middle">5</text><text x="744" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Evaluation</text><text x="744" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff" dominant-baseline="middle">and Regression</text><line x1="648" y1="235" x2="678" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Evaluation and Quality Assurance  •  Business Process</text></svg>
 
 </div>
 
-**Figure 27. Operating Model - Evaluation and Quality Assurance** (svg). Figure: Operating Model view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 26. Business Process - Evaluation and Quality Assurance** (svg). Figure: Business Process view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with structured output and schema enforcement. Because structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4630,11 +4551,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4642,7 +4563,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply evaluation and quality assurance as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply evaluation and quality assurance as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4714,75 +4635,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Evaluation and Quality Assurance component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
+Pipelines keep Evaluation and Quality Assurance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Evaluation and Quality Assurance component
+### Listing: A composable processing pipeline for Evaluation and Quality Assurance
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class EvaluationAndQualityConfig:
-    """Configuration for the Evaluation and Quality Assurance component in a Prompt Engineering system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class EvaluationAndQuality:
-    """A minimal, production-shaped implementation of Evaluation and Quality Assurance."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Evaluation and Quality Assurance."""
 
-    def __init__(self, config: EvaluationAndQualityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"EvaluationAndQuality failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Evaluation and Quality Assurance goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
+   - A. a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
+   - B. It applies exclusively to image data.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
-   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
-   - D. Treating prompts as throwaway strings with no testing or versioning.
-   - **Answer: B.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Relying on temperature tweaks instead of structural prompt fixes.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: B.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-4. *(Discussion)* Walk through how you would design Evaluation and Quality Assurance for an enterprise Prompt Engineering workload.
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. It removes all security and governance requirements.
+   - C. Version prompts and gate changes behind an evaluation suite.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+4. *(Discussion)* Describe a failure mode of Evaluation and Quality Assurance and how you would mitigate it.
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4794,27 +4721,27 @@ _This chapter examines security, privacy and governance within Prompt Engineerin
 
 ## Introduction
 
-Security, Privacy and Governance refers to the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Security, Privacy and Governance refers to the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Security, Privacy and Governance addresses the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Security, Privacy and Governance is best understood as the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Teams that master this consistently ship more reliable Prompt Engineering systems at lower cost.
 
-Security, Privacy and Governance cannot be understood in isolation from structured output and schema enforcement. Recall that structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security, Privacy and Governance cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Security, Privacy and Governance cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Security, Privacy and Governance cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to security, privacy and governance. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+A robust architecture for Security, Privacy and Governance is layered so each part can evolve independently without destabilising the whole. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -4822,18 +4749,53 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+```xml
+<mxfile host="ai-university">
+  <diagram name="Business Process">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Business Process - Security, Privacy and Governance" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Security, Privacy and…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Security, Privacy and G…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Cost-Aware Prompt Design" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Prompt Templates and Co…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Chain-of-Thought and Re…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Decoding Parameters and…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 28. Business Process - Security, Privacy and Governance** (mermaid). Figure: Business Process view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 27. Business Process - Security, Privacy and Governance** (drawio). Figure: Business Process view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Class - Security, Privacy and Governance
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
+
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 28. Class - Security, Privacy and Governance** (plantuml). Figure: Class view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -4843,7 +4805,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with structured output and schema enforcement. Because structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4851,9 +4813,9 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -4865,7 +4827,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A analytics organisation needs natural-language-to-SQL with validation against a catalog. They decide to apply security, privacy and governance as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply security, privacy and governance as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4937,57 +4899,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Security, Privacy and Governance logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a Prompt Engineering system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Security, Privacy and Governance
+### Listing: Evaluating Security, Privacy and Governance with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Security, Privacy and Governance."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Security, Privacy and Governance output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -4995,23 +4940,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of Prompt Engineering, which statement best describes “Security, Privacy and Governance”?
    - A. the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Relying on temperature tweaks instead of structural prompt fixes.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+   - A. It makes the system slower but has no other effect.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. It applies exclusively to image data.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: B.** Best practice: Version prompts and gate changes behind an evaluation suite.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Overlong contexts that dilute attention and inflate cost.
+   - A. It makes the system slower but has no other effect.
+   - B. Treating prompts as throwaway strings with no testing or versioning.
    - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-4. *(Discussion)* What trade-offs would you weigh when implementing Security, Privacy and Governance?
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+4. *(Discussion)* How would you test and monitor Security, Privacy and Governance in production?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5023,23 +4968,23 @@ _This chapter examines cost, performance and scaling within Prompt Engineering. 
 
 ## Introduction
 
-We define Cost, Performance and Scaling as techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Cost, Performance and Scaling refers to techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
 
-Cost, Performance and Scaling cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Cost, Performance and Scaling cannot be understood in isolation from tool use and function calling. Recall that tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Cost, Performance and Scaling cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Cost, Performance and Scaling cannot be understood in isolation from decoding parameters and sampling. Recall that decoding parameters and sampling concerns temperature, top-p, penalties and stop sequences as levers on determinism. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to cost, performance and scaling. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, instruction hierarchy: system > developer > user > retrieved content, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5068,17 +5013,17 @@ Service --> Repository
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 29. Class - Cost, Performance and Scaling** (plantuml). Figure: Class view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Class - Cost, Performance and Scaling** (plantuml). Figure: Class view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5088,11 +5033,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt templates and composition. Because prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5172,75 +5117,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Cost, Performance and Scaling component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
+Pipelines keep Cost, Performance and Scaling logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Cost, Performance and Scaling component
+### Listing: A composable processing pipeline for Cost, Performance and Scaling
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class PerformanceAndConfig:
-    """Configuration for the Cost, Performance and Scaling component in a Prompt Engineering system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class PerformanceAnd:
-    """A minimal, production-shaped implementation of Cost, Performance and Scaling."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Cost, Performance and Scaling."""
 
-    def __init__(self, config: PerformanceAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"PerformanceAnd failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Cost, Performance and Scaling goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Cost, Performance and Scaling”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
-   - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
-2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It applies exclusively to image data.
+   - A. techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
    - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
-   - D. Keep untrusted content clearly delimited and never executed as instructions.
-   - **Answer: D.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
+2. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Specify the output format explicitly and validate it programmatically.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
    - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-4. *(Discussion)* Describe a failure mode of Cost, Performance and Scaling and how you would mitigate it.
+4. *(Discussion)* Explain Cost, Performance and Scaling and why it matters in a production Prompt Engineering system.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5252,23 +5203,23 @@ _This chapter examines integration and interoperability within Prompt Engineerin
 
 ## Introduction
 
-In practical terms, Integration and Interoperability is best understood as patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Integration and Interoperability addresses patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Integration and Interoperability addresses patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Integration and Interoperability addresses patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
 
-Integration and Interoperability cannot be understood in isolation from prompt management and versioning. Recall that prompt management and versioning concerns registries, A/B testing and rollback for production prompts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Integration and Interoperability cannot be understood in isolation from defending against prompt injection. Recall that defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Integration and Interoperability cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Integration and Interoperability cannot be understood in isolation from multi-step and agentic prompting. Recall that multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Several established patterns apply directly to integration and interoperability. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5278,7 +5229,7 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```xml
 <mxfile host="ai-university">
@@ -5288,16 +5239,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="DevOps Pipeline - Integration and Interoperability" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="Prompt Engineering" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="Anatomy of a Prompt" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Integration and Inter…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Integration and Interop…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Zero-, One- and Few-Sho…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Defending Against Promp…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="Chain-of-Thought and Re…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Multi-Step and Agentic …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Structured Output and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Cost-Aware Prompt Design" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Retrieval-Augmented Pro…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Prompt Evaluation and R…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5307,17 +5258,25 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 30. DevOps Pipeline - Integration and Interoperability** (drawio). Figure: DevOps Pipeline view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 30. DevOps Pipeline - Integration and Interoperability** (drawio). Figure: DevOps Pipeline view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="9-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnfaa61a6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnfaa61a6)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnfaa61a6)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Integration and Interoperability</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Integration</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">and</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Integration and</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Interoperability</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="654" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Defending Against Prompt</text><text x="654" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Injection</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#9d174d" filter="url(#sh)"/><text x="654" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Multi-Step and Agentic</text><text x="654" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompting</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#db2777" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost-Aware Prompt Design</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#ec4899" filter="url(#sh)"/><text x="186" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Evaluation and</text><text x="186" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Regression Testing</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#f472b6" filter="url(#sh)"/><text x="186" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Decoding Parameters and</text><text x="186" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Sampling</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Integration and Interoperability  •  Knowledge Graph</text></svg>
+
+</div>
+
+**Figure 31. Knowledge Graph - Integration and Interoperability** (svg). Figure: Knowledge Graph view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with prompt management and versioning. Because prompt management and versioning concerns registries, A/B testing and rollback for production prompts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5327,11 +5286,11 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 Having established the essentials, we now go deeper into integration and interoperability. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tool use and function calling. Because tool use and function calling concerns letting models invoke functions, search and code execution within a controlled loop, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt evaluation and regression testing. Because prompt evaluation and regression testing concerns golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5339,7 +5298,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply integration and interoperability as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply integration and interoperability as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5411,81 +5370,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Integration and Interoperability logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Integration and Interoperability component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Integration and Interoperability
+### Listing: Implementing a Integration and Interoperability component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class IntegrationAndInteroperabilityConfig:
+    """Configuration for the Integration and Interoperability component in a Prompt Engineering system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Integration and Interoperability."""
+class IntegrationAndInteroperability:
+    """A minimal, production-shaped implementation of Integration and Interoperability."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: IntegrationAndInteroperabilityConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"IntegrationAndInteroperability failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Integration and Interoperability goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Integration and Interoperability”?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
-   - **Answer: D.** Integration and Interoperability: patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
+   - A. It guarantees deterministic output regardless of input.
+   - B. patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Integration and Interoperability: patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - A. It guarantees deterministic output regardless of input.
+   - B. Treating prompts as throwaway strings with no testing or versioning.
+   - C. It makes the system slower but has no other effect.
    - D. Keep untrusted content clearly delimited and never executed as instructions.
-   - **Answer: C.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-4. *(Discussion)* How does Integration and Interoperability interact with security and governance requirements?
+   - **Answer: D.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. Keep untrusted content clearly delimited and never executed as instructions.
+   - C. It makes the system slower but has no other effect.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: D.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+4. *(Discussion)* What trade-offs would you weigh when implementing Integration and Interoperability?
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5497,23 +5450,23 @@ _This chapter examines trends and research directions within Prompt Engineering.
 
 ## Introduction
 
-Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Prompt Engineering. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of Prompt Engineering. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Trends and Research Directions addresses emerging trends, open problems and research directions shaping the future of Prompt Engineering. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of Prompt Engineering. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Getting this right early prevents expensive rework once a Prompt Engineering system reaches scale.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. It is foundational: later capabilities in Prompt Engineering are built directly on top of it.
 
-Trends and Research Directions cannot be understood in isolation from anatomy of a prompt. Recall that anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Trends and Research Directions cannot be understood in isolation from cost-aware prompt design. Recall that cost-aware prompt design concerns compression, context pruning and caching to control token spend. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Trends and Research Directions cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Trends and Research Directions cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to trends and research directions. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, self-consistency voting for high-stakes reasoning, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5523,35 +5476,23 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Knowledge Graph - Trends and Research Directions</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="0-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn166b648" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn166b648)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn166b648)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Knowledge Graph - Trends and Research Directions</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Trends and</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Research</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#a78bfa" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Trends and Research</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Directions</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#c4b5fd" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost-Aware Prompt Design</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="654" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Templates and</text><text x="654" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Composition</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#6d28d9" filter="url(#sh)"/><text x="420" y="383" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Prompt Management and</text><text x="420" y="393" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Versioning</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#7c3aed" filter="url(#sh)"/><text x="186" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Patterns, Anti-Patterns and</text><text x="186" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">a Style Guide</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#8b5cf6" filter="url(#sh)"/><text x="186" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Structured Output and Schema</text><text x="186" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Enforcement</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Trends and Research Directions  •  Knowledge Graph</text></svg>
 
 </div>
 
-**Figure 31. Knowledge Graph - Trends and Research Directions** (svg). Figure: Knowledge Graph view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 32. Knowledge Graph - Trends and Research Directions** (svg). Figure: Knowledge Graph view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="4-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn3e45bf8" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn3e45bf8)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn3e45bf8)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Trends and Research Directions</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#fb7185"/><text x="345" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Trends and</text><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Research</text><text x="345" y="183" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Directions</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#db2777"/><text x="495" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Cost-Aware</text><text x="495" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Design</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#9f1239"/><text x="345" y="312" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Templates</text><text x="345" y="326" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">and Composition</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#be123c"/><text x="495" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt</text><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Management and</text><text x="495" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Versioning</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Trends and Research Directions  •  Capability Map</text></svg>
+
+</div>
+
+**Figure 33. Capability Map - Trends and Research Directions** (svg). Figure: Capability Map view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -5561,7 +5502,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with anatomy of a prompt. Because anatomy of a prompt concerns system, developer and user roles; instructions, context, examples and output specification as distinct, composable parts, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5569,13 +5510,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with chain-of-thought and reasoning prompts. Because chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5583,7 +5524,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply trends and research directions as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A support organisation needs deterministic, schema-constrained ticket triage and routing. They decide to apply trends and research directions as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5656,24 +5597,24 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Trends and Research Directions”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. emerging trends, open problems and research directions shaping the future of Prompt Engineering
-   - **Answer: D.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Prompt Engineering
-2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
-3. Which of the following is a common pitfall to avoid in Prompt Engineering?
    - A. It removes all security and governance requirements.
-   - B. Mixing untrusted user content with trusted instructions (injection risk).
-   - C. Version prompts and gate changes behind an evaluation suite.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-4. *(Discussion)* Walk through how you would design Trends and Research Directions for an enterprise Prompt Engineering workload.
+   - B. emerging trends, open problems and research directions shaping the future of Prompt Engineering
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Prompt Engineering
+2. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Keep untrusted content clearly delimited and never executed as instructions.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+3. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+4. *(Discussion)* Explain Trends and Research Directions and why it matters in a production Prompt Engineering system.
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Prompt Engineering) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5685,23 +5626,23 @@ _This chapter examines capstone project within Prompt Engineering. It covers a s
 
 ## Introduction
 
-In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Capstone Project can be characterised as a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Capstone Project as a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. This concept recurs throughout the Prompt Engineering lifecycle, from design to operations.
 
-Capstone Project cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Capstone Project cannot be understood in isolation from prompt templates and composition. Recall that prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Capstone Project cannot be understood in isolation from multi-step and agentic prompting. Recall that multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from structured output and schema enforcement. Recall that structured output and schema enforcement concerns jSON mode, function/tool calling and grammar-constrained decoding for reliable integration. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to capstone project. The first, template + slots with explicit output schema, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, critique-and-revise loops for quality improvement, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, instruction hierarchy: system > developer > user > retrieved content, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5711,45 +5652,25 @@ Concretely, the principal building blocks include anatomy of a prompt, zero-, on
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Capability Map - Capstone Project</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Prompt Engineering</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">Anatomy of a Prompt</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Zero-, One- and Few…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Chain-of-Thought an…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Structured Output a…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Retrieval-Augmented…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="11-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnf98369" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e40af"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnf98369)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnf98369)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Capability Map - Capstone Project</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#1e40af"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#1e40af"/><text x="128" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Capstone Project</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#0e7490"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#0e7490"/><text x="274" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt Templates</text><text x="274" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and Composition</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#b45309"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#b45309"/><text x="420" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Structured</text><text x="420" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Output and</text><text x="420" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Schema</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#9f1239"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#9f1239"/><text x="566" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Chain-of-Thought</text><text x="566" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and Reasoning</text><text x="566" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompts</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#4338ca"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#4338ca"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Prompt</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation and</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Regression</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Capstone Project  •  Capability Map</text></svg>
 
 </div>
 
-**Figure 32. Capability Map - Capstone Project** (svg). Figure: Capability Map view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 34. Capability Map - Capstone Project** (svg). Figure: Capability Map view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into capstone project. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with zero-, one- and few-shot prompting. Because zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with prompt templates and composition. Because prompt templates and composition concerns parameterised templates, partials and guardrail wrappers for reuse at scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5757,13 +5678,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into capstone project. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost-aware prompt design. Because cost-aware prompt design concerns compression, context pruning and caching to control token spend, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with multi-step and agentic prompting. Because multi-step and agentic prompting concerns planner/executor patterns, reflection and decomposition of complex tasks, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5771,7 +5692,7 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A education organisation needs socratic tutoring with rubric-based answer evaluation. They decide to apply capstone project as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A operations organisation needs runbook automation with tool calls and confirmation gates. They decide to apply capstone project as part of their Prompt Engineering solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5843,81 +5764,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Capstone Project logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Capstone Project component with retry semantics and typed interfaces — the shape we expect from production Prompt Engineering code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Capstone Project
+### Listing: Implementing a Capstone Project component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class CapstoneProjectConfig:
+    """Configuration for the Capstone Project component in a Prompt Engineering system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Capstone Project."""
+class CapstoneProject:
+    """A minimal, production-shaped implementation of Capstone Project."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: CapstoneProjectConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CapstoneProject failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Capstone Project goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Capstone Project”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
+   - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It removes all security and governance requirements.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. Mixing untrusted user content with trusted instructions (injection risk).
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Version prompts and gate changes behind an evaluation suite.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. Keep untrusted content clearly delimited and never executed as instructions.
-   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-4. *(Discussion)* What trade-offs would you weigh when implementing Capstone Project?
+   - A. Overlong contexts that dilute attention and inflate cost.
+   - B. Keep untrusted content clearly delimited and never executed as instructions.
+   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+4. *(Discussion)* Describe a failure mode of Capstone Project and how you would mitigate it.
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5929,82 +5844,72 @@ _This chapter examines certification preparation and review within Prompt Engine
 
 ## Introduction
 
-In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of Prompt Engineering. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Certification Preparation and Review can be characterised as a structured review and certification-style preparation covering the full breadth of Prompt Engineering. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own Prompt Engineering work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Certification Preparation and Review addresses a structured review and certification-style preparation covering the full breadth of Prompt Engineering. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of Prompt Engineering. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Neglecting it is one of the most common reasons Prompt Engineering initiatives stall in production.
+To place this in context, recall the broader picture: Prompt engineering is the discipline of designing inputs, context and decoding settings that steer foundation models toward reliable, useful behaviour. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of Prompt Engineering fall into place. Understanding this matters because Prompt Engineering systems succeed or fail on exactly these decisions.
 
-Certification Preparation and Review cannot be understood in isolation from chain-of-thought and reasoning prompts. Recall that chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Certification Preparation and Review cannot be understood in isolation from patterns, anti-patterns and a style guide. Recall that patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Certification Preparation and Review cannot be understood in isolation from zero-, one- and few-shot prompting. Recall that zero-, one- and few-shot prompting concerns how in-context examples shape behaviour and when demonstrations beat instructions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Certification Preparation and Review cannot be understood in isolation from retrieval-augmented prompting. Recall that retrieval-augmented prompting concerns injecting grounded context, citation discipline and context-window budgeting. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to certification preparation and review. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, template + slots with explicit output schema, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, critique-and-revise loops for quality improvement, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, self-consistency voting for high-stakes reasoning, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around certification preparation and review are invisible; in a production Prompt Engineering system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Certification Preparation and Review separates concerns into clearly bounded components with explicit contracts. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
+From an architectural standpoint, Certification Preparation and Review sits at the intersection of data, models and operations. Production prompting introduces a prompt management service that stores versioned templates, an assembly layer that merges instructions with retrieved context under a token budget, and an evaluation harness that scores candidate prompts against golden datasets before promotion. Telemetry links every completion back to the exact prompt version that produced it.
 
 Concretely, the principal building blocks include anatomy of a prompt, zero-, one- and few-shot prompting, chain-of-thought and reasoning prompts, structured output and schema enforcement and retrieval-augmented prompting. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the Prompt Engineering system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["Prompt Engineering Platform"]
-    GW[Gateway / Orchestrator]
-    S0[Anatomy of a Prompt]
-    S1[Zero-, One- and Few-Shot …]
-    S2[Chain-of-Thought and Reas…]
-    S3[Structured Output and Sch…]
-    S4[Retrieval-Augmented Promp…]
-    S5[Tool Use and Function Cal…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
+```xml
+<mxfile host="ai-university">
+  <diagram name="Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Architecture - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Certification Prepara…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Certification Preparati…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Patterns, Anti-Patterns…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Retrieval-Augmented Pro…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Structured Output and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Zero-, One- and Few-Sho…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 33. Architecture - Certification Preparation and Review** (mermaid). Figure: Architecture view for Prompt Engineering. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 35. Architecture - Certification Preparation and Review** (drawio). Figure: Architecture view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with chain-of-thought and reasoning prompts. Because chain-of-thought and reasoning prompts concerns eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with patterns, anti-patterns and a style guide. Because patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6012,13 +5917,13 @@ For deeper study, the literature offers authoritative treatments such as Wei et 
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including OpenAI, Anthropic, Guidance, Outlines. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with patterns, anti-patterns and a style guide. Because patterns, anti-patterns and a style guide concerns a reusable library of prompt patterns and the failure modes to avoid, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with defending against prompt injection. Because defending against prompt injection concerns untrusted-content isolation, instruction hierarchy and output validation, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6155,24 +6060,24 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 ## Review Questions
 
 1. In the context of Prompt Engineering, which statement best describes “Certification Preparation and Review”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. a structured review and certification-style preparation covering the full breadth of Prompt Engineering
-   - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Prompt Engineering
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. a structured review and certification-style preparation covering the full breadth of Prompt Engineering
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Prompt Engineering
 2. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It is only relevant to academic research, not production.
-   - B. Mixing untrusted user content with trusted instructions (injection risk).
-   - C. Version prompts and gate changes behind an evaluation suite.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Version prompts and gate changes behind an evaluation suite.
+   - A. Mixing untrusted user content with trusted instructions (injection risk).
+   - B. It is only relevant to academic research, not production.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
 3. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Keep untrusted content clearly delimited and never executed as instructions.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-4. *(Discussion)* How would you test and monitor Certification Preparation and Review in production?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+4. *(Discussion)* Walk through how you would design Certification Preparation and Review for an enterprise Prompt Engineering workload.
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Prompt Engineering) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6210,53 +6115,53 @@ A consolidated bank of discussion-style interview questions drawn from across th
 
 1. Describe a failure mode of Anatomy of a Prompt and how you would mitigate it.
    - **Guidance:** A strong answer defines anatomy of a prompt (System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-2. Explain Zero-, One- and Few-Shot Prompting and why it matters in a production Prompt Engineering system.
+2. Describe a failure mode of Zero-, One- and Few-Shot Prompting and how you would mitigate it.
    - **Guidance:** A strong answer defines zero-, one- and few-shot prompting (How in-context examples shape behaviour and when demonstrations beat instructions.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-3. Describe a failure mode of Chain-of-Thought and Reasoning Prompts and how you would mitigate it.
+3. How does Chain-of-Thought and Reasoning Prompts interact with security and governance requirements?
    - **Guidance:** A strong answer defines chain-of-thought and reasoning prompts (Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 4. How does Structured Output and Schema Enforcement interact with security and governance requirements?
    - **Guidance:** A strong answer defines structured output and schema enforcement (JSON mode, function/tool calling and grammar-constrained decoding for reliable integration.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-5. Explain Retrieval-Augmented Prompting and why it matters in a production Prompt Engineering system.
+5. Describe a failure mode of Retrieval-Augmented Prompting and how you would mitigate it.
    - **Guidance:** A strong answer defines retrieval-augmented prompting (Injecting grounded context, citation discipline and context-window budgeting.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-6. How would you test and monitor Tool Use and Function Calling in production?
+6. Describe a failure mode of Tool Use and Function Calling and how you would mitigate it.
    - **Guidance:** A strong answer defines tool use and function calling (Letting models invoke functions, search and code execution within a controlled loop.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-7. Explain Prompt Templates and Composition and why it matters in a production Prompt Engineering system.
+7. How does Prompt Templates and Composition interact with security and governance requirements?
    - **Guidance:** A strong answer defines prompt templates and composition (Parameterised templates, partials and guardrail wrappers for reuse at scale.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-8. Walk through how you would design Decoding Parameters and Sampling for an enterprise Prompt Engineering workload.
+8. How does Decoding Parameters and Sampling interact with security and governance requirements?
    - **Guidance:** A strong answer defines decoding parameters and sampling (Temperature, top-p, penalties and stop sequences as levers on determinism.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-9. How would you test and monitor Prompt Evaluation and Regression Testing in production?
+9. Walk through how you would design Prompt Evaluation and Regression Testing for an enterprise Prompt Engineering workload.
    - **Guidance:** A strong answer defines prompt evaluation and regression testing (Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-10. How does Defending Against Prompt Injection interact with security and governance requirements?
+10. Describe a failure mode of Defending Against Prompt Injection and how you would mitigate it.
    - **Guidance:** A strong answer defines defending against prompt injection (Untrusted-content isolation, instruction hierarchy and output validation.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 11. How would you test and monitor Multi-Step and Agentic Prompting in production?
    - **Guidance:** A strong answer defines multi-step and agentic prompting (Planner/executor patterns, reflection and decomposition of complex tasks.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-12. Walk through how you would design Prompt Management and Versioning for an enterprise Prompt Engineering workload.
+12. What trade-offs would you weigh when implementing Prompt Management and Versioning?
    - **Guidance:** A strong answer defines prompt management and versioning (Registries, A/B testing and rollback for production prompts.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-13. Walk through how you would design Cost-Aware Prompt Design for an enterprise Prompt Engineering workload.
+13. How does Cost-Aware Prompt Design interact with security and governance requirements?
    - **Guidance:** A strong answer defines cost-aware prompt design (Compression, context pruning and caching to control token spend.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 14. What trade-offs would you weigh when implementing Patterns, Anti-Patterns and a Style Guide?
    - **Guidance:** A strong answer defines patterns, anti-patterns and a style guide (A reusable library of prompt patterns and the failure modes to avoid.) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-15. How does Putting It Together: A Reference Implementation interact with security and governance requirements?
+15. Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 16. Walk through how you would design Hands-On Lab: Building an End-to-End Prompt Engineering System for an enterprise Prompt Engineering workload.
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end prompt engineering system (a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-17. How would you test and monitor Case Study: Support at Scale in production?
+17. Explain Case Study: Support at Scale and why it matters in a production Prompt Engineering system.
    - **Guidance:** A strong answer defines case study: support at scale (a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 18. Walk through how you would design Operating in Production for an enterprise Prompt Engineering workload.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-19. Walk through how you would design Evaluation and Quality Assurance for an enterprise Prompt Engineering workload.
+19. Describe a failure mode of Evaluation and Quality Assurance and how you would mitigate it.
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-20. What trade-offs would you weigh when implementing Security, Privacy and Governance?
+20. How would you test and monitor Security, Privacy and Governance in production?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-21. Describe a failure mode of Cost, Performance and Scaling and how you would mitigate it.
+21. Explain Cost, Performance and Scaling and why it matters in a production Prompt Engineering system.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-22. How does Integration and Interoperability interact with security and governance requirements?
+22. What trade-offs would you weigh when implementing Integration and Interoperability?
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-23. Walk through how you would design Trends and Research Directions for an enterprise Prompt Engineering workload.
+23. Explain Trends and Research Directions and why it matters in a production Prompt Engineering system.
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of Prompt Engineering) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-24. What trade-offs would you weigh when implementing Capstone Project?
+24. Describe a failure mode of Capstone Project and how you would mitigate it.
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
-25. How would you test and monitor Certification Preparation and Review in production?
+25. Walk through how you would design Certification Preparation and Review for an enterprise Prompt Engineering workload.
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of Prompt Engineering) then connects it to architecture, evaluation, cost, security and operations for Prompt Engineering, citing concrete trade-offs and a real-world example.
 
 # Certification Questions
@@ -6265,459 +6170,459 @@ Certification-style multiple-choice questions covering best practices and common
 
 1. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. Keep untrusted content clearly delimited and never executed as instructions.
-   - B. It removes all security and governance requirements.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
 2. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. It applies exclusively to image data.
    - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
    - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
 3. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. Version prompts and gate changes behind an evaluation suite.
-   - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Best practice: Version prompts and gate changes behind an evaluation suite.
-4. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. It applies exclusively to image data.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-5. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
-6. Which of the following is a common pitfall to avoid in Prompt Engineering?
    - A. It guarantees deterministic output regardless of input.
-   - B. Version prompts and gate changes behind an evaluation suite.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. Mixing untrusted user content with trusted instructions (injection risk).
-   - **Answer: D.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-7. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Mixing untrusted user content with trusted instructions (injection risk).
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
-8. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Overlong contexts that dilute attention and inflate cost.
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-9. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. It makes the system slower but has no other effect.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
-10. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
    - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
+4. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It applies exclusively to image data.
    - C. Relying on temperature tweaks instead of structural prompt fixes.
    - D. It makes the system slower but has no other effect.
    - **Answer: C.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-11. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It is only relevant to academic research, not production.
+5. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It makes the system slower but has no other effect.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Best practice: Version prompts and gate changes behind an evaluation suite.
+6. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Treating prompts as throwaway strings with no testing or versioning.
+   - C. It makes the system slower but has no other effect.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: B.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+7. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Mixing untrusted user content with trusted instructions (injection risk).
+   - B. It makes the system slower but has no other effect.
+   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - D. Treating prompts as throwaway strings with no testing or versioning.
+   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+8. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+9. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Specify the output format explicitly and validate it programmatically.
+   - B. It applies exclusively to image data.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
+10. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Prefer fewer, higher-quality few-shot examples over many noisy ones.
    - B. Specify the output format explicitly and validate it programmatically.
    - C. It applies exclusively to image data.
-   - D. Overlong contexts that dilute attention and inflate cost.
+   - D. Mixing untrusted user content with trusted instructions (injection risk).
+   - **Answer: D.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+11. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Specify the output format explicitly and validate it programmatically.
+   - C. It applies exclusively to image data.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
    - **Answer: B.** Best practice: Specify the output format explicitly and validate it programmatically.
 12. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. It makes the system slower but has no other effect.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+   - A. Relying on temperature tweaks instead of structural prompt fixes.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
 13. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-14. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Overlong contexts that dilute attention and inflate cost.
+   - B. Version prompts and gate changes behind an evaluation suite.
    - C. It makes the system slower but has no other effect.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: B.** Best practice: Version prompts and gate changes behind an evaluation suite.
+14. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It removes all security and governance requirements.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It guarantees deterministic output regardless of input.
    - D. Specify the output format explicitly and validate it programmatically.
    - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
 15. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - B. It makes the system slower but has no other effect.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
-16. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. It applies exclusively to image data.
-   - C. It removes all security and governance requirements.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-17. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. It removes all security and governance requirements.
-   - C. Specify the output format explicitly and validate it programmatically.
-   - D. Mixing untrusted user content with trusted instructions (injection risk).
-   - **Answer: C.** Best practice: Specify the output format explicitly and validate it programmatically.
-18. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-19. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
-20. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Overlong contexts that dilute attention and inflate cost.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-21. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. It removes all security and governance requirements.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - A. It guarantees deterministic output regardless of input.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It applies exclusively to image data.
    - D. Version prompts and gate changes behind an evaluation suite.
    - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
-22. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Treating prompts as throwaway strings with no testing or versioning.
-   - **Answer: D.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-23. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
-24. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-25. Which of the following is a recommended best practice when working with Prompt Engineering?
+16. Which of the following is a common pitfall to avoid in Prompt Engineering?
    - A. It guarantees deterministic output regardless of input.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Specify the output format explicitly and validate it programmatically.
-26. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Mixing untrusted user content with trusted instructions (injection risk).
-   - B. It makes the system slower but has no other effect.
-   - C. Specify the output format explicitly and validate it programmatically.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-27. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-28. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-29. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. It is only relevant to academic research, not production.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-30. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. It removes all security and governance requirements.
-   - C. It makes the system slower but has no other effect.
-   - D. Treating prompts as throwaway strings with no testing or versioning.
-   - **Answer: D.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-31. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It is only relevant to academic research, not production.
-   - C. Version prompts and gate changes behind an evaluation suite.
-   - D. Overlong contexts that dilute attention and inflate cost.
-   - **Answer: C.** Best practice: Version prompts and gate changes behind an evaluation suite.
-32. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - **Answer: C.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-33. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It removes all security and governance requirements.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. Specify the output format explicitly and validate it programmatically.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Specify the output format explicitly and validate it programmatically.
-34. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. Relying on temperature tweaks instead of structural prompt fixes.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-35. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Version prompts and gate changes behind an evaluation suite.
-   - B. It applies exclusively to image data.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. Mixing untrusted user content with trusted instructions (injection risk).
-   - **Answer: A.** Best practice: Version prompts and gate changes behind an evaluation suite.
-36. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It is only relevant to academic research, not production.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-37. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - C. Relying on temperature tweaks instead of structural prompt fixes.
-   - D. Treating prompts as throwaway strings with no testing or versioning.
-   - **Answer: B.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
-38. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Relying on temperature tweaks instead of structural prompt fixes.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. Specify the output format explicitly and validate it programmatically.
-   - **Answer: B.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
-39. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Relying on temperature tweaks instead of structural prompt fixes.
-   - B. Keep untrusted content clearly delimited and never executed as instructions.
-   - C. Treating prompts as throwaway strings with no testing or versioning.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-40. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
-41. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
-   - D. Keep untrusted content clearly delimited and never executed as instructions.
-   - **Answer: D.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-42. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
-   - B. Specify the output format explicitly and validate it programmatically.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-43. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It applies exclusively to image data.
-   - B. Overlong contexts that dilute attention and inflate cost.
-   - C. Keep untrusted content clearly delimited and never executed as instructions.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
-44. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Mixing untrusted user content with trusted instructions (injection risk).
-   - D. Keep untrusted content clearly delimited and never executed as instructions.
-   - **Answer: C.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-45. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. Specify the output format explicitly and validate it programmatically.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
-46. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. It removes all security and governance requirements.
-   - B. Mixing untrusted user content with trusted instructions (injection risk).
-   - C. Version prompts and gate changes behind an evaluation suite.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
-47. Which of the following is a recommended best practice when working with Prompt Engineering?
-   - A. It removes all security and governance requirements.
-   - B. Treating prompts as throwaway strings with no testing or versioning.
-   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
-48. Which of the following is a common pitfall to avoid in Prompt Engineering?
-   - A. Treating prompts as throwaway strings with no testing or versioning.
    - B. Version prompts and gate changes behind an evaluation suite.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. Keep untrusted content clearly delimited and never executed as instructions.
-   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
-49. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - D. Mixing untrusted user content with trusted instructions (injection risk).
+   - **Answer: D.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+17. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. It is only relevant to academic research, not production.
-   - B. Mixing untrusted user content with trusted instructions (injection risk).
-   - C. Version prompts and gate changes behind an evaluation suite.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
+18. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It removes all security and governance requirements.
+   - B. It makes the system slower but has no other effect.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - **Answer: C.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+19. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Relying on temperature tweaks instead of structural prompt fixes.
+   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+20. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: D.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+21. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Relying on temperature tweaks instead of structural prompt fixes.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
    - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Version prompts and gate changes behind an evaluation suite.
-50. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - **Answer: B.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+22. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+23. Which of the following is a recommended best practice when working with Prompt Engineering?
    - A. Keep untrusted content clearly delimited and never executed as instructions.
-   - B. Specify the output format explicitly and validate it programmatically.
+   - B. Relying on temperature tweaks instead of structural prompt fixes.
    - C. Treating prompts as throwaway strings with no testing or versioning.
    - D. It applies exclusively to image data.
-   - **Answer: C.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+   - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+24. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. Keep untrusted content clearly delimited and never executed as instructions.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+25. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - **Answer: D.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+26. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+27. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Overlong contexts that dilute attention and inflate cost.
+   - B. Relying on temperature tweaks instead of structural prompt fixes.
+   - C. Specify the output format explicitly and validate it programmatically.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Specify the output format explicitly and validate it programmatically.
+28. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+29. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: D.** Best practice: Version prompts and gate changes behind an evaluation suite.
+30. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - D. Keep untrusted content clearly delimited and never executed as instructions.
+   - **Answer: C.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+31. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Version prompts and gate changes behind an evaluation suite.
+   - B. It applies exclusively to image data.
+   - C. Relying on temperature tweaks instead of structural prompt fixes.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: A.** Best practice: Version prompts and gate changes behind an evaluation suite.
+32. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. Keep untrusted content clearly delimited and never executed as instructions.
+   - D. Version prompts and gate changes behind an evaluation suite.
+   - **Answer: B.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+33. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Overlong contexts that dilute attention and inflate cost.
+   - B. Specify the output format explicitly and validate it programmatically.
+   - C. Mixing untrusted user content with trusted instructions (injection risk).
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Best practice: Specify the output format explicitly and validate it programmatically.
+34. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Mixing untrusted user content with trusted instructions (injection risk).
+   - C. It makes the system slower but has no other effect.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: B.** Pitfall to avoid: Mixing untrusted user content with trusted instructions (injection risk).
+35. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Prefer fewer, higher-quality few-shot examples over many noisy ones.
+36. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Specify the output format explicitly and validate it programmatically.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: D.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+37. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. It is only relevant to academic research, not production.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+38. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. It removes all security and governance requirements.
+   - C. Version prompts and gate changes behind an evaluation suite.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+39. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Version prompts and gate changes behind an evaluation suite.
+   - C. It applies exclusively to image data.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: B.** Best practice: Version prompts and gate changes behind an evaluation suite.
+40. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Treating prompts as throwaway strings with no testing or versioning.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+41. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Specify the output format explicitly and validate it programmatically.
+   - B. Overlong contexts that dilute attention and inflate cost.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Best practice: Specify the output format explicitly and validate it programmatically.
+42. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
+43. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Treating prompts as throwaway strings with no testing or versioning.
+   - C. It makes the system slower but has no other effect.
+   - D. Keep untrusted content clearly delimited and never executed as instructions.
+   - **Answer: D.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+44. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. Keep untrusted content clearly delimited and never executed as instructions.
+   - C. It makes the system slower but has no other effect.
+   - D. Overlong contexts that dilute attention and inflate cost.
+   - **Answer: D.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+45. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. It makes the system slower but has no other effect.
+   - B. Keep untrusted content clearly delimited and never executed as instructions.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+46. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. It applies exclusively to image data.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: D.** Pitfall to avoid: Relying on temperature tweaks instead of structural prompt fixes.
+47. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Keep untrusted content clearly delimited and never executed as instructions.
+   - B. Mixing untrusted user content with trusted instructions (injection risk).
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Relying on temperature tweaks instead of structural prompt fixes.
+   - **Answer: A.** Best practice: Keep untrusted content clearly delimited and never executed as instructions.
+48. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Overlong contexts that dilute attention and inflate cost.
+   - B. Keep untrusted content clearly delimited and never executed as instructions.
+   - C. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Overlong contexts that dilute attention and inflate cost.
+49. Which of the following is a recommended best practice when working with Prompt Engineering?
+   - A. Mixing untrusted user content with trusted instructions (injection risk).
+   - B. It is only relevant to academic research, not production.
+   - C. Overlong contexts that dilute attention and inflate cost.
+   - D. Specify the output format explicitly and validate it programmatically.
+   - **Answer: D.** Best practice: Specify the output format explicitly and validate it programmatically.
+50. Which of the following is a common pitfall to avoid in Prompt Engineering?
+   - A. Treating prompts as throwaway strings with no testing or versioning.
+   - B. Prefer fewer, higher-quality few-shot examples over many noisy ones.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Pitfall to avoid: Treating prompts as throwaway strings with no testing or versioning.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of Prompt Engineering, which statement best describes “Anatomy of a Prompt”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
-   - **Answer: D.** Anatomy of a Prompt: System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
-2. In the context of Prompt Engineering, which statement best describes “Zero-, One- and Few-Shot Prompting”?
-   - A. It makes the system slower but has no other effect.
-   - B. How in-context examples shape behaviour and when demonstrations beat instructions.
-   - C. It is only relevant to academic research, not production.
+   - A. It applies exclusively to image data.
+   - B. System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
+   - C. It eliminates the need for any evaluation or monitoring.
    - D. It guarantees deterministic output regardless of input.
+   - **Answer: B.** Anatomy of a Prompt: System, developer and user roles; instructions, context, examples and output specification as distinct, composable parts.
+2. In the context of Prompt Engineering, which statement best describes “Zero-, One- and Few-Shot Prompting”?
+   - A. It applies exclusively to image data.
+   - B. How in-context examples shape behaviour and when demonstrations beat instructions.
+   - C. It makes the system slower but has no other effect.
+   - D. It removes all security and governance requirements.
    - **Answer: B.** Zero-, One- and Few-Shot Prompting: How in-context examples shape behaviour and when demonstrations beat instructions.
 3. In the context of Prompt Engineering, which statement best describes “Chain-of-Thought and Reasoning Prompts”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
-   - C. Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Chain-of-Thought and Reasoning Prompts: Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Chain-of-Thought and Reasoning Prompts: Eliciting intermediate reasoning, self-consistency sampling and the cost/quality trade-offs of deliberate reasoning.
 4. In the context of Prompt Engineering, which statement best describes “Structured Output and Schema Enforcement”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
+   - A. It makes the system slower but has no other effect.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
    - D. JSON mode, function/tool calling and grammar-constrained decoding for reliable integration.
    - **Answer: D.** Structured Output and Schema Enforcement: JSON mode, function/tool calling and grammar-constrained decoding for reliable integration.
 5. In the context of Prompt Engineering, which statement best describes “Retrieval-Augmented Prompting”?
-   - A. Injecting grounded context, citation discipline and context-window budgeting.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Retrieval-Augmented Prompting: Injecting grounded context, citation discipline and context-window budgeting.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Injecting grounded context, citation discipline and context-window budgeting.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Retrieval-Augmented Prompting: Injecting grounded context, citation discipline and context-window budgeting.
 6. In the context of Prompt Engineering, which statement best describes “Tool Use and Function Calling”?
-   - A. It is only relevant to academic research, not production.
-   - B. Letting models invoke functions, search and code execution within a controlled loop.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Tool Use and Function Calling: Letting models invoke functions, search and code execution within a controlled loop.
-7. In the context of Prompt Engineering, which statement best describes “Prompt Templates and Composition”?
-   - A. Parameterised templates, partials and guardrail wrappers for reuse at scale.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Prompt Templates and Composition: Parameterised templates, partials and guardrail wrappers for reuse at scale.
-8. In the context of Prompt Engineering, which statement best describes “Decoding Parameters and Sampling”?
-   - A. Temperature, top-p, penalties and stop sequences as levers on determinism.
-   - B. It applies exclusively to image data.
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It removes all security and governance requirements.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Decoding Parameters and Sampling: Temperature, top-p, penalties and stop sequences as levers on determinism.
-9. In the context of Prompt Engineering, which statement best describes “Prompt Evaluation and Regression Testing”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
-   - C. It applies exclusively to image data.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Prompt Evaluation and Regression Testing: Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
-10. In the context of Prompt Engineering, which statement best describes “Defending Against Prompt Injection”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Untrusted-content isolation, instruction hierarchy and output validation.
-   - C. It applies exclusively to image data.
+   - D. Letting models invoke functions, search and code execution within a controlled loop.
+   - **Answer: D.** Tool Use and Function Calling: Letting models invoke functions, search and code execution within a controlled loop.
+7. In the context of Prompt Engineering, which statement best describes “Prompt Templates and Composition”?
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
+   - C. Parameterised templates, partials and guardrail wrappers for reuse at scale.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Prompt Templates and Composition: Parameterised templates, partials and guardrail wrappers for reuse at scale.
+8. In the context of Prompt Engineering, which statement best describes “Decoding Parameters and Sampling”?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. Temperature, top-p, penalties and stop sequences as levers on determinism.
    - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Defending Against Prompt Injection: Untrusted-content isolation, instruction hierarchy and output validation.
+   - **Answer: C.** Decoding Parameters and Sampling: Temperature, top-p, penalties and stop sequences as levers on determinism.
+9. In the context of Prompt Engineering, which statement best describes “Prompt Evaluation and Regression Testing”?
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
+   - **Answer: D.** Prompt Evaluation and Regression Testing: Golden datasets, LLM-as-judge, rubric scoring and CI gates for prompt changes.
+10. In the context of Prompt Engineering, which statement best describes “Defending Against Prompt Injection”?
+   - A. Untrusted-content isolation, instruction hierarchy and output validation.
+   - B. It removes all security and governance requirements.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It applies exclusively to image data.
+   - **Answer: A.** Defending Against Prompt Injection: Untrusted-content isolation, instruction hierarchy and output validation.
 11. In the context of Prompt Engineering, which statement best describes “Multi-Step and Agentic Prompting”?
    - A. It applies exclusively to image data.
    - B. Planner/executor patterns, reflection and decomposition of complex tasks.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
+   - C. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: B.** Multi-Step and Agentic Prompting: Planner/executor patterns, reflection and decomposition of complex tasks.
 12. In the context of Prompt Engineering, which statement best describes “Prompt Management and Versioning”?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
-   - C. Registries, A/B testing and rollback for production prompts.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Prompt Management and Versioning: Registries, A/B testing and rollback for production prompts.
-13. In the context of Prompt Engineering, which statement best describes “Cost-Aware Prompt Design”?
-   - A. It makes the system slower but has no other effect.
+   - A. It removes all security and governance requirements.
    - B. It applies exclusively to image data.
-   - C. It is only relevant to academic research, not production.
-   - D. Compression, context pruning and caching to control token spend.
-   - **Answer: D.** Cost-Aware Prompt Design: Compression, context pruning and caching to control token spend.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. Registries, A/B testing and rollback for production prompts.
+   - **Answer: D.** Prompt Management and Versioning: Registries, A/B testing and rollback for production prompts.
+13. In the context of Prompt Engineering, which statement best describes “Cost-Aware Prompt Design”?
+   - A. It applies exclusively to image data.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Compression, context pruning and caching to control token spend.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Cost-Aware Prompt Design: Compression, context pruning and caching to control token spend.
 14. In the context of Prompt Engineering, which statement best describes “Patterns, Anti-Patterns and a Style Guide”?
    - A. A reusable library of prompt patterns and the failure modes to avoid.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - B. It applies exclusively to image data.
    - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
+   - D. It removes all security and governance requirements.
    - **Answer: A.** Patterns, Anti-Patterns and a Style Guide: A reusable library of prompt patterns and the failure modes to avoid.
 15. In the context of Prompt Engineering, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
-   - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
+   - A. an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a Prompt Engineering system into a cohesive, working whole
 16. In the context of Prompt Engineering, which statement best describes “Hands-On Lab: Building an End-to-End Prompt Engineering System”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Hands-On Lab: Building an End-to-End Prompt Engineering System: a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles
-17. In the context of Prompt Engineering, which statement best describes “Case Study: Support at Scale”?
    - A. It is only relevant to academic research, not production.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
-   - D. It removes all security and governance requirements.
-   - **Answer: C.** Case Study: Support at Scale: a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
+   - C. a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Hands-On Lab: Building an End-to-End Prompt Engineering System: a guided, build-along laboratory that constructs a functioning Prompt Engineering system from first principles
+17. In the context of Prompt Engineering, which statement best describes “Case Study: Support at Scale”?
+   - A. It applies exclusively to image data.
+   - B. It removes all security and governance requirements.
+   - C. It makes the system slower but has no other effect.
+   - D. a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
+   - **Answer: D.** Case Study: Support at Scale: a detailed case study of deploying Prompt Engineering in a demanding support environment, including the decisions, trade-offs and outcomes
 18. In the context of Prompt Engineering, which statement best describes “Operating in Production”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
+   - A. It removes all security and governance requirements.
+   - B. It guarantees deterministic output regardless of input.
    - C. the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement
-   - D. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Operating in Production: the operational discipline required to run a Prompt Engineering system reliably, including monitoring, incident response and continuous improvement
 19. In the context of Prompt Engineering, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
+   - A. a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
+   - B. It applies exclusively to image data.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
-   - **Answer: D.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a Prompt Engineering system before and after release
 20. In the context of Prompt Engineering, which statement best describes “Security, Privacy and Governance”?
    - A. the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant
-   - B. It is only relevant to academic research, not production.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a Prompt Engineering system trustworthy and compliant
 21. In the context of Prompt Engineering, which statement best describes “Cost, Performance and Scaling”?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
-   - **Answer: D.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
+   - A. techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a Prompt Engineering system to production traffic
 22. In the context of Prompt Engineering, which statement best describes “Integration and Interoperability”?
-   - A. It applies exclusively to image data.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
-   - **Answer: D.** Integration and Interoperability: patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
+   - A. It guarantees deterministic output regardless of input.
+   - B. patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
+   - C. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Integration and Interoperability: patterns for integrating a Prompt Engineering system with surrounding enterprise systems and data
 23. In the context of Prompt Engineering, which statement best describes “Trends and Research Directions”?
+   - A. It removes all security and governance requirements.
+   - B. emerging trends, open problems and research directions shaping the future of Prompt Engineering
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Prompt Engineering
+24. In the context of Prompt Engineering, which statement best describes “Capstone Project”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. It removes all security and governance requirements.
+   - D. a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
+   - **Answer: D.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
+25. In the context of Prompt Engineering, which statement best describes “Certification Preparation and Review”?
    - A. It applies exclusively to image data.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. It is only relevant to academic research, not production.
-   - D. emerging trends, open problems and research directions shaping the future of Prompt Engineering
-   - **Answer: D.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of Prompt Engineering
-24. In the context of Prompt Engineering, which statement best describes “Capstone Project”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade Prompt Engineering deliverable
-25. In the context of Prompt Engineering, which statement best describes “Certification Preparation and Review”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. a structured review and certification-style preparation covering the full breadth of Prompt Engineering
-   - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Prompt Engineering
+   - C. a structured review and certification-style preparation covering the full breadth of Prompt Engineering
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of Prompt Engineering
 
 # References
 

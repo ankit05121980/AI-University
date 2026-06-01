@@ -1,11 +1,11 @@
 @startuml
 title Network - Security, Privacy and Governance
-package "AI Foundations Platform" {
-  component "The AI/ML Landscape and…" as C0
-  component "Linear Algebra for Mach…" as C1
-  component "Probability, Statistics…" as C2
-  component "Optimisation and Gradie…" as C3
-  component "Data Engineering and Fe…" as C4
+package "Security, Privacy and Governance Platform" {
+  component "Security, Privacy and G…" as C0
+  component "Neural Networks and Bac…" as C1
+  component "Optimisation and Gradie…" as C2
+  component "Responsible and Trustwo…" as C3
+  component "Linear Algebra for Mach…" as C4
 }
 database "Storage" as DB
 C0 --> DB

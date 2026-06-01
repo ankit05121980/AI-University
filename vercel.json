@@ -1,14 +1,15 @@
 {
-  "version": 2,
-  "name": "ai-university",
-  "public": true,
-  "redirects": [
-    { "source": "/", "destination": "/web", "permanent": false }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "engine/**",
+      "maxDuration": 10
     }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index" }
+  ],
+  "redirects": [
+    { "source": "/", "destination": "/web/", "permanent": false }
   ]
 }

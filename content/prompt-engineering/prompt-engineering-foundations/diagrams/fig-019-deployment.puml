@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Putting It Together: A Reference Implementation
+package "Putting It Together: A Reference Implementation Platform" {
+  component "Putting It Together: A …" as C0
+  component "Multi-Step and Agentic …" as C1
+  component "Defending Against Promp…" as C2
+  component "Retrieval-Augmented Pro…" as C3
+  component "Decoding Parameters and…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

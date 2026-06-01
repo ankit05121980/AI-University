@@ -1,0 +1,16 @@
+@startuml
+title Component - Capstone Project
+package "Capstone Project Platform" {
+  component "Capstone Project" as C0
+  component "Feed-Forward Networks a…" as C1
+  component "The Transformer Design …" as C2
+  component "Positional Encoding" as C3
+  component "Implementing a Transfor…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

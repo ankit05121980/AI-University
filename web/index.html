@@ -6,9 +6,12 @@
 <title>AI-University — Enterprise AI Knowledge Publishing Platform</title>
 <meta name="description" content="A complete AI learning publishing system: 500+ enterprise-grade AI books, searchable, viewable and downloadable as PDF, DOCX, PPTX, HTML and Markdown." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div id="reading-progress"></div>
   <div id="app">
     <aside class="sidebar" id="sidebar">
       <div class="brand">
@@ -19,20 +22,21 @@
         </div>
       </div>
       <nav class="nav" id="nav">
-        <a data-route="dashboard" class="nav-item"><span class="ni">◆</span> Dashboard</a>
-        <a data-route="library" class="nav-item"><span class="ni">▤</span> Library</a>
-        <a data-route="categories" class="nav-item"><span class="ni">▦</span> Categories</a>
-        <a data-route="search" class="nav-item"><span class="ni">⌕</span> Search</a>
-        <a data-route="diagrams" class="nav-item"><span class="ni">◈</span> Diagram Browser</a>
-        <a data-route="downloads" class="nav-item"><span class="ni">⤓</span> Download Center</a>
-        <a data-route="paths" class="nav-item"><span class="ni">⇲</span> Learning Paths</a>
-        <a data-route="certifications" class="nav-item"><span class="ni">✦</span> Certification Paths</a>
-        <a data-route="favorites" class="nav-item"><span class="ni">★</span> Favorites</a>
-        <a data-route="bookmarks" class="nav-item"><span class="ni">⚑</span> Bookmarks</a>
+        <a href="#dashboard" data-route="dashboard" class="nav-item"><span class="ni">◆</span> Dashboard</a>
+        <a href="#library" data-route="library" class="nav-item"><span class="ni">▤</span> Library</a>
+        <a href="#categories" data-route="categories" class="nav-item"><span class="ni">▦</span> Categories</a>
+        <a href="#search" data-route="search" class="nav-item"><span class="ni">⌕</span> Search</a>
+        <a href="#ask" data-route="ask" class="nav-item nav-ask"><span class="ni">✺</span> Ask Anything</a>
+        <a href="#diagrams" data-route="diagrams" class="nav-item"><span class="ni">◈</span> Diagram Browser</a>
+        <a href="#studio" data-route="studio" class="nav-item nav-studio"><span class="ni">✎</span> Diagram Studio</a>
+        <a href="#paths" data-route="paths" class="nav-item"><span class="ni">⇲</span> Learning Paths</a>
+        <a href="#certifications" data-route="certifications" class="nav-item"><span class="ni">✦</span> Certification Paths</a>
+        <a href="#favorites" data-route="favorites" class="nav-item"><span class="ni">★</span> Favorites</a>
+        <a href="#bookmarks" data-route="bookmarks" class="nav-item"><span class="ni">⚑</span> Bookmarks</a>
       </nav>
       <div class="sidebar-foot">
         <div id="sidebar-stats" class="mini-stats"></div>
-        <button id="theme-toggle" class="theme-toggle">Toggle theme</button>
+        <button id="theme-toggle" class="theme-toggle">🌗 Toggle theme</button>
       </div>
     </aside>
 
@@ -40,7 +44,7 @@
       <header class="topbar">
         <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
         <div class="global-search">
-          <input id="global-search-input" type="search" placeholder="Search 500+ books, chapters and topics…" />
+          <input id="global-search-input" type="search" placeholder="Search 500+ books, chapters and topics…   ( / )" />
         </div>
         <div class="topbar-actions">
           <span id="progress-pill" class="pill"></span>
@@ -50,16 +54,7 @@
     </div>
   </div>
 
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    window.mermaid = mermaid;
-    mermaid.initialize({ startOnLoad: false, theme: "neutral", securityLevel: "loose" });
-    window.renderMermaid = async (root) => {
-      const nodes = root ? [...root.querySelectorAll("pre.mermaid")] : null;
-      if (nodes && nodes.length) await mermaid.run({ nodes });
-      else await mermaid.run({ querySelector: "pre.mermaid" });
-    };
-  </script>
+  <button id="to-top" class="to-top" aria-label="Scroll to top">↑</button>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 @startuml
 title Infrastructure - Distance Metrics and Quantisation
-package "Vector Databases Platform" {
-  component "The Case for Purpose-Bu…" as C0
-  component "ANN Indexing Algorithms" as C1
-  component "Distance Metrics and Qu…" as C2
-  component "Metadata Filtering and …" as C3
-  component "Sharding, Replication a…" as C4
+package "Distance Metrics and Quantisation Platform" {
+  component "Distance Metrics and Qu…" as C0
+  component "Reference Architecture …" as C1
+  component "ANN Indexing Algorithms" as C2
+  component "Security and Multi-Tena…" as C3
+  component "Integration with the RA…" as C4
 }
 database "Storage" as DB
 C0 --> DB

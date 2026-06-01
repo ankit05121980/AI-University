@@ -1,5 +1,5 @@
 @startuml
-title Sequence - Observability Across Agents
+title Sequence - The Multi-Agent Reference Architecture
 actor User
 participant Gateway
 participant Processor

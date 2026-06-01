@@ -1,5 +1,5 @@
 @startuml
-title Application Flow - Prompt Evaluation and Regression Testing
+title Application Flow - Decoding Parameters and Sampling
 class Service {
   +process(req)
   +evaluate(sample)

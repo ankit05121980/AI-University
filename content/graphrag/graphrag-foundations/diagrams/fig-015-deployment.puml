@@ -1,0 +1,16 @@
+@startuml
+title Deployment - Incremental Graph Updates
+package "Incremental Graph Updates Platform" {
+  component "Incremental Graph Updat…" as C0
+  component "Knowledge Graph Constru…" as C1
+  component "Local versus Global Sea…" as C2
+  component "Evaluation of GraphRAG" as C3
+  component "Community Detection and…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml

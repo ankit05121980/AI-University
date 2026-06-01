@@ -1,5 +1,5 @@
 @startuml
-title Component - Operating in Production
+title Component - Case Study: Software at Scale
 package "Agentic AI Platform" {
   component "From Chatbots to Agents" as C0
   component "The Agent Loop: Reason,…" as C1

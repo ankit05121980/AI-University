@@ -81,30 +81,30 @@ First published 2026. First Edition. Document version 1.0.0.
 | # | Chapter | Est. pages | Diagrams | Code | Questions |
 |---|---------|-----------:|---------:|-----:|----------:|
 | 1 | From N-grams to Neural Language Models | 11 | 1 | 1 | 4 |
-| 2 | Tokenisation and Vocabulary | 10 | 1 | 1 | 4 |
+| 2 | Tokenisation and Vocabulary | 11 | 1 | 1 | 4 |
 | 3 | The Transformer Backbone of LLMs | 11 | 2 | 1 | 4 |
 | 4 | Pre-training Objectives and Data | 11 | 2 | 1 | 4 |
 | 5 | Scaling Laws and Emergent Abilities | 11 | 1 | 1 | 4 |
 | 6 | Instruction Tuning and Alignment | 10 | 1 | 1 | 4 |
-| 7 | Context Windows and Long-Context Techniques | 10 | 1 | 1 | 4 |
+| 7 | Context Windows and Long-Context Techniques | 11 | 2 | 1 | 4 |
 | 8 | Inference Optimisation | 11 | 2 | 1 | 4 |
 | 9 | Serving LLMs at Scale | 10 | 1 | 1 | 4 |
-| 10 | Evaluation and Benchmarking | 11 | 2 | 1 | 4 |
+| 10 | Evaluation and Benchmarking | 10 | 1 | 1 | 4 |
 | 11 | Hallucination and Factuality | 11 | 2 | 1 | 4 |
-| 12 | Cost and Capacity Planning | 10 | 1 | 1 | 4 |
-| 13 | Safety and Alignment in Production | 11 | 2 | 1 | 4 |
-| 14 | The LLM Platform Reference Architecture | 10 | 1 | 1 | 4 |
-| 15 | Putting It Together: A Reference Implementation | 11 | 2 | 1 | 4 |
+| 12 | Cost and Capacity Planning | 11 | 2 | 1 | 4 |
+| 13 | Safety and Alignment in Production | 10 | 1 | 1 | 4 |
+| 14 | The LLM Platform Reference Architecture | 11 | 2 | 1 | 4 |
+| 15 | Putting It Together: A Reference Implementation | 11 | 1 | 1 | 4 |
 | 16 | Hands-On Lab: Building an End-to-End LLMs System | 11 | 1 | 1 | 4 |
-| 17 | Case Study: Enterprise Search at Scale | 11 | 2 | 1 | 4 |
+| 17 | Case Study: Enterprise Search at Scale | 11 | 1 | 1 | 4 |
 | 18 | Operating in Production | 10 | 1 | 1 | 4 |
-| 19 | Evaluation and Quality Assurance | 11 | 2 | 1 | 4 |
-| 20 | Security, Privacy and Governance | 11 | 2 | 1 | 4 |
-| 21 | Cost, Performance and Scaling | 11 | 2 | 1 | 4 |
+| 19 | Evaluation and Quality Assurance | 11 | 1 | 1 | 4 |
+| 20 | Security, Privacy and Governance | 10 | 1 | 1 | 4 |
+| 21 | Cost, Performance and Scaling | 10 | 1 | 1 | 4 |
 | 22 | Integration and Interoperability | 10 | 1 | 1 | 4 |
-| 23 | Trends and Research Directions | 10 | 1 | 0 | 4 |
+| 23 | Trends and Research Directions | 10 | 2 | 0 | 4 |
 | 24 | Capstone Project | 11 | 2 | 1 | 4 |
-| 25 | Certification Preparation and Review | 11 | 1 | 1 | 4 |
+| 25 | Certification Preparation and Review | 11 | 2 | 1 | 4 |
 
 ---
 
@@ -119,34 +119,32 @@ First published 2026. First Edition. Document version 1.0.0.
 - Figure 7. Operating Model - Scaling Laws and Emergent Abilities
 - Figure 8. CI/CD Pipeline - Instruction Tuning and Alignment
 - Figure 9. Architecture - Context Windows and Long-Context Techniques
-- Figure 10. Security Architecture - Inference Optimisation
-- Figure 11. Data Lineage - Inference Optimisation
-- Figure 12. Data Lineage - Serving LLMs at Scale
-- Figure 13. Sequence - Evaluation and Benchmarking
-- Figure 14. Cloud Architecture - Evaluation and Benchmarking
+- Figure 10. Security Architecture - Context Windows and Long-Context Techniques
+- Figure 11. Security Architecture - Inference Optimisation
+- Figure 12. Data Lineage - Inference Optimisation
+- Figure 13. Data Lineage - Serving LLMs at Scale
+- Figure 14. Sequence - Evaluation and Benchmarking
 - Figure 15. Cloud Architecture - Hallucination and Factuality
 - Figure 16. Agent Architecture - Hallucination and Factuality
 - Figure 17. Agent Architecture - Cost and Capacity Planning
-- Figure 18. RAG Architecture - Safety and Alignment in Production
-- Figure 19. Data Flow - Safety and Alignment in Production
+- Figure 18. RAG Architecture - Cost and Capacity Planning
+- Figure 19. RAG Architecture - Safety and Alignment in Production
 - Figure 20. Data Flow - The LLM Platform Reference Architecture
-- Figure 21. Application Flow - Putting It Together: A Reference Implementation
-- Figure 22. Infrastructure - Putting It Together: A Reference Implementation
+- Figure 21. Application Flow - The LLM Platform Reference Architecture
+- Figure 22. Application Flow - Putting It Together: A Reference Implementation
 - Figure 23. Infrastructure - Hands-On Lab: Building an End-to-End LLMs System
 - Figure 24. Capability Map - Case Study: Enterprise Search at Scale
-- Figure 25. Deployment - Case Study: Enterprise Search at Scale
-- Figure 26. Deployment - Operating in Production
-- Figure 27. Class - Evaluation and Quality Assurance
-- Figure 28. Knowledge Graph - Evaluation and Quality Assurance
-- Figure 29. Knowledge Graph - Security, Privacy and Governance
-- Figure 30. Network - Security, Privacy and Governance
-- Figure 31. Network - Cost, Performance and Scaling
-- Figure 32. Component - Cost, Performance and Scaling
-- Figure 33. Component - Integration and Interoperability
-- Figure 34. DevOps Pipeline - Trends and Research Directions
-- Figure 35. Business Process - Capstone Project
-- Figure 36. Operating Model - Capstone Project
-- Figure 37. Operating Model - Certification Preparation and Review
+- Figure 25. Deployment - Operating in Production
+- Figure 26. Class - Evaluation and Quality Assurance
+- Figure 27. Knowledge Graph - Security, Privacy and Governance
+- Figure 28. Network - Cost, Performance and Scaling
+- Figure 29. Component - Integration and Interoperability
+- Figure 30. DevOps Pipeline - Trends and Research Directions
+- Figure 31. Business Process - Trends and Research Directions
+- Figure 32. Business Process - Capstone Project
+- Figure 33. Operating Model - Capstone Project
+- Figure 34. Operating Model - Certification Preparation and Review
+- Figure 35. CI/CD Pipeline - Certification Preparation and Review
 
 ---
 
@@ -243,16 +241,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Network - From N-grams to Neural Language Models" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="hub" value="From N-grams to Neura…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
         <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Hallucination and Factu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Evaluation and Benchmar…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Cost and Capacity Plann…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -262,7 +260,7 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 1. Network - From N-grams to Neural Language Models** (drawio). Figure: Network view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 1. Network - From N-grams to Neural Language Models** (drawio). Figure: Network view for From N-grams to Neural Language Models. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -417,23 +415,23 @@ class FromTo:
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “From N-grams to Neural Language Models”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
    - C. The evolution of language modelling and why scale plus self-attention unlocked emergent capability.
-   - D. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: C.** From N-grams to Neural Language Models: The evolution of language modelling and why scale plus self-attention unlocked emergent capability.
 2. Which of the following is a recommended best practice when working with LLMs?
    - A. Pin model and tokenizer versions; treat upgrades as releases.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It removes all security and governance requirements.
    - B. Silent tokenizer changes that break prompts and cost models.
    - C. It makes the system slower but has no other effect.
-   - D. Monitor token distribution to catch prompt bloat and cost regressions.
-   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+3. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It is only relevant to academic research, not production.
+   - B. Monitor token distribution to catch prompt bloat and cost regressions.
+   - C. It applies exclusively to image data.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: D.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
 4. *(Discussion)* Explain From N-grams to Neural Language Models and why it matters in a production LLMs system.
    - **Model answer:** A strong answer defines from n-grams to neural language models (The evolution of language modelling and why scale plus self-attention unlocked emergent capability.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
@@ -458,7 +456,7 @@ To place this in context, recall the broader picture: Large language models are 
 
 Tokenisation and Vocabulary cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Tokenisation and Vocabulary cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Tokenisation and Vocabulary cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Several established patterns apply directly to tokenisation and vocabulary. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
@@ -480,14 +478,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["LLMs Platform"]
+  subgraph Platform["Tokenisation and Vocabulary Platform"]
     GW[Gateway / Orchestrator]
-    S0[From N-grams to Neural La…]
-    S1[Tokenisation and Vocabula…]
-    S2[The Transformer Backbone …]
-    S3[Pre-training Objectives a…]
-    S4[Scaling Laws and Emergent…]
-    S5[Instruction Tuning and Al…]
+    S0[Tokenisation and Vocabula…]
+    S1[Instruction Tuning and Al…]
+    S2[The LLM Platform Referenc…]
+    S3[Context Windows and Long-…]
+    S4[Inference Optimisation]
+    S5[Pre-training Objectives a…]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -511,7 +509,7 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 2. Component - Tokenisation and Vocabulary** (mermaid). Figure: Component view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 2. Component - Tokenisation and Vocabulary** (mermaid). Figure: Component view for Tokenisation and Vocabulary. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -655,24 +653,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Tokenisation and Vocabulary”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
-   - **Answer: D.** Tokenisation and Vocabulary: Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Tokenisation and Vocabulary: Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. It makes the system slower but has no other effect.
+   - A. Quantise and batch aggressively, validating quality impact with evals.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It removes all security and governance requirements.
    - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: A.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Underestimating KV-cache memory for long contexts.
+   - A. It makes the system slower but has no other effect.
    - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* Explain Tokenisation and Vocabulary and why it matters in a production LLMs system.
+   - C. Benchmarking on contaminated datasets and over-claiming capability.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: C.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+4. *(Discussion)* Walk through how you would design Tokenisation and Vocabulary for an enterprise LLMs workload.
    - **Model answer:** A strong answer defines tokenisation and vocabulary (Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -684,23 +682,23 @@ _This chapter examines the transformer backbone of llms within LLMs. It covers d
 
 ## Introduction
 
-We define The Transformer Backbone of LLMs as decoder-only architectures, attention, positional encodings and layer normalisation choices. It is foundational: later capabilities in LLMs are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Formally, The Transformer Backbone of LLMs addresses decoder-only architectures, attention, positional encodings and layer normalisation choices. Neglecting it is one of the most common reasons LLMs initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-The Transformer Backbone of LLMs refers to decoder-only architectures, attention, positional encodings and layer normalisation choices. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+The Transformer Backbone of LLMs refers to decoder-only architectures, attention, positional encodings and layer normalisation choices. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, the transformer backbone of llms is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. It is foundational: later capabilities in LLMs are built directly on top of it.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, the transformer backbone of llms is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
 
-The Transformer Backbone of LLMs cannot be understood in isolation from context windows and long-context techniques. Recall that context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+The Transformer Backbone of LLMs cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-The Transformer Backbone of LLMs cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+The Transformer Backbone of LLMs cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to the transformer backbone of llms. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the transformer backbone of llms. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around the transformer backbone of llms are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the transformer backbone of llms are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -710,66 +708,44 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart LR
-  S0[Commit]
-  S1[Build]
-  S0 --> S1
-  S2[Test]
-  S1 --> S2
-  S3[Eval Gate]
-  S2 --> S3
-  S4[Package]
-  S3 --> S4
-  S5[Deploy]
-  S4 --> S5
-  S6[Monitor]
-  S5 --> S6
-  S6 -.->|drift / regression| S0
+```plantuml
+@startuml
+title DevOps Pipeline - The Transformer Backbone of LLMs
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-**Figure 3. DevOps Pipeline - The Transformer Backbone of LLMs** (mermaid). Figure: DevOps Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Business Process">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Business Process - The Transformer Backbone of LLMs" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+**Figure 3. DevOps Pipeline - The Transformer Backbone of LLMs** (plantuml). Figure: DevOps Pipeline view for The Transformer Backbone of LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-_Source diagram (drawio); render with the appropriate tool._
+<div class="diagram-svg">
 
-**Figure 4. Business Process - The Transformer Backbone of LLMs** (drawio). Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="11-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bna4e3634" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f1239"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bna4e3634)"/><rect x="0" y="32" width="840" height="16" fill="url(#bna4e3634)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - The Transformer Backbone of LLMs</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Backbone</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">of LLMs</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hallucination and</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Factuality</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Laws and Emergent</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Abilities</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Backbone</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">of LLMs</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="388" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hallucination and</text><text x="388" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Factuality</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Laws and Emergent</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Abilities</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="708" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="708" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Backbone</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">of LLMs</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hallucination and</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Factuality</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Laws and Emergent</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Abilities</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#b45309" filter="url(#sh)"/><text x="708" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="708" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">The Transformer Backbone of LLMs  •  Business Process</text></svg>
+
+</div>
+
+**Figure 4. Business Process - The Transformer Backbone of LLMs** (svg). Figure: Business Process view for The Transformer Backbone of LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into the transformer backbone of llms. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the transformer backbone of llms. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with context windows and long-context techniques. Because context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hallucination and factuality. Because hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -777,13 +753,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into the transformer backbone of llms. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the transformer backbone of llms. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with inference optimisation. Because inference optimisation concerns kV caching, speculative decoding, quantisation and continuous batching for throughput, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -791,7 +767,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A software organisation needs code completion and review across large repositories. They decide to apply the transformer backbone of llms as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A finance organisation needs summarising filings and extracting structured facts. They decide to apply the transformer backbone of llms as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -863,64 +839,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep The Transformer Backbone of LLMs logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating The Transformer Backbone of LLMs with a regression gate
+### Listing: A composable processing pipeline for The Transformer Backbone of LLMs
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score The Transformer Backbone of LLMs output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for The Transformer Backbone of LLMs."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “The Transformer Backbone of LLMs”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. Decoder-only architectures, attention, positional encodings and layer normalisation choices.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** The Transformer Backbone of LLMs: Decoder-only architectures, attention, positional encodings and layer normalisation choices.
+   - A. It removes all security and governance requirements.
+   - B. It applies exclusively to image data.
+   - C. It is only relevant to academic research, not production.
+   - D. Decoder-only architectures, attention, positional encodings and layer normalisation choices.
+   - **Answer: D.** The Transformer Backbone of LLMs: Decoder-only architectures, attention, positional encodings and layer normalisation choices.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Quantise and batch aggressively, validating quality impact with evals.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Underestimating KV-cache memory for long contexts.
+   - D. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Assuming bigger is always better instead of measuring task fit.
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
    - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* How does The Transformer Backbone of LLMs interact with security and governance requirements?
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* How would you test and monitor The Transformer Backbone of LLMs in production?
    - **Model answer:** A strong answer defines the transformer backbone of llms (Decoder-only architectures, attention, positional encodings and layer normalisation choices.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -932,96 +925,55 @@ _This chapter examines pre-training objectives and data within LLMs. It covers c
 
 ## Introduction
 
-In practical terms, Pre-training Objectives and Data is best understood as causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. Getting this right early prevents expensive rework once a LLMs system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Pre-training Objectives and Data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Pre-training Objectives and Data is best understood as causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Pre-training Objectives and Data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, pre-training objectives and data is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Teams that master this consistently ship more reliable LLMs systems at lower cost.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, pre-training objectives and data is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
 
-Pre-training Objectives and Data cannot be understood in isolation from from n-grams to neural language models. Recall that from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Pre-training Objectives and Data cannot be understood in isolation from from n-grams to neural language models. Recall that from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Pre-training Objectives and Data cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Pre-training Objectives and Data cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 Several established patterns apply directly to pre-training objectives and data. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around pre-training objectives and data are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around pre-training objectives and data are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Pre-training Objectives and Data sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+A robust architecture for Pre-training Objectives and Data is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Business Process">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Business Process - Pre-training Objectives and Data" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 5. Business Process - Pre-training Objectives and Data** (drawio). Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 <div class="diagram-svg">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Operating Model - Pre-training Objectives and Data</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">LLMs</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From N-grams to Neu…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Tokenisation and Vo…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">The Transformer Bac…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Pre-training Object…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Scaling Laws and Em…</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="11-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn61602fd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f1239"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn61602fd)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn61602fd)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Pre-training Objectives and Data</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#9f1239" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">From N-grams to Neural</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Language Models</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety and Alignment in</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Instruction Tuning and</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Alignment</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#4338ca" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="388" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">From N-grams to Neural</text><text x="388" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Language Models</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety and Alignment in</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="708" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Instruction Tuning and</text><text x="708" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Alignment</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#1e40af" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">From N-grams to Neural</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Language Models</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#0e7490" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety and Alignment in</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#b45309" filter="url(#sh)"/><text x="708" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Instruction Tuning and</text><text x="708" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Alignment</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Pre-training Objectives and Data  •  Business Process</text></svg>
 
 </div>
 
-**Figure 6. Operating Model - Pre-training Objectives and Data** (svg). Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 5. Business Process - Pre-training Objectives and Data** (svg). Figure: Business Process view for Pre-training Objectives and Data. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="0-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bna596c56" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bna596c56)"/><rect x="0" y="32" width="840" height="16" fill="url(#bna596c56)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Pre-training Objectives and Data</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#c4b5fd"/><text x="345" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Pre-training</text><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Objectives and</text><text x="345" y="183" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Data</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#4338ca"/><text x="495" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">From N-grams to</text><text x="495" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Neural Language</text><text x="495" y="183" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Models</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#6d28d9"/><text x="345" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Safety and</text><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Alignment in</text><text x="345" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Production</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#7c3aed"/><text x="495" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Instruction</text><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Tuning and</text><text x="495" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Alignment</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Pre-training Objectives and Data  •  Operating Model</text></svg>
+
+</div>
+
+**Figure 6. Operating Model - Pre-training Objectives and Data** (svg). Figure: Operating Model view for Pre-training Objectives and Data. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into pre-training objectives and data. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into pre-training objectives and data. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1033,13 +985,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into pre-training objectives and data. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into pre-training objectives and data. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation and benchmarking. Because evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1047,7 +999,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A finance organisation needs summarising filings and extracting structured facts. They decide to apply pre-training objectives and data as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply pre-training objectives and data as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1119,81 +1071,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Pre-training Objectives and Data logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Pre-training Objectives and Data
+### Listing: Evaluating Pre-training Objectives and Data with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Pre-training Objectives and Data."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Pre-training Objectives and Data output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Pre-training Objectives and Data”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It applies exclusively to image data.
-   - C. Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pre-training Objectives and Data: Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
-2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
+   - A. It is only relevant to academic research, not production.
+   - B. Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
    - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pre-training Objectives and Data: Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
+2. Which of the following is a recommended best practice when working with LLMs?
+   - A. Underestimating KV-cache memory for long contexts.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* Explain Pre-training Objectives and Data and why it matters in a production LLMs system.
+   - A. It is only relevant to academic research, not production.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* How does Pre-training Objectives and Data interact with security and governance requirements?
    - **Model answer:** A strong answer defines pre-training objectives and data (Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1205,27 +1140,27 @@ _This chapter examines scaling laws and emergent abilities within LLMs. It cover
 
 ## Introduction
 
-Scaling Laws and Emergent Abilities can be characterised as compute-optimal training, the Chinchilla insight and capability phase transitions. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Formally, Scaling Laws and Emergent Abilities addresses compute-optimal training, the Chinchilla insight and capability phase transitions. Getting this right early prevents expensive rework once a LLMs system reaches scale. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Scaling Laws and Emergent Abilities as compute-optimal training, the Chinchilla insight and capability phase transitions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Scaling Laws and Emergent Abilities refers to compute-optimal training, the Chinchilla insight and capability phase transitions. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, scaling laws and emergent abilities is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, scaling laws and emergent abilities is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
 
-Scaling Laws and Emergent Abilities cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Scaling Laws and Emergent Abilities cannot be understood in isolation from evaluation and benchmarking. Recall that evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Scaling Laws and Emergent Abilities cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Scaling Laws and Emergent Abilities cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to scaling laws and emergent abilities. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to scaling laws and emergent abilities. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around scaling laws and emergent abilities are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Scaling Laws and Emergent Abilities is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+From an architectural standpoint, Scaling Laws and Emergent Abilities sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1233,44 +1168,23 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Scaling Laws and Emergent Abilities" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="7-0" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bna2d2735" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b21a8"/><stop offset="1" stop-color="#7e22ce"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bna2d2735)"/><rect x="0" y="32" width="840" height="16" fill="url(#bna2d2735)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Scaling Laws and Emergent Abilities</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#6b21a8"/><text x="345" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Laws and</text><text x="345" y="169" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Emergent</text><text x="345" y="183" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Abilities</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#7e22ce"/><text x="495" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Evaluation and</text><text x="495" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Benchmarking</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#9333ea"/><text x="345" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Instruction</text><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Tuning and</text><text x="345" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Alignment</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#a21caf"/><text x="495" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">The LLM Platform</text><text x="495" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Reference</text><text x="495" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Architecture</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Scaling Laws and Emergent Abilities  •  Operating Model</text></svg>
 
-**Figure 7. Operating Model - Scaling Laws and Emergent Abilities** (drawio). Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 7. Operating Model - Scaling Laws and Emergent Abilities** (svg). Figure: Operating Model view for Scaling Laws and Emergent Abilities. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into scaling laws and emergent abilities. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into scaling laws and emergent abilities. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with evaluation and benchmarking. Because evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1284,7 +1198,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with inference optimisation. Because inference optimisation concerns kV caching, speculative decoding, quantisation and continuous batching for throughput, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1292,7 +1206,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply scaling laws and emergent abilities as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply scaling laws and emergent abilities as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -1364,51 +1278,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Scaling Laws and Emergent Abilities component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
+Pipelines keep Scaling Laws and Emergent Abilities logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Scaling Laws and Emergent Abilities component
+### Listing: A composable processing pipeline for Scaling Laws and Emergent Abilities
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class ScalingLawsAndConfig:
-    """Configuration for the Scaling Laws and Emergent Abilities component in a LLMs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class ScalingLawsAnd:
-    """A minimal, production-shaped implementation of Scaling Laws and Emergent Abilities."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Scaling Laws and Emergent Abilities."""
 
-    def __init__(self, config: ScalingLawsAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ScalingLawsAnd failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Scaling Laws and Emergent Abilities goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -1417,22 +1337,22 @@ class ScalingLawsAnd:
 1. In the context of LLMs, which statement best describes “Scaling Laws and Emergent Abilities”?
    - A. Compute-optimal training, the Chinchilla insight and capability phase transitions.
    - B. It removes all security and governance requirements.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: A.** Scaling Laws and Emergent Abilities: Compute-optimal training, the Chinchilla insight and capability phase transitions.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Assuming bigger is always better instead of measuring task fit.
+   - C. It applies exclusively to image data.
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: D.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* How would you test and monitor Scaling Laws and Emergent Abilities in production?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It makes the system slower but has no other effect.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+4. *(Discussion)* Explain Scaling Laws and Emergent Abilities and why it matters in a production LLMs system.
    - **Model answer:** A strong answer defines scaling laws and emergent abilities (Compute-optimal training, the Chinchilla insight and capability phase transitions.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1444,23 +1364,23 @@ _This chapter examines instruction tuning and alignment within LLMs. It covers s
 
 ## Introduction
 
-We define Instruction Tuning and Alignment as supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. Neglecting it is one of the most common reasons LLMs initiatives stall in production. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Instruction Tuning and Alignment can be characterised as supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. This concept recurs throughout the LLMs lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Instruction Tuning and Alignment addresses supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+Formally, Instruction Tuning and Alignment addresses supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, instruction tuning and alignment is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, instruction tuning and alignment is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
 
-Instruction Tuning and Alignment cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Instruction Tuning and Alignment cannot be understood in isolation from from n-grams to neural language models. Recall that from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Instruction Tuning and Alignment cannot be understood in isolation from the transformer backbone of llms. Recall that the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Instruction Tuning and Alignment cannot be understood in isolation from inference optimisation. Recall that inference optimisation concerns kV caching, speculative decoding, quantisation and continuous batching for throughput. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to instruction tuning and alignment. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to instruction tuning and alignment. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around instruction tuning and alignment are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around instruction tuning and alignment are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -1470,46 +1390,25 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="CI/CD Pipeline">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="CI/CD Pipeline - Instruction Tuning and Alignment" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="8-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnd7026b" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnd7026b)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnd7026b)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Instruction Tuning and Alignment</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#14b8a6" filter="url(#sh)"/><text x="104" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Instruction Tuning</text><text x="104" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Alignment</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#2dd4bf" filter="url(#sh)"/><text x="262" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">From N-grams to</text><text x="262" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Neural Language</text><text x="262" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Models</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#65a30d" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Inference</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Optimisation</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#84cc16" filter="url(#sh)"/><text x="578" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Context Windows and</text><text x="578" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Long-Context</text><text x="578" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Techniques</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#0d9488" filter="url(#sh)"/><text x="736" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tokenisation and</text><text x="736" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Vocabulary</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Instruction Tuning and Alignment  •  CI/CD Pipeline</text></svg>
 
-**Figure 8. CI/CD Pipeline - Instruction Tuning and Alignment** (drawio). Figure: CI/CD Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 8. CI/CD Pipeline - Instruction Tuning and Alignment** (svg). Figure: CI/CD Pipeline view for Instruction Tuning and Alignment. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into instruction tuning and alignment. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety and alignment in production. Because safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1517,9 +1416,9 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into instruction tuning and alignment. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into instruction tuning and alignment. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -1603,51 +1502,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Instruction Tuning and Alignment component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Instruction Tuning and Alignment component
+### Listing: Evaluating Instruction Tuning and Alignment with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class InstructionTuningAndConfig:
-    """Configuration for the Instruction Tuning and Alignment component in a LLMs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class InstructionTuningAnd:
-    """A minimal, production-shaped implementation of Instruction Tuning and Alignment."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Instruction Tuning and Alignment output against references with a simple exact-match metric.
 
-    def __init__(self, config: InstructionTuningAndConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"InstructionTuningAnd failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Instruction Tuning and Alignment goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -1655,23 +1543,23 @@ class InstructionTuningAnd:
 
 1. In the context of LLMs, which statement best describes “Instruction Tuning and Alignment”?
    - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Instruction Tuning and Alignment: Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
+   - B. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
+   - **Answer: D.** Instruction Tuning and Alignment: Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
-   - C. Underestimating KV-cache memory for long contexts.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. Underestimating KV-cache memory for long contexts.
    - C. It makes the system slower but has no other effect.
-   - D. Underestimating KV-cache memory for long contexts.
-   - **Answer: D.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* Walk through how you would design Instruction Tuning and Alignment for an enterprise LLMs workload.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+3. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Assuming bigger is always better instead of measuring task fit.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+4. *(Discussion)* How does Instruction Tuning and Alignment interact with security and governance requirements?
    - **Model answer:** A strong answer defines instruction tuning and alignment (Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1683,33 +1571,41 @@ _This chapter examines context windows and long-context techniques within LLMs. 
 
 ## Introduction
 
-Formally, Context Windows and Long-Context Techniques addresses position interpolation, attention variants and retrieval to extend effective context. Teams that master this consistently ship more reliable LLMs systems at lower cost. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+Context Windows and Long-Context Techniques refers to position interpolation, attention variants and retrieval to extend effective context. Getting this right early prevents expensive rework once a LLMs system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Context Windows and Long-Context Techniques refers to position interpolation, attention variants and retrieval to extend effective context. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+At its core, Context Windows and Long-Context Techniques concerns position interpolation, attention variants and retrieval to extend effective context. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, context windows and long-context techniques is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, context windows and long-context techniques is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
 
-Context Windows and Long-Context Techniques cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Context Windows and Long-Context Techniques cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Context Windows and Long-Context Techniques cannot be understood in isolation from evaluation and benchmarking. Recall that evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Context Windows and Long-Context Techniques cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to context windows and long-context techniques. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to context windows and long-context techniques. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around context windows and long-context techniques are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around context windows and long-context techniques are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Context Windows and Long-Context Techniques sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+A robust architecture for Context Windows and Long-Context Techniques is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="radial" data-pal="8-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc143043" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#84cc16"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc143043)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc143043)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Architecture - Context Windows and Long-Context Techniques</text><circle cx="420.0" cy="238.0" r="52" fill="#0f172a"/><text x="420" y="231" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Context</text><text x="420" y="245" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Windows and</text><line x1="420" y1="186" x2="420" y2="102" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="65" width="156" height="46" rx="11" fill="#84cc16" filter="url(#sh)"/><text x="420" y="83" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Context Windows and</text><text x="420" y="93" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Long-Context Techniques</text><line x1="465" y1="212" x2="631" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="140" width="156" height="46" rx="11" fill="#0d9488" filter="url(#sh)"/><text x="654" y="163" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Cost and Capacity Planning</text><line x1="465" y1="264" x2="631" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="576" y="290" width="156" height="46" rx="11" fill="#0f766e" filter="url(#sh)"/><text x="654" y="308" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Laws and Emergent</text><text x="654" y="318" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Abilities</text><line x1="420" y1="290" x2="420" y2="374" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="342" y="365" width="156" height="46" rx="11" fill="#14b8a6" filter="url(#sh)"/><text x="420" y="388" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Inference Optimisation</text><line x1="375" y1="264" x2="209" y2="306" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="290" width="156" height="46" rx="11" fill="#2dd4bf" filter="url(#sh)"/><text x="186" y="313" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Tokenisation and Vocabulary</text><line x1="375" y1="212" x2="209" y2="170" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="108" y="140" width="156" height="46" rx="11" fill="#65a30d" filter="url(#sh)"/><text x="186" y="158" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The Transformer Backbone of</text><text x="186" y="168" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">LLMs</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Context Windows and Long-Context Techniques  •  Architecture</text></svg>
+
+</div>
+
+**Figure 9. Architecture - Context Windows and Long-Context Techniques** (svg). Figure: Architecture view for Context Windows and Long-Context Techniques. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```mermaid
 flowchart TB
@@ -1717,14 +1613,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["LLMs Platform"]
+  subgraph Platform["Context Windows and Long-Cont… Platform"]
     GW[Gateway / Orchestrator]
-    S0[From N-grams to Neural La…]
-    S1[Tokenisation and Vocabula…]
-    S2[The Transformer Backbone …]
-    S3[Pre-training Objectives a…]
-    S4[Scaling Laws and Emergent…]
-    S5[Instruction Tuning and Al…]
+    S0[Context Windows and Long-…]
+    S1[Cost and Capacity Planning]
+    S2[Scaling Laws and Emergent…]
+    S3[Inference Optimisation]
+    S4[Tokenisation and Vocabula…]
+    S5[The Transformer Backbone …]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -1748,7 +1644,7 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 9. Architecture - Context Windows and Long-Context Techniques** (mermaid). Figure: Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 10. Security Architecture - Context Windows and Long-Context Techniques** (mermaid). Figure: Security Architecture view for Context Windows and Long-Context Techniques. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
@@ -1758,7 +1654,7 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety and alignment in production. Because safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1766,13 +1662,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into context windows and long-context techniques. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into context windows and long-context techniques. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety and alignment in production. Because safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -1903,24 +1799,24 @@ class ContextWindowsAnd:
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Context Windows and Long-Context Techniques”?
-   - A. Position interpolation, attention variants and retrieval to extend effective context.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Context Windows and Long-Context Techniques: Position interpolation, attention variants and retrieval to extend effective context.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It makes the system slower but has no other effect.
+   - C. Position interpolation, attention variants and retrieval to extend effective context.
+   - D. It removes all security and governance requirements.
+   - **Answer: C.** Context Windows and Long-Context Techniques: Position interpolation, attention variants and retrieval to extend effective context.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Silent tokenizer changes that break prompts and cost models.
-   - B. It removes all security and governance requirements.
-   - C. It makes the system slower but has no other effect.
-   - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: D.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: C.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Quantise and batch aggressively, validating quality impact with evals.
-   - B. Assuming bigger is always better instead of measuring task fit.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* Describe a failure mode of Context Windows and Long-Context Techniques and how you would mitigate it.
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: D.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+4. *(Discussion)* What trade-offs would you weigh when implementing Context Windows and Long-Context Techniques?
    - **Model answer:** A strong answer defines context windows and long-context techniques (Position interpolation, attention variants and retrieval to extend effective context.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -1932,27 +1828,27 @@ _This chapter examines inference optimisation within LLMs. It covers kV caching,
 
 ## Introduction
 
-Inference Optimisation refers to kV caching, speculative decoding, quantisation and continuous batching for throughput. Teams that master this consistently ship more reliable LLMs systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Inference Optimisation refers to kV caching, speculative decoding, quantisation and continuous batching for throughput. It is foundational: later capabilities in LLMs are built directly on top of it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Inference Optimisation can be characterised as kV caching, speculative decoding, quantisation and continuous batching for throughput. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, Inference Optimisation is best understood as kV caching, speculative decoding, quantisation and continuous batching for throughput. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, inference optimisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, inference optimisation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
 
-Inference Optimisation cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Inference Optimisation cannot be understood in isolation from tokenisation and vocabulary. Recall that tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Inference Optimisation cannot be understood in isolation from pre-training objectives and data. Recall that pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Inference Optimisation cannot be understood in isolation from pre-training objectives and data. Recall that pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to inference optimisation. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to inference optimisation. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around inference optimisation are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around inference optimisation are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Inference Optimisation sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+A robust architecture for Inference Optimisation is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -1960,73 +1856,42 @@ The diagram accompanying this section makes the data and control flow explicit. 
 
 Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Security Architecture">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Security Architecture - Inference Optimisation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="matrix" data-pal="4-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnc902aad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnc902aad)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnc902aad)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Security Architecture - Inference Optimisation</text><rect x="273" y="97" width="144" height="144" rx="12" fill="#e11d48"/><text x="345" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Inference</text><text x="345" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Optimisation</text><rect x="423" y="97" width="144" height="144" rx="12" fill="#f43f5e"/><text x="495" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Tokenisation and</text><text x="495" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Vocabulary</text><rect x="273" y="247" width="144" height="144" rx="12" fill="#fb7185"/><text x="345" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Pre-training</text><text x="345" y="319" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Objectives and</text><text x="345" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Data</text><rect x="423" y="247" width="144" height="144" rx="12" fill="#db2777"/><text x="495" y="312" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Serving LLMs at</text><text x="495" y="326" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" dominant-baseline="middle">Scale</text><text x="420" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">High impact</text><text x="420" y="410" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" dominant-baseline="middle">Low impact</text><text x="258.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 258.0 244.0)">Low effort</text><text x="582.0" y="244.0" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(90 582.0 244.0)">High effort</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Inference Optimisation  •  Security Architecture</text></svg>
+
+</div>
+
+**Figure 11. Security Architecture - Inference Optimisation** (svg). Figure: Security Architecture view for Inference Optimisation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+```plantuml
+@startuml
+title Data Lineage - Inference Optimisation
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 10. Security Architecture - Inference Optimisation** (drawio). Figure: Security Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Data Lineage">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Data Lineage - Inference Optimisation" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 11. Data Lineage - Inference Optimisation** (drawio). Figure: Data Lineage view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 12. Data Lineage - Inference Optimisation** (plantuml). Figure: Data Lineage view for Inference Optimisation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into inference optimisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into inference optimisation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2034,13 +1899,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into inference optimisation. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into inference optimisation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the transformer backbone of llms. Because the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2048,7 +1913,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply inference optimisation as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A finance organisation needs summarising filings and extracting structured facts. They decide to apply inference optimisation as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2120,64 +1985,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+Pipelines keep Inference Optimisation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Inference Optimisation with a regression gate
+### Listing: A composable processing pipeline for Inference Optimisation
 
 ```python
-from dataclasses import dataclass
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Inference Optimisation output against references with a simple exact-match metric.
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Inference Optimisation."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
+
+    return run
 
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Inference Optimisation”?
-   - A. It removes all security and governance requirements.
-   - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. KV caching, speculative decoding, quantisation and continuous batching for throughput.
-   - **Answer: D.** Inference Optimisation: KV caching, speculative decoding, quantisation and continuous batching for throughput.
-2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. Assuming bigger is always better instead of measuring task fit.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
-3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Underestimating KV-cache memory for long contexts.
+   - A. KV caching, speculative decoding, quantisation and continuous batching for throughput.
    - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* What trade-offs would you weigh when implementing Inference Optimisation?
+   - **Answer: A.** Inference Optimisation: KV caching, speculative decoding, quantisation and continuous batching for throughput.
+2. Which of the following is a recommended best practice when working with LLMs?
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. It removes all security and governance requirements.
+   - C. Silent tokenizer changes that break prompts and cost models.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+3. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+4. *(Discussion)* Explain Inference Optimisation and why it matters in a production LLMs system.
    - **Model answer:** A strong answer defines inference optimisation (KV caching, speculative decoding, quantisation and continuous batching for throughput.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2189,71 +2071,56 @@ _This chapter examines serving llms at scale within LLMs. It covers gPU memory p
 
 ## Introduction
 
-We define Serving LLMs at Scale as gPU memory planning, tensor/pipeline parallelism and autoscaling inference. Getting this right early prevents expensive rework once a LLMs system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+At its core, Serving LLMs at Scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. This concept recurs throughout the LLMs lifecycle, from design to operations. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Serving LLMs at Scale is best understood as gPU memory planning, tensor/pipeline parallelism and autoscaling inference. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Serving LLMs at Scale as gPU memory planning, tensor/pipeline parallelism and autoscaling inference. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, serving llms at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, serving llms at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
 
-Serving LLMs at Scale cannot be understood in isolation from tokenisation and vocabulary. Recall that tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Serving LLMs at Scale cannot be understood in isolation from the transformer backbone of llms. Recall that the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Serving LLMs at Scale cannot be understood in isolation from from n-grams to neural language models. Recall that from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Serving LLMs at Scale cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to serving llms at scale. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to serving llms at scale. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around serving llms at scale are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around serving llms at scale are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Serving LLMs at Scale sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for Serving LLMs at Scale separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-<div class="diagram-svg">
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Data Lineage - Serving LLMs at Scale</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">LLMs</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From N-grams to Neu…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Tokenisation and Vo…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">The Transformer Bac…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Pre-training Object…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Scaling Laws and Em…</text>
-</svg>
-
-</div>
-
-**Figure 12. Data Lineage - Serving LLMs at Scale** (svg). Figure: Data Lineage view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 13. Data Lineage - Serving LLMs at Scale** (mermaid). Figure: Data Lineage view for Serving LLMs at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into serving llms at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into serving llms at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the transformer backbone of llms. Because the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2263,7 +2130,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into serving llms at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
@@ -2275,7 +2142,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A telecom organisation needs tier-1 support automation with escalation to humans. They decide to apply serving llms at scale as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply serving llms at scale as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2347,51 +2214,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Serving LLMs at Scale component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Serving LLMs at Scale component
+### Listing: Evaluating Serving LLMs at Scale with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class ServingLlmsAtConfig:
-    """Configuration for the Serving LLMs at Scale component in a LLMs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class ServingLlmsAt:
-    """A minimal, production-shaped implementation of Serving LLMs at Scale."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Serving LLMs at Scale output against references with a simple exact-match metric.
 
-    def __init__(self, config: ServingLlmsAtConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"ServingLlmsAt failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Serving LLMs at Scale goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -2399,23 +2255,23 @@ class ServingLlmsAt:
 
 1. In the context of LLMs, which statement best describes “Serving LLMs at Scale”?
    - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Serving LLMs at Scale: GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
+   - B. It removes all security and governance requirements.
+   - C. It is only relevant to academic research, not production.
+   - D. GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
+   - **Answer: D.** Serving LLMs at Scale: GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Quantise and batch aggressively, validating quality impact with evals.
+   - A. It makes the system slower but has no other effect.
    - B. Underestimating KV-cache memory for long contexts.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: C.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-4. *(Discussion)* How would you test and monitor Serving LLMs at Scale in production?
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: D.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
+4. *(Discussion)* How does Serving LLMs at Scale interact with security and governance requirements?
    - **Model answer:** A strong answer defines serving llms at scale (GPU memory planning, tensor/pipeline parallelism and autoscaling inference.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2427,27 +2283,27 @@ _This chapter examines evaluation and benchmarking within LLMs. It covers capabi
 
 ## Introduction
 
-Evaluation and Benchmarking refers to capability benchmarks, contamination, and task-specific golden sets. Neglecting it is one of the most common reasons LLMs initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Evaluation and Benchmarking refers to capability benchmarks, contamination, and task-specific golden sets. Teams that master this consistently ship more reliable LLMs systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Evaluation and Benchmarking addresses capability benchmarks, contamination, and task-specific golden sets. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Evaluation and Benchmarking refers to capability benchmarks, contamination, and task-specific golden sets. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, evaluation and benchmarking is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, evaluation and benchmarking is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
 
-Evaluation and Benchmarking cannot be understood in isolation from inference optimisation. Recall that inference optimisation concerns kV caching, speculative decoding, quantisation and continuous batching for throughput. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Benchmarking cannot be understood in isolation from tokenisation and vocabulary. Recall that tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Evaluation and Benchmarking cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Evaluation and Benchmarking cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to evaluation and benchmarking. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and benchmarking. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and benchmarking are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and benchmarking are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Evaluation and Benchmarking is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for Evaluation and Benchmarking separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -2473,45 +2329,17 @@ Gateway --> User : response
 
 _Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 13. Sequence - Evaluation and Benchmarking** (plantuml). Figure: Sequence view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Cloud Architecture - Evaluation and Benchmarking</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">LLMs</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From N-grams to Neu…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Tokenisation and Vo…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">The Transformer Bac…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Pre-training Object…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Scaling Laws and Em…</text>
-</svg>
-
-</div>
-
-**Figure 14. Cloud Architecture - Evaluation and Benchmarking** (svg). Figure: Cloud Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 14. Sequence - Evaluation and Benchmarking** (plantuml). Figure: Sequence view for Evaluation and Benchmarking. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into evaluation and benchmarking. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with inference optimisation. Because inference optimisation concerns kV caching, speculative decoding, quantisation and continuous batching for throughput, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2519,13 +2347,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and benchmarking. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and benchmarking. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with hallucination and factuality. Because hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2533,7 +2361,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply evaluation and benchmarking as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply evaluation and benchmarking as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2605,81 +2433,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Evaluation and Benchmarking logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Evaluation and Benchmarking
+### Listing: Evaluating Evaluation and Benchmarking with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Evaluation and Benchmarking."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Evaluation and Benchmarking output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Evaluation and Benchmarking”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It makes the system slower but has no other effect.
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
    - C. Capability benchmarks, contamination, and task-specific golden sets.
-   - D. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: C.** Evaluation and Benchmarking: Capability benchmarks, contamination, and task-specific golden sets.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: D.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. Quantise and batch aggressively, validating quality impact with evals.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-4. *(Discussion)* Walk through how you would design Evaluation and Benchmarking for an enterprise LLMs workload.
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It makes the system slower but has no other effect.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* How would you test and monitor Evaluation and Benchmarking in production?
    - **Model answer:** A strong answer defines evaluation and benchmarking (Capability benchmarks, contamination, and task-specific golden sets.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2697,17 +2508,17 @@ This chapter builds intuition first, then formalises the ideas, derives an archi
 
 ## Theory and Foundations
 
-Formally, Hallucination and Factuality addresses why models confabulate and how grounding and decoding mitigate it. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Hallucination and Factuality is best understood as why models confabulate and how grounding and decoding mitigate it. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, hallucination and factuality is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
 
-Hallucination and Factuality cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Hallucination and Factuality cannot be understood in isolation from context windows and long-context techniques. Recall that context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Hallucination and Factuality cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Hallucination and Factuality cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to hallucination and factuality. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hallucination and factuality. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around hallucination and factuality are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hallucination and factuality are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -2717,26 +2528,15 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```plantuml
-@startuml
-title Cloud Architecture - Hallucination and Factuality
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
+<div class="diagram-svg">
 
-_Source diagram (plantuml); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="grid_matrix" data-pal="7-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn15d8cb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d946ef"/><stop offset="1" stop-color="#6b21a8"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn15d8cb)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn15d8cb)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Cloud Architecture - Hallucination and Factuality</text><text x="276" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Plan</text><text x="430" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Build</text><text x="582" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Run</text><text x="736" y="78" text-anchor="middle" font-size="10.5" font-weight="700" fill="#64748b" dominant-baseline="middle">Improve</text><text x="188" y="119" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Hallucination and</text><text x="188" y="131" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Factuality</text><rect x="203" y="93" width="147" height="64" rx="8" fill="#d946ef"/><rect x="203" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#6b21a8"/><rect x="356" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#7e22ce"/><rect x="509" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#9333ea"/><rect x="662" y="93" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><text x="188" y="189" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Context Windows and</text><text x="188" y="201" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Long-Context Techniques</text><rect x="203" y="163" width="147" height="64" rx="8" fill="#6b21a8"/><rect x="203" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#7e22ce"/><rect x="356" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#9333ea"/><rect x="509" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#a21caf"/><rect x="662" y="163" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><text x="188" y="265" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Serving LLMs at Scale</text><rect x="203" y="233" width="147" height="64" rx="8" fill="#7e22ce"/><rect x="203" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#9333ea"/><rect x="356" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.12"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#a21caf"/><rect x="509" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#c026d3"/><rect x="662" y="233" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.62"/><text x="188" y="329" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">Pre-training Objectives</text><text x="188" y="341" text-anchor="end" font-size="10" font-weight="600" fill="#0f172a" dominant-baseline="middle">and Data</text><rect x="203" y="303" width="147" height="64" rx="8" fill="#9333ea"/><rect x="203" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.25"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#a21caf"/><rect x="356" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.00"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#c026d3"/><rect x="509" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#d946ef"/><rect x="662" y="303" width="147" height="64" rx="8" fill="#ffffff" fill-opacity="0.50"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Hallucination and Factuality  •  Cloud Architecture</text></svg>
 
-**Figure 15. Cloud Architecture - Hallucination and Factuality** (plantuml). Figure: Cloud Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 15. Cloud Architecture - Hallucination and Factuality** (svg). Figure: Cloud Architecture view for Hallucination and Factuality. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ```xml
 <mxfile host="ai-university">
@@ -2746,16 +2546,16 @@ _Source diagram (plantuml); render with the appropriate tool._
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Agent Architecture - Hallucination and Factuality" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Hallucination and Fac…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Hallucination and Factu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Context Windows and Lon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Serving LLMs at Scale" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Inference Optimisation" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -2765,17 +2565,17 @@ _Source diagram (plantuml); render with the appropriate tool._
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 16. Agent Architecture - Hallucination and Factuality** (drawio). Figure: Agent Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 16. Agent Architecture - Hallucination and Factuality** (drawio). Figure: Agent Architecture view for Hallucination and Factuality. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into hallucination and factuality. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hallucination and factuality. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with context windows and long-context techniques. Because context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2783,13 +2583,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hallucination and factuality. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hallucination and factuality. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -2797,7 +2597,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs code completion and review across large repositories. They decide to apply hallucination and factuality as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply hallucination and factuality as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -2869,75 +2669,81 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Hallucination and Factuality component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
+Pipelines keep Hallucination and Factuality logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Hallucination and Factuality component
+### Listing: A composable processing pipeline for Hallucination and Factuality
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class HallucinationAndFactualityConfig:
-    """Configuration for the Hallucination and Factuality component in a LLMs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class HallucinationAndFactuality:
-    """A minimal, production-shaped implementation of Hallucination and Factuality."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Hallucination and Factuality."""
 
-    def __init__(self, config: HallucinationAndFactualityConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"HallucinationAndFactuality failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Hallucination and Factuality goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Hallucination and Factuality”?
-   - A. Why models confabulate and how grounding and decoding mitigate it.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Hallucination and Factuality: Why models confabulate and how grounding and decoding mitigate it.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. Why models confabulate and how grounding and decoding mitigate it.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Hallucination and Factuality: Why models confabulate and how grounding and decoding mitigate it.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Assuming bigger is always better instead of measuring task fit.
-   - B. Underestimating KV-cache memory for long contexts.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. Right-size the model to the task; do not pay for capability you don't use.
-   - **Answer: D.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - A. It applies exclusively to image data.
+   - B. Right-size the model to the task; do not pay for capability you don't use.
+   - C. Benchmarking on contaminated datasets and over-claiming capability.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Assuming bigger is always better instead of measuring task fit.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
-   - C. It removes all security and governance requirements.
-   - D. Monitor token distribution to catch prompt bloat and cost regressions.
-   - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* Describe a failure mode of Hallucination and Factuality and how you would mitigate it.
+   - A. Monitor token distribution to catch prompt bloat and cost regressions.
+   - B. It applies exclusively to image data.
+   - C. Silent tokenizer changes that break prompts and cost models.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* Walk through how you would design Hallucination and Factuality for an enterprise LLMs workload.
    - **Model answer:** A strong answer defines hallucination and factuality (Why models confabulate and how grounding and decoding mitigate it.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -2949,71 +2755,101 @@ _This chapter examines cost and capacity planning within LLMs. It covers token e
 
 ## Introduction
 
-At its core, Cost and Capacity Planning concerns token economics, hardware sizing and build-versus-buy decisions. Neglecting it is one of the most common reasons LLMs initiatives stall in production. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+We define Cost and Capacity Planning as token economics, hardware sizing and build-versus-buy decisions. Neglecting it is one of the most common reasons LLMs initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Cost and Capacity Planning is best understood as token economics, hardware sizing and build-versus-buy decisions. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Cost and Capacity Planning refers to token economics, hardware sizing and build-versus-buy decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, cost and capacity planning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, cost and capacity planning is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Teams that master this consistently ship more reliable LLMs systems at lower cost.
 
-Cost and Capacity Planning cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Cost and Capacity Planning cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Cost and Capacity Planning cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost and Capacity Planning cannot be understood in isolation from evaluation and benchmarking. Recall that evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to cost and capacity planning. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost and capacity planning. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost and capacity planning are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around cost and capacity planning are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Cost and Capacity Planning is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for Cost and Capacity Planning separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-<div class="diagram-svg">
+```mermaid
+flowchart TB
+  subgraph Client["Consumers"]
+    U[Users / Applications]
+    API[API Clients]
+  end
+  subgraph Platform["Cost and Capacity Planning Platform"]
+    GW[Gateway / Orchestrator]
+    S0[Cost and Capacity Planning]
+    S1[Scaling Laws and Emergent…]
+    S2[Evaluation and Benchmarki…]
+    S3[Instruction Tuning and Al…]
+    S4[Context Windows and Long-…]
+    S5[Tokenisation and Vocabula…]
+  end
+  subgraph Data["Data & Storage"]
+    DS[(Primary Store)]
+    VEC[(Vector / Index Store)]
+  end
+  subgraph Ops["Operations & Governance"]
+    OBS[Observability]
+    SEC[Security & Policy]
+  end
+  U --> GW
+  API --> GW
+  GW --> S0
+  GW --> S1
+  GW --> S2
+  GW --> S3
+  GW --> S4
+  GW --> S5
+  S0 --> DS
+  S1 --> VEC
+  GW -.-> OBS
+  GW -.-> SEC
+```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Agent Architecture - Cost and Capacity Planning</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">LLMs</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From N-grams to Neu…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Tokenisation and Vo…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">The Transformer Bac…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Pre-training Object…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Scaling Laws and Em…</text>
-</svg>
+**Figure 17. Agent Architecture - Cost and Capacity Planning** (mermaid). Figure: Agent Architecture view for Cost and Capacity Planning. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-</div>
+```plantuml
+@startuml
+title RAG Architecture - Cost and Capacity Planning
+class Service {
+  +process(req)
+  +evaluate(sample)
+}
+class Repository {
+  +get(id)
+  +put(e)
+}
+Service --> Repository
+@enduml
+```
 
-**Figure 17. Agent Architecture - Cost and Capacity Planning** (svg). Figure: Agent Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (plantuml); render with the appropriate tool._
+
+**Figure 18. RAG Architecture - Cost and Capacity Planning** (plantuml). Figure: RAG Architecture view for Cost and Capacity Planning. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into cost and capacity planning. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with scaling laws and emergent abilities. Because scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3021,13 +2857,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost and capacity planning. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost and capacity planning. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3035,7 +2871,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs code completion and review across large repositories. They decide to apply cost and capacity planning as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A software organisation needs code completion and review across large repositories. They decide to apply cost and capacity planning as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3107,81 +2943,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Cost and Capacity Planning logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Cost and Capacity Planning
+### Listing: Evaluating Cost and Capacity Planning with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Cost and Capacity Planning."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Cost and Capacity Planning output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Cost and Capacity Planning”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It removes all security and governance requirements.
-   - C. It is only relevant to academic research, not production.
-   - D. Token economics, hardware sizing and build-versus-buy decisions.
-   - **Answer: D.** Cost and Capacity Planning: Token economics, hardware sizing and build-versus-buy decisions.
-2. Which of the following is a recommended best practice when working with LLMs?
    - A. It guarantees deterministic output regardless of input.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. Underestimating KV-cache memory for long contexts.
-   - **Answer: B.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
+   - B. It removes all security and governance requirements.
+   - C. Token economics, hardware sizing and build-versus-buy decisions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Cost and Capacity Planning: Token economics, hardware sizing and build-versus-buy decisions.
+2. Which of the following is a recommended best practice when working with LLMs?
+   - A. It makes the system slower but has no other effect.
+   - B. Quantise and batch aggressively, validating quality impact with evals.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. It applies exclusively to image data.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-4. *(Discussion)* Walk through how you would design Cost and Capacity Planning for an enterprise LLMs workload.
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* What trade-offs would you weigh when implementing Cost and Capacity Planning?
    - **Model answer:** A strong answer defines cost and capacity planning (Token economics, hardware sizing and build-versus-buy decisions.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3193,33 +3012,33 @@ _This chapter examines safety and alignment in production within LLMs. It covers
 
 ## Introduction
 
-We define Safety and Alignment in Production as layered safety, refusal behaviour and policy enforcement. Neglecting it is one of the most common reasons LLMs initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+Safety and Alignment in Production can be characterised as layered safety, refusal behaviour and policy enforcement. This concept recurs throughout the LLMs lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Safety and Alignment in Production refers to layered safety, refusal behaviour and policy enforcement. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Formally, Safety and Alignment in Production addresses layered safety, refusal behaviour and policy enforcement. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, safety and alignment in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Teams that master this consistently ship more reliable LLMs systems at lower cost.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, safety and alignment in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
 
-Safety and Alignment in Production cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Safety and Alignment in Production cannot be understood in isolation from context windows and long-context techniques. Recall that context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Safety and Alignment in Production cannot be understood in isolation from evaluation and benchmarking. Recall that evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Safety and Alignment in Production cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to safety and alignment in production. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to safety and alignment in production. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around safety and alignment in production are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around safety and alignment in production are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Safety and Alignment in Production separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+A robust architecture for Safety and Alignment in Production is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```mermaid
 flowchart TB
@@ -3227,14 +3046,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["LLMs Platform"]
+  subgraph Platform["Safety and Alignment in Produ… Platform"]
     GW[Gateway / Orchestrator]
-    S0[From N-grams to Neural La…]
-    S1[Tokenisation and Vocabula…]
-    S2[The Transformer Backbone …]
-    S3[Pre-training Objectives a…]
-    S4[Scaling Laws and Emergent…]
-    S5[Instruction Tuning and Al…]
+    S0[Safety and Alignment in P…]
+    S1[Context Windows and Long-…]
+    S2[The LLM Platform Referenc…]
+    S3[Inference Optimisation]
+    S4[From N-grams to Neural La…]
+    S5[Scaling Laws and Emergent…]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -3258,30 +3077,25 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 18. RAG Architecture - Safety and Alignment in Production** (mermaid). Figure: RAG Architecture view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Data Flow - Safety and Alignment in Production
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 19. Data Flow - Safety and Alignment in Production** (plantuml). Figure: Data Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 19. RAG Architecture - Safety and Alignment in Production** (mermaid). Figure: RAG Architecture view for Safety and Alignment in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into safety and alignment in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into safety and alignment in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+
+In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with context windows and long-context techniques. Because context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Hoffmann et al. — Training Compute-Optimal LLMs (Chinchilla, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into safety and alignment in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
@@ -3293,23 +3107,9 @@ Finally, attend to edge cases and degradation. Define what the system should do 
 
 For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Hoffmann et al. — Training Compute-Optimal LLMs (Chinchilla, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
 
-## Advanced Considerations
-
-Having established the essentials, we now go deeper into safety and alignment in production. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
-
-In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Hoffmann et al. — Training Compute-Optimal LLMs (Chinchilla, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A software organisation needs code completion and review across large repositories. They decide to apply safety and alignment in production as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A software organisation needs code completion and review across large repositories. They decide to apply safety and alignment in production as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3381,57 +3181,40 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Safety and Alignment in Production logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Safety and Alignment in Production
+### Listing: Evaluating Safety and Alignment in Production with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Safety and Alignment in Production."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Safety and Alignment in Production output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
@@ -3439,23 +3222,23 @@ def run_batch(items: Iterable[dict]) -> Iterator[dict]:
 
 1. In the context of LLMs, which statement best describes “Safety and Alignment in Production”?
    - A. Layered safety, refusal behaviour and policy enforcement.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Safety and Alignment in Production: Layered safety, refusal behaviour and policy enforcement.
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Quantise and batch aggressively, validating quality impact with evals.
-   - D. Silent tokenizer changes that break prompts and cost models.
-   - **Answer: C.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It removes all security and governance requirements.
+   - D. Benchmarking on contaminated datasets and over-claiming capability.
+   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
+   - A. It is only relevant to academic research, not production.
    - B. Underestimating KV-cache memory for long contexts.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Right-size the model to the task; do not pay for capability you don't use.
    - **Answer: B.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* Walk through how you would design Safety and Alignment in Production for an enterprise LLMs workload.
+4. *(Discussion)* How would you test and monitor Safety and Alignment in Production in production?
    - **Model answer:** A strong answer defines safety and alignment in production (Layered safety, refusal behaviour and policy enforcement.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3467,56 +3250,80 @@ _This chapter examines the llm platform reference architecture within LLMs. It c
 
 ## Introduction
 
-The LLM Platform Reference Architecture can be characterised as gateways, registries, evaluation and observability for fleets of models. This concept recurs throughout the LLMs lifecycle, from design to operations. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+In practical terms, The LLM Platform Reference Architecture is best understood as gateways, registries, evaluation and observability for fleets of models. Teams that master this consistently ship more reliable LLMs systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, The LLM Platform Reference Architecture addresses gateways, registries, evaluation and observability for fleets of models. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+In practical terms, The LLM Platform Reference Architecture is best understood as gateways, registries, evaluation and observability for fleets of models. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, the llm platform reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, the llm platform reference architecture is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
 
-The LLM Platform Reference Architecture cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+The LLM Platform Reference Architecture cannot be understood in isolation from pre-training objectives and data. Recall that pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-The LLM Platform Reference Architecture cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+The LLM Platform Reference Architecture cannot be understood in isolation from evaluation and benchmarking. Recall that evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-Several established patterns apply directly to the llm platform reference architecture. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to the llm platform reference architecture. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around the llm platform reference architecture are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for The LLM Platform Reference Architecture is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for The LLM Platform Reference Architecture separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
+```xml
+<mxfile host="ai-university">
+  <diagram name="Data Flow">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Data Flow - The LLM Platform Reference Architecture" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="The LLM Platform Refe…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="The LLM Platform Refere…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Evaluation and Benchmar…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Safety and Alignment in…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Context Windows and Lon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-**Figure 20. Data Flow - The LLM Platform Reference Architecture** (mermaid). Figure: Data Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+_Source diagram (drawio); render with the appropriate tool._
+
+**Figure 20. Data Flow - The LLM Platform Reference Architecture** (drawio). Figure: Data Flow view for The LLM Platform Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="swimlane" data-pal="6-5" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn20a595" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#94a3b8"/><stop offset="1" stop-color="#334155"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn20a595)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn20a595)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - The LLM Platform Reference Architecture</text><rect x="28" y="64" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="109" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Business</text><rect x="158" y="82" width="140" height="54" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="228" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The LLM Platform Reference</text><text x="228" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="318" y="82" width="140" height="54" rx="11" fill="#334155" filter="url(#sh)"/><text x="388" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="388" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><line x1="298" y1="109" x2="318" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="82" width="140" height="54" rx="11" fill="#475569" filter="url(#sh)"/><text x="548" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation and</text><text x="548" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Benchmarking</text><line x1="458" y1="109" x2="478" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="82" width="140" height="54" rx="11" fill="#64748b" filter="url(#sh)"/><text x="708" y="104" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety and Alignment in</text><text x="708" y="114" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="618" y1="109" x2="638" y2="109" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="164" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="209" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Application</text><rect x="158" y="182" width="140" height="54" rx="11" fill="#334155" filter="url(#sh)"/><text x="228" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The LLM Platform Reference</text><text x="228" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="318" y="182" width="140" height="54" rx="11" fill="#475569" filter="url(#sh)"/><text x="388" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="388" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><line x1="298" y1="209" x2="318" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="182" width="140" height="54" rx="11" fill="#64748b" filter="url(#sh)"/><text x="548" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation and</text><text x="548" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Benchmarking</text><line x1="458" y1="209" x2="478" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="182" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="708" y="204" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety and Alignment in</text><text x="708" y="214" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="618" y1="209" x2="638" y2="209" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="28" y="264" width="784" height="90" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="40" y="309" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data</text><rect x="158" y="282" width="140" height="54" rx="11" fill="#475569" filter="url(#sh)"/><text x="228" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">The LLM Platform Reference</text><text x="228" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><rect x="318" y="282" width="140" height="54" rx="11" fill="#64748b" filter="url(#sh)"/><text x="388" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Pre-training Objectives</text><text x="388" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Data</text><line x1="298" y1="309" x2="318" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="478" y="282" width="140" height="54" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="548" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Evaluation and</text><text x="548" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Benchmarking</text><line x1="458" y1="309" x2="478" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="638" y="282" width="140" height="54" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="708" y="304" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Safety and Alignment in</text><text x="708" y="314" text-anchor="middle" font-size="9.0" font-weight="600" fill="#ffffff" dominant-baseline="middle">Production</text><line x1="618" y1="309" x2="638" y2="309" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">The LLM Platform Reference Architecture  •  Application Flow</text></svg>
+
+</div>
+
+**Figure 21. Application Flow - The LLM Platform Reference Architecture** (svg). Figure: Application Flow view for The LLM Platform Reference Architecture. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into the llm platform reference architecture. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaling laws and emergent abilities. Because scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3524,13 +3331,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into the llm platform reference architecture. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into the llm platform reference architecture. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3538,7 +3345,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A software organisation needs code completion and review across large repositories. They decide to apply the llm platform reference architecture as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A finance organisation needs summarising filings and extracting structured facts. They decide to apply the llm platform reference architecture as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3610,64 +3417,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven The LLM Platform Reference Architecture component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating The LLM Platform Reference Architecture with a regression gate
+### Listing: Implementing a The LLM Platform Reference Architecture component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class TheLlmPlatformConfig:
+    """Configuration for the The LLM Platform Reference Architecture component in a LLMs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score The LLM Platform Reference Architecture output against references with a simple exact-match metric.
+class TheLlmPlatform:
+    """A minimal, production-shaped implementation of The LLM Platform Reference Architecture."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: TheLlmPlatformConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"TheLlmPlatform failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for The LLM Platform Reference Architecture goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “The LLM Platform Reference Architecture”?
-   - A. It removes all security and governance requirements.
-   - B. Gateways, registries, evaluation and observability for fleets of models.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** The LLM Platform Reference Architecture: Gateways, registries, evaluation and observability for fleets of models.
-2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: D.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It makes the system slower but has no other effect.
+   - A. Gateways, registries, evaluation and observability for fleets of models.
    - B. It eliminates the need for any evaluation or monitoring.
-   - C. Underestimating KV-cache memory for long contexts.
-   - D. Right-size the model to the task; do not pay for capability you don't use.
-   - **Answer: C.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* Walk through how you would design The LLM Platform Reference Architecture for an enterprise LLMs workload.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** The LLM Platform Reference Architecture: Gateways, registries, evaluation and observability for fleets of models.
+2. Which of the following is a recommended best practice when working with LLMs?
+   - A. It removes all security and governance requirements.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It applies exclusively to image data.
+   - D. Silent tokenizer changes that break prompts and cost models.
+   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+3. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. Monitor token distribution to catch prompt bloat and cost regressions.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+4. *(Discussion)* Explain The LLM Platform Reference Architecture and why it matters in a production LLMs system.
    - **Model answer:** A strong answer defines the llm platform reference architecture (Gateways, registries, evaluation and observability for fleets of models.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3679,101 +3497,51 @@ _This chapter examines putting it together: a reference implementation within LL
 
 ## Introduction
 
-In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole. Teams that master this consistently ship more reliable LLMs systems at lower cost. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Formally, Putting It Together: A Reference Implementation addresses an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Putting It Together: A Reference Implementation is best understood as an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+We define Putting It Together: A Reference Implementation as an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, putting it together: a reference implementation is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. It is foundational: later capabilities in LLMs are built directly on top of it.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Putting It Together: A Reference Implementation cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Putting It Together: A Reference Implementation cannot be understood in isolation from pre-training objectives and data. Recall that pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Putting It Together: A Reference Implementation cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to putting it together: a reference implementation. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to putting it together: a reference implementation. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around putting it together: a reference implementation are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Putting It Together: A Reference Implementation separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+From an architectural standpoint, Putting It Together: A Reference Implementation sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Application Flow">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Application Flow - Putting It Together: A Reference Impleme…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="flow_h" data-pal="6-2" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bncd29c73" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#64748b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bncd29c73)"/><rect x="0" y="32" width="840" height="16" fill="url(#bncd29c73)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Application Flow - Putting It Together: A Reference Implementation</text><rect x="39" y="196" width="130" height="68" rx="11" fill="#64748b" filter="url(#sh)"/><text x="104" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Putting It Together:</text><text x="104" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">A Reference</text><text x="104" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Implementation</text><rect x="197" y="196" width="130" height="68" rx="11" fill="#0f172a" filter="url(#sh)"/><text x="262" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The LLM Platform</text><text x="262" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Reference</text><text x="262" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><line x1="169" y1="230" x2="197" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="355" y="196" width="130" height="68" rx="11" fill="#1e293b" filter="url(#sh)"/><text x="420" y="224" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Laws and</text><text x="420" y="236" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Emergent Abilities</text><line x1="327" y1="230" x2="355" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="513" y="196" width="130" height="68" rx="11" fill="#94a3b8" filter="url(#sh)"/><text x="578" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Serving LLMs at Scale</text><line x1="485" y1="230" x2="513" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><rect x="671" y="196" width="130" height="68" rx="11" fill="#334155" filter="url(#sh)"/><text x="736" y="218" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Context Windows and</text><text x="736" y="230" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Long-Context</text><text x="736" y="242" text-anchor="middle" font-size="10.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Techniques</text><line x1="643" y1="230" x2="671" y2="230" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b" dominant-baseline="middle">end-to-end flow</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Putting It Together: A Reference Implementation  •  Application Flow</text></svg>
 
-**Figure 21. Application Flow - Putting It Together: A Reference Implementation** (drawio). Figure: Application Flow view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Infrastructure">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Putting It Together: A Reference Implement…" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
-
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 22. Infrastructure - Putting It Together: A Reference Implementation** (drawio). Figure: Infrastructure view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 22. Application Flow - Putting It Together: A Reference Implementation** (svg). Figure: Application Flow view for Putting It Together: A Reference Implementation. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into putting it together: a reference implementation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into putting it together: a reference implementation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the llm platform reference architecture. Because the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3783,11 +3551,11 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into putting it together: a reference implementation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaling laws and emergent abilities. Because scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -3795,7 +3563,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A finance organisation needs summarising filings and extracting structured facts. They decide to apply putting it together: a reference implementation as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+To ground the discussion, walk through a representative example. A telecom organisation needs tier-1 support automation with escalation to humans. They decide to apply putting it together: a reference implementation as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -3867,81 +3635,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Putting It Together: A Reference Implementation logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Putting It Together: A Reference Implementation
+### Listing: Evaluating Putting It Together: A Reference Implementation with a regression gate
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from dataclasses import dataclass
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Putting It Together: A Reference Implementation."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Putting It Together: A Reference Implementation output against references with a simple exact-match metric.
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
-
-    return run
-
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
 
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It removes all security and governance requirements.
-   - B. an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
+   - D. an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. Right-size the model to the task; do not pay for capability you don't use.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - A. It applies exclusively to image data.
+   - B. Benchmarking on contaminated datasets and over-claiming capability.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Underestimating KV-cache memory for long contexts.
-   - C. It makes the system slower but has no other effect.
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It applies exclusively to image data.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
    - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: B.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* How would you test and monitor Putting It Together: A Reference Implementation in production?
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
    - **Model answer:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -3953,21 +3704,21 @@ _This chapter examines hands-on lab: building an end-to-end llms system within L
 
 ## Introduction
 
-Hands-On Lab: Building an End-to-End LLMs System can be characterised as a guided, build-along laboratory that constructs a functioning LLMs system from first principles. Teams that master this consistently ship more reliable LLMs systems at lower cost. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
+Hands-On Lab: Building an End-to-End LLMs System can be characterised as a guided, build-along laboratory that constructs a functioning LLMs system from first principles. This concept recurs throughout the LLMs lifecycle, from design to operations. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Hands-On Lab: Building an End-to-End LLMs System addresses a guided, build-along laboratory that constructs a functioning LLMs system from first principles. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+In practical terms, Hands-On Lab: Building an End-to-End LLMs System is best understood as a guided, build-along laboratory that constructs a functioning LLMs system from first principles. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
 To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, hands-on lab: building an end-to-end llms system is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
 
-Hands-On Lab: Building an End-to-End LLMs System cannot be understood in isolation from tokenisation and vocabulary. Recall that tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Hands-On Lab: Building an End-to-End LLMs System cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Hands-On Lab: Building an End-to-End LLMs System cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Hands-On Lab: Building an End-to-End LLMs System cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to hands-on lab: building an end-to-end llms system. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to hands-on lab: building an end-to-end llms system. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
 It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around hands-on lab: building an end-to-end llms system are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
@@ -3979,46 +3730,40 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Infrastructure">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Infrastructure - Hands-On Lab: Building an End-to-End LLMs …" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```plantuml
+@startuml
+title Infrastructure - Hands-On Lab: Building an End-to-End LLMs System
+package "Hands-On Lab: Building an End-to-End LLMs System Platform" {
+  component "Hands-On Lab: Building …" as C0
+  component "Instruction Tuning and …" as C1
+  component "Hallucination and Factu…" as C2
+  component "Inference Optimisation" as C3
+  component "The Transformer Backbon…" as C4
+}
+database "Storage" as DB
+C0 --> DB
+C1 --> DB
+C2 --> DB
+C3 --> DB
+C4 --> DB
+@enduml
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+_Source diagram (plantuml); render with the appropriate tool._
 
-**Figure 23. Infrastructure - Hands-On Lab: Building an End-to-End LLMs System** (drawio). Figure: Infrastructure view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 23. Infrastructure - Hands-On Lab: Building an End-to-End LLMs System** (plantuml). Figure: Infrastructure view for Hands-On Lab: Building an End-to-End LLMs System. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into hands-on lab: building an end-to-end llms system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4026,13 +3771,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into hands-on lab: building an end-to-end llms system. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into hands-on lab: building an end-to-end llms system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hallucination and factuality. Because hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4040,7 +3785,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A software organisation needs code completion and review across large repositories. They decide to apply hands-on lab: building an end-to-end llms system as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A finance organisation needs summarising filings and extracting structured facts. They decide to apply hands-on lab: building an end-to-end llms system as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4152,24 +3897,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Hands-On Lab: Building an End-to-End LLMs System”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It is only relevant to academic research, not production.
    - B. a guided, build-along laboratory that constructs a functioning LLMs system from first principles
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
    - **Answer: B.** Hands-On Lab: Building an End-to-End LLMs System: a guided, build-along laboratory that constructs a functioning LLMs system from first principles
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Right-size the model to the task; do not pay for capability you don't use.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It applies exclusively to image data.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
 3. Which of the following is a common pitfall to avoid in LLMs?
    - A. It removes all security and governance requirements.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. Monitor token distribution to catch prompt bloat and cost regressions.
-   - D. Silent tokenizer changes that break prompts and cost models.
-   - **Answer: D.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-4. *(Discussion)* Describe a failure mode of Hands-On Lab: Building an End-to-End LLMs System and how you would mitigate it.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* Explain Hands-On Lab: Building an End-to-End LLMs System and why it matters in a production LLMs system.
    - **Model answer:** A strong answer defines hands-on lab: building an end-to-end llms system (a guided, build-along laboratory that constructs a functioning LLMs system from first principles) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4181,23 +3926,23 @@ _This chapter examines case study: enterprise search at scale within LLMs. It co
 
 ## Introduction
 
-Formally, Case Study: Enterprise Search at Scale addresses a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes. Neglecting it is one of the most common reasons LLMs initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
+In practical terms, Case Study: Enterprise Search at Scale is best understood as a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Case Study: Enterprise Search at Scale as a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Case Study: Enterprise Search at Scale can be characterised as a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, case study: enterprise search at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, case study: enterprise search at scale is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
 
-Case Study: Enterprise Search at Scale cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Case Study: Enterprise Search at Scale cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 Case Study: Enterprise Search at Scale cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to case study: enterprise search at scale. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to case study: enterprise search at scale. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around case study: enterprise search at scale are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around case study: enterprise search at scale are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -4207,80 +3952,23 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
-<div class="diagram-svg">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Inter, Arial, sans-serif">
-<rect width="760" height="360" fill="#f8fafc"/>
-<text x="380" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Capability Map - Case Study: Enterprise Search at Scale</text>
-<rect x="290" y="162" width="180" height="56" rx="12" fill="#0f172a"/>
-<text x="380" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">LLMs</text>
-<line x1="380" y1="190" x2="380" y2="70" stroke="#94a3b8" stroke-width="2"/>
-<rect x="308" y="48" width="144" height="44" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-<text x="380" y="74" text-anchor="middle" font-size="11" fill="#0f172a">From N-grams to Neu…</text>
-<line x1="380" y1="190" x2="617" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="545" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
-<text x="617" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Tokenisation and Vo…</text>
-<line x1="380" y1="190" x2="526" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="454" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#0891b2" stroke-width="2"/>
-<text x="526" y="291" text-anchor="middle" font-size="11" fill="#0f172a">The Transformer Bac…</text>
-<line x1="380" y1="190" x2="234" y2="287" stroke="#94a3b8" stroke-width="2"/>
-<rect x="162" y="265" width="144" height="44" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-<text x="234" y="291" text-anchor="middle" font-size="11" fill="#0f172a">Pre-training Object…</text>
-<line x1="380" y1="190" x2="143" y2="153" stroke="#94a3b8" stroke-width="2"/>
-<rect x="71" y="131" width="144" height="44" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-<text x="143" y="157" text-anchor="middle" font-size="11" fill="#0f172a">Scaling Laws and Em…</text>
-</svg>
-
-</div>
-
-**Figure 24. Capability Map - Case Study: Enterprise Search at Scale** (svg). Figure: Capability Map view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```xml
-<mxfile host="ai-university">
-  <diagram name="Deployment">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Deployment - Case Study: Enterprise Search at Scale" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+graph LR
+  D(("Case Study: Enterpr…"))
+  D --- C0[Case Study: Enterpris…]
+  D --- C1[The LLM Platform Refe…]
+  D --- C2[Serving LLMs at Scale]
+  D --- C3[Pre-training Objectiv…]
+  D --- C4[Scaling Laws and Emer…]
+  C0 --- C1
+  C1 --- C2
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
-
-**Figure 25. Deployment - Case Study: Enterprise Search at Scale** (drawio). Figure: Deployment view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 24. Capability Map - Case Study: Enterprise Search at Scale** (mermaid). Figure: Capability Map view for Case Study: Enterprise Search at Scale. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
-
-Having established the essentials, we now go deeper into case study: enterprise search at scale. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
-
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
-
-In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
-
-A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
-
-Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
-
-For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Hoffmann et al. — Training Compute-Optimal LLMs (Chinchilla, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
-
-## Advanced Considerations
 
 Having established the essentials, we now go deeper into case study: enterprise search at scale. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
@@ -4288,7 +3976,21 @@ Consider the principal variants and how to choose between them. Each variant opt
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the transformer backbone of llms. Because the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the llm platform reference architecture. Because the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+
+Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
+
+For deeper study, the literature offers authoritative treatments such as Vaswani et al. — Attention Is All You Need (2017) and Hoffmann et al. — Training Compute-Optimal LLMs (Chinchilla, 2022). These primary sources reward careful reading and ground the practical guidance above in established results.
+
+## Advanced Considerations
+
+Having established the essentials, we now go deeper into case study: enterprise search at scale. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+
+In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
+
+A frequent source of subtle bugs is the interaction with the llm platform reference architecture. Because the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4296,7 +3998,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply case study: enterprise search at scale as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A software organisation needs code completion and review across large repositories. They decide to apply case study: enterprise search at scale as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4421,21 +4123,21 @@ class CaseEnterprise:
 1. In the context of LLMs, which statement best describes “Case Study: Enterprise Search at Scale”?
    - A. a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes
    - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Case Study: Enterprise Search at Scale: a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Assuming bigger is always better instead of measuring task fit.
-   - C. Monitor token distribution to catch prompt bloat and cost regressions.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. It makes the system slower but has no other effect.
+   - C. Assuming bigger is always better instead of measuring task fit.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
-   - C. Quantise and batch aggressively, validating quality impact with evals.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: D.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Silent tokenizer changes that break prompts and cost models.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
 4. *(Discussion)* Describe a failure mode of Case Study: Enterprise Search at Scale and how you would mitigate it.
    - **Model answer:** A strong answer defines case study: enterprise search at scale (a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
@@ -4448,66 +4150,72 @@ _This chapter examines operating in production within LLMs. It covers the operat
 
 ## Introduction
 
-In practical terms, Operating in Production is best understood as the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement. Teams that master this consistently ship more reliable LLMs systems at lower cost. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Operating in Production can be characterised as the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement. Getting this right early prevents expensive rework once a LLMs system reaches scale. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Formally, Operating in Production addresses the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Operating in Production refers to the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, operating in production is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. It is foundational: later capabilities in LLMs are built directly on top of it.
 
-Operating in Production cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Operating in Production cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 Operating in Production cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to operating in production. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to operating in production. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around operating in production are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around operating in production are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Operating in Production is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for Operating in Production separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-```plantuml
-@startuml
-title Deployment - Operating in Production
-package "LLMs Platform" {
-  component "From N-grams to Neural …" as C0
-  component "Tokenisation and Vocabu…" as C1
-  component "The Transformer Backbon…" as C2
-  component "Pre-training Objectives…" as C3
-  component "Scaling Laws and Emerge…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
+```xml
+<mxfile host="ai-university">
+  <diagram name="Deployment">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Deployment - Operating in Production" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Operating in Producti…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Operating in Production" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n1" value="The LLM Platform Refere…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Serving LLMs at Scale" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Safety and Alignment in…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 ```
 
-_Source diagram (plantuml); render with the appropriate tool._
+_Source diagram (drawio); render with the appropriate tool._
 
-**Figure 26. Deployment - Operating in Production** (plantuml). Figure: Deployment view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 25. Deployment - Operating in Production** (drawio). Figure: Deployment view for Operating in Production. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety and alignment in production. Because safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the llm platform reference architecture. Because the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4515,13 +4223,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into operating in production. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into operating in production. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
 Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with scaling laws and emergent abilities. Because scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4529,7 +4237,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A finance organisation needs summarising filings and extracting structured facts. They decide to apply operating in production as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A telecom organisation needs tier-1 support automation with escalation to humans. They decide to apply operating in production as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4601,75 +4309,64 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Operating in Production component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
+Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Operating in Production component
+### Listing: Evaluating Operating in Production with a regression gate
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from dataclasses import dataclass
 
 
-@dataclass(slots=True)
-class OperatingInProductionConfig:
-    """Configuration for the Operating in Production component in a LLMs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+@dataclass
+class EvalResult:
+    metric: str
+    score: float
+    passed: bool
 
 
-class OperatingInProduction:
-    """A minimal, production-shaped implementation of Operating in Production."""
+def evaluate(predictions: list[str], references: list[str],
+             threshold: float = 0.8) -> EvalResult:
+    """Score Operating in Production output against references with a simple exact-match metric.
 
-    def __init__(self, config: OperatingInProductionConfig) -> None:
-        self._config = config
-        self._calls = 0
+    In practice you would combine several metrics (exact match, semantic
+    similarity, LLM-as-judge) and gate releases on the aggregate.
+    """
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must align")
+    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
+    score = hits / len(references) if references else 0.0
+    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"OperatingInProduction failed after retries") from last_error
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Operating in Production goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+if __name__ == "__main__":
+    result = evaluate(["yes", "no"], ["yes", "yes"])
+    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Operating in Production”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
-   - **Answer: D.** Operating in Production: the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
-2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. It makes the system slower but has no other effect.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. Quantise and batch aggressively, validating quality impact with evals.
-   - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It makes the system slower but has no other effect.
+   - B. the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
    - C. It is only relevant to academic research, not production.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-4. *(Discussion)* Describe a failure mode of Operating in Production and how you would mitigate it.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Operating in Production: the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
+2. Which of the following is a recommended best practice when working with LLMs?
+   - A. Underestimating KV-cache memory for long contexts.
+   - B. Quantise and batch aggressively, validating quality impact with evals.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+3. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+4. *(Discussion)* Explain Operating in Production and why it matters in a production LLMs system.
    - **Model answer:** A strong answer defines operating in production (the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4681,76 +4378,63 @@ _This chapter examines evaluation and quality assurance within LLMs. It covers a
 
 ## Introduction
 
-Evaluation and Quality Assurance refers to a rigorous approach to measuring and assuring the quality of a LLMs system before and after release. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+Formally, Evaluation and Quality Assurance addresses a rigorous approach to measuring and assuring the quality of a LLMs system before and after release. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Evaluation and Quality Assurance can be characterised as a rigorous approach to measuring and assuring the quality of a LLMs system before and after release. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+At its core, Evaluation and Quality Assurance concerns a rigorous approach to measuring and assuring the quality of a LLMs system before and after release. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, evaluation and quality assurance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Teams that master this consistently ship more reliable LLMs systems at lower cost.
 
-Evaluation and Quality Assurance cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Evaluation and Quality Assurance cannot be understood in isolation from pre-training objectives and data. Recall that pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Evaluation and Quality Assurance cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Evaluation and Quality Assurance cannot be understood in isolation from scaling laws and emergent abilities. Recall that scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to evaluation and quality assurance. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to evaluation and quality assurance. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around evaluation and quality assurance are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Evaluation and Quality Assurance separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+From an architectural standpoint, Evaluation and Quality Assurance sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
-
-```plantuml
-@startuml
-title Class - Evaluation and Quality Assurance
-class Service {
-  +process(req)
-  +evaluate(sample)
-}
-class Repository {
-  +get(id)
-  +put(e)
-}
-Service --> Repository
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 27. Class - Evaluation and Quality Assurance** (plantuml). Figure: Class view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```mermaid
-graph LR
-  D(("LLMs"))
-  D --- C0[From N-grams to Neura…]
-  D --- C1[Tokenisation and Voca…]
-  D --- C2[The Transformer Backb…]
-  D --- C3[Pre-training Objectiv…]
-  D --- C4[Scaling Laws and Emer…]
-  C0 --- C1
-  C1 --- C2
+classDiagram
+  class EaQAService {
+    +configure(config)
+    +process(request) Response
+    +evaluate(sample) Metrics
+  }
+  class Repository {
+    +get(id) Entity
+    +put(entity)
+  }
+  class Policy {
+    +authorise(ctx) bool
+  }
+  EaQAService --> Repository
+  EaQAService --> Policy
 ```
 
-**Figure 28. Knowledge Graph - Evaluation and Quality Assurance** (mermaid). Figure: Knowledge Graph view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 26. Class - Evaluation and Quality Assurance** (mermaid). Figure: Class view for Evaluation and Quality Assurance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4758,13 +4442,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into evaluation and quality assurance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into evaluation and quality assurance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with hallucination and factuality. Because hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -4772,7 +4456,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A telecom organisation needs tier-1 support automation with escalation to humans. They decide to apply evaluation and quality assurance as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply evaluation and quality assurance as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -4895,24 +4579,24 @@ class EvaluationAndQuality:
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Evaluation and Quality Assurance”?
-   - A. It makes the system slower but has no other effect.
-   - B. a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
+   - A. a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
+   - B. It makes the system slower but has no other effect.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - A. Monitor token distribution to catch prompt bloat and cost regressions.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It removes all security and governance requirements.
    - D. Underestimating KV-cache memory for long contexts.
-   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: A.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Pin model and tokenizer versions; treat upgrades as releases.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: D.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-4. *(Discussion)* How does Evaluation and Quality Assurance interact with security and governance requirements?
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It removes all security and governance requirements.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* How would you test and monitor Evaluation and Quality Assurance in production?
    - **Model answer:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a LLMs system before and after release) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -4924,80 +4608,57 @@ _This chapter examines security, privacy and governance within LLMs. It covers t
 
 ## Introduction
 
-Formally, Security, Privacy and Governance addresses the security, privacy and governance controls that make a LLMs system trustworthy and compliant. It is foundational: later capabilities in LLMs are built directly on top of it. It helps to separate the conceptual model from its implementation: the former guides reasoning, the latter must contend with real-world constraints.
+We define Security, Privacy and Governance as the security, privacy and governance controls that make a LLMs system trustworthy and compliant. Neglecting it is one of the most common reasons LLMs initiatives stall in production. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Security, Privacy and Governance refers to the security, privacy and governance controls that make a LLMs system trustworthy and compliant. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+We define Security, Privacy and Governance as the security, privacy and governance controls that make a LLMs system trustworthy and compliant. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, security, privacy and governance is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
 
-Security, Privacy and Governance cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Security, Privacy and Governance cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Security, Privacy and Governance cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Security, Privacy and Governance cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to security, privacy and governance. The first, blue/green model rollout with shadow evaluation, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to security, privacy and governance. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around security, privacy and governance are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-From an architectural standpoint, Security, Privacy and Governance sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for Security, Privacy and Governance separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 ```mermaid
 graph LR
-  D(("LLMs"))
-  D --- C0[From N-grams to Neura…]
-  D --- C1[Tokenisation and Voca…]
-  D --- C2[The Transformer Backb…]
-  D --- C3[Pre-training Objectiv…]
-  D --- C4[Scaling Laws and Emer…]
+  D(("Security, Privacy a…"))
+  D --- C0[Security, Privacy and…]
+  D --- C1[Serving LLMs at Scale]
+  D --- C2[Hallucination and Fac…]
+  D --- C3[Tokenisation and Voca…]
+  D --- C4[Instruction Tuning an…]
   C0 --- C1
   C1 --- C2
 ```
 
-**Figure 29. Knowledge Graph - Security, Privacy and Governance** (mermaid). Figure: Knowledge Graph view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```plantuml
-@startuml
-title Network - Security, Privacy and Governance
-package "LLMs Platform" {
-  component "From N-grams to Neural …" as C0
-  component "Tokenisation and Vocabu…" as C1
-  component "The Transformer Backbon…" as C2
-  component "Pre-training Objectives…" as C3
-  component "Scaling Laws and Emerge…" as C4
-}
-database "Storage" as DB
-C0 --> DB
-C1 --> DB
-C2 --> DB
-C3 --> DB
-C4 --> DB
-@enduml
-```
-
-_Source diagram (plantuml); render with the appropriate tool._
-
-**Figure 30. Network - Security, Privacy and Governance** (plantuml). Figure: Network view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 27. Knowledge Graph - Security, Privacy and Governance** (mermaid). Figure: Knowledge Graph view for Security, Privacy and Governance. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into security, privacy and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the llm platform reference architecture. Because the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5005,13 +4666,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into security, privacy and governance. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into security, privacy and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with inference optimisation. Because inference optimisation concerns kV caching, speculative decoding, quantisation and continuous batching for throughput, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the transformer backbone of llms. Because the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5019,7 +4680,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A telecom organisation needs tier-1 support automation with escalation to humans. They decide to apply security, privacy and governance as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+A worked example clarifies how these ideas behave in practice. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply security, privacy and governance as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5142,24 +4803,24 @@ class PrivacyAnd:
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Security, Privacy and Governance”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. the security, privacy and governance controls that make a LLMs system trustworthy and compliant
-   - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a LLMs system trustworthy and compliant
+   - A. the security, privacy and governance controls that make a LLMs system trustworthy and compliant
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a LLMs system trustworthy and compliant
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Underestimating KV-cache memory for long contexts.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: B.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Pin model and tokenizer versions; treat upgrades as releases.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: D.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* Walk through how you would design Security, Privacy and Governance for an enterprise LLMs workload.
+   - A. Quantise and batch aggressively, validating quality impact with evals.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* How would you test and monitor Security, Privacy and Governance in production?
    - **Model answer:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a LLMs system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5171,27 +4832,27 @@ _This chapter examines cost, performance and scaling within LLMs. It covers tech
 
 ## Introduction
 
-At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a LLMs system to production traffic. Getting this right early prevents expensive rework once a LLMs system reaches scale. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Cost, Performance and Scaling concerns techniques for controlling cost and latency while scaling a LLMs system to production traffic. It is foundational: later capabilities in LLMs are built directly on top of it. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Cost, Performance and Scaling can be characterised as techniques for controlling cost and latency while scaling a LLMs system to production traffic. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Formally, Cost, Performance and Scaling addresses techniques for controlling cost and latency while scaling a LLMs system to production traffic. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
 To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, cost, performance and scaling is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Getting this right early prevents expensive rework once a LLMs system reaches scale.
 
-Cost, Performance and Scaling cannot be understood in isolation from from n-grams to neural language models. Recall that from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from cost and capacity planning. Recall that cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Cost, Performance and Scaling cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Cost, Performance and Scaling cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to cost, performance and scaling. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to cost, performance and scaling. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around cost, performance and scaling are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Cost, Performance and Scaling is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+The reference architecture for Cost, Performance and Scaling separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
@@ -5207,16 +4868,16 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="title" value="Network - Cost, Performance and Scaling" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="hub" value="Cost, Performance and…" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Cost, Performance and S…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Cost and Capacity Plann…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Safety and Alignment in…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n3" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="n4" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
@@ -5226,56 +4887,17 @@ Two qualities deserve emphasis. First, observability is designed in, not bolted 
 
 _Source diagram (drawio); render with the appropriate tool._
 
-**Figure 31. Network - Cost, Performance and Scaling** (drawio). Figure: Network view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
-
-```mermaid
-flowchart TB
-  subgraph Client["Consumers"]
-    U[Users / Applications]
-    API[API Clients]
-  end
-  subgraph Platform["LLMs Platform"]
-    GW[Gateway / Orchestrator]
-    S0[From N-grams to Neural La…]
-    S1[Tokenisation and Vocabula…]
-    S2[The Transformer Backbone …]
-    S3[Pre-training Objectives a…]
-    S4[Scaling Laws and Emergent…]
-    S5[Instruction Tuning and Al…]
-  end
-  subgraph Data["Data & Storage"]
-    DS[(Primary Store)]
-    VEC[(Vector / Index Store)]
-  end
-  subgraph Ops["Operations & Governance"]
-    OBS[Observability]
-    SEC[Security & Policy]
-  end
-  U --> GW
-  API --> GW
-  GW --> S0
-  GW --> S1
-  GW --> S2
-  GW --> S3
-  GW --> S4
-  GW --> S5
-  S0 --> DS
-  S1 --> VEC
-  GW -.-> OBS
-  GW -.-> SEC
-```
-
-**Figure 32. Component - Cost, Performance and Scaling** (mermaid). Figure: Component view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 28. Network - Cost, Performance and Scaling** (drawio). Figure: Network view for Cost, Performance and Scaling. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5283,13 +4905,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into cost, performance and scaling. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into cost, performance and scaling. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with hallucination and factuality. Because hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5297,7 +4919,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-Consider a concrete scenario. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply cost, performance and scaling as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A finance organisation needs summarising filings and extracting structured facts. They decide to apply cost, performance and scaling as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5369,81 +4991,75 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Pipelines keep Cost, Performance and Scaling logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
+This listing shows a configuration-driven Cost, Performance and Scaling component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: A composable processing pipeline for Cost, Performance and Scaling
+### Listing: Implementing a Cost, Performance and Scaling component
 
 ```python
-from collections.abc import Iterable, Iterator
-from typing import Protocol
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-class Stage(Protocol):
-    def __call__(self, item: dict) -> dict: ...
+@dataclass(slots=True)
+class PerformanceAndConfig:
+    """Configuration for the Cost, Performance and Scaling component in a LLMs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def pipeline(stages: list[Stage]) -> Stage:
-    """Compose ordered stages into a single callable for Cost, Performance and Scaling."""
+class PerformanceAnd:
+    """A minimal, production-shaped implementation of Cost, Performance and Scaling."""
 
-    def run(item: dict) -> dict:
-        for stage in stages:
-            item = stage(item)
-        return item
+    def __init__(self, config: PerformanceAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
-    return run
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"PerformanceAnd failed after retries") from last_error
 
-
-def validate(item: dict) -> dict:
-    if "text" not in item:
-        raise ValueError("missing required field: text")
-    return item
-
-
-def normalise(item: dict) -> dict:
-    item["text"] = item["text"].strip().lower()
-    return item
-
-
-def enrich(item: dict) -> dict:
-    item["length"] = len(item["text"])
-    return item
-
-
-process = pipeline([validate, normalise, enrich])
-
-
-def run_batch(items: Iterable[dict]) -> Iterator[dict]:
-    for item in items:
-        try:
-            yield process(dict(item))
-        except ValueError as exc:
-            yield {"error": str(exc), "item": item}
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Cost, Performance and Scaling goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Cost, Performance and Scaling”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
    - C. techniques for controlling cost and latency while scaling a LLMs system to production traffic
-   - D. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a LLMs system to production traffic
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
+   - A. Right-size the model to the task; do not pay for capability you don't use.
+   - B. It removes all security and governance requirements.
    - C. It applies exclusively to image data.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-4. *(Discussion)* How does Cost, Performance and Scaling interact with security and governance requirements?
+   - A. It applies exclusively to image data.
+   - B. Benchmarking on contaminated datasets and over-claiming capability.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+4. *(Discussion)* Describe a failure mode of Cost, Performance and Scaling and how you would mitigate it.
    - **Model answer:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a LLMs system to production traffic) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5455,23 +5071,23 @@ _This chapter examines integration and interoperability within LLMs. It covers p
 
 ## Introduction
 
-Formally, Integration and Interoperability addresses patterns for integrating a LLMs system with surrounding enterprise systems and data. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+Integration and Interoperability refers to patterns for integrating a LLMs system with surrounding enterprise systems and data. Neglecting it is one of the most common reasons LLMs initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Integration and Interoperability as patterns for integrating a LLMs system with surrounding enterprise systems and data. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
+Integration and Interoperability refers to patterns for integrating a LLMs system with surrounding enterprise systems and data. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Understanding this matters because LLMs systems succeed or fail on exactly these decisions.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, integration and interoperability is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. It is foundational: later capabilities in LLMs are built directly on top of it.
 
-Integration and Interoperability cannot be understood in isolation from pre-training objectives and data. Recall that pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Integration and Interoperability cannot be understood in isolation from the llm platform reference architecture. Recall that the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Integration and Interoperability cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Integration and Interoperability cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Several established patterns apply directly to integration and interoperability. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to integration and interoperability. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+Knowing when not to use a technique is as valuable as knowing how to use it. In a small prototype, shortcuts around integration and interoperability are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5481,7 +5097,7 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 ```mermaid
 flowchart TB
@@ -5489,14 +5105,14 @@ flowchart TB
     U[Users / Applications]
     API[API Clients]
   end
-  subgraph Platform["LLMs Platform"]
+  subgraph Platform["Integration and Interoperabil… Platform"]
     GW[Gateway / Orchestrator]
-    S0[From N-grams to Neural La…]
-    S1[Tokenisation and Vocabula…]
-    S2[The Transformer Backbone …]
-    S3[Pre-training Objectives a…]
-    S4[Scaling Laws and Emergent…]
-    S5[Instruction Tuning and Al…]
+    S0[Integration and Interoper…]
+    S1[The LLM Platform Referenc…]
+    S2[Hallucination and Factual…]
+    S3[Safety and Alignment in P…]
+    S4[Cost and Capacity Planning]
+    S5[Tokenisation and Vocabula…]
   end
   subgraph Data["Data & Storage"]
     DS[(Primary Store)]
@@ -5520,17 +5136,17 @@ flowchart TB
   GW -.-> SEC
 ```
 
-**Figure 33. Component - Integration and Interoperability** (mermaid). Figure: Component view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+**Figure 29. Component - Integration and Interoperability** (mermaid). Figure: Component view for Integration and Interoperability. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into integration and interoperability. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with the llm platform reference architecture. Because the llm platform reference architecture concerns gateways, registries, evaluation and observability for fleets of models, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5538,13 +5154,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into integration and interoperability. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into integration and interoperability. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation and benchmarking. Because evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with cost and capacity planning. Because cost and capacity planning concerns token economics, hardware sizing and build-versus-buy decisions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5552,7 +5168,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply integration and interoperability as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply integration and interoperability as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5664,24 +5280,24 @@ if __name__ == "__main__":
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Integration and Interoperability”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. patterns for integrating a LLMs system with surrounding enterprise systems and data
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Integration and Interoperability: patterns for integrating a LLMs system with surrounding enterprise systems and data
+   - A. patterns for integrating a LLMs system with surrounding enterprise systems and data
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Integration and Interoperability: patterns for integrating a LLMs system with surrounding enterprise systems and data
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. It is only relevant to academic research, not production.
-   - C. Pin model and tokenizer versions; treat upgrades as releases.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: D.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-4. *(Discussion)* How would you test and monitor Integration and Interoperability in production?
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It removes all security and governance requirements.
+   - D. Right-size the model to the task; do not pay for capability you don't use.
+   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+4. *(Discussion)* Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Model answer:** A strong answer defines integration and interoperability (patterns for integrating a LLMs system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5693,23 +5309,23 @@ _This chapter examines trends and research directions within LLMs. It covers eme
 
 ## Introduction
 
-In practical terms, Trends and Research Directions is best understood as emerging trends, open problems and research directions shaping the future of LLMs. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition.
+At its core, Trends and Research Directions concerns emerging trends, open problems and research directions shaping the future of LLMs. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-We define Trends and Research Directions as emerging trends, open problems and research directions shaping the future of LLMs. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving.
+Trends and Research Directions refers to emerging trends, open problems and research directions shaping the future of LLMs. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Teams that master this consistently ship more reliable LLMs systems at lower cost.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, trends and research directions is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
 
-Trends and Research Directions cannot be understood in isolation from evaluation and benchmarking. Recall that evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Trends and Research Directions cannot be understood in isolation from tokenisation and vocabulary. Recall that tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-Trends and Research Directions cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Trends and Research Directions cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Several established patterns apply directly to trends and research directions. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to trends and research directions. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, blue/green model rollout with shadow evaluation, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around trends and research directions are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around trends and research directions are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
@@ -5719,46 +5335,50 @@ Concretely, the principal building blocks include from n-grams to neural languag
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="DevOps Pipeline">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="DevOps Pipeline - Trends and Research Directions" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+```mermaid
+flowchart LR
+  S0[Commit]
+  S1[Build]
+  S0 --> S1
+  S2[Test]
+  S1 --> S2
+  S3[Eval Gate]
+  S2 --> S3
+  S4[Package]
+  S3 --> S4
+  S5[Deploy]
+  S4 --> S5
+  S6[Monitor]
+  S5 --> S6
+  S6 -.->|drift / regression| S0
 ```
 
-_Source diagram (drawio); render with the appropriate tool._
+**Figure 30. DevOps Pipeline - Trends and Research Directions** (mermaid). Figure: DevOps Pipeline view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 34. DevOps Pipeline - Trends and Research Directions** (drawio). Figure: DevOps Pipeline view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+```mermaid
+flowchart LR
+  SRC[Sources] --> ING[Ingestion]
+  ING --> VAL{Validate}
+  VAL -- ok --> XF[Transform / Enrich]
+  VAL -- reject --> DLQ[(Dead-letter)]
+  XF --> IDX[Index / Embed]
+  IDX --> STORE[(Serving Store)]
+  STORE --> CONS[Consumers]
+```
+
+**Figure 31. Business Process - Trends and Research Directions** (mermaid). Figure: Business Process view for Trends and Research Directions. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into trends and research directions. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with evaluation and benchmarking. Because evaluation and benchmarking concerns capability benchmarks, contamination, and task-specific golden sets, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5766,13 +5386,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into trends and research directions. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into trends and research directions. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with from n-grams to neural language models. Because from n-grams to neural language models concerns the evolution of language modelling and why scale plus self-attention unlocked emergent capability, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5780,7 +5400,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-A worked example clarifies how these ideas behave in practice. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply trends and research directions as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A finance organisation needs summarising filings and extracting structured facts. They decide to apply trends and research directions as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -5853,24 +5473,24 @@ Key takeaways from this chapter:
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Trends and Research Directions”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
-   - D. emerging trends, open problems and research directions shaping the future of LLMs
-   - **Answer: D.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of LLMs
-2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. Quantise and batch aggressively, validating quality impact with evals.
-   - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
-   - B. Right-size the model to the task; do not pay for capability you don't use.
-   - C. Underestimating KV-cache memory for long contexts.
+   - A. emerging trends, open problems and research directions shaping the future of LLMs
+   - B. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-4. *(Discussion)* How does Trends and Research Directions interact with security and governance requirements?
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of LLMs
+2. Which of the following is a recommended best practice when working with LLMs?
+   - A. Right-size the model to the task; do not pay for capability you don't use.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It is only relevant to academic research, not production.
+   - D. Silent tokenizer changes that break prompts and cost models.
+   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+3. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Silent tokenizer changes that break prompts and cost models.
+   - **Answer: D.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+4. *(Discussion)* What trade-offs would you weigh when implementing Trends and Research Directions?
    - **Model answer:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of LLMs) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -5882,85 +5502,59 @@ _This chapter examines capstone project within LLMs. It covers a substantial cap
 
 ## Introduction
 
-In practical terms, Capstone Project is best understood as a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable. Neglecting it is one of the most common reasons LLMs initiatives stall in production. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance.
+At its core, Capstone Project concerns a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable. Understanding this matters because LLMs systems succeed or fail on exactly these decisions. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable. What distinguishes a production-grade approach from a prototype is the discipline of measurement: every claim is backed by an evaluation rather than intuition. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce.
+Capstone Project refers to a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees. Beneath the abstraction lies a concrete process whose steps can each be measured, tested and optimised independently.
 
-To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Teams that master this consistently ship more reliable LLMs systems at lower cost.
+To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, capstone project is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. This concept recurs throughout the LLMs lifecycle, from design to operations.
 
-Capstone Project cannot be understood in isolation from the transformer backbone of llms. Recall that the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
+Capstone Project cannot be understood in isolation from context windows and long-context techniques. Recall that context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
-Capstone Project cannot be understood in isolation from safety and alignment in production. Recall that safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Capstone Project cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-Several established patterns apply directly to capstone project. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, continuous batching with paged attention for gpu efficiency, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to capstone project. The first, continuous batching with paged attention for gpu efficiency, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+It is worth being explicit about when to apply this and when to reach for something simpler. In a small prototype, shortcuts around capstone project are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-A robust architecture for Capstone Project is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+From an architectural standpoint, Capstone Project sits at the intersection of data, models and operations. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```mermaid
-flowchart LR
-  SRC[Sources] --> ING[Ingestion]
-  ING --> VAL{Validate}
-  VAL -- ok --> XF[Transform / Enrich]
-  VAL -- reject --> DLQ[(Dead-letter)]
-  XF --> IDX[Index / Embed]
-  IDX --> STORE[(Serving Store)]
-  STORE --> CONS[Consumers]
-```
+<div class="diagram-svg">
 
-**Figure 35. Business Process - Capstone Project** (mermaid). Figure: Business Process view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="timeline" data-pal="4-1" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bneb6cb0f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#be123c"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bneb6cb0f)"/><rect x="0" y="32" width="840" height="16" fill="url(#bneb6cb0f)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Business Process - Capstone Project</text><line x1="68" y1="230.0" x2="772" y2="230.0" stroke="#cbd5e1" stroke-width="3"/><circle cx="68" cy="230.0" r="9" fill="#be123c"/><line x1="68" y1="230.0" x2="68" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="-2" y="138" width="140" height="52" rx="11" fill="#be123c" filter="url(#sh)"/><text x="68" y="156" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Capstone Project</text><text x="68" y="175" text-anchor="middle" font-size="9" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 1</text><circle cx="244" cy="230.0" r="9" fill="#e11d48"/><line x1="244" y1="230.0" x2="244" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="174" y="254" width="140" height="52" rx="11" fill="#e11d48" filter="url(#sh)"/><text x="244" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Context Windows and</text><text x="244" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Long-Context Techniques</text><text x="244" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 2</text><circle cx="420" cy="230.0" r="9" fill="#f43f5e"/><line x1="420" y1="230.0" x2="420" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="350" y="138" width="140" height="52" rx="11" fill="#f43f5e" filter="url(#sh)"/><text x="420" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hallucination and</text><text x="420" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Factuality</text><text x="420" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 3</text><circle cx="596" cy="230.0" r="9" fill="#fb7185"/><line x1="596" y1="230.0" x2="596" y2="254" stroke="#cbd5e1" stroke-width="1.4"/><rect x="526" y="254" width="140" height="52" rx="11" fill="#fb7185" filter="url(#sh)"/><text x="596" y="267" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Instruction Tuning and</text><text x="596" y="277" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Alignment</text><text x="596" y="291" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 4</text><circle cx="772" cy="230.0" r="9" fill="#db2777"/><line x1="772" y1="230.0" x2="772" y2="198" stroke="#cbd5e1" stroke-width="1.4"/><rect x="702" y="138" width="140" height="52" rx="11" fill="#db2777" filter="url(#sh)"/><text x="772" y="151" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">From N-grams to Neural</text><text x="772" y="161" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Language Models</text><text x="772" y="175" text-anchor="middle" font-size="7.5" font-weight="500" fill="#ffffff" dominant-baseline="middle">Phase 5</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Capstone Project  •  Business Process</text></svg>
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Capstone Project" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+</div>
 
-_Source diagram (drawio); render with the appropriate tool._
+**Figure 32. Business Process - Capstone Project** (svg). Figure: Business Process view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
-**Figure 36. Operating Model - Capstone Project** (drawio). Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="layered" data-pal="3-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bnda99d7" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bnda99d7)"/><rect x="0" y="32" width="840" height="16" fill="url(#bnda99d7)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Capstone Project</text><rect x="28" y="64" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="80" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Experience</text><rect x="42" y="96" width="371" height="52" rx="11" fill="#ea580c" filter="url(#sh)"/><text x="228" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Capstone Project</text><rect x="427" y="96" width="371" height="52" rx="11" fill="#f97316" filter="url(#sh)"/><text x="612" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Context Windows and Long-Context Techniques</text><rect x="28" y="186" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="202" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Platform</text><rect x="42" y="218" width="178" height="52" rx="11" fill="#f97316" filter="url(#sh)"/><text x="131" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Capstone Project</text><rect x="234" y="218" width="178" height="52" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="324" y="239" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Context Windows and Long-Context</text><text x="324" y="249" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Techniques</text><rect x="427" y="218" width="178" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="516" y="244" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hallucination and Factuality</text><rect x="620" y="218" width="178" height="52" rx="11" fill="#d97706" filter="url(#sh)"/><text x="709" y="244" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Instruction Tuning and Alignment</text><rect x="28" y="308" width="784" height="104" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#64748b" dominant-baseline="middle">Data &amp; Operations</text><rect x="42" y="340" width="178" height="52" rx="11" fill="#fb923c" filter="url(#sh)"/><text x="131" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Store</text><rect x="234" y="340" width="178" height="52" rx="11" fill="#b45309" filter="url(#sh)"/><text x="324" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Index</text><rect x="427" y="340" width="178" height="52" rx="11" fill="#d97706" filter="url(#sh)"/><text x="516" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Observability</text><rect x="620" y="340" width="178" height="52" rx="11" fill="#f59e0b" filter="url(#sh)"/><text x="709" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Security</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Capstone Project  •  Operating Model</text></svg>
+
+</div>
+
+**Figure 33. Operating Model - Capstone Project** (svg). Figure: Operating Model view for Capstone Project. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
 Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with the transformer backbone of llms. Because the transformer backbone of llms concerns decoder-only architectures, attention, positional encodings and layer normalisation choices, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with context windows and long-context techniques. Because context windows and long-context techniques concerns position interpolation, attention variants and retrieval to extend effective context, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -5970,11 +5564,11 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 Having established the essentials, we now go deeper into capstone project. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. As with most architectural decisions, the choice is rarely binary; the skill lies in quantifying the trade-offs and choosing deliberately.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with safety and alignment in production. Because safety and alignment in production concerns layered safety, refusal behaviour and policy enforcement, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with pre-training objectives and data. Because pre-training objectives and data concerns causal language modelling, corpus curation, deduplication and data quality at trillion-token scale, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6054,51 +5648,57 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-This listing shows a configuration-driven Capstone Project component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
+Pipelines keep Capstone Project logic modular and testable. Each stage is a pure function, errors are captured per item, and the composition is trivial to extend or reorder.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Implementing a Capstone Project component
+### Listing: A composable processing pipeline for Capstone Project
 
 ```python
-from __future__ import annotations
-
-from dataclasses import dataclass, field
-from typing import Any
+from collections.abc import Iterable, Iterator
+from typing import Protocol
 
 
-@dataclass(slots=True)
-class CapstoneProjectConfig:
-    """Configuration for the Capstone Project component in a LLMs system."""
-
-    name: str
-    timeout_s: float = 30.0
-    max_retries: int = 3
-    options: dict[str, Any] = field(default_factory=dict)
+class Stage(Protocol):
+    def __call__(self, item: dict) -> dict: ...
 
 
-class CapstoneProject:
-    """A minimal, production-shaped implementation of Capstone Project."""
+def pipeline(stages: list[Stage]) -> Stage:
+    """Compose ordered stages into a single callable for Capstone Project."""
 
-    def __init__(self, config: CapstoneProjectConfig) -> None:
-        self._config = config
-        self._calls = 0
+    def run(item: dict) -> dict:
+        for stage in stages:
+            item = stage(item)
+        return item
 
-    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        """Process a request, retrying transient failures with backoff."""
-        last_error: Exception | None = None
-        for attempt in range(self._config.max_retries):
-            try:
-                self._calls += 1
-                return self._process(payload)
-            except TimeoutError as exc:  # transient
-                last_error = exc
-                continue
-        raise RuntimeError(f"CapstoneProject failed after retries") from last_error
+    return run
 
-    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
-        # Domain-specific logic for Capstone Project goes here.
-        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
+
+def validate(item: dict) -> dict:
+    if "text" not in item:
+        raise ValueError("missing required field: text")
+    return item
+
+
+def normalise(item: dict) -> dict:
+    item["text"] = item["text"].strip().lower()
+    return item
+
+
+def enrich(item: dict) -> dict:
+    item["length"] = len(item["text"])
+    return item
+
+
+process = pipeline([validate, normalise, enrich])
+
+
+def run_batch(items: Iterable[dict]) -> Iterator[dict]:
+    for item in items:
+        try:
+            yield process(dict(item))
+        except ValueError as exc:
+            yield {"error": str(exc), "item": item}
 
 ```
 
@@ -6106,23 +5706,23 @@ class CapstoneProject:
 
 1. In the context of LLMs, which statement best describes “Capstone Project”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
+   - B. It guarantees deterministic output regardless of input.
+   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It is only relevant to academic research, not production.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. Right-size the model to the task; do not pay for capability you don't use.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. Quantise and batch aggressively, validating quality impact with evals.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-4. *(Discussion)* Walk through how you would design Capstone Project for an enterprise LLMs workload.
+   - A. It guarantees deterministic output regardless of input.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It removes all security and governance requirements.
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: B.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
+4. *(Discussion)* Describe a failure mode of Capstone Project and how you would mitigate it.
    - **Model answer:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
 ---
@@ -6134,72 +5734,59 @@ _This chapter examines certification preparation and review within LLMs. It cove
 
 ## Introduction
 
-At its core, Certification Preparation and Review concerns a structured review and certification-style preparation covering the full breadth of LLMs. Neglecting it is one of the most common reasons LLMs initiatives stall in production. The right abstraction here pays compounding dividends, because downstream components depend on its guarantees.
+Certification Preparation and Review refers to a structured review and certification-style preparation covering the full breadth of LLMs. Teams that master this consistently ship more reliable LLMs systems at lower cost. Seasoned practitioners treat this as a systems problem, co-designing data, models and operations rather than optimising any one in isolation.
 
 This chapter builds intuition first, then formalises the ideas, derives an architecture, and finishes with code, exercises and review questions so the material transfers directly to your own LLMs work. Read it actively: pause at each diagram, reproduce the code, and attempt the exercises before consulting the answers.
 
 ## Theory and Foundations
 
-In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of LLMs. In an enterprise setting, this translates into concrete requirements: clear interfaces, measurable quality, and controls that satisfy security and governance. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
+In practical terms, Certification Preparation and Review is best understood as a structured review and certification-style preparation covering the full breadth of LLMs. The practical implication is that design choices here ripple through latency, cost and maintainability for the lifetime of the system. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed.
 
 To place this in context, recall the broader picture: Large language models are transformer-based neural networks trained on vast text corpora to predict the next token, acquiring broad linguistic and reasoning capabilities that transfer across tasks. Within that picture, certification preparation and review is one of the load-bearing ideas - the kind that, when understood deeply, makes the rest of LLMs fall into place. Neglecting it is one of the most common reasons LLMs initiatives stall in production.
 
-Certification Preparation and Review cannot be understood in isolation from instruction tuning and alignment. Recall that instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
+Certification Preparation and Review cannot be understood in isolation from serving llms at scale. Recall that serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Certification Preparation and Review cannot be understood in isolation from tokenisation and vocabulary. Recall that tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Certification Preparation and Review cannot be understood in isolation from hallucination and factuality. Recall that hallucination and factuality concerns why models confabulate and how grounding and decoding mitigate it. The two interact directly: decisions in one constrain the design space of the other, which is why mature teams reason about them together rather than sequentially. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
 
-Several established patterns apply directly to certification preparation and review. The first, model routing by difficulty (small model first, escalate on low confidence), is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, speculative decoding with a small draft model, addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
+Several established patterns apply directly to certification preparation and review. The first, speculative decoding with a small draft model, is widely adopted because it makes the system's behaviour predictable and observable. A complementary pattern, model routing by difficulty (small model first, escalate on low confidence), addresses a related concern and is often deployed alongside it. Patterns are not dogma; they are distilled experience that shortcuts the search for a sound design, and each carries assumptions worth checking against your context.
 
-The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
+The decision of whether to adopt this should be driven by requirements, not by novelty. In a small prototype, shortcuts around certification preparation and review are invisible; in a production LLMs system serving real traffic, they surface as incidents, cost overruns or compliance gaps. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously. The remainder of this chapter turns these principles into an architecture, code and a checklist you can apply immediately.
 
 ## Architecture and Design
 
-The reference architecture for Certification Preparation and Review separates concerns into clearly bounded components with explicit contracts. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
+A robust architecture for Certification Preparation and Review is layered so each part can evolve independently without destabilising the whole. An LLM serving platform comprises a request gateway with auth and rate limiting, an inference cluster running an optimised engine (paged KV cache, continuous batching, quantised weights), a routing layer selecting model size by task, and an observability pipeline tracking latency, tokens and quality. Model artefacts flow from a registry with signed provenance into blue/green serving slots.
 
 Concretely, the principal building blocks include from n-grams to neural language models, tokenisation and vocabulary, the transformer backbone of llms, pre-training objectives and data and scaling laws and emergent abilities. Each is a replaceable component behind a stable interface, so the team can upgrade an implementation - a model, an index, a policy engine - without rewriting its neighbours. The contracts between components are where reliability is won or lost, so they are specified explicitly and tested in isolation.
 
 The diagram accompanying this section makes the data and control flow explicit. Requests enter through a well-defined boundary where they are authenticated and validated; only then are they dispatched to the components that perform the work. This boundary is also where rate limiting, quota enforcement and audit logging live, keeping cross-cutting concerns out of the core logic and in one auditable place.
 
-Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Every added component buys capability at the price of operational surface area, and that bargain should be made consciously.
+Two qualities deserve emphasis. First, observability is designed in, not bolted on: every component emits structured telemetry so that failures can be localised in minutes rather than hours. Second, the architecture is evolvable - components communicate through stable contracts so that any single part of the LLMs system can be replaced without a rewrite. Latency, accuracy and cost form a tension triangle: improving one typically pressures the others, so explicit budgets are essential.
 
-```xml
-<mxfile host="ai-university">
-  <diagram name="Operating Model">
-    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="title" value="Operating Model - Certification Preparation and Review" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="20" width="600" height="30" as="geometry"/></mxCell>
-        <mxCell id="hub" value="LLMs" style="rounded=1;fillColor=#0f172a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1"><mxGeometry x="300" y="180" width="160" height="60" as="geometry"/></mxCell>
-        <mxCell id="n0" value="From N-grams to Neural …" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="80" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n0"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n1" value="Tokenisation and Vocabu…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="170" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n2" value="The Transformer Backbon…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="260" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n3" value="Pre-training Objectives…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="600" y="350" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="n4" value="Scaling Laws and Emerge…" style="rounded=1;fillColor=#e0e7ff;strokeColor=#4338ca" vertex="1" parent="1"><mxGeometry x="60" y="440" width="160" height="50" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="hub" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-```
+<div class="diagram-svg">
 
-_Source diagram (drawio); render with the appropriate tool._
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="pillars" data-pal="4-4" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn5388d9" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn5388d9)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn5388d9)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">Operating Model - Certification Preparation and Review</text><rect x="68" y="140" width="120" height="250" rx="10" fill="#fb7185"/><rect x="60" y="126" width="136" height="18" rx="6" fill="#fb7185"/><text x="128" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Certification</text><text x="128" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Preparation and</text><text x="128" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Review</text><rect x="214" y="140" width="120" height="250" rx="10" fill="#db2777"/><rect x="206" y="126" width="136" height="18" rx="6" fill="#db2777"/><text x="274" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Serving LLMs at</text><text x="274" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Scale</text><rect x="360" y="140" width="120" height="250" rx="10" fill="#9f1239"/><rect x="352" y="126" width="136" height="18" rx="6" fill="#9f1239"/><text x="420" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Hallucination</text><text x="420" y="271" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">and Factuality</text><rect x="506" y="140" width="120" height="250" rx="10" fill="#be123c"/><rect x="498" y="126" width="136" height="18" rx="6" fill="#be123c"/><text x="566" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Scaling Laws and</text><text x="566" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Emergent</text><text x="566" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Abilities</text><rect x="652" y="140" width="120" height="250" rx="10" fill="#e11d48"/><rect x="644" y="126" width="136" height="18" rx="6" fill="#e11d48"/><text x="712" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">The LLM Platform</text><text x="712" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Reference</text><text x="712" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" dominant-baseline="middle">Architecture</text><rect x="48.0" y="390" width="744" height="12" rx="4" fill="#0f172a"/><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Certification Preparation and Review  •  Operating Model</text></svg>
 
-**Figure 37. Operating Model - Certification Preparation and Review** (drawio). Figure: Operating Model view for LLMs. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+</div>
+
+**Figure 34. Operating Model - Certification Preparation and Review** (svg). Figure: Operating Model view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
+
+<div class="diagram-svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" data-tpl="cycle" data-pal="2-3" viewBox="0 0 840 460" font-family="Inter, Segoe UI, Arial, sans-serif"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#94a3b8"/></marker><marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#ffffff"/></marker><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/></filter></defs><defs><linearGradient id="bn66597fc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs><rect width="840" height="460" rx="14" fill="#ffffff"/><rect x="0" y="0" width="840" height="48" rx="14" fill="url(#bn66597fc)"/><rect x="0" y="32" width="840" height="16" fill="url(#bn66597fc)"/><text x="420" y="25" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff" dominant-baseline="middle">CI/CD Pipeline - Certification Preparation and Review</text><rect x="348" y="86" width="144" height="44" rx="11" fill="#34d399" filter="url(#sh)"/><text x="420" y="103" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Certification Preparation</text><text x="420" y="113" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">and Review</text><rect x="472" y="176" width="144" height="44" rx="11" fill="#0d9488" filter="url(#sh)"/><text x="544" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff" dominant-baseline="middle">Serving LLMs at Scale</text><rect x="424" y="321" width="144" height="44" rx="11" fill="#14b8a6" filter="url(#sh)"/><text x="496" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Hallucination and</text><text x="496" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Factuality</text><rect x="272" y="321" width="144" height="44" rx="11" fill="#047857" filter="url(#sh)"/><text x="344" y="338" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Scaling Laws and Emergent</text><text x="344" y="349" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Abilities</text><rect x="224" y="176" width="144" height="44" rx="11" fill="#059669" filter="url(#sh)"/><text x="296" y="192" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">The LLM Platform Reference</text><text x="296" y="203" text-anchor="middle" font-size="9.5" font-weight="600" fill="#ffffff" dominant-baseline="middle">Architecture</text><path d="M461,147 A100,100 0 0 1 494,171" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M519,249 A100,100 0 0 1 507,288" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M441,336 A100,100 0 0 1 399,336" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M333,288 A100,100 0 0 1 321,249" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><path d="M346,171 A100,100 0 0 1 379,147" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#ar)"/><text x="420" y="238" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" dominant-baseline="middle">continuous</text><text x="28" y="446" text-anchor="start" font-size="9.5" font-weight="500" fill="#64748b" dominant-baseline="middle">Certification Preparation and Review  •  CI/CD Pipeline</text></svg>
+
+</div>
+
+**Figure 35. CI/CD Pipeline - Certification Preparation and Review** (svg). Figure: CI/CD Pipeline view for Certification Preparation and Review. This diagram illustrates the principal components and their interactions as discussed in the surrounding section.
 
 ## Deep Dive: Mechanics, Variants and Trade-offs
 
-Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. It pays to understand the mechanism rather than treat it as a black box, because most production incidents are explained by one of its steps misbehaving. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with instruction tuning and alignment. Because instruction tuning and alignment concerns supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with serving llms at scale. Because serving llms at scale concerns gPU memory planning, tensor/pipeline parallelism and autoscaling inference, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6207,13 +5794,13 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Advanced Considerations
 
-Having established the essentials, we now go deeper into certification preparation and review. Mechanically, the behaviour emerges from a few interacting parts that are simpler than the whole they produce. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
+Having established the essentials, we now go deeper into certification preparation and review. The underlying mechanism is best appreciated by tracing a single request from input to output and noting where state is created and consumed. The distinctions in this section are the ones that separate a working demo from a system that holds up under adversarial inputs, scale and the passage of time.
 
-Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. Simplicity is a feature. The simplest design that meets the requirement should be the default, with complexity added only when measurement justifies it.
+Consider the principal variants and how to choose between them. Each variant optimises for a different point in the design space - some for latency, some for accuracy, some for cost or operability - and the correct choice follows from explicit requirements rather than from defaults. There is an inherent trade-off between fidelity and cost, and the correct balance depends on the use case and its tolerance for error.
 
 In practice this is supported by a mature tooling ecosystem, including vLLM, TensorRT-LLM, Hugging Face Transformers, Ollama. Tools accelerate the work but do not substitute for understanding: the same principles apply whichever implementation you select, and the ability to reason from first principles is what lets you debug when a tool behaves unexpectedly.
 
-A frequent source of subtle bugs is the interaction with scaling laws and emergent abilities. Because scaling laws and emergent abilities concerns compute-optimal training, the Chinchilla insight and capability phase transitions, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
+A frequent source of subtle bugs is the interaction with tokenisation and vocabulary. Because tokenisation and vocabulary concerns byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance, changes there can silently alter the behaviour analysed here. The remedy is contract tests at the boundary and end-to-end evaluations that exercise the interaction explicitly.
 
 Finally, attend to edge cases and degradation. Define what the system should do under partial failure, unexpected inputs and load spikes, and make that behaviour explicit and tested rather than emergent. Graceful degradation - returning a safe, useful result when the ideal one is unavailable - is a hallmark of mature engineering.
 
@@ -6221,7 +5808,7 @@ For deeper study, the literature offers authoritative treatments such as Vaswani
 
 ## Worked Example
 
-To ground the discussion, walk through a representative example. A software organisation needs code completion and review across large repositories. They decide to apply certification preparation and review as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
+Consider a concrete scenario. A enterprise search organisation needs answering questions over internal knowledge with citations. They decide to apply certification preparation and review as part of their LLMs solution, but wisely treat it as a hypothesis to be validated rather than a foregone conclusion.
 
 The team begins by stating the objective precisely and defining how success will be measured before writing any code. They establish a small but representative evaluation set, agree on acceptance thresholds, and only then prototype the simplest design that could work. Early measurement reveals which assumptions hold and which must be revised, saving weeks of misdirected effort and surfacing edge cases while they are still cheap to fix.
 
@@ -6293,63 +5880,74 @@ Key takeaways from this chapter:
 
 ## Code Walkthrough
 
-Every change to a LLMs system should pass an evaluation gate. This example shows the minimal shape: align predictions and references, compute a metric, and return a pass/fail decision for CI.
+This listing shows a configuration-driven Certification Preparation and Review component with retry semantics and typed interfaces — the shape we expect from production LLMs code rather than a notebook prototype.
 
 The full listing is shown below; study it line by line and reproduce it locally before moving on.
 
-### Listing: Evaluating Certification Preparation and Review with a regression gate
+### Listing: Implementing a Certification Preparation and Review component
 
 ```python
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
 
 
-@dataclass
-class EvalResult:
-    metric: str
-    score: float
-    passed: bool
+@dataclass(slots=True)
+class CertificationPreparationAndConfig:
+    """Configuration for the Certification Preparation and Review component in a LLMs system."""
+
+    name: str
+    timeout_s: float = 30.0
+    max_retries: int = 3
+    options: dict[str, Any] = field(default_factory=dict)
 
 
-def evaluate(predictions: list[str], references: list[str],
-             threshold: float = 0.8) -> EvalResult:
-    """Score Certification Preparation and Review output against references with a simple exact-match metric.
+class CertificationPreparationAnd:
+    """A minimal, production-shaped implementation of Certification Preparation and Review."""
 
-    In practice you would combine several metrics (exact match, semantic
-    similarity, LLM-as-judge) and gate releases on the aggregate.
-    """
-    if len(predictions) != len(references):
-        raise ValueError("predictions and references must align")
-    hits = sum(p.strip() == r.strip() for p, r in zip(predictions, references))
-    score = hits / len(references) if references else 0.0
-    return EvalResult(metric="exact_match", score=score, passed=score >= threshold)
+    def __init__(self, config: CertificationPreparationAndConfig) -> None:
+        self._config = config
+        self._calls = 0
 
+    def run(self, payload: dict[str, Any]) -> dict[str, Any]:
+        """Process a request, retrying transient failures with backoff."""
+        last_error: Exception | None = None
+        for attempt in range(self._config.max_retries):
+            try:
+                self._calls += 1
+                return self._process(payload)
+            except TimeoutError as exc:  # transient
+                last_error = exc
+                continue
+        raise RuntimeError(f"CertificationPreparationAnd failed after retries") from last_error
 
-if __name__ == "__main__":
-    result = evaluate(["yes", "no"], ["yes", "yes"])
-    print(f"{result.metric}={result.score:.2f} passed={result.passed}")
+    def _process(self, payload: dict[str, Any]) -> dict[str, Any]:
+        # Domain-specific logic for Certification Preparation and Review goes here.
+        return {"status": "ok", "input_keys": sorted(payload), "calls": self._calls}
 
 ```
 
 ## Review Questions
 
 1. In the context of LLMs, which statement best describes “Certification Preparation and Review”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
    - D. a structured review and certification-style preparation covering the full breadth of LLMs
    - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of LLMs
 2. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. Underestimating KV-cache memory for long contexts.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It removes all security and governance requirements.
+   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - D. Benchmarking on contaminated datasets and over-claiming capability.
+   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
 3. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. Right-size the model to the task; do not pay for capability you don't use.
+   - C. Underestimating KV-cache memory for long contexts.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
 4. *(Discussion)* How does Certification Preparation and Review interact with security and governance requirements?
    - **Model answer:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of LLMs) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 
@@ -6388,51 +5986,51 @@ A consolidated bank of discussion-style interview questions drawn from across th
 
 1. Explain From N-grams to Neural Language Models and why it matters in a production LLMs system.
    - **Guidance:** A strong answer defines from n-grams to neural language models (The evolution of language modelling and why scale plus self-attention unlocked emergent capability.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-2. Explain Tokenisation and Vocabulary and why it matters in a production LLMs system.
+2. Walk through how you would design Tokenisation and Vocabulary for an enterprise LLMs workload.
    - **Guidance:** A strong answer defines tokenisation and vocabulary (Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-3. How does The Transformer Backbone of LLMs interact with security and governance requirements?
+3. How would you test and monitor The Transformer Backbone of LLMs in production?
    - **Guidance:** A strong answer defines the transformer backbone of llms (Decoder-only architectures, attention, positional encodings and layer normalisation choices.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-4. Explain Pre-training Objectives and Data and why it matters in a production LLMs system.
+4. How does Pre-training Objectives and Data interact with security and governance requirements?
    - **Guidance:** A strong answer defines pre-training objectives and data (Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-5. How would you test and monitor Scaling Laws and Emergent Abilities in production?
+5. Explain Scaling Laws and Emergent Abilities and why it matters in a production LLMs system.
    - **Guidance:** A strong answer defines scaling laws and emergent abilities (Compute-optimal training, the Chinchilla insight and capability phase transitions.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-6. Walk through how you would design Instruction Tuning and Alignment for an enterprise LLMs workload.
+6. How does Instruction Tuning and Alignment interact with security and governance requirements?
    - **Guidance:** A strong answer defines instruction tuning and alignment (Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-7. Describe a failure mode of Context Windows and Long-Context Techniques and how you would mitigate it.
+7. What trade-offs would you weigh when implementing Context Windows and Long-Context Techniques?
    - **Guidance:** A strong answer defines context windows and long-context techniques (Position interpolation, attention variants and retrieval to extend effective context.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-8. What trade-offs would you weigh when implementing Inference Optimisation?
+8. Explain Inference Optimisation and why it matters in a production LLMs system.
    - **Guidance:** A strong answer defines inference optimisation (KV caching, speculative decoding, quantisation and continuous batching for throughput.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-9. How would you test and monitor Serving LLMs at Scale in production?
+9. How does Serving LLMs at Scale interact with security and governance requirements?
    - **Guidance:** A strong answer defines serving llms at scale (GPU memory planning, tensor/pipeline parallelism and autoscaling inference.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-10. Walk through how you would design Evaluation and Benchmarking for an enterprise LLMs workload.
+10. How would you test and monitor Evaluation and Benchmarking in production?
    - **Guidance:** A strong answer defines evaluation and benchmarking (Capability benchmarks, contamination, and task-specific golden sets.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-11. Describe a failure mode of Hallucination and Factuality and how you would mitigate it.
+11. Walk through how you would design Hallucination and Factuality for an enterprise LLMs workload.
    - **Guidance:** A strong answer defines hallucination and factuality (Why models confabulate and how grounding and decoding mitigate it.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-12. Walk through how you would design Cost and Capacity Planning for an enterprise LLMs workload.
+12. What trade-offs would you weigh when implementing Cost and Capacity Planning?
    - **Guidance:** A strong answer defines cost and capacity planning (Token economics, hardware sizing and build-versus-buy decisions.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-13. Walk through how you would design Safety and Alignment in Production for an enterprise LLMs workload.
+13. How would you test and monitor Safety and Alignment in Production in production?
    - **Guidance:** A strong answer defines safety and alignment in production (Layered safety, refusal behaviour and policy enforcement.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-14. Walk through how you would design The LLM Platform Reference Architecture for an enterprise LLMs workload.
+14. Explain The LLM Platform Reference Architecture and why it matters in a production LLMs system.
    - **Guidance:** A strong answer defines the llm platform reference architecture (Gateways, registries, evaluation and observability for fleets of models.) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-15. How would you test and monitor Putting It Together: A Reference Implementation in production?
+15. Describe a failure mode of Putting It Together: A Reference Implementation and how you would mitigate it.
    - **Guidance:** A strong answer defines putting it together: a reference implementation (an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-16. Describe a failure mode of Hands-On Lab: Building an End-to-End LLMs System and how you would mitigate it.
+16. Explain Hands-On Lab: Building an End-to-End LLMs System and why it matters in a production LLMs system.
    - **Guidance:** A strong answer defines hands-on lab: building an end-to-end llms system (a guided, build-along laboratory that constructs a functioning LLMs system from first principles) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 17. Describe a failure mode of Case Study: Enterprise Search at Scale and how you would mitigate it.
    - **Guidance:** A strong answer defines case study: enterprise search at scale (a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-18. Describe a failure mode of Operating in Production and how you would mitigate it.
+18. Explain Operating in Production and why it matters in a production LLMs system.
    - **Guidance:** A strong answer defines operating in production (the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-19. How does Evaluation and Quality Assurance interact with security and governance requirements?
+19. How would you test and monitor Evaluation and Quality Assurance in production?
    - **Guidance:** A strong answer defines evaluation and quality assurance (a rigorous approach to measuring and assuring the quality of a LLMs system before and after release) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-20. Walk through how you would design Security, Privacy and Governance for an enterprise LLMs workload.
+20. How would you test and monitor Security, Privacy and Governance in production?
    - **Guidance:** A strong answer defines security, privacy and governance (the security, privacy and governance controls that make a LLMs system trustworthy and compliant) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-21. How does Cost, Performance and Scaling interact with security and governance requirements?
+21. Describe a failure mode of Cost, Performance and Scaling and how you would mitigate it.
    - **Guidance:** A strong answer defines cost, performance and scaling (techniques for controlling cost and latency while scaling a LLMs system to production traffic) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-22. How would you test and monitor Integration and Interoperability in production?
+22. Describe a failure mode of Integration and Interoperability and how you would mitigate it.
    - **Guidance:** A strong answer defines integration and interoperability (patterns for integrating a LLMs system with surrounding enterprise systems and data) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-23. How does Trends and Research Directions interact with security and governance requirements?
+23. What trade-offs would you weigh when implementing Trends and Research Directions?
    - **Guidance:** A strong answer defines trends and research directions (emerging trends, open problems and research directions shaping the future of LLMs) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
-24. Walk through how you would design Capstone Project for an enterprise LLMs workload.
+24. Describe a failure mode of Capstone Project and how you would mitigate it.
    - **Guidance:** A strong answer defines capstone project (a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
 25. How does Certification Preparation and Review interact with security and governance requirements?
    - **Guidance:** A strong answer defines certification preparation and review (a structured review and certification-style preparation covering the full breadth of LLMs) then connects it to architecture, evaluation, cost, security and operations for LLMs, citing concrete trade-offs and a real-world example.
@@ -6443,457 +6041,457 @@ Certification-style multiple-choice questions covering best practices and common
 
 1. Which of the following is a recommended best practice when working with LLMs?
    - A. Pin model and tokenizer versions; treat upgrades as releases.
-   - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Assuming bigger is always better instead of measuring task fit.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. It makes the system slower but has no other effect.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
 2. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. It makes the system slower but has no other effect.
-   - D. Monitor token distribution to catch prompt bloat and cost regressions.
-   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-3. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. It makes the system slower but has no other effect.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-4. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Underestimating KV-cache memory for long contexts.
-   - B. It is only relevant to academic research, not production.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-5. Which of the following is a recommended best practice when working with LLMs?
-   - A. Quantise and batch aggressively, validating quality impact with evals.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-6. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-7. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. It applies exclusively to image data.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-8. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-9. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. It makes the system slower but has no other effect.
-   - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-10. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-11. Which of the following is a recommended best practice when working with LLMs?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
-   - C. Underestimating KV-cache memory for long contexts.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-12. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
+   - A. It is only relevant to academic research, not production.
    - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. It makes the system slower but has no other effect.
+   - C. It applies exclusively to image data.
    - D. Underestimating KV-cache memory for long contexts.
    - **Answer: D.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-13. Which of the following is a recommended best practice when working with LLMs?
+3. Which of the following is a recommended best practice when working with LLMs?
+   - A. Quantise and batch aggressively, validating quality impact with evals.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It removes all security and governance requirements.
+   - D. Benchmarking on contaminated datasets and over-claiming capability.
+   - **Answer: A.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+4. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It makes the system slower but has no other effect.
+   - B. It is only relevant to academic research, not production.
+   - C. Benchmarking on contaminated datasets and over-claiming capability.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: C.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+5. Which of the following is a recommended best practice when working with LLMs?
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Underestimating KV-cache memory for long contexts.
+   - D. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+6. Which of the following is a common pitfall to avoid in LLMs?
    - A. Silent tokenizer changes that break prompts and cost models.
-   - B. It removes all security and governance requirements.
-   - C. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
+   - C. It removes all security and governance requirements.
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+7. Which of the following is a recommended best practice when working with LLMs?
+   - A. Underestimating KV-cache memory for long contexts.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+8. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It is only relevant to academic research, not production.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+9. Which of the following is a recommended best practice when working with LLMs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Assuming bigger is always better instead of measuring task fit.
+   - C. It applies exclusively to image data.
    - D. Pin model and tokenizer versions; treat upgrades as releases.
    - **Answer: D.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-14. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Quantise and batch aggressively, validating quality impact with evals.
-   - B. Assuming bigger is always better instead of measuring task fit.
-   - C. It makes the system slower but has no other effect.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-15. Which of the following is a recommended best practice when working with LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. Assuming bigger is always better instead of measuring task fit.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: A.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
-16. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Underestimating KV-cache memory for long contexts.
-   - B. It applies exclusively to image data.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-17. Which of the following is a recommended best practice when working with LLMs?
-   - A. Quantise and batch aggressively, validating quality impact with evals.
-   - B. Underestimating KV-cache memory for long contexts.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. It removes all security and governance requirements.
-   - **Answer: A.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-18. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-19. Which of the following is a recommended best practice when working with LLMs?
-   - A. It guarantees deterministic output regardless of input.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-20. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
+10. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It makes the system slower but has no other effect.
    - C. Quantise and batch aggressively, validating quality impact with evals.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-21. Which of the following is a recommended best practice when working with LLMs?
-   - A. Assuming bigger is always better instead of measuring task fit.
-   - B. Underestimating KV-cache memory for long contexts.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. Right-size the model to the task; do not pay for capability you don't use.
-   - **Answer: D.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-22. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Assuming bigger is always better instead of measuring task fit.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
-   - C. It removes all security and governance requirements.
    - D. Monitor token distribution to catch prompt bloat and cost regressions.
    - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-23. Which of the following is a recommended best practice when working with LLMs?
+11. Which of the following is a recommended best practice when working with LLMs?
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+12. Which of the following is a common pitfall to avoid in LLMs?
    - A. It guarantees deterministic output regardless of input.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Assuming bigger is always better instead of measuring task fit.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+13. Which of the following is a recommended best practice when working with LLMs?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
    - D. Underestimating KV-cache memory for long contexts.
-   - **Answer: B.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
-24. Which of the following is a common pitfall to avoid in LLMs?
+   - **Answer: C.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+14. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It removes all security and governance requirements.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: D.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+15. Which of the following is a recommended best practice when working with LLMs?
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. It removes all security and governance requirements.
+   - C. Silent tokenizer changes that break prompts and cost models.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+16. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+17. Which of the following is a recommended best practice when working with LLMs?
+   - A. It makes the system slower but has no other effect.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: C.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+18. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It removes all security and governance requirements.
+   - B. It is only relevant to academic research, not production.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: D.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
+19. Which of the following is a recommended best practice when working with LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It applies exclusively to image data.
+   - C. It guarantees deterministic output regardless of input.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: D.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
+20. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It makes the system slower but has no other effect.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Quantise and batch aggressively, validating quality impact with evals.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+21. Which of the following is a recommended best practice when working with LLMs?
+   - A. It applies exclusively to image data.
+   - B. Right-size the model to the task; do not pay for capability you don't use.
+   - C. Benchmarking on contaminated datasets and over-claiming capability.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+22. Which of the following is a common pitfall to avoid in LLMs?
    - A. Monitor token distribution to catch prompt bloat and cost regressions.
    - B. It applies exclusively to image data.
    - C. Silent tokenizer changes that break prompts and cost models.
    - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-25. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Quantise and batch aggressively, validating quality impact with evals.
-   - D. Silent tokenizer changes that break prompts and cost models.
-   - **Answer: C.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-26. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. Underestimating KV-cache memory for long contexts.
+23. Which of the following is a recommended best practice when working with LLMs?
+   - A. It makes the system slower but has no other effect.
+   - B. Quantise and batch aggressively, validating quality impact with evals.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. It removes all security and governance requirements.
+   - D. It applies exclusively to image data.
+   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+24. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It guarantees deterministic output regardless of input.
+   - C. It applies exclusively to image data.
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+25. Which of the following is a recommended best practice when working with LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It removes all security and governance requirements.
+   - D. Benchmarking on contaminated datasets and over-claiming capability.
+   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+26. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It is only relevant to academic research, not production.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Right-size the model to the task; do not pay for capability you don't use.
    - **Answer: B.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
 27. Which of the following is a recommended best practice when working with LLMs?
-   - A. It is only relevant to academic research, not production.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: D.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-28. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Underestimating KV-cache memory for long contexts.
-   - D. Right-size the model to the task; do not pay for capability you don't use.
-   - **Answer: C.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-29. Which of the following is a recommended best practice when working with LLMs?
-   - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. Right-size the model to the task; do not pay for capability you don't use.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-30. Which of the following is a common pitfall to avoid in LLMs?
    - A. It removes all security and governance requirements.
-   - B. Underestimating KV-cache memory for long contexts.
-   - C. It makes the system slower but has no other effect.
-   - D. Pin model and tokenizer versions; treat upgrades as releases.
-   - **Answer: B.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-31. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. It makes the system slower but has no other effect.
-   - C. Right-size the model to the task; do not pay for capability you don't use.
-   - D. It applies exclusively to image data.
-   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-32. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It applies exclusively to image data.
    - D. Silent tokenizer changes that break prompts and cost models.
-   - **Answer: D.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-33. Which of the following is a recommended best practice when working with LLMs?
-   - A. It removes all security and governance requirements.
-   - B. Assuming bigger is always better instead of measuring task fit.
+   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+28. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. Monitor token distribution to catch prompt bloat and cost regressions.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+29. Which of the following is a recommended best practice when working with LLMs?
+   - A. It applies exclusively to image data.
+   - B. Benchmarking on contaminated datasets and over-claiming capability.
    - C. Monitor token distribution to catch prompt bloat and cost regressions.
    - D. It makes the system slower but has no other effect.
    - **Answer: C.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
-34. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
-   - C. Quantise and batch aggressively, validating quality impact with evals.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: D.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-35. Which of the following is a recommended best practice when working with LLMs?
+30. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It applies exclusively to image data.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+31. Which of the following is a recommended best practice when working with LLMs?
    - A. Benchmarking on contaminated datasets and over-claiming capability.
-   - B. It makes the system slower but has no other effect.
-   - C. Assuming bigger is always better instead of measuring task fit.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It applies exclusively to image data.
    - D. Quantise and batch aggressively, validating quality impact with evals.
    - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+32. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It removes all security and governance requirements.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+33. Which of the following is a recommended best practice when working with LLMs?
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
+   - B. It makes the system slower but has no other effect.
+   - C. Assuming bigger is always better instead of measuring task fit.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+34. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Silent tokenizer changes that break prompts and cost models.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+35. Which of the following is a recommended best practice when working with LLMs?
+   - A. Underestimating KV-cache memory for long contexts.
+   - B. Quantise and batch aggressively, validating quality impact with evals.
+   - C. It guarantees deterministic output regardless of input.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
 36. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
+37. Which of the following is a recommended best practice when working with LLMs?
+   - A. Monitor token distribution to catch prompt bloat and cost regressions.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: A.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
+38. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Silent tokenizer changes that break prompts and cost models.
+   - B. It removes all security and governance requirements.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. Monitor token distribution to catch prompt bloat and cost regressions.
+   - **Answer: A.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+39. Which of the following is a recommended best practice when working with LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. Quantise and batch aggressively, validating quality impact with evals.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: C.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
+40. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Quantise and batch aggressively, validating quality impact with evals.
+   - B. Silent tokenizer changes that break prompts and cost models.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+41. Which of the following is a recommended best practice when working with LLMs?
+   - A. Right-size the model to the task; do not pay for capability you don't use.
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+42. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It applies exclusively to image data.
+   - B. Benchmarking on contaminated datasets and over-claiming capability.
+   - C. Pin model and tokenizer versions; treat upgrades as releases.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: B.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+43. Which of the following is a recommended best practice when working with LLMs?
    - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - D. Underestimating KV-cache memory for long contexts.
+   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+44. Which of the following is a common pitfall to avoid in LLMs?
+   - A. Benchmarking on contaminated datasets and over-claiming capability.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. It removes all security and governance requirements.
+   - D. Right-size the model to the task; do not pay for capability you don't use.
+   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
+45. Which of the following is a recommended best practice when working with LLMs?
+   - A. Right-size the model to the task; do not pay for capability you don't use.
+   - B. Underestimating KV-cache memory for long contexts.
+   - C. It is only relevant to academic research, not production.
+   - D. Silent tokenizer changes that break prompts and cost models.
+   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+46. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - C. Monitor token distribution to catch prompt bloat and cost regressions.
+   - D. Silent tokenizer changes that break prompts and cost models.
+   - **Answer: D.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
+47. Which of the following is a recommended best practice when working with LLMs?
+   - A. Pin model and tokenizer versions; treat upgrades as releases.
    - B. It eliminates the need for any evaluation or monitoring.
    - C. It is only relevant to academic research, not production.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-37. Which of the following is a recommended best practice when working with LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: A.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
+48. Which of the following is a common pitfall to avoid in LLMs?
+   - A. It guarantees deterministic output regardless of input.
+   - B. Underestimating KV-cache memory for long contexts.
    - C. It removes all security and governance requirements.
-   - D. Underestimating KV-cache memory for long contexts.
-   - **Answer: B.** Best practice: Pin model and tokenizer versions; treat upgrades as releases.
-38. Which of the following is a common pitfall to avoid in LLMs?
+   - D. Pin model and tokenizer versions; treat upgrades as releases.
+   - **Answer: B.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
+49. Which of the following is a recommended best practice when working with LLMs?
+   - A. Assuming bigger is always better instead of measuring task fit.
+   - B. It removes all security and governance requirements.
+   - C. Right-size the model to the task; do not pay for capability you don't use.
+   - D. Benchmarking on contaminated datasets and over-claiming capability.
+   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
+50. Which of the following is a common pitfall to avoid in LLMs?
    - A. Pin model and tokenizer versions; treat upgrades as releases.
-   - B. It guarantees deterministic output regardless of input.
-   - C. It is only relevant to academic research, not production.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: D.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-39. Which of the following is a recommended best practice when working with LLMs?
-   - A. Underestimating KV-cache memory for long contexts.
-   - B. Monitor token distribution to catch prompt bloat and cost regressions.
-   - C. Benchmarking on contaminated datasets and over-claiming capability.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: B.** Best practice: Monitor token distribution to catch prompt bloat and cost regressions.
-40. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It is only relevant to academic research, not production.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Pin model and tokenizer versions; treat upgrades as releases.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: D.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-41. Which of the following is a recommended best practice when working with LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. Quantise and batch aggressively, validating quality impact with evals.
-   - C. It applies exclusively to image data.
-   - D. Assuming bigger is always better instead of measuring task fit.
-   - **Answer: B.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-42. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It removes all security and governance requirements.
-   - B. It guarantees deterministic output regardless of input.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
-43. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. It applies exclusively to image data.
-   - C. It makes the system slower but has no other effect.
-   - D. It is only relevant to academic research, not production.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-44. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. It is only relevant to academic research, not production.
-   - C. Pin model and tokenizer versions; treat upgrades as releases.
-   - D. Benchmarking on contaminated datasets and over-claiming capability.
-   - **Answer: D.** Pitfall to avoid: Benchmarking on contaminated datasets and over-claiming capability.
-45. Which of the following is a recommended best practice when working with LLMs?
-   - A. It makes the system slower but has no other effect.
-   - B. It is only relevant to academic research, not production.
-   - C. Silent tokenizer changes that break prompts and cost models.
-   - D. Quantise and batch aggressively, validating quality impact with evals.
-   - **Answer: D.** Best practice: Quantise and batch aggressively, validating quality impact with evals.
-46. Which of the following is a common pitfall to avoid in LLMs?
-   - A. It applies exclusively to image data.
    - B. Right-size the model to the task; do not pay for capability you don't use.
    - C. Underestimating KV-cache memory for long contexts.
    - D. It guarantees deterministic output regardless of input.
    - **Answer: C.** Pitfall to avoid: Underestimating KV-cache memory for long contexts.
-47. Which of the following is a recommended best practice when working with LLMs?
-   - A. It applies exclusively to image data.
-   - B. It makes the system slower but has no other effect.
-   - C. Right-size the model to the task; do not pay for capability you don't use.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: C.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-48. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Monitor token distribution to catch prompt bloat and cost regressions.
-   - B. Right-size the model to the task; do not pay for capability you don't use.
-   - C. Assuming bigger is always better instead of measuring task fit.
-   - D. Quantise and batch aggressively, validating quality impact with evals.
-   - **Answer: C.** Pitfall to avoid: Assuming bigger is always better instead of measuring task fit.
-49. Which of the following is a recommended best practice when working with LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. Underestimating KV-cache memory for long contexts.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Best practice: Right-size the model to the task; do not pay for capability you don't use.
-50. Which of the following is a common pitfall to avoid in LLMs?
-   - A. Right-size the model to the task; do not pay for capability you don't use.
-   - B. Silent tokenizer changes that break prompts and cost models.
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: B.** Pitfall to avoid: Silent tokenizer changes that break prompts and cost models.
 
 # Assessment Exercises
 
 Assessment items to verify conceptual understanding.
 
 1. In the context of LLMs, which statement best describes “From N-grams to Neural Language Models”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It removes all security and governance requirements.
    - C. The evolution of language modelling and why scale plus self-attention unlocked emergent capability.
-   - D. It removes all security and governance requirements.
+   - D. It is only relevant to academic research, not production.
    - **Answer: C.** From N-grams to Neural Language Models: The evolution of language modelling and why scale plus self-attention unlocked emergent capability.
 2. In the context of LLMs, which statement best describes “Tokenisation and Vocabulary”?
-   - A. It makes the system slower but has no other effect.
-   - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
-   - **Answer: D.** Tokenisation and Vocabulary: Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
-3. In the context of LLMs, which statement best describes “The Transformer Backbone of LLMs”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. Decoder-only architectures, attention, positional encodings and layer normalisation choices.
-   - C. It makes the system slower but has no other effect.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** The Transformer Backbone of LLMs: Decoder-only architectures, attention, positional encodings and layer normalisation choices.
-4. In the context of LLMs, which statement best describes “Pre-training Objectives and Data”?
-   - A. It guarantees deterministic output regardless of input.
+   - B. It guarantees deterministic output regardless of input.
+   - C. Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
+   - D. It applies exclusively to image data.
+   - **Answer: C.** Tokenisation and Vocabulary: Byte-pair encoding, subword units, special tokens and their impact on cost and multilingual performance.
+3. In the context of LLMs, which statement best describes “The Transformer Backbone of LLMs”?
+   - A. It removes all security and governance requirements.
    - B. It applies exclusively to image data.
-   - C. Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: C.** Pre-training Objectives and Data: Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
+   - C. It is only relevant to academic research, not production.
+   - D. Decoder-only architectures, attention, positional encodings and layer normalisation choices.
+   - **Answer: D.** The Transformer Backbone of LLMs: Decoder-only architectures, attention, positional encodings and layer normalisation choices.
+4. In the context of LLMs, which statement best describes “Pre-training Objectives and Data”?
+   - A. It is only relevant to academic research, not production.
+   - B. Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: B.** Pre-training Objectives and Data: Causal language modelling, corpus curation, deduplication and data quality at trillion-token scale.
 5. In the context of LLMs, which statement best describes “Scaling Laws and Emergent Abilities”?
    - A. Compute-optimal training, the Chinchilla insight and capability phase transitions.
    - B. It removes all security and governance requirements.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. It is only relevant to academic research, not production.
+   - C. It applies exclusively to image data.
+   - D. It makes the system slower but has no other effect.
    - **Answer: A.** Scaling Laws and Emergent Abilities: Compute-optimal training, the Chinchilla insight and capability phase transitions.
 6. In the context of LLMs, which statement best describes “Instruction Tuning and Alignment”?
    - A. It guarantees deterministic output regardless of input.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Instruction Tuning and Alignment: Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
-7. In the context of LLMs, which statement best describes “Context Windows and Long-Context Techniques”?
-   - A. Position interpolation, attention variants and retrieval to extend effective context.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It removes all security and governance requirements.
-   - D. It guarantees deterministic output regardless of input.
-   - **Answer: A.** Context Windows and Long-Context Techniques: Position interpolation, attention variants and retrieval to extend effective context.
-8. In the context of LLMs, which statement best describes “Inference Optimisation”?
-   - A. It removes all security and governance requirements.
    - B. It is only relevant to academic research, not production.
-   - C. It eliminates the need for any evaluation or monitoring.
-   - D. KV caching, speculative decoding, quantisation and continuous batching for throughput.
-   - **Answer: D.** Inference Optimisation: KV caching, speculative decoding, quantisation and continuous batching for throughput.
-9. In the context of LLMs, which statement best describes “Serving LLMs at Scale”?
-   - A. It applies exclusively to image data.
-   - B. It guarantees deterministic output regardless of input.
-   - C. GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
-   - D. It makes the system slower but has no other effect.
-   - **Answer: C.** Serving LLMs at Scale: GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
-10. In the context of LLMs, which statement best describes “Evaluation and Benchmarking”?
+   - C. It applies exclusively to image data.
+   - D. Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
+   - **Answer: D.** Instruction Tuning and Alignment: Supervised fine-tuning, RLHF and preference optimisation that make base models useful and safe.
+7. In the context of LLMs, which statement best describes “Context Windows and Long-Context Techniques”?
    - A. It guarantees deterministic output regardless of input.
    - B. It makes the system slower but has no other effect.
-   - C. Capability benchmarks, contamination, and task-specific golden sets.
+   - C. Position interpolation, attention variants and retrieval to extend effective context.
    - D. It removes all security and governance requirements.
-   - **Answer: C.** Evaluation and Benchmarking: Capability benchmarks, contamination, and task-specific golden sets.
-11. In the context of LLMs, which statement best describes “Hallucination and Factuality”?
-   - A. Why models confabulate and how grounding and decoding mitigate it.
+   - **Answer: C.** Context Windows and Long-Context Techniques: Position interpolation, attention variants and retrieval to extend effective context.
+8. In the context of LLMs, which statement best describes “Inference Optimisation”?
+   - A. KV caching, speculative decoding, quantisation and continuous batching for throughput.
    - B. It applies exclusively to image data.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
-   - **Answer: A.** Hallucination and Factuality: Why models confabulate and how grounding and decoding mitigate it.
-12. In the context of LLMs, which statement best describes “Cost and Capacity Planning”?
-   - A. It eliminates the need for any evaluation or monitoring.
+   - C. It removes all security and governance requirements.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Inference Optimisation: KV caching, speculative decoding, quantisation and continuous batching for throughput.
+9. In the context of LLMs, which statement best describes “Serving LLMs at Scale”?
+   - A. It applies exclusively to image data.
    - B. It removes all security and governance requirements.
    - C. It is only relevant to academic research, not production.
-   - D. Token economics, hardware sizing and build-versus-buy decisions.
-   - **Answer: D.** Cost and Capacity Planning: Token economics, hardware sizing and build-versus-buy decisions.
+   - D. GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
+   - **Answer: D.** Serving LLMs at Scale: GPU memory planning, tensor/pipeline parallelism and autoscaling inference.
+10. In the context of LLMs, which statement best describes “Evaluation and Benchmarking”?
+   - A. It makes the system slower but has no other effect.
+   - B. It applies exclusively to image data.
+   - C. Capability benchmarks, contamination, and task-specific golden sets.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Evaluation and Benchmarking: Capability benchmarks, contamination, and task-specific golden sets.
+11. In the context of LLMs, which statement best describes “Hallucination and Factuality”?
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
+   - C. Why models confabulate and how grounding and decoding mitigate it.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: C.** Hallucination and Factuality: Why models confabulate and how grounding and decoding mitigate it.
+12. In the context of LLMs, which statement best describes “Cost and Capacity Planning”?
+   - A. It guarantees deterministic output regardless of input.
+   - B. It removes all security and governance requirements.
+   - C. Token economics, hardware sizing and build-versus-buy decisions.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Cost and Capacity Planning: Token economics, hardware sizing and build-versus-buy decisions.
 13. In the context of LLMs, which statement best describes “Safety and Alignment in Production”?
    - A. Layered safety, refusal behaviour and policy enforcement.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - B. It makes the system slower but has no other effect.
    - C. It removes all security and governance requirements.
-   - D. It makes the system slower but has no other effect.
+   - D. It eliminates the need for any evaluation or monitoring.
    - **Answer: A.** Safety and Alignment in Production: Layered safety, refusal behaviour and policy enforcement.
 14. In the context of LLMs, which statement best describes “The LLM Platform Reference Architecture”?
-   - A. It removes all security and governance requirements.
-   - B. Gateways, registries, evaluation and observability for fleets of models.
-   - C. It eliminates the need for any evaluation or monitoring.
+   - A. Gateways, registries, evaluation and observability for fleets of models.
+   - B. It eliminates the need for any evaluation or monitoring.
+   - C. It makes the system slower but has no other effect.
    - D. It guarantees deterministic output regardless of input.
-   - **Answer: B.** The LLM Platform Reference Architecture: Gateways, registries, evaluation and observability for fleets of models.
+   - **Answer: A.** The LLM Platform Reference Architecture: Gateways, registries, evaluation and observability for fleets of models.
 15. In the context of LLMs, which statement best describes “Putting It Together: A Reference Implementation”?
-   - A. It removes all security and governance requirements.
-   - B. an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
+   - A. It is only relevant to academic research, not production.
+   - B. It eliminates the need for any evaluation or monitoring.
    - C. It guarantees deterministic output regardless of input.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
+   - D. an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
+   - **Answer: D.** Putting It Together: A Reference Implementation: an end-to-end reference implementation that integrates the components of a LLMs system into a cohesive, working whole
 16. In the context of LLMs, which statement best describes “Hands-On Lab: Building an End-to-End LLMs System”?
-   - A. It guarantees deterministic output regardless of input.
+   - A. It is only relevant to academic research, not production.
    - B. a guided, build-along laboratory that constructs a functioning LLMs system from first principles
-   - C. It is only relevant to academic research, not production.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It removes all security and governance requirements.
    - **Answer: B.** Hands-On Lab: Building an End-to-End LLMs System: a guided, build-along laboratory that constructs a functioning LLMs system from first principles
 17. In the context of LLMs, which statement best describes “Case Study: Enterprise Search at Scale”?
    - A. a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes
    - B. It removes all security and governance requirements.
-   - C. It guarantees deterministic output regardless of input.
-   - D. It eliminates the need for any evaluation or monitoring.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
    - **Answer: A.** Case Study: Enterprise Search at Scale: a detailed case study of deploying LLMs in a demanding enterprise search environment, including the decisions, trade-offs and outcomes
 18. In the context of LLMs, which statement best describes “Operating in Production”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. It is only relevant to academic research, not production.
-   - C. It removes all security and governance requirements.
-   - D. the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
-   - **Answer: D.** Operating in Production: the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
-19. In the context of LLMs, which statement best describes “Evaluation and Quality Assurance”?
    - A. It makes the system slower but has no other effect.
-   - B. a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
+   - B. the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
    - C. It is only relevant to academic research, not production.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
-20. In the context of LLMs, which statement best describes “Security, Privacy and Governance”?
-   - A. It makes the system slower but has no other effect.
-   - B. It guarantees deterministic output regardless of input.
+   - D. It eliminates the need for any evaluation or monitoring.
+   - **Answer: B.** Operating in Production: the operational discipline required to run a LLMs system reliably, including monitoring, incident response and continuous improvement
+19. In the context of LLMs, which statement best describes “Evaluation and Quality Assurance”?
+   - A. a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
+   - B. It makes the system slower but has no other effect.
    - C. It eliminates the need for any evaluation or monitoring.
-   - D. the security, privacy and governance controls that make a LLMs system trustworthy and compliant
-   - **Answer: D.** Security, Privacy and Governance: the security, privacy and governance controls that make a LLMs system trustworthy and compliant
+   - D. It removes all security and governance requirements.
+   - **Answer: A.** Evaluation and Quality Assurance: a rigorous approach to measuring and assuring the quality of a LLMs system before and after release
+20. In the context of LLMs, which statement best describes “Security, Privacy and Governance”?
+   - A. the security, privacy and governance controls that make a LLMs system trustworthy and compliant
+   - B. It removes all security and governance requirements.
+   - C. It applies exclusively to image data.
+   - D. It is only relevant to academic research, not production.
+   - **Answer: A.** Security, Privacy and Governance: the security, privacy and governance controls that make a LLMs system trustworthy and compliant
 21. In the context of LLMs, which statement best describes “Cost, Performance and Scaling”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
+   - A. It is only relevant to academic research, not production.
+   - B. It removes all security and governance requirements.
    - C. techniques for controlling cost and latency while scaling a LLMs system to production traffic
-   - D. It makes the system slower but has no other effect.
+   - D. It applies exclusively to image data.
    - **Answer: C.** Cost, Performance and Scaling: techniques for controlling cost and latency while scaling a LLMs system to production traffic
 22. In the context of LLMs, which statement best describes “Integration and Interoperability”?
-   - A. It guarantees deterministic output regardless of input.
-   - B. patterns for integrating a LLMs system with surrounding enterprise systems and data
-   - C. It is only relevant to academic research, not production.
-   - D. It removes all security and governance requirements.
-   - **Answer: B.** Integration and Interoperability: patterns for integrating a LLMs system with surrounding enterprise systems and data
+   - A. patterns for integrating a LLMs system with surrounding enterprise systems and data
+   - B. It removes all security and governance requirements.
+   - C. It eliminates the need for any evaluation or monitoring.
+   - D. It makes the system slower but has no other effect.
+   - **Answer: A.** Integration and Interoperability: patterns for integrating a LLMs system with surrounding enterprise systems and data
 23. In the context of LLMs, which statement best describes “Trends and Research Directions”?
-   - A. It eliminates the need for any evaluation or monitoring.
-   - B. It makes the system slower but has no other effect.
-   - C. It removes all security and governance requirements.
-   - D. emerging trends, open problems and research directions shaping the future of LLMs
-   - **Answer: D.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of LLMs
+   - A. emerging trends, open problems and research directions shaping the future of LLMs
+   - B. It applies exclusively to image data.
+   - C. It makes the system slower but has no other effect.
+   - D. It guarantees deterministic output regardless of input.
+   - **Answer: A.** Trends and Research Directions: emerging trends, open problems and research directions shaping the future of LLMs
 24. In the context of LLMs, which statement best describes “Capstone Project”?
    - A. It eliminates the need for any evaluation or monitoring.
-   - B. a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
-   - C. It makes the system slower but has no other effect.
-   - D. It applies exclusively to image data.
-   - **Answer: B.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
+   - B. It guarantees deterministic output regardless of input.
+   - C. a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
+   - D. It makes the system slower but has no other effect.
+   - **Answer: C.** Capstone Project: a substantial capstone project that consolidates the entire book into a portfolio-grade LLMs deliverable
 25. In the context of LLMs, which statement best describes “Certification Preparation and Review”?
-   - A. It applies exclusively to image data.
-   - B. It eliminates the need for any evaluation or monitoring.
-   - C. It guarantees deterministic output regardless of input.
+   - A. It eliminates the need for any evaluation or monitoring.
+   - B. It is only relevant to academic research, not production.
+   - C. It makes the system slower but has no other effect.
    - D. a structured review and certification-style preparation covering the full breadth of LLMs
    - **Answer: D.** Certification Preparation and Review: a structured review and certification-style preparation covering the full breadth of LLMs
 

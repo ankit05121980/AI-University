@@ -1,4 +1,8 @@
-# AI-University — Enterprise AI Knowledge Publishing Platform
+# AI-University
+
+**Live site:** https://ankit05121980.github.io/AI-University/
+
+Public landing page is deployed via [GitHub Pages](https://pages.github.com/) from the `docs/` folder. — Enterprise AI Knowledge Publishing Platform
 
 A complete, automated **AI learning publishing system** that generates, stores,
 indexes, searches, views and downloads professional, enterprise-grade AI books.

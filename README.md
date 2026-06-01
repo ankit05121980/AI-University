@@ -1,12 +1,12 @@
 # AI-University
 
-**Live site (browse now):**  
-https://htmlpreview.github.io/?https://raw.githubusercontent.com/ankit05121980/AI-University/main/docs/index.html
+**Public site:** https://ankit05121980.github.io/AI-University/ (GitHub Pages from `docs/` on `main`)
 
-**Official GitHub Pages URL (after you enable Pages in repo Settings → Pages → “Deploy from branch” → `main` → `/docs`):**  
-https://ankit05121980.github.io/AI-University/
+**Local portal:** `python serve.py` → http://localhost:8000/web/
 
-The static site lives in `docs/`. A GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) deploys automatically once Pages is enabled. — Enterprise AI Knowledge Publishing Platform
+---
+
+# AI-University — Enterprise AI Knowledge Publishing Platform
 
 A complete, automated **AI learning publishing system** that generates, stores,
 indexes, searches, views and downloads professional, enterprise-grade AI books.

@@ -1,8 +1,10 @@
 # AI-University
 
-**Public site:** https://ankit05121980.github.io/AI-University/ (GitHub Pages from `docs/` on `main`)
+**Public portal (same UI as local):** https://ankit05121980.github.io/AI-University/web/
 
 **Local portal:** `python serve.py` → http://localhost:8000/web/
+
+> Production loads `data/` and `content/` from jsDelivr (same files as this repo). After editing `web/`, run `./scripts/sync-portal-to-docs.sh` before pushing if you use GitHub Pages.
 
 ---
 

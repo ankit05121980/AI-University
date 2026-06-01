@@ -1,10 +1,22 @@
 # AI-University
 
-**Public portal (same UI as local):** https://ankit05121980.github.io/AI-University/web/
+**Public portal (Cloudflare Pages):** https://ai-university.pages.dev
 
-**Local portal:** `python serve.py` → http://localhost:8000/web/
+**GitHub Pages mirror:** https://ankit05121980.github.io/AI-University/web/
 
-> Production loads `data/` and `content/` from jsDelivr (same files as this repo). After editing `web/`, run `./scripts/sync-portal-to-docs.sh` before pushing if you use GitHub Pages.
+**Local dev:** `python serve.py` → http://localhost:8000/web/
+
+### Deploy to Cloudflare
+
+```bash
+export CLOUDFLARE_API_TOKEN="..."   # API token with Cloudflare Pages → Edit
+export CLOUDFLARE_ACCOUNT_ID="..."  # Account ID from dashboard sidebar
+./scripts/deploy-cloudflare.sh
+```
+
+Or add those values as GitHub Actions secrets — pushes to `main` that touch `web/` will deploy automatically.
+
+> Production hosts load `data/` and `content/` from jsDelivr (same files as this repo). After editing `web/`, run `./scripts/sync-portal-to-docs.sh` before pushing if you also use GitHub Pages.
 
 ---
 

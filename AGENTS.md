@@ -6,17 +6,11 @@ Enterprise AI knowledge publishing platform: Python engine (`engine/`), static p
 
 ### Public portal (production)
 
-- **URL:** https://ankit05121980.github.io/AI-University/web/
-- **Source:** GitHub Pages, branch `main`, folder `/docs` (includes `docs/web/` copy of the portal).
-- **Data/content in production:** loaded from jsDelivr (`@main` on this repo), not from Pages — same JSON/PDFs as local.
-- **`docs/.nojekyll` is required** — without it, `/web/` returns 404 (Jekyll ignores static paths).
+- **Primary (Cloudflare Pages):** https://ai-university.pages.dev — deploy `./web` via `./scripts/deploy-cloudflare.sh` or the **Deploy to Cloudflare Pages** workflow (needs `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` repo secrets).
+- **Mirror (GitHub Pages):** https://ankit05121980.github.io/AI-University/web/ — requires `docs/web/` sync + `docs/.nojekyll`.
+- **Data/content on Cloudflare/GitHub hosts:** jsDelivr (`@main`), not bundled in the Pages artifact — same JSON/PDFs as local.
 
-After changing `web/`, run `./scripts/sync-portal-to-docs.sh` and commit `docs/web/` before pushing.
-
-### Vercel / Cloudflare (optional `*.vercel.app` / `*.pages.dev`)
-
-- **Vercel:** import the repo at [vercel.com/new](https://vercel.com/new); root `vercel.json` redirects `/` → `/web`. Only the `web/` folder is needed (CDN serves data).
-- **Cloudflare Pages:** connect the repo in the dashboard with build output **`web`**, or add repo secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` and run the **Deploy to Cloudflare Pages** workflow manually.
+After changing `web/`, run `./scripts/sync-portal-to-docs.sh` if you also publish to GitHub Pages.
 
 ### Full portal (local dev)
 

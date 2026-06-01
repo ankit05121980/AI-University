@@ -1,8 +1,8 @@
 # AI-University
 
-**Public portal (Cloudflare Pages):** https://ai-university.pages.dev
+**Public portal:** https://ankit05121980.github.io/AI-University/
 
-**GitHub Pages mirror:** https://ankit05121980.github.io/AI-University/web/
+**Cloudflare Pages** (when `CLOUDFLARE_API_TOKEN` is set in repo secrets): https://ai-university.pages.dev
 
 **Local dev:** `python serve.py` → http://localhost:8000/web/
 

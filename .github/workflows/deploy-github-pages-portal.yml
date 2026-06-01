@@ -1,0 +1,45 @@
+name: Deploy Portal (GitHub Pages Actions)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - ".github/workflows/deploy-github-pages-portal.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-portal
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare site (portal at root)
+        run: |
+          mkdir -p _site
+          cp -a web/. _site/
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Print live URL
+        run: echo "Deployed to ${{ steps.deployment.outputs.page_url }}"

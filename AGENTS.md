@@ -6,8 +6,8 @@ Enterprise AI knowledge publishing platform: Python engine (`engine/`), static p
 
 ### Public portal (production)
 
-- **Primary (Cloudflare Pages):** https://ai-university.pages.dev — deploy `./web` via `./scripts/deploy-cloudflare.sh` or the **Deploy to Cloudflare Pages** workflow (needs `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` repo secrets).
-- **Mirror (GitHub Pages):** https://ankit05121980.github.io/AI-University/web/ — requires `docs/web/` sync + `docs/.nojekyll`.
+- **Primary (GitHub Pages):** https://ankit05121980.github.io/AI-University/ — run `./scripts/sync-portal-to-docs.sh` then push `docs/` (legacy Pages: `main` + `/docs`).
+- **Cloudflare Pages:** https://ai-university.pages.dev — `./scripts/deploy-cloudflare.sh` or **Deploy to Cloudflare Pages** workflow (requires `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` repo secrets).
 - **Data/content on Cloudflare/GitHub hosts:** jsDelivr (`@main`), not bundled in the Pages artifact — same JSON/PDFs as local.
 
 After changing `web/`, run `./scripts/sync-portal-to-docs.sh` if you also publish to GitHub Pages.

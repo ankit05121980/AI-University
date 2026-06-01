@@ -320,19 +320,73 @@
     else renderOutlinePreview(b);
   };
 
-  function diagramHtml(d) {
-    if (d.fmt === "mermaid") return `<pre class="mermaid">${esc(d.source)}</pre><p class="cap">${esc(d.caption)}</p>`;
-    if (d.fmt === "svg") return `<div style="text-align:center">${d.source}</div><p class="cap">${esc(d.caption)}</p>`;
-    return `<pre><code>${esc(d.source)}</code></pre><p class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</p>`;
+  const KROKI_ENGINE = { plantuml: "plantuml", drawio: "diagramnet" };
+  const diagramSourceStore = new Map();
+  let diagramSourceSeq = 0;
+
+  function stashDiagramSource(source) {
+    const id = String(++diagramSourceSeq);
+    diagramSourceStore.set(id, source);
+    return id;
+  }
+
+  function diagramHtml(d, diagramsBase) {
+    const cap = `<p class="cap">${esc(d.caption || d.title || "")}</p>`;
+    if (d.fmt === "mermaid") {
+      return `<div class="diagram"><pre class="mermaid">${esc(d.source)}</pre></div>${cap}`;
+    }
+    if (d.fmt === "svg" && d.source && d.source.trim().startsWith("<svg")) {
+      return `<div class="diagram diagram-svg">${d.source}</div>${cap}`;
+    }
+    if (d.fmt === "svg" && d.file && diagramsBase) {
+      return `<div class="diagram"><img class="diagram-img" alt="${esc(d.caption || d.title)}" loading="lazy" src="${diagramsBase}/${encodeURI(d.file)}"/></div>${cap}`;
+    }
+    if (d.fmt === "plantuml" || d.fmt === "drawio") {
+      const sid = stashDiagramSource(d.source);
+      const engine = KROKI_ENGINE[d.fmt];
+      return `<div class="diagram diagram-kroki" data-kroki-engine="${engine}" data-kroki-id="${sid}"><div class="diagram-loading">Rendering diagram…</div></div>${cap}`;
+    }
+    return `<div class="diagram"><pre class="diagram-fallback"><code>${esc((d.source || "").slice(0, 800))}</code></pre></div><p class="cap">${esc(d.fmt)} source — ${esc(d.caption)}</p>`;
+  }
+
+  async function renderKrokiDiagram(el) {
+    const engine = el.dataset.krokiEngine;
+    const source = diagramSourceStore.get(el.dataset.krokiId);
+    if (!engine || source == null) return;
+    try {
+      const res = await fetch(`https://kroki.io/${engine}/svg`, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain" },
+        body: source,
+      });
+      if (!res.ok) throw new Error(`Kroki HTTP ${res.status}`);
+      const svg = await res.text();
+      el.innerHTML = `<div class="diagram-svg">${svg}</div>`;
+    } catch (err) {
+      el.innerHTML = `<pre class="diagram-fallback"><code>${esc(source.slice(0, 500))}${source.length > 500 ? "…" : ""}</code></pre><p class="cap">Could not render diagram (${esc(err.message)}).</p>`;
+    }
+  }
+
+  async function hydrateDiagrams(root) {
+    const scope = root || document;
+    const kroki = [...scope.querySelectorAll(".diagram-kroki[data-kroki-id]")];
+    await Promise.all(kroki.map(renderKrokiDiagram));
+    if (window.renderMermaid) {
+      try { await window.renderMermaid(scope.querySelector(".reader-body") || scope); }
+      catch (e) { console.warn("Mermaid render:", e); }
+    }
   }
 
   function renderReader(b, content, pub) {
+    const diagramsBase = pub?.artifacts?.diagrams_dir ? `${CONTENT}/${pub.artifacts.diagrams_dir}` : null;
     const toc = content.chapters.map(c => `<a href="#ch-${c.number}" data-ch="${c.number}">${c.number}. ${esc(c.title)}</a>`).join("");
     const body = content.chapters.map(c => {
       let html = `<h1 id="ch-${c.number}">Chapter ${c.number}. ${esc(c.title)}</h1><p class="cap">${esc(c.summary)}</p>`;
       for (const s of c.sections) {
         html += `<h2>${esc(s.heading)}</h2>${mdToHtml(s.body)}`;
-        if (s.heading.startsWith("Architecture")) html += c.diagrams.map(diagramHtml).join("");
+      }
+      if (c.diagrams && c.diagrams.length) {
+        html += `<h2>Figures</h2>${c.diagrams.map(d => diagramHtml(d, diagramsBase)).join("")}`;
       }
       for (const cs of c.code_samples) html += `<h3>Listing: ${esc(cs.title)}</h3><pre><code>${esc(cs.code)}</code></pre>`;
       html += `<h2>Review Questions</h2>` + c.questions.map((q, i) => {
@@ -356,8 +410,7 @@
       </div>`;
     progress.set(b.id, 0, content.chapters.length);
 
-    // mermaid
-    loadMermaid();
+    hydrateDiagrams(view());
     // scroll spy + progress
     const tocLinks = view().querySelectorAll(".reader-toc a");
     const sections = view().querySelectorAll(".rch");
@@ -392,19 +445,6 @@
           (<code>python -m aupub.cli publish --ids ${b.id}</code>). The complete chapter structure is shown below.</div>
         <article class="reader-body">${body}</article>`;
     });
-  }
-
-  let mermaidLoaded = false;
-  function loadMermaid() {
-    const render = () => window.mermaid && window.mermaid.run({ querySelector: "pre.mermaid" });
-    if (mermaidLoaded) { render(); return; }
-    const s = document.createElement("script");
-    s.type = "module";
-    s.textContent = `import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      window.mermaid = mermaid; mermaid.initialize({ startOnLoad:false, theme:'neutral' });
-      mermaid.run({ querySelector: 'pre.mermaid' });`;
-    document.body.appendChild(s);
-    mermaidLoaded = true;
   }
 
   // Search
@@ -456,12 +496,21 @@
     await Promise.all([load("library", `${DATA}/library.json`), load("stats", `${DATA}/stats.json`), loadPublished()]);
     const kinds = ["Architecture", "Application Flow", "Business Process", "Data Flow", "Sequence", "Class", "Component", "Deployment", "Network", "Cloud Architecture", "RAG Architecture", "Agent Architecture", "Security Architecture", "DevOps Pipeline", "CI/CD Pipeline", "Infrastructure", "Knowledge Graph", "Data Lineage", "Capability Map", "Operating Model"];
     const fmts = ["mermaid", "plantuml", "svg", "drawio"];
-    // gather sample diagrams from published outlines
-    const pubIds = (state.published || []).map(p => p.id).slice(0, 6);
+    // gather sample diagrams from published book content (includes diagram source)
+    const pubIds = (state.published || []).map(p => p.id).slice(0, 4);
     const samples = [];
     for (const id of pubIds) {
+      const pub = state.publishedMap[id];
       const o = await loadOutline(id);
-      o.chapters.forEach(c => c.diagrams.forEach(d => samples.push({ ...d, book: o.title, id })));
+      if (!pub?.artifacts?.content) continue;
+      let bookContent = state.contentCache[id];
+      if (!bookContent) {
+        bookContent = await getJSON(`${CONTENT}/${pub.artifacts.content}`);
+        state.contentCache[id] = bookContent;
+      }
+      bookContent.chapters.forEach(ch => {
+        (ch.diagrams || []).forEach(d => samples.push({ ...d, book: o.title, id }));
+      });
     }
     view().innerHTML = `
       <div class="page-head"><h1>Diagram Browser</h1><p>The library contains ${fmt(state.stats.diagrams)} professional diagrams generated in Mermaid, PlantUML, SVG and Draw.io across ${kinds.length} diagram types.</p></div>
@@ -469,12 +518,26 @@
       <div class="section-block"><h2>Source formats</h2><div class="chip-row">${fmts.map(f => `<span class="tag level">${esc(f)}</span>`).join("")}</div>
         <p class="cap">Diagram source files are stored separately alongside each published book (under its <code>diagrams/</code> folder).</p></div>
       <h2 style="margin:20px 0 12px">Sample figures from published titles</h2>
-      <div class="cards">${samples.slice(0, 24).map(d => `
-        <a class="card" href="#read/${d.id}">
+      <div class="cards">${samples.slice(0, 12).map((d, i) => `
+        <div class="card">
           <div style="font-weight:700">${esc(d.title)}</div>
           <div class="meta"><span class="tag">${esc(d.kind)}</span><span class="tag level">${esc(d.fmt)}</span></div>
           <div class="meta">${esc(d.book)}</div>
-        </a>`).join("")}</div>`;
+          <div class="diagram-preview" id="diagram-preview-${i}"></div>
+          <a class="btn primary" style="margin-top:10px" href="#read/${d.id}">Open book</a>
+        </div>`).join("")}</div>`;
+    const prev = view();
+    samples.slice(0, 12).forEach((d, i) => {
+      const slot = prev.querySelector(`#diagram-preview-${i}`);
+      if (!slot) return;
+      const sid = stashDiagramSource(d.source || "");
+      slot.innerHTML = d.fmt === "mermaid"
+        ? `<pre class="mermaid" style="font-size:.65rem">${esc(d.source)}</pre>`
+        : d.fmt === "svg" && d.source && d.source.trim().startsWith("<svg")
+          ? `<div class="diagram-svg">${d.source}</div>`
+          : `<div class="diagram-kroki" data-kroki-engine="${KROKI_ENGINE[d.fmt] || ""}" data-kroki-id="${sid}"><div class="diagram-loading">…</div></div>`;
+    });
+    hydrateDiagrams(prev);
   };
 
   // Download center

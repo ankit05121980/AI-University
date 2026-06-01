@@ -163,6 +163,14 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 .reader-body p { line-height: 1.75; }
 .reader-body pre { background: #0b1021; color: #e2e8f0; padding: 16px; border-radius: 10px; overflow: auto; font-size: .82rem; }
 .reader-body pre.mermaid { background: var(--surface-2); color: var(--fg); text-align: center; border: 1px solid var(--border); }
+.diagram { margin: 1.2em 0; }
+.diagram-svg { text-align: center; overflow-x: auto; }
+.diagram-svg svg { max-width: 100%; height: auto; }
+.diagram-img { max-width: 100%; height: auto; display: block; margin: 0 auto; border: 1px solid var(--border); border-radius: 10px; }
+.diagram-loading { color: var(--muted); font-size: .85rem; padding: 24px; text-align: center; border: 1px dashed var(--border); border-radius: 10px; }
+.diagram-fallback { font-size: .75rem; max-height: 200px; overflow: auto; }
+.diagram-preview { min-height: 120px; background: var(--surface-2); border-radius: 10px; margin-top: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.diagram-preview svg { max-width: 100%; max-height: 140px; }
 .reader-body ul, .reader-body ol { line-height: 1.7; }
 .reader-body table { border-collapse: collapse; width: 100%; font-size: .88rem; }
 .reader-body th, .reader-body td { border: 1px solid var(--border); padding: 7px 9px; text-align: left; }
